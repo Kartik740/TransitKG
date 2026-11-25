@@ -1,0 +1,1252 @@
+{
+  "source_snapshot_id": "gtfs-sha256-d6279860e2fe203541a574ee04db5752ecad9e5e1a38b1759cc397b1b596dfa2",
+  "normalized_build_id": "normalized-sha256-5608c0d7d93b9c6200431b5c227da598d52cd0108e9e2f410e5b012b00d28052",
+  "source_namespace": "511-sf-bay-regional",
+  "aggregate_source_sha256": "d6279860e2fe203541a574ee04db5752ecad9e5e1a38b1759cc397b1b596dfa2",
+  "input_bytes": 296177172,
+  "input_files": [
+    {
+      "path": "agency.txt",
+      "bytes": 4990,
+      "size": "4.87 KiB",
+      "sha256": "81392459f4983d7081f385082de51f77d29639e211e0d8196ef30278f21bd1db",
+      "encoding": "UTF-8",
+      "physical_lines": 42,
+      "empty_file": false,
+      "disposition": "tabular with per-record accounting",
+      "records": 41,
+      "columns": [
+        "agency_id",
+        "agency_name",
+        "agency_url",
+        "agency_timezone",
+        "agency_lang",
+        "agency_phone",
+        "agency_fare_url",
+        "agency_email",
+        "cemv_support"
+      ]
+    },
+    {
+      "path": "areas.txt",
+      "bytes": 20227,
+      "size": "19.75 KiB",
+      "sha256": "24cf483a71c1d8b52327e630f5058a69616ae9a20a8838873b690755c0f3995b",
+      "encoding": "UTF-8",
+      "physical_lines": 679,
+      "empty_file": false,
+      "disposition": "tabular with per-record accounting",
+      "records": 678,
+      "columns": [
+        "area_id",
+        "area_name"
+      ]
+    },
+    {
+      "path": "attributions.txt",
+      "bytes": 2855,
+      "size": "2.79 KiB",
+      "sha256": "ba97a6fc69e3171d43a28393ac7d4e485e171bf4b17b18c99740faf18b90ebc3",
+      "encoding": "UTF-8",
+      "physical_lines": 42,
+      "empty_file": false,
+      "disposition": "tabular with per-record accounting",
+      "records": 41,
+      "columns": [
+        "organization_name",
+        "agency_id",
+        "route_id",
+        "trip_id",
+        "is_producer",
+        "is_operator",
+        "is_authority",
+        "attribution_id",
+        "attribution_url",
+        "attribution_email",
+        "attribution_phone"
+      ]
+    },
+    {
+      "path": "calendar.txt",
+      "bytes": 19989,
+      "size": "19.52 KiB",
+      "sha256": "1799d971d6f0ce1d54c6b8825596eb4bde0ddd3d74cc238d5997983d4bc2f635",
+      "encoding": "UTF-8",
+      "physical_lines": 486,
+      "empty_file": false,
+      "disposition": "tabular with per-record accounting",
+      "records": 485,
+      "columns": [
+        "service_id",
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday",
+        "sunday",
+        "start_date",
+        "end_date"
+      ]
+    },
+    {
+      "path": "calendar_attributes.txt",
+      "bytes": 10307,
+      "size": "10.07 KiB",
+      "sha256": "c9d058df3a0f6f851a6c34f00379250a678c6c98b9936978ee7c6171706ff0b5",
+      "encoding": "UTF-8",
+      "physical_lines": 450,
+      "empty_file": false,
+      "disposition": "tabular with per-record accounting",
+      "records": 449,
+      "columns": [
+        "service_id",
+        "service_description"
+      ]
+    },
+    {
+      "path": "calendar_dates.txt",
+      "bytes": 114151,
+      "size": "111.48 KiB",
+      "sha256": "e9bad5ae2a24fdd67f8331bc9088c8922d8a6198ff256ba308bcf42a57b898b1",
+      "encoding": "UTF-8",
+      "physical_lines": 5707,
+      "empty_file": false,
+      "disposition": "tabular with per-record accounting",
+      "records": 5706,
+      "columns": [
+        "service_id",
+        "date",
+        "exception_type"
+      ]
+    },
+    {
+      "path": "changes-toc.md",
+      "bytes": 56190,
+      "size": "54.87 KiB",
+      "sha256": "316feb135c13c71c10a72f8812fd3ee920c78affa545fcaa2a9119c0e41ba365",
+      "encoding": "UTF-8",
+      "physical_lines": 1558,
+      "empty_file": false,
+      "disposition": "ancillary retained in raw snapshot",
+      "records": null
+    },
+    {
+      "path": "directions.txt",
+      "bytes": 18314,
+      "size": "17.88 KiB",
+      "sha256": "0586795c99185a397e173bbb0fb6d76e2dffa1619a44dfe3c2ca2332e35599b8",
+      "encoding": "UTF-8",
+      "physical_lines": 1185,
+      "empty_file": false,
+      "disposition": "tabular with per-record accounting",
+      "records": 1184,
+      "columns": [
+        "route_id",
+        "direction_id",
+        "direction"
+      ]
+    },
+    {
+      "path": "fare_leg_join_rules.txt",
+      "bytes": 94,
+      "size": "94 B",
+      "sha256": "3c824c9b678cb7ddd3f1772195b855900692df47661c18f45a991d32b5f49fa7",
+      "encoding": "UTF-8",
+      "physical_lines": 6,
+      "empty_file": false,
+      "disposition": "tabular with per-record accounting",
+      "records": 5,
+      "columns": [
+        "from_network_id",
+        "to_network_id",
+        "from_stop_id",
+        "to_stop_id"
+      ]
+    },
+    {
+      "path": "fare_leg_rules.txt",
+      "bytes": 239811,
+      "size": "234.19 KiB",
+      "sha256": "2cb2895dd3bfcd6e71424273aa93cfcf88784295ab368f4ab519cf129830d53e",
+      "encoding": "UTF-8",
+      "physical_lines": 3611,
+      "empty_file": false,
+      "disposition": "tabular with per-record accounting",
+      "records": 3610,
+      "columns": [
+        "leg_group_id",
+        "from_area_id",
+        "to_area_id",
+        "network_id",
+        "fare_product_id",
+        "from_timeframe_group_id",
+        "to_timeframe_group_id",
+        "rule_priority",
+        "transfer_only"
+      ]
+    },
+    {
+      "path": "fare_media.txt",
+      "bytes": 207,
+      "size": "207 B",
+      "sha256": "80050903a5928cb93e77aec9b5d2eff85dfafa71c858ac381a701bc76796753b",
+      "encoding": "UTF-8",
+      "physical_lines": 8,
+      "empty_file": false,
+      "disposition": "tabular with per-record accounting",
+      "records": 7,
+      "columns": [
+        "fare_media_id",
+        "fare_media_name",
+        "fare_media_type"
+      ]
+    },
+    {
+      "path": "fare_products.txt",
+      "bytes": 853798,
+      "size": "833.79 KiB",
+      "sha256": "1b44964c082a069b31b1bbd72ada12e41d041e8e57c6bc793e884e09b308490f",
+      "encoding": "UTF-8",
+      "physical_lines": 11546,
+      "empty_file": false,
+      "disposition": "tabular with per-record accounting",
+      "records": 11545,
+      "columns": [
+        "fare_product_id",
+        "fare_product_name",
+        "amount",
+        "currency",
+        "duration_start",
+        "duration_amount",
+        "duration_unit",
+        "duration_type",
+        "rider_category_id",
+        "fare_media_id"
+      ]
+    },
+    {
+      "path": "fare_transfer_rules.txt",
+      "bytes": 12100,
+      "size": "11.82 KiB",
+      "sha256": "c3bd1b9f535948ce311ee6177c5905a2e39afa6ec3ac9081214be43afac0138f",
+      "encoding": "UTF-8",
+      "physical_lines": 229,
+      "empty_file": false,
+      "disposition": "tabular with per-record accounting",
+      "records": 228,
+      "columns": [
+        "from_leg_group_id",
+        "to_leg_group_id",
+        "transfer_count",
+        "duration_limit",
+        "duration_limit_type",
+        "fare_transfer_type",
+        "fare_product_id",
+        "filter_fare_product_id"
+      ]
+    },
+    {
+      "path": "feed_info.txt",
+      "bytes": 195,
+      "size": "195 B",
+      "sha256": "7df8579e0310c46ddbe1efa5b52fefd1a6931ba70a71a92c9f7001ed2673ca5f",
+      "encoding": "UTF-8",
+      "physical_lines": 2,
+      "empty_file": false,
+      "disposition": "tabular with per-record accounting",
+      "records": 1,
+      "columns": [
+        "feed_publisher_name",
+        "feed_publisher_url",
+        "feed_lang",
+        "feed_version",
+        "feed_start_date",
+        "feed_end_date",
+        "default_lang",
+        "feed_contact_email",
+        "feed_contact_url"
+      ]
+    },
+    {
+      "path": "levels.txt",
+      "bytes": 4495,
+      "size": "4.39 KiB",
+      "sha256": "30e36e625f8fb6c8e99f11f6e36de1c342b3301b70899aa3aa03eac8c187f5af",
+      "encoding": "UTF-8",
+      "physical_lines": 93,
+      "empty_file": false,
+      "disposition": "tabular with per-record accounting",
+      "records": 92,
+      "columns": [
+        "level_id",
+        "level_index",
+        "level_name"
+      ]
+    },
+    {
+      "path": "mtc_feed_versions.txt",
+      "bytes": 2969,
+      "size": "2.90 KiB",
+      "sha256": "d5e4604b9514f7548cd89e34e981378261012ff650c216f484c6db98a3e135b5",
+      "encoding": "UTF-8",
+      "physical_lines": 42,
+      "empty_file": false,
+      "disposition": "tabular with per-record accounting",
+      "records": 41,
+      "columns": [
+        "agency_id",
+        "feed_version",
+        "sha1",
+        "feed_start_date",
+        "feed_end_date"
+      ]
+    },
+    {
+      "path": "pathways.txt",
+      "bytes": 136287,
+      "size": "133.09 KiB",
+      "sha256": "37c442e43d187b1810e3bb6c12069969735175d08e730e7d810475fe77b047af",
+      "encoding": "UTF-8",
+      "physical_lines": 1633,
+      "empty_file": false,
+      "disposition": "tabular with per-record accounting",
+      "records": 1632,
+      "columns": [
+        "pathway_id",
+        "from_stop_id",
+        "to_stop_id",
+        "pathway_mode",
+        "is_bidirectional",
+        "length",
+        "traversal_time",
+        "min_width",
+        "max_slope",
+        "stair_count",
+        "signposted_as",
+        "reversed_signposted_as"
+      ]
+    },
+    {
+      "path": "rider_categories.txt",
+      "bytes": 645,
+      "size": "645 B",
+      "sha256": "e5e6e5c4e051d48c9e428ab39cfa249e7e13be883c0c426792924b81846788fe",
+      "encoding": "UTF-8",
+      "physical_lines": 12,
+      "empty_file": false,
+      "disposition": "tabular with per-record accounting",
+      "records": 11,
+      "columns": [
+        "rider_category_id",
+        "rider_category_name",
+        "min_age",
+        "max_age",
+        "is_default_fare_category",
+        "eligibility_url"
+      ]
+    },
+    {
+      "path": "route_attributes.txt",
+      "bytes": 5188,
+      "size": "5.07 KiB",
+      "sha256": "ee3c45e7186cb3e59ae320161324269a6390b5a968aaf048249d1d482104da97",
+      "encoding": "UTF-8",
+      "physical_lines": 330,
+      "empty_file": false,
+      "disposition": "tabular with per-record accounting",
+      "records": 329,
+      "columns": [
+        "route_id",
+        "category",
+        "subcategory",
+        "running_way"
+      ]
+    },
+    {
+      "path": "routes.txt",
+      "bytes": 72273,
+      "size": "70.58 KiB",
+      "sha256": "26ca4f1f66d7373881a2f82626848641ad7ba19b16eae47c417def5042fbfdaf",
+      "encoding": "UTF-8",
+      "physical_lines": 666,
+      "empty_file": false,
+      "disposition": "tabular with per-record accounting",
+      "records": 665,
+      "columns": [
+        "route_id",
+        "agency_id",
+        "route_short_name",
+        "route_long_name",
+        "route_desc",
+        "route_type",
+        "route_url",
+        "route_color",
+        "route_text_color",
+        "route_sort_order",
+        "continuous_pickup",
+        "continuous_drop_off",
+        "network_id",
+        "cemv_support",
+        "as_route"
+      ]
+    },
+    {
+      "path": "shapes.txt",
+      "bytes": 57341525,
+      "size": "54.685 MiB",
+      "sha256": "3f3c5d903cd4e38e071e7f521055fbc21a808158d98bb62b59c2d721c526e055",
+      "encoding": "UTF-8",
+      "physical_lines": 1340497,
+      "empty_file": false,
+      "disposition": "tabular with per-record accounting",
+      "records": 1340496,
+      "columns": [
+        "shape_id",
+        "shape_pt_lat",
+        "shape_pt_lon",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ]
+    },
+    {
+      "path": "stop_areas.txt",
+      "bytes": 434242,
+      "size": "424.06 KiB",
+      "sha256": "e5de7e667aec156e52c7c430cd19abe04fb82d5a465f20dc73cece5f21909bbf",
+      "encoding": "UTF-8",
+      "physical_lines": 33165,
+      "empty_file": false,
+      "disposition": "tabular with per-record accounting",
+      "records": 33164,
+      "columns": [
+        "area_id",
+        "stop_id"
+      ]
+    },
+    {
+      "path": "stop_times.txt",
+      "bytes": 226989221,
+      "size": "216.474 MiB",
+      "sha256": "48c043dfc1883efcaed8073687b3d8413947536eaa9ca142440373964eceab2e",
+      "encoding": "UTF-8",
+      "physical_lines": 3185116,
+      "empty_file": false,
+      "disposition": "tabular with per-record accounting",
+      "records": 3185115,
+      "columns": [
+        "trip_id",
+        "stop_id",
+        "location_group_id",
+        "location_id",
+        "stop_sequence",
+        "stop_headsign",
+        "arrival_time",
+        "departure_time",
+        "pickup_type",
+        "drop_off_type",
+        "continuous_pickup",
+        "continuous_drop_off",
+        "shape_dist_traveled",
+        "timepoint",
+        "start_pickup_drop_off_window",
+        "end_pickup_drop_off_window",
+        "pickup_booking_rule_id",
+        "drop_off_booking_rule_id",
+        "safe_duration_factor",
+        "safe_duration_offset",
+        "mean_duration_factor",
+        "mean_duration_offset"
+      ]
+    },
+    {
+      "path": "stops.txt",
+      "bytes": 2494891,
+      "size": "2.379 MiB",
+      "sha256": "9f8340e83a5cdf0c02a3489089ebc20f4280da8caafaab093c1f60b41f2e42bf",
+      "encoding": "UTF-8",
+      "physical_lines": 21665,
+      "empty_file": false,
+      "disposition": "tabular with per-record accounting",
+      "records": 21664,
+      "columns": [
+        "stop_id",
+        "stop_name",
+        "stop_code",
+        "stop_desc",
+        "stop_lat",
+        "stop_lon",
+        "zone_id",
+        "stop_url",
+        "tts_stop_name",
+        "platform_code",
+        "location_type",
+        "parent_station",
+        "stop_timezone",
+        "wheelchair_boarding",
+        "level_id",
+        "stop_access"
+      ]
+    },
+    {
+      "path": "timeframes.txt",
+      "bytes": 210,
+      "size": "210 B",
+      "sha256": "891323454bee574c140b1120bc19a57c230f1b82c306a44b82316854d2fd35ee",
+      "encoding": "UTF-8",
+      "physical_lines": 4,
+      "empty_file": false,
+      "disposition": "tabular with per-record accounting",
+      "records": 3,
+      "columns": [
+        "timeframe_group_id",
+        "start_time",
+        "end_time",
+        "service_id"
+      ]
+    },
+    {
+      "path": "transfers.txt",
+      "bytes": 2321,
+      "size": "2.27 KiB",
+      "sha256": "9d6d1d49d9f93047047f02c852ddf82454acadf2b6a487fab166cecfa1e6a476",
+      "encoding": "UTF-8",
+      "physical_lines": 62,
+      "empty_file": false,
+      "disposition": "tabular with per-record accounting",
+      "records": 61,
+      "columns": [
+        "from_stop_id",
+        "to_stop_id",
+        "from_route_id",
+        "to_route_id",
+        "from_trip_id",
+        "to_trip_id",
+        "transfer_type",
+        "min_transfer_time"
+      ]
+    },
+    {
+      "path": "trips.txt",
+      "bytes": 7339677,
+      "size": "7.000 MiB",
+      "sha256": "6f2adf6afaeec80eadefc192a28b4a737eca02144f04e6e434ee2295dfe78f7e",
+      "encoding": "UTF-8",
+      "physical_lines": 92828,
+      "empty_file": false,
+      "disposition": "tabular with per-record accounting",
+      "records": 92827,
+      "columns": [
+        "route_id",
+        "service_id",
+        "trip_id",
+        "trip_headsign",
+        "trip_short_name",
+        "direction_id",
+        "block_id",
+        "shape_id",
+        "wheelchair_accessible",
+        "bikes_allowed",
+        "cars_allowed",
+        "safe_duration_factor",
+        "safe_duration_offset"
+      ]
+    }
+  ],
+  "provider_feed_info": [
+    {
+      "feed_publisher_name": "511 SF Bay",
+      "feed_publisher_url": "https://511.org/open-data/transit",
+      "feed_lang": "en",
+      "feed_version": null,
+      "feed_start_date": null,
+      "feed_end_date": null,
+      "default_lang": null,
+      "feed_contact_email": null,
+      "feed_contact_url": null
+    }
+  ],
+  "acquired_at": null,
+  "processed_at_utc": "2026-11-24T20:04:47.894263+00:00",
+  "raw_checksums_unchanged": true,
+  "cleaning_policy_version": "1.0.0",
+  "cleaning_policy_sha256": "01daf465dba59b15ea1f5dfdc4947b6a6e80316252c183a8b664b54653f04023",
+  "normalized_schema_version": "1.0.0",
+  "canonical_contract_version": "1.0.0",
+  "implementation_sha256": "bfcd0c8e086be471757318fc19c3b0d999c55489883d24901226d194d6168a0d",
+  "implementation_files": {
+    "normalize_gtfs.py": "d59393c2946018724a35f3761f70f4f75d0241b087cc3673b8ae9073213d9a9c",
+    "gtfs_cleaning.py": "bda0356612e46427aed4f557fe8251d60d6a1ba0963873adbc902a113087841d",
+    "gtfs_normalized.py": "e8a7a885a44189ee375ec568fc5b5bda01ce34023ad63313d6036532d7c68096",
+    "gtfs_checks.py": "f93aad351b386d91cef73712c172fe4e19566ef32860c453a9c8013a3abb9e94",
+    "gtfs_network.py": "4455b0cc63f5719835fb1ddd433531fd3db2719b06bb765d381d53831c3eb566",
+    "profile_gtfs.py": "d12b4508672c0c381b652734ea01b819c661d835eb5a2fccca9e3777a2cd973a",
+    "gtfs_schedule_fields.json": "046a1fe99fa70b023366b9ef2bba2eb9ad201980a44a416c433eeaa5cd128b12"
+  },
+  "phase2_report_sha256": {
+    "data_profile.json": "982884b5094c73c27ceab45e08cbcae3552e4b65bf1d0bcc47032ef6429f8149",
+    "data_quality_report.json": "bfc719c4c6835a963181587a9b5109c4c78d046f8e6b1c7b69a2b6499686bab0",
+    "dataset_inventory.json": "5d4ef2a43f8be133a3956db810cf53e6f37abe42e9cfe0e2f87ede96b59affd5",
+    "identifier_analysis.json": "2ebc3df5b402142ed93ce70fd311bfd44b5677f714f47b4101c11d67d58160da",
+    "phase2_dataset_exploration_report.md": "d82c791791b291d10f189e5710d2c707d2ce22d0f1e6c1b9f36b7c906521f8e6",
+    "realtime_compatibility_report.json": "f78fdbd99760276290b8db36bb110ba1007cf105ed6fb411b0537b5d6f5325ab",
+    "referential_integrity_report.json": "d9722d9fdeb88dffb8f67212f7e3cfd3a11ba47585c98f375bed8bb607c8d1f8",
+    "temporal_network_graph.json": "1331980a937e31b1503663aaa8858bfc285e251aa6a4870c25391611728213aa"
+  },
+  "specification": {
+    "schedule_revision": "April 27, 2026",
+    "schedule": "https://gtfs.org/documentation/schedule/reference/",
+    "realtime": "https://gtfs.org/documentation/realtime/reference/",
+    "provider": "https://511.org/media/6657/show",
+    "phase2": "../phase2/phase2_dataset_exploration_report.md"
+  },
+  "python": "3.14.0",
+  "duckdb": "1.5.0",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "artifacts": {
+    "agency": {
+      "file": "agency.parquet",
+      "role": "source table",
+      "records": 41,
+      "schema": {
+        "source_record": "BIGINT",
+        "agency_id": "VARCHAR",
+        "agency_name": "VARCHAR",
+        "agency_url": "VARCHAR",
+        "agency_timezone": "VARCHAR",
+        "agency_lang": "VARCHAR",
+        "agency_phone": "VARCHAR",
+        "agency_fare_url": "VARCHAR",
+        "agency_email": "VARCHAR",
+        "cemv_support": "INTEGER",
+        "source_empty_typed_fields": "VARCHAR[]"
+      },
+      "bytes": 4427,
+      "sha256": "be69e766b0bc8dc9db0921fc539e1914af1aa37818cc0ea97cfe27b7bde96df0",
+      "logical_sha256": "1dddc30a26a49b2223fb599192b2ae2e14594e2d7933be92e6b9be5a986b631c"
+    },
+    "areas": {
+      "file": "areas.parquet",
+      "role": "source table",
+      "records": 678,
+      "schema": {
+        "source_record": "BIGINT",
+        "area_id": "VARCHAR",
+        "area_name": "VARCHAR",
+        "source_empty_typed_fields": "VARCHAR[]"
+      },
+      "bytes": 10218,
+      "sha256": "3bd44d05fc8ae8727bf3c04fa31b68db467b1b3efcca0fde051eeb7e42d5a3ef",
+      "logical_sha256": "1a6f397e62a2f643066123a4952f0b151625968cc8024b610bbe4a4da616fc14"
+    },
+    "attributions": {
+      "file": "attributions.parquet",
+      "role": "source table",
+      "records": 1,
+      "schema": {
+        "source_record": "BIGINT",
+        "organization_name": "VARCHAR",
+        "agency_id": "VARCHAR",
+        "route_id": "VARCHAR",
+        "trip_id": "VARCHAR",
+        "is_producer": "INTEGER",
+        "is_operator": "INTEGER",
+        "is_authority": "INTEGER",
+        "attribution_id": "VARCHAR",
+        "attribution_url": "VARCHAR",
+        "attribution_email": "VARCHAR",
+        "attribution_phone": "VARCHAR",
+        "source_empty_typed_fields": "VARCHAR[]"
+      },
+      "bytes": 1823,
+      "sha256": "339f7b9a956b09b74b4a9b88c717245d0fdf472fa028e6c99fea5696afca207b",
+      "logical_sha256": "34447cdea65d691c19f2690a3af3dc5165b380b12d15955f55a35a1b1bd7dc0c"
+    },
+    "calendar": {
+      "file": "calendar.parquet",
+      "role": "source table",
+      "records": 485,
+      "schema": {
+        "source_record": "BIGINT",
+        "service_id": "VARCHAR",
+        "monday": "INTEGER",
+        "tuesday": "INTEGER",
+        "wednesday": "INTEGER",
+        "thursday": "INTEGER",
+        "friday": "INTEGER",
+        "saturday": "INTEGER",
+        "sunday": "INTEGER",
+        "start_date": "DATE",
+        "end_date": "DATE",
+        "source_empty_typed_fields": "VARCHAR[]"
+      },
+      "bytes": 6165,
+      "sha256": "24650cb782e4668cc176d7b2f6f67580204975886503369837805c9377ef817a",
+      "logical_sha256": "d281132800d54042d4e949db9faff189db7ec99c6fe43d6c3641201d3fcefd0f"
+    },
+    "calendar_attributes": {
+      "file": "calendar_attributes.parquet",
+      "role": "source table",
+      "records": 449,
+      "schema": {
+        "source_record": "BIGINT",
+        "service_id": "VARCHAR",
+        "service_description": "VARCHAR",
+        "source_empty_typed_fields": "VARCHAR[]"
+      },
+      "bytes": 4286,
+      "sha256": "3332ca0a597edf6def088b4bd8ca9a1d40b03722d0f8d2c461dc560d5033a1c5",
+      "logical_sha256": "f1c7bd360ae15b053a6a77a6beed9809067d63d6d2a07f2330ba6de23e5471c7"
+    },
+    "calendar_dates": {
+      "file": "calendar_dates.parquet",
+      "role": "source table",
+      "records": 5706,
+      "schema": {
+        "source_record": "BIGINT",
+        "service_id": "VARCHAR",
+        "date": "DATE",
+        "exception_type": "INTEGER",
+        "source_empty_typed_fields": "VARCHAR[]"
+      },
+      "bytes": 20511,
+      "sha256": "1718072216f95619e94405c6c0b5f173b49651398998663c1eada81e27d19249",
+      "logical_sha256": "b2bc41e7050d42080cda761c67a42c60003b55141ba7b19410b6a6b484cb5cc1"
+    },
+    "directions": {
+      "file": "directions.parquet",
+      "role": "source table",
+      "records": 1182,
+      "schema": {
+        "source_record": "BIGINT",
+        "route_id": "VARCHAR",
+        "direction_id": "INTEGER",
+        "direction": "VARCHAR",
+        "source_empty_typed_fields": "VARCHAR[]"
+      },
+      "bytes": 6382,
+      "sha256": "c3f6232be6346c0a423b018ef002a1dccd786ade84a3ad7e282571784e19ebb2",
+      "logical_sha256": "15e709179c591eb1cd81b8dafc036dfa13c4c4c36a77ede642c2ba50ed867936"
+    },
+    "fare_leg_join_rules": {
+      "file": "fare_leg_join_rules.parquet",
+      "role": "source table",
+      "records": 5,
+      "schema": {
+        "source_record": "BIGINT",
+        "from_network_id": "VARCHAR",
+        "to_network_id": "VARCHAR",
+        "from_stop_id": "VARCHAR",
+        "to_stop_id": "VARCHAR",
+        "source_empty_typed_fields": "VARCHAR[]"
+      },
+      "bytes": 906,
+      "sha256": "c9403267e9a6280348040228e57e7b18614c12671cad06996b7dcd22188ea113",
+      "logical_sha256": "477fcb76484696a7a2f03be953656cf7f213eefd1ec90b27fb8a32b734aab7da"
+    },
+    "fare_leg_rules": {
+      "file": "fare_leg_rules.parquet",
+      "role": "source table",
+      "records": 3610,
+      "schema": {
+        "source_record": "BIGINT",
+        "leg_group_id": "VARCHAR",
+        "from_area_id": "VARCHAR",
+        "to_area_id": "VARCHAR",
+        "network_id": "VARCHAR",
+        "fare_product_id": "VARCHAR",
+        "from_timeframe_group_id": "VARCHAR",
+        "to_timeframe_group_id": "VARCHAR",
+        "rule_priority": "BIGINT",
+        "transfer_only": "VARCHAR",
+        "source_empty_typed_fields": "VARCHAR[]"
+      },
+      "bytes": 26857,
+      "sha256": "54f525169566425891090d1835bb5af3083fae269246d1418b06567412235082",
+      "logical_sha256": "fe89624052d05b37a34cc81217e36b2702c1d23209d91b94790daaa83fddb036"
+    },
+    "fare_media": {
+      "file": "fare_media.parquet",
+      "role": "source table",
+      "records": 7,
+      "schema": {
+        "source_record": "BIGINT",
+        "fare_media_id": "VARCHAR",
+        "fare_media_name": "VARCHAR",
+        "fare_media_type": "INTEGER",
+        "source_empty_typed_fields": "VARCHAR[]"
+      },
+      "bytes": 1049,
+      "sha256": "3a7e4a52a4a569592bc348d145eac6790be9e41ba3a09b212d1a3fa1473169c5",
+      "logical_sha256": "45ca386eb2436c00facf98c056a695c21dfebd27c9b5e029163ae138cdf30d6e"
+    },
+    "fare_products": {
+      "file": "fare_products.parquet",
+      "role": "source table",
+      "records": 11545,
+      "schema": {
+        "source_record": "BIGINT",
+        "fare_product_id": "VARCHAR",
+        "fare_product_name": "VARCHAR",
+        "amount": "DECIMAL(30,12)",
+        "currency": "VARCHAR",
+        "duration_start": "VARCHAR",
+        "duration_amount": "VARCHAR",
+        "duration_unit": "VARCHAR",
+        "duration_type": "VARCHAR",
+        "rider_category_id": "VARCHAR",
+        "fare_media_id": "VARCHAR",
+        "source_empty_typed_fields": "VARCHAR[]"
+      },
+      "bytes": 54532,
+      "sha256": "9acf7f6ba9a0891e83270ffd02e7ccb26cac2cf70c6a80357fff4c6deff2522c",
+      "logical_sha256": "12b304027dbe0d0c4251fc3962dda83b59ffc7f614bd699639dd280fb3ad45a4"
+    },
+    "fare_transfer_rules": {
+      "file": "fare_transfer_rules.parquet",
+      "role": "source table",
+      "records": 160,
+      "schema": {
+        "source_record": "BIGINT",
+        "from_leg_group_id": "VARCHAR",
+        "to_leg_group_id": "VARCHAR",
+        "transfer_count": "BIGINT",
+        "duration_limit": "BIGINT",
+        "duration_limit_type": "INTEGER",
+        "fare_transfer_type": "INTEGER",
+        "fare_product_id": "VARCHAR",
+        "filter_fare_product_id": "VARCHAR",
+        "source_empty_typed_fields": "VARCHAR[]"
+      },
+      "bytes": 3363,
+      "sha256": "6a14331cf5b111c5953b027235ea8766931e5a22a4277e21b6d2ff8ef57a2f14",
+      "logical_sha256": "248d92784aaf445052010f3792b679a8eead1cc5cb5685703184cfecf18cc06e"
+    },
+    "feed_info": {
+      "file": "feed_info.parquet",
+      "role": "source table",
+      "records": 1,
+      "schema": {
+        "source_record": "BIGINT",
+        "feed_publisher_name": "VARCHAR",
+        "feed_publisher_url": "VARCHAR",
+        "feed_lang": "VARCHAR",
+        "feed_version": "VARCHAR",
+        "feed_start_date": "DATE",
+        "feed_end_date": "DATE",
+        "default_lang": "VARCHAR",
+        "feed_contact_email": "VARCHAR",
+        "feed_contact_url": "VARCHAR",
+        "source_empty_typed_fields": "VARCHAR[]"
+      },
+      "bytes": 1592,
+      "sha256": "54641f8a5b25d6bdbd8f3beaee6ffd6fd51906c9305a3d952abe91cb7b81c677",
+      "logical_sha256": "3acee746577a4d7742214e5d8f7febc919317ad951a9f4b9e3b6e9f67c280a09"
+    },
+    "levels": {
+      "file": "levels.parquet",
+      "role": "source table",
+      "records": 92,
+      "schema": {
+        "source_record": "BIGINT",
+        "level_id": "VARCHAR",
+        "level_index": "DOUBLE",
+        "level_name": "VARCHAR",
+        "source_empty_typed_fields": "VARCHAR[]"
+      },
+      "bytes": 2714,
+      "sha256": "44b33227841322952e2419ccc4620637d1cc54268a030dccc06f5ee0bbf93100",
+      "logical_sha256": "80e7fe398e1fb51596eb5c6a68d3b5131c58d24ce3b71fa020e609a0942d88df"
+    },
+    "mtc_feed_versions": {
+      "file": "mtc_feed_versions.parquet",
+      "role": "source table",
+      "records": 41,
+      "schema": {
+        "source_record": "BIGINT",
+        "agency_id": "VARCHAR",
+        "feed_version": "VARCHAR",
+        "sha1": "VARCHAR",
+        "feed_start_date": "VARCHAR",
+        "feed_end_date": "VARCHAR",
+        "source_empty_typed_fields": "VARCHAR[]"
+      },
+      "bytes": 2770,
+      "sha256": "2c56cda8e437472cc8996c4b21e539e28df5ab980963a7a1b0fe81a15aa9f4ca",
+      "logical_sha256": "18781cff65c6a83a818c36ed9a1c7595e5cd109e92b4f081468fb7ed6c6dbe18"
+    },
+    "pathways": {
+      "file": "pathways.parquet",
+      "role": "source table",
+      "records": 1632,
+      "schema": {
+        "source_record": "BIGINT",
+        "pathway_id": "VARCHAR",
+        "from_stop_id": "VARCHAR",
+        "to_stop_id": "VARCHAR",
+        "pathway_mode": "INTEGER",
+        "is_bidirectional": "INTEGER",
+        "length": "DOUBLE",
+        "traversal_time": "BIGINT",
+        "min_width": "DOUBLE",
+        "max_slope": "DOUBLE",
+        "stair_count": "BIGINT",
+        "signposted_as": "VARCHAR",
+        "reversed_signposted_as": "VARCHAR",
+        "source_empty_typed_fields": "VARCHAR[]"
+      },
+      "bytes": 46491,
+      "sha256": "70f7eab85b276d3d1c5eb50a1dbca15002ed07a73aff6d698f3949b9cc8a6fc5",
+      "logical_sha256": "d744025237ee98358ccf305e0ac486e726d0dc6873eda21160b68f4e86f878bd"
+    },
+    "rider_categories": {
+      "file": "rider_categories.parquet",
+      "role": "source table",
+      "records": 11,
+      "schema": {
+        "source_record": "BIGINT",
+        "rider_category_id": "VARCHAR",
+        "rider_category_name": "VARCHAR",
+        "min_age": "VARCHAR",
+        "max_age": "VARCHAR",
+        "is_default_fare_category": "INTEGER",
+        "eligibility_url": "VARCHAR",
+        "source_empty_typed_fields": "VARCHAR[]"
+      },
+      "bytes": 1890,
+      "sha256": "b117fd8e1ebfe614c5b1a0fa9dd84b76c6f61ac7967ee76eb43c675e5161db75",
+      "logical_sha256": "725490e59676d13a3d045ccf3047e6e2bb78a7cbec5d7dc01e5f3da9ad6c6fa7"
+    },
+    "route_attributes": {
+      "file": "route_attributes.parquet",
+      "role": "source table",
+      "records": 327,
+      "schema": {
+        "source_record": "BIGINT",
+        "route_id": "VARCHAR",
+        "category": "BIGINT",
+        "subcategory": "BIGINT",
+        "running_way": "BIGINT",
+        "source_empty_typed_fields": "VARCHAR[]"
+      },
+      "bytes": 3349,
+      "sha256": "56e1f15caf7865066c76e92635da8095acbad85c43e98b55a25bdf33a5ab7c1f",
+      "logical_sha256": "31ecb7965e5a0a8728432887c4395a0fc8a0efbf958e063ccc203b2ee8ef359c"
+    },
+    "routes": {
+      "file": "routes.parquet",
+      "role": "source table",
+      "records": 665,
+      "schema": {
+        "source_record": "BIGINT",
+        "route_id": "VARCHAR",
+        "agency_id": "VARCHAR",
+        "route_short_name": "VARCHAR",
+        "route_long_name": "VARCHAR",
+        "route_desc": "VARCHAR",
+        "route_type": "INTEGER",
+        "route_url": "VARCHAR",
+        "route_color": "VARCHAR",
+        "route_text_color": "VARCHAR",
+        "route_sort_order": "BIGINT",
+        "continuous_pickup": "INTEGER",
+        "continuous_drop_off": "INTEGER",
+        "network_id": "VARCHAR",
+        "cemv_support": "INTEGER",
+        "as_route": "VARCHAR",
+        "source_empty_typed_fields": "VARCHAR[]"
+      },
+      "bytes": 24176,
+      "sha256": "85b112ea2588997d18700d7bf65a1a3de50a5c366425d7640909b9095f5e502b",
+      "logical_sha256": "2d05e4b7ded7e145709a65807a8b2da65afd84e05948747d8381d998f61a9ebf"
+    },
+    "shapes": {
+      "file": "shapes.parquet",
+      "role": "source table",
+      "records": 1340496,
+      "schema": {
+        "source_record": "BIGINT",
+        "shape_id": "VARCHAR",
+        "shape_pt_lat": "DOUBLE",
+        "shape_pt_lon": "DOUBLE",
+        "shape_pt_sequence": "BIGINT",
+        "shape_dist_traveled": "DOUBLE",
+        "source_empty_typed_fields": "VARCHAR[]"
+      },
+      "bytes": 9585113,
+      "sha256": "26ada359335d3bcf9f8185644f29d1d40b68b569515b8acb4f2c622f650f92a0",
+      "logical_sha256": "ae8bff05d51f9932b889e3f33002bfe487c92a610976683f135f57a69aad65b7"
+    },
+    "stop_areas": {
+      "file": "stop_areas.parquet",
+      "role": "source table",
+      "records": 33164,
+      "schema": {
+        "source_record": "BIGINT",
+        "area_id": "VARCHAR",
+        "stop_id": "VARCHAR",
+        "source_empty_typed_fields": "VARCHAR[]"
+      },
+      "bytes": 174793,
+      "sha256": "6327f901ed295e5e148281f907ade326348c33fe4030b0c35f5f251decff89f9",
+      "logical_sha256": "47033091cdfc50d19f1f84e62830a82a82abd9c9aefa502d95507d89c178d115"
+    },
+    "stop_times": {
+      "file": "stop_times.parquet",
+      "role": "source table",
+      "records": 3185115,
+      "schema": {
+        "source_record": "BIGINT",
+        "trip_id": "VARCHAR",
+        "stop_id": "VARCHAR",
+        "location_group_id": "VARCHAR",
+        "location_id": "VARCHAR",
+        "stop_sequence": "BIGINT",
+        "stop_headsign": "VARCHAR",
+        "arrival_time": "VARCHAR",
+        "arrival_time_seconds": "BIGINT",
+        "departure_time": "VARCHAR",
+        "departure_time_seconds": "BIGINT",
+        "pickup_type": "INTEGER",
+        "drop_off_type": "INTEGER",
+        "continuous_pickup": "INTEGER",
+        "continuous_drop_off": "INTEGER",
+        "shape_dist_traveled": "DOUBLE",
+        "timepoint": "INTEGER",
+        "start_pickup_drop_off_window": "VARCHAR",
+        "start_pickup_drop_off_window_seconds": "BIGINT",
+        "end_pickup_drop_off_window": "VARCHAR",
+        "end_pickup_drop_off_window_seconds": "BIGINT",
+        "pickup_booking_rule_id": "VARCHAR",
+        "drop_off_booking_rule_id": "VARCHAR",
+        "safe_duration_factor": "VARCHAR",
+        "safe_duration_offset": "VARCHAR",
+        "mean_duration_factor": "VARCHAR",
+        "mean_duration_offset": "VARCHAR",
+        "source_empty_typed_fields": "VARCHAR[]"
+      },
+      "bytes": 46918728,
+      "sha256": "548a318e1fe9be630f7bc9e45d736008d7eb4fabea37f84d7170cc3f39f2dafc",
+      "logical_sha256": "710d699c98a9b5f466383f793b70f93b908f89204cd58d5b66657f5320864c6f"
+    },
+    "stops": {
+      "file": "stops.parquet",
+      "role": "source table",
+      "records": 21664,
+      "schema": {
+        "source_record": "BIGINT",
+        "stop_id": "VARCHAR",
+        "stop_name": "VARCHAR",
+        "stop_code": "VARCHAR",
+        "stop_desc": "VARCHAR",
+        "stop_lat": "DOUBLE",
+        "stop_lon": "DOUBLE",
+        "zone_id": "VARCHAR",
+        "stop_url": "VARCHAR",
+        "tts_stop_name": "VARCHAR",
+        "platform_code": "VARCHAR",
+        "location_type": "INTEGER",
+        "parent_station": "VARCHAR",
+        "stop_timezone": "VARCHAR",
+        "wheelchair_boarding": "INTEGER",
+        "level_id": "VARCHAR",
+        "stop_access": "INTEGER",
+        "source_empty_typed_fields": "VARCHAR[]"
+      },
+      "bytes": 521026,
+      "sha256": "6c2d307c0e1f83ad8f28e743e8dcb0e1b939bb5e5143b254a36b6dc676dd7432",
+      "logical_sha256": "b6b8e8c9a4fde5727b2ccc05738204827a61bee88693a2d99c1f7a9842a29ea4"
+    },
+    "timeframes": {
+      "file": "timeframes.parquet",
+      "role": "source table",
+      "records": 3,
+      "schema": {
+        "source_record": "BIGINT",
+        "timeframe_group_id": "VARCHAR",
+        "start_time": "VARCHAR",
+        "start_time_seconds": "BIGINT",
+        "end_time": "VARCHAR",
+        "end_time_seconds": "BIGINT",
+        "service_id": "VARCHAR",
+        "source_empty_typed_fields": "VARCHAR[]"
+      },
+      "bytes": 1566,
+      "sha256": "d8565ef1a8b48c3859cb97ed549dbd7be3a56534a4dc82507f403bfb4523c787",
+      "logical_sha256": "6143a7598cbd0a9c25dc466907ffc11b23511e3d98c3d779ce12e819a3e9e420"
+    },
+    "transfers": {
+      "file": "transfers.parquet",
+      "role": "source table",
+      "records": 61,
+      "schema": {
+        "source_record": "BIGINT",
+        "from_stop_id": "VARCHAR",
+        "to_stop_id": "VARCHAR",
+        "from_route_id": "VARCHAR",
+        "to_route_id": "VARCHAR",
+        "from_trip_id": "VARCHAR",
+        "to_trip_id": "VARCHAR",
+        "transfer_type": "INTEGER",
+        "min_transfer_time": "BIGINT",
+        "source_empty_typed_fields": "VARCHAR[]"
+      },
+      "bytes": 2534,
+      "sha256": "09b251047e131335c17e6a6b00b4fc22e8948e3c52277551cd981a97d0292ab8",
+      "logical_sha256": "7a2043d66338d48cebebe46577bea28df8d32452ea17c791e9b2d744732b6053"
+    },
+    "trips": {
+      "file": "trips.parquet",
+      "role": "source table",
+      "records": 92827,
+      "schema": {
+        "source_record": "BIGINT",
+        "route_id": "VARCHAR",
+        "service_id": "VARCHAR",
+        "trip_id": "VARCHAR",
+        "trip_headsign": "VARCHAR",
+        "trip_short_name": "VARCHAR",
+        "direction_id": "INTEGER",
+        "block_id": "VARCHAR",
+        "shape_id": "VARCHAR",
+        "wheelchair_accessible": "INTEGER",
+        "bikes_allowed": "INTEGER",
+        "cars_allowed": "INTEGER",
+        "safe_duration_factor": "DOUBLE",
+        "safe_duration_offset": "DOUBLE",
+        "source_empty_typed_fields": "VARCHAR[]"
+      },
+      "bytes": 1129379,
+      "sha256": "8b8c8ae12445717479733b70e9daaa960e8401b17a3a365f282cea4ca5a924ef",
+      "logical_sha256": "6d066c8f4ac75a71bcc911d00dffcbf82f47958ffd34e919b3943cbf328777f3"
+    },
+    "row_exception_ledger": {
+      "file": "row_exception_ledger.parquet",
+      "role": "quarantine, duplicate lineage and retained warnings",
+      "records": 133,
+      "schema": {
+        "source_snapshot_id": "VARCHAR",
+        "source_file": "VARCHAR",
+        "source_record": "BIGINT",
+        "disposition": "VARCHAR",
+        "cleaning_rule": "VARCHAR",
+        "phase2_issue": "VARCHAR",
+        "severity": "VARCHAR",
+        "explanation": "VARCHAR",
+        "retained_source_record": "BIGINT",
+        "evidence": "JSON",
+        "source_row": "JSON"
+      },
+      "bytes": 7280,
+      "sha256": "712a740a0b851cba4b9bd8c7388b0b46653937bd022e64432f88585bce208cf0",
+      "logical_sha256": "314d9a6fdcff313355ff7ffbb7af9df067f99ec53f8f5edc7c17ffb3e3c597b2"
+    },
+    "canonical_ids": {
+      "file": "canonical_ids.parquet",
+      "role": "source-to-canonical mappings",
+      "records": 118128,
+      "schema": {
+        "entity_type": "VARCHAR",
+        "source_namespace": "VARCHAR",
+        "source_identifier": "VARCHAR",
+        "canonical_id": "VARCHAR",
+        "source_tables": "VARCHAR[]",
+        "source_snapshot_id": "VARCHAR",
+        "identity_scope": "VARCHAR",
+        "mapping_method": "VARCHAR",
+        "verification_status": "VARCHAR"
+      },
+      "bytes": 1151816,
+      "sha256": "97f31281206baabdbb064664d6d55b2f66c956e66faad438d727e7e5c804ef59",
+      "logical_sha256": "23392be351ee8aef1515ae0add10f2ae9dbb9ce71608493ce0933b65c2992b96"
+    },
+    "route_stops": {
+      "file": "route_stops.parquet",
+      "role": "verified scheduled route-stop service",
+      "records": 33985,
+      "schema": {
+        "agency_id": "VARCHAR",
+        "route_id": "VARCHAR",
+        "stop_id": "VARCHAR",
+        "canonical_agency_id": "VARCHAR",
+        "canonical_route_id": "VARCHAR",
+        "canonical_stop_id": "VARCHAR",
+        "scheduled_visits": "BIGINT",
+        "scheduled_trips": "BIGINT"
+      },
+      "bytes": 225192,
+      "sha256": "ea8266aa5530f8adab69badf0fa389bfcade37f44626051bfbe247c646328941",
+      "logical_sha256": "0cad2dceef4b83f990f199f0013b8bd99b6b46959bd6c7cbfe884144a6763333"
+    },
+    "agency_stops": {
+      "file": "agency_stops.parquet",
+      "role": "verified scheduled agency-stop service",
+      "records": 19904,
+      "schema": {
+        "agency_id": "VARCHAR",
+        "stop_id": "VARCHAR",
+        "canonical_agency_id": "VARCHAR",
+        "canonical_stop_id": "VARCHAR",
+        "serving_routes": "BIGINT",
+        "scheduled_visits": "BIGINT"
+      },
+      "bytes": 161722,
+      "sha256": "2cf4bae86c175790c6a62176ad4a15b7c111b6101bb846f226c3c95ab43ec33d",
+      "logical_sha256": "31edd42913c1d728834a1c763d4774807af2ab9f0df8690ef0ab3022082826d9"
+    },
+    "trip_selector_context": {
+      "file": "trip_selector_context.parquet",
+      "role": "trip selector context",
+      "records": 92827,
+      "schema": {
+        "trip_id": "VARCHAR",
+        "route_id": "VARCHAR",
+        "agency_id": "VARCHAR",
+        "service_id": "VARCHAR",
+        "route_type": "INTEGER",
+        "direction_id": "INTEGER",
+        "agency_timezone": "VARCHAR",
+        "first_departure_seconds": "BIGINT",
+        "frequency_defined": "BOOLEAN",
+        "canonical_trip_id": "VARCHAR"
+      },
+      "bytes": 1264708,
+      "sha256": "ad53643bebe61c6cf422dfcbc7d5f39212bb767472ff1f5ddd33991d45cdb4fe",
+      "logical_sha256": "784e212a067a0ca388d14f0daec23eb99207dd56c7a3c703001079e5fc09300b"
+    },
+    "stop_alias_candidates": {
+      "file": "stop_alias_candidates.parquet",
+      "role": "unverified external aliases",
+      "records": 20529,
+      "schema": {
+        "alias_value": "VARCHAR",
+        "alias_kind": "VARCHAR",
+        "source_stop_id": "VARCHAR",
+        "canonical_stop_id": "VARCHAR",
+        "external_resolution_status": "VARCHAR",
+        "source_record": "BIGINT"
+      },
+      "bytes": 209620,
+      "sha256": "3c550a6569f71156f3ea8ae2a8a23348f852f7cdee9bad5b358c5f6ef0fb0135",
+      "logical_sha256": "72506380766c2e52c55776564b6a2ff8b5eb6715df9a64bc658bf907a85259e4"
+    }
+  },
+  "parquet_bytes": 61576978,
+  "execution": {
+    "wall_seconds": 104.668,
+    "cpu_seconds": 151.516,
+    "peak_process_rss_mib": 902.56,
+    "sampled_temporary_working_bytes": 535736320,
+    "sampled_staging_parquet_bytes": 61576978,
+    "stage_seconds": {
+      "source_verification_seconds": 0.54,
+      "source_load_seconds": 26.856,
+      "normalization_seconds": 44.376,
+      "mapping_and_associations_seconds": 4.838,
+      "validation_seconds": 27.703,
+      "source_final_verification_seconds": 0.27
+    },
+    "duckdb_threads": 2,
+    "duckdb_memory_limit": "768MB"
+  }
+}

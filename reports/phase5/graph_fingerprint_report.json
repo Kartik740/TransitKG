@@ -1,0 +1,62 @@
+{
+  "build_id": "graph-ready-sha256-f85cdfafe998da9e7eecb6697443ebd02e45f4d43e41462db7a8a5acb82dadae",
+  "format": "transitkg-static-v1",
+  "expected_fingerprint": "675d71bd4e8bd82ffc1ec0d8951ca527928ca4376c681e40193d14f451892e66",
+  "imported_fingerprint": null,
+  "artifact_digests": {
+    "nodes/Agency.parquet": "31c717d3f58a4b6f735bc078385197aca3232a85c9de7da4d027556f843da28d",
+    "nodes/Route.parquet": "b2876cd64dc940bd4ca1d4d993c76193b1e74744dc1f3d1112d2faa84ca2dd9b",
+    "nodes/Trip.parquet": "5d59dadc1d1494cb1773fd8856ce710cae68ede741783be4a79ab122f9c3de8c",
+    "nodes/Stop.parquet": "69542d9d68f052a86d00054cfe148fa86c775222b386b9d4e748262d4da3ff73",
+    "nodes/Service.parquet": "c076c8801db60f47c2a20fd846450d411f47b4488ca34855fb218526fa985bb5",
+    "nodes/FeedSnapshot.parquet": "74f6357fd1ab355a47cc1c843fdc174cd2fab062f3692d9b9780ed516f3ad517",
+    "relationships/OPERATES.parquet": "a38f323470af36ac7c855a5eee5473e3c439b539728b46779d5c0cc12c0e2bd8",
+    "relationships/HAS_TRIP.parquet": "c559ba93a5b717cc78a44741e1ff270ef0ba4e0223b8d3d4b24bb0c8cb25ea33",
+    "relationships/RUNS_ON.parquet": "41e6cbb0e262377d443cf0fac349775155468a3d72a64f0696d7ee61353f203c",
+    "relationships/ROUTE_SERVES_STOP.parquet": "88c6e325b228244c64a47853c22aa634360496eabbfae56911a28db15b8dd72d",
+    "relationships/AGENCY_SERVES_STOP.parquet": "59ad9e384d9246fa8175da2cf8973bc1a2a25bde9956fe0dac033ab848374177",
+    "relationships/PART_OF.parquet": "00fecec464884ed029b708009695db224d4bb160a2c8aed5aaf9829fbfd89b68",
+    "relationships/TRANSFER_RULE.parquet": "750b6fd75ae04c795f86d9746cdc41aad72eba1715a517b3b09f0cac0e0c418f"
+  },
+  "first": {
+    "reused": false,
+    "execution": {
+      "wall_seconds": 11.747,
+      "cpu_seconds": 14.766,
+      "peak_rss_mib": 806.62,
+      "stages": {
+        "input_verification": 0.239,
+        "nodes": 1.014,
+        "relationships": 0.308,
+        "fingerprint": 3.548,
+        "validation": 5.832,
+        "final_input_verification": 0.282
+      },
+      "staged_files_peak_bytes": 1406381,
+      "duckdb_spill_peak_bytes": 283705344,
+      "temporary_peak_upper_bound_bytes": 285111725
+    }
+  },
+  "repeat": {
+    "reused": true,
+    "same_build_id": true,
+    "same_expected_fingerprint": true,
+    "same_artifact_logical_digests": true,
+    "execution": {
+      "wall_seconds": 10.191,
+      "cpu_seconds": 13.125,
+      "peak_rss_mib": 806.6,
+      "stages": {
+        "input_verification": 0.243,
+        "nodes": 0.868,
+        "relationships": 0.298,
+        "fingerprint": 2.961,
+        "validation": 5.255,
+        "final_input_verification": 0.253
+      },
+      "staged_files_peak_bytes": 1406381,
+      "duckdb_spill_peak_bytes": 315785216,
+      "temporary_peak_upper_bound_bytes": 317191597
+    }
+  }
+}

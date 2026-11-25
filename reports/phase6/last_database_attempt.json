@@ -1,0 +1,768 @@
+{
+  "status": "validated",
+  "started_utc": "2026-11-24T22:00:27.589872+00:00",
+  "phase": "Neo4j target and import",
+  "driver": "6.4.1",
+  "duckdb": "1.5.0",
+  "implementation": {
+    "version": "1.0.0",
+    "files": {
+      "import_static_graph.py": "7621aacbef6e36f156086ec147f344c4f45504bfcfcb6bd14956e7c1d000a07d",
+      "verify_imported_graph.py": "22d5f4c76e8027cbbdfdbb1efaecc98b3898304a3f8760f55e1608a06621d03b"
+    }
+  },
+  "configuration": {
+    "database": "transitkg-static",
+    "node_batch_size": 2000,
+    "relationship_batch_size": 2000,
+    "max_retries": 2,
+    "transaction_timeout_seconds": 180,
+    "uri": "neo4j://127.0.0.1:7687"
+  },
+  "transactions": {
+    "attempts": 0,
+    "committed": 0,
+    "retries": 0,
+    "failures": []
+  },
+  "partitions": {},
+  "test_evidence": "automated_test_report.json",
+  "inputs": {
+    "source_snapshot_id": "gtfs-sha256-d6279860e2fe203541a574ee04db5752ecad9e5e1a38b1759cc397b1b596dfa2",
+    "normalized_build_id": "normalized-sha256-5608c0d7d93b9c6200431b5c227da598d52cd0108e9e2f410e5b012b00d28052",
+    "normalized_manifest_sha256": "11969d832ae858f3e169c528bf3b1d7f3b6c351c5b6bdcf91e4e296b90300922",
+    "schema_version": "1.0.0",
+    "schema_sha256": "66c3e2d5524fcafb1608c9eb8c99125f55760781c789b2b4e1188d9360cb43db",
+    "canonical_contract_version": "1.0.0",
+    "canonical_contract_sha256": "50cdc801edd1d4518a9345f7717ef8cc82e9588778ae2e23210f13be5b97193f",
+    "transformation_contract_version": "1.0.0",
+    "transformation_contract_sha256": "93e9b37c5c73931b48cfec23a7be2f15260309f1ab9598263e51eaf452eb354a",
+    "reference_sha256": "9c1d9c7d9f703a8b51e02959baa325cac8f3a8549a06b5d8d079a1dc258cbd7b",
+    "timetable_sql_sha256": "26a8eba623220932081582ae0eb6cdfb4f8eb517a196497fcab98b0d6b462dee",
+    "graph_ready_build_id": "graph-ready-sha256-f85cdfafe998da9e7eecb6697443ebd02e45f4d43e41462db7a8a5acb82dadae",
+    "graph_ready_manifest_sha256": "8e7d1ad525abe21ab2ceff93061013f704835a23988cf02615efaa4def85d7df",
+    "import_contract_sha256": "6a7aadc9d83f92f3fe66fb09857484d7283757f88555f69e248694a7a88692fe"
+  },
+  "input_counts": {
+    "nodes": {
+      "Agency": 41,
+      "Route": 665,
+      "Trip": 92827,
+      "Stop": 21664,
+      "Service": 485,
+      "FeedSnapshot": 1
+    },
+    "relationships": {
+      "OPERATES": 665,
+      "HAS_TRIP": 92827,
+      "RUNS_ON": 92827,
+      "ROUTE_SERVES_STOP": 33985,
+      "AGENCY_SERVES_STOP": 19904,
+      "PART_OF": 2222,
+      "TRANSFER_RULE": 61
+    }
+  },
+  "expected_static_graph_fingerprint": "675d71bd4e8bd82ffc1ec0d8951ca527928ca4376c681e40193d14f451892e66",
+  "offline_validation": {
+    "raw_files_verified": 27,
+    "normalized_files_verified": 32,
+    "duplicate_identities": 0,
+    "dangling_endpoints": 0,
+    "shared_stops": 189,
+    "transfers": [
+      {
+        "transfer_type": 0,
+        "n": 3,
+        "from_route": 0,
+        "to_route": 0,
+        "from_trip": 0,
+        "to_trip": 0
+      },
+      {
+        "transfer_type": 1,
+        "n": 10,
+        "from_route": 0,
+        "to_route": 0,
+        "from_trip": 0,
+        "to_trip": 0
+      },
+      {
+        "transfer_type": 2,
+        "n": 48,
+        "from_route": 44,
+        "to_route": 44,
+        "from_trip": 0,
+        "to_trip": 0
+      }
+    ],
+    "ac_selector": {
+      "status": "EXACT_MATCH",
+      "55660": [
+        {
+          "stop_id": "55660",
+          "canonical_id": "511-sf-bay-regional:stop:55660",
+          "stop_name": "San Pablo Av & W Grand Av",
+          "route_id": "AC:72",
+          "trips": 126
+        },
+        {
+          "stop_id": "55660",
+          "canonical_id": "511-sf-bay-regional:stop:55660",
+          "stop_name": "San Pablo Av & W Grand Av",
+          "route_id": "AC:72L",
+          "trips": 81
+        },
+        {
+          "stop_id": "55660",
+          "canonical_id": "511-sf-bay-regional:stop:55660",
+          "stop_name": "San Pablo Av & W Grand Av",
+          "route_id": "AC:72M",
+          "trips": 123
+        },
+        {
+          "stop_id": "55660",
+          "canonical_id": "511-sf-bay-regional:stop:55660",
+          "stop_name": "San Pablo Av & W Grand Av",
+          "route_id": "AC:802",
+          "trips": 15
+        }
+      ],
+      "52227": [
+        {
+          "stop_id": "52227",
+          "canonical_id": "511-sf-bay-regional:stop:52227",
+          "stop_name": "San Pablo Av & W Grand Av",
+          "route_id": "AC:72",
+          "trips": 121
+        },
+        {
+          "stop_id": "52227",
+          "canonical_id": "511-sf-bay-regional:stop:52227",
+          "stop_name": "San Pablo Av & W Grand Av",
+          "route_id": "AC:72L",
+          "trips": 80
+        },
+        {
+          "stop_id": "52227",
+          "canonical_id": "511-sf-bay-regional:stop:52227",
+          "stop_name": "San Pablo Av & W Grand Av",
+          "route_id": "AC:72M",
+          "trips": 123
+        },
+        {
+          "stop_id": "52227",
+          "canonical_id": "511-sf-bay-regional:stop:52227",
+          "stop_name": "San Pablo Av & W Grand Av",
+          "route_id": "AC:802",
+          "trips": 15
+        }
+      ],
+      "dated_service_day": "2026-11-25",
+      "dated_trips": 112,
+      "name_only": "AMBIGUOUS",
+      "wrong_agency": 0,
+      "wrong_direction": 0
+    },
+    "graph_ready_files_verified": 13,
+    "parquet_fingerprint": "675d71bd4e8bd82ffc1ec0d8951ca527928ca4376c681e40193d14f451892e66"
+  },
+  "external": {
+    "normalized_path": "data/normalized/build-5608c0d7d93b9c6200431b5c",
+    "join": "Typed canonical_ids mapping between canonical_id and exact source_identifier",
+    "artifacts": [
+      "agency",
+      "agency_stops",
+      "areas",
+      "attributions",
+      "calendar",
+      "calendar_attributes",
+      "calendar_dates",
+      "canonical_ids",
+      "directions",
+      "fare_leg_join_rules",
+      "fare_leg_rules",
+      "fare_media",
+      "fare_products",
+      "fare_transfer_rules",
+      "feed_info",
+      "levels",
+      "mtc_feed_versions",
+      "pathways",
+      "rider_categories",
+      "route_attributes",
+      "route_stops",
+      "routes",
+      "row_exception_ledger",
+      "shapes",
+      "stop_alias_candidates",
+      "stop_areas",
+      "stop_times",
+      "stops",
+      "timeframes",
+      "transfers",
+      "trip_selector_context",
+      "trips"
+    ],
+    "verification": {
+      "timetable": {
+        "visits": 3185115,
+        "arrivals": 100912,
+        "departures": 100948,
+        "flex": 0
+      },
+      "external_temporal_and_shapes": {
+        "calendar_end_2099": 5,
+        "exceptions": 5706,
+        "shape_points": 1340496
+      },
+      "canonical_mappings": {
+        "route": 665,
+        "trip": 92827,
+        "shape": 2446,
+        "agency": 41,
+        "stop": 21664,
+        "service": 485
+      },
+      "suffix_collision_groups": 364,
+      "exception_ledger": [
+        {
+          "source_file": "attributions.txt",
+          "disposition": "DEDUPLICATED",
+          "records": 40
+        },
+        {
+          "source_file": "directions.txt",
+          "disposition": "QUARANTINED",
+          "records": 2
+        },
+        {
+          "source_file": "fare_transfer_rules.txt",
+          "disposition": "QUARANTINED",
+          "records": 68
+        },
+        {
+          "source_file": "route_attributes.txt",
+          "disposition": "DEDUPLICATED",
+          "records": 2
+        },
+        {
+          "source_file": "shapes.txt",
+          "disposition": "FLAGGED",
+          "records": 21
+        }
+      ]
+    }
+  },
+  "input_seconds": 12.868,
+  "reader_isolation": "Dedicated database and unpublished manifest until passing. Reader access is operationally withheld; server permissions are unchanged.",
+  "neo4j": {
+    "components": [
+      {
+        "name": "Neo4j Kernel",
+        "versions": [
+          "2026.10.2"
+        ],
+        "edition": "enterprise"
+      },
+      {
+        "name": "Cypher",
+        "versions": [
+          "5",
+          "25"
+        ],
+        "edition": ""
+      }
+    ],
+    "account": {
+      "roles": [
+        "admin",
+        "PUBLIC"
+      ],
+      "password_change_required": false
+    },
+    "database": {
+      "name": "transitkg-static",
+      "type": "standard",
+      "currentStatus": "online",
+      "databaseID": "FEC14225142CED808735D9B68454D6C9ABE2B5CCBD95B8B5074B0331DA905445",
+      "access": "read-write",
+      "default": false
+    }
+  },
+  "target_contents_before": {
+    "nodes": 115683,
+    "relationships": 242491,
+    "snapshots": [
+      "normalized-sha256-5608c0d7d93b9c6200431b5c227da598d52cd0108e9e2f410e5b012b00d28052"
+    ]
+  },
+  "target_identity": {
+    "id": "FEC14225142CED808735D9B68454D6C9ABE2B5CCBD95B8B5074B0331DA905445",
+    "name": "transitkg-static",
+    "creationDate": "2026-11-24T21:55:04.565Z"
+  },
+  "mode": "validated matching build / no-op",
+  "schema": {
+    "constraints": [
+      {
+        "id": 3,
+        "name": "uq_Agency",
+        "type": "UNIQUENESS",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Agency"
+        ],
+        "properties": [
+          "canonical_id"
+        ],
+        "ownedIndex": "uq_Agency",
+        "propertyType": null
+      },
+      {
+        "id": 13,
+        "name": "uq_FeedSnapshot",
+        "type": "UNIQUENESS",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "FeedSnapshot"
+        ],
+        "properties": [
+          "normalized_build_id"
+        ],
+        "ownedIndex": "uq_FeedSnapshot",
+        "propertyType": null
+      },
+      {
+        "id": 5,
+        "name": "uq_Route",
+        "type": "UNIQUENESS",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Route"
+        ],
+        "properties": [
+          "canonical_id"
+        ],
+        "ownedIndex": "uq_Route",
+        "propertyType": null
+      },
+      {
+        "id": 11,
+        "name": "uq_Service",
+        "type": "UNIQUENESS",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Service"
+        ],
+        "properties": [
+          "canonical_id"
+        ],
+        "ownedIndex": "uq_Service",
+        "propertyType": null
+      },
+      {
+        "id": 9,
+        "name": "uq_Stop",
+        "type": "UNIQUENESS",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Stop"
+        ],
+        "properties": [
+          "canonical_id"
+        ],
+        "ownedIndex": "uq_Stop",
+        "propertyType": null
+      },
+      {
+        "id": 7,
+        "name": "uq_Trip",
+        "type": "UNIQUENESS",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Trip"
+        ],
+        "properties": [
+          "canonical_id"
+        ],
+        "ownedIndex": "uq_Trip",
+        "propertyType": null
+      }
+    ],
+    "indexes": [
+      {
+        "id": 1,
+        "name": "index_1b9dcc97",
+        "state": "ONLINE",
+        "populationPercent": 100.0,
+        "type": "LOOKUP",
+        "entityType": "RELATIONSHIP",
+        "labelsOrTypes": null,
+        "properties": null,
+        "indexProvider": "token-lookup-1.0",
+        "owningConstraint": null,
+        "lastRead": "2026-11-24T21:59:43.055000000+00:00",
+        "readCount": 14
+      },
+      {
+        "id": 0,
+        "name": "index_460996c0",
+        "state": "ONLINE",
+        "populationPercent": 100.0,
+        "type": "LOOKUP",
+        "entityType": "NODE",
+        "labelsOrTypes": null,
+        "properties": null,
+        "indexProvider": "token-lookup-1.0",
+        "owningConstraint": null,
+        "lastRead": "2026-11-24T21:59:45.558000000+00:00",
+        "readCount": 16
+      },
+      {
+        "id": 14,
+        "name": "ix_Agency_source_id",
+        "state": "ONLINE",
+        "populationPercent": 100.0,
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Agency"
+        ],
+        "properties": [
+          "source_id"
+        ],
+        "indexProvider": "range-1.0",
+        "owningConstraint": null,
+        "lastRead": null,
+        "readCount": 0
+      },
+      {
+        "id": 20,
+        "name": "ix_Route_route_short_name",
+        "state": "ONLINE",
+        "populationPercent": 100.0,
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Route"
+        ],
+        "properties": [
+          "route_short_name"
+        ],
+        "indexProvider": "range-1.0",
+        "owningConstraint": null,
+        "lastRead": null,
+        "readCount": 0
+      },
+      {
+        "id": 15,
+        "name": "ix_Route_source_id",
+        "state": "ONLINE",
+        "populationPercent": 100.0,
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Route"
+        ],
+        "properties": [
+          "source_id"
+        ],
+        "indexProvider": "range-1.0",
+        "owningConstraint": null,
+        "lastRead": "2026-11-24T21:59:45.339000000+00:00",
+        "readCount": 4
+      },
+      {
+        "id": 18,
+        "name": "ix_Service_source_id",
+        "state": "ONLINE",
+        "populationPercent": 100.0,
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Service"
+        ],
+        "properties": [
+          "source_id"
+        ],
+        "indexProvider": "range-1.0",
+        "owningConstraint": null,
+        "lastRead": null,
+        "readCount": 0
+      },
+      {
+        "id": 17,
+        "name": "ix_Stop_source_id",
+        "state": "ONLINE",
+        "populationPercent": 100.0,
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Stop"
+        ],
+        "properties": [
+          "source_id"
+        ],
+        "indexProvider": "range-1.0",
+        "owningConstraint": null,
+        "lastRead": "2026-11-24T21:59:47.075000000+00:00",
+        "readCount": 11
+      },
+      {
+        "id": 19,
+        "name": "ix_Stop_stop_name",
+        "state": "ONLINE",
+        "populationPercent": 100.0,
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Stop"
+        ],
+        "properties": [
+          "stop_name"
+        ],
+        "indexProvider": "range-1.0",
+        "owningConstraint": null,
+        "lastRead": "2026-11-24T21:59:47.067000000+00:00",
+        "readCount": 2
+      },
+      {
+        "id": 16,
+        "name": "ix_Trip_source_id",
+        "state": "ONLINE",
+        "populationPercent": 100.0,
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Trip"
+        ],
+        "properties": [
+          "source_id"
+        ],
+        "indexProvider": "range-1.0",
+        "owningConstraint": null,
+        "lastRead": "2026-11-24T21:59:44.300000000+00:00",
+        "readCount": 2
+      },
+      {
+        "id": 2,
+        "name": "uq_Agency",
+        "state": "ONLINE",
+        "populationPercent": 100.0,
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Agency"
+        ],
+        "properties": [
+          "canonical_id"
+        ],
+        "indexProvider": "range-1.0",
+        "owningConstraint": "uq_Agency",
+        "lastRead": "2026-11-24T21:57:48.157000000+00:00",
+        "readCount": 41220
+      },
+      {
+        "id": 12,
+        "name": "uq_FeedSnapshot",
+        "state": "ONLINE",
+        "populationPercent": 100.0,
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "FeedSnapshot"
+        ],
+        "properties": [
+          "normalized_build_id"
+        ],
+        "indexProvider": "range-1.0",
+        "owningConstraint": "uq_FeedSnapshot",
+        "lastRead": "2026-11-24T21:58:45.894000000+00:00",
+        "readCount": 2
+      },
+      {
+        "id": 4,
+        "name": "uq_Route",
+        "state": "ONLINE",
+        "populationPercent": 100.0,
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Route"
+        ],
+        "properties": [
+          "canonical_id"
+        ],
+        "indexProvider": "range-1.0",
+        "owningConstraint": "uq_Route",
+        "lastRead": "2026-11-24T21:57:42.812000000+00:00",
+        "readCount": 256284
+      },
+      {
+        "id": 10,
+        "name": "uq_Service",
+        "state": "ONLINE",
+        "populationPercent": 100.0,
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Service"
+        ],
+        "properties": [
+          "canonical_id"
+        ],
+        "indexProvider": "range-1.0",
+        "owningConstraint": "uq_Service",
+        "lastRead": "2026-11-24T21:57:33.195000000+00:00",
+        "readCount": 186624
+      },
+      {
+        "id": 8,
+        "name": "uq_Stop",
+        "state": "ONLINE",
+        "populationPercent": 100.0,
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Stop"
+        ],
+        "properties": [
+          "canonical_id"
+        ],
+        "indexProvider": "range-1.0",
+        "owningConstraint": "uq_Stop",
+        "lastRead": "2026-11-24T21:57:51.781000000+00:00",
+        "readCount": 160238
+      },
+      {
+        "id": 6,
+        "name": "uq_Trip",
+        "state": "ONLINE",
+        "populationPercent": 100.0,
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Trip"
+        ],
+        "properties": [
+          "canonical_id"
+        ],
+        "indexProvider": "range-1.0",
+        "owningConstraint": "uq_Trip",
+        "lastRead": "2026-11-24T21:57:33.193000000+00:00",
+        "readCount": 556962
+      }
+    ]
+  },
+  "verification": {
+    "counts": {
+      "nodes": {
+        "Agency": 41,
+        "FeedSnapshot": 1,
+        "Route": 665,
+        "Service": 485,
+        "Stop": 21664,
+        "Trip": 92827
+      },
+      "relationships": {
+        "AGENCY_SERVES_STOP": 19904,
+        "HAS_TRIP": 92827,
+        "OPERATES": 665,
+        "PART_OF": 2222,
+        "ROUTE_SERVES_STOP": 33985,
+        "RUNS_ON": 92827,
+        "TRANSFER_RULE": 61
+      }
+    },
+    "imported_fingerprint": "675d71bd4e8bd82ffc1ec0d8951ca527928ca4376c681e40193d14f451892e66",
+    "partition_digests": {
+      "Agency": "31c717d3f58a4b6f735bc078385197aca3232a85c9de7da4d027556f843da28d",
+      "FeedSnapshot": "74f6357fd1ab355a47cc1c843fdc174cd2fab062f3692d9b9780ed516f3ad517",
+      "Route": "b2876cd64dc940bd4ca1d4d993c76193b1e74744dc1f3d1112d2faa84ca2dd9b",
+      "Service": "c076c8801db60f47c2a20fd846450d411f47b4488ca34855fb218526fa985bb5",
+      "Stop": "69542d9d68f052a86d00054cfe148fa86c775222b386b9d4e748262d4da3ff73",
+      "Trip": "5d59dadc1d1494cb1773fd8856ce710cae68ede741783be4a79ab122f9c3de8c",
+      "AGENCY_SERVES_STOP": "59ad9e384d9246fa8175da2cf8973bc1a2a25bde9956fe0dac033ab848374177",
+      "HAS_TRIP": "c559ba93a5b717cc78a44741e1ff270ef0ba4e0223b8d3d4b24bb0c8cb25ea33",
+      "OPERATES": "a38f323470af36ac7c855a5eee5473e3c439b539728b46779d5c0cc12c0e2bd8",
+      "PART_OF": "00fecec464884ed029b708009695db224d4bb160a2c8aed5aaf9829fbfd89b68",
+      "ROUTE_SERVES_STOP": "88c6e325b228244c64a47853c22aa634360496eabbfae56911a28db15b8dd72d",
+      "RUNS_ON": "41e6cbb0e262377d443cf0fac349775155468a3d72a64f0696d7ee61353f203c",
+      "TRANSFER_RULE": "750b6fd75ae04c795f86d9746cdc41aad72eba1715a517b3b09f0cac0e0c418f"
+    },
+    "duplicate_identities": 0,
+    "incorrect_endpoints": 0,
+    "seconds": 56.639,
+    "competencies": {
+      "cypher": {
+        "G1": 1,
+        "G2": 2,
+        "G3": 1,
+        "G4": 1,
+        "G5": 1,
+        "G6": 4,
+        "G7": 152,
+        "G8": 247,
+        "G9": 1,
+        "G10": 2,
+        "G11": 1,
+        "G12": 189,
+        "G13": 126,
+        "G14": 1
+      },
+      "shared_stops": 189,
+      "sequence_visits": 77,
+      "active_services": 125,
+      "ac_selector": {
+        "status": "EXACT_MATCH",
+        "stop_ids": {
+          "52227": "511-sf-bay-regional:stop:52227",
+          "55660": "511-sf-bay-regional:stop:55660"
+        },
+        "routes": [
+          [
+            "AC:72",
+            126,
+            39
+          ],
+          [
+            "AC:72L",
+            81,
+            27
+          ],
+          [
+            "AC:72M",
+            123,
+            41
+          ],
+          [
+            "AC:802",
+            15,
+            5
+          ]
+        ],
+        "visiting_trips": 345,
+        "dated_visiting_trips": 112,
+        "neighbor_visiting_trips": 339,
+        "service_date": "2026-11-25",
+        "wrong_agency_matches": 0,
+        "wrong_direction_matches": 0,
+        "name_only": "AMBIGUOUS"
+      }
+    },
+    "competency_seconds": 0.892
+  },
+  "storage": {
+    "status": "measured",
+    "method": "read-only local file lengths, excludes transaction log directory",
+    "store_including_indexes_bytes": 1443407,
+    "schema_index_bytes": 614400
+  },
+  "input_immutability_rechecked": true,
+  "ended_utc": "2026-11-24T22:01:38.827359+00:00",
+  "performance": {
+    "wall_seconds": 71.238,
+    "client_cpu_seconds": 71.766,
+    "client_peak_rss_mib": 471.32
+  }
+}

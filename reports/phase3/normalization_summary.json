@@ -1,0 +1,750 @@
+{
+  "totals": {
+    "input_records": 4700080,
+    "accepted_normalized": 4697969,
+    "preserved_extension": 1999,
+    "quarantined": 70,
+    "deduplicated": 42,
+    "flagged_retained": 21,
+    "records_with_values_retyped": 4661976,
+    "source_values_rewritten": 0,
+    "published_source_records": 4699968,
+    "unaccounted": 0
+  },
+  "source_tables": {
+    "agency": {
+      "source_file": "agency.txt",
+      "handling": "core canonical table",
+      "input_records": 41,
+      "accepted_normalized": 41,
+      "preserved_extension": 0,
+      "quarantined": 0,
+      "deduplicated": 0,
+      "flagged_retained": 0,
+      "records_with_values_retyped": 0,
+      "source_values_rewritten": 0,
+      "preserved_untyped_extension_fields": [],
+      "typed_fields": {
+        "cemv_support": "INTEGER"
+      }
+    },
+    "areas": {
+      "source_file": "areas.txt",
+      "handling": "supporting normalized table",
+      "input_records": 678,
+      "accepted_normalized": 678,
+      "preserved_extension": 0,
+      "quarantined": 0,
+      "deduplicated": 0,
+      "flagged_retained": 0,
+      "records_with_values_retyped": 0,
+      "source_values_rewritten": 0,
+      "preserved_untyped_extension_fields": [],
+      "typed_fields": {}
+    },
+    "attributions": {
+      "source_file": "attributions.txt",
+      "handling": "supporting normalized table",
+      "input_records": 41,
+      "accepted_normalized": 1,
+      "preserved_extension": 0,
+      "quarantined": 0,
+      "deduplicated": 40,
+      "flagged_retained": 0,
+      "records_with_values_retyped": 1,
+      "source_values_rewritten": 0,
+      "preserved_untyped_extension_fields": [],
+      "typed_fields": {
+        "is_producer": "INTEGER",
+        "is_operator": "INTEGER",
+        "is_authority": "INTEGER"
+      }
+    },
+    "calendar": {
+      "source_file": "calendar.txt",
+      "handling": "core canonical table",
+      "input_records": 485,
+      "accepted_normalized": 485,
+      "preserved_extension": 0,
+      "quarantined": 0,
+      "deduplicated": 0,
+      "flagged_retained": 0,
+      "records_with_values_retyped": 485,
+      "source_values_rewritten": 0,
+      "preserved_untyped_extension_fields": [],
+      "typed_fields": {
+        "monday": "INTEGER",
+        "tuesday": "INTEGER",
+        "wednesday": "INTEGER",
+        "thursday": "INTEGER",
+        "friday": "INTEGER",
+        "saturday": "INTEGER",
+        "sunday": "INTEGER",
+        "start_date": "DATE",
+        "end_date": "DATE"
+      }
+    },
+    "calendar_attributes": {
+      "source_file": "calendar_attributes.txt",
+      "handling": "preserved extension",
+      "input_records": 449,
+      "accepted_normalized": 0,
+      "preserved_extension": 449,
+      "quarantined": 0,
+      "deduplicated": 0,
+      "flagged_retained": 0,
+      "records_with_values_retyped": 0,
+      "source_values_rewritten": 0,
+      "preserved_untyped_extension_fields": [],
+      "typed_fields": {}
+    },
+    "calendar_dates": {
+      "source_file": "calendar_dates.txt",
+      "handling": "core canonical table",
+      "input_records": 5706,
+      "accepted_normalized": 5706,
+      "preserved_extension": 0,
+      "quarantined": 0,
+      "deduplicated": 0,
+      "flagged_retained": 0,
+      "records_with_values_retyped": 5706,
+      "source_values_rewritten": 0,
+      "preserved_untyped_extension_fields": [],
+      "typed_fields": {
+        "date": "DATE",
+        "exception_type": "INTEGER"
+      }
+    },
+    "directions": {
+      "source_file": "directions.txt",
+      "handling": "preserved extension",
+      "input_records": 1184,
+      "accepted_normalized": 0,
+      "preserved_extension": 1182,
+      "quarantined": 2,
+      "deduplicated": 0,
+      "flagged_retained": 0,
+      "records_with_values_retyped": 1182,
+      "source_values_rewritten": 0,
+      "preserved_untyped_extension_fields": [],
+      "typed_fields": {
+        "direction_id": "INTEGER"
+      }
+    },
+    "fare_leg_join_rules": {
+      "source_file": "fare_leg_join_rules.txt",
+      "handling": "supporting normalized table",
+      "input_records": 5,
+      "accepted_normalized": 5,
+      "preserved_extension": 0,
+      "quarantined": 0,
+      "deduplicated": 0,
+      "flagged_retained": 0,
+      "records_with_values_retyped": 0,
+      "source_values_rewritten": 0,
+      "preserved_untyped_extension_fields": [],
+      "typed_fields": {}
+    },
+    "fare_leg_rules": {
+      "source_file": "fare_leg_rules.txt",
+      "handling": "supporting normalized table",
+      "input_records": 3610,
+      "accepted_normalized": 3610,
+      "preserved_extension": 0,
+      "quarantined": 0,
+      "deduplicated": 0,
+      "flagged_retained": 0,
+      "records_with_values_retyped": 0,
+      "source_values_rewritten": 0,
+      "preserved_untyped_extension_fields": [
+        "transfer_only"
+      ],
+      "typed_fields": {
+        "rule_priority": "BIGINT"
+      }
+    },
+    "fare_media": {
+      "source_file": "fare_media.txt",
+      "handling": "supporting normalized table",
+      "input_records": 7,
+      "accepted_normalized": 7,
+      "preserved_extension": 0,
+      "quarantined": 0,
+      "deduplicated": 0,
+      "flagged_retained": 0,
+      "records_with_values_retyped": 7,
+      "source_values_rewritten": 0,
+      "preserved_untyped_extension_fields": [],
+      "typed_fields": {
+        "fare_media_type": "INTEGER"
+      }
+    },
+    "fare_products": {
+      "source_file": "fare_products.txt",
+      "handling": "supporting normalized table",
+      "input_records": 11545,
+      "accepted_normalized": 11545,
+      "preserved_extension": 0,
+      "quarantined": 0,
+      "deduplicated": 0,
+      "flagged_retained": 0,
+      "records_with_values_retyped": 11545,
+      "source_values_rewritten": 0,
+      "preserved_untyped_extension_fields": [
+        "duration_amount",
+        "duration_start",
+        "duration_type",
+        "duration_unit"
+      ],
+      "typed_fields": {
+        "amount": "DECIMAL(30,12)"
+      }
+    },
+    "fare_transfer_rules": {
+      "source_file": "fare_transfer_rules.txt",
+      "handling": "supporting normalized table",
+      "input_records": 228,
+      "accepted_normalized": 160,
+      "preserved_extension": 0,
+      "quarantined": 68,
+      "deduplicated": 0,
+      "flagged_retained": 0,
+      "records_with_values_retyped": 160,
+      "source_values_rewritten": 0,
+      "preserved_untyped_extension_fields": [
+        "filter_fare_product_id"
+      ],
+      "typed_fields": {
+        "transfer_count": "BIGINT",
+        "duration_limit": "BIGINT",
+        "duration_limit_type": "INTEGER",
+        "fare_transfer_type": "INTEGER"
+      }
+    },
+    "feed_info": {
+      "source_file": "feed_info.txt",
+      "handling": "supporting normalized table",
+      "input_records": 1,
+      "accepted_normalized": 1,
+      "preserved_extension": 0,
+      "quarantined": 0,
+      "deduplicated": 0,
+      "flagged_retained": 0,
+      "records_with_values_retyped": 0,
+      "source_values_rewritten": 0,
+      "preserved_untyped_extension_fields": [],
+      "typed_fields": {
+        "feed_start_date": "DATE",
+        "feed_end_date": "DATE"
+      }
+    },
+    "levels": {
+      "source_file": "levels.txt",
+      "handling": "supporting normalized table",
+      "input_records": 92,
+      "accepted_normalized": 92,
+      "preserved_extension": 0,
+      "quarantined": 0,
+      "deduplicated": 0,
+      "flagged_retained": 0,
+      "records_with_values_retyped": 92,
+      "source_values_rewritten": 0,
+      "preserved_untyped_extension_fields": [],
+      "typed_fields": {
+        "level_index": "DOUBLE"
+      }
+    },
+    "mtc_feed_versions": {
+      "source_file": "mtc_feed_versions.txt",
+      "handling": "preserved extension",
+      "input_records": 41,
+      "accepted_normalized": 0,
+      "preserved_extension": 41,
+      "quarantined": 0,
+      "deduplicated": 0,
+      "flagged_retained": 0,
+      "records_with_values_retyped": 0,
+      "source_values_rewritten": 0,
+      "preserved_untyped_extension_fields": [
+        "agency_id",
+        "feed_end_date",
+        "feed_start_date",
+        "feed_version",
+        "sha1"
+      ],
+      "typed_fields": {}
+    },
+    "pathways": {
+      "source_file": "pathways.txt",
+      "handling": "supporting normalized table",
+      "input_records": 1632,
+      "accepted_normalized": 1632,
+      "preserved_extension": 0,
+      "quarantined": 0,
+      "deduplicated": 0,
+      "flagged_retained": 0,
+      "records_with_values_retyped": 1632,
+      "source_values_rewritten": 0,
+      "preserved_untyped_extension_fields": [],
+      "typed_fields": {
+        "pathway_mode": "INTEGER",
+        "is_bidirectional": "INTEGER",
+        "length": "DOUBLE",
+        "traversal_time": "BIGINT",
+        "min_width": "DOUBLE",
+        "max_slope": "DOUBLE",
+        "stair_count": "BIGINT"
+      }
+    },
+    "rider_categories": {
+      "source_file": "rider_categories.txt",
+      "handling": "supporting normalized table",
+      "input_records": 11,
+      "accepted_normalized": 11,
+      "preserved_extension": 0,
+      "quarantined": 0,
+      "deduplicated": 0,
+      "flagged_retained": 0,
+      "records_with_values_retyped": 11,
+      "source_values_rewritten": 0,
+      "preserved_untyped_extension_fields": [
+        "max_age",
+        "min_age"
+      ],
+      "typed_fields": {
+        "is_default_fare_category": "INTEGER"
+      }
+    },
+    "route_attributes": {
+      "source_file": "route_attributes.txt",
+      "handling": "preserved extension",
+      "input_records": 329,
+      "accepted_normalized": 0,
+      "preserved_extension": 327,
+      "quarantined": 0,
+      "deduplicated": 2,
+      "flagged_retained": 0,
+      "records_with_values_retyped": 327,
+      "source_values_rewritten": 0,
+      "preserved_untyped_extension_fields": [],
+      "typed_fields": {
+        "category": "BIGINT",
+        "subcategory": "BIGINT",
+        "running_way": "BIGINT"
+      }
+    },
+    "routes": {
+      "source_file": "routes.txt",
+      "handling": "core canonical table",
+      "input_records": 665,
+      "accepted_normalized": 665,
+      "preserved_extension": 0,
+      "quarantined": 0,
+      "deduplicated": 0,
+      "flagged_retained": 0,
+      "records_with_values_retyped": 665,
+      "source_values_rewritten": 0,
+      "preserved_untyped_extension_fields": [
+        "as_route"
+      ],
+      "typed_fields": {
+        "route_type": "INTEGER",
+        "route_sort_order": "BIGINT",
+        "continuous_pickup": "INTEGER",
+        "continuous_drop_off": "INTEGER",
+        "cemv_support": "INTEGER"
+      }
+    },
+    "shapes": {
+      "source_file": "shapes.txt",
+      "handling": "core canonical table",
+      "input_records": 1340496,
+      "accepted_normalized": 1340496,
+      "preserved_extension": 0,
+      "quarantined": 0,
+      "deduplicated": 0,
+      "flagged_retained": 21,
+      "records_with_values_retyped": 1340496,
+      "source_values_rewritten": 0,
+      "preserved_untyped_extension_fields": [],
+      "typed_fields": {
+        "shape_pt_lat": "DOUBLE",
+        "shape_pt_lon": "DOUBLE",
+        "shape_pt_sequence": "BIGINT",
+        "shape_dist_traveled": "DOUBLE"
+      }
+    },
+    "stop_areas": {
+      "source_file": "stop_areas.txt",
+      "handling": "supporting normalized table",
+      "input_records": 33164,
+      "accepted_normalized": 33164,
+      "preserved_extension": 0,
+      "quarantined": 0,
+      "deduplicated": 0,
+      "flagged_retained": 0,
+      "records_with_values_retyped": 0,
+      "source_values_rewritten": 0,
+      "preserved_untyped_extension_fields": [],
+      "typed_fields": {}
+    },
+    "stop_times": {
+      "source_file": "stop_times.txt",
+      "handling": "core canonical table",
+      "input_records": 3185115,
+      "accepted_normalized": 3185115,
+      "preserved_extension": 0,
+      "quarantined": 0,
+      "deduplicated": 0,
+      "flagged_retained": 0,
+      "records_with_values_retyped": 3185115,
+      "source_values_rewritten": 0,
+      "preserved_untyped_extension_fields": [
+        "mean_duration_factor",
+        "mean_duration_offset",
+        "safe_duration_factor",
+        "safe_duration_offset"
+      ],
+      "typed_fields": {
+        "stop_sequence": "BIGINT",
+        "arrival_time_seconds": "BIGINT",
+        "departure_time_seconds": "BIGINT",
+        "pickup_type": "INTEGER",
+        "drop_off_type": "INTEGER",
+        "continuous_pickup": "INTEGER",
+        "continuous_drop_off": "INTEGER",
+        "shape_dist_traveled": "DOUBLE",
+        "timepoint": "INTEGER",
+        "start_pickup_drop_off_window_seconds": "BIGINT",
+        "end_pickup_drop_off_window_seconds": "BIGINT"
+      }
+    },
+    "stops": {
+      "source_file": "stops.txt",
+      "handling": "core canonical table",
+      "input_records": 21664,
+      "accepted_normalized": 21664,
+      "preserved_extension": 0,
+      "quarantined": 0,
+      "deduplicated": 0,
+      "flagged_retained": 0,
+      "records_with_values_retyped": 21664,
+      "source_values_rewritten": 0,
+      "preserved_untyped_extension_fields": [],
+      "typed_fields": {
+        "stop_lat": "DOUBLE",
+        "stop_lon": "DOUBLE",
+        "location_type": "INTEGER",
+        "wheelchair_boarding": "INTEGER",
+        "stop_access": "INTEGER"
+      }
+    },
+    "timeframes": {
+      "source_file": "timeframes.txt",
+      "handling": "supporting normalized table",
+      "input_records": 3,
+      "accepted_normalized": 3,
+      "preserved_extension": 0,
+      "quarantined": 0,
+      "deduplicated": 0,
+      "flagged_retained": 0,
+      "records_with_values_retyped": 0,
+      "source_values_rewritten": 0,
+      "preserved_untyped_extension_fields": [],
+      "typed_fields": {
+        "start_time_seconds": "BIGINT",
+        "end_time_seconds": "BIGINT"
+      }
+    },
+    "transfers": {
+      "source_file": "transfers.txt",
+      "handling": "supporting normalized table",
+      "input_records": 61,
+      "accepted_normalized": 61,
+      "preserved_extension": 0,
+      "quarantined": 0,
+      "deduplicated": 0,
+      "flagged_retained": 0,
+      "records_with_values_retyped": 61,
+      "source_values_rewritten": 0,
+      "preserved_untyped_extension_fields": [],
+      "typed_fields": {
+        "transfer_type": "INTEGER",
+        "min_transfer_time": "BIGINT"
+      }
+    },
+    "trips": {
+      "source_file": "trips.txt",
+      "handling": "core canonical table",
+      "input_records": 92827,
+      "accepted_normalized": 92827,
+      "preserved_extension": 0,
+      "quarantined": 0,
+      "deduplicated": 0,
+      "flagged_retained": 0,
+      "records_with_values_retyped": 92827,
+      "source_values_rewritten": 0,
+      "preserved_untyped_extension_fields": [],
+      "typed_fields": {
+        "direction_id": "INTEGER",
+        "wheelchair_accessible": "INTEGER",
+        "bikes_allowed": "INTEGER",
+        "cars_allowed": "INTEGER",
+        "safe_duration_factor": "DOUBLE",
+        "safe_duration_offset": "DOUBLE"
+      }
+    }
+  },
+  "medium_findings": [
+    {
+      "id": "P3-ATTRIBUTION",
+      "phase2_issue": "P2-011",
+      "action": "DEDUPLICATE",
+      "table": "attributions.txt",
+      "fields": "All source columns, limited to dataset-wide rows with no attribution ID",
+      "evidence": "41 identical rows with one producer role and no agency, route, trip or attribution identifier.",
+      "requirement": "An attribution without an agency, route or trip applies to the whole dataset. attribution_id is optional.",
+      "transformation": "Keep one exact dataset-wide row. Link each redundant source record to the retained ordinal.",
+      "expected_effect": "Remove 40 exact copies. Keep all populated IDs, roles and provenance.",
+      "reversible": "Yes, from the exception ledger and unchanged raw records.",
+      "graph_impact": "One dataset attribution supports source provenance.",
+      "grounding_impact": "Agency and stop scope remain independent of dataset attribution.",
+      "source_file": "attributions.txt",
+      "handling": "supporting normalized table",
+      "input_records": 41,
+      "accepted_normalized": 1,
+      "preserved_extension": 0,
+      "quarantined": 0,
+      "deduplicated": 40,
+      "flagged_retained": 0,
+      "records_with_values_retyped": 1,
+      "source_values_rewritten": 0,
+      "preserved_untyped_extension_fields": [],
+      "typed_fields": {
+        "is_producer": "INTEGER",
+        "is_operator": "INTEGER",
+        "is_authority": "INTEGER"
+      },
+      "original_affected_records": 40
+    },
+    {
+      "id": "P3-DIRECTION",
+      "phase2_issue": "P2-012",
+      "action": "QUARANTINE",
+      "table": "directions.txt",
+      "fields": "route_id, direction_id, direction",
+      "evidence": "WH:53 direction 0 has Inbound and Outbound. Scheduled headsigns do not establish a winning label.",
+      "requirement": "511 Data Exchange D.1.1 requires unique route and direction pairs. GTFS assigns no universal inbound/outbound meaning to 0 and 1.",
+      "transformation": "Isolate every row of a nonunique route-direction key. Retain valid trips, headsigns and numeric direction IDs.",
+      "expected_effect": "Quarantine 2 label variants. No route or trip identity changes.",
+      "reversible": "Yes, complete source rows and locators in the exception ledger.",
+      "graph_impact": "Suppress the unresolved label without changing service connectivity.",
+      "grounding_impact": "Route-scoped numeric DirectionId remains usable for trip selection.",
+      "source_file": "directions.txt",
+      "handling": "preserved extension",
+      "input_records": 1184,
+      "accepted_normalized": 0,
+      "preserved_extension": 1182,
+      "quarantined": 2,
+      "deduplicated": 0,
+      "flagged_retained": 0,
+      "records_with_values_retyped": 1182,
+      "source_values_rewritten": 0,
+      "preserved_untyped_extension_fields": [],
+      "typed_fields": {
+        "direction_id": "INTEGER"
+      },
+      "original_affected_records": 2
+    },
+    {
+      "id": "P3-FARE-TRANSFER",
+      "phase2_issue": "P2-013",
+      "action": "QUARANTINE",
+      "table": "fare_transfer_rules.txt",
+      "fields": "GTFS base key and 511 filter_fare_product_id",
+      "evidence": "20 base-key groups contain 68 rows with distinct filter products and otherwise identical values within each group. The 511 reference lists filter_fare_product_id as a regional extension.",
+      "requirement": "GTFS Schedule defines a five-field base key. The publisher extension can distinguish rules that share this base key.",
+      "transformation": "Retain all variants as unresolved extended rules in the exception ledger. Exclude base-key conflicts and populated extension filters from the accepted base projection.",
+      "expected_effect": "Quarantine 68 rows from base rule use. Preserve all filter IDs and prices verbatim.",
+      "reversible": "Yes, complete source rows and locators in the exception ledger.",
+      "graph_impact": "Prevents unsupported fare applicability or precedence from being inferred.",
+      "grounding_impact": "Core selector mappings are independent of fare pricing.",
+      "source_file": "fare_transfer_rules.txt",
+      "handling": "supporting normalized table",
+      "input_records": 228,
+      "accepted_normalized": 160,
+      "preserved_extension": 0,
+      "quarantined": 68,
+      "deduplicated": 0,
+      "flagged_retained": 0,
+      "records_with_values_retyped": 160,
+      "source_values_rewritten": 0,
+      "preserved_untyped_extension_fields": [
+        "filter_fare_product_id"
+      ],
+      "typed_fields": {
+        "transfer_count": "BIGINT",
+        "duration_limit": "BIGINT",
+        "duration_limit_type": "INTEGER",
+        "fare_transfer_type": "INTEGER"
+      },
+      "original_affected_records": 68
+    },
+    {
+      "id": "P3-ROUTE-ATTRIBUTES",
+      "phase2_issue": "P2-014",
+      "action": "DEDUPLICATE",
+      "table": "route_attributes.txt",
+      "fields": "route_id and all attribute values",
+      "evidence": "BA:Yellow-N and BA:Yellow-S each have two exact copies. Each pair agrees on category, subcategory and running way.",
+      "requirement": "511 Data Exchange D.1.2 defines route attributes keyed by the GTFS route identifier.",
+      "transformation": "Collapse identical copies for a nonempty route ID and link them to the retained ordinal. Quarantine any genuinely conflicting variants together.",
+      "expected_effect": "Remove 2 exact copies. Keep both canonical routes and their attributes.",
+      "reversible": "Yes, from the exception ledger and unchanged raw records.",
+      "graph_impact": "Optional attributes stay attached to their existing route identity.",
+      "grounding_impact": "Original route IDs and scope remain intact.",
+      "source_file": "route_attributes.txt",
+      "handling": "preserved extension",
+      "input_records": 329,
+      "accepted_normalized": 0,
+      "preserved_extension": 327,
+      "quarantined": 0,
+      "deduplicated": 2,
+      "flagged_retained": 0,
+      "records_with_values_retyped": 327,
+      "source_values_rewritten": 0,
+      "preserved_untyped_extension_fields": [],
+      "typed_fields": {
+        "category": "BIGINT",
+        "subcategory": "BIGINT",
+        "running_way": "BIGINT"
+      },
+      "original_affected_records": 4
+    },
+    {
+      "id": "P3-SHAPE-DISTANCE",
+      "phase2_issue": "P2-016",
+      "action": "FLAG_FOR_REVIEW",
+      "table": "shapes.txt",
+      "fields": "shape_dist_traveled, shape_pt_sequence, shape_pt_lat, shape_pt_lon",
+      "evidence": "21 populated distances repeat along ordered shapes. Phase 2 found no decreasing distances.",
+      "requirement": "GTFS requires a supplied distance to increase in point sequence order. Coordinates and optional distance values are independent observations.",
+      "transformation": "Preserve every point and flag repeated or decreasing distances in the ledger. Distance-based interpretation on affected shapes requires review.",
+      "expected_effect": "Flag 21 point rows. No coordinate, sequence or distance edits.",
+      "reversible": "No data edits.",
+      "graph_impact": "Geometry is recoverable for spatial work. Affected distance values require review before linear referencing.",
+      "grounding_impact": "Preserves route geometry without inventing distance offsets.",
+      "source_file": "shapes.txt",
+      "handling": "core canonical table",
+      "input_records": 1340496,
+      "accepted_normalized": 1340496,
+      "preserved_extension": 0,
+      "quarantined": 0,
+      "deduplicated": 0,
+      "flagged_retained": 21,
+      "records_with_values_retyped": 1340496,
+      "source_values_rewritten": 0,
+      "preserved_untyped_extension_fields": [],
+      "typed_fields": {
+        "shape_pt_lat": "DOUBLE",
+        "shape_pt_lon": "DOUBLE",
+        "shape_pt_sequence": "BIGINT",
+        "shape_dist_traveled": "DOUBLE"
+      },
+      "original_affected_records": 21
+    }
+  ],
+  "source_evidence": {
+    "route_attribute_analysis": {
+      "groups": 2,
+      "affected_records": 4,
+      "conflicting_groups": 0
+    },
+    "conflicting_direction_trip_headsigns": [
+      {
+        "route_id": "WH:53",
+        "direction_id": "0",
+        "trip_headsign": "Stoneridge",
+        "trips": 6
+      },
+      {
+        "route_id": "WH:53",
+        "direction_id": "0",
+        "trip_headsign": "Stoneridge - Pleasanton ACE",
+        "trips": 18
+      }
+    ],
+    "fare_transfer_analysis": {
+      "conflicting_base_keys": 20,
+      "conflicting_rows": 68,
+      "groups_differing_beyond_filter": 0,
+      "distinct_keys_with_filter": 228,
+      "referenced_filter_products_missing": 0
+    },
+    "shape_distance_analysis": {
+      "flagged_points": 21,
+      "equal_distances": 21,
+      "same_coordinates": 20,
+      "affected_shapes": 13
+    }
+  },
+  "derived_records": {
+    "canonical_ids": 118128,
+    "route_stops": 33985,
+    "agency_stops": 19904,
+    "trip_selector_context": 92827,
+    "stop_alias_candidates": 20529
+  },
+  "normalized_build_id": "normalized-sha256-5608c0d7d93b9c6200431b5c227da598d52cd0108e9e2f410e5b012b00d28052",
+  "source_snapshot_id": "gtfs-sha256-d6279860e2fe203541a574ee04db5752ecad9e5e1a38b1759cc397b1b596dfa2",
+  "reused_existing_build": false,
+  "current_run": {
+    "wall_seconds": 104.668,
+    "cpu_seconds": 151.516,
+    "peak_process_rss_mib": 902.56,
+    "sampled_temporary_working_bytes": 535736320,
+    "sampled_staging_parquet_bytes": 61576978,
+    "stage_seconds": {
+      "source_verification_seconds": 0.54,
+      "source_load_seconds": 26.856,
+      "normalization_seconds": 44.376,
+      "mapping_and_associations_seconds": 4.838,
+      "validation_seconds": 27.703,
+      "source_final_verification_seconds": 0.27
+    },
+    "duckdb_threads": 2,
+    "duckdb_memory_limit": "768MB"
+  },
+  "repeat_build": {
+    "logically_equivalent": true,
+    "execution": {
+      "wall_seconds": 86.126,
+      "cpu_seconds": 153.078,
+      "peak_process_rss_mib": 903.82,
+      "sampled_temporary_working_bytes": 563916800,
+      "sampled_staging_parquet_bytes": 61618098,
+      "stage_seconds": {
+        "source_verification_seconds": 0.444,
+        "source_load_seconds": 9.02,
+        "normalization_seconds": 34.866,
+        "mapping_and_associations_seconds": 4.469,
+        "validation_seconds": 36.985,
+        "source_final_verification_seconds": 0.309
+      },
+      "duckdb_threads": 2,
+      "duckdb_memory_limit": "768MB"
+    }
+  },
+  "tests": {
+    "phase2": {
+      "passed": true,
+      "tests": 7,
+      "output": "test_composite_key_exact_duplicate_conflict_and_missing (test_profile_gtfs.ProfileTests.test_composite_key_exact_duplicate_conflict_and_missing) ... ok\ntest_gtfs_service_time_after_midnight (test_profile_gtfs.ProfileTests.test_gtfs_service_time_after_midnight) ... ok\ntest_identifier_text_quoted_empty_and_malformed_width (test_profile_gtfs.ProfileTests.test_identifier_text_quoted_empty_and_malformed_width) ... ok\ntest_reference_integrity_does_not_multiply_duplicate_targets (test_profile_gtfs.ProfileTests.test_reference_integrity_does_not_multiply_duplicate_targets) ... ok\ntest_service_domain_and_exception_only_services (test_profile_gtfs.ProfileTests.test_service_domain_and_exception_only_services) ... ok\ntest_static_alert_classification_requires_agency_scope (test_profile_gtfs.ProfileTests.test_static_alert_classification_requires_agency_scope) ... ok\ntest_zip_integration_with_missing_optional_files (test_profile_gtfs.ProfileTests.test_zip_integration_with_missing_optional_files) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 1.606s\n\nOK\n"
+    },
+    "phase3": {
+      "passed": true,
+      "tests": 10,
+      "output": "test_exact_string_encoding_and_namespace_type_separation (test_normalize_gtfs.EncodingTests.test_exact_string_encoding_and_namespace_type_separation) ... ok\ntest_manifest_is_order_independent_and_content_sensitive (test_normalize_gtfs.EncodingTests.test_manifest_is_order_independent_and_content_sensitive) ... ok\ntest_failed_references_leave_prior_build_intact (test_normalize_gtfs.FixtureBuildTests.test_failed_references_leave_prior_build_intact) ... ok\ntest_raw_identifiers_names_and_unknown_values_survive (test_normalize_gtfs.FixtureBuildTests.test_raw_identifiers_names_and_unknown_values_survive) ... ok\ntest_reordering_source_rows_changes_snapshot_but_preserves_entity_ids (test_normalize_gtfs.FixtureBuildTests.test_reordering_source_rows_changes_snapshot_but_preserves_entity_ids) ... ok\ntest_repeat_builds_keep_canonical_mappings_and_raw_checksums (test_normalize_gtfs.FixtureBuildTests.test_repeat_builds_keep_canonical_mappings_and_raw_checksums) ... ok\ntest_repeated_visits_shared_agencies_and_scoped_selectors (test_normalize_gtfs.FixtureBuildTests.test_repeated_visits_shared_agencies_and_scoped_selectors) ... ok\ntest_semantic_quarantine_exact_duplicate_lineage_and_geometry (test_normalize_gtfs.FixtureBuildTests.test_semantic_quarantine_exact_duplicate_lineage_and_geometry) ... ok\ntest_service_exception_dates_and_extended_time (test_normalize_gtfs.FixtureBuildTests.test_service_exception_dates_and_extended_time) ... ok\ntest_published_ac_selector_and_distinct_neighbor (test_normalize_gtfs.RegionalIntegrationTests.test_published_ac_selector_and_distinct_neighbor) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 7.215s\n\nOK\n"
+    }
+  }
+}

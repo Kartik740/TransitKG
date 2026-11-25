@@ -1,0 +1,679 @@
+area_id,area_name
+mtc:powell,Powell
+mtc:fruitvale,Fruitvale
+mtc:warm-springs-south-fremont-bart,Warm Springs South Fremont BART
+mtc:caltrain-4th-&-king,Caltrain 4th & King
+mtc:el-cerrito-del-norte-bart,El Cerrito Del Norte BART
+mtc:walnut-creek-bart,Walnut Creek BART
+mtc:richmond-bart-amtrak,Richmond BART/Amtrak
+mtc:santa-clara-caltrain,Santa Clara Caltrain
+mtc:san-francisco-ferry-terminal,San Francisco Ferry Terminal
+mtc:macarthur-bart,MacArthur BART
+mtc:oak,OAK
+mtc:vallejo-ferry-terminal,Vallejo Ferry Terminal
+mtc:palo-alto-station,Palo Alto Station
+mtc:san-rafael-transit-center,San Rafael Transit Center
+mtc:millbrae-bart,Millbrae BART
+mtc:pleasant-hill-bart,Pleasant Hill BART
+mtc:daly-city-bart,Daly City BART
+mtc:oakland-coliseum-bart,Oakland Coliseum BART
+mtc:santa-rosa-transit-mall,Santa Rosa Transit Mall
+mtc:fairfield-transportation-center,Fairfield Transportation Center
+mtc:12th-st-oakland-city-center-bart,12th St Oakland City Center BART
+mtc:19th-st-oakland-bart,19TH St Oakland BART
+mtc:embarcadero-bart,Embarcadero BART
+mtc:civic-center-bart,Civic Center BART
+mtc:petaluma-transit-mall,Petaluma Transit Mall
+mtc:great-america,Great America
+mtc:montgomery-bart,Montgomery BART
+mtc:sfo,SFO
+mtc:mountain-view-station,Mountain View Station
+mtc:salesforce-transit-center,Salesforce Transit Center
+mtc:union-city-bart,Union City BART
+mtc:dublin-pleasanton-bart,Dublin / Pleasanton BART
+mtc:great-mall-milpitas-bart,Great Mall/Milpitas BART
+mtc:san-jose-diridon-station,San Jose Diridon Station
+901509,16th Street / Mission
+901609,24th Street / Mission
+908309,Antioch
+904109,Ashby
+901809,Balboa Park
+902509,Bay Fair
+909509,Berryessa / North San Jose
+905109,Castro Valley
+906109,Colma
+903609,Concord
+904209,Downtown Berkeley
+904409,El Cerrito Plaza
+902909,Fremont
+901709,Glen Park
+902609,Hayward
+903309,Lafayette
+902109,Lake Merritt
+904309,North Berkeley
+903709,North Concord / Martinez
+903209,Orinda
+903809,Pittsburg / Bay Point
+908209,Pittsburg Center
+903109,Rockridge
+906309,San Bruno
+902409,San Leandro
+902709,South Hayward
+906209,South San Francisco
+905209,West Dublin / Pleasanton
+901109,West Oakland
+DELN,DELN
+4thFol,4th St & Folsom St
+delpbp,Alameda del Prado Bus Pad
+PinBat,Battery St & Pine St
+belesf,Bellam Blvd & Francisco Blvd E
+BelLis,Bellam & Lisbon
+saubay,Bridgeway & Bay St
+saupor,Bridgeway & El Portal
+bdwbol,Broadway & Bolinas Ave
+com,College of Marin
+ptm,Copeland St Transit Mall
+cuthar,Cutting Blvd & Harbour Way
+delong,DeLong Ave Bus Pad
+div01,Division 1
+ggt_1,Division 1 Layover
+div02,Division 2
+ggt_2,Division 2 Layover
+div03,Division 3
+ggt_3,Division 3 Layover
+div04,Division 4
+dracol,Drake & Cole
+eblkip,E Blithedale Ave & Kipling Dr
+towrdr,E Blithedale Ave & Tower Dr
+dnb,El Cerrito del Norte BART Station
+enfsal,Enfrente Rd & Salvatore Dr
+esflar,E Sir Francis Drake Blvd & Larkspur Land
+fremar,Fremont St & Market St
+fremis,Fremont St & Mission St
+gg&pol,Golden Gate Ave & Polk St
+toll,Golden Gate Bridge Toll Plaza
+ignabp,Ignacio Bus Pad
+kerlrk,Kerner Blvd & Larkspur St
+larfer,Larkspur Ferry Terminal
+LG&NA,Las Gallinas & Nova Albion Way
+linwil,Lincoln Ave & Wilson Ct
+lvbp,Lucas Valley Bus Pad
+lucky,Lucky Dr Bus Pad
+magwar,Magnolia & Ward
+olesfd,Manor Turnaround
+manp&r,Manzanita Park & Ride
+donter,Marin City Hub-Donahue & Terners
+marcvc,Marin Civic Center
+MrnSqr,Marin Square
+mwbp,Marinwood Bus Pad
+mcapol,McAllister St & Polk St
+med&ef,Medway Rd & Francisco Blvd E
+medmil,Medway Rd & Mill St
+milcam,Miller Ave & Camino Alto
+milval,Mill Valley Depot
+mis2nd,Mission St & 2nd St (SF)
+normal,Northgate Mall
+redgra,Novato Hub-Redwood & Grant
+nspBP,N San Pedro Rd Bus Pad
+pardbp,Paradise Dr Bus Pad
+petfpr,Petaluma Fairgrounds Park & Ride
+redolv,Redwood Blvd & Olive Ave
+semrmp,Redwood Hwy & Seminary Dr
+rpxbus,Rohnert Park Expy Park & Ride-North
+rpxp&r,Rohnert Park Expy Park & Ride-South
+rowpnr,Rowland Blvd Park & Ride
+SFTC,Salesforce Transit Center
+SFTCA,Salesforce Transit Ctr-Mission & Fremont
+sanhub,San Anselmo Hub-Center & SFD
+sflotP,San Francisco Lot-Perry St
+SRPost,San Rafael Post Office
+trgtPk,San Rafael Target
+srtc,San Rafael Transit Center
+srtm,Santa Rosa Transit Mall
+vetmem,Santa Rosa Veterans Park & Ride
+semnbp,Seminary Dr Bus Pad
+sfdlag,SFD & Lagunitas
+sfdbnk,Sir Francis Drake Blvd & Bank St
+sfdcls,Sir Francis Drake Blvd & Claus Dr
+sfdgle,Sir Francis Drake Blvd & Glen Dr
+SMTMCC,SMART Marin Civic Center
+snvsun,S Novato Blvd & Sunset Pkwy
+spenc,Spencer Ave Bus Pad
+strawb,Strawberry Village
+TamMad,Tamalpais Dr & Madera Blvd
+tamval,Tam Junction-Shoreline & Almonte
+tlbp,Terra Linda Bus Pad
+TLinHS,Terra Linda High School
+tewks,Tewksbury Turnaround-Tewksbury & Castro
+tibwbp,Tiburon Wye Bus Pad
+Vmv6,Virtual TP 101 NB Mill Valley
+Vggbn3,Virtual TP 101 NB North of GGB
+Vggbn4,Virtual TP 101 NB South of GGB
+Vggbs,Virtual TP 101 SB North End of GGB
+Vsem5,Virtual TP 101 SB Seminary (End HOV)
+Vggbs2,Virtual TP 101 SB South of GGB Toll Plz
+VRBw18,VTP 580 EB San Quentin
+VRBe16,VTP 580 EB Toll Plaza
+VRBw17,VTP 580 WB San Quentin
+VRBe15,VTP 580 WB Toll Plaza
+VL&VSB,VTP EB Lombard / Van Ness
+VBBwb,VTP I-80 WB Fremont
+VLWNB,VTP NB adj to Lincoln & Wilson
+VADNB,VTP NB Atherton
+VBNKNB,VTP NB Bunker / Hwy 101
+V-37NB,VTP NB Hwy 37
+VMCNB,VTP NB Marin City
+VMWNB,VTP NB Marinwood
+VPenNB,VTP NB Penngrove
+VSANB,VTP NB San Antonio Rd
+VSFDNB,VTP NB Sir Francis Drake
+VSPCNB,VTP NB Spencer
+VTRNB,VTP NB Tiburon
+VLWSB,VTP SB adj to Lincoln & Wilson
+VADSB,VTP SB Atherton
+VBNKSB,VTP SB Bunker / Hwy 101
+V37SB,VTP SB Hwy 37
+VMCSB,VTP SB Marin City
+VMWSB,VTP SB Marinwood
+VPenSB,VTP SB Penngrove
+VSASB,VTP SB San Antonio Rd
+VSFDSB,VTP SB Sir Francis Drake
+VSPCSB,VTP SB Spencer
+VTRSB,VTP SB Tiburon
+VL&VNB,VTP WB Lombard / Van Ness
+place_STOV,Stanford Oval
+place_UBBA,Union City BART
+PS_ALDR,Alder Station
+PS_ALUM,Alum Rock Station
+PS_ARTC,Alum Rock Transit Center
+PS_BASC,Bascom Station
+PS_BAYP,Baypointe Station
+PS_NASA,Bayshore Nasa Station
+PS_BRRS,Berryessa Station
+PS_BERR,Berryessa Transit Center
+PS_BLSM,Blossom Hill Station
+PS_BONA,Bonaventura Station
+PS_BORR,Borregas Station
+PS_BRNM,Branham Station
+PS_CMBL,Campbell Station
+PS_CPTL,Capitol Station
+PS_CALR,Capitol Station
+PS_CHMP,Champion Station
+PS_CDMS,Children's Discovery Museum Station
+PS_CISC,Cisco Station
+PS_CIVC,Civic Center Station
+PS_COMP,Component Station
+PS_CONV,Convention Center Station
+PS_CTTL,Cottle Station
+PS_CROP,Cropley Station
+PS_CRSS,Crossman Station
+PS_CULR,Curtner Station
+PS_CURT,Curtner Station
+PS_ERTC,Eastridge Transit Center
+PS_FAIR,Fair Oaks Station
+PS_FRTD,Fruitdale Station
+PS_GILR,Gilroy Transit Center
+PS_GISH,Gish Station
+PS_GRAM,Great America Station
+PS_GRML,Great Mall Station
+PS_HAML,Hamilton Station
+PS_HOST,Hostetter Station
+PS_JAPN,Japantown/Ayer Station
+PS_KRNA,Karina Station
+PS_LICK,Lick Mill Station
+PS_LOCK,Lockheed Martin Station
+PS_LMTC,Lockheed Martin Transit Center
+PS_MKEE,Mckee Station
+PS_METR,Metro/Airport Station
+PS_MIDD,Middlefield Station
+PS_MOFF,Moffett Park Station
+PS_MVCT,Mountain View Transit Center
+PS_OHLN,Ohlone-Chynoweth Station
+PS_OHLO,Ohlone-Chynoweth Station
+PS_OLDI,Old Ironsides Station
+PS_ORCH,Orchard Station
+PS_PATC,Palo Alto Transit Center
+PS_PENC,Penitencia Creek Station
+PS_RACE,Race Station
+PS_REAM,Reamwood Station
+PS_ROAK,River Oaks Station
+PS_SFND,San Fernando Station
+PS_DRDN,San Jose Diridon Station
+PS_SCTC,Santa Clara Transit Center
+PS_STLC,Santa Teresa Station
+PS_TRSA,Santa Teresa Station
+PS_SNLL,Snell Station
+PS_SNLS,Snell Station
+PS_TAMN,Tamien Station
+PS_TASM,Tasman Station
+PS_VIEN,Vienna Station
+PS_VIRG,Virginia Station
+PS_WVTC,West Valley College Transit Center
+PS_WHIS,Whisman Station
+PS_WINC,Winchester Station
+PS_WITC,Winchester Transit Center
+22nd_street,22nd Street
+bayshore,Bayshore
+belmont,Belmont
+blossom_hill,Blossom Hill Caltrain Station
+broadway,Broadway
+burlingame,Burlingame
+california_ave,California Avenue
+capitol,Capitol Caltrain Station
+college_park,College Park
+gilroy,Gilroy
+hayward_park,Hayward Park
+hillsdale,Hillsdale
+lawrence,Lawrence
+menlo_park,Menlo Park
+morgan_hill,Morgan Hill
+redwood_city,Redwood City
+san_antonio,San Antonio
+san_bruno,San Bruno Caltrain Station
+san_carlos,San Carlos
+san_martin,San Martin
+san_mateo,San Mateo
+south_sf,South San Francisco Caltrain Station
+stanford,Stanford
+sunnyvale,Sunnyvale
+tamien,Tamien Caltrain Station
+7109,SMART Cotati
+7101,SMART Larkspur
+7103,SMART Marin Civic Center
+7105,SMART Novato Downtown
+7104,SMART Novato Hamilton
+7106,SMART Novato San Marin
+7107,SMART Petaluma Downtown
+7108,SMART Petaluma North
+7110,SMART Rohnert Park
+7111,SMART Santa Rosa Downtown
+7112,SMART Santa Rosa North
+7113,SMART Sonoma County Airport
+7114,SMART Windsor
+-325,Sereno Transit Center
+S1,Concord BART
+S6,Diablo Valley College
+S2,Dublin Pleasanton BART
+S3,North Concord Martinez BART
+S7,San Ramon Transit Center
+S5,Walnut Creek BART
+1:123,1st St At Chelsea Ave
+1:89014,1st St at Chelsea Avenue
+1:89005,1st St at Freeway Dr
+1:89361,244 American Canyon Road
+1:893218,2nd St at California Blvd
+1:89016,2nd St at Patchett St
+1:89363,300 American Canyon Road
+1:89059,3rd St at Bailey St
+1:89304,3rd St at Brown St
+1:893190,3rd St at Brown St (WB)
+1:89017,3rd St at Jefferson St
+1:893191,3rd St at Jefferson St (WB)
+1:89060,3rd St at Juarez St (SE)
+1:210,3rd St At Juarez St Westbound
+1:893212,American Canyon City Hall
+1:10,American Canyon High School
+1:89264,American Canyon Post Office
+1:89265,American Canyon Post Office
+1:893224,American Canyon Senior Center
+1:892042,American Canyon Senior Center
+1:893192,Austin Way at Browns Valley Rd
+1:198,Beard Rd At La Homa Dr
+1:893178,Bothe State Park North
+1:89163,Bothe State Park (SB)
+1:89370,Broadway and Ventana Drive
+1:89406,Broadway Dr at Vine Terracr
+1:89208,Broadway St at Mini Dr
+1:390,Browns Valley At Linda Vista
+1:893172,Browns Valley at Robinson Ln
+1:120,Browns Valley Rd At Austin Way
+1:89298,Browns Valley Rd at Dezerai Ct
+1:893173,Browns Valley Rd at Hudson Ln
+1:89296,Browns Valley Rd at Partrick
+1:89300,Browns Valley Rd at Rowena Ln
+1:121,Browns Valley Rd at Thompson
+1:89297,Browns Valley Rd at Westview
+1:117,Browns Valley Rd @ Thornhill
+1:255,Byway St E At Reed Cir
+1:13,Byway St E At Salvador Ave
+1:89324,California at Lincoln North
+1:89323,California Ave at E St North
+1:89322,California Ave at E St South
+1:89321,California Blvd at Lincoln Ave
+1:89319,Calistoga Lincoln Bridge North
+1:253,Cask Way At Wise Dr
+1:20,Chamberlain High School
+1:89110,Claremont Way at Jefferson St
+1:893205,Claremont Way at Kaiser (NE)
+1:21,Claremont Way At Permanente W
+1:89393,Clark St at Silverado Trail
+1:70,Clinic Ole North
+1:89333,Clinic Ole North Campus (SB)
+1:89340,Coombs St and Elm St South
+1:893184,Coombs St and S Franklin St
+1:89057,Coombs St at 5th St
+1:89338,Coombs St at Division St South
+1:89054,Coombs St at Elm St
+1:89341,Coombs St at Franklin St South
+1:89056,Coombs St At Oak St
+1:89055,Coombs St at Pine St
+1:893231,Danrose Dr and American Canyon
+1:89385,Danrose Dr at Folland Dr
+1:89360,Danrose Drive and Kimberly Dr
+1:89227,Devlin Rd at Airport Blvd
+1:89229,Devlin Rd & Gateway Rd (SB)
+1:9726816,Devlin Rd (NB)
+1:89198,Devlin Rd (SB)
+1:89366,Donaldson/Summerwood Fire Dept
+1:893229,Donaldson Way and Rio Del Mar
+1:892021,Donaldson Way at Benton Way
+1:89223,Donaldson Way at Benton Way
+1:89160,Downtown Calistoga
+1:192,East Ave At Clark St
+1:89101,East Ave at Evans Ave
+1:89082,East Ave at Highland Dr (NE)
+1:893209,East Ave at Highland Dr (SE)
+1:89080,East Ave at Montecito Blvd
+1:89267,El Cerrito Del Norte Station
+1:89368,Elliot Dr and Kimberly Dr
+1:89203,Elliott Dr at American Canyon
+1:89222,Elliott Dr at American Canyon
+1:893201,Elliott Dr at Marla Dr
+1:89219,Elliott Dr at Severus Dr
+1:89306,Fairfield Transportation Ctr
+1:89028,Foothill Blvd at Greco Dr
+1:89026,Foothill Blvd at Hilltop Dr
+1:89027,Foothill Blvd at Pine St
+1:89328,Foothill Blvd at Sunrise Dr
+1:89043,Foster Rd at Idaho St
+1:152,Foster Rd At Idaho St
+1:89045,Foster Rd at Imola Ave
+1:37,Foster Rd At Imola Ave
+1:89044,Foster Rd at Indiana St
+1:153,Foster Rd At Indiana St
+1:89337,Foster Rd at Indiana St North
+1:89390,Gasser DR at Hartle Crt SW
+1:89050,Gasser Dr at Hartle Ct
+1:89040,Health and Human Services
+1:89260,Highway 29 at Dunaweal Ln
+1:893199,Highway 29 at Fair Way
+1:89250,Highway 29 at Oakville Rd
+1:89171,Highway 29 at Oakville Rd
+1:89251,Highway 29 at Rutherford Rd
+1:89170,Highway 29 at Rutherford Rd
+1:89252,Highway 29 At Zinfandel Ln
+1:89259,Hway 29 @ Calistoga Farmworker
+1:89367,Hwy 29 and Antonia Avenue
+1:893187,Hwy 29 at Brannan St
+1:89164,Hwy 29 at Byrd Hill Ln
+1:89257,Hwy 29 at Byrd Hill Ln NB
+1:89002,Hwy 29 at Dowdell Ln North
+1:89168,Hwy 29 at Dowdell Ln South
+1:89161,Hwy 29 at Dunaweal Ln (SB)
+1:89165,Hwy 29 at Elmhurst Ave
+1:89167,Hwy 29 at Mitchell Dr
+1:89162,Hwy 29 at Peterson Dr (SB)
+1:89169,Hwy 29 at Zinfandel Ln (SB)
+1:89326,Imola Ave and Coombs St
+1:89336,Imola Ave at Foster Rd West
+1:89052,Imola Ave at Gasser Dr
+1:89350,Imola Ave at Gasser Dr EB
+1:89049,Imola Ave at Jefferson St
+1:158,Imola Ave At Jefferson St
+1:89046,Imola Ave at Kent St
+1:155,Imola Ave At Kent St
+1:157,Imola Ave At Minahen St
+1:89048,Imola Ave At Minahen St (EB)
+1:89008,Imola Ave At Minahen St (WB)
+1:177,Imola Ave At Navarre St
+1:89069,Imola Ave at Parrish Rd
+1:89047,Imola Park And Ride
+1:156,Imola Park And Ride
+1:89387,Imola Park and Ride (NB)
+1:89388,Imola Park and Ride (SB)
+1:89119,Jefferson St at B St
+1:211,Jefferson St At Calistoga Ave
+1:89104,Jefferson St at Cedar Ave
+1:89093,Jefferson St at Claremont Way
+1:89105,Jefferson St at D St
+1:89033,Jefferson St at Elm St
+1:142,Jefferson St At Elm St
+1:89118,Jefferson St at F St
+1:89106,Jefferson St at H St North
+1:224,Jefferson St At H St (nw)
+1:260,Jefferson St At Joshua Ct
+1:89038,Jefferson St At Laurel St
+1:89325,Jefferson St at Locust St
+1:89327,Jefferson St at Locust St
+1:89039,Jefferson St at Madrona St
+1:148,Jefferson St At Madrona St
+1:261,Jefferson St At Maximillian Ct
+1:48,Jefferson St At Pueblo Ave
+1:204,Jefferson St At Pueblo Ave
+1:89094,Jefferson St at Sheridan Way
+1:89109,Jefferson St at Sheridan Way
+1:217,Jefferson St At Sheridan Way
+1:203,Jefferson St At Sheridan Way
+1:89143,Jefferson St at Sierra Ave
+1:893208,Jefferson St at Trancas St
+1:265,Jefferson St At Trancas St
+1:51,Jefferson St At Trower Ave
+1:823056,Kaiser Hospital
+1:823117,Kaiser Hospital North
+1:892301,Kaiser Rd at Corporate Way
+1:89196,Kaiser Rd at Corporate Way
+1:890741,Kansas Ave at Soscol Ave
+1:2735046,Kansas Ave at Soscol Ave NW
+1:56,Kansas Ave At Wilkins Ave
+1:89021,Kilburn Ave at Bryan Ave
+1:89022,Kilburn Ave at Chelsea Ave
+1:89020,Kilburn Ave at Cornwall Ave
+1:57,Kimberly Dr At Danrose Dr
+1:89066,Laredo St at Maria Dr
+1:89354,Laurel St at Bryan Ave
+1:89025,Laurel St at Griggs Ln
+1:89355,Laurel St at Griggs Ln (NE)
+1:89023,Laurel St at Kilburn Ave
+1:89024,Laurel St At Laurel Ln
+1:89353,Laurel Street at Kilburn (SE)
+1:2752261,Lincoln Av at Main St
+1:89397,Lincoln Ave at Jefferson Av
+1:89139,Lincoln Ave at Jefferson St
+1:206,Lincoln Ave At Jordan Ln
+1:2752263,Lincoln Ave at Kennedy Way
+1:89398,Lincoln Ave at Marin St
+1:89137,Lincoln Ave at Pacific St
+1:417,Lincoln Ave At Soscol Ave
+1:2752269,Lincoln Ave at Stevenson St
+1:89138,Lincoln Ave at York St
+1:89086,Lincoln Ave Vine Trail (NW)
+1:89097,Lincoln Ave Vine Trail (SE)
+1:235,Linda Vista At Sutherland Dr
+1:89331,Linda Vista Ave at Redwood Rd
+1:89166,Main St. at Pine St.
+1:89254,Main St at Pope St
+1:89003,Main St at Pratt St
+1:2752267,McPherson School EB
+1:2752266,McPherson School WB
+1:825048,Mini Dr at Elliott Dr
+1:825004,Mini Dr at Elliott Dr
+1:89401,Mini Dr & Diana Dr (Eastbound)
+1:89400,Napa County Soscol Campus (NB)
+1:89399,Napa County Soscol Campus (SB)
+1:215,Napa High Northbound
+1:89116,Napa High School
+1:68,Napa Junction At Walmart
+1:893232,Napa Junction Rd at Hwy 29
+1:893211,Napa Junction Walmart Parking
+1:89195,Napa Valley College
+1:89402,Napa Valley College (NB)
+1:893200,Napa Valley Corp Dr at LaTour
+1:893202,Napa Valley Corp Dr at LaTour
+1:89345,Napa Vly Co at Napa Vly Co Way
+1:89344,Napa Vly Co at Napa Vly Co Way
+1:38,NVTA Bus Maintenance Facility
+1:89030,Old Sonoma at Harvest Magnet
+1:893193,Old Sonoma Rd at Cherryview Ct
+1:89029,Old Sonoma Rd at Foster Rd
+1:89032,Old Sonoma Rd at Hartson St
+1:141,Old Sonoma Rd At Hartson St
+1:893220,Old Sonoma Rd at S Seymour St
+1:893174,Old Sonoma Rd at S Seymour St
+1:440,Old Sonoma Rd At S Seymour St
+1:893219,Old Sonoma Rd at Underhill Dr
+1:150,Old Sonoma Rd At Underhill Dr
+1:139,Old Sonoma Rd At Underhill Dr
+1:89019,Premium Outlets
+1:89131,Pueblo Ave at Linda Vista Ave
+1:893215,Queen of the Valley Hospital
+1:89092,Queen of the Valley Medical Ct
+1:891131,Redwood Park n Ride
+1:89330,Redwood Rd at Dover St
+1:89332,Redwood Rd at Solano Ave East
+1:89120,Redwood Rd at Solano Avenue
+1:893175,Rio del Mar and Hwy 29 (7-11)
+1:307,Rio Del Mar At Carolyn Dr (SB)
+1:89224,Rio del Mar at Carolyn Dr (SE)
+1:89201,Rio del Mar at Carolyn Dr (SW)
+1:893228,Rio del Mar at Hwy 29 (7-11)
+1:258,Salvador Ave At Dale Dr
+1:89211,Sereno Transit Center
+1:176,Seville Dr At Perkins St
+1:84,Shetler Ave At Shurtleff Ave
+1:89365,Silver Oak Tr and Shenandoah
+1:89241,Solano Ave at Devonshire Dr
+1:89182,Solano Ave at Devonshire Dr
+1:89177,Solano Ave at Hacienda Dr
+1:89243,Solano Ave at Mobile Dr
+1:89244,Solano Ave at Newell Cir North
+1:89178,Solano Ave at Newell Cir South
+1:89246,Solano Ave at Orchard Ave
+1:89176,Solano Ave at Orchard Ave
+1:89179,Solano Ave at Salvador Ave
+1:89006,Solano Ave at Trower N (NB)
+1:89181,Solano Ave at Trower N (SB)
+1:89242,Solano Ave at Wine Country Ave
+1:89180,Solano Ave at Wine Country Ave
+1:893197,Soscol Ave at 3rd Ave
+1:89189,Soscol Ave at Central Ave
+1:89342,Soscol Ave At Clinton St
+1:89194,Soscol Ave at College Way
+1:89235,Soscol Ave at Costa Dr
+1:89232,Soscol Ave at Imperial Way
+1:89076,Soscol Ave at Kansas Ave North
+1:89051,Soscol Ave at Kansas Ave South
+1:89237,Soscol Ave At La Homa Dr North
+1:89190,Soscol Ave at Lincoln Ave
+1:893185,Soscol Ave at Lincoln Ave
+1:89231,Soscol Ave at Magnolia Dr
+1:892373,Soscol Ave at Old Soscol Way
+1:89187,Soscol Ave at Pear Tree Ln
+1:89238,Soscol Ave at Pear Tree Ln
+1:893177,Soscol Ave At Pueblo Ave North
+1:89236,Soscol Ave at Pueblo Ave South
+1:89193,Soscol Ave at Silverado Tr
+1:89077,Soscol Ave at Silverado Tr
+1:186,Soscol Ave At Silverado Tr
+1:299,Soscol Ave At Silverado Tr
+1:89192,Soscol Ave at Sousa Lane
+1:89078,Soscol Ave at Sousa Ln
+1:89234,Soscol Ave at Stonehouse Dr
+1:89191,Soscol Ave at Tanen St
+1:297,Soscol Ave At Tanen St
+1:89001,Soscol Gateway Transit Center
+1:9726815,Soscol Layover
+1:89302,St Helena Post Office
+1:89305,Suisun City Train Depot
+1:89129,Sutherland Dr at Linda Vista
+1:893217,Sutter Hospital NB
+1:823048,Sutter Hospital NB
+1:893216,Sutter Hospital SB
+1:823143,Sutter Hospital SB
+1:893225,Trancas St and Jefferson St
+1:89112,Trancas St at Baxter Ave
+1:89114,Trancas St at California Blvd
+1:893223,Trancas St at Claremont Way
+1:89184,Trancas St at Jefferson St
+1:891842,Trancas St at Jefferson St
+1:89239,Trancas St at Valle Verde Dr
+1:89240,Trancas St at Villa Ln (NW)
+1:89186,Trancas St at Villa Ln (SW)
+1:251,Trower Ave At Glacier Dr
+1:252,Trower Ave At Lassen St
+1:89213,Vallejo Ferry Terminal
+1:893433,Vallejo Ferry Terminal South
+1:89343,Vallejo Ferry Terminal South
+1:89212,Vallejo Transit Ctr
+1:89091,Villa Ln at Trancas St
+1:49,Vintage High North
+1:89249,Washington St at Madison St
+1:89172,Washington St At Madison St
+1:89247,Washington St At Mission St
+1:89248,Washington St At Mulberry St
+1:89113,Yountville Park & Ride
+1:89175,Yountville Veterans Home
+AC:local,
+AC:transbay,
+AM:ARN,
+AM:RLN,
+AM:RSV,
+AM:SAC,
+AM:DAV,
+AM:FFV,
+AM:SUI,
+AM:MTZ,
+AM:RIC,
+AM:BRK,
+AM:EMY,
+AM:OKJ,
+AM:OAC,
+AM:HAY,
+AM:FMT,
+AM:GAC,
+AM:SCC,
+AM:SFC,
+AM:SJC,
+CE:fremont,
+CE:lathrop,
+CE:stockton,
+CE:santa-clara,
+CE:vasco,
+CE:livermore,
+CE:pleasanton,
+CE:san-jose,
+CE:great-america,
+CE:tracy,
+CT:zone3,
+CT:zone1,
+CT:zone2,
+CT:zone4,
+CT:zone5,
+CT:zone6,
+DE:local,
+DE:transbay,
+GG:San Francisco,
+GG:Sausalito-Marin City-Mill Valley,
+GG:CorteMadera-SanRafael-Marinwood,
+GG:Ignacio-Novato-San Marin,
+GG:Petaluma-Cotati-Rohnert Park,
+GG:Santa Rosa,
+GG:East Bay,
+RV:local,
+SA:C,
+SA:A,
+SA:B,
+SA:D,
+SA:E,
+SC:SJC,
+SC:not-SJC,
+SO:zone:8,
+SO:zone:2,
+SO:zone:5,
+SO:zone:1,
+SO:zone:6,
+SO:zone:7,
+SO:zone:3,
+SO:zone:4,
+ST:solano,
+ST:not-solano,
+any,

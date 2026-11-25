@@ -1,0 +1,219 @@
+{
+  "build_id": "graph-ready-sha256-f85cdfafe998da9e7eecb6697443ebd02e45f4d43e41462db7a8a5acb82dadae",
+  "manifest_sha256": "8e7d1ad525abe21ab2ceff93061013f704835a23988cf02615efaa4def85d7df",
+  "inputs": {
+    "source_snapshot_id": "gtfs-sha256-d6279860e2fe203541a574ee04db5752ecad9e5e1a38b1759cc397b1b596dfa2",
+    "normalized_build_id": "normalized-sha256-5608c0d7d93b9c6200431b5c227da598d52cd0108e9e2f410e5b012b00d28052",
+    "normalized_manifest_sha256": "11969d832ae858f3e169c528bf3b1d7f3b6c351c5b6bdcf91e4e296b90300922",
+    "schema_version": "1.0.0",
+    "schema_sha256": "66c3e2d5524fcafb1608c9eb8c99125f55760781c789b2b4e1188d9360cb43db",
+    "canonical_contract_version": "1.0.0",
+    "canonical_contract_sha256": "50cdc801edd1d4518a9345f7717ef8cc82e9588778ae2e23210f13be5b97193f",
+    "transformation_contract_version": "1.0.0",
+    "transformation_contract_sha256": "93e9b37c5c73931b48cfec23a7be2f15260309f1ab9598263e51eaf452eb354a",
+    "reference_sha256": "9c1d9c7d9f703a8b51e02959baa325cac8f3a8549a06b5d8d079a1dc258cbd7b",
+    "timetable_sql_sha256": "26a8eba623220932081582ae0eb6cdfb4f8eb517a196497fcab98b0d6b462dee"
+  },
+  "status": "passed",
+  "counts": {
+    "nodes": {
+      "Agency": 41,
+      "Route": 665,
+      "Trip": 92827,
+      "Stop": 21664,
+      "Service": 485,
+      "FeedSnapshot": 1
+    },
+    "relationships": {
+      "OPERATES": 665,
+      "HAS_TRIP": 92827,
+      "RUNS_ON": 92827,
+      "ROUTE_SERVES_STOP": 33985,
+      "AGENCY_SERVES_STOP": 19904,
+      "PART_OF": 2222,
+      "TRANSFER_RULE": 61
+    }
+  },
+  "duplicate_identities": 0,
+  "dangling_endpoints": 0,
+  "canonical_mappings": {
+    "route": 665,
+    "trip": 92827,
+    "shape": 2446,
+    "agency": 41,
+    "stop": 21664,
+    "service": 485
+  },
+  "shared_stops": 189,
+  "suffix_collision_groups": 364,
+  "normalized_source_records": 4699968,
+  "normalized_artifact_bytes": 61576978,
+  "raw_files_verified": 27,
+  "normalized_files_verified": 32,
+  "timetable": {
+    "visits": 3185115,
+    "arrivals": 100912,
+    "departures": 100948,
+    "flex": 0
+  },
+  "repeated_stop_trips": 4221,
+  "external_temporal_and_shapes": {
+    "calendar_end_2099": 5,
+    "exceptions": 5706,
+    "shape_points": 1340496
+  },
+  "exception_ledger": [
+    {
+      "source_file": "attributions.txt",
+      "disposition": "DEDUPLICATED",
+      "records": 40
+    },
+    {
+      "source_file": "directions.txt",
+      "disposition": "QUARANTINED",
+      "records": 2
+    },
+    {
+      "source_file": "fare_transfer_rules.txt",
+      "disposition": "QUARANTINED",
+      "records": 68
+    },
+    {
+      "source_file": "route_attributes.txt",
+      "disposition": "DEDUPLICATED",
+      "records": 2
+    },
+    {
+      "source_file": "shapes.txt",
+      "disposition": "FLAGGED",
+      "records": 21
+    }
+  ],
+  "retained_flagged_points": 21,
+  "wh53_direction_zero_trips": 24,
+  "transfers": [
+    {
+      "transfer_type": 0,
+      "n": 3,
+      "from_route": 0,
+      "to_route": 0,
+      "from_trip": 0,
+      "to_trip": 0
+    },
+    {
+      "transfer_type": 1,
+      "n": 10,
+      "from_route": 0,
+      "to_route": 0,
+      "from_trip": 0,
+      "to_trip": 0
+    },
+    {
+      "transfer_type": 2,
+      "n": 48,
+      "from_route": 44,
+      "to_route": 44,
+      "from_trip": 0,
+      "to_trip": 0
+    }
+  ],
+  "ac_selector": {
+    "status": "EXACT_MATCH",
+    "55660": [
+      {
+        "stop_id": "55660",
+        "canonical_id": "511-sf-bay-regional:stop:55660",
+        "stop_name": "San Pablo Av & W Grand Av",
+        "route_id": "AC:72",
+        "trips": 126
+      },
+      {
+        "stop_id": "55660",
+        "canonical_id": "511-sf-bay-regional:stop:55660",
+        "stop_name": "San Pablo Av & W Grand Av",
+        "route_id": "AC:72L",
+        "trips": 81
+      },
+      {
+        "stop_id": "55660",
+        "canonical_id": "511-sf-bay-regional:stop:55660",
+        "stop_name": "San Pablo Av & W Grand Av",
+        "route_id": "AC:72M",
+        "trips": 123
+      },
+      {
+        "stop_id": "55660",
+        "canonical_id": "511-sf-bay-regional:stop:55660",
+        "stop_name": "San Pablo Av & W Grand Av",
+        "route_id": "AC:802",
+        "trips": 15
+      }
+    ],
+    "52227": [
+      {
+        "stop_id": "52227",
+        "canonical_id": "511-sf-bay-regional:stop:52227",
+        "stop_name": "San Pablo Av & W Grand Av",
+        "route_id": "AC:72",
+        "trips": 121
+      },
+      {
+        "stop_id": "52227",
+        "canonical_id": "511-sf-bay-regional:stop:52227",
+        "stop_name": "San Pablo Av & W Grand Av",
+        "route_id": "AC:72L",
+        "trips": 80
+      },
+      {
+        "stop_id": "52227",
+        "canonical_id": "511-sf-bay-regional:stop:52227",
+        "stop_name": "San Pablo Av & W Grand Av",
+        "route_id": "AC:72M",
+        "trips": 123
+      },
+      {
+        "stop_id": "52227",
+        "canonical_id": "511-sf-bay-regional:stop:52227",
+        "stop_name": "San Pablo Av & W Grand Av",
+        "route_id": "AC:802",
+        "trips": 15
+      }
+    ],
+    "dated_service_day": "2026-11-25",
+    "dated_trips": 112,
+    "name_only": "AMBIGUOUS",
+    "wrong_agency": 0,
+    "wrong_direction": 0
+  },
+  "test_suites": {
+    "2": {
+      "passed": 7,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "blocked": 0
+    },
+    "3": {
+      "passed": 10,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "blocked": 0
+    },
+    "4": {
+      "passed": 13,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "blocked": 0
+    },
+    "5": {
+      "passed": 8,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "blocked": 0
+    }
+  },
+  "neo4j": "Offline Phase 5. Prior server and fixture verification recorded in Phase 4."
+}

@@ -1,0 +1,200 @@
+{
+  "identity_domains": {
+    "internal_source_to_canonical": "canonical_ids.parquet",
+    "external_verified_crosswalks": [],
+    "unverified_stop_code_aliases": "stop_alias_candidates.parquet"
+  },
+  "external_scope_limitation": "The verified input is the regional snapshot. No matching dated operator feed or authoritative operator crosswalk was supplied.",
+  "statuses": {
+    "EXACT_MATCH": "Unique exact source ID in the supplied regional snapshot and applicable selector scope.",
+    "VERIFIED_MAPPING": "An authoritative dated crosswalk or operator feed establishes equivalence to a regional entity.",
+    "CANDIDATE_MATCH": "One plausible candidate from supporting labels or aliases.",
+    "AMBIGUOUS_MATCH": "Multiple plausible scoped candidates.",
+    "NO_MATCH": "No entity matches the requested regional ID and selector scope.",
+    "UNVERIFIED": "Potential external alias has insufficient authoritative evidence."
+  },
+  "selector_lookups": {
+    "AgencyId": "agency and canonical_ids",
+    "RouteId and RouteType": "routes and trip_selector_context",
+    "DirectionId": "trip_selector_context with required route scope",
+    "StopId with AgencyId or RouteId": "agency_stops and route_stops for candidate scope",
+    "TripDescriptor": "trip_selector_context with timetable, service calendar and exceptions. Apply frequencies when present and identify the service date and start time as needed.",
+    "Combinations": "Evaluate all fields conjunctively on the same trip and applicable stop visit. Independent connectivity existence checks can overmatch."
+  },
+  "ac_transit_55660": {
+    "exact": {
+      "selector": {
+        "AgencyId": "AC",
+        "StopId": "55660"
+      },
+      "status": "EXACT_MATCH",
+      "candidates": [
+        {
+          "agency_id": "AC",
+          "stop_id": "55660",
+          "stop_name": "San Pablo Av & W Grand Av",
+          "canonical_agency_id": "511-sf-bay-regional:agency:AC",
+          "canonical_stop_id": "511-sf-bay-regional:stop:55660",
+          "routes": [
+            {
+              "route_id": "AC:72",
+              "canonical_route_id": "511-sf-bay-regional:route:AC%3A72",
+              "scheduled_trips": 126,
+              "scheduled_visits": 126
+            },
+            {
+              "route_id": "AC:72L",
+              "canonical_route_id": "511-sf-bay-regional:route:AC%3A72L",
+              "scheduled_trips": 81,
+              "scheduled_visits": 81
+            },
+            {
+              "route_id": "AC:72M",
+              "canonical_route_id": "511-sf-bay-regional:route:AC%3A72M",
+              "scheduled_trips": 123,
+              "scheduled_visits": 123
+            },
+            {
+              "route_id": "AC:802",
+              "canonical_route_id": "511-sf-bay-regional:route:AC%3A802",
+              "scheduled_trips": 15,
+              "scheduled_visits": 15
+            }
+          ],
+          "distinct_trips": 345
+        }
+      ]
+    },
+    "same_name_neighbor": {
+      "selector": {
+        "AgencyId": "AC",
+        "StopId": "52227"
+      },
+      "status": "EXACT_MATCH",
+      "candidates": [
+        {
+          "agency_id": "AC",
+          "stop_id": "52227",
+          "stop_name": "San Pablo Av & W Grand Av",
+          "canonical_agency_id": "511-sf-bay-regional:agency:AC",
+          "canonical_stop_id": "511-sf-bay-regional:stop:52227",
+          "routes": [
+            {
+              "route_id": "AC:72",
+              "canonical_route_id": "511-sf-bay-regional:route:AC%3A72",
+              "scheduled_trips": 121,
+              "scheduled_visits": 121
+            },
+            {
+              "route_id": "AC:72L",
+              "canonical_route_id": "511-sf-bay-regional:route:AC%3A72L",
+              "scheduled_trips": 80,
+              "scheduled_visits": 80
+            },
+            {
+              "route_id": "AC:72M",
+              "canonical_route_id": "511-sf-bay-regional:route:AC%3A72M",
+              "scheduled_trips": 123,
+              "scheduled_visits": 123
+            },
+            {
+              "route_id": "AC:802",
+              "canonical_route_id": "511-sf-bay-regional:route:AC%3A802",
+              "scheduled_trips": 15,
+              "scheduled_visits": 15
+            }
+          ],
+          "distinct_trips": 339
+        }
+      ]
+    },
+    "name_only": {
+      "selector": {
+        "AgencyId": "AC",
+        "StopName": "San Pablo Av & W Grand Av"
+      },
+      "status": "AMBIGUOUS_MATCH",
+      "candidates": [
+        {
+          "agency_id": "AC",
+          "stop_id": "52227",
+          "stop_name": "San Pablo Av & W Grand Av",
+          "canonical_agency_id": "511-sf-bay-regional:agency:AC",
+          "canonical_stop_id": "511-sf-bay-regional:stop:52227",
+          "routes": [
+            {
+              "route_id": "AC:72",
+              "canonical_route_id": "511-sf-bay-regional:route:AC%3A72",
+              "scheduled_trips": 121,
+              "scheduled_visits": 121
+            },
+            {
+              "route_id": "AC:72L",
+              "canonical_route_id": "511-sf-bay-regional:route:AC%3A72L",
+              "scheduled_trips": 80,
+              "scheduled_visits": 80
+            },
+            {
+              "route_id": "AC:72M",
+              "canonical_route_id": "511-sf-bay-regional:route:AC%3A72M",
+              "scheduled_trips": 123,
+              "scheduled_visits": 123
+            },
+            {
+              "route_id": "AC:802",
+              "canonical_route_id": "511-sf-bay-regional:route:AC%3A802",
+              "scheduled_trips": 15,
+              "scheduled_visits": 15
+            }
+          ],
+          "distinct_trips": 339
+        },
+        {
+          "agency_id": "AC",
+          "stop_id": "55660",
+          "stop_name": "San Pablo Av & W Grand Av",
+          "canonical_agency_id": "511-sf-bay-regional:agency:AC",
+          "canonical_stop_id": "511-sf-bay-regional:stop:55660",
+          "routes": [
+            {
+              "route_id": "AC:72",
+              "canonical_route_id": "511-sf-bay-regional:route:AC%3A72",
+              "scheduled_trips": 126,
+              "scheduled_visits": 126
+            },
+            {
+              "route_id": "AC:72L",
+              "canonical_route_id": "511-sf-bay-regional:route:AC%3A72L",
+              "scheduled_trips": 81,
+              "scheduled_visits": 81
+            },
+            {
+              "route_id": "AC:72M",
+              "canonical_route_id": "511-sf-bay-regional:route:AC%3A72M",
+              "scheduled_trips": 123,
+              "scheduled_visits": 123
+            },
+            {
+              "route_id": "AC:802",
+              "canonical_route_id": "511-sf-bay-regional:route:AC%3A802",
+              "scheduled_trips": 15,
+              "scheduled_visits": 15
+            }
+          ],
+          "distinct_trips": 345
+        }
+      ]
+    },
+    "checks": {
+      "agency_present": true,
+      "one_exact_stop_match": true,
+      "source_id_preserved": true,
+      "distinct_neighbor": true,
+      "matched_display_name": true,
+      "expected_routes_preserved": true,
+      "expected_trip_count_preserved": true,
+      "name_only_is_ambiguous": true
+    },
+    "passed": true
+  }
+}

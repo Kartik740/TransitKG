@@ -1,0 +1,536 @@
+{
+  "graph_ready_build_id": "graph-ready-sha256-f85cdfafe998da9e7eecb6697443ebd02e45f4d43e41462db7a8a5acb82dadae",
+  "expected_static_graph_fingerprint": "675d71bd4e8bd82ffc1ec0d8951ca527928ca4376c681e40193d14f451892e66",
+  "fingerprint_format": "transitkg-static-v1",
+  "inputs": {
+    "source_snapshot_id": "gtfs-sha256-d6279860e2fe203541a574ee04db5752ecad9e5e1a38b1759cc397b1b596dfa2",
+    "normalized_build_id": "normalized-sha256-5608c0d7d93b9c6200431b5c227da598d52cd0108e9e2f410e5b012b00d28052",
+    "normalized_manifest_sha256": "11969d832ae858f3e169c528bf3b1d7f3b6c351c5b6bdcf91e4e296b90300922",
+    "schema_version": "1.0.0",
+    "schema_sha256": "66c3e2d5524fcafb1608c9eb8c99125f55760781c789b2b4e1188d9360cb43db",
+    "canonical_contract_version": "1.0.0",
+    "canonical_contract_sha256": "50cdc801edd1d4518a9345f7717ef8cc82e9588778ae2e23210f13be5b97193f",
+    "transformation_contract_version": "1.0.0",
+    "transformation_contract_sha256": "93e9b37c5c73931b48cfec23a7be2f15260309f1ab9598263e51eaf452eb354a",
+    "reference_sha256": "9c1d9c7d9f703a8b51e02959baa325cac8f3a8549a06b5d8d079a1dc258cbd7b",
+    "timetable_sql_sha256": "26a8eba623220932081582ae0eb6cdfb4f8eb517a196497fcab98b0d6b462dee"
+  },
+  "implementation": {
+    "version": "1.0.0",
+    "sha256": {
+      "transform_static_graph.py": "5345a8fbc002aada4bcdfca8df52f05641f3fef7ed3e426215797d4e37a4db2c",
+      "validate_graph_ready.py": "5e0072f7cb5938e8a89ad17b633ce6c7ea86c59c00925d8c301f47603ccb563e",
+      "design_static_graph.py": "c9fba07eedfcb0b9d113b61101759d6754a0010773e7acd424886c587cea3db2"
+    }
+  },
+  "external": {
+    "normalized_path": "data/normalized/build-5608c0d7d93b9c6200431b5c",
+    "join": "Typed canonical_ids mapping between canonical_id and exact source_identifier",
+    "artifacts": [
+      "agency",
+      "agency_stops",
+      "areas",
+      "attributions",
+      "calendar",
+      "calendar_attributes",
+      "calendar_dates",
+      "canonical_ids",
+      "directions",
+      "fare_leg_join_rules",
+      "fare_leg_rules",
+      "fare_media",
+      "fare_products",
+      "fare_transfer_rules",
+      "feed_info",
+      "levels",
+      "mtc_feed_versions",
+      "pathways",
+      "rider_categories",
+      "route_attributes",
+      "route_stops",
+      "routes",
+      "row_exception_ledger",
+      "shapes",
+      "stop_alias_candidates",
+      "stop_areas",
+      "stop_times",
+      "stops",
+      "timeframes",
+      "transfers",
+      "trip_selector_context",
+      "trips"
+    ]
+  },
+  "counts": {
+    "nodes": {
+      "Agency": 41,
+      "Route": 665,
+      "Trip": 92827,
+      "Stop": 21664,
+      "Service": 485,
+      "FeedSnapshot": 1
+    },
+    "relationships": {
+      "OPERATES": 665,
+      "HAS_TRIP": 92827,
+      "RUNS_ON": 92827,
+      "ROUTE_SERVES_STOP": 33985,
+      "AGENCY_SERVES_STOP": 19904,
+      "PART_OF": 2222,
+      "TRANSFER_RULE": 61
+    }
+  },
+  "artifacts": {
+    "nodes/Agency.parquet": {
+      "schema": {
+        "canonical_id": "VARCHAR",
+        "source_id": "VARCHAR",
+        "agency_name": "VARCHAR",
+        "agency_timezone": "VARCHAR"
+      },
+      "records": 41,
+      "sha256": "c18302ce9b902f6b2f8dd9f67be2dfbf7b96d920be96605d91a2fbd300b6e74d",
+      "logical_sha256": "31c717d3f58a4b6f735bc078385197aca3232a85c9de7da4d027556f843da28d",
+      "bytes": 1724,
+      "lineage": {
+        "source": "agency",
+        "identity": "canonical_id",
+        "schema_definition": "Agency"
+      }
+    },
+    "nodes/Route.parquet": {
+      "schema": {
+        "canonical_id": "VARCHAR",
+        "source_id": "VARCHAR",
+        "route_type": "BIGINT",
+        "route_short_name": "VARCHAR",
+        "route_long_name": "VARCHAR"
+      },
+      "records": 665,
+      "sha256": "499ec22958527371eef19ed5d2099ffd5cf018c9178a0d90ec0d05365358b07b",
+      "logical_sha256": "b2876cd64dc940bd4ca1d4d993c76193b1e74744dc1f3d1112d2faa84ca2dd9b",
+      "bytes": 15295,
+      "lineage": {
+        "source": "routes",
+        "identity": "canonical_id",
+        "schema_definition": "Route"
+      }
+    },
+    "nodes/Trip.parquet": {
+      "schema": {
+        "canonical_id": "VARCHAR",
+        "source_id": "VARCHAR",
+        "direction_id": "BIGINT",
+        "trip_headsign": "VARCHAR",
+        "shape_id": "VARCHAR"
+      },
+      "records": 92827,
+      "sha256": "1ec3401b6615ce862c7c0bfa74471e755c8898b47558179447860ba8e7117fe9",
+      "logical_sha256": "5d59dadc1d1494cb1773fd8856ce710cae68ede741783be4a79ab122f9c3de8c",
+      "bytes": 466260,
+      "lineage": {
+        "source": "trips",
+        "identity": "canonical_id",
+        "schema_definition": "Trip"
+      }
+    },
+    "nodes/Stop.parquet": {
+      "schema": {
+        "canonical_id": "VARCHAR",
+        "source_id": "VARCHAR",
+        "stop_name": "VARCHAR",
+        "location_type": "BIGINT",
+        "stop_code": "VARCHAR",
+        "platform_code": "VARCHAR"
+      },
+      "records": 21664,
+      "sha256": "107c2e0fb080d7910665654117fff9c882a64a99b3f2e85bdb776624e4b2d8aa",
+      "logical_sha256": "69542d9d68f052a86d00054cfe148fa86c775222b386b9d4e748262d4da3ff73",
+      "bytes": 284305,
+      "lineage": {
+        "source": "stops",
+        "identity": "canonical_id",
+        "schema_definition": "Stop"
+      }
+    },
+    "nodes/Service.parquet": {
+      "schema": {
+        "canonical_id": "VARCHAR",
+        "source_id": "VARCHAR"
+      },
+      "records": 485,
+      "sha256": "4a7de1aa2fa76f74db3dfc26a8e380a4f8b7e9d56b4eb0c8d855204daf2f0807",
+      "logical_sha256": "c076c8801db60f47c2a20fd846450d411f47b4488ca34855fb218526fa985bb5",
+      "bytes": 3271,
+      "lineage": {
+        "source": "canonical_ids",
+        "identity": "canonical_id",
+        "schema_definition": "Service"
+      }
+    },
+    "nodes/FeedSnapshot.parquet": {
+      "schema": {
+        "normalized_build_id": "VARCHAR",
+        "source_snapshot_id": "VARCHAR",
+        "schema_version": "VARCHAR",
+        "construction_version": "VARCHAR",
+        "canonical_contract_version": "VARCHAR",
+        "static_fingerprint": "VARCHAR"
+      },
+      "records": 1,
+      "sha256": "cca865800fcc962d42d359470eae79461eae62aea5735ec0b2b6cde74a1dee30",
+      "logical_sha256": "74f6357fd1ab355a47cc1c843fdc174cd2fab062f3692d9b9780ed516f3ad517",
+      "bytes": 2006,
+      "lineage": {
+        "source": "manifest.json and Phase 5 build manifest",
+        "identity": "normalized_build_id",
+        "schema_definition": "FeedSnapshot"
+      }
+    },
+    "relationships/OPERATES.parquet": {
+      "schema": {
+        "start_id": "VARCHAR",
+        "end_id": "VARCHAR"
+      },
+      "records": 665,
+      "sha256": "3d5fc3b0a450292bf7429b4a2ab30354ffae6b5fb595d72831618ba37b7d78b1",
+      "logical_sha256": "a38f323470af36ac7c855a5eee5473e3c439b539728b46779d5c0cc12c0e2bd8",
+      "bytes": 3473,
+      "lineage": {
+        "source": "routes",
+        "identity": [
+          "type",
+          "start.canonical_id",
+          "end.canonical_id"
+        ],
+        "schema_definition": "OPERATES"
+      }
+    },
+    "relationships/HAS_TRIP.parquet": {
+      "schema": {
+        "start_id": "VARCHAR",
+        "end_id": "VARCHAR"
+      },
+      "records": 92827,
+      "sha256": "813899676c34b29c9bccb6a0bd1a09901deb25f6ea38c34f914269e90d1325e8",
+      "logical_sha256": "c559ba93a5b717cc78a44741e1ff270ef0ba4e0223b8d3d4b24bb0c8cb25ea33",
+      "bytes": 218452,
+      "lineage": {
+        "source": "trips",
+        "identity": [
+          "type",
+          "start.canonical_id",
+          "end.canonical_id"
+        ],
+        "schema_definition": "HAS_TRIP"
+      }
+    },
+    "relationships/RUNS_ON.parquet": {
+      "schema": {
+        "start_id": "VARCHAR",
+        "end_id": "VARCHAR"
+      },
+      "records": 92827,
+      "sha256": "fe7ed81bc03fe8d9969299d10fc15fdcc4b446043dc8be641fa2cf2b02e219bd",
+      "logical_sha256": "41e6cbb0e262377d443cf0fac349775155468a3d72a64f0696d7ee61353f203c",
+      "bytes": 203463,
+      "lineage": {
+        "source": "trips",
+        "identity": [
+          "type",
+          "start.canonical_id",
+          "end.canonical_id"
+        ],
+        "schema_definition": "RUNS_ON"
+      }
+    },
+    "relationships/ROUTE_SERVES_STOP.parquet": {
+      "schema": {
+        "start_id": "VARCHAR",
+        "end_id": "VARCHAR",
+        "scheduled_visits": "BIGINT",
+        "scheduled_trips": "BIGINT"
+      },
+      "records": 33985,
+      "sha256": "b445bf9ffa4d7236b628d6d01e10abaae0edbe98cd047f647e467e2b53c2a7fc",
+      "logical_sha256": "88c6e325b228244c64a47853c22aa634360496eabbfae56911a28db15b8dd72d",
+      "bytes": 122468,
+      "lineage": {
+        "source": "route_stops",
+        "identity": [
+          "type",
+          "start.canonical_id",
+          "end.canonical_id"
+        ],
+        "schema_definition": "ROUTE_SERVES_STOP"
+      }
+    },
+    "relationships/AGENCY_SERVES_STOP.parquet": {
+      "schema": {
+        "start_id": "VARCHAR",
+        "end_id": "VARCHAR",
+        "scheduled_visits": "BIGINT",
+        "serving_routes": "BIGINT"
+      },
+      "records": 19904,
+      "sha256": "bc38ffdcaef4d8641c5b59dde63b491c0fe8380240c649c9965872a0ccd6dfd5",
+      "logical_sha256": "59ad9e384d9246fa8175da2cf8973bc1a2a25bde9956fe0dac033ab848374177",
+      "bytes": 68065,
+      "lineage": {
+        "source": "agency_stops",
+        "identity": [
+          "type",
+          "start.canonical_id",
+          "end.canonical_id"
+        ],
+        "schema_definition": "AGENCY_SERVES_STOP"
+      }
+    },
+    "relationships/PART_OF.parquet": {
+      "schema": {
+        "start_id": "VARCHAR",
+        "end_id": "VARCHAR"
+      },
+      "records": 2222,
+      "sha256": "afd4141cdd78d665c41aef154735405bc7f4ad49956be05ad2ae26b760d73e8e",
+      "logical_sha256": "00fecec464884ed029b708009695db224d4bb160a2c8aed5aaf9829fbfd89b68",
+      "bytes": 15198,
+      "lineage": {
+        "source": "stops",
+        "identity": [
+          "type",
+          "start.canonical_id",
+          "end.canonical_id"
+        ],
+        "schema_definition": "PART_OF"
+      }
+    },
+    "relationships/TRANSFER_RULE.parquet": {
+      "schema": {
+        "start_id": "VARCHAR",
+        "end_id": "VARCHAR",
+        "from_route_id": "VARCHAR",
+        "to_route_id": "VARCHAR",
+        "from_trip_id": "VARCHAR",
+        "to_trip_id": "VARCHAR",
+        "transfer_type": "BIGINT",
+        "min_transfer_time": "BIGINT"
+      },
+      "records": 61,
+      "sha256": "a45846b87b19afa51cfb4bcf7b0e2b2c996da0753a7a6bb346475964f40e09d3",
+      "logical_sha256": "750b6fd75ae04c795f86d9746cdc41aad72eba1715a517b3b09f0cac0e0c418f",
+      "bytes": 2401,
+      "lineage": {
+        "source": "transfers",
+        "identity": [
+          "type",
+          "start.canonical_id",
+          "end.canonical_id",
+          "from_route_id",
+          "to_route_id",
+          "from_trip_id",
+          "to_trip_id"
+        ],
+        "schema_definition": "TRANSFER_RULE"
+      }
+    }
+  },
+  "validation": {
+    "status": "passed",
+    "counts": {
+      "nodes": {
+        "Agency": 41,
+        "Route": 665,
+        "Trip": 92827,
+        "Stop": 21664,
+        "Service": 485,
+        "FeedSnapshot": 1
+      },
+      "relationships": {
+        "OPERATES": 665,
+        "HAS_TRIP": 92827,
+        "RUNS_ON": 92827,
+        "ROUTE_SERVES_STOP": 33985,
+        "AGENCY_SERVES_STOP": 19904,
+        "PART_OF": 2222,
+        "TRANSFER_RULE": 61
+      }
+    },
+    "duplicate_identities": 0,
+    "dangling_endpoints": 0,
+    "canonical_mappings": {
+      "route": 665,
+      "trip": 92827,
+      "shape": 2446,
+      "agency": 41,
+      "stop": 21664,
+      "service": 485
+    },
+    "shared_stops": 189,
+    "suffix_collision_groups": 364,
+    "normalized_source_records": 4699968,
+    "normalized_artifact_bytes": 61576978,
+    "raw_files_verified": 27,
+    "normalized_files_verified": 32,
+    "timetable": {
+      "visits": 3185115,
+      "arrivals": 100912,
+      "departures": 100948,
+      "flex": 0
+    },
+    "repeated_stop_trips": 4221,
+    "external_temporal_and_shapes": {
+      "calendar_end_2099": 5,
+      "exceptions": 5706,
+      "shape_points": 1340496
+    },
+    "exception_ledger": [
+      {
+        "source_file": "attributions.txt",
+        "disposition": "DEDUPLICATED",
+        "records": 40
+      },
+      {
+        "source_file": "directions.txt",
+        "disposition": "QUARANTINED",
+        "records": 2
+      },
+      {
+        "source_file": "fare_transfer_rules.txt",
+        "disposition": "QUARANTINED",
+        "records": 68
+      },
+      {
+        "source_file": "route_attributes.txt",
+        "disposition": "DEDUPLICATED",
+        "records": 2
+      },
+      {
+        "source_file": "shapes.txt",
+        "disposition": "FLAGGED",
+        "records": 21
+      }
+    ],
+    "retained_flagged_points": 21,
+    "wh53_direction_zero_trips": 24,
+    "transfers": [
+      {
+        "transfer_type": 0,
+        "n": 3,
+        "from_route": 0,
+        "to_route": 0,
+        "from_trip": 0,
+        "to_trip": 0
+      },
+      {
+        "transfer_type": 1,
+        "n": 10,
+        "from_route": 0,
+        "to_route": 0,
+        "from_trip": 0,
+        "to_trip": 0
+      },
+      {
+        "transfer_type": 2,
+        "n": 48,
+        "from_route": 44,
+        "to_route": 44,
+        "from_trip": 0,
+        "to_trip": 0
+      }
+    ],
+    "ac_selector": {
+      "status": "EXACT_MATCH",
+      "55660": [
+        {
+          "stop_id": "55660",
+          "canonical_id": "511-sf-bay-regional:stop:55660",
+          "stop_name": "San Pablo Av & W Grand Av",
+          "route_id": "AC:72",
+          "trips": 126
+        },
+        {
+          "stop_id": "55660",
+          "canonical_id": "511-sf-bay-regional:stop:55660",
+          "stop_name": "San Pablo Av & W Grand Av",
+          "route_id": "AC:72L",
+          "trips": 81
+        },
+        {
+          "stop_id": "55660",
+          "canonical_id": "511-sf-bay-regional:stop:55660",
+          "stop_name": "San Pablo Av & W Grand Av",
+          "route_id": "AC:72M",
+          "trips": 123
+        },
+        {
+          "stop_id": "55660",
+          "canonical_id": "511-sf-bay-regional:stop:55660",
+          "stop_name": "San Pablo Av & W Grand Av",
+          "route_id": "AC:802",
+          "trips": 15
+        }
+      ],
+      "52227": [
+        {
+          "stop_id": "52227",
+          "canonical_id": "511-sf-bay-regional:stop:52227",
+          "stop_name": "San Pablo Av & W Grand Av",
+          "route_id": "AC:72",
+          "trips": 121
+        },
+        {
+          "stop_id": "52227",
+          "canonical_id": "511-sf-bay-regional:stop:52227",
+          "stop_name": "San Pablo Av & W Grand Av",
+          "route_id": "AC:72L",
+          "trips": 80
+        },
+        {
+          "stop_id": "52227",
+          "canonical_id": "511-sf-bay-regional:stop:52227",
+          "stop_name": "San Pablo Av & W Grand Av",
+          "route_id": "AC:72M",
+          "trips": 123
+        },
+        {
+          "stop_id": "52227",
+          "canonical_id": "511-sf-bay-regional:stop:52227",
+          "stop_name": "San Pablo Av & W Grand Av",
+          "route_id": "AC:802",
+          "trips": 15
+        }
+      ],
+      "dated_service_day": "2026-11-25",
+      "dated_trips": 112,
+      "name_only": "AMBIGUOUS",
+      "wrong_agency": 0,
+      "wrong_direction": 0
+    }
+  },
+  "artifact_bytes": 1406381,
+  "created_utc": "2026-11-24T21:25:51.355888+00:00",
+  "environment": {
+    "python": "3.14.0",
+    "duckdb": "1.5.0",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "threads": 2,
+    "duckdb_memory_limit": "768MB"
+  },
+  "execution": {
+    "wall_seconds": 11.747,
+    "cpu_seconds": 14.766,
+    "peak_rss_mib": 806.62,
+    "stages": {
+      "input_verification": 0.239,
+      "nodes": 1.014,
+      "relationships": 0.308,
+      "fingerprint": 3.548,
+      "validation": 5.832,
+      "final_input_verification": 0.282
+    },
+    "staged_files_peak_bytes": 1406381,
+    "duckdb_spill_peak_bytes": 283705344,
+    "temporary_peak_upper_bound_bytes": 285111725
+  }
+}

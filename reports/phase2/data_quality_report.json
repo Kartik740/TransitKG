@@ -1,0 +1,1480 @@
+{
+  "keys": [
+    {
+      "file": "agency.txt",
+      "key_columns": [
+        "agency_id"
+      ],
+      "basis": "GTFS Schedule",
+      "singleton_constraint": false,
+      "total_records": 41,
+      "optional_key_components": [
+        "agency_id"
+      ],
+      "observed_key_tuples_including_missing": 41,
+      "unique_complete_keys": 41,
+      "missing_required_key_records": 0,
+      "records_with_any_blank_key_component": 0,
+      "duplicate_complete_key_groups": 0,
+      "records_with_duplicate_complete_keys": 0,
+      "excess_duplicate_complete_key_records": 0,
+      "status": "checked",
+      "exact_duplicate_excess_rows": 0,
+      "conflicting_duplicate_groups": 0,
+      "records_in_conflicting_groups": 0,
+      "duplicate_examples": []
+    },
+    {
+      "file": "areas.txt",
+      "key_columns": [
+        "area_id"
+      ],
+      "basis": "GTFS Schedule",
+      "singleton_constraint": false,
+      "total_records": 678,
+      "optional_key_components": [],
+      "observed_key_tuples_including_missing": 678,
+      "unique_complete_keys": 678,
+      "missing_required_key_records": 0,
+      "records_with_any_blank_key_component": 0,
+      "duplicate_complete_key_groups": 0,
+      "records_with_duplicate_complete_keys": 0,
+      "excess_duplicate_complete_key_records": 0,
+      "status": "checked",
+      "exact_duplicate_excess_rows": 0,
+      "conflicting_duplicate_groups": 0,
+      "records_in_conflicting_groups": 0,
+      "duplicate_examples": []
+    },
+    {
+      "file": "attributions.txt",
+      "key_columns": [
+        "attribution_id"
+      ],
+      "basis": "GTFS Schedule",
+      "singleton_constraint": false,
+      "total_records": 41,
+      "optional_key_components": [
+        "attribution_id"
+      ],
+      "observed_key_tuples_including_missing": 1,
+      "unique_complete_keys": 0,
+      "missing_required_key_records": 0,
+      "records_with_any_blank_key_component": 41,
+      "duplicate_complete_key_groups": 0,
+      "records_with_duplicate_complete_keys": 0,
+      "excess_duplicate_complete_key_records": 0,
+      "status": "checked",
+      "exact_duplicate_excess_rows": 40,
+      "conflicting_duplicate_groups": 0,
+      "records_in_conflicting_groups": 0,
+      "duplicate_examples": [
+        {
+          "k0": null,
+          "n": 41,
+          "variants": 1,
+          "raw_row_examples": [
+            {
+              "organization_name": "511 SF Bay",
+              "agency_id": null,
+              "route_id": null,
+              "trip_id": null,
+              "is_producer": "1",
+              "is_operator": null,
+              "is_authority": null,
+              "attribution_id": null,
+              "attribution_url": "https://511.org/open-data",
+              "attribution_email": "transitdata@511.org",
+              "attribution_phone": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "calendar.txt",
+      "key_columns": [
+        "service_id"
+      ],
+      "basis": "GTFS Schedule",
+      "singleton_constraint": false,
+      "total_records": 485,
+      "optional_key_components": [],
+      "observed_key_tuples_including_missing": 485,
+      "unique_complete_keys": 485,
+      "missing_required_key_records": 0,
+      "records_with_any_blank_key_component": 0,
+      "duplicate_complete_key_groups": 0,
+      "records_with_duplicate_complete_keys": 0,
+      "excess_duplicate_complete_key_records": 0,
+      "status": "checked",
+      "exact_duplicate_excess_rows": 0,
+      "conflicting_duplicate_groups": 0,
+      "records_in_conflicting_groups": 0,
+      "duplicate_examples": []
+    },
+    {
+      "file": "calendar_attributes.txt",
+      "key_columns": [
+        "service_id"
+      ],
+      "basis": "candidate",
+      "singleton_constraint": false,
+      "total_records": 449,
+      "optional_key_components": [],
+      "observed_key_tuples_including_missing": 449,
+      "unique_complete_keys": 449,
+      "missing_required_key_records": 0,
+      "records_with_any_blank_key_component": 0,
+      "duplicate_complete_key_groups": 0,
+      "records_with_duplicate_complete_keys": 0,
+      "excess_duplicate_complete_key_records": 0,
+      "status": "checked",
+      "exact_duplicate_excess_rows": 0,
+      "conflicting_duplicate_groups": 0,
+      "records_in_conflicting_groups": 0,
+      "duplicate_examples": []
+    },
+    {
+      "file": "calendar_dates.txt",
+      "key_columns": [
+        "service_id",
+        "date"
+      ],
+      "basis": "GTFS Schedule",
+      "singleton_constraint": false,
+      "total_records": 5706,
+      "optional_key_components": [],
+      "observed_key_tuples_including_missing": 5706,
+      "unique_complete_keys": 5706,
+      "missing_required_key_records": 0,
+      "records_with_any_blank_key_component": 0,
+      "duplicate_complete_key_groups": 0,
+      "records_with_duplicate_complete_keys": 0,
+      "excess_duplicate_complete_key_records": 0,
+      "status": "checked",
+      "exact_duplicate_excess_rows": 0,
+      "conflicting_duplicate_groups": 0,
+      "records_in_conflicting_groups": 0,
+      "duplicate_examples": []
+    },
+    {
+      "file": "directions.txt",
+      "key_columns": [
+        "route_id",
+        "direction_id"
+      ],
+      "basis": "candidate from 511 documentation",
+      "singleton_constraint": false,
+      "total_records": 1184,
+      "optional_key_components": [],
+      "observed_key_tuples_including_missing": 1183,
+      "unique_complete_keys": 1183,
+      "missing_required_key_records": 0,
+      "records_with_any_blank_key_component": 0,
+      "duplicate_complete_key_groups": 1,
+      "records_with_duplicate_complete_keys": 2,
+      "excess_duplicate_complete_key_records": 1,
+      "status": "checked",
+      "exact_duplicate_excess_rows": 0,
+      "conflicting_duplicate_groups": 1,
+      "records_in_conflicting_groups": 2,
+      "duplicate_examples": [
+        {
+          "k0": "WH:53",
+          "k1": "0",
+          "n": 2,
+          "variants": 2,
+          "raw_row_examples": [
+            {
+              "route_id": "WH:53",
+              "direction_id": "0",
+              "direction": "Inbound"
+            },
+            {
+              "route_id": "WH:53",
+              "direction_id": "0",
+              "direction": "Outbound"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "fare_leg_join_rules.txt",
+      "key_columns": [
+        "from_network_id",
+        "to_network_id",
+        "from_stop_id",
+        "to_stop_id"
+      ],
+      "basis": "GTFS Schedule",
+      "singleton_constraint": false,
+      "total_records": 5,
+      "optional_key_components": [
+        "from_stop_id",
+        "to_stop_id"
+      ],
+      "observed_key_tuples_including_missing": 5,
+      "unique_complete_keys": 5,
+      "missing_required_key_records": 0,
+      "records_with_any_blank_key_component": 5,
+      "duplicate_complete_key_groups": 0,
+      "records_with_duplicate_complete_keys": 0,
+      "excess_duplicate_complete_key_records": 0,
+      "status": "checked",
+      "exact_duplicate_excess_rows": 0,
+      "conflicting_duplicate_groups": 0,
+      "records_in_conflicting_groups": 0,
+      "duplicate_examples": []
+    },
+    {
+      "file": "fare_leg_rules.txt",
+      "key_columns": [
+        "network_id",
+        "from_area_id",
+        "to_area_id",
+        "from_timeframe_group_id",
+        "to_timeframe_group_id",
+        "fare_product_id"
+      ],
+      "basis": "GTFS Schedule",
+      "singleton_constraint": false,
+      "total_records": 3610,
+      "optional_key_components": [
+        "from_area_id",
+        "from_timeframe_group_id",
+        "network_id",
+        "to_area_id",
+        "to_timeframe_group_id"
+      ],
+      "observed_key_tuples_including_missing": 3610,
+      "unique_complete_keys": 3610,
+      "missing_required_key_records": 0,
+      "records_with_any_blank_key_component": 3610,
+      "duplicate_complete_key_groups": 0,
+      "records_with_duplicate_complete_keys": 0,
+      "excess_duplicate_complete_key_records": 0,
+      "status": "checked",
+      "exact_duplicate_excess_rows": 0,
+      "conflicting_duplicate_groups": 0,
+      "records_in_conflicting_groups": 0,
+      "duplicate_examples": []
+    },
+    {
+      "file": "fare_media.txt",
+      "key_columns": [
+        "fare_media_id"
+      ],
+      "basis": "GTFS Schedule",
+      "singleton_constraint": false,
+      "total_records": 7,
+      "optional_key_components": [],
+      "observed_key_tuples_including_missing": 7,
+      "unique_complete_keys": 7,
+      "missing_required_key_records": 0,
+      "records_with_any_blank_key_component": 0,
+      "duplicate_complete_key_groups": 0,
+      "records_with_duplicate_complete_keys": 0,
+      "excess_duplicate_complete_key_records": 0,
+      "status": "checked",
+      "exact_duplicate_excess_rows": 0,
+      "conflicting_duplicate_groups": 0,
+      "records_in_conflicting_groups": 0,
+      "duplicate_examples": []
+    },
+    {
+      "file": "fare_products.txt",
+      "key_columns": [
+        "fare_product_id",
+        "rider_category_id",
+        "fare_media_id"
+      ],
+      "basis": "GTFS Schedule",
+      "singleton_constraint": false,
+      "total_records": 11545,
+      "optional_key_components": [
+        "fare_media_id",
+        "rider_category_id"
+      ],
+      "observed_key_tuples_including_missing": 11545,
+      "unique_complete_keys": 11545,
+      "missing_required_key_records": 0,
+      "records_with_any_blank_key_component": 6,
+      "duplicate_complete_key_groups": 0,
+      "records_with_duplicate_complete_keys": 0,
+      "excess_duplicate_complete_key_records": 0,
+      "status": "checked",
+      "exact_duplicate_excess_rows": 0,
+      "conflicting_duplicate_groups": 0,
+      "records_in_conflicting_groups": 0,
+      "duplicate_examples": []
+    },
+    {
+      "file": "fare_transfer_rules.txt",
+      "key_columns": [
+        "from_leg_group_id",
+        "to_leg_group_id",
+        "fare_product_id",
+        "transfer_count",
+        "duration_limit"
+      ],
+      "basis": "GTFS Schedule",
+      "singleton_constraint": false,
+      "total_records": 228,
+      "optional_key_components": [
+        "duration_limit",
+        "fare_product_id",
+        "from_leg_group_id",
+        "to_leg_group_id",
+        "transfer_count"
+      ],
+      "observed_key_tuples_including_missing": 180,
+      "unique_complete_keys": 180,
+      "missing_required_key_records": 0,
+      "records_with_any_blank_key_component": 212,
+      "duplicate_complete_key_groups": 20,
+      "records_with_duplicate_complete_keys": 68,
+      "excess_duplicate_complete_key_records": 48,
+      "status": "checked",
+      "exact_duplicate_excess_rows": 0,
+      "conflicting_duplicate_groups": 20,
+      "records_in_conflicting_groups": 68,
+      "duplicate_examples": [
+        {
+          "k0": "CT",
+          "k1": "AC",
+          "k2": "transfer:free-clipper",
+          "k3": null,
+          "k4": "7200",
+          "n": 5,
+          "variants": 5,
+          "raw_row_examples": [
+            {
+              "from_leg_group_id": "CT",
+              "to_leg_group_id": "AC",
+              "transfer_count": null,
+              "duration_limit": "7200",
+              "duration_limit_type": "2",
+              "fare_transfer_type": "0",
+              "fare_product_id": "transfer:free-clipper",
+              "filter_fare_product_id": "CT:multizone:2:1-month"
+            },
+            {
+              "from_leg_group_id": "CT",
+              "to_leg_group_id": "AC",
+              "transfer_count": null,
+              "duration_limit": "7200",
+              "duration_limit_type": "2",
+              "fare_transfer_type": "0",
+              "fare_product_id": "transfer:free-clipper",
+              "filter_fare_product_id": "CT:multizone:3:1-month"
+            }
+          ]
+        },
+        {
+          "k0": "CT",
+          "k1": "AC:transbay",
+          "k2": "AC:transfer:transbay-upgrade",
+          "k3": null,
+          "k4": "7200",
+          "n": 5,
+          "variants": 5,
+          "raw_row_examples": [
+            {
+              "from_leg_group_id": "CT",
+              "to_leg_group_id": "AC:transbay",
+              "transfer_count": null,
+              "duration_limit": "7200",
+              "duration_limit_type": "2",
+              "fare_transfer_type": "0",
+              "fare_product_id": "AC:transfer:transbay-upgrade",
+              "filter_fare_product_id": "CT:multizone:2:1-month"
+            },
+            {
+              "from_leg_group_id": "CT",
+              "to_leg_group_id": "AC:transbay",
+              "transfer_count": null,
+              "duration_limit": "7200",
+              "duration_limit_type": "2",
+              "fare_transfer_type": "0",
+              "fare_product_id": "AC:transfer:transbay-upgrade",
+              "filter_fare_product_id": "CT:multizone:3:1-month"
+            }
+          ]
+        },
+        {
+          "k0": "CT",
+          "k1": "DE",
+          "k2": "transfer:free-clipper",
+          "k3": null,
+          "k4": "7200",
+          "n": 5,
+          "variants": 5,
+          "raw_row_examples": [
+            {
+              "from_leg_group_id": "CT",
+              "to_leg_group_id": "DE",
+              "transfer_count": null,
+              "duration_limit": "7200",
+              "duration_limit_type": "2",
+              "fare_transfer_type": "0",
+              "fare_product_id": "transfer:free-clipper",
+              "filter_fare_product_id": "CT:multizone:2:1-month"
+            },
+            {
+              "from_leg_group_id": "CT",
+              "to_leg_group_id": "DE",
+              "transfer_count": null,
+              "duration_limit": "7200",
+              "duration_limit_type": "2",
+              "fare_transfer_type": "0",
+              "fare_product_id": "transfer:free-clipper",
+              "filter_fare_product_id": "CT:multizone:3:1-month"
+            }
+          ]
+        },
+        {
+          "k0": "CT",
+          "k1": "DE:transbay",
+          "k2": "DE:transfer:transbay-upgrade",
+          "k3": null,
+          "k4": "7200",
+          "n": 5,
+          "variants": 5,
+          "raw_row_examples": [
+            {
+              "from_leg_group_id": "CT",
+              "to_leg_group_id": "DE:transbay",
+              "transfer_count": null,
+              "duration_limit": "7200",
+              "duration_limit_type": "2",
+              "fare_transfer_type": "0",
+              "fare_product_id": "DE:transfer:transbay-upgrade",
+              "filter_fare_product_id": "CT:multizone:2:1-month"
+            },
+            {
+              "from_leg_group_id": "CT",
+              "to_leg_group_id": "DE:transbay",
+              "transfer_count": null,
+              "duration_limit": "7200",
+              "duration_limit_type": "2",
+              "fare_transfer_type": "0",
+              "fare_product_id": "DE:transfer:transbay-upgrade",
+              "filter_fare_product_id": "CT:multizone:3:1-month"
+            }
+          ]
+        },
+        {
+          "k0": "SC",
+          "k1": "AC",
+          "k2": "transfer:free-clipper",
+          "k3": null,
+          "k4": "9000",
+          "n": 4,
+          "variants": 4,
+          "raw_row_examples": [
+            {
+              "from_leg_group_id": "SC",
+              "to_leg_group_id": "AC",
+              "transfer_count": null,
+              "duration_limit": "9000",
+              "duration_limit_type": "1",
+              "fare_transfer_type": "0",
+              "fare_product_id": "transfer:free-clipper",
+              "filter_fare_product_id": "SC:all:1-month"
+            },
+            {
+              "from_leg_group_id": "SC",
+              "to_leg_group_id": "AC",
+              "transfer_count": null,
+              "duration_limit": "9000",
+              "duration_limit_type": "1",
+              "fare_transfer_type": "0",
+              "fare_product_id": "transfer:free-clipper",
+              "filter_fare_product_id": "SC:all:1-year"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "feed_info.txt",
+      "key_columns": [],
+      "basis": "GTFS Schedule",
+      "singleton_constraint": true,
+      "total_records": 1,
+      "optional_key_components": [],
+      "observed_key_tuples_including_missing": 1,
+      "unique_complete_keys": 1,
+      "missing_required_key_records": 0,
+      "records_with_any_blank_key_component": 0,
+      "duplicate_complete_key_groups": 0,
+      "records_with_duplicate_complete_keys": 0,
+      "excess_duplicate_complete_key_records": 0,
+      "status": "checked",
+      "exact_duplicate_excess_rows": 0,
+      "conflicting_duplicate_groups": 0,
+      "records_in_conflicting_groups": 0,
+      "duplicate_examples": []
+    },
+    {
+      "file": "levels.txt",
+      "key_columns": [
+        "level_id"
+      ],
+      "basis": "GTFS Schedule",
+      "singleton_constraint": false,
+      "total_records": 92,
+      "optional_key_components": [],
+      "observed_key_tuples_including_missing": 92,
+      "unique_complete_keys": 92,
+      "missing_required_key_records": 0,
+      "records_with_any_blank_key_component": 0,
+      "duplicate_complete_key_groups": 0,
+      "records_with_duplicate_complete_keys": 0,
+      "excess_duplicate_complete_key_records": 0,
+      "status": "checked",
+      "exact_duplicate_excess_rows": 0,
+      "conflicting_duplicate_groups": 0,
+      "records_in_conflicting_groups": 0,
+      "duplicate_examples": []
+    },
+    {
+      "file": "mtc_feed_versions.txt",
+      "key_columns": [
+        "agency_id"
+      ],
+      "basis": "candidate",
+      "singleton_constraint": false,
+      "total_records": 41,
+      "optional_key_components": [],
+      "observed_key_tuples_including_missing": 41,
+      "unique_complete_keys": 41,
+      "missing_required_key_records": 0,
+      "records_with_any_blank_key_component": 0,
+      "duplicate_complete_key_groups": 0,
+      "records_with_duplicate_complete_keys": 0,
+      "excess_duplicate_complete_key_records": 0,
+      "status": "checked",
+      "exact_duplicate_excess_rows": 0,
+      "conflicting_duplicate_groups": 0,
+      "records_in_conflicting_groups": 0,
+      "duplicate_examples": []
+    },
+    {
+      "file": "pathways.txt",
+      "key_columns": [
+        "pathway_id"
+      ],
+      "basis": "GTFS Schedule",
+      "singleton_constraint": false,
+      "total_records": 1632,
+      "optional_key_components": [],
+      "observed_key_tuples_including_missing": 1632,
+      "unique_complete_keys": 1632,
+      "missing_required_key_records": 0,
+      "records_with_any_blank_key_component": 0,
+      "duplicate_complete_key_groups": 0,
+      "records_with_duplicate_complete_keys": 0,
+      "excess_duplicate_complete_key_records": 0,
+      "status": "checked",
+      "exact_duplicate_excess_rows": 0,
+      "conflicting_duplicate_groups": 0,
+      "records_in_conflicting_groups": 0,
+      "duplicate_examples": []
+    },
+    {
+      "file": "rider_categories.txt",
+      "key_columns": [
+        "rider_category_id"
+      ],
+      "basis": "GTFS Schedule",
+      "singleton_constraint": false,
+      "total_records": 11,
+      "optional_key_components": [],
+      "observed_key_tuples_including_missing": 11,
+      "unique_complete_keys": 11,
+      "missing_required_key_records": 0,
+      "records_with_any_blank_key_component": 0,
+      "duplicate_complete_key_groups": 0,
+      "records_with_duplicate_complete_keys": 0,
+      "excess_duplicate_complete_key_records": 0,
+      "status": "checked",
+      "exact_duplicate_excess_rows": 0,
+      "conflicting_duplicate_groups": 0,
+      "records_in_conflicting_groups": 0,
+      "duplicate_examples": []
+    },
+    {
+      "file": "route_attributes.txt",
+      "key_columns": [
+        "route_id"
+      ],
+      "basis": "candidate",
+      "singleton_constraint": false,
+      "total_records": 329,
+      "optional_key_components": [],
+      "observed_key_tuples_including_missing": 327,
+      "unique_complete_keys": 327,
+      "missing_required_key_records": 0,
+      "records_with_any_blank_key_component": 0,
+      "duplicate_complete_key_groups": 2,
+      "records_with_duplicate_complete_keys": 4,
+      "excess_duplicate_complete_key_records": 2,
+      "status": "checked",
+      "exact_duplicate_excess_rows": 2,
+      "conflicting_duplicate_groups": 0,
+      "records_in_conflicting_groups": 0,
+      "duplicate_examples": [
+        {
+          "k0": "BA:Yellow-N",
+          "n": 2,
+          "variants": 1,
+          "raw_row_examples": [
+            {
+              "route_id": "BA:Yellow-N",
+              "category": "2",
+              "subcategory": "201",
+              "running_way": "1"
+            }
+          ]
+        },
+        {
+          "k0": "BA:Yellow-S",
+          "n": 2,
+          "variants": 1,
+          "raw_row_examples": [
+            {
+              "route_id": "BA:Yellow-S",
+              "category": "2",
+              "subcategory": "201",
+              "running_way": "1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "routes.txt",
+      "key_columns": [
+        "route_id"
+      ],
+      "basis": "GTFS Schedule",
+      "singleton_constraint": false,
+      "total_records": 665,
+      "optional_key_components": [],
+      "observed_key_tuples_including_missing": 665,
+      "unique_complete_keys": 665,
+      "missing_required_key_records": 0,
+      "records_with_any_blank_key_component": 0,
+      "duplicate_complete_key_groups": 0,
+      "records_with_duplicate_complete_keys": 0,
+      "excess_duplicate_complete_key_records": 0,
+      "status": "checked",
+      "exact_duplicate_excess_rows": 0,
+      "conflicting_duplicate_groups": 0,
+      "records_in_conflicting_groups": 0,
+      "duplicate_examples": []
+    },
+    {
+      "file": "shapes.txt",
+      "key_columns": [
+        "shape_id",
+        "shape_pt_sequence"
+      ],
+      "basis": "GTFS Schedule",
+      "singleton_constraint": false,
+      "total_records": 1340496,
+      "optional_key_components": [],
+      "observed_key_tuples_including_missing": 1340496,
+      "unique_complete_keys": 1340496,
+      "missing_required_key_records": 0,
+      "records_with_any_blank_key_component": 0,
+      "duplicate_complete_key_groups": 0,
+      "records_with_duplicate_complete_keys": 0,
+      "excess_duplicate_complete_key_records": 0,
+      "status": "checked",
+      "exact_duplicate_excess_rows": 0,
+      "conflicting_duplicate_groups": 0,
+      "records_in_conflicting_groups": 0,
+      "duplicate_examples": []
+    },
+    {
+      "file": "stop_areas.txt",
+      "key_columns": [
+        "area_id",
+        "stop_id"
+      ],
+      "basis": "GTFS Schedule",
+      "singleton_constraint": false,
+      "total_records": 33164,
+      "optional_key_components": [],
+      "observed_key_tuples_including_missing": 33164,
+      "unique_complete_keys": 33164,
+      "missing_required_key_records": 0,
+      "records_with_any_blank_key_component": 0,
+      "duplicate_complete_key_groups": 0,
+      "records_with_duplicate_complete_keys": 0,
+      "excess_duplicate_complete_key_records": 0,
+      "status": "checked",
+      "exact_duplicate_excess_rows": 0,
+      "conflicting_duplicate_groups": 0,
+      "records_in_conflicting_groups": 0,
+      "duplicate_examples": []
+    },
+    {
+      "file": "stop_times.txt",
+      "key_columns": [
+        "trip_id",
+        "stop_sequence"
+      ],
+      "basis": "GTFS Schedule",
+      "singleton_constraint": false,
+      "total_records": 3185115,
+      "optional_key_components": [],
+      "observed_key_tuples_including_missing": 3185115,
+      "unique_complete_keys": 3185115,
+      "missing_required_key_records": 0,
+      "records_with_any_blank_key_component": 0,
+      "duplicate_complete_key_groups": 0,
+      "records_with_duplicate_complete_keys": 0,
+      "excess_duplicate_complete_key_records": 0,
+      "status": "checked",
+      "exact_duplicate_excess_rows": 0,
+      "conflicting_duplicate_groups": 0,
+      "records_in_conflicting_groups": 0,
+      "duplicate_examples": []
+    },
+    {
+      "file": "stops.txt",
+      "key_columns": [
+        "stop_id"
+      ],
+      "basis": "GTFS Schedule",
+      "singleton_constraint": false,
+      "total_records": 21664,
+      "optional_key_components": [],
+      "observed_key_tuples_including_missing": 21664,
+      "unique_complete_keys": 21664,
+      "missing_required_key_records": 0,
+      "records_with_any_blank_key_component": 0,
+      "duplicate_complete_key_groups": 0,
+      "records_with_duplicate_complete_keys": 0,
+      "excess_duplicate_complete_key_records": 0,
+      "status": "checked",
+      "exact_duplicate_excess_rows": 0,
+      "conflicting_duplicate_groups": 0,
+      "records_in_conflicting_groups": 0,
+      "duplicate_examples": []
+    },
+    {
+      "file": "timeframes.txt",
+      "key_columns": [
+        "timeframe_group_id",
+        "start_time",
+        "end_time",
+        "service_id"
+      ],
+      "basis": "GTFS Schedule",
+      "singleton_constraint": false,
+      "total_records": 3,
+      "optional_key_components": [
+        "end_time",
+        "start_time"
+      ],
+      "observed_key_tuples_including_missing": 3,
+      "unique_complete_keys": 3,
+      "missing_required_key_records": 0,
+      "records_with_any_blank_key_component": 1,
+      "duplicate_complete_key_groups": 0,
+      "records_with_duplicate_complete_keys": 0,
+      "excess_duplicate_complete_key_records": 0,
+      "status": "checked",
+      "exact_duplicate_excess_rows": 0,
+      "conflicting_duplicate_groups": 0,
+      "records_in_conflicting_groups": 0,
+      "duplicate_examples": []
+    },
+    {
+      "file": "transfers.txt",
+      "key_columns": [
+        "from_stop_id",
+        "to_stop_id",
+        "from_trip_id",
+        "to_trip_id",
+        "from_route_id",
+        "to_route_id"
+      ],
+      "basis": "GTFS Schedule",
+      "singleton_constraint": false,
+      "total_records": 61,
+      "optional_key_components": [
+        "from_route_id",
+        "from_stop_id",
+        "from_trip_id",
+        "to_route_id",
+        "to_stop_id",
+        "to_trip_id"
+      ],
+      "observed_key_tuples_including_missing": 61,
+      "unique_complete_keys": 61,
+      "missing_required_key_records": 0,
+      "records_with_any_blank_key_component": 61,
+      "duplicate_complete_key_groups": 0,
+      "records_with_duplicate_complete_keys": 0,
+      "excess_duplicate_complete_key_records": 0,
+      "status": "checked",
+      "exact_duplicate_excess_rows": 0,
+      "conflicting_duplicate_groups": 0,
+      "records_in_conflicting_groups": 0,
+      "duplicate_examples": []
+    },
+    {
+      "file": "trips.txt",
+      "key_columns": [
+        "trip_id"
+      ],
+      "basis": "GTFS Schedule",
+      "singleton_constraint": false,
+      "total_records": 92827,
+      "optional_key_components": [],
+      "observed_key_tuples_including_missing": 92827,
+      "unique_complete_keys": 92827,
+      "missing_required_key_records": 0,
+      "records_with_any_blank_key_component": 0,
+      "duplicate_complete_key_groups": 0,
+      "records_with_duplicate_complete_keys": 0,
+      "excess_duplicate_complete_key_records": 0,
+      "status": "checked",
+      "exact_duplicate_excess_rows": 0,
+      "conflicting_duplicate_groups": 0,
+      "records_in_conflicting_groups": 0,
+      "duplicate_examples": []
+    }
+  ],
+  "conditional_checks": [
+    {
+      "file": "agency.txt",
+      "check": "Multi-agency feed requires an agency ID for each agency",
+      "basis": "GTFS Schedule",
+      "affected_records": 0,
+      "severity_if_present": "HIGH",
+      "examples": []
+    },
+    {
+      "file": "routes.txt",
+      "check": "Route requires a short or long name",
+      "basis": "GTFS Schedule",
+      "affected_records": 0,
+      "severity_if_present": "MEDIUM",
+      "examples": []
+    },
+    {
+      "file": "stops.txt",
+      "check": "Stops, stations and entrances require names",
+      "basis": "GTFS Schedule",
+      "affected_records": 0,
+      "severity_if_present": "MEDIUM",
+      "examples": []
+    },
+    {
+      "file": "timeframes.txt",
+      "check": "Timeframe endpoints must be provided together",
+      "basis": "GTFS Schedule",
+      "affected_records": 0,
+      "severity_if_present": "MEDIUM",
+      "examples": []
+    },
+    {
+      "file": "timeframes.txt",
+      "check": "Populated timeframe start must precede its end",
+      "basis": "GTFS Schedule",
+      "affected_records": 0,
+      "severity_if_present": "MEDIUM",
+      "examples": []
+    },
+    {
+      "file": "attributions.txt",
+      "check": "Attribution scope must select at most one of agency, route and trip",
+      "basis": "GTFS Schedule",
+      "affected_records": 0,
+      "severity_if_present": "MEDIUM",
+      "examples": []
+    },
+    {
+      "file": "attributions.txt",
+      "check": "Attribution requires a producer, operator or authority role",
+      "basis": "GTFS Schedule",
+      "affected_records": 0,
+      "severity_if_present": "MEDIUM",
+      "examples": []
+    },
+    {
+      "file": "transfers.txt",
+      "check": "Type 2 transfers require minimum transfer time",
+      "basis": "GTFS Schedule",
+      "affected_records": 0,
+      "severity_if_present": "MEDIUM",
+      "examples": []
+    },
+    {
+      "file": "transfers.txt",
+      "check": "from trip and route must describe the same service",
+      "basis": "GTFS Schedule",
+      "affected_records": 0,
+      "severity_if_present": "HIGH",
+      "examples": []
+    },
+    {
+      "file": "transfers.txt",
+      "check": "to trip and route must describe the same service",
+      "basis": "GTFS Schedule",
+      "affected_records": 0,
+      "severity_if_present": "HIGH",
+      "examples": []
+    },
+    {
+      "file": "fare_transfer_rules.txt",
+      "check": "Mutually specified leg groups constrain transfer_count",
+      "basis": "GTFS Schedule",
+      "affected_records": 0,
+      "severity_if_present": "MEDIUM",
+      "examples": []
+    },
+    {
+      "file": "fare_transfer_rules.txt",
+      "check": "Duration limit and duration type must be provided together",
+      "basis": "GTFS Schedule",
+      "affected_records": 0,
+      "severity_if_present": "MEDIUM",
+      "examples": []
+    },
+    {
+      "file": "directions.txt",
+      "check": "Route and direction pair has no matching scheduled trip",
+      "basis": "511 Data Exchange",
+      "affected_records": 0,
+      "severity_if_present": "MEDIUM",
+      "examples": []
+    }
+  ],
+  "issues": [
+    {
+      "issue_id": "P2-001",
+      "severity": "INFORMATIONAL",
+      "file": "fare_products.txt",
+      "field_or_relationship": "duration_amount",
+      "affected_records": 222,
+      "examples": [
+        "1.0",
+        "3.0",
+        "31.0",
+        "7.0",
+        "8.0"
+      ],
+      "graph_impact": "Field semantics or type are unverified in the selected references.",
+      "grounding_impact": "No verified selector crosswalk has been established from this field.",
+      "phase3_handling": "Preserve as opaque source data pending provider documentation."
+    },
+    {
+      "issue_id": "P2-002",
+      "severity": "INFORMATIONAL",
+      "file": "fare_products.txt",
+      "field_or_relationship": "duration_unit",
+      "affected_records": 222,
+      "examples": [
+        "2",
+        "3",
+        "5",
+        "6"
+      ],
+      "graph_impact": "Field semantics or type are unverified in the selected references.",
+      "grounding_impact": "No verified selector crosswalk has been established from this field.",
+      "phase3_handling": "Preserve as opaque source data pending provider documentation."
+    },
+    {
+      "issue_id": "P2-003",
+      "severity": "INFORMATIONAL",
+      "file": "fare_products.txt",
+      "field_or_relationship": "duration_type",
+      "affected_records": 222,
+      "examples": [
+        "1"
+      ],
+      "graph_impact": "Field semantics or type are unverified in the selected references.",
+      "grounding_impact": "No verified selector crosswalk has been established from this field.",
+      "phase3_handling": "Preserve as opaque source data pending provider documentation."
+    },
+    {
+      "issue_id": "P2-004",
+      "severity": "INFORMATIONAL",
+      "file": "fare_transfer_rules.txt",
+      "field_or_relationship": "filter_fare_product_id",
+      "affected_records": 68,
+      "examples": [
+        "AC:local:31-day",
+        "AC:transbay:31-day",
+        "CT:multizone:2:1-month",
+        "CT:multizone:3:1-month",
+        "CT:multizone:4:1-month"
+      ],
+      "graph_impact": "Field semantics or type are unverified in the selected references.",
+      "grounding_impact": "No verified selector crosswalk has been established from this field.",
+      "phase3_handling": "Preserve as opaque source data pending provider documentation."
+    },
+    {
+      "issue_id": "P2-005",
+      "severity": "INFORMATIONAL",
+      "file": "mtc_feed_versions.txt",
+      "field_or_relationship": "agency_id",
+      "affected_records": 41,
+      "examples": [
+        "3D",
+        "AC",
+        "AF",
+        "AM",
+        "BA"
+      ],
+      "graph_impact": "Field semantics or type are unverified in the selected references.",
+      "grounding_impact": "No verified selector crosswalk has been established from this field.",
+      "phase3_handling": "Preserve as opaque source data pending provider documentation."
+    },
+    {
+      "issue_id": "P2-006",
+      "severity": "INFORMATIONAL",
+      "file": "mtc_feed_versions.txt",
+      "field_or_relationship": "feed_version",
+      "affected_records": 41,
+      "examples": [
+        "20251230",
+        "20260105",
+        "20260106",
+        "20260123",
+        "20260409"
+      ],
+      "graph_impact": "Field semantics or type are unverified in the selected references.",
+      "grounding_impact": "No verified selector crosswalk has been established from this field.",
+      "phase3_handling": "Preserve as opaque source data pending provider documentation."
+    },
+    {
+      "issue_id": "P2-007",
+      "severity": "INFORMATIONAL",
+      "file": "mtc_feed_versions.txt",
+      "field_or_relationship": "sha1",
+      "affected_records": 41,
+      "examples": [
+        "065bc621341d9031c94b64f82bd8f7f16ffab7ef",
+        "1227f142bb284709ba9d310c1481b68d74751367",
+        "216a8f72d1bb9cd7844d3e08f7c215df7939373f",
+        "28d33a8b929f72132f522f0e047581cc6a9cc45c",
+        "29e832c66bb8a2e080d8d082ec3b67cd251fda85"
+      ],
+      "graph_impact": "Field semantics or type are unverified in the selected references.",
+      "grounding_impact": "No verified selector crosswalk has been established from this field.",
+      "phase3_handling": "Preserve as opaque source data pending provider documentation."
+    },
+    {
+      "issue_id": "P2-008",
+      "severity": "INFORMATIONAL",
+      "file": "mtc_feed_versions.txt",
+      "field_or_relationship": "feed_start_date",
+      "affected_records": 41,
+      "examples": [
+        "20210622",
+        "20220401",
+        "20220530",
+        "20220701",
+        "20231224"
+      ],
+      "graph_impact": "Field semantics or type are unverified in the selected references.",
+      "grounding_impact": "No verified selector crosswalk has been established from this field.",
+      "phase3_handling": "Preserve as opaque source data pending provider documentation."
+    },
+    {
+      "issue_id": "P2-009",
+      "severity": "INFORMATIONAL",
+      "file": "mtc_feed_versions.txt",
+      "field_or_relationship": "feed_end_date",
+      "affected_records": 41,
+      "examples": [
+        "20261212",
+        "20261231",
+        "20270101",
+        "20270103",
+        "20270108"
+      ],
+      "graph_impact": "Field semantics or type are unverified in the selected references.",
+      "grounding_impact": "No verified selector crosswalk has been established from this field.",
+      "phase3_handling": "Preserve as opaque source data pending provider documentation."
+    },
+    {
+      "issue_id": "P2-010",
+      "severity": "INFORMATIONAL",
+      "file": "routes.txt",
+      "field_or_relationship": "as_route",
+      "affected_records": 109,
+      "examples": [
+        "0",
+        "1"
+      ],
+      "graph_impact": "Field semantics or type are unverified in the selected references.",
+      "grounding_impact": "No verified selector crosswalk has been established from this field.",
+      "phase3_handling": "Preserve as opaque source data pending provider documentation."
+    },
+    {
+      "issue_id": "P2-011",
+      "severity": "MEDIUM",
+      "file": "attributions.txt",
+      "field_or_relationship": "attribution_id",
+      "affected_records": 40,
+      "examples": [
+        {
+          "k0": null,
+          "n": 41,
+          "variants": 1,
+          "raw_row_examples": [
+            {
+              "organization_name": "511 SF Bay",
+              "agency_id": null,
+              "route_id": null,
+              "trip_id": null,
+              "is_producer": "1",
+              "is_operator": null,
+              "is_authority": null,
+              "attribution_id": null,
+              "attribution_url": "https://511.org/open-data",
+              "attribution_email": "transitdata@511.org",
+              "attribution_phone": null
+            }
+          ]
+        }
+      ],
+      "graph_impact": "A graph load could conflate records or create repeated edges.",
+      "grounding_impact": "A selector can resolve to multiple differing records for a shared key.",
+      "phase3_handling": "Investigate conflicting variants and document an auditable duplicate policy before graph loads."
+    },
+    {
+      "issue_id": "P2-012",
+      "severity": "MEDIUM",
+      "file": "directions.txt",
+      "field_or_relationship": "route_id + direction_id",
+      "affected_records": 2,
+      "examples": [
+        {
+          "k0": "WH:53",
+          "k1": "0",
+          "n": 2,
+          "variants": 2,
+          "raw_row_examples": [
+            {
+              "route_id": "WH:53",
+              "direction_id": "0",
+              "direction": "Inbound"
+            },
+            {
+              "route_id": "WH:53",
+              "direction_id": "0",
+              "direction": "Outbound"
+            }
+          ]
+        }
+      ],
+      "graph_impact": "A graph load could conflate records or create repeated edges.",
+      "grounding_impact": "A selector can resolve to multiple differing records for a shared key.",
+      "phase3_handling": "Investigate conflicting variants and document an auditable duplicate policy before graph loads."
+    },
+    {
+      "issue_id": "P2-013",
+      "severity": "MEDIUM",
+      "file": "fare_transfer_rules.txt",
+      "field_or_relationship": "from_leg_group_id + to_leg_group_id + fare_product_id + transfer_count + duration_limit",
+      "affected_records": 68,
+      "examples": [
+        {
+          "k0": "CT",
+          "k1": "AC",
+          "k2": "transfer:free-clipper",
+          "k3": null,
+          "k4": "7200",
+          "n": 5,
+          "variants": 5,
+          "raw_row_examples": [
+            {
+              "from_leg_group_id": "CT",
+              "to_leg_group_id": "AC",
+              "transfer_count": null,
+              "duration_limit": "7200",
+              "duration_limit_type": "2",
+              "fare_transfer_type": "0",
+              "fare_product_id": "transfer:free-clipper",
+              "filter_fare_product_id": "CT:multizone:2:1-month"
+            },
+            {
+              "from_leg_group_id": "CT",
+              "to_leg_group_id": "AC",
+              "transfer_count": null,
+              "duration_limit": "7200",
+              "duration_limit_type": "2",
+              "fare_transfer_type": "0",
+              "fare_product_id": "transfer:free-clipper",
+              "filter_fare_product_id": "CT:multizone:3:1-month"
+            }
+          ]
+        },
+        {
+          "k0": "CT",
+          "k1": "AC:transbay",
+          "k2": "AC:transfer:transbay-upgrade",
+          "k3": null,
+          "k4": "7200",
+          "n": 5,
+          "variants": 5,
+          "raw_row_examples": [
+            {
+              "from_leg_group_id": "CT",
+              "to_leg_group_id": "AC:transbay",
+              "transfer_count": null,
+              "duration_limit": "7200",
+              "duration_limit_type": "2",
+              "fare_transfer_type": "0",
+              "fare_product_id": "AC:transfer:transbay-upgrade",
+              "filter_fare_product_id": "CT:multizone:2:1-month"
+            },
+            {
+              "from_leg_group_id": "CT",
+              "to_leg_group_id": "AC:transbay",
+              "transfer_count": null,
+              "duration_limit": "7200",
+              "duration_limit_type": "2",
+              "fare_transfer_type": "0",
+              "fare_product_id": "AC:transfer:transbay-upgrade",
+              "filter_fare_product_id": "CT:multizone:3:1-month"
+            }
+          ]
+        },
+        {
+          "k0": "CT",
+          "k1": "DE",
+          "k2": "transfer:free-clipper",
+          "k3": null,
+          "k4": "7200",
+          "n": 5,
+          "variants": 5,
+          "raw_row_examples": [
+            {
+              "from_leg_group_id": "CT",
+              "to_leg_group_id": "DE",
+              "transfer_count": null,
+              "duration_limit": "7200",
+              "duration_limit_type": "2",
+              "fare_transfer_type": "0",
+              "fare_product_id": "transfer:free-clipper",
+              "filter_fare_product_id": "CT:multizone:2:1-month"
+            },
+            {
+              "from_leg_group_id": "CT",
+              "to_leg_group_id": "DE",
+              "transfer_count": null,
+              "duration_limit": "7200",
+              "duration_limit_type": "2",
+              "fare_transfer_type": "0",
+              "fare_product_id": "transfer:free-clipper",
+              "filter_fare_product_id": "CT:multizone:3:1-month"
+            }
+          ]
+        },
+        {
+          "k0": "CT",
+          "k1": "DE:transbay",
+          "k2": "DE:transfer:transbay-upgrade",
+          "k3": null,
+          "k4": "7200",
+          "n": 5,
+          "variants": 5,
+          "raw_row_examples": [
+            {
+              "from_leg_group_id": "CT",
+              "to_leg_group_id": "DE:transbay",
+              "transfer_count": null,
+              "duration_limit": "7200",
+              "duration_limit_type": "2",
+              "fare_transfer_type": "0",
+              "fare_product_id": "DE:transfer:transbay-upgrade",
+              "filter_fare_product_id": "CT:multizone:2:1-month"
+            },
+            {
+              "from_leg_group_id": "CT",
+              "to_leg_group_id": "DE:transbay",
+              "transfer_count": null,
+              "duration_limit": "7200",
+              "duration_limit_type": "2",
+              "fare_transfer_type": "0",
+              "fare_product_id": "DE:transfer:transbay-upgrade",
+              "filter_fare_product_id": "CT:multizone:3:1-month"
+            }
+          ]
+        },
+        {
+          "k0": "SC",
+          "k1": "AC",
+          "k2": "transfer:free-clipper",
+          "k3": null,
+          "k4": "9000",
+          "n": 4,
+          "variants": 4,
+          "raw_row_examples": [
+            {
+              "from_leg_group_id": "SC",
+              "to_leg_group_id": "AC",
+              "transfer_count": null,
+              "duration_limit": "9000",
+              "duration_limit_type": "1",
+              "fare_transfer_type": "0",
+              "fare_product_id": "transfer:free-clipper",
+              "filter_fare_product_id": "SC:all:1-month"
+            },
+            {
+              "from_leg_group_id": "SC",
+              "to_leg_group_id": "AC",
+              "transfer_count": null,
+              "duration_limit": "9000",
+              "duration_limit_type": "1",
+              "fare_transfer_type": "0",
+              "fare_product_id": "transfer:free-clipper",
+              "filter_fare_product_id": "SC:all:1-year"
+            }
+          ]
+        }
+      ],
+      "graph_impact": "A graph load could conflate records or create repeated edges.",
+      "grounding_impact": "A selector can resolve to multiple differing records for a shared key.",
+      "phase3_handling": "Investigate conflicting variants and document an auditable duplicate policy before graph loads."
+    },
+    {
+      "issue_id": "P2-014",
+      "severity": "MEDIUM",
+      "file": "route_attributes.txt",
+      "field_or_relationship": "route_id",
+      "affected_records": 4,
+      "examples": [
+        {
+          "k0": "BA:Yellow-N",
+          "n": 2,
+          "variants": 1,
+          "raw_row_examples": [
+            {
+              "route_id": "BA:Yellow-N",
+              "category": "2",
+              "subcategory": "201",
+              "running_way": "1"
+            }
+          ]
+        },
+        {
+          "k0": "BA:Yellow-S",
+          "n": 2,
+          "variants": 1,
+          "raw_row_examples": [
+            {
+              "route_id": "BA:Yellow-S",
+              "category": "2",
+              "subcategory": "201",
+              "running_way": "1"
+            }
+          ]
+        }
+      ],
+      "graph_impact": "A graph load could conflate records or create repeated edges.",
+      "grounding_impact": "A selector can resolve to multiple differing records for a shared key.",
+      "phase3_handling": "Investigate conflicting variants and document an auditable duplicate policy before graph loads."
+    },
+    {
+      "issue_id": "P2-015",
+      "severity": "INFORMATIONAL",
+      "file": "stop_times.txt",
+      "field_or_relationship": "arrivals_above_24h",
+      "affected_records": 100912,
+      "examples": [
+        "24:00:01",
+        "24:00:01",
+        "24:00:01",
+        "24:00:01",
+        "24:00:01"
+      ],
+      "graph_impact": "Service-day arrivals extend past 24:00:00.",
+      "grounding_impact": "Schedule evidence depends on service day and numeric stop sequence.",
+      "phase3_handling": "Preserve service-day seconds and review ordering or presence exceptions."
+    },
+    {
+      "issue_id": "P2-016",
+      "severity": "MEDIUM",
+      "file": "shapes.txt",
+      "field_or_relationship": "shape_dist_traveled",
+      "affected_records": 21,
+      "examples": [
+        "PE:22999/363",
+        "SO:29727/186",
+        "SO:29785/375",
+        "SO:30638/555",
+        "SO:31150/1035"
+      ],
+      "graph_impact": "Consecutive populated shape distances are equal.",
+      "grounding_impact": "Distance-based mapping can have more than one candidate point.",
+      "phase3_handling": "Inspect repeated points and distance precision before using shape offsets."
+    },
+    {
+      "issue_id": "P2-017",
+      "severity": "INFORMATIONAL",
+      "file": "stop_times.txt",
+      "field_or_relationship": "agency-stop service",
+      "affected_records": 189,
+      "examples": [
+        {
+          "stop_id": "341028",
+          "agencies": 2,
+          "agency_ids": [
+            "CM",
+            "SM"
+          ]
+        },
+        {
+          "stop_id": "345025",
+          "agencies": 2,
+          "agency_ids": [
+            "CM",
+            "SM"
+          ]
+        },
+        {
+          "stop_id": "346150",
+          "agencies": 2,
+          "agency_ids": [
+            "CM",
+            "SM"
+          ]
+        },
+        {
+          "stop_id": "346151",
+          "agencies": 2,
+          "agency_ids": [
+            "CM",
+            "SM"
+          ]
+        },
+        {
+          "stop_id": "346610",
+          "agencies": 2,
+          "agency_ids": [
+            "CM",
+            "SM"
+          ]
+        }
+      ],
+      "graph_impact": "A stop may be linked to several agencies.",
+      "grounding_impact": "A stop and agency selector must share a valid service path.",
+      "phase3_handling": "Keep a many-to-many service association."
+    }
+  ],
+  "failed_checks": []
+}

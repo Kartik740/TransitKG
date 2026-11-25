@@ -1,0 +1,121 @@
+{
+  "version": "1.0.0",
+  "specification_basis": {
+    "schedule_revision": "April 27, 2026",
+    "schedule": "https://gtfs.org/documentation/schedule/reference/",
+    "realtime": "https://gtfs.org/documentation/realtime/reference/",
+    "provider": "https://511.org/media/6657/show",
+    "phase2": "../phase2/phase2_dataset_exploration_report.md"
+  },
+  "rules": [
+    {
+      "id": "P3-TYPES",
+      "action": "NORMALIZE",
+      "table": "All discovered structured tables",
+      "fields": "Documented numeric fields, numeric enums, dates and times",
+      "evidence": "Phase 2 data_profile.json found no invalid nonempty values in the typed fields. Raw strings preserve identifiers, human-readable text and provider extension fields.",
+      "requirement": "Use documented GTFS field types. Schedule times follow the service day, including hours greater than 24.",
+      "transformation": "Use nullable numeric and DATE representations. Keep source time strings with seconds columns. Preserve unverified fields as text. Source record ordinals recover the exact source lexemes. Evaluate numeric bounds and fail publication on unsupported populated values.",
+      "expected_effect": "Typed values and added time projections. No row or identifier changes.",
+      "reversible": "Yes, from the unchanged checksummed source and source record ordinal.",
+      "graph_impact": "Typed coordinates, sequences, and timetable columns can be queried directly.",
+      "grounding_impact": "Selector identifiers retain source spelling and timetable times retain service-day semantics."
+    },
+    {
+      "id": "P3-ATTRIBUTION",
+      "phase2_issue": "P2-011",
+      "action": "DEDUPLICATE",
+      "table": "attributions.txt",
+      "fields": "All source columns, limited to dataset-wide rows with no attribution ID",
+      "evidence": "41 identical rows with one producer role and no agency, route, trip or attribution identifier.",
+      "requirement": "An attribution without an agency, route or trip applies to the whole dataset. attribution_id is optional.",
+      "transformation": "Keep one exact dataset-wide row. Link each redundant source record to the retained ordinal.",
+      "expected_effect": "Remove 40 exact copies. Keep all populated IDs, roles and provenance.",
+      "reversible": "Yes, from the exception ledger and unchanged raw records.",
+      "graph_impact": "One dataset attribution supports source provenance.",
+      "grounding_impact": "Agency and stop scope remain independent of dataset attribution."
+    },
+    {
+      "id": "P3-DIRECTION",
+      "phase2_issue": "P2-012",
+      "action": "QUARANTINE",
+      "table": "directions.txt",
+      "fields": "route_id, direction_id, direction",
+      "evidence": "WH:53 direction 0 has Inbound and Outbound. Scheduled headsigns do not establish a winning label.",
+      "requirement": "511 Data Exchange D.1.1 requires unique route and direction pairs. GTFS assigns no universal inbound/outbound meaning to 0 and 1.",
+      "transformation": "Isolate every row of a nonunique route-direction key. Retain valid trips, headsigns and numeric direction IDs.",
+      "expected_effect": "Quarantine 2 label variants. No route or trip identity changes.",
+      "reversible": "Yes, complete source rows and locators in the exception ledger.",
+      "graph_impact": "Suppress the unresolved label without changing service connectivity.",
+      "grounding_impact": "Route-scoped numeric DirectionId remains usable for trip selection."
+    },
+    {
+      "id": "P3-FARE-TRANSFER",
+      "phase2_issue": "P2-013",
+      "action": "QUARANTINE",
+      "table": "fare_transfer_rules.txt",
+      "fields": "GTFS base key and 511 filter_fare_product_id",
+      "evidence": "20 base-key groups contain 68 rows with distinct filter products and otherwise identical values within each group. The 511 reference lists filter_fare_product_id as a regional extension.",
+      "requirement": "GTFS Schedule defines a five-field base key. The publisher extension can distinguish rules that share this base key.",
+      "transformation": "Retain all variants as unresolved extended rules in the exception ledger. Exclude base-key conflicts and populated extension filters from the accepted base projection.",
+      "expected_effect": "Quarantine 68 rows from base rule use. Preserve all filter IDs and prices verbatim.",
+      "reversible": "Yes, complete source rows and locators in the exception ledger.",
+      "graph_impact": "Prevents unsupported fare applicability or precedence from being inferred.",
+      "grounding_impact": "Core selector mappings are independent of fare pricing."
+    },
+    {
+      "id": "P3-ROUTE-ATTRIBUTES",
+      "phase2_issue": "P2-014",
+      "action": "DEDUPLICATE",
+      "table": "route_attributes.txt",
+      "fields": "route_id and all attribute values",
+      "evidence": "BA:Yellow-N and BA:Yellow-S each have two exact copies. Each pair agrees on category, subcategory and running way.",
+      "requirement": "511 Data Exchange D.1.2 defines route attributes keyed by the GTFS route identifier.",
+      "transformation": "Collapse identical copies for a nonempty route ID and link them to the retained ordinal. Quarantine any genuinely conflicting variants together.",
+      "expected_effect": "Remove 2 exact copies. Keep both canonical routes and their attributes.",
+      "reversible": "Yes, from the exception ledger and unchanged raw records.",
+      "graph_impact": "Optional attributes stay attached to their existing route identity.",
+      "grounding_impact": "Original route IDs and scope remain intact."
+    },
+    {
+      "id": "P3-SHAPE-DISTANCE",
+      "phase2_issue": "P2-016",
+      "action": "FLAG_FOR_REVIEW",
+      "table": "shapes.txt",
+      "fields": "shape_dist_traveled, shape_pt_sequence, shape_pt_lat, shape_pt_lon",
+      "evidence": "21 populated distances repeat along ordered shapes. Phase 2 found no decreasing distances.",
+      "requirement": "GTFS requires a supplied distance to increase in point sequence order. Coordinates and optional distance values are independent observations.",
+      "transformation": "Preserve every point and flag repeated or decreasing distances in the ledger. Distance-based interpretation on affected shapes requires review.",
+      "expected_effect": "Flag 21 point rows. No coordinate, sequence or distance edits.",
+      "reversible": "No data edits.",
+      "graph_impact": "Geometry is recoverable for spatial work. Affected distance values require review before linear referencing.",
+      "grounding_impact": "Preserves route geometry without inventing distance offsets."
+    },
+    {
+      "id": "P3-CALENDAR",
+      "action": "PRESERVE",
+      "table": "calendar.txt and calendar_dates.txt",
+      "fields": "Service IDs, dates and recurrence flags",
+      "evidence": "PG:80067 and PE:72837 have source end dates of 2099-12-31. The regional feed_info version and validity dates are blank.",
+      "requirement": "Calendar date additions can define a service without a weekly record. Exclusions remove service from a date.",
+      "transformation": "Preserve typed ranges, weekly rules, exceptions and timezones. Build the service identity domain from valid weekly IDs and valid added-service exceptions.",
+      "expected_effect": "No date cap, fabricated feed validity, or service-date expansion.",
+      "reversible": "Yes, through raw provenance.",
+      "graph_impact": "Supports later service-date evaluation without expanding recurring date records.",
+      "grounding_impact": "Trip descriptors can be scoped to documented scheduled service."
+    },
+    {
+      "id": "P3-IDENTITY",
+      "action": "PRESERVE",
+      "table": "agency.txt, stops.txt, routes.txt, trips.txt, calendar.txt, calendar_dates.txt, shapes.txt",
+      "fields": "Authoritative source identifiers and exact scheduled service associations",
+      "evidence": "Phase 2 found 364 stripped stop-ID collision groups, 189 shared stops, and an exact AC/55660 match beside the same-name stop 52227.",
+      "requirement": "GTFS references are scoped to their dataset, and selector fields within one GTFS-Realtime entity selector are conjunctive.",
+      "transformation": "Escape the exact UTF-8 ID in a feed-scoped canonical ID. Keep many-to-many agency service associations. Store observed aliases separately from verified external crosswalks.",
+      "expected_effect": "No entity merges or raw ID changes.",
+      "reversible": "Yes, from the canonical ID and the explicit mapping.",
+      "graph_impact": "Stable fact joins and separate source/build provenance.",
+      "grounding_impact": "Exact regional resolution is possible while external feed equivalence remains evidence-dependent."
+    }
+  ]
+}

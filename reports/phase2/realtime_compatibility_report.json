@@ -1,0 +1,351 @@
+{
+  "input": {
+    "AgencyId": "AC",
+    "StopId": "55660",
+    "timestamp": 1795543209,
+    "name": "San Pablo Avenue at West Grand Avenue"
+  },
+  "feed_generation_utc": "2026-11-24T18:00:09+00:00",
+  "candidates": [
+    {
+      "stop_id": "52227",
+      "stop_name": "San Pablo Av & W Grand Av",
+      "stop_code": "52227",
+      "stop_desc": null,
+      "stop_lat": "37.81305",
+      "stop_lon": "-122.27397",
+      "zone_id": "AC:81122",
+      "stop_url": "https://www.actransit.org/stop/52227",
+      "tts_stop_name": null,
+      "platform_code": null,
+      "location_type": "0",
+      "parent_station": null,
+      "stop_timezone": "America/Los_Angeles",
+      "wheelchair_boarding": "0",
+      "level_id": null,
+      "stop_access": null,
+      "evidence": [
+        "name_match"
+      ],
+      "routes": [
+        {
+          "agency_id": "AC",
+          "route_id": "AC:72",
+          "route_short_name": "72"
+        },
+        {
+          "agency_id": "AC",
+          "route_id": "AC:72L",
+          "route_short_name": "72L"
+        },
+        {
+          "agency_id": "AC",
+          "route_id": "AC:72M",
+          "route_short_name": "72M"
+        },
+        {
+          "agency_id": "AC",
+          "route_id": "AC:802",
+          "route_short_name": "802"
+        }
+      ],
+      "serving_agencies": [
+        "AC"
+      ],
+      "trip_examples": [
+        {
+          "agency_id": "AC",
+          "route_id": "AC:72",
+          "trip_id": "AC:10086070",
+          "direction_id": "1",
+          "service_id": "AC:83048"
+        },
+        {
+          "agency_id": "AC",
+          "route_id": "AC:72",
+          "trip_id": "AC:10190070",
+          "direction_id": "1",
+          "service_id": "AC:83048"
+        },
+        {
+          "agency_id": "AC",
+          "route_id": "AC:72",
+          "trip_id": "AC:10383010",
+          "direction_id": "1",
+          "service_id": "AC:72907"
+        },
+        {
+          "agency_id": "AC",
+          "route_id": "AC:72",
+          "trip_id": "AC:10858070",
+          "direction_id": "1",
+          "service_id": "AC:83048"
+        },
+        {
+          "agency_id": "AC",
+          "route_id": "AC:72",
+          "trip_id": "AC:11398010",
+          "direction_id": "1",
+          "service_id": "AC:72907"
+        },
+        {
+          "agency_id": "AC",
+          "route_id": "AC:72",
+          "trip_id": "AC:11556020",
+          "direction_id": "1",
+          "service_id": "AC:83063"
+        },
+        {
+          "agency_id": "AC",
+          "route_id": "AC:72",
+          "trip_id": "AC:11563010",
+          "direction_id": "1",
+          "service_id": "AC:72907"
+        },
+        {
+          "agency_id": "AC",
+          "route_id": "AC:72",
+          "trip_id": "AC:11736010",
+          "direction_id": "1",
+          "service_id": "AC:72907"
+        },
+        {
+          "agency_id": "AC",
+          "route_id": "AC:72",
+          "trip_id": "AC:11774010",
+          "direction_id": "1",
+          "service_id": "AC:72907"
+        },
+        {
+          "agency_id": "AC",
+          "route_id": "AC:72",
+          "trip_id": "AC:11897020",
+          "direction_id": "1",
+          "service_id": "AC:83063"
+        }
+      ],
+      "visit_counts_by_agency": [
+        {
+          "agency_id": "AC",
+          "distinct_trips": 339,
+          "visits": 339
+        }
+      ],
+      "alert_agency_local_datetime": "2026-11-24T10:00:09",
+      "alert_local_calendar_date": "2026-11-24",
+      "agency_trips_by_service_date": [
+        {
+          "service_date": "2026-11-23",
+          "trips": 110
+        },
+        {
+          "service_date": "2026-11-24",
+          "trips": 110
+        }
+      ]
+    },
+    {
+      "stop_id": "55660",
+      "stop_name": "San Pablo Av & W Grand Av",
+      "stop_code": "55660",
+      "stop_desc": null,
+      "stop_lat": "37.81306",
+      "stop_lon": "-122.27424",
+      "zone_id": "AC:81122",
+      "stop_url": "https://www.actransit.org/stop/55660",
+      "tts_stop_name": null,
+      "platform_code": null,
+      "location_type": "0",
+      "parent_station": null,
+      "stop_timezone": "America/Los_Angeles",
+      "wheelchair_boarding": "0",
+      "level_id": null,
+      "stop_access": null,
+      "evidence": [
+        "exact_stop_id",
+        "stop_code_match",
+        "stop_url_match",
+        "name_match"
+      ],
+      "routes": [
+        {
+          "agency_id": "AC",
+          "route_id": "AC:72",
+          "route_short_name": "72"
+        },
+        {
+          "agency_id": "AC",
+          "route_id": "AC:72L",
+          "route_short_name": "72L"
+        },
+        {
+          "agency_id": "AC",
+          "route_id": "AC:72M",
+          "route_short_name": "72M"
+        },
+        {
+          "agency_id": "AC",
+          "route_id": "AC:802",
+          "route_short_name": "802"
+        }
+      ],
+      "serving_agencies": [
+        "AC"
+      ],
+      "trip_examples": [
+        {
+          "agency_id": "AC",
+          "route_id": "AC:72",
+          "trip_id": "AC:10056070",
+          "direction_id": "0",
+          "service_id": "AC:83048"
+        },
+        {
+          "agency_id": "AC",
+          "route_id": "AC:72",
+          "trip_id": "AC:10218010",
+          "direction_id": "0",
+          "service_id": "AC:72907"
+        },
+        {
+          "agency_id": "AC",
+          "route_id": "AC:72",
+          "trip_id": "AC:10323010",
+          "direction_id": "0",
+          "service_id": "AC:72907"
+        },
+        {
+          "agency_id": "AC",
+          "route_id": "AC:72",
+          "trip_id": "AC:10562020",
+          "direction_id": "0",
+          "service_id": "AC:83034"
+        },
+        {
+          "agency_id": "AC",
+          "route_id": "AC:72",
+          "trip_id": "AC:10562080",
+          "direction_id": "0",
+          "service_id": "AC:83059"
+        },
+        {
+          "agency_id": "AC",
+          "route_id": "AC:72",
+          "trip_id": "AC:10607020",
+          "direction_id": "0",
+          "service_id": "AC:83063"
+        },
+        {
+          "agency_id": "AC",
+          "route_id": "AC:72",
+          "trip_id": "AC:10661010",
+          "direction_id": "0",
+          "service_id": "AC:72907"
+        },
+        {
+          "agency_id": "AC",
+          "route_id": "AC:72",
+          "trip_id": "AC:1082070",
+          "direction_id": "0",
+          "service_id": "AC:83048"
+        },
+        {
+          "agency_id": "AC",
+          "route_id": "AC:72",
+          "trip_id": "AC:10827070",
+          "direction_id": "0",
+          "service_id": "AC:83048"
+        },
+        {
+          "agency_id": "AC",
+          "route_id": "AC:72",
+          "trip_id": "AC:10902020",
+          "direction_id": "0",
+          "service_id": "AC:83063"
+        }
+      ],
+      "visit_counts_by_agency": [
+        {
+          "agency_id": "AC",
+          "distinct_trips": 345,
+          "visits": 345
+        }
+      ],
+      "alert_agency_local_datetime": "2026-11-24T10:00:09",
+      "alert_local_calendar_date": "2026-11-24",
+      "agency_trips_by_service_date": [
+        {
+          "service_date": "2026-11-23",
+          "trips": 112
+        },
+        {
+          "service_date": "2026-11-24",
+          "trips": 112
+        }
+      ]
+    }
+  ],
+  "variants_checked": [
+    "55660",
+    "AC:55660",
+    "AC_55660",
+    "AC-55660"
+  ],
+  "scope_join_available": true,
+  "provenance": "User-supplied alert JSON. No live request or independently supplied agency feed.",
+  "selector_support": [
+    {
+      "selector": "AgencyId",
+      "source": "agency.agency_id",
+      "available": true
+    },
+    {
+      "selector": "RouteId and RouteType",
+      "source": "routes.route_id, routes.route_type",
+      "available": true
+    },
+    {
+      "selector": "StopId",
+      "source": "stops.stop_id",
+      "available": true
+    },
+    {
+      "selector": "DirectionId with RouteId",
+      "source": "trips.route_id and trips.direction_id",
+      "available": true
+    },
+    {
+      "selector": "TripDescriptor",
+      "source": "trips, first departure, service dates, frequencies when available",
+      "available": true,
+      "constraint": "Trip instance resolution requires date/start time where needed. EntitySelector ignores the descriptor's schedule_relationship."
+    },
+    {
+      "selector": "Combinations",
+      "source": "Agency, route, trip and stop visits",
+      "available": true,
+      "constraint": "All fields of one selector must match the same scoped service. DirectionId requires RouteId."
+    }
+  ],
+  "operator_feed_comparison": "Unavailable. Regional and operator feed crosswalks were not supplied.",
+  "agency_rows": [
+    {
+      "agency_id": "AC",
+      "agency_name": "AC TRANSIT",
+      "agency_url": "http://www.actransit.org",
+      "agency_timezone": "America/Los_Angeles",
+      "agency_lang": "en",
+      "agency_phone": "5108914777",
+      "agency_fare_url": null,
+      "agency_email": null,
+      "cemv_support": null
+    }
+  ],
+  "classification": "EXACT_MATCH",
+  "status": "checked",
+  "known_exclusions": [
+    "No explicit alert active period in the sample. Feed generation is distinct from observation, disruption start/end and ingestion.",
+    "Service-day activity on the alert's local calendar date is context. An overnight trip can use the prior service date.",
+    "Similar stop names and numeric suffixes supply candidate evidence only."
+  ]
+}

@@ -1,0 +1,2274 @@
+{
+  "status": "validated",
+  "started_utc": "2026-11-24T21:55:47.706334+00:00",
+  "phase": "Neo4j target and import",
+  "driver": "6.4.1",
+  "duckdb": "1.5.0",
+  "implementation": {
+    "version": "1.0.0",
+    "files": {
+      "import_static_graph.py": "7621aacbef6e36f156086ec147f344c4f45504bfcfcb6bd14956e7c1d000a07d",
+      "verify_imported_graph.py": "22d5f4c76e8027cbbdfdbb1efaecc98b3898304a3f8760f55e1608a06621d03b"
+    }
+  },
+  "configuration": {
+    "database": "transitkg-static",
+    "node_batch_size": 2000,
+    "relationship_batch_size": 2000,
+    "max_retries": 2,
+    "transaction_timeout_seconds": 180,
+    "uri": "neo4j://127.0.0.1:7687"
+  },
+  "transactions": {
+    "attempts": 187,
+    "committed": 187,
+    "retries": 0,
+    "failures": []
+  },
+  "partitions": {
+    "Agency": {
+      "batch_size": 2000,
+      "batches": [
+        {
+          "input": 41,
+          "created": 41,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.42714
+        }
+      ],
+      "status": "complete",
+      "input": 41,
+      "created": 41,
+      "matched": 0,
+      "seconds": 0.431,
+      "rows_per_second": 95.18
+    },
+    "Route": {
+      "batch_size": 2000,
+      "batches": [
+        {
+          "input": 665,
+          "created": 665,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 1.43901
+        }
+      ],
+      "status": "complete",
+      "input": 665,
+      "created": 665,
+      "matched": 0,
+      "seconds": 1.447,
+      "rows_per_second": 459.67
+    },
+    "Trip": {
+      "batch_size": 2000,
+      "batches": [
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 2.44444
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.91251
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.93634
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 1.6687
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.57343
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.68508
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.57565
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.71194
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.59011
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.57594
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.75862
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.73643
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.79417
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.61349
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.66883
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.59503
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.58643
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.60708
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.59693
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.60874
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.55417
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.55144
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.71944
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.57293
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.59887
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.55306
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.65864
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.59457
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.61927
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.61595
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.71253
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.74173
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.60148
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.62185
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.56725
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.6182
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.57851
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.68397
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.79792
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.81883
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.80354
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.50426
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.54793
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.76177
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.72587
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.70904
+        },
+        {
+          "input": 827,
+          "created": 827,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.95734
+        }
+      ],
+      "status": "complete",
+      "input": 92827,
+      "created": 92827,
+      "matched": 0,
+      "seconds": 34.421,
+      "rows_per_second": 2696.8
+    },
+    "Stop": {
+      "batch_size": 2000,
+      "batches": [
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.76258
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.73589
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.53097
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.75842
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.53695
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.48378
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.47129
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.50489
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.50631
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.6322
+        },
+        {
+          "input": 1664,
+          "created": 1664,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.75808
+        }
+      ],
+      "status": "complete",
+      "input": 21664,
+      "created": 21664,
+      "matched": 0,
+      "seconds": 6.785,
+      "rows_per_second": 3193.13
+    },
+    "Service": {
+      "batch_size": 2000,
+      "batches": [
+        {
+          "input": 485,
+          "created": 485,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.2766
+        }
+      ],
+      "status": "complete",
+      "input": 485,
+      "created": 485,
+      "matched": 0,
+      "seconds": 0.281,
+      "rows_per_second": 1724.81
+    },
+    "OPERATES": {
+      "batch_size": 2000,
+      "batches": [
+        {
+          "input": 665,
+          "created": 665,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 3.68122
+        }
+      ],
+      "status": "complete",
+      "input": 665,
+      "created": 665,
+      "matched": 0,
+      "seconds": 3.686,
+      "rows_per_second": 180.41
+    },
+    "HAS_TRIP": {
+      "batch_size": 2000,
+      "batches": [
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 1.52164
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 1.01681
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 1.0717
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 1.05862
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.76242
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.6761
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.70594
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.48374
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.51526
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.42057
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.50448
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.61416
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.45053
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.42546
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.4608
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.4406
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.40743
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.46988
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.58063
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.43855
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.41399
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.43601
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.38567
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.49423
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.45542
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.4265
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.44638
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.3604
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.4584
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.46734
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.47463
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.45115
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.45943
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.40505
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.41756
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.42455
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.50551
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.39586
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.57048
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.43353
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.44647
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.71971
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.53526
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.40691
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.43775
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.43574
+        },
+        {
+          "input": 827,
+          "created": 827,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.87627
+        }
+      ],
+      "status": "complete",
+      "input": 92827,
+      "created": 92827,
+      "matched": 0,
+      "seconds": 26.009,
+      "rows_per_second": 3568.99
+    },
+    "RUNS_ON": {
+      "batch_size": 2000,
+      "batches": [
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.86745
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.69404
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.45548
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.43494
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.48739
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.39541
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.43015
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.40242
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.39521
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.38871
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.43195
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.5253
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.42191
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.43704
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.41594
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.42604
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.41915
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.59547
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.61011
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.6825
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.68085
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.62557
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.73682
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.57138
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.58416
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.61421
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.63859
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.6053
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.74516
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.70329
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.61746
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.63372
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.59248
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.71169
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.41842
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.45139
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.38925
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.52915
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.48617
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.41128
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.41251
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.39942
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.38956
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.37252
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.39331
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.39472
+        },
+        {
+          "input": 827,
+          "created": 827,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.82886
+        }
+      ],
+      "status": "complete",
+      "input": 92827,
+      "created": 92827,
+      "matched": 0,
+      "seconds": 25.121,
+      "rows_per_second": 3695.19
+    },
+    "ROUTE_SERVES_STOP": {
+      "batch_size": 2000,
+      "batches": [
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 1.60119
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.60576
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.47039
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.55053
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.48657
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.43488
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.50454
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.62627
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.41593
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.47229
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.52373
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.53511
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.49909
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.4242
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.42167
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.51819
+        },
+        {
+          "input": 1985,
+          "created": 1985,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.43135
+        }
+      ],
+      "status": "complete",
+      "input": 33985,
+      "created": 33985,
+      "matched": 0,
+      "seconds": 9.623,
+      "rows_per_second": 3531.83
+    },
+    "AGENCY_SERVES_STOP": {
+      "batch_size": 2000,
+      "batches": [
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.80834
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.55781
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.53103
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.50242
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.49612
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.46749
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.54919
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.47923
+        },
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.49529
+        },
+        {
+          "input": 1904,
+          "created": 1904,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.34318
+        }
+      ],
+      "status": "complete",
+      "input": 19904,
+      "created": 19904,
+      "matched": 0,
+      "seconds": 5.283,
+      "rows_per_second": 3767.43
+    },
+    "PART_OF": {
+      "batch_size": 2000,
+      "batches": [
+        {
+          "input": 2000,
+          "created": 2000,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.84696
+        },
+        {
+          "input": 222,
+          "created": 222,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.3983
+        }
+      ],
+      "status": "complete",
+      "input": 2222,
+      "created": 2222,
+      "matched": 0,
+      "seconds": 1.254,
+      "rows_per_second": 1771.88
+    },
+    "TRANSFER_RULE": {
+      "batch_size": 2000,
+      "batches": [
+        {
+          "input": 61,
+          "created": 61,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 2.2778
+        }
+      ],
+      "status": "complete",
+      "input": 61,
+      "created": 61,
+      "matched": 0,
+      "seconds": 2.282,
+      "rows_per_second": 26.73
+    },
+    "FeedSnapshot": {
+      "batch_size": 2000,
+      "batches": [
+        {
+          "input": 1,
+          "created": 1,
+          "matched": 0,
+          "attempts": 1,
+          "seconds": 0.22674
+        }
+      ],
+      "status": "complete",
+      "input": 1,
+      "created": 1,
+      "matched": 0,
+      "seconds": 0.232,
+      "rows_per_second": 4.3
+    }
+  },
+  "test_evidence": "automated_test_report.json",
+  "inputs": {
+    "source_snapshot_id": "gtfs-sha256-d6279860e2fe203541a574ee04db5752ecad9e5e1a38b1759cc397b1b596dfa2",
+    "normalized_build_id": "normalized-sha256-5608c0d7d93b9c6200431b5c227da598d52cd0108e9e2f410e5b012b00d28052",
+    "normalized_manifest_sha256": "11969d832ae858f3e169c528bf3b1d7f3b6c351c5b6bdcf91e4e296b90300922",
+    "schema_version": "1.0.0",
+    "schema_sha256": "66c3e2d5524fcafb1608c9eb8c99125f55760781c789b2b4e1188d9360cb43db",
+    "canonical_contract_version": "1.0.0",
+    "canonical_contract_sha256": "50cdc801edd1d4518a9345f7717ef8cc82e9588778ae2e23210f13be5b97193f",
+    "transformation_contract_version": "1.0.0",
+    "transformation_contract_sha256": "93e9b37c5c73931b48cfec23a7be2f15260309f1ab9598263e51eaf452eb354a",
+    "reference_sha256": "9c1d9c7d9f703a8b51e02959baa325cac8f3a8549a06b5d8d079a1dc258cbd7b",
+    "timetable_sql_sha256": "26a8eba623220932081582ae0eb6cdfb4f8eb517a196497fcab98b0d6b462dee",
+    "graph_ready_build_id": "graph-ready-sha256-f85cdfafe998da9e7eecb6697443ebd02e45f4d43e41462db7a8a5acb82dadae",
+    "graph_ready_manifest_sha256": "8e7d1ad525abe21ab2ceff93061013f704835a23988cf02615efaa4def85d7df",
+    "import_contract_sha256": "6a7aadc9d83f92f3fe66fb09857484d7283757f88555f69e248694a7a88692fe"
+  },
+  "input_counts": {
+    "nodes": {
+      "Agency": 41,
+      "Route": 665,
+      "Trip": 92827,
+      "Stop": 21664,
+      "Service": 485,
+      "FeedSnapshot": 1
+    },
+    "relationships": {
+      "OPERATES": 665,
+      "HAS_TRIP": 92827,
+      "RUNS_ON": 92827,
+      "ROUTE_SERVES_STOP": 33985,
+      "AGENCY_SERVES_STOP": 19904,
+      "PART_OF": 2222,
+      "TRANSFER_RULE": 61
+    }
+  },
+  "expected_static_graph_fingerprint": "675d71bd4e8bd82ffc1ec0d8951ca527928ca4376c681e40193d14f451892e66",
+  "offline_validation": {
+    "raw_files_verified": 27,
+    "normalized_files_verified": 32,
+    "duplicate_identities": 0,
+    "dangling_endpoints": 0,
+    "shared_stops": 189,
+    "transfers": [
+      {
+        "transfer_type": 0,
+        "n": 3,
+        "from_route": 0,
+        "to_route": 0,
+        "from_trip": 0,
+        "to_trip": 0
+      },
+      {
+        "transfer_type": 1,
+        "n": 10,
+        "from_route": 0,
+        "to_route": 0,
+        "from_trip": 0,
+        "to_trip": 0
+      },
+      {
+        "transfer_type": 2,
+        "n": 48,
+        "from_route": 44,
+        "to_route": 44,
+        "from_trip": 0,
+        "to_trip": 0
+      }
+    ],
+    "ac_selector": {
+      "status": "EXACT_MATCH",
+      "55660": [
+        {
+          "stop_id": "55660",
+          "canonical_id": "511-sf-bay-regional:stop:55660",
+          "stop_name": "San Pablo Av & W Grand Av",
+          "route_id": "AC:72",
+          "trips": 126
+        },
+        {
+          "stop_id": "55660",
+          "canonical_id": "511-sf-bay-regional:stop:55660",
+          "stop_name": "San Pablo Av & W Grand Av",
+          "route_id": "AC:72L",
+          "trips": 81
+        },
+        {
+          "stop_id": "55660",
+          "canonical_id": "511-sf-bay-regional:stop:55660",
+          "stop_name": "San Pablo Av & W Grand Av",
+          "route_id": "AC:72M",
+          "trips": 123
+        },
+        {
+          "stop_id": "55660",
+          "canonical_id": "511-sf-bay-regional:stop:55660",
+          "stop_name": "San Pablo Av & W Grand Av",
+          "route_id": "AC:802",
+          "trips": 15
+        }
+      ],
+      "52227": [
+        {
+          "stop_id": "52227",
+          "canonical_id": "511-sf-bay-regional:stop:52227",
+          "stop_name": "San Pablo Av & W Grand Av",
+          "route_id": "AC:72",
+          "trips": 121
+        },
+        {
+          "stop_id": "52227",
+          "canonical_id": "511-sf-bay-regional:stop:52227",
+          "stop_name": "San Pablo Av & W Grand Av",
+          "route_id": "AC:72L",
+          "trips": 80
+        },
+        {
+          "stop_id": "52227",
+          "canonical_id": "511-sf-bay-regional:stop:52227",
+          "stop_name": "San Pablo Av & W Grand Av",
+          "route_id": "AC:72M",
+          "trips": 123
+        },
+        {
+          "stop_id": "52227",
+          "canonical_id": "511-sf-bay-regional:stop:52227",
+          "stop_name": "San Pablo Av & W Grand Av",
+          "route_id": "AC:802",
+          "trips": 15
+        }
+      ],
+      "dated_service_day": "2026-11-25",
+      "dated_trips": 112,
+      "name_only": "AMBIGUOUS",
+      "wrong_agency": 0,
+      "wrong_direction": 0
+    },
+    "graph_ready_files_verified": 13,
+    "parquet_fingerprint": "675d71bd4e8bd82ffc1ec0d8951ca527928ca4376c681e40193d14f451892e66"
+  },
+  "external": {
+    "normalized_path": "data/normalized/build-5608c0d7d93b9c6200431b5c",
+    "join": "Typed canonical_ids mapping between canonical_id and exact source_identifier",
+    "artifacts": [
+      "agency",
+      "agency_stops",
+      "areas",
+      "attributions",
+      "calendar",
+      "calendar_attributes",
+      "calendar_dates",
+      "canonical_ids",
+      "directions",
+      "fare_leg_join_rules",
+      "fare_leg_rules",
+      "fare_media",
+      "fare_products",
+      "fare_transfer_rules",
+      "feed_info",
+      "levels",
+      "mtc_feed_versions",
+      "pathways",
+      "rider_categories",
+      "route_attributes",
+      "route_stops",
+      "routes",
+      "row_exception_ledger",
+      "shapes",
+      "stop_alias_candidates",
+      "stop_areas",
+      "stop_times",
+      "stops",
+      "timeframes",
+      "transfers",
+      "trip_selector_context",
+      "trips"
+    ],
+    "verification": {
+      "timetable": {
+        "visits": 3185115,
+        "arrivals": 100912,
+        "departures": 100948,
+        "flex": 0
+      },
+      "external_temporal_and_shapes": {
+        "calendar_end_2099": 5,
+        "exceptions": 5706,
+        "shape_points": 1340496
+      },
+      "canonical_mappings": {
+        "route": 665,
+        "trip": 92827,
+        "shape": 2446,
+        "agency": 41,
+        "stop": 21664,
+        "service": 485
+      },
+      "suffix_collision_groups": 364,
+      "exception_ledger": [
+        {
+          "source_file": "attributions.txt",
+          "disposition": "DEDUPLICATED",
+          "records": 40
+        },
+        {
+          "source_file": "directions.txt",
+          "disposition": "QUARANTINED",
+          "records": 2
+        },
+        {
+          "source_file": "fare_transfer_rules.txt",
+          "disposition": "QUARANTINED",
+          "records": 68
+        },
+        {
+          "source_file": "route_attributes.txt",
+          "disposition": "DEDUPLICATED",
+          "records": 2
+        },
+        {
+          "source_file": "shapes.txt",
+          "disposition": "FLAGGED",
+          "records": 21
+        }
+      ]
+    }
+  },
+  "input_seconds": 5.739,
+  "reader_isolation": "Dedicated database and unpublished manifest until passing. Reader access is operationally withheld; server permissions are unchanged.",
+  "neo4j": {
+    "components": [
+      {
+        "name": "Neo4j Kernel",
+        "versions": [
+          "2026.10.2"
+        ],
+        "edition": "enterprise"
+      },
+      {
+        "name": "Cypher",
+        "versions": [
+          "5",
+          "25"
+        ],
+        "edition": ""
+      }
+    ],
+    "account": {
+      "roles": [
+        "admin",
+        "PUBLIC"
+      ],
+      "password_change_required": false
+    },
+    "database": {
+      "name": "transitkg-static",
+      "type": "standard",
+      "currentStatus": "online",
+      "databaseID": "FEC14225142CED808735D9B68454D6C9ABE2B5CCBD95B8B5074B0331DA905445",
+      "access": "read-write",
+      "default": false
+    }
+  },
+  "target_contents_before": {
+    "nodes": 0,
+    "relationships": 0,
+    "snapshots": []
+  },
+  "target_identity": {
+    "id": "FEC14225142CED808735D9B68454D6C9ABE2B5CCBD95B8B5074B0331DA905445",
+    "name": "transitkg-static",
+    "creationDate": "2026-11-24T21:55:04.565Z"
+  },
+  "mode": "initial",
+  "schema_apply_seconds": 0.816,
+  "schema": {
+    "constraints": [
+      {
+        "id": 3,
+        "name": "uq_Agency",
+        "type": "UNIQUENESS",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Agency"
+        ],
+        "properties": [
+          "canonical_id"
+        ],
+        "ownedIndex": "uq_Agency",
+        "propertyType": null
+      },
+      {
+        "id": 13,
+        "name": "uq_FeedSnapshot",
+        "type": "UNIQUENESS",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "FeedSnapshot"
+        ],
+        "properties": [
+          "normalized_build_id"
+        ],
+        "ownedIndex": "uq_FeedSnapshot",
+        "propertyType": null
+      },
+      {
+        "id": 5,
+        "name": "uq_Route",
+        "type": "UNIQUENESS",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Route"
+        ],
+        "properties": [
+          "canonical_id"
+        ],
+        "ownedIndex": "uq_Route",
+        "propertyType": null
+      },
+      {
+        "id": 11,
+        "name": "uq_Service",
+        "type": "UNIQUENESS",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Service"
+        ],
+        "properties": [
+          "canonical_id"
+        ],
+        "ownedIndex": "uq_Service",
+        "propertyType": null
+      },
+      {
+        "id": 9,
+        "name": "uq_Stop",
+        "type": "UNIQUENESS",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Stop"
+        ],
+        "properties": [
+          "canonical_id"
+        ],
+        "ownedIndex": "uq_Stop",
+        "propertyType": null
+      },
+      {
+        "id": 7,
+        "name": "uq_Trip",
+        "type": "UNIQUENESS",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Trip"
+        ],
+        "properties": [
+          "canonical_id"
+        ],
+        "ownedIndex": "uq_Trip",
+        "propertyType": null
+      }
+    ],
+    "indexes": [
+      {
+        "id": 1,
+        "name": "index_1b9dcc97",
+        "state": "ONLINE",
+        "populationPercent": 100.0,
+        "type": "LOOKUP",
+        "entityType": "RELATIONSHIP",
+        "labelsOrTypes": null,
+        "properties": null,
+        "indexProvider": "token-lookup-1.0",
+        "owningConstraint": null,
+        "lastRead": null,
+        "readCount": 0
+      },
+      {
+        "id": 0,
+        "name": "index_460996c0",
+        "state": "ONLINE",
+        "populationPercent": 100.0,
+        "type": "LOOKUP",
+        "entityType": "NODE",
+        "labelsOrTypes": null,
+        "properties": null,
+        "indexProvider": "token-lookup-1.0",
+        "owningConstraint": null,
+        "lastRead": "2026-11-24T21:55:23.493000000+00:00",
+        "readCount": 1
+      },
+      {
+        "id": 14,
+        "name": "ix_Agency_source_id",
+        "state": "ONLINE",
+        "populationPercent": 100.0,
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Agency"
+        ],
+        "properties": [
+          "source_id"
+        ],
+        "indexProvider": "range-1.0",
+        "owningConstraint": null,
+        "lastRead": null,
+        "readCount": null
+      },
+      {
+        "id": 20,
+        "name": "ix_Route_route_short_name",
+        "state": "ONLINE",
+        "populationPercent": 100.0,
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Route"
+        ],
+        "properties": [
+          "route_short_name"
+        ],
+        "indexProvider": "range-1.0",
+        "owningConstraint": null,
+        "lastRead": null,
+        "readCount": null
+      },
+      {
+        "id": 15,
+        "name": "ix_Route_source_id",
+        "state": "ONLINE",
+        "populationPercent": 100.0,
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Route"
+        ],
+        "properties": [
+          "source_id"
+        ],
+        "indexProvider": "range-1.0",
+        "owningConstraint": null,
+        "lastRead": null,
+        "readCount": null
+      },
+      {
+        "id": 18,
+        "name": "ix_Service_source_id",
+        "state": "ONLINE",
+        "populationPercent": 100.0,
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Service"
+        ],
+        "properties": [
+          "source_id"
+        ],
+        "indexProvider": "range-1.0",
+        "owningConstraint": null,
+        "lastRead": null,
+        "readCount": null
+      },
+      {
+        "id": 17,
+        "name": "ix_Stop_source_id",
+        "state": "ONLINE",
+        "populationPercent": 100.0,
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Stop"
+        ],
+        "properties": [
+          "source_id"
+        ],
+        "indexProvider": "range-1.0",
+        "owningConstraint": null,
+        "lastRead": null,
+        "readCount": null
+      },
+      {
+        "id": 19,
+        "name": "ix_Stop_stop_name",
+        "state": "ONLINE",
+        "populationPercent": 100.0,
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Stop"
+        ],
+        "properties": [
+          "stop_name"
+        ],
+        "indexProvider": "range-1.0",
+        "owningConstraint": null,
+        "lastRead": null,
+        "readCount": null
+      },
+      {
+        "id": 16,
+        "name": "ix_Trip_source_id",
+        "state": "ONLINE",
+        "populationPercent": 100.0,
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Trip"
+        ],
+        "properties": [
+          "source_id"
+        ],
+        "indexProvider": "range-1.0",
+        "owningConstraint": null,
+        "lastRead": null,
+        "readCount": null
+      },
+      {
+        "id": 2,
+        "name": "uq_Agency",
+        "state": "ONLINE",
+        "populationPercent": 100.0,
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Agency"
+        ],
+        "properties": [
+          "canonical_id"
+        ],
+        "indexProvider": "range-1.0",
+        "owningConstraint": "uq_Agency",
+        "lastRead": null,
+        "readCount": null
+      },
+      {
+        "id": 12,
+        "name": "uq_FeedSnapshot",
+        "state": "ONLINE",
+        "populationPercent": 100.0,
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "FeedSnapshot"
+        ],
+        "properties": [
+          "normalized_build_id"
+        ],
+        "indexProvider": "range-1.0",
+        "owningConstraint": "uq_FeedSnapshot",
+        "lastRead": null,
+        "readCount": null
+      },
+      {
+        "id": 4,
+        "name": "uq_Route",
+        "state": "ONLINE",
+        "populationPercent": 100.0,
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Route"
+        ],
+        "properties": [
+          "canonical_id"
+        ],
+        "indexProvider": "range-1.0",
+        "owningConstraint": "uq_Route",
+        "lastRead": null,
+        "readCount": null
+      },
+      {
+        "id": 10,
+        "name": "uq_Service",
+        "state": "ONLINE",
+        "populationPercent": 100.0,
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Service"
+        ],
+        "properties": [
+          "canonical_id"
+        ],
+        "indexProvider": "range-1.0",
+        "owningConstraint": "uq_Service",
+        "lastRead": null,
+        "readCount": null
+      },
+      {
+        "id": 8,
+        "name": "uq_Stop",
+        "state": "ONLINE",
+        "populationPercent": 100.0,
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Stop"
+        ],
+        "properties": [
+          "canonical_id"
+        ],
+        "indexProvider": "range-1.0",
+        "owningConstraint": "uq_Stop",
+        "lastRead": null,
+        "readCount": null
+      },
+      {
+        "id": 6,
+        "name": "uq_Trip",
+        "state": "ONLINE",
+        "populationPercent": 100.0,
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Trip"
+        ],
+        "properties": [
+          "canonical_id"
+        ],
+        "indexProvider": "range-1.0",
+        "owningConstraint": "uq_Trip",
+        "lastRead": null,
+        "readCount": null
+      }
+    ]
+  },
+  "schema_index_wait_verify_seconds": 0.127,
+  "data_load_seconds": 117.499,
+  "before_snapshot_verification": {
+    "counts": {
+      "nodes": {
+        "Agency": 41,
+        "FeedSnapshot": 0,
+        "Route": 665,
+        "Service": 485,
+        "Stop": 21664,
+        "Trip": 92827
+      },
+      "relationships": {
+        "AGENCY_SERVES_STOP": 19904,
+        "HAS_TRIP": 92827,
+        "OPERATES": 665,
+        "PART_OF": 2222,
+        "ROUTE_SERVES_STOP": 33985,
+        "RUNS_ON": 92827,
+        "TRANSFER_RULE": 61
+      }
+    },
+    "imported_fingerprint": null,
+    "partition_digests": {
+      "Agency": "31c717d3f58a4b6f735bc078385197aca3232a85c9de7da4d027556f843da28d",
+      "FeedSnapshot": null,
+      "Route": "b2876cd64dc940bd4ca1d4d993c76193b1e74744dc1f3d1112d2faa84ca2dd9b",
+      "Service": "c076c8801db60f47c2a20fd846450d411f47b4488ca34855fb218526fa985bb5",
+      "Stop": "69542d9d68f052a86d00054cfe148fa86c775222b386b9d4e748262d4da3ff73",
+      "Trip": "5d59dadc1d1494cb1773fd8856ce710cae68ede741783be4a79ab122f9c3de8c",
+      "AGENCY_SERVES_STOP": "59ad9e384d9246fa8175da2cf8973bc1a2a25bde9956fe0dac033ab848374177",
+      "HAS_TRIP": "c559ba93a5b717cc78a44741e1ff270ef0ba4e0223b8d3d4b24bb0c8cb25ea33",
+      "OPERATES": "a38f323470af36ac7c855a5eee5473e3c439b539728b46779d5c0cc12c0e2bd8",
+      "PART_OF": "00fecec464884ed029b708009695db224d4bb160a2c8aed5aaf9829fbfd89b68",
+      "ROUTE_SERVES_STOP": "88c6e325b228244c64a47853c22aa634360496eabbfae56911a28db15b8dd72d",
+      "RUNS_ON": "41e6cbb0e262377d443cf0fac349775155468a3d72a64f0696d7ee61353f203c",
+      "TRANSFER_RULE": "750b6fd75ae04c795f86d9746cdc41aad72eba1715a517b3b09f0cac0e0c418f"
+    },
+    "duplicate_identities": 0,
+    "incorrect_endpoints": 0,
+    "seconds": 53.659
+  },
+  "verification": {
+    "counts": {
+      "nodes": {
+        "Agency": 41,
+        "FeedSnapshot": 1,
+        "Route": 665,
+        "Service": 485,
+        "Stop": 21664,
+        "Trip": 92827
+      },
+      "relationships": {
+        "AGENCY_SERVES_STOP": 19904,
+        "HAS_TRIP": 92827,
+        "OPERATES": 665,
+        "PART_OF": 2222,
+        "ROUTE_SERVES_STOP": 33985,
+        "RUNS_ON": 92827,
+        "TRANSFER_RULE": 61
+      }
+    },
+    "imported_fingerprint": "675d71bd4e8bd82ffc1ec0d8951ca527928ca4376c681e40193d14f451892e66",
+    "partition_digests": {
+      "Agency": "31c717d3f58a4b6f735bc078385197aca3232a85c9de7da4d027556f843da28d",
+      "FeedSnapshot": "74f6357fd1ab355a47cc1c843fdc174cd2fab062f3692d9b9780ed516f3ad517",
+      "Route": "b2876cd64dc940bd4ca1d4d993c76193b1e74744dc1f3d1112d2faa84ca2dd9b",
+      "Service": "c076c8801db60f47c2a20fd846450d411f47b4488ca34855fb218526fa985bb5",
+      "Stop": "69542d9d68f052a86d00054cfe148fa86c775222b386b9d4e748262d4da3ff73",
+      "Trip": "5d59dadc1d1494cb1773fd8856ce710cae68ede741783be4a79ab122f9c3de8c",
+      "AGENCY_SERVES_STOP": "59ad9e384d9246fa8175da2cf8973bc1a2a25bde9956fe0dac033ab848374177",
+      "HAS_TRIP": "c559ba93a5b717cc78a44741e1ff270ef0ba4e0223b8d3d4b24bb0c8cb25ea33",
+      "OPERATES": "a38f323470af36ac7c855a5eee5473e3c439b539728b46779d5c0cc12c0e2bd8",
+      "PART_OF": "00fecec464884ed029b708009695db224d4bb160a2c8aed5aaf9829fbfd89b68",
+      "ROUTE_SERVES_STOP": "88c6e325b228244c64a47853c22aa634360496eabbfae56911a28db15b8dd72d",
+      "RUNS_ON": "41e6cbb0e262377d443cf0fac349775155468a3d72a64f0696d7ee61353f203c",
+      "TRANSFER_RULE": "750b6fd75ae04c795f86d9746cdc41aad72eba1715a517b3b09f0cac0e0c418f"
+    },
+    "duplicate_identities": 0,
+    "incorrect_endpoints": 0,
+    "seconds": 57.083,
+    "competencies": {
+      "cypher": {
+        "G1": 1,
+        "G2": 2,
+        "G3": 1,
+        "G4": 1,
+        "G5": 1,
+        "G6": 4,
+        "G7": 152,
+        "G8": 247,
+        "G9": 1,
+        "G10": 2,
+        "G11": 1,
+        "G12": 189,
+        "G13": 126,
+        "G14": 1
+      },
+      "shared_stops": 189,
+      "sequence_visits": 77,
+      "active_services": 125,
+      "ac_selector": {
+        "status": "EXACT_MATCH",
+        "stop_ids": {
+          "52227": "511-sf-bay-regional:stop:52227",
+          "55660": "511-sf-bay-regional:stop:55660"
+        },
+        "routes": [
+          [
+            "AC:72",
+            126,
+            39
+          ],
+          [
+            "AC:72L",
+            81,
+            27
+          ],
+          [
+            "AC:72M",
+            123,
+            41
+          ],
+          [
+            "AC:802",
+            15,
+            5
+          ]
+        ],
+        "visiting_trips": 345,
+        "dated_visiting_trips": 112,
+        "neighbor_visiting_trips": 339,
+        "service_date": "2026-11-25",
+        "wrong_agency_matches": 0,
+        "wrong_direction_matches": 0,
+        "name_only": "AMBIGUOUS"
+      }
+    },
+    "competency_seconds": 4.034
+  },
+  "storage": {
+    "status": "measured",
+    "method": "read-only local file lengths, excludes transaction log directory",
+    "store_including_indexes_bytes": 1443407,
+    "schema_index_bytes": 614400
+  },
+  "input_immutability_rechecked": true,
+  "ended_utc": "2026-11-24T21:59:47.852524+00:00",
+  "performance": {
+    "wall_seconds": 240.146,
+    "client_cpu_seconds": 150.516,
+    "client_peak_rss_mib": 470.8,
+    "nodes": {
+      "created": 115683,
+      "matched": 0,
+      "seconds": 43.597,
+      "created_per_second": 2653.46
+    },
+    "relationships": {
+      "created": 242491,
+      "matched": 0,
+      "seconds": 73.25800000000001,
+      "created_per_second": 3310.1
+    }
+  }
+}

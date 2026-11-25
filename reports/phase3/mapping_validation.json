@@ -1,0 +1,55 @@
+{
+  "records": 118128,
+  "collisions": 0,
+  "duplicate_source_keys": 0,
+  "noncanonical_encodings": 0,
+  "roundtrip_failures": 0,
+  "snapshot_mismatches": 0,
+  "missing_source_mappings": 0,
+  "extra_mappings": 0,
+  "coverage": [
+    {
+      "entity_type": "agency",
+      "mappings": 41,
+      "leading_zero_ids": 0,
+      "ids_with_colons": 0
+    },
+    {
+      "entity_type": "route",
+      "mappings": 665,
+      "leading_zero_ids": 0,
+      "ids_with_colons": 665
+    },
+    {
+      "entity_type": "service",
+      "mappings": 485,
+      "leading_zero_ids": 0,
+      "ids_with_colons": 485
+    },
+    {
+      "entity_type": "shape",
+      "mappings": 2446,
+      "leading_zero_ids": 0,
+      "ids_with_colons": 2446
+    },
+    {
+      "entity_type": "stop",
+      "mappings": 21664,
+      "leading_zero_ids": 0,
+      "ids_with_colons": 1915
+    },
+    {
+      "entity_type": "trip",
+      "mappings": 92827,
+      "leading_zero_ids": 0,
+      "ids_with_colons": 92827
+    }
+  ],
+  "stop_suffix_collision_groups_preserved": 364,
+  "derived_reference_errors": {
+    "route_stops": 0,
+    "agency_stops": 0,
+    "trip_selector_context": 0,
+    "stop_alias_candidates": 0
+  }
+}

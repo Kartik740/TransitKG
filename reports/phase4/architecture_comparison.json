@@ -1,0 +1,286 @@
+{
+  "source_snapshot_id": "gtfs-sha256-d6279860e2fe203541a574ee04db5752ecad9e5e1a38b1759cc397b1b596dfa2",
+  "normalized_build_id": "normalized-sha256-5608c0d7d93b9c6200431b5c227da598d52cd0108e9e2f410e5b012b00d28052",
+  "engine": "1.5.0",
+  "threads": 2,
+  "nodes": {
+    "Agency": 41,
+    "Route": 665,
+    "Trip": 92827,
+    "Stop": 21664,
+    "Service": 485,
+    "FeedSnapshot": 1
+  },
+  "edges": {
+    "OPERATES": 665,
+    "HAS_TRIP": 92827,
+    "RUNS_ON": 92827,
+    "ROUTE_SERVES_STOP": 33985,
+    "AGENCY_SERVES_STOP": 19904,
+    "PART_OF": 2222,
+    "TRANSFER_RULE": 61
+  },
+  "mapping_counts": {
+    "trip": 92827,
+    "shape": 2446,
+    "route": 665,
+    "service": 485,
+    "agency": 41,
+    "stop": 21664
+  },
+  "visits": 3185115,
+  "patterns": {
+    "patterns": 1925,
+    "occurrences": 53168,
+    "trips_in_shared_patterns": 92615,
+    "shared_patterns": 1713,
+    "largest_trip_group": 586,
+    "trips": 92827,
+    "trips_with_repeated_stops": 4221,
+    "reconstructed_visits": 3185115
+  },
+  "patterns_seconds": 22.288,
+  "reference": {
+    "shared_stops": 189,
+    "location_types": [
+      {
+        "location_type": 0,
+        "n": 19795
+      },
+      {
+        "location_type": 1,
+        "n": 613
+      },
+      {
+        "location_type": 2,
+        "n": 250
+      },
+      {
+        "location_type": 3,
+        "n": 1006
+      }
+    ],
+    "route_types": [
+      {
+        "route_type": 0,
+        "n": 16
+      },
+      {
+        "route_type": 1,
+        "n": 12
+      },
+      {
+        "route_type": 2,
+        "n": 28
+      },
+      {
+        "route_type": 3,
+        "n": 592
+      },
+      {
+        "route_type": 4,
+        "n": 14
+      },
+      {
+        "route_type": 5,
+        "n": 3
+      }
+    ],
+    "transfers": [
+      {
+        "transfer_type": 0,
+        "n": 3,
+        "from_route": 0,
+        "to_route": 0,
+        "from_trip": 0,
+        "to_trip": 0
+      },
+      {
+        "transfer_type": 1,
+        "n": 10,
+        "from_route": 0,
+        "to_route": 0,
+        "from_trip": 0,
+        "to_trip": 0
+      },
+      {
+        "transfer_type": 2,
+        "n": 48,
+        "from_route": 44,
+        "to_route": 44,
+        "from_trip": 0,
+        "to_trip": 0
+      }
+    ],
+    "calendar_end_2099": 5,
+    "exceptions": 5706,
+    "shape_points": 1340496,
+    "trips_with_shape": 91296,
+    "extended_times": {
+      "arrivals": 100912,
+      "departures": 100948
+    },
+    "scope_sample": {
+      "55660": [
+        {
+          "stop_id": "55660",
+          "stop_name": "San Pablo Av & W Grand Av",
+          "canonical_stop_id": "511-sf-bay-regional:stop:55660",
+          "route_id": "AC:72",
+          "trips": 126
+        },
+        {
+          "stop_id": "55660",
+          "stop_name": "San Pablo Av & W Grand Av",
+          "canonical_stop_id": "511-sf-bay-regional:stop:55660",
+          "route_id": "AC:72L",
+          "trips": 81
+        },
+        {
+          "stop_id": "55660",
+          "stop_name": "San Pablo Av & W Grand Av",
+          "canonical_stop_id": "511-sf-bay-regional:stop:55660",
+          "route_id": "AC:72M",
+          "trips": 123
+        },
+        {
+          "stop_id": "55660",
+          "stop_name": "San Pablo Av & W Grand Av",
+          "canonical_stop_id": "511-sf-bay-regional:stop:55660",
+          "route_id": "AC:802",
+          "trips": 15
+        }
+      ],
+      "52227": [
+        {
+          "stop_id": "52227",
+          "stop_name": "San Pablo Av & W Grand Av",
+          "canonical_stop_id": "511-sf-bay-regional:stop:52227",
+          "route_id": "AC:72",
+          "trips": 121
+        },
+        {
+          "stop_id": "52227",
+          "stop_name": "San Pablo Av & W Grand Av",
+          "canonical_stop_id": "511-sf-bay-regional:stop:52227",
+          "route_id": "AC:72L",
+          "trips": 80
+        },
+        {
+          "stop_id": "52227",
+          "stop_name": "San Pablo Av & W Grand Av",
+          "canonical_stop_id": "511-sf-bay-regional:stop:52227",
+          "route_id": "AC:72M",
+          "trips": 123
+        },
+        {
+          "stop_id": "52227",
+          "stop_name": "San Pablo Av & W Grand Av",
+          "canonical_stop_id": "511-sf-bay-regional:stop:52227",
+          "route_id": "AC:802",
+          "trips": 15
+        }
+      ]
+    },
+    "dated_example": {
+      "trips": 112,
+      "visits": 112
+    },
+    "direction_example": [
+      {
+        "route_id": "AC:72",
+        "direction_id": 0,
+        "trips": 126
+      },
+      {
+        "route_id": "AC:72L",
+        "direction_id": 0,
+        "trips": 81
+      },
+      {
+        "route_id": "AC:72M",
+        "direction_id": 0,
+        "trips": 123
+      },
+      {
+        "route_id": "AC:802",
+        "direction_id": 0,
+        "trips": 15
+      }
+    ],
+    "application_examples": [
+      {
+        "trip_id": "AC:10056070",
+        "route_id": "AC:72",
+        "agency_id": "AC",
+        "service_id": "AC:83048",
+        "route_type": 3,
+        "direction_id": 0,
+        "agency_timezone": "America/Los_Angeles",
+        "first_departure_seconds": 24000,
+        "frequency_defined": false,
+        "canonical_trip_id": "511-sf-bay-regional:trip:AC%3A10056070"
+      }
+    ]
+  },
+  "parquet_bytes": 61576978,
+  "benchmark": {
+    "association": {
+      "query": "SELECT canonical_stop_id FROM agency_stops WHERE agency_id='AC' AND stop_id='55660'",
+      "result": "511-sf-bay-regional:stop:55660",
+      "first_ms": 2.201,
+      "warm_ms": [
+        1.884,
+        2.505,
+        2.221,
+        1.799,
+        1.776
+      ],
+      "warm_median_ms": 1.884
+    },
+    "scoped_trip_count": {
+      "query": "SELECT count(DISTINCT trip_id) FROM scoped_visits('AC',NULL,NULL,'55660',NULL,NULL)",
+      "result": 345,
+      "first_ms": 24.838,
+      "warm_ms": [
+        27.375,
+        23.64,
+        23.571,
+        27.571,
+        26.236
+      ],
+      "warm_median_ms": 26.236
+    },
+    "date_scoped_count": {
+      "query": "SELECT count(DISTINCT trip_id) FROM scoped_visits('AC',NULL,NULL,'55660',NULL,NULL) JOIN active_services(DATE '2026-11-25') USING(service_id)",
+      "result": 112,
+      "first_ms": 28.561,
+      "warm_ms": [
+        29.574,
+        27.634,
+        26.429,
+        27.749,
+        26.419
+      ],
+      "warm_median_ms": 27.634
+    }
+  },
+  "alternatives": {
+    "B_compact": {
+      "nodes": 115683,
+      "relationships": 242491
+    },
+    "A_visit_edges": {
+      "nodes": 115683,
+      "relationships": 3427606
+    },
+    "A_visit_nodes": {
+      "nodes": 3300798,
+      "relationships": 6612721
+    },
+    "C_patterns": {
+      "nodes": 117608,
+      "relationships": 388486
+    }
+  }
+}

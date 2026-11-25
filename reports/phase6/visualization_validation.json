@@ -1,0 +1,17 @@
+{
+  "database": "transitkg-static",
+  "query_count": 10,
+  "rows_in_file_order": [
+    12,
+    20,
+    25,
+    12,
+    4,
+    2,
+    2,
+    20,
+    5,
+    1
+  ],
+  "database_writes": 0
+}

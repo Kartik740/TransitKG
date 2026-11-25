@@ -1,0 +1,450 @@
+service_id,service_description
+GP:80973,Weekday
+GP:80974,Weekend
+RV:72849,Weekday
+TF:77566,Weekend
+TF:77567,Weekday
+EM:72790,Holiday Eve 2026
+EM:72791,Holiday Eve 2026
+EM:72792,Post-Thanksgiving 2026
+EM:77154,Weekdays
+EM:81981,Saturdays
+EM:81982,Sundays
+EM:81983,Weekdays
+EM:81984,Post-Thanksgiving 2027
+SL:82418,Weekdays
+SI:74999,Everyday
+SS:75014,Weekday
+AC:83046,Weekday
+AC:83044,Weekday
+AC:83045,Weekday
+AC:83041,Weekday
+AC:83043,Weekday
+AC:83073,(Previous Day) Weekday
+AC:83042,Weekday
+AC:72905,Weekday
+AC:72906,Weekday
+AC:72907,Sunday
+AC:72908,Weekday
+AC:72909,Weekday
+AC:72910,Weekday
+AC:79044,Weekday
+AC:79045,Weekday
+AC:79046,Weekday
+AC:83047,Weekday
+AC:80283,Weekday
+AC:83048,Saturday
+AC:81641,Weekday
+AC:83049,Weekday
+AC:83017,Weekday
+AC:83050,Weekday
+AC:83018,Weekday
+AC:83051,Weekday
+AC:83019,Weekday
+AC:83052,Weekday
+AC:83020,Weekday
+AC:83053,Weekday
+AC:83021,Weekday
+AC:83054,Weekday
+AC:83022,Weekday
+AC:83055,Weekday
+AC:83023,Weekday
+AC:83056,Weekday
+AC:83024,Weekday
+AC:83057,Weekday
+AC:83025,Weekday
+AC:83058,Weekday
+AC:83026,Weekday
+AC:83059,Weekday
+AC:83027,Weekday
+AC:83060,Weekday
+AC:83028,Weekday
+AC:83061,Weekday
+AC:83029,Weekday
+AC:83062,Weekday
+AC:83030,Weekday
+AC:83063,Weekday
+AC:83031,Weekday
+AC:83064,Weekday
+AC:83032,Weekday
+AC:83065,Weekday
+AC:83033,Weekday
+AC:83066,Weekday
+AC:83034,Weekday
+AC:83067,Weekday
+AC:83035,Weekday
+AC:83068,Weekday
+AC:83036,Weekday
+AC:83069,Weekday
+AC:83037,Weekday
+AC:83070,Weekday
+AC:83038,Weekday
+AC:83071,(Previous Day) Sunday
+AC:83039,Weekday
+AC:83072,(Previous Day) Saturday
+AC:83040,Weekday
+DE:72781,Weekday
+3D:72969,Weekday
+3D:72970,Saturday
+3D:72971,Sunday
+EE:80971,Weekdays
+CC:79168,Weekday
+CC:79169,Weekday
+CC:79170,"Mon, Tue, Thurs, Fri"
+CC:82960,Wednesday
+CC:82961,Saturday
+CC:82962,Sunday
+SF:79536,SATURDAY
+SF:78967,SUNDAY
+AF:81358,Weekend
+AF:80814,Weekend
+AF:81357,Weekday
+AF:80408,"Thurs, Fri"
+AF:80813,Wed-Fri
+AF:80812,Weekend
+AF:77685,Weekend
+AF:77686,Weekend
+AF:77687,Weekend
+AF:77688,Weekend
+AF:77965,"Thurs, Fri"
+AF:77966,Wed-Fri
+AF:77967,Weekday
+AF:77968,Weekend
+AF:78149,Weekend
+AF:81359,Wed-Fri
+AF:78150,Weekend
+AF:81360,Weekend
+AF:78403,Wed-Fri
+AF:81361,Weekend
+AF:78404,Weekday
+AF:81362,Weekend
+AF:78640,Weekend
+AF:81867,Weekend
+AF:78641,Weekday
+AF:81868,"Thurs, Fri"
+AF:78642,Weekend
+AF:81869,Weekend
+AF:78643,Wed-Fri
+AF:82035,Weekend
+AF:78925,Weekend
+AF:82391,Wed-Fri
+AF:78926,Weekend
+AF:82392,Weekday
+AF:79152,"Thurs, Fri"
+AF:82393,Weekend
+AF:79153,Weekend
+AF:82394,Wed-Fri
+AF:79154,Weekend
+AF:82395,Weekend
+AF:79155,December - Weekend Service
+AF:82396,Wed-Fri
+AF:79156,November - Weekend Service
+AF:83455,Weekend
+AF:79157,Wed-Fri
+AF:83456,Weekend
+AF:79331,Weekend
+AF:83457,Weekend
+AF:79332,Weekday
+AF:83458,Weekend
+AF:79854,Weekend
+AF:83459,Wed-Fri
+AF:79855,Weekday
+AF:83460,Wed-Fri
+AF:79856,Weekend
+AF:79857,Wed-Fri
+AF:79858,Wed-Fri
+AF:79859,Weekend
+AF:80405,Weekend
+AF:80406,Weekend
+AF:80407,Weekend
+WC:72889,School Calendar 2026-2027 (Sept 2026) (Wednesday only)
+WC:72890,School Calendar 2026-2027 (Sept 2026) (Weekday)
+WC:72891,School Calendar 2026-2027 (Sept 2026) (MTuThF)
+WC:72892,School Calendar 2026-2027 (Sept 2026) (Wednesday only)
+WC:72893,School Calendar 2026-2027 (Sept 2026) (Weekday)
+WC:76916,School Calendar 2026-2027 (Sept 2026) (MTuThF)
+WC:83117,School Calendar 2026-2027 (Sept 2026) (Wednesday only)
+WC:83118,School Calendar 2026-2027 (Sept 2026) (Weekday)
+WC:83119,School Calendar 2026-2027 (Sept 2026) (MTuThF)
+WC:83486,School Calendar 2026-2027 (Sept 2026) (Wednesday only)
+WC:83487,School Calendar 2026-2027 (Sept 2026) (Weekday)
+WC:83488,School Calendar 2026-2027 (Sept 2026) (MTuThF)
+WC:83489,School Calendar 2026-2027 (Sept 2026) (Wednesday only)
+WC:83490,School Calendar 2026-2027 (Sept 2026) (Weekday)
+WC:83491,School Calendar 2026-2027 (Sept 2026) (MTuThF)
+WC:83492,Locals & JPX (Sept 2026) (Weekday)
+WC:83493,Lynx (Sept 2026) (Weekday)
+WC:83494,Route J (Sept 2026) (Weekend)
+WC:83495,Route J (Sept 2026) (Weekday)
+WC:83496,Route JX (Sept 2026) (Weekday)
+WC:83497,R11 & 19 Sat (Sept 2026) (Saturday only)
+WC:83498,School Calendar 2026-2027 (August 2026) (Wednesday only)
+WC:83499,School Calendar 2026-2027 (August 2026) (Weekday)
+WC:83500,School Calendar 2026-2027 (August 2026) (MTuThF)
+WC:83501,Locals & JPX (February 2026) (Weekday)
+WC:83502,Lynx (February 2026) (Weekday)
+WC:83503,Route J (February 2026) (Weekend)
+WC:83504,Route J (February 2026) (Weekday)
+WC:83505,Route JX (Summer 2025) (Weekday)
+WC:83506,R11 & 19 Sat (Summer 2025) (Saturday only)
+GG:73017,Sunday
+GG:75117,Weekday
+GG:75205,Weekday except Friday
+GG:82653,Saturday
+GG:82654,Sunday
+GG:82655,Weekday
+GG:83532,Saturday
+GF:72813,Weekend
+GF:76504,Weekday
+GF:82678,Weekend
+GF:82679,Weekday
+WH:72989,Friday
+WH:72990,Tuesday
+WH:72991,Thursday
+WH:80233,Monday
+WH:81465,Saturday
+WH:83002,Sunday
+WH:83003,Wednesday
+VC:72877,Saturday
+VC:76144,Friday
+VC:82703,Mon-Thurs
+MB:78395,Year Round Starting 07/15/2025 (Weekday)
+FS:72801,SCHOOL - AUG26 - JUNE27 (Wednesday only)
+FS:75720,SCHOOL - AUG26 - JUNE27 (MTuThF)
+FS:79174,SEPTEMBER 01 2026 - JUNE 30 2027 (Saturday only)
+FS:79175,SEPTEMBER 01 2026 - JUNE 30 2027 (Weekday)
+FS:83587,JULY  01 2026 - OCTOBER 02 2026 (Weekday only)
+SA:73343,Schedule 16: MASCOTS Schedule April 2026 (Weekend)
+SA:76456,Schedule 16: MASCOTS Schedule April 2026 (Weekday)
+SE:83463,Weekday
+MC:80275,Calendar from 20261010 - 20271010
+MC:80276,Calendar from 20261010 - 20271010
+MC:80277,Calendar from 20250201 - 20260120
+MC:80278,Calendar from 20250201 - 20260120
+AM:72761,Weekday
+AM:75701,Weekend
+SM:83770,Sunday
+SM:73025,Weekday
+SM:73026,Weekday
+SM:73027,Mon Tue Thu Fri
+SM:82828,Wed
+SM:82829,Tue
+SM:82830,Mon Wed Thu Fri
+SM:82831,Wed Fri
+SM:82832,Mon Tue Thu
+SM:82833,Thu
+SM:82834,Mon Tue Wed Fri
+SM:82835,Mon Tue Fri
+SM:82836,Wed Thu
+SM:82837,Mon
+SM:82838,Tue Thu
+SM:82839,Mon Wed Fri
+SM:82840,Saturday
+SM:82841,Sunday
+SM:83093,Weekday
+SM:83094,Weekday
+SM:83754,Mon Tue Wed Thu
+SM:83755,Fri
+SM:83756,Mon Tue Thu Fri
+SM:83757,Wed
+SM:83758,Tue
+SM:83759,Mon Wed Thu Fri
+SM:83760,Wed Fri
+SM:83761,Mon Tue Thu
+SM:83762,Thu
+SM:83763,Mon Tue Wed Fri
+SM:83764,Mon Tue Fri
+SM:83765,Wed Thu
+SM:83766,Mon
+SM:83767,Tue Thu
+SM:83768,Mon Wed Fri
+SM:83769,Saturday
+CE:79260,Weekday
+PG:80067,Weekdays
+PG:80068,Weekends
+UC:83172,Weekday
+UC:74964,Weekday
+UC:74965,Sunday
+UC:83139,Sunday
+UC:83140,Saturday
+UC:83141,Saturday
+UC:83142,Weekday
+UC:83143,Weekday
+UC:83144,Sunday
+UC:83145,Sunday
+UC:83146,Saturday
+UC:83147,Weekday
+UC:83148,Saturday
+UC:83149,Weekday
+UC:83150,Weekday
+UC:83151,Weekday
+UC:83152,Weekday
+UC:83153,Weekday
+UC:83154,Sunday
+UC:83155,Sunday
+UC:83156,Saturday
+UC:83157,Saturday
+UC:83158,Sunday
+UC:83159,Weekday
+UC:83160,Weekday
+UC:83161,Sunday
+UC:83162,Saturday
+UC:83163,Saturday
+UC:83164,Weekday
+UC:83165,Weekday
+UC:83166,Sunday
+UC:83167,Sunday
+UC:83168,Saturday
+UC:83169,Saturday
+UC:83170,Weekday
+UC:83171,Weekday
+SO:73086,Saturday
+SO:73087,Sunday
+SO:75492,Weekdays
+SO:83090,"Thursday, Friday"
+SO:83091,"Monday, Tuesday, Wednesday"
+CM:73306,Weekday
+SR:79276,Weekdays
+SR:79233,Saturday
+SR:77589,Sunday
+MV:77564,Calendar Start 20251001
+MV:78907,Calendar Start 20251001
+MV:78921,Calendar Start 20251001
+MV:79282,Calendar Start 20251001
+MV:79283,Calendar Start 20251001
+MV:79284,Calendar Start 20260101
+MV:79285,Calendar Start 20251001
+MV:79286,Calendar Start 20251001
+CT:72981,Year Round starting 1/31/2026 (Weekend)
+CT:72982,Year Round starting 1/31/2026 (Weekday)
+BA:72953,Weekday
+BA:72954,Saturday
+BA:72955,Saturday
+BA:75396,Saturday
+BA:75397,Sunday
+BA:75398,Sunday
+BA:82069,Sunday
+BA:82070,Weekday
+BA:82071,Saturday
+BA:82537,Sunday
+BA:82538,Weekday
+BA:83817,Saturday
+BA:83818,Sunday
+SC:76351,"Mon, Tue, Thurs"
+SC:76349,Wednesday
+SC:77823,Friday
+SC:77821,Weekday
+SC:76350,"Wed, Fri"
+SC:76346,Weekday
+SC:77780,Mon-Wed
+SC:77820,Wednesday
+SC:77822,Friday
+SC:76347,"Mon, Wed, Fri"
+SC:77824,Monday
+SC:77825,Monday
+SC:77826,Wednesday
+SC:77827,Wednesday
+SC:77828,"Mon, Tue, Thurs, Fri"
+SC:77829,"Tue, Thurs"
+SC:77830,"Mon, Tue, Thurs"
+SC:77831,"Wed, Fri"
+SC:77832,Mon-Thurs
+SC:77833,"Mon, Tue, Thurs"
+SC:77834,"Wed, Fri"
+SC:82309,"Mon, Wed, Fri"
+SC:82310,"Wed, Fri"
+SC:83821,Weekday (no service day after Thanksgiving)
+SC:72914,Weekday
+SC:72915,Saturday
+SC:72916,Sunday/Holiday
+SC:76275,"Mon, Tue, Thurs"
+SC:76276,"Mon, Wed, Fri"
+SC:76277,"Tue, Wed, Thurs"
+SC:76278,"Tue, Thurs"
+SC:76279,"Mon, Tue, Wed, Fri"
+SC:76280,Wednesday
+SC:76352,Monday
+SC:76281,"Wed, Fri"
+SC:76353,Weekday
+SC:76282,Mon-Thurs
+SC:76354,Weekday
+SC:76283,Weekday
+SC:76355,Weekday
+SC:76284,Weekday
+SC:76356,"Wed, Fri"
+SC:76285,"Tue, Thurs"
+SC:76357,"Mon, Tue, Thurs"
+SC:76286,"Mon, Tue, Thurs"
+SC:76358,Weekday
+SC:76287,"Wed, Fri"
+SC:76359,Weekday
+SC:76288,Weekday
+SC:76360,Mon-Wed
+SC:76289,Mon-Thurs
+SC:76513,Weekday
+SC:76290,"Tue, Thurs"
+SC:77739,Weekday
+SC:76291,Weekday
+SC:77740,Thursday
+SC:76292,Wednesday
+SC:77806,Wednesday
+SC:76293,"Wed, Fri"
+SC:77807,Mon-Wed
+SC:76294,Mon-Thurs
+SC:77808,Mon-Wed
+SC:76295,Weekday
+SC:77809,Mon-Wed
+SC:76296,Wednesday
+SC:77810,Weekday
+SC:76297,"Mon, Tue, Thurs"
+SC:77811,Mon-Wed
+SC:76298,Monday
+SC:77812,Weekday
+SC:76299,Tue-Fri
+SC:77813,Sunday
+SC:76300,Weekday
+SC:77814,"Tue, Thurs"
+SC:76301,"Wed, Fri"
+SC:77815,"Mon, Tue, Wed, Fri"
+SC:76302,Mon-Thurs
+SC:77816,"Wed, Fri"
+SC:76342,"Mon, Tue, Thurs"
+SC:77817,"Wed, Fri"
+SC:76343,"Mon, Tue, Fri"
+SC:77818,Weekday
+SC:76344,Thursday
+SC:77819,Mon-Wed
+SC:76345,"Mon, Tue, Thurs"
+PE:78571,Wednesday
+PE:72836,Friday
+PE:72837,"Monday, Tuesday, Thursday"
+SB:72855,11/2/2026 - 2/28/2027 (Weekday; service shared by both schedules)
+SB:72856,11/2/2026 - 2/28/2027 (Weekend)
+SB:79543,OAS 11/2/2026 - 2/28/2027 (TuWTh)
+SB:79842,OAS 11/2/2026 - 2/28/2027 (FSaSu)
+SB:83798,12/1/2026 - 2/28/2027 (Weekday; SSF trips and associated deadheads operating)
+SB:83747,SSF PM2 19:15 Seaplane trip and return deadhead; OA PM1 covers on 8 PM game dates
+SB:83748,OA PM1 18:00 Oakland to Gate G; replaced by Gate F arrival on 8 PM game dates
+MA:72918,Sat
+MA:76017,Friday
+MA:76018,Mon-Fri
+MA:79106,Monday
+MA:79107,Tuesday
+MA:82207,Wednesday
+MA:82208,Thursday
+MA:82209,SunHol
+ST:76802,Monday to Wednesday
+ST:73006,Monday to Wednesday
+ST:73007,Monday to Wednesday
+ST:77942,Thursday
+ST:77943,Thursday
+ST:79024,Monday to Thursday
+ST:82968,Friday
+ST:82969,Friday
+ST:82970,Friday
+ST:82971,Friday
+ST:82972,Saturday
+ST:82973,Saturday
+ST:82974,Saturday
+ST:82975,Saturday
+ST:82976,Sunday

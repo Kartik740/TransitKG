@@ -1,0 +1,4938 @@
+{
+  "temporal": {
+    "effective_service_dates": {
+      "earliest": "2021-06-22",
+      "latest": "2099-12-31",
+      "service_date_pairs": 84002,
+      "services_with_active_dates": 485
+    },
+    "service_id_domain": 485,
+    "notes": [
+      "Weekly service expanded by weekday and date range, with calendar date additions and removals applied.",
+      "If the same service-date has conflicting exceptions, the effective-date summary gives removal precedence.",
+      "Service-day times are represented in seconds and include times after 24:00:00."
+    ],
+    "unavailable": [],
+    "trip_backed_effective_service_dates": {
+      "earliest": "2021-06-22",
+      "latest": "2099-12-31",
+      "service_date_pairs": 81811,
+      "services_with_active_dates": 483
+    },
+    "services_without_trips": {
+      "count": 2,
+      "examples": [
+        "SF:every-day",
+        "tf:20260101-20261231"
+      ]
+    },
+    "trip_service_ids_without_effective_dates": {
+      "count": 0,
+      "examples": null
+    },
+    "latest_service_date_examples": [
+      {
+        "service_id": "PE:72837",
+        "service_date": "2099-12-31",
+        "used_by_trips": true
+      },
+      {
+        "service_id": "PG:80067",
+        "service_date": "2099-12-31",
+        "used_by_trips": true
+      }
+    ],
+    "calendar": {
+      "earliest_start": "2021-06-22",
+      "latest_start": "2027-04-12",
+      "earliest_end": "2022-05-31",
+      "latest_end": "2099-12-31",
+      "reversed_ranges": 0
+    },
+    "weekly_patterns": [
+      {
+        "monday": "1",
+        "tuesday": "1",
+        "wednesday": "1",
+        "thursday": "1",
+        "friday": "1",
+        "saturday": "0",
+        "sunday": "0",
+        "services": 132
+      },
+      {
+        "monday": "0",
+        "tuesday": "0",
+        "wednesday": "0",
+        "thursday": "0",
+        "friday": "0",
+        "saturday": "1",
+        "sunday": "1",
+        "services": 50
+      },
+      {
+        "monday": "0",
+        "tuesday": "0",
+        "wednesday": "0",
+        "thursday": "0",
+        "friday": "0",
+        "saturday": "1",
+        "sunday": "0",
+        "services": 38
+      },
+      {
+        "monday": "0",
+        "tuesday": "0",
+        "wednesday": "0",
+        "thursday": "0",
+        "friday": "0",
+        "saturday": "0",
+        "sunday": "0",
+        "services": 34
+      },
+      {
+        "monday": "0",
+        "tuesday": "0",
+        "wednesday": "0",
+        "thursday": "0",
+        "friday": "0",
+        "saturday": "0",
+        "sunday": "1",
+        "services": 31
+      },
+      {
+        "monday": "0",
+        "tuesday": "0",
+        "wednesday": "1",
+        "thursday": "0",
+        "friday": "0",
+        "saturday": "0",
+        "sunday": "0",
+        "services": 28
+      },
+      {
+        "monday": "0",
+        "tuesday": "0",
+        "wednesday": "0",
+        "thursday": "0",
+        "friday": "1",
+        "saturday": "0",
+        "sunday": "0",
+        "services": 22
+      },
+      {
+        "monday": "1",
+        "tuesday": "1",
+        "wednesday": "0",
+        "thursday": "1",
+        "friday": "1",
+        "saturday": "0",
+        "sunday": "0",
+        "services": 19
+      },
+      {
+        "monday": "1",
+        "tuesday": "1",
+        "wednesday": "0",
+        "thursday": "1",
+        "friday": "0",
+        "saturday": "0",
+        "sunday": "0",
+        "services": 14
+      },
+      {
+        "monday": "0",
+        "tuesday": "0",
+        "wednesday": "1",
+        "thursday": "0",
+        "friday": "1",
+        "saturday": "0",
+        "sunday": "0",
+        "services": 13
+      },
+      {
+        "monday": "0",
+        "tuesday": "0",
+        "wednesday": "1",
+        "thursday": "1",
+        "friday": "1",
+        "saturday": "0",
+        "sunday": "0",
+        "services": 13
+      },
+      {
+        "monday": "1",
+        "tuesday": "1",
+        "wednesday": "1",
+        "thursday": "1",
+        "friday": "0",
+        "saturday": "0",
+        "sunday": "0",
+        "services": 13
+      },
+      {
+        "monday": "1",
+        "tuesday": "1",
+        "wednesday": "1",
+        "thursday": "0",
+        "friday": "0",
+        "saturday": "0",
+        "sunday": "0",
+        "services": 11
+      },
+      {
+        "monday": "0",
+        "tuesday": "0",
+        "wednesday": "0",
+        "thursday": "1",
+        "friday": "0",
+        "saturday": "0",
+        "sunday": "0",
+        "services": 10
+      },
+      {
+        "monday": "1",
+        "tuesday": "0",
+        "wednesday": "0",
+        "thursday": "0",
+        "friday": "0",
+        "saturday": "0",
+        "sunday": "0",
+        "services": 9
+      },
+      {
+        "monday": "0",
+        "tuesday": "1",
+        "wednesday": "0",
+        "thursday": "1",
+        "friday": "0",
+        "saturday": "0",
+        "sunday": "0",
+        "services": 7
+      },
+      {
+        "monday": "0",
+        "tuesday": "0",
+        "wednesday": "0",
+        "thursday": "1",
+        "friday": "1",
+        "saturday": "0",
+        "sunday": "0",
+        "services": 6
+      },
+      {
+        "monday": "0",
+        "tuesday": "1",
+        "wednesday": "0",
+        "thursday": "0",
+        "friday": "0",
+        "saturday": "0",
+        "sunday": "0",
+        "services": 5
+      },
+      {
+        "monday": "1",
+        "tuesday": "0",
+        "wednesday": "1",
+        "thursday": "0",
+        "friday": "1",
+        "saturday": "0",
+        "sunday": "0",
+        "services": 5
+      },
+      {
+        "monday": "1",
+        "tuesday": "1",
+        "wednesday": "0",
+        "thursday": "0",
+        "friday": "1",
+        "saturday": "0",
+        "sunday": "0",
+        "services": 5
+      },
+      {
+        "monday": "0",
+        "tuesday": "0",
+        "wednesday": "1",
+        "thursday": "1",
+        "friday": "0",
+        "saturday": "0",
+        "sunday": "0",
+        "services": 4
+      },
+      {
+        "monday": "1",
+        "tuesday": "1",
+        "wednesday": "1",
+        "thursday": "0",
+        "friday": "1",
+        "saturday": "0",
+        "sunday": "0",
+        "services": 4
+      },
+      {
+        "monday": "1",
+        "tuesday": "1",
+        "wednesday": "1",
+        "thursday": "1",
+        "friday": "1",
+        "saturday": "1",
+        "sunday": "1",
+        "services": 3
+      },
+      {
+        "monday": "0",
+        "tuesday": "1",
+        "wednesday": "1",
+        "thursday": "1",
+        "friday": "0",
+        "saturday": "0",
+        "sunday": "0",
+        "services": 2
+      },
+      {
+        "monday": "0",
+        "tuesday": "1",
+        "wednesday": "1",
+        "thursday": "1",
+        "friday": "1",
+        "saturday": "0",
+        "sunday": "0",
+        "services": 2
+      },
+      {
+        "monday": "1",
+        "tuesday": "0",
+        "wednesday": "1",
+        "thursday": "1",
+        "friday": "1",
+        "saturday": "0",
+        "sunday": "0",
+        "services": 2
+      },
+      {
+        "monday": "0",
+        "tuesday": "0",
+        "wednesday": "0",
+        "thursday": "0",
+        "friday": "1",
+        "saturday": "1",
+        "sunday": "1",
+        "services": 1
+      },
+      {
+        "monday": "1",
+        "tuesday": "0",
+        "wednesday": "0",
+        "thursday": "1",
+        "friday": "1",
+        "saturday": "0",
+        "sunday": "0",
+        "services": 1
+      },
+      {
+        "monday": "1",
+        "tuesday": "1",
+        "wednesday": "1",
+        "thursday": "1",
+        "friday": "0",
+        "saturday": "0",
+        "sunday": "1",
+        "services": 1
+      }
+    ],
+    "active_services_by_weekday_flag": {
+      "monday": 219,
+      "tuesday": 218,
+      "wednesday": 233,
+      "thursday": 229,
+      "friday": 228,
+      "saturday": 92,
+      "sunday": 86
+    },
+    "exception_only_services": {
+      "count": 0,
+      "examples": null
+    },
+    "exceptions": [
+      {
+        "exception_type": "1",
+        "records": 850,
+        "first": "2022-05-30",
+        "last": "2027-06-10"
+      },
+      {
+        "exception_type": "2",
+        "records": 4856,
+        "first": "2022-05-30",
+        "last": "2029-12-25"
+      }
+    ],
+    "agency_timezones": [
+      {
+        "timezone": "America/Los_Angeles",
+        "records": 41
+      }
+    ],
+    "stops_timezones": [
+      {
+        "timezone": "America/Los_Angeles",
+        "records": 21664
+      }
+    ],
+    "feed_info": [
+      {
+        "feed_publisher_name": "511 SF Bay",
+        "feed_publisher_url": "https://511.org/open-data/transit",
+        "feed_lang": "en",
+        "feed_version": null,
+        "feed_start_date": null,
+        "feed_end_date": null,
+        "default_lang": null,
+        "feed_contact_email": null,
+        "feed_contact_url": null
+      }
+    ],
+    "mtc_feed_versions": [
+      {
+        "agency_id": "3D",
+        "feed_version": "20260810",
+        "sha1": "8b87cdf81420a1f2e4f77806f329534f02e087ff",
+        "feed_start_date": "20260809",
+        "feed_end_date": "20271231"
+      },
+      {
+        "agency_id": "AC",
+        "feed_version": "20260809",
+        "sha1": "216a8f72d1bb9cd7844d3e08f7c215df7939373f",
+        "feed_start_date": "20260809",
+        "feed_end_date": "20270403"
+      },
+      {
+        "agency_id": "AF",
+        "feed_version": "20260830",
+        "sha1": "065bc621341d9031c94b64f82bd8f7f16ffab7ef",
+        "feed_start_date": "20220401",
+        "feed_end_date": "20261231"
+      },
+      {
+        "agency_id": "AM",
+        "feed_version": "20261027",
+        "sha1": "ef0f0ff50c7556a36b837a9fd579679c14043793",
+        "feed_start_date": "20261026",
+        "feed_end_date": "20270103"
+      },
+      {
+        "agency_id": "BA",
+        "feed_version": "20261115",
+        "sha1": "f903ded839fa13ad6dffac19d8bec605c0686882",
+        "feed_start_date": "20260810",
+        "feed_end_date": "20270110"
+      },
+      {
+        "agency_id": "CC",
+        "feed_version": "20260822",
+        "sha1": "3716433273d4c46fbc1bc8b79e1ff6390d50c76f",
+        "feed_start_date": "20260823",
+        "feed_end_date": "20270109"
+      },
+      {
+        "agency_id": "CE",
+        "feed_version": "20261102",
+        "sha1": "28d33a8b929f72132f522f0e047581cc6a9cc45c",
+        "feed_start_date": "20250101",
+        "feed_end_date": "20271231"
+      },
+      {
+        "agency_id": "CM",
+        "feed_version": "20261105",
+        "sha1": "6234c9b5ff864db08eb95d29456df1f7e54765da",
+        "feed_start_date": "20261105",
+        "feed_end_date": "20270630"
+      },
+      {
+        "agency_id": "CT",
+        "feed_version": "20261113",
+        "sha1": "fc2e5130ca29893c37bf758841da68dc796601ab",
+        "feed_start_date": "20260131",
+        "feed_end_date": "20270131"
+      },
+      {
+        "agency_id": "DE",
+        "feed_version": "20260809",
+        "sha1": "4cf4846829f43e105c6b184b1d1261f6ea2bedf0",
+        "feed_start_date": "20260810",
+        "feed_end_date": "20270108"
+      },
+      {
+        "agency_id": "EE",
+        "feed_version": "20260810",
+        "sha1": "8a7d48a208accae3029995536982fc8e4efab58d",
+        "feed_start_date": "20250101",
+        "feed_end_date": "20261231"
+      },
+      {
+        "agency_id": "EM",
+        "feed_version": "20260123",
+        "sha1": "bfb580297174dcccca62cc554ea7ed42b85813d6",
+        "feed_start_date": "20231224",
+        "feed_end_date": "20271127"
+      },
+      {
+        "agency_id": "FS",
+        "feed_version": "20260928",
+        "sha1": "a0cddbd0c4fc8a508e9ddbbf16ec7600f0404ec0",
+        "feed_start_date": "20260701",
+        "feed_end_date": "20270630"
+      },
+      {
+        "agency_id": "GF",
+        "feed_version": "20260908",
+        "sha1": "d7bef854234ab684736e4fd7b4a6b0291fa5b415",
+        "feed_start_date": "20260614",
+        "feed_end_date": "20261212"
+      },
+      {
+        "agency_id": "GG",
+        "feed_version": "20260908",
+        "sha1": "773db55c9af83e33da88a4684b79ff66c25ad8a5",
+        "feed_start_date": "20260614",
+        "feed_end_date": "20261212"
+      },
+      {
+        "agency_id": "GP",
+        "feed_version": "20251230",
+        "sha1": "ae306ed7ebacca85810ee63100cabc145c419d52",
+        "feed_start_date": "20251229",
+        "feed_end_date": "20261231"
+      },
+      {
+        "agency_id": "MA",
+        "feed_version": "20261121",
+        "sha1": "4833ef53fa521e8ecdeb6ade952d50ff2a45849f",
+        "feed_start_date": "20261122",
+        "feed_end_date": "20270110"
+      },
+      {
+        "agency_id": "MB",
+        "feed_version": "20260926",
+        "sha1": "b9d1606df30778e06d06d2f221a878339a1eda2e",
+        "feed_start_date": "20250715",
+        "feed_end_date": "20270112"
+      },
+      {
+        "agency_id": "MC",
+        "feed_version": "20261022",
+        "sha1": "ef4aae43622f7e1df1d5a2e609f0fb4e248049ee",
+        "feed_start_date": "20241129",
+        "feed_end_date": "20271010"
+      },
+      {
+        "agency_id": "MV",
+        "feed_version": "20261112",
+        "sha1": "e3782b8e49351bd7a51d35f91fda1fcea1ccfbb7",
+        "feed_start_date": "20251001",
+        "feed_end_date": "20271001"
+      },
+      {
+        "agency_id": "PE",
+        "feed_version": "20261116",
+        "sha1": "e2336f8938a66c18d3177defdc2ded148a4331be",
+        "feed_start_date": "20260810",
+        "feed_end_date": "20991231"
+      },
+      {
+        "agency_id": "PG",
+        "feed_version": "20261102",
+        "sha1": "89f19eeb1181f52052b8ac087d1bc68e2c151f62",
+        "feed_start_date": "20220530",
+        "feed_end_date": "20991231"
+      },
+      {
+        "agency_id": "RV",
+        "feed_version": "20260105",
+        "sha1": "ab6a6c0139f6b9504d81198c79008a950f6118b4",
+        "feed_start_date": "20210622",
+        "feed_end_date": "20271231"
+      },
+      {
+        "agency_id": "SA",
+        "feed_version": "20261005",
+        "sha1": "5780dacf9f8a1149a05cd7235b98a6cf035ed4c6",
+        "feed_start_date": "20260412",
+        "feed_end_date": "20270430"
+      },
+      {
+        "agency_id": "SB",
+        "feed_version": "20261120",
+        "sha1": "46bd9117e2ff9bc8facad37e67e6f592539fb04d",
+        "feed_start_date": "20261102",
+        "feed_end_date": "20270228"
+      },
+      {
+        "agency_id": "SC",
+        "feed_version": "20261116",
+        "sha1": "c0dc113ca0ef28665651e34cae071ff050f9e1f6",
+        "feed_start_date": "20261026",
+        "feed_end_date": "20270110"
+      },
+      {
+        "agency_id": "SE",
+        "feed_version": "20261007",
+        "sha1": "7c26863113da6895b97316538b3f3759d623d274",
+        "feed_start_date": "20260803",
+        "feed_end_date": "20280731"
+      },
+      {
+        "agency_id": "SF",
+        "feed_version": "20260829",
+        "sha1": "c4166b54704077ff2aa52fd5521602d6925c036f",
+        "feed_start_date": "20260829",
+        "feed_end_date": "20270115"
+      },
+      {
+        "agency_id": "SI",
+        "feed_version": "20260601",
+        "sha1": "ebfd2b62f4fbf651cd800430c537f4da56db1614",
+        "feed_start_date": "20251104",
+        "feed_end_date": "20291231"
+      },
+      {
+        "agency_id": "SL",
+        "feed_version": "20260409",
+        "sha1": "d0d56fee10f40fe9ce881399d99bdc9d1cdc843a",
+        "feed_start_date": "20220701",
+        "feed_end_date": "20290630"
+      },
+      {
+        "agency_id": "SM",
+        "feed_version": "20261102",
+        "sha1": "cc3769568883c92069f67dbfa71194a3c5d75df2",
+        "feed_start_date": "20260920",
+        "feed_end_date": "20270109"
+      },
+      {
+        "agency_id": "SO",
+        "feed_version": "20261105",
+        "sha1": "d21740fc3bc577283b71097df88eece5638cd394",
+        "feed_start_date": "20261030",
+        "feed_end_date": "20270213"
+      },
+      {
+        "agency_id": "SR",
+        "feed_version": "20261109",
+        "sha1": "bc2ba6e1bea1e3d18e369ac7dd3360b3b0743ad1",
+        "feed_start_date": "20260929",
+        "feed_end_date": "20270213"
+      },
+      {
+        "agency_id": "SS",
+        "feed_version": "20260618",
+        "sha1": "1227f142bb284709ba9d310c1481b68d74751367",
+        "feed_start_date": "20240624",
+        "feed_end_date": "20270101"
+      },
+      {
+        "agency_id": "ST",
+        "feed_version": "20261123",
+        "sha1": "5fb0411e0bada4ef362892c9445a38857d0e5cec",
+        "feed_start_date": "20261112",
+        "feed_end_date": "20271231"
+      },
+      {
+        "agency_id": "TF",
+        "feed_version": "20260106",
+        "sha1": "79b7b2503c919b0554e4dfb7640971b76d65e594",
+        "feed_start_date": "20260101",
+        "feed_end_date": "20261231"
+      },
+      {
+        "agency_id": "UC",
+        "feed_version": "20261104",
+        "sha1": "b2e3dcb6d58099e1c43987c2e50fccc36780fdf4",
+        "feed_start_date": "20260813",
+        "feed_end_date": "20270816"
+      },
+      {
+        "agency_id": "VC",
+        "feed_version": "20260924",
+        "sha1": "494d8643b64bd4b91e4ed9a914b436957e8cf235",
+        "feed_start_date": "20260618",
+        "feed_end_date": "20261231"
+      },
+      {
+        "agency_id": "VN",
+        "feed_version": "20261019",
+        "sha1": "29e832c66bb8a2e080d8d082ec3b67cd251fda85",
+        "feed_start_date": "20261019",
+        "feed_end_date": "20261231"
+      },
+      {
+        "agency_id": "WC",
+        "feed_version": "20260903",
+        "sha1": "6167d8eb1cfa7bd5e128b9f86036861e676bdb99",
+        "feed_start_date": "20250809",
+        "feed_end_date": "20270611"
+      },
+      {
+        "agency_id": "WH",
+        "feed_version": "20260922",
+        "sha1": "f7d3c8e9d92118c8875488e0848f98a2c34ef8e2",
+        "feed_start_date": "20260921",
+        "feed_end_date": "20270129"
+      }
+    ],
+    "timepoints": [
+      {
+        "timepoint": "0",
+        "records": 2439509
+      },
+      {
+        "timepoint": "1",
+        "records": 745606
+      }
+    ],
+    "stop_times": {
+      "records": 3185115,
+      "trips": 92827,
+      "arrivals_above_24h": 100912,
+      "departures_above_24h": 100948,
+      "after_midnight_examples": [
+        "24:00:01",
+        "24:00:01",
+        "24:00:01",
+        "24:00:01",
+        "24:00:01"
+      ],
+      "arrivals_at_24h": 377,
+      "departures_at_24h": 383,
+      "min_arrival_seconds": 0,
+      "max_arrival_seconds": 111180,
+      "min_departure_seconds": 0,
+      "max_departure_seconds": 111180,
+      "invalid_arrivals": 0,
+      "invalid_departures": 0,
+      "missing_arrivals": 15109,
+      "missing_departures": 15109,
+      "missing_required_arrivals": 0,
+      "missing_required_departures": 0,
+      "windowed_records": 0,
+      "mixed_times_and_windows": 0,
+      "missing_required_window_endpoint": 0,
+      "arrivals_one_digit_hour": 0,
+      "departures_one_digit_hour": 0,
+      "invalid_location_selector_count": 0,
+      "departures_before_arrival": 0,
+      "arrivals_before_previous_departure": 0,
+      "rows_out_of_numeric_order_in_source": 0,
+      "decreasing_stop_distances": 0,
+      "time_order_examples": null,
+      "location_selector_examples": null,
+      "missing_required_time_examples": null,
+      "distance_examples": null
+    }
+  },
+  "network": {
+    "unavailable": [],
+    "stop_location_types": [
+      {
+        "location_type": "0",
+        "records": 19795
+      },
+      {
+        "location_type": "1",
+        "records": 613
+      },
+      {
+        "location_type": "2",
+        "records": 250
+      },
+      {
+        "location_type": "3",
+        "records": 1006
+      }
+    ],
+    "coordinates": {
+      "stops_missing_coordinate": 0,
+      "missing_required_coordinates": 0,
+      "invalid_coordinate_records": 0,
+      "min_lat": 36.97492,
+      "max_lat": 39.09981,
+      "min_lon": -123.05377,
+      "max_lon": -120.95269,
+      "missing_required_examples": null
+    },
+    "parent_station": {
+      "populated": 2222,
+      "missing_required": 0,
+      "orphaned": 0,
+      "wrong_parent_type": 0,
+      "station_with_forbidden_parent": 0,
+      "self_parent": 0,
+      "examples": null
+    },
+    "repeated_names": {
+      "groups": 5270,
+      "records": 11319,
+      "examples": [
+        {
+          "stop_name": "Main Entrance / Exit",
+          "records": 18,
+          "stop_examples": [
+            "ANTC_1",
+            "BERY_1",
+            "CAST_1",
+            "DUBL_1",
+            "FTVL_1"
+          ]
+        },
+        {
+          "stop_name": "Walkway",
+          "records": 16,
+          "stop_examples": [
+            "mtc:1590700589516",
+            "mtc:1643948967984",
+            "mtc:1643948971949",
+            "mtc:1643948977606",
+            "mtc:1643948981839"
+          ]
+        },
+        {
+          "stop_name": "Walnut Creek BART",
+          "records": 15,
+          "stop_examples": [
+            "832239",
+            "832241",
+            "832242",
+            "832243",
+            "832244"
+          ]
+        },
+        {
+          "stop_name": "Concord BART",
+          "records": 13,
+          "stop_examples": [
+            "816971",
+            "83883",
+            "83885",
+            "83886",
+            "83888"
+          ]
+        },
+        {
+          "stop_name": "BART Paid Area",
+          "records": 12,
+          "stop_examples": [
+            "mtc:1590174371432",
+            "mtc:1590692730297",
+            "mtc:1590696820464",
+            "mtc:1590699125933",
+            "mtc:1591041830612"
+          ]
+        }
+      ]
+    },
+    "shared_coordinates": {
+      "groups": 381,
+      "records": 774,
+      "examples": [
+        {
+          "lat": 38.30027,
+          "lon": -122.30999,
+          "records": 4,
+          "stop_examples": [
+            "123",
+            "1:123",
+            "1:89014",
+            "89014"
+          ]
+        },
+        {
+          "lat": 38.30666,
+          "lon": -122.28526,
+          "records": 4,
+          "stop_examples": [
+            "1:297",
+            "1:89191",
+            "297",
+            "89191"
+          ]
+        },
+        {
+          "lat": 38.31805,
+          "lon": -122.29832,
+          "records": 4,
+          "stop_examples": [
+            "1:217",
+            "1:89109",
+            "217",
+            "89109"
+          ]
+        },
+        {
+          "lat": 38.31888,
+          "lon": -122.29888,
+          "records": 4,
+          "stop_examples": [
+            "1:203",
+            "1:89094",
+            "203",
+            "89094"
+          ]
+        },
+        {
+          "lat": 37.65594,
+          "lon": -122.40498,
+          "records": 3,
+          "stop_examples": [
+            "70041",
+            "70042",
+            "south_sf"
+          ]
+        }
+      ]
+    },
+    "route_types": [
+      {
+        "route_type": "0",
+        "records": 16
+      },
+      {
+        "route_type": "1",
+        "records": 12
+      },
+      {
+        "route_type": "2",
+        "records": 28
+      },
+      {
+        "route_type": "3",
+        "records": 592
+      },
+      {
+        "route_type": "4",
+        "records": 14
+      },
+      {
+        "route_type": "5",
+        "records": 3
+      }
+    ],
+    "routes_per_agency": [
+      {
+        "agency_id": "3D",
+        "routes": 11
+      },
+      {
+        "agency_id": "AC",
+        "routes": 123
+      },
+      {
+        "agency_id": "AF",
+        "routes": 1
+      },
+      {
+        "agency_id": "AM",
+        "routes": 3
+      },
+      {
+        "agency_id": "BA",
+        "routes": 14
+      },
+      {
+        "agency_id": "CC",
+        "routes": 51
+      },
+      {
+        "agency_id": "CE",
+        "routes": 1
+      },
+      {
+        "agency_id": "CM",
+        "routes": 20
+      },
+      {
+        "agency_id": "CT",
+        "routes": 5
+      },
+      {
+        "agency_id": "DE",
+        "routes": 2
+      },
+      {
+        "agency_id": "EE",
+        "routes": 1
+      },
+      {
+        "agency_id": "EM",
+        "routes": 5
+      },
+      {
+        "agency_id": "FS",
+        "routes": 5
+      },
+      {
+        "agency_id": "GF",
+        "routes": 5
+      },
+      {
+        "agency_id": "GG",
+        "routes": 10
+      },
+      {
+        "agency_id": "GP",
+        "routes": 1
+      },
+      {
+        "agency_id": "MA",
+        "routes": 20
+      },
+      {
+        "agency_id": "MB",
+        "routes": 4
+      },
+      {
+        "agency_id": "MC",
+        "routes": 4
+      },
+      {
+        "agency_id": "MV",
+        "routes": 8
+      },
+      {
+        "agency_id": "PE",
+        "routes": 11
+      },
+      {
+        "agency_id": "PG",
+        "routes": 2
+      },
+      {
+        "agency_id": "RV",
+        "routes": 1
+      },
+      {
+        "agency_id": "SA",
+        "routes": 1
+      },
+      {
+        "agency_id": "SB",
+        "routes": 7
+      },
+      {
+        "agency_id": "SC",
+        "routes": 71
+      },
+      {
+        "agency_id": "SE",
+        "routes": 2
+      },
+      {
+        "agency_id": "SF",
+        "routes": 68
+      },
+      {
+        "agency_id": "SI",
+        "routes": 4
+      },
+      {
+        "agency_id": "SL",
+        "routes": 2
+      },
+      {
+        "agency_id": "SM",
+        "routes": 75
+      },
+      {
+        "agency_id": "SO",
+        "routes": 26
+      },
+      {
+        "agency_id": "SR",
+        "routes": 15
+      },
+      {
+        "agency_id": "SS",
+        "routes": 3
+      },
+      {
+        "agency_id": "ST",
+        "routes": 15
+      },
+      {
+        "agency_id": "TF",
+        "routes": 1
+      },
+      {
+        "agency_id": "UC",
+        "routes": 6
+      },
+      {
+        "agency_id": "VC",
+        "routes": 5
+      },
+      {
+        "agency_id": "VN",
+        "routes": 14
+      },
+      {
+        "agency_id": "WC",
+        "routes": 12
+      },
+      {
+        "agency_id": "WH",
+        "routes": 30
+      }
+    ],
+    "trips_per_route": [
+      {
+        "route_id": "3D:200X",
+        "agency_id": "3D",
+        "trips": 8
+      },
+      {
+        "route_id": "3D:201X",
+        "agency_id": "3D",
+        "trips": 8
+      },
+      {
+        "route_id": "3D:360",
+        "agency_id": "3D",
+        "trips": 12
+      },
+      {
+        "route_id": "3D:362",
+        "agency_id": "3D",
+        "trips": 2
+      },
+      {
+        "route_id": "3D:370",
+        "agency_id": "3D",
+        "trips": 164
+      },
+      {
+        "route_id": "3D:371",
+        "agency_id": "3D",
+        "trips": 127
+      },
+      {
+        "route_id": "3D:372",
+        "agency_id": "3D",
+        "trips": 93
+      },
+      {
+        "route_id": "3D:373",
+        "agency_id": "3D",
+        "trips": 104
+      },
+      {
+        "route_id": "3D:374",
+        "agency_id": "3D",
+        "trips": 13
+      },
+      {
+        "route_id": "3D:375",
+        "agency_id": "3D",
+        "trips": 116
+      },
+      {
+        "route_id": "3D:376",
+        "agency_id": "3D",
+        "trips": 31
+      },
+      {
+        "route_id": "AC:12",
+        "agency_id": "AC",
+        "trips": 261
+      },
+      {
+        "route_id": "AC:14",
+        "agency_id": "AC",
+        "trips": 322
+      },
+      {
+        "route_id": "AC:18",
+        "agency_id": "AC",
+        "trips": 390
+      },
+      {
+        "route_id": "AC:19",
+        "agency_id": "AC",
+        "trips": 117
+      },
+      {
+        "route_id": "AC:1T",
+        "agency_id": "AC",
+        "trips": 661
+      },
+      {
+        "route_id": "AC:200",
+        "agency_id": "AC",
+        "trips": 228
+      },
+      {
+        "route_id": "AC:210",
+        "agency_id": "AC",
+        "trips": 197
+      },
+      {
+        "route_id": "AC:211",
+        "agency_id": "AC",
+        "trips": 226
+      },
+      {
+        "route_id": "AC:216",
+        "agency_id": "AC",
+        "trips": 84
+      },
+      {
+        "route_id": "AC:22",
+        "agency_id": "AC",
+        "trips": 198
+      },
+      {
+        "route_id": "AC:231",
+        "agency_id": "AC",
+        "trips": 125
+      },
+      {
+        "route_id": "AC:239",
+        "agency_id": "AC",
+        "trips": 139
+      },
+      {
+        "route_id": "AC:251",
+        "agency_id": "AC",
+        "trips": 83
+      },
+      {
+        "route_id": "AC:27",
+        "agency_id": "AC",
+        "trips": 210
+      },
+      {
+        "route_id": "AC:28",
+        "agency_id": "AC",
+        "trips": 151
+      },
+      {
+        "route_id": "AC:281",
+        "agency_id": "AC",
+        "trips": 82
+      },
+      {
+        "route_id": "AC:30",
+        "agency_id": "AC",
+        "trips": 251
+      },
+      {
+        "route_id": "AC:31",
+        "agency_id": "AC",
+        "trips": 206
+      },
+      {
+        "route_id": "AC:34",
+        "agency_id": "AC",
+        "trips": 118
+      },
+      {
+        "route_id": "AC:35",
+        "agency_id": "AC",
+        "trips": 120
+      },
+      {
+        "route_id": "AC:36",
+        "agency_id": "AC",
+        "trips": 226
+      },
+      {
+        "route_id": "AC:40",
+        "agency_id": "AC",
+        "trips": 463
+      },
+      {
+        "route_id": "AC:41",
+        "agency_id": "AC",
+        "trips": 102
+      },
+      {
+        "route_id": "AC:45",
+        "agency_id": "AC",
+        "trips": 213
+      },
+      {
+        "route_id": "AC:46L",
+        "agency_id": "AC",
+        "trips": 27
+      },
+      {
+        "route_id": "AC:51A",
+        "agency_id": "AC",
+        "trips": 507
+      },
+      {
+        "route_id": "AC:51B",
+        "agency_id": "AC",
+        "trips": 457
+      },
+      {
+        "route_id": "AC:52",
+        "agency_id": "AC",
+        "trips": 313
+      },
+      {
+        "route_id": "AC:54",
+        "agency_id": "AC",
+        "trips": 257
+      },
+      {
+        "route_id": "AC:56",
+        "agency_id": "AC",
+        "trips": 118
+      },
+      {
+        "route_id": "AC:57",
+        "agency_id": "AC",
+        "trips": 456
+      },
+      {
+        "route_id": "AC:6",
+        "agency_id": "AC",
+        "trips": 475
+      },
+      {
+        "route_id": "AC:60",
+        "agency_id": "AC",
+        "trips": 165
+      },
+      {
+        "route_id": "AC:604",
+        "agency_id": "AC",
+        "trips": 3
+      },
+      {
+        "route_id": "AC:605",
+        "agency_id": "AC",
+        "trips": 2
+      },
+      {
+        "route_id": "AC:606",
+        "agency_id": "AC",
+        "trips": 2
+      },
+      {
+        "route_id": "AC:607",
+        "agency_id": "AC",
+        "trips": 3
+      },
+      {
+        "route_id": "AC:617",
+        "agency_id": "AC",
+        "trips": 4
+      },
+      {
+        "route_id": "AC:62",
+        "agency_id": "AC",
+        "trips": 342
+      },
+      {
+        "route_id": "AC:620",
+        "agency_id": "AC",
+        "trips": 3
+      },
+      {
+        "route_id": "AC:621",
+        "agency_id": "AC",
+        "trips": 10
+      },
+      {
+        "route_id": "AC:623",
+        "agency_id": "AC",
+        "trips": 14
+      },
+      {
+        "route_id": "AC:624",
+        "agency_id": "AC",
+        "trips": 5
+      },
+      {
+        "route_id": "AC:625",
+        "agency_id": "AC",
+        "trips": 14
+      },
+      {
+        "route_id": "AC:627",
+        "agency_id": "AC",
+        "trips": 3
+      },
+      {
+        "route_id": "AC:629",
+        "agency_id": "AC",
+        "trips": 3
+      },
+      {
+        "route_id": "AC:631",
+        "agency_id": "AC",
+        "trips": 6
+      },
+      {
+        "route_id": "AC:633",
+        "agency_id": "AC",
+        "trips": 3
+      },
+      {
+        "route_id": "AC:638",
+        "agency_id": "AC",
+        "trips": 4
+      },
+      {
+        "route_id": "AC:639",
+        "agency_id": "AC",
+        "trips": 4
+      },
+      {
+        "route_id": "AC:641",
+        "agency_id": "AC",
+        "trips": 6
+      },
+      {
+        "route_id": "AC:642",
+        "agency_id": "AC",
+        "trips": 4
+      },
+      {
+        "route_id": "AC:646",
+        "agency_id": "AC",
+        "trips": 12
+      },
+      {
+        "route_id": "AC:648",
+        "agency_id": "AC",
+        "trips": 8
+      },
+      {
+        "route_id": "AC:649",
+        "agency_id": "AC",
+        "trips": 8
+      },
+      {
+        "route_id": "AC:65",
+        "agency_id": "AC",
+        "trips": 40
+      },
+      {
+        "route_id": "AC:650",
+        "agency_id": "AC",
+        "trips": 4
+      },
+      {
+        "route_id": "AC:651",
+        "agency_id": "AC",
+        "trips": 3
+      },
+      {
+        "route_id": "AC:652",
+        "agency_id": "AC",
+        "trips": 4
+      },
+      {
+        "route_id": "AC:653",
+        "agency_id": "AC",
+        "trips": 8
+      },
+      {
+        "route_id": "AC:654",
+        "agency_id": "AC",
+        "trips": 11
+      },
+      {
+        "route_id": "AC:655",
+        "agency_id": "AC",
+        "trips": 8
+      },
+      {
+        "route_id": "AC:657",
+        "agency_id": "AC",
+        "trips": 10
+      },
+      {
+        "route_id": "AC:658",
+        "agency_id": "AC",
+        "trips": 7
+      },
+      {
+        "route_id": "AC:660",
+        "agency_id": "AC",
+        "trips": 5
+      },
+      {
+        "route_id": "AC:662",
+        "agency_id": "AC",
+        "trips": 4
+      },
+      {
+        "route_id": "AC:663",
+        "agency_id": "AC",
+        "trips": 5
+      },
+      {
+        "route_id": "AC:667",
+        "agency_id": "AC",
+        "trips": 7
+      },
+      {
+        "route_id": "AC:669",
+        "agency_id": "AC",
+        "trips": 5
+      },
+      {
+        "route_id": "AC:67",
+        "agency_id": "AC",
+        "trips": 29
+      },
+      {
+        "route_id": "AC:675",
+        "agency_id": "AC",
+        "trips": 12
+      },
+      {
+        "route_id": "AC:677",
+        "agency_id": "AC",
+        "trips": 4
+      },
+      {
+        "route_id": "AC:678",
+        "agency_id": "AC",
+        "trips": 5
+      },
+      {
+        "route_id": "AC:680",
+        "agency_id": "AC",
+        "trips": 2
+      },
+      {
+        "route_id": "AC:681",
+        "agency_id": "AC",
+        "trips": 3
+      },
+      {
+        "route_id": "AC:682",
+        "agency_id": "AC",
+        "trips": 5
+      },
+      {
+        "route_id": "AC:683",
+        "agency_id": "AC",
+        "trips": 1
+      },
+      {
+        "route_id": "AC:684",
+        "agency_id": "AC",
+        "trips": 8
+      },
+      {
+        "route_id": "AC:687",
+        "agency_id": "AC",
+        "trips": 5
+      },
+      {
+        "route_id": "AC:688",
+        "agency_id": "AC",
+        "trips": 2
+      },
+      {
+        "route_id": "AC:689",
+        "agency_id": "AC",
+        "trips": 6
+      },
+      {
+        "route_id": "AC:696",
+        "agency_id": "AC",
+        "trips": 3
+      },
+      {
+        "route_id": "AC:7",
+        "agency_id": "AC",
+        "trips": 108
+      },
+      {
+        "route_id": "AC:70",
+        "agency_id": "AC",
+        "trips": 111
+      },
+      {
+        "route_id": "AC:701",
+        "agency_id": "AC",
+        "trips": 2
+      },
+      {
+        "route_id": "AC:702",
+        "agency_id": "AC",
+        "trips": 1
+      },
+      {
+        "route_id": "AC:703",
+        "agency_id": "AC",
+        "trips": 1
+      },
+      {
+        "route_id": "AC:71",
+        "agency_id": "AC",
+        "trips": 110
+      },
+      {
+        "route_id": "AC:72",
+        "agency_id": "AC",
+        "trips": 247
+      },
+      {
+        "route_id": "AC:72L",
+        "agency_id": "AC",
+        "trips": 161
+      },
+      {
+        "route_id": "AC:72M",
+        "agency_id": "AC",
+        "trips": 251
+      },
+      {
+        "route_id": "AC:73",
+        "agency_id": "AC",
+        "trips": 329
+      },
+      {
+        "route_id": "AC:74",
+        "agency_id": "AC",
+        "trips": 179
+      },
+      {
+        "route_id": "AC:76",
+        "agency_id": "AC",
+        "trips": 255
+      },
+      {
+        "route_id": "AC:800",
+        "agency_id": "AC",
+        "trips": 79
+      },
+      {
+        "route_id": "AC:801",
+        "agency_id": "AC",
+        "trips": 33
+      },
+      {
+        "route_id": "AC:802",
+        "agency_id": "AC",
+        "trips": 30
+      },
+      {
+        "route_id": "AC:805",
+        "agency_id": "AC",
+        "trips": 36
+      },
+      {
+        "route_id": "AC:840",
+        "agency_id": "AC",
+        "trips": 36
+      },
+      {
+        "route_id": "AC:851",
+        "agency_id": "AC",
+        "trips": 30
+      },
+      {
+        "route_id": "AC:86",
+        "agency_id": "AC",
+        "trips": 233
+      },
+      {
+        "route_id": "AC:88",
+        "agency_id": "AC",
+        "trips": 336
+      },
+      {
+        "route_id": "AC:9",
+        "agency_id": "AC",
+        "trips": 418
+      },
+      {
+        "route_id": "AC:90",
+        "agency_id": "AC",
+        "trips": 250
+      },
+      {
+        "route_id": "AC:93",
+        "agency_id": "AC",
+        "trips": 124
+      },
+      {
+        "route_id": "AC:95",
+        "agency_id": "AC",
+        "trips": 130
+      },
+      {
+        "route_id": "AC:96",
+        "agency_id": "AC",
+        "trips": 226
+      },
+      {
+        "route_id": "AC:97",
+        "agency_id": "AC",
+        "trips": 265
+      },
+      {
+        "route_id": "AC:98",
+        "agency_id": "AC",
+        "trips": 249
+      },
+      {
+        "route_id": "AC:E",
+        "agency_id": "AC",
+        "trips": 17
+      },
+      {
+        "route_id": "AC:F",
+        "agency_id": "AC",
+        "trips": 264
+      },
+      {
+        "route_id": "AC:FS",
+        "agency_id": "AC",
+        "trips": 4
+      },
+      {
+        "route_id": "AC:G",
+        "agency_id": "AC",
+        "trips": 15
+      },
+      {
+        "route_id": "AC:J",
+        "agency_id": "AC",
+        "trips": 10
+      },
+      {
+        "route_id": "AC:L",
+        "agency_id": "AC",
+        "trips": 8
+      },
+      {
+        "route_id": "AC:NL",
+        "agency_id": "AC",
+        "trips": 278
+      },
+      {
+        "route_id": "AC:NX",
+        "agency_id": "AC",
+        "trips": 11
+      },
+      {
+        "route_id": "AC:NX3",
+        "agency_id": "AC",
+        "trips": 14
+      },
+      {
+        "route_id": "AC:O",
+        "agency_id": "AC",
+        "trips": 161
+      },
+      {
+        "route_id": "AC:P",
+        "agency_id": "AC",
+        "trips": 22
+      },
+      {
+        "route_id": "AC:U",
+        "agency_id": "AC",
+        "trips": 12
+      },
+      {
+        "route_id": "AC:V",
+        "agency_id": "AC",
+        "trips": 15
+      },
+      {
+        "route_id": "AC:W",
+        "agency_id": "AC",
+        "trips": 17
+      },
+      {
+        "route_id": "AF:Tib-AIF",
+        "agency_id": "AF",
+        "trips": 632
+      },
+      {
+        "route_id": "AM:CC",
+        "agency_id": "AM",
+        "trips": 52
+      },
+      {
+        "route_id": "AM:SF",
+        "agency_id": "AM",
+        "trips": 50
+      },
+      {
+        "route_id": "AM:Shuttle",
+        "agency_id": "AM",
+        "trips": 14
+      },
+      {
+        "route_id": "BA:Blue-N",
+        "agency_id": "BA",
+        "trips": 377
+      },
+      {
+        "route_id": "BA:Blue-S",
+        "agency_id": "BA",
+        "trips": 379
+      },
+      {
+        "route_id": "BA:BridgeA",
+        "agency_id": "BA",
+        "trips": 732
+      },
+      {
+        "route_id": "BA:BridgeB",
+        "agency_id": "BA",
+        "trips": 785
+      },
+      {
+        "route_id": "BA:Green-N",
+        "agency_id": "BA",
+        "trips": 134
+      },
+      {
+        "route_id": "BA:Green-S",
+        "agency_id": "BA",
+        "trips": 125
+      },
+      {
+        "route_id": "BA:Grey-N",
+        "agency_id": "BA",
+        "trips": 516
+      },
+      {
+        "route_id": "BA:Grey-S",
+        "agency_id": "BA",
+        "trips": 516
+      },
+      {
+        "route_id": "BA:Orange-N",
+        "agency_id": "BA",
+        "trips": 485
+      },
+      {
+        "route_id": "BA:Orange-S",
+        "agency_id": "BA",
+        "trips": 502
+      },
+      {
+        "route_id": "BA:Red-N",
+        "agency_id": "BA",
+        "trips": 285
+      },
+      {
+        "route_id": "BA:Red-S",
+        "agency_id": "BA",
+        "trips": 285
+      },
+      {
+        "route_id": "BA:Yellow-N",
+        "agency_id": "BA",
+        "trips": 621
+      },
+      {
+        "route_id": "BA:Yellow-S",
+        "agency_id": "BA",
+        "trips": 635
+      },
+      {
+        "route_id": "CC:1",
+        "agency_id": "CC",
+        "trips": 28
+      },
+      {
+        "route_id": "CC:10",
+        "agency_id": "CC",
+        "trips": 86
+      },
+      {
+        "route_id": "CC:11",
+        "agency_id": "CC",
+        "trips": 26
+      },
+      {
+        "route_id": "CC:14",
+        "agency_id": "CC",
+        "trips": 61
+      },
+      {
+        "route_id": "CC:15",
+        "agency_id": "CC",
+        "trips": 34
+      },
+      {
+        "route_id": "CC:16",
+        "agency_id": "CC",
+        "trips": 47
+      },
+      {
+        "route_id": "CC:17",
+        "agency_id": "CC",
+        "trips": 30
+      },
+      {
+        "route_id": "CC:18",
+        "agency_id": "CC",
+        "trips": 21
+      },
+      {
+        "route_id": "CC:19",
+        "agency_id": "CC",
+        "trips": 18
+      },
+      {
+        "route_id": "CC:20",
+        "agency_id": "CC",
+        "trips": 101
+      },
+      {
+        "route_id": "CC:21",
+        "agency_id": "CC",
+        "trips": 49
+      },
+      {
+        "route_id": "CC:28",
+        "agency_id": "CC",
+        "trips": 28
+      },
+      {
+        "route_id": "CC:301",
+        "agency_id": "CC",
+        "trips": 44
+      },
+      {
+        "route_id": "CC:310",
+        "agency_id": "CC",
+        "trips": 80
+      },
+      {
+        "route_id": "CC:311",
+        "agency_id": "CC",
+        "trips": 50
+      },
+      {
+        "route_id": "CC:314",
+        "agency_id": "CC",
+        "trips": 100
+      },
+      {
+        "route_id": "CC:315",
+        "agency_id": "CC",
+        "trips": 20
+      },
+      {
+        "route_id": "CC:316",
+        "agency_id": "CC",
+        "trips": 38
+      },
+      {
+        "route_id": "CC:320",
+        "agency_id": "CC",
+        "trips": 58
+      },
+      {
+        "route_id": "CC:321",
+        "agency_id": "CC",
+        "trips": 56
+      },
+      {
+        "route_id": "CC:335",
+        "agency_id": "CC",
+        "trips": 76
+      },
+      {
+        "route_id": "CC:35",
+        "agency_id": "CC",
+        "trips": 48
+      },
+      {
+        "route_id": "CC:4",
+        "agency_id": "CC",
+        "trips": 112
+      },
+      {
+        "route_id": "CC:5",
+        "agency_id": "CC",
+        "trips": 38
+      },
+      {
+        "route_id": "CC:6",
+        "agency_id": "CC",
+        "trips": 78
+      },
+      {
+        "route_id": "CC:601",
+        "agency_id": "CC",
+        "trips": 3
+      },
+      {
+        "route_id": "CC:602",
+        "agency_id": "CC",
+        "trips": 4
+      },
+      {
+        "route_id": "CC:605",
+        "agency_id": "CC",
+        "trips": 6
+      },
+      {
+        "route_id": "CC:606",
+        "agency_id": "CC",
+        "trips": 12
+      },
+      {
+        "route_id": "CC:611",
+        "agency_id": "CC",
+        "trips": 4
+      },
+      {
+        "route_id": "CC:612",
+        "agency_id": "CC",
+        "trips": 4
+      },
+      {
+        "route_id": "CC:613",
+        "agency_id": "CC",
+        "trips": 2
+      },
+      {
+        "route_id": "CC:615",
+        "agency_id": "CC",
+        "trips": 1
+      },
+      {
+        "route_id": "CC:616",
+        "agency_id": "CC",
+        "trips": 4
+      },
+      {
+        "route_id": "CC:619",
+        "agency_id": "CC",
+        "trips": 2
+      },
+      {
+        "route_id": "CC:622",
+        "agency_id": "CC",
+        "trips": 2
+      },
+      {
+        "route_id": "CC:623",
+        "agency_id": "CC",
+        "trips": 2
+      },
+      {
+        "route_id": "CC:625",
+        "agency_id": "CC",
+        "trips": 2
+      },
+      {
+        "route_id": "CC:626",
+        "agency_id": "CC",
+        "trips": 2
+      },
+      {
+        "route_id": "CC:635",
+        "agency_id": "CC",
+        "trips": 2
+      },
+      {
+        "route_id": "CC:636",
+        "agency_id": "CC",
+        "trips": 3
+      },
+      {
+        "route_id": "CC:7",
+        "agency_id": "CC",
+        "trips": 24
+      },
+      {
+        "route_id": "CC:9",
+        "agency_id": "CC",
+        "trips": 30
+      },
+      {
+        "route_id": "CC:91X",
+        "agency_id": "CC",
+        "trips": 8
+      },
+      {
+        "route_id": "CC:92X",
+        "agency_id": "CC",
+        "trips": 8
+      },
+      {
+        "route_id": "CC:93X",
+        "agency_id": "CC",
+        "trips": 12
+      },
+      {
+        "route_id": "CC:95X",
+        "agency_id": "CC",
+        "trips": 12
+      },
+      {
+        "route_id": "CC:96X",
+        "agency_id": "CC",
+        "trips": 14
+      },
+      {
+        "route_id": "CC:97X",
+        "agency_id": "CC",
+        "trips": 6
+      },
+      {
+        "route_id": "CC:98X",
+        "agency_id": "CC",
+        "trips": 32
+      },
+      {
+        "route_id": "CC:99X",
+        "agency_id": "CC",
+        "trips": 25
+      },
+      {
+        "route_id": "CE:ACE",
+        "agency_id": "CE",
+        "trips": 52
+      },
+      {
+        "route_id": "CM:BAY Shuttle",
+        "agency_id": "CM",
+        "trips": 13
+      },
+      {
+        "route_id": "CM:BCP Shuttle",
+        "agency_id": "CM",
+        "trips": 13
+      },
+      {
+        "route_id": "CM:BPT Shuttle",
+        "agency_id": "CM",
+        "trips": 15
+      },
+      {
+        "route_id": "CM:DCB Shuttle",
+        "agency_id": "CM",
+        "trips": 23
+      },
+      {
+        "route_id": "CM:FCC Shuttle",
+        "agency_id": "CM",
+        "trips": 14
+      },
+      {
+        "route_id": "CM:HCC Shuttle",
+        "agency_id": "CM",
+        "trips": 11
+      },
+      {
+        "route_id": "CM:M1 Shuttle",
+        "agency_id": "CM",
+        "trips": 8
+      },
+      {
+        "route_id": "CM:M3 Shuttle",
+        "agency_id": "CM",
+        "trips": 6
+      },
+      {
+        "route_id": "CM:M4 Shuttle",
+        "agency_id": "CM",
+        "trips": 6
+      },
+      {
+        "route_id": "CM:MBC Shuttle",
+        "agency_id": "CM",
+        "trips": 19
+      },
+      {
+        "route_id": "CM:MPT Shuttle",
+        "agency_id": "CM",
+        "trips": 25
+      },
+      {
+        "route_id": "CM:NFC Shuttle",
+        "agency_id": "CM",
+        "trips": 7
+      },
+      {
+        "route_id": "CM:OPB Shuttle",
+        "agency_id": "CM",
+        "trips": 11
+      },
+      {
+        "route_id": "CM:OPC Shuttle",
+        "agency_id": "CM",
+        "trips": 12
+      },
+      {
+        "route_id": "CM:OPF Shuttle",
+        "agency_id": "CM",
+        "trips": 6
+      },
+      {
+        "route_id": "CM:RLC Shuttle",
+        "agency_id": "CM",
+        "trips": 10
+      },
+      {
+        "route_id": "CM:SEA Shuttle",
+        "agency_id": "CM",
+        "trips": 12
+      },
+      {
+        "route_id": "CM:SKY Shuttle",
+        "agency_id": "CM",
+        "trips": 11
+      },
+      {
+        "route_id": "CM:UGB Shuttle",
+        "agency_id": "CM",
+        "trips": 14
+      },
+      {
+        "route_id": "CM:UGC Shuttle",
+        "agency_id": "CM",
+        "trips": 12
+      },
+      {
+        "route_id": "CT:Express",
+        "agency_id": "CT",
+        "trips": 14
+      },
+      {
+        "route_id": "CT:Limited",
+        "agency_id": "CT",
+        "trips": 15
+      },
+      {
+        "route_id": "CT:Local Weekday",
+        "agency_id": "CT",
+        "trips": 150
+      },
+      {
+        "route_id": "CT:Local Weekend",
+        "agency_id": "CT",
+        "trips": 66
+      },
+      {
+        "route_id": "CT:South County",
+        "agency_id": "CT",
+        "trips": 12
+      },
+      {
+        "route_id": "DE:DB",
+        "agency_id": "DE",
+        "trips": 38
+      },
+      {
+        "route_id": "DE:DB1",
+        "agency_id": "DE",
+        "trips": 34
+      },
+      {
+        "route_id": "EE:EmExp",
+        "agency_id": "EE",
+        "trips": 16
+      },
+      {
+        "route_id": "EM:Hollis",
+        "agency_id": "EM",
+        "trips": 68
+      },
+      {
+        "route_id": "EM:Hollis/Holi",
+        "agency_id": "EM",
+        "trips": 106
+      },
+      {
+        "route_id": "EM:Shell/Pow",
+        "agency_id": "EM",
+        "trips": 171
+      },
+      {
+        "route_id": "EM:Shell/Pow Sat",
+        "agency_id": "EM",
+        "trips": 44
+      },
+      {
+        "route_id": "EM:Shell/Pow Sun",
+        "agency_id": "EM",
+        "trips": 31
+      },
+      {
+        "route_id": "FS:1",
+        "agency_id": "FS",
+        "trips": 76
+      },
+      {
+        "route_id": "FS:3",
+        "agency_id": "FS",
+        "trips": 71
+      },
+      {
+        "route_id": "FS:6",
+        "agency_id": "FS",
+        "trips": 40
+      },
+      {
+        "route_id": "FS:7",
+        "agency_id": "FS",
+        "trips": 51
+      },
+      {
+        "route_id": "FS:8T",
+        "agency_id": "FS",
+        "trips": 16
+      },
+      {
+        "route_id": "GF:AISF",
+        "agency_id": "GF",
+        "trips": 8
+      },
+      {
+        "route_id": "GF:LSSF",
+        "agency_id": "GF",
+        "trips": 94
+      },
+      {
+        "route_id": "GF:SSSF",
+        "agency_id": "GF",
+        "trips": 42
+      },
+      {
+        "route_id": "GF:TBSF",
+        "agency_id": "GF",
+        "trips": 20
+      },
+      {
+        "route_id": "GF:TRIA",
+        "agency_id": "GF",
+        "trips": 14
+      },
+      {
+        "route_id": "GG:101",
+        "agency_id": "GG",
+        "trips": 474
+      },
+      {
+        "route_id": "GG:114",
+        "agency_id": "GG",
+        "trips": 28
+      },
+      {
+        "route_id": "GG:120",
+        "agency_id": "GG",
+        "trips": 362
+      },
+      {
+        "route_id": "GG:132",
+        "agency_id": "GG",
+        "trips": 34
+      },
+      {
+        "route_id": "GG:154",
+        "agency_id": "GG",
+        "trips": 28
+      },
+      {
+        "route_id": "GG:172",
+        "agency_id": "GG",
+        "trips": 36
+      },
+      {
+        "route_id": "GG:172X",
+        "agency_id": "GG",
+        "trips": 4
+      },
+      {
+        "route_id": "GG:580",
+        "agency_id": "GG",
+        "trips": 216
+      },
+      {
+        "route_id": "GG:580X",
+        "agency_id": "GG",
+        "trips": 6
+      },
+      {
+        "route_id": "GG:704",
+        "agency_id": "GG",
+        "trips": 2
+      },
+      {
+        "route_id": "GP:GGPS",
+        "agency_id": "GP",
+        "trips": 103
+      },
+      {
+        "route_id": "MA:17",
+        "agency_id": "MA",
+        "trips": 115
+      },
+      {
+        "route_id": "MA:219",
+        "agency_id": "MA",
+        "trips": 102
+      },
+      {
+        "route_id": "MA:22",
+        "agency_id": "MA",
+        "trips": 102
+      },
+      {
+        "route_id": "MA:228",
+        "agency_id": "MA",
+        "trips": 77
+      },
+      {
+        "route_id": "MA:23",
+        "agency_id": "MA",
+        "trips": 102
+      },
+      {
+        "route_id": "MA:233",
+        "agency_id": "MA",
+        "trips": 64
+      },
+      {
+        "route_id": "MA:245",
+        "agency_id": "MA",
+        "trips": 72
+      },
+      {
+        "route_id": "MA:30",
+        "agency_id": "MA",
+        "trips": 125
+      },
+      {
+        "route_id": "MA:35",
+        "agency_id": "MA",
+        "trips": 166
+      },
+      {
+        "route_id": "MA:36",
+        "agency_id": "MA",
+        "trips": 137
+      },
+      {
+        "route_id": "MA:49",
+        "agency_id": "MA",
+        "trips": 111
+      },
+      {
+        "route_id": "MA:57",
+        "agency_id": "MA",
+        "trips": 86
+      },
+      {
+        "route_id": "MA:61",
+        "agency_id": "MA",
+        "trips": 44
+      },
+      {
+        "route_id": "MA:613",
+        "agency_id": "MA",
+        "trips": 15
+      },
+      {
+        "route_id": "MA:619",
+        "agency_id": "MA",
+        "trips": 20
+      },
+      {
+        "route_id": "MA:625",
+        "agency_id": "MA",
+        "trips": 11
+      },
+      {
+        "route_id": "MA:629",
+        "agency_id": "MA",
+        "trips": 10
+      },
+      {
+        "route_id": "MA:654",
+        "agency_id": "MA",
+        "trips": 5
+      },
+      {
+        "route_id": "MA:68",
+        "agency_id": "MA",
+        "trips": 57
+      },
+      {
+        "route_id": "MA:71",
+        "agency_id": "MA",
+        "trips": 192
+      },
+      {
+        "route_id": "MB:CCA/Adobe",
+        "agency_id": "MB",
+        "trips": 16
+      },
+      {
+        "route_id": "MB:East",
+        "agency_id": "MB",
+        "trips": 43
+      },
+      {
+        "route_id": "MB:TC",
+        "agency_id": "MB",
+        "trips": 39
+      },
+      {
+        "route_id": "MB:West",
+        "agency_id": "MB",
+        "trips": 40
+      },
+      {
+        "route_id": "MC:GRAY",
+        "agency_id": "MC",
+        "trips": 22
+      },
+      {
+        "route_id": "MC:GRAY WE",
+        "agency_id": "MC",
+        "trips": 7
+      },
+      {
+        "route_id": "MC:RED",
+        "agency_id": "MC",
+        "trips": 22
+      },
+      {
+        "route_id": "MC:RED WE",
+        "agency_id": "MC",
+        "trips": 7
+      },
+      {
+        "route_id": "MV:A - AM",
+        "agency_id": "MV",
+        "trips": 6
+      },
+      {
+        "route_id": "MV:A - PM",
+        "agency_id": "MV",
+        "trips": 8
+      },
+      {
+        "route_id": "MV:B - AM",
+        "agency_id": "MV",
+        "trips": 11
+      },
+      {
+        "route_id": "MV:B - PM",
+        "agency_id": "MV",
+        "trips": 12
+      },
+      {
+        "route_id": "MV:C - AM",
+        "agency_id": "MV",
+        "trips": 9
+      },
+      {
+        "route_id": "MV:C - PM",
+        "agency_id": "MV",
+        "trips": 8
+      },
+      {
+        "route_id": "MV:D - AM",
+        "agency_id": "MV",
+        "trips": 8
+      },
+      {
+        "route_id": "MV:D - PM",
+        "agency_id": "MV",
+        "trips": 8
+      },
+      {
+        "route_id": "PE:10",
+        "agency_id": "PE",
+        "trips": 78
+      },
+      {
+        "route_id": "PE:11",
+        "agency_id": "PE",
+        "trips": 204
+      },
+      {
+        "route_id": "PE:2",
+        "agency_id": "PE",
+        "trips": 204
+      },
+      {
+        "route_id": "PE:24",
+        "agency_id": "PE",
+        "trips": 108
+      },
+      {
+        "route_id": "PE:3",
+        "agency_id": "PE",
+        "trips": 33
+      },
+      {
+        "route_id": "PE:301",
+        "agency_id": "PE",
+        "trips": 3
+      },
+      {
+        "route_id": "PE:302",
+        "agency_id": "PE",
+        "trips": 9
+      },
+      {
+        "route_id": "PE:303",
+        "agency_id": "PE",
+        "trips": 5
+      },
+      {
+        "route_id": "PE:311",
+        "agency_id": "PE",
+        "trips": 15
+      },
+      {
+        "route_id": "PE:33",
+        "agency_id": "PE",
+        "trips": 33
+      },
+      {
+        "route_id": "PE:501",
+        "agency_id": "PE",
+        "trips": 26
+      },
+      {
+        "route_id": "PG:Presidio GO Downtown",
+        "agency_id": "PG",
+        "trips": 48
+      },
+      {
+        "route_id": "PG:Presidio GO South Hills",
+        "agency_id": "PG",
+        "trips": 40
+      },
+      {
+        "route_id": "RV:50",
+        "agency_id": "RV",
+        "trips": 8
+      },
+      {
+        "route_id": "SA:SMART",
+        "agency_id": "SA",
+        "trips": 72
+      },
+      {
+        "route_id": "SB:HB",
+        "agency_id": "SB",
+        "trips": 23
+      },
+      {
+        "route_id": "SB:OA",
+        "agency_id": "SB",
+        "trips": 74
+      },
+      {
+        "route_id": "SB:OAS",
+        "agency_id": "SB",
+        "trips": 115
+      },
+      {
+        "route_id": "SB:RCH",
+        "agency_id": "SB",
+        "trips": 40
+      },
+      {
+        "route_id": "SB:SEA",
+        "agency_id": "SB",
+        "trips": 39
+      },
+      {
+        "route_id": "SB:SSF",
+        "agency_id": "SB",
+        "trips": 7
+      },
+      {
+        "route_id": "SB:VJO",
+        "agency_id": "SB",
+        "trips": 49
+      },
+      {
+        "route_id": "SC:20",
+        "agency_id": "SC",
+        "trips": 58
+      },
+      {
+        "route_id": "SC:200",
+        "agency_id": "SC",
+        "trips": 9
+      },
+      {
+        "route_id": "SC:201",
+        "agency_id": "SC",
+        "trips": 3
+      },
+      {
+        "route_id": "SC:202",
+        "agency_id": "SC",
+        "trips": 3
+      },
+      {
+        "route_id": "SC:203",
+        "agency_id": "SC",
+        "trips": 6
+      },
+      {
+        "route_id": "SC:21",
+        "agency_id": "SC",
+        "trips": 118
+      },
+      {
+        "route_id": "SC:22",
+        "agency_id": "SC",
+        "trips": 424
+      },
+      {
+        "route_id": "SC:23",
+        "agency_id": "SC",
+        "trips": 397
+      },
+      {
+        "route_id": "SC:25",
+        "agency_id": "SC",
+        "trips": 401
+      },
+      {
+        "route_id": "SC:26",
+        "agency_id": "SC",
+        "trips": 295
+      },
+      {
+        "route_id": "SC:27",
+        "agency_id": "SC",
+        "trips": 128
+      },
+      {
+        "route_id": "SC:31",
+        "agency_id": "SC",
+        "trips": 82
+      },
+      {
+        "route_id": "SC:37",
+        "agency_id": "SC",
+        "trips": 28
+      },
+      {
+        "route_id": "SC:39",
+        "agency_id": "SC",
+        "trips": 67
+      },
+      {
+        "route_id": "SC:40",
+        "agency_id": "SC",
+        "trips": 123
+      },
+      {
+        "route_id": "SC:42",
+        "agency_id": "SC",
+        "trips": 26
+      },
+      {
+        "route_id": "SC:47",
+        "agency_id": "SC",
+        "trips": 136
+      },
+      {
+        "route_id": "SC:51",
+        "agency_id": "SC",
+        "trips": 64
+      },
+      {
+        "route_id": "SC:52",
+        "agency_id": "SC",
+        "trips": 50
+      },
+      {
+        "route_id": "SC:53",
+        "agency_id": "SC",
+        "trips": 59
+      },
+      {
+        "route_id": "SC:55",
+        "agency_id": "SC",
+        "trips": 161
+      },
+      {
+        "route_id": "SC:56",
+        "agency_id": "SC",
+        "trips": 172
+      },
+      {
+        "route_id": "SC:57",
+        "agency_id": "SC",
+        "trips": 230
+      },
+      {
+        "route_id": "SC:59",
+        "agency_id": "SC",
+        "trips": 114
+      },
+      {
+        "route_id": "SC:60",
+        "agency_id": "SC",
+        "trips": 335
+      },
+      {
+        "route_id": "SC:61",
+        "agency_id": "SC",
+        "trips": 259
+      },
+      {
+        "route_id": "SC:64A",
+        "agency_id": "SC",
+        "trips": 198
+      },
+      {
+        "route_id": "SC:64B",
+        "agency_id": "SC",
+        "trips": 100
+      },
+      {
+        "route_id": "SC:66",
+        "agency_id": "SC",
+        "trips": 326
+      },
+      {
+        "route_id": "SC:68",
+        "agency_id": "SC",
+        "trips": 326
+      },
+      {
+        "route_id": "SC:70",
+        "agency_id": "SC",
+        "trips": 322
+      },
+      {
+        "route_id": "SC:71",
+        "agency_id": "SC",
+        "trips": 248
+      },
+      {
+        "route_id": "SC:72",
+        "agency_id": "SC",
+        "trips": 268
+      },
+      {
+        "route_id": "SC:73",
+        "agency_id": "SC",
+        "trips": 267
+      },
+      {
+        "route_id": "SC:77",
+        "agency_id": "SC",
+        "trips": 269
+      },
+      {
+        "route_id": "SC:83",
+        "agency_id": "SC",
+        "trips": 30
+      },
+      {
+        "route_id": "SC:84",
+        "agency_id": "SC",
+        "trips": 57
+      },
+      {
+        "route_id": "SC:85",
+        "agency_id": "SC",
+        "trips": 64
+      },
+      {
+        "route_id": "SC:86",
+        "agency_id": "SC",
+        "trips": 54
+      },
+      {
+        "route_id": "SC:87",
+        "agency_id": "SC",
+        "trips": 14
+      },
+      {
+        "route_id": "SC:89",
+        "agency_id": "SC",
+        "trips": 35
+      },
+      {
+        "route_id": "SC:ACE Brown",
+        "agency_id": "SC",
+        "trips": 8
+      },
+      {
+        "route_id": "SC:ACE Gray",
+        "agency_id": "SC",
+        "trips": 10
+      },
+      {
+        "route_id": "SC:ACE Green",
+        "agency_id": "SC",
+        "trips": 8
+      },
+      {
+        "route_id": "SC:ACE Orange",
+        "agency_id": "SC",
+        "trips": 8
+      },
+      {
+        "route_id": "SC:ACE Purple",
+        "agency_id": "SC",
+        "trips": 8
+      },
+      {
+        "route_id": "SC:ACE Red",
+        "agency_id": "SC",
+        "trips": 8
+      },
+      {
+        "route_id": "SC:ACE Violet",
+        "agency_id": "SC",
+        "trips": 8
+      },
+      {
+        "route_id": "SC:ACE Yellow",
+        "agency_id": "SC",
+        "trips": 8
+      },
+      {
+        "route_id": "SC:Blue Line",
+        "agency_id": "SC",
+        "trips": 342
+      },
+      {
+        "route_id": "SC:Event-Blue",
+        "agency_id": "SC",
+        "trips": 0
+      },
+      {
+        "route_id": "SC:Event-Green",
+        "agency_id": "SC",
+        "trips": 8
+      },
+      {
+        "route_id": "SC:Event-Orange",
+        "agency_id": "SC",
+        "trips": 14
+      },
+      {
+        "route_id": "SC:Event-Special",
+        "agency_id": "SC",
+        "trips": 5
+      },
+      {
+        "route_id": "SC:Express 101",
+        "agency_id": "SC",
+        "trips": 6
+      },
+      {
+        "route_id": "SC:Express 102",
+        "agency_id": "SC",
+        "trips": 13
+      },
+      {
+        "route_id": "SC:Express 103",
+        "agency_id": "SC",
+        "trips": 9
+      },
+      {
+        "route_id": "SC:Express 104",
+        "agency_id": "SC",
+        "trips": 7
+      },
+      {
+        "route_id": "SC:Green Line",
+        "agency_id": "SC",
+        "trips": 337
+      },
+      {
+        "route_id": "SC:Orange Line",
+        "agency_id": "SC",
+        "trips": 329
+      },
+      {
+        "route_id": "SC:Rapid 500",
+        "agency_id": "SC",
+        "trips": 418
+      },
+      {
+        "route_id": "SC:Rapid 522",
+        "agency_id": "SC",
+        "trips": 376
+      },
+      {
+        "route_id": "SC:Rapid 523",
+        "agency_id": "SC",
+        "trips": 273
+      },
+      {
+        "route_id": "SC:Rapid 568",
+        "agency_id": "SC",
+        "trips": 56
+      },
+      {
+        "route_id": "SC:School 246",
+        "agency_id": "SC",
+        "trips": 10
+      },
+      {
+        "route_id": "SC:School 247",
+        "agency_id": "SC",
+        "trips": 3
+      },
+      {
+        "route_id": "SC:School 255",
+        "agency_id": "SC",
+        "trips": 7
+      },
+      {
+        "route_id": "SC:School 256",
+        "agency_id": "SC",
+        "trips": 4
+      },
+      {
+        "route_id": "SC:School 287",
+        "agency_id": "SC",
+        "trips": 1
+      },
+      {
+        "route_id": "SC:School 288",
+        "agency_id": "SC",
+        "trips": 5
+      },
+      {
+        "route_id": "SC:School 288L",
+        "agency_id": "SC",
+        "trips": 5
+      },
+      {
+        "route_id": "SE:30D",
+        "agency_id": "SE",
+        "trips": 20
+      },
+      {
+        "route_id": "SE:30S",
+        "agency_id": "SE",
+        "trips": 11
+      },
+      {
+        "route_id": "SF:1",
+        "agency_id": "SF",
+        "trips": 1280
+      },
+      {
+        "route_id": "SF:12",
+        "agency_id": "SF",
+        "trips": 644
+      },
+      {
+        "route_id": "SF:14",
+        "agency_id": "SF",
+        "trips": 1206
+      },
+      {
+        "route_id": "SF:14R",
+        "agency_id": "SF",
+        "trips": 876
+      },
+      {
+        "route_id": "SF:15",
+        "agency_id": "SF",
+        "trips": 576
+      },
+      {
+        "route_id": "SF:18",
+        "agency_id": "SF",
+        "trips": 384
+      },
+      {
+        "route_id": "SF:19",
+        "agency_id": "SF",
+        "trips": 472
+      },
+      {
+        "route_id": "SF:1X",
+        "agency_id": "SF",
+        "trips": 16
+      },
+      {
+        "route_id": "SF:2",
+        "agency_id": "SF",
+        "trips": 304
+      },
+      {
+        "route_id": "SF:22",
+        "agency_id": "SF",
+        "trips": 1343
+      },
+      {
+        "route_id": "SF:23",
+        "agency_id": "SF",
+        "trips": 323
+      },
+      {
+        "route_id": "SF:24",
+        "agency_id": "SF",
+        "trips": 852
+      },
+      {
+        "route_id": "SF:25",
+        "agency_id": "SF",
+        "trips": 484
+      },
+      {
+        "route_id": "SF:27",
+        "agency_id": "SF",
+        "trips": 446
+      },
+      {
+        "route_id": "SF:28",
+        "agency_id": "SF",
+        "trips": 699
+      },
+      {
+        "route_id": "SF:28R",
+        "agency_id": "SF",
+        "trips": 242
+      },
+      {
+        "route_id": "SF:29",
+        "agency_id": "SF",
+        "trips": 795
+      },
+      {
+        "route_id": "SF:30",
+        "agency_id": "SF",
+        "trips": 854
+      },
+      {
+        "route_id": "SF:30X",
+        "agency_id": "SF",
+        "trips": 6
+      },
+      {
+        "route_id": "SF:31",
+        "agency_id": "SF",
+        "trips": 440
+      },
+      {
+        "route_id": "SF:33",
+        "agency_id": "SF",
+        "trips": 408
+      },
+      {
+        "route_id": "SF:35",
+        "agency_id": "SF",
+        "trips": 230
+      },
+      {
+        "route_id": "SF:36",
+        "agency_id": "SF",
+        "trips": 250
+      },
+      {
+        "route_id": "SF:37",
+        "agency_id": "SF",
+        "trips": 284
+      },
+      {
+        "route_id": "SF:38",
+        "agency_id": "SF",
+        "trips": 949
+      },
+      {
+        "route_id": "SF:38R",
+        "agency_id": "SF",
+        "trips": 956
+      },
+      {
+        "route_id": "SF:39",
+        "agency_id": "SF",
+        "trips": 248
+      },
+      {
+        "route_id": "SF:43",
+        "agency_id": "SF",
+        "trips": 554
+      },
+      {
+        "route_id": "SF:44",
+        "agency_id": "SF",
+        "trips": 810
+      },
+      {
+        "route_id": "SF:45",
+        "agency_id": "SF",
+        "trips": 688
+      },
+      {
+        "route_id": "SF:48",
+        "agency_id": "SF",
+        "trips": 613
+      },
+      {
+        "route_id": "SF:49",
+        "agency_id": "SF",
+        "trips": 1172
+      },
+      {
+        "route_id": "SF:5",
+        "agency_id": "SF",
+        "trips": 1078
+      },
+      {
+        "route_id": "SF:52",
+        "agency_id": "SF",
+        "trips": 304
+      },
+      {
+        "route_id": "SF:54",
+        "agency_id": "SF",
+        "trips": 381
+      },
+      {
+        "route_id": "SF:55",
+        "agency_id": "SF",
+        "trips": 418
+      },
+      {
+        "route_id": "SF:56",
+        "agency_id": "SF",
+        "trips": 340
+      },
+      {
+        "route_id": "SF:57",
+        "agency_id": "SF",
+        "trips": 392
+      },
+      {
+        "route_id": "SF:58",
+        "agency_id": "SF",
+        "trips": 272
+      },
+      {
+        "route_id": "SF:5R",
+        "agency_id": "SF",
+        "trips": 292
+      },
+      {
+        "route_id": "SF:6",
+        "agency_id": "SF",
+        "trips": 478
+      },
+      {
+        "route_id": "SF:66",
+        "agency_id": "SF",
+        "trips": 370
+      },
+      {
+        "route_id": "SF:67",
+        "agency_id": "SF",
+        "trips": 392
+      },
+      {
+        "route_id": "SF:7",
+        "agency_id": "SF",
+        "trips": 658
+      },
+      {
+        "route_id": "SF:714",
+        "agency_id": "SF",
+        "trips": 6
+      },
+      {
+        "route_id": "SF:8",
+        "agency_id": "SF",
+        "trips": 942
+      },
+      {
+        "route_id": "SF:8AX",
+        "agency_id": "SF",
+        "trips": 94
+      },
+      {
+        "route_id": "SF:8BX",
+        "agency_id": "SF",
+        "trips": 86
+      },
+      {
+        "route_id": "SF:9",
+        "agency_id": "SF",
+        "trips": 709
+      },
+      {
+        "route_id": "SF:90",
+        "agency_id": "SF",
+        "trips": 84
+      },
+      {
+        "route_id": "SF:91",
+        "agency_id": "SF",
+        "trips": 100
+      },
+      {
+        "route_id": "SF:9R",
+        "agency_id": "SF",
+        "trips": 238
+      },
+      {
+        "route_id": "SF:CA",
+        "agency_id": "SF",
+        "trips": 584
+      },
+      {
+        "route_id": "SF:F",
+        "agency_id": "SF",
+        "trips": 568
+      },
+      {
+        "route_id": "SF:FBUS",
+        "agency_id": "SF",
+        "trips": 24
+      },
+      {
+        "route_id": "SF:J",
+        "agency_id": "SF",
+        "trips": 620
+      },
+      {
+        "route_id": "SF:K",
+        "agency_id": "SF",
+        "trips": 678
+      },
+      {
+        "route_id": "SF:KBUS",
+        "agency_id": "SF",
+        "trips": 64
+      },
+      {
+        "route_id": "SF:L",
+        "agency_id": "SF",
+        "trips": 752
+      },
+      {
+        "route_id": "SF:LOWL",
+        "agency_id": "SF",
+        "trips": 132
+      },
+      {
+        "route_id": "SF:M",
+        "agency_id": "SF",
+        "trips": 732
+      },
+      {
+        "route_id": "SF:N",
+        "agency_id": "SF",
+        "trips": 816
+      },
+      {
+        "route_id": "SF:NBUS",
+        "agency_id": "SF",
+        "trips": 44
+      },
+      {
+        "route_id": "SF:NOWL",
+        "agency_id": "SF",
+        "trips": 92
+      },
+      {
+        "route_id": "SF:PH",
+        "agency_id": "SF",
+        "trips": 900
+      },
+      {
+        "route_id": "SF:PM",
+        "agency_id": "SF",
+        "trips": 744
+      },
+      {
+        "route_id": "SF:T",
+        "agency_id": "SF",
+        "trips": 822
+      },
+      {
+        "route_id": "SF:TBUS",
+        "agency_id": "SF",
+        "trips": 58
+      },
+      {
+        "route_id": "SI:Blue Line",
+        "agency_id": "SI",
+        "trips": 410
+      },
+      {
+        "route_id": "SI:Lot D",
+        "agency_id": "SI",
+        "trips": 297
+      },
+      {
+        "route_id": "SI:Red Line",
+        "agency_id": "SI",
+        "trips": 410
+      },
+      {
+        "route_id": "SI:West Field Garage",
+        "agency_id": "SI",
+        "trips": 151
+      },
+      {
+        "route_id": "SL:North",
+        "agency_id": "SL",
+        "trips": 19
+      },
+      {
+        "route_id": "SL:South",
+        "agency_id": "SL",
+        "trips": 19
+      },
+      {
+        "route_id": "SM:10",
+        "agency_id": "SM",
+        "trips": 6
+      },
+      {
+        "route_id": "SM:110",
+        "agency_id": "SM",
+        "trips": 346
+      },
+      {
+        "route_id": "SM:112",
+        "agency_id": "SM",
+        "trips": 158
+      },
+      {
+        "route_id": "SM:117",
+        "agency_id": "SM",
+        "trips": 184
+      },
+      {
+        "route_id": "SM:12",
+        "agency_id": "SM",
+        "trips": 6
+      },
+      {
+        "route_id": "SM:120",
+        "agency_id": "SM",
+        "trips": 748
+      },
+      {
+        "route_id": "SM:121",
+        "agency_id": "SM",
+        "trips": 356
+      },
+      {
+        "route_id": "SM:122",
+        "agency_id": "SM",
+        "trips": 376
+      },
+      {
+        "route_id": "SM:130",
+        "agency_id": "SM",
+        "trips": 714
+      },
+      {
+        "route_id": "SM:138",
+        "agency_id": "SM",
+        "trips": 48
+      },
+      {
+        "route_id": "SM:14",
+        "agency_id": "SM",
+        "trips": 6
+      },
+      {
+        "route_id": "SM:141",
+        "agency_id": "SM",
+        "trips": 373
+      },
+      {
+        "route_id": "SM:142",
+        "agency_id": "SM",
+        "trips": 148
+      },
+      {
+        "route_id": "SM:15",
+        "agency_id": "SM",
+        "trips": 12
+      },
+      {
+        "route_id": "SM:18",
+        "agency_id": "SM",
+        "trips": 18
+      },
+      {
+        "route_id": "SM:19",
+        "agency_id": "SM",
+        "trips": 6
+      },
+      {
+        "route_id": "SM:24",
+        "agency_id": "SM",
+        "trips": 6
+      },
+      {
+        "route_id": "SM:25",
+        "agency_id": "SM",
+        "trips": 6
+      },
+      {
+        "route_id": "SM:250",
+        "agency_id": "SM",
+        "trips": 374
+      },
+      {
+        "route_id": "SM:251",
+        "agency_id": "SM",
+        "trips": 76
+      },
+      {
+        "route_id": "SM:260",
+        "agency_id": "SM",
+        "trips": 184
+      },
+      {
+        "route_id": "SM:270",
+        "agency_id": "SM",
+        "trips": 100
+      },
+      {
+        "route_id": "SM:276",
+        "agency_id": "SM",
+        "trips": 272
+      },
+      {
+        "route_id": "SM:278",
+        "agency_id": "SM",
+        "trips": 240
+      },
+      {
+        "route_id": "SM:28",
+        "agency_id": "SM",
+        "trips": 6
+      },
+      {
+        "route_id": "SM:280",
+        "agency_id": "SM",
+        "trips": 158
+      },
+      {
+        "route_id": "SM:281",
+        "agency_id": "SM",
+        "trips": 412
+      },
+      {
+        "route_id": "SM:29",
+        "agency_id": "SM",
+        "trips": 6
+      },
+      {
+        "route_id": "SM:292",
+        "agency_id": "SM",
+        "trips": 464
+      },
+      {
+        "route_id": "SM:294",
+        "agency_id": "SM",
+        "trips": 184
+      },
+      {
+        "route_id": "SM:295",
+        "agency_id": "SM",
+        "trips": 162
+      },
+      {
+        "route_id": "SM:296",
+        "agency_id": "SM",
+        "trips": 664
+      },
+      {
+        "route_id": "SM:296O",
+        "agency_id": "SM",
+        "trips": 60
+      },
+      {
+        "route_id": "SM:30",
+        "agency_id": "SM",
+        "trips": 6
+      },
+      {
+        "route_id": "SM:35",
+        "agency_id": "SM",
+        "trips": 12
+      },
+      {
+        "route_id": "SM:37",
+        "agency_id": "SM",
+        "trips": 6
+      },
+      {
+        "route_id": "SM:397",
+        "agency_id": "SM",
+        "trips": 42
+      },
+      {
+        "route_id": "SM:40",
+        "agency_id": "SM",
+        "trips": 10
+      },
+      {
+        "route_id": "SM:41",
+        "agency_id": "SM",
+        "trips": 6
+      },
+      {
+        "route_id": "SM:42",
+        "agency_id": "SM",
+        "trips": 6
+      },
+      {
+        "route_id": "SM:46",
+        "agency_id": "SM",
+        "trips": 22
+      },
+      {
+        "route_id": "SM:49",
+        "agency_id": "SM",
+        "trips": 6
+      },
+      {
+        "route_id": "SM:50",
+        "agency_id": "SM",
+        "trips": 4
+      },
+      {
+        "route_id": "SM:51",
+        "agency_id": "SM",
+        "trips": 6
+      },
+      {
+        "route_id": "SM:53",
+        "agency_id": "SM",
+        "trips": 10
+      },
+      {
+        "route_id": "SM:53P",
+        "agency_id": "SM",
+        "trips": 6
+      },
+      {
+        "route_id": "SM:54",
+        "agency_id": "SM",
+        "trips": 12
+      },
+      {
+        "route_id": "SM:56",
+        "agency_id": "SM",
+        "trips": 8
+      },
+      {
+        "route_id": "SM:57",
+        "agency_id": "SM",
+        "trips": 6
+      },
+      {
+        "route_id": "SM:58",
+        "agency_id": "SM",
+        "trips": 12
+      },
+      {
+        "route_id": "SM:59",
+        "agency_id": "SM",
+        "trips": 8
+      },
+      {
+        "route_id": "SM:60",
+        "agency_id": "SM",
+        "trips": 24
+      },
+      {
+        "route_id": "SM:61",
+        "agency_id": "SM",
+        "trips": 14
+      },
+      {
+        "route_id": "SM:62",
+        "agency_id": "SM",
+        "trips": 6
+      },
+      {
+        "route_id": "SM:67",
+        "agency_id": "SM",
+        "trips": 20
+      },
+      {
+        "route_id": "SM:68",
+        "agency_id": "SM",
+        "trips": 22
+      },
+      {
+        "route_id": "SM:713",
+        "agency_id": "SM",
+        "trips": 8
+      },
+      {
+        "route_id": "SM:72",
+        "agency_id": "SM",
+        "trips": 6
+      },
+      {
+        "route_id": "SM:73",
+        "agency_id": "SM",
+        "trips": 6
+      },
+      {
+        "route_id": "SM:78",
+        "agency_id": "SM",
+        "trips": 6
+      },
+      {
+        "route_id": "SM:79",
+        "agency_id": "SM",
+        "trips": 6
+      },
+      {
+        "route_id": "SM:81",
+        "agency_id": "SM",
+        "trips": 16
+      },
+      {
+        "route_id": "SM:82",
+        "agency_id": "SM",
+        "trips": 6
+      },
+      {
+        "route_id": "SM:83",
+        "agency_id": "SM",
+        "trips": 12
+      },
+      {
+        "route_id": "SM:85",
+        "agency_id": "SM",
+        "trips": 2
+      },
+      {
+        "route_id": "SM:86",
+        "agency_id": "SM",
+        "trips": 8
+      },
+      {
+        "route_id": "SM:87",
+        "agency_id": "SM",
+        "trips": 4
+      },
+      {
+        "route_id": "SM:88",
+        "agency_id": "SM",
+        "trips": 4
+      },
+      {
+        "route_id": "SM:CSM",
+        "agency_id": "SM",
+        "trips": 104
+      },
+      {
+        "route_id": "SM:ECR",
+        "agency_id": "SM",
+        "trips": 810
+      },
+      {
+        "route_id": "SM:ECRO",
+        "agency_id": "SM",
+        "trips": 52
+      },
+      {
+        "route_id": "SM:EPX",
+        "agency_id": "SM",
+        "trips": 74
+      },
+      {
+        "route_id": "SM:FCX",
+        "agency_id": "SM",
+        "trips": 20
+      },
+      {
+        "route_id": "SM:PCX",
+        "agency_id": "SM",
+        "trips": 36
+      },
+      {
+        "route_id": "SM:SKY",
+        "agency_id": "SM",
+        "trips": 116
+      },
+      {
+        "route_id": "SO:10",
+        "agency_id": "SO",
+        "trips": 22
+      },
+      {
+        "route_id": "SO:10T",
+        "agency_id": "SO",
+        "trips": 6
+      },
+      {
+        "route_id": "SO:12",
+        "agency_id": "SO",
+        "trips": 10
+      },
+      {
+        "route_id": "SO:12T",
+        "agency_id": "SO",
+        "trips": 4
+      },
+      {
+        "route_id": "SO:14",
+        "agency_id": "SO",
+        "trips": 12
+      },
+      {
+        "route_id": "SO:20",
+        "agency_id": "SO",
+        "trips": 56
+      },
+      {
+        "route_id": "SO:20X",
+        "agency_id": "SO",
+        "trips": 2
+      },
+      {
+        "route_id": "SO:24",
+        "agency_id": "SO",
+        "trips": 21
+      },
+      {
+        "route_id": "SO:26",
+        "agency_id": "SO",
+        "trips": 5
+      },
+      {
+        "route_id": "SO:28",
+        "agency_id": "SO",
+        "trips": 12
+      },
+      {
+        "route_id": "SO:30",
+        "agency_id": "SO",
+        "trips": 49
+      },
+      {
+        "route_id": "SO:30X",
+        "agency_id": "SO",
+        "trips": 4
+      },
+      {
+        "route_id": "SO:32",
+        "agency_id": "SO",
+        "trips": 39
+      },
+      {
+        "route_id": "SO:34",
+        "agency_id": "SO",
+        "trips": 2
+      },
+      {
+        "route_id": "SO:36",
+        "agency_id": "SO",
+        "trips": 2
+      },
+      {
+        "route_id": "SO:40x",
+        "agency_id": "SO",
+        "trips": 12
+      },
+      {
+        "route_id": "SO:42",
+        "agency_id": "SO",
+        "trips": 14
+      },
+      {
+        "route_id": "SO:44",
+        "agency_id": "SO",
+        "trips": 39
+      },
+      {
+        "route_id": "SO:48",
+        "agency_id": "SO",
+        "trips": 33
+      },
+      {
+        "route_id": "SO:48X",
+        "agency_id": "SO",
+        "trips": 2
+      },
+      {
+        "route_id": "SO:60",
+        "agency_id": "SO",
+        "trips": 59
+      },
+      {
+        "route_id": "SO:60X",
+        "agency_id": "SO",
+        "trips": 3
+      },
+      {
+        "route_id": "SO:62",
+        "agency_id": "SO",
+        "trips": 12
+      },
+      {
+        "route_id": "SO:66",
+        "agency_id": "SO",
+        "trips": 20
+      },
+      {
+        "route_id": "SO:67",
+        "agency_id": "SO",
+        "trips": 28
+      },
+      {
+        "route_id": "SO:68",
+        "agency_id": "SO",
+        "trips": 23
+      },
+      {
+        "route_id": "SR:1",
+        "agency_id": "SR",
+        "trips": 169
+      },
+      {
+        "route_id": "SR:10",
+        "agency_id": "SR",
+        "trips": 35
+      },
+      {
+        "route_id": "SR:12",
+        "agency_id": "SR",
+        "trips": 49
+      },
+      {
+        "route_id": "SR:15",
+        "agency_id": "SR",
+        "trips": 58
+      },
+      {
+        "route_id": "SR:16",
+        "agency_id": "SR",
+        "trips": 6
+      },
+      {
+        "route_id": "SR:18",
+        "agency_id": "SR",
+        "trips": 21
+      },
+      {
+        "route_id": "SR:2",
+        "agency_id": "SR",
+        "trips": 29
+      },
+      {
+        "route_id": "SR:2B",
+        "agency_id": "SR",
+        "trips": 70
+      },
+      {
+        "route_id": "SR:3",
+        "agency_id": "SR",
+        "trips": 74
+      },
+      {
+        "route_id": "SR:4",
+        "agency_id": "SR",
+        "trips": 34
+      },
+      {
+        "route_id": "SR:4B",
+        "agency_id": "SR",
+        "trips": 14
+      },
+      {
+        "route_id": "SR:5",
+        "agency_id": "SR",
+        "trips": 72
+      },
+      {
+        "route_id": "SR:6",
+        "agency_id": "SR",
+        "trips": 98
+      },
+      {
+        "route_id": "SR:8",
+        "agency_id": "SR",
+        "trips": 100
+      },
+      {
+        "route_id": "SR:9",
+        "agency_id": "SR",
+        "trips": 49
+      },
+      {
+        "route_id": "SS:BLUE",
+        "agency_id": "SS",
+        "trips": 18
+      },
+      {
+        "route_id": "SS:GREEN",
+        "agency_id": "SS",
+        "trips": 18
+      },
+      {
+        "route_id": "SS:ORANGE",
+        "agency_id": "SS",
+        "trips": 10
+      },
+      {
+        "route_id": "ST:15",
+        "agency_id": "ST",
+        "trips": 9
+      },
+      {
+        "route_id": "ST:17",
+        "agency_id": "ST",
+        "trips": 12
+      },
+      {
+        "route_id": "ST:1A",
+        "agency_id": "ST",
+        "trips": 194
+      },
+      {
+        "route_id": "ST:1B",
+        "agency_id": "ST",
+        "trips": 186
+      },
+      {
+        "route_id": "ST:3",
+        "agency_id": "ST",
+        "trips": 388
+      },
+      {
+        "route_id": "ST:38",
+        "agency_id": "ST",
+        "trips": 3
+      },
+      {
+        "route_id": "ST:4",
+        "agency_id": "ST",
+        "trips": 334
+      },
+      {
+        "route_id": "ST:40",
+        "agency_id": "ST",
+        "trips": 270
+      },
+      {
+        "route_id": "ST:6",
+        "agency_id": "ST",
+        "trips": 428
+      },
+      {
+        "route_id": "ST:60",
+        "agency_id": "ST",
+        "trips": 644
+      },
+      {
+        "route_id": "ST:70",
+        "agency_id": "ST",
+        "trips": 302
+      },
+      {
+        "route_id": "ST:7A",
+        "agency_id": "ST",
+        "trips": 282
+      },
+      {
+        "route_id": "ST:7B",
+        "agency_id": "ST",
+        "trips": 282
+      },
+      {
+        "route_id": "ST:82",
+        "agency_id": "ST",
+        "trips": 48
+      },
+      {
+        "route_id": "ST:90",
+        "agency_id": "ST",
+        "trips": 48
+      },
+      {
+        "route_id": "TF:TISF",
+        "agency_id": "TF",
+        "trips": 54
+      },
+      {
+        "route_id": "UC:1",
+        "agency_id": "UC",
+        "trips": 122
+      },
+      {
+        "route_id": "UC:2",
+        "agency_id": "UC",
+        "trips": 172
+      },
+      {
+        "route_id": "UC:3",
+        "agency_id": "UC",
+        "trips": 76
+      },
+      {
+        "route_id": "UC:4",
+        "agency_id": "UC",
+        "trips": 76
+      },
+      {
+        "route_id": "UC:5",
+        "agency_id": "UC",
+        "trips": 108
+      },
+      {
+        "route_id": "UC:8",
+        "agency_id": "UC",
+        "trips": 12
+      },
+      {
+        "route_id": "VC:2",
+        "agency_id": "VC",
+        "trips": 48
+      },
+      {
+        "route_id": "VC:3",
+        "agency_id": "VC",
+        "trips": 28
+      },
+      {
+        "route_id": "VC:4",
+        "agency_id": "VC",
+        "trips": 68
+      },
+      {
+        "route_id": "VC:5",
+        "agency_id": "VC",
+        "trips": 134
+      },
+      {
+        "route_id": "VC:6",
+        "agency_id": "VC",
+        "trips": 139
+      },
+      {
+        "route_id": "VN:10",
+        "agency_id": "VN",
+        "trips": 125
+      },
+      {
+        "route_id": "VN:11",
+        "agency_id": "VN",
+        "trips": 114
+      },
+      {
+        "route_id": "VN:11X",
+        "agency_id": "VN",
+        "trips": 22
+      },
+      {
+        "route_id": "VN:21",
+        "agency_id": "VN",
+        "trips": 42
+      },
+      {
+        "route_id": "VN:29",
+        "agency_id": "VN",
+        "trips": 70
+      },
+      {
+        "route_id": "VN:A",
+        "agency_id": "VN",
+        "trips": 70
+      },
+      {
+        "route_id": "VN:ACTAM",
+        "agency_id": "VN",
+        "trips": 6
+      },
+      {
+        "route_id": "VN:ACTPM",
+        "agency_id": "VN",
+        "trips": 3
+      },
+      {
+        "route_id": "VN:B",
+        "agency_id": "VN",
+        "trips": 50
+      },
+      {
+        "route_id": "VN:C",
+        "agency_id": "VN",
+        "trips": 118
+      },
+      {
+        "route_id": "VN:D",
+        "agency_id": "VN",
+        "trips": 36
+      },
+      {
+        "route_id": "VN:E",
+        "agency_id": "VN",
+        "trips": 35
+      },
+      {
+        "route_id": "VN:F",
+        "agency_id": "VN",
+        "trips": 36
+      },
+      {
+        "route_id": "VN:G",
+        "agency_id": "VN",
+        "trips": 68
+      },
+      {
+        "route_id": "WC:10",
+        "agency_id": "WC",
+        "trips": 46
+      },
+      {
+        "route_id": "WC:11",
+        "agency_id": "WC",
+        "trips": 69
+      },
+      {
+        "route_id": "WC:12",
+        "agency_id": "WC",
+        "trips": 48
+      },
+      {
+        "route_id": "WC:15",
+        "agency_id": "WC",
+        "trips": 30
+      },
+      {
+        "route_id": "WC:16",
+        "agency_id": "WC",
+        "trips": 54
+      },
+      {
+        "route_id": "WC:19",
+        "agency_id": "WC",
+        "trips": 30
+      },
+      {
+        "route_id": "WC:30Z",
+        "agency_id": "WC",
+        "trips": 48
+      },
+      {
+        "route_id": "WC:C3",
+        "agency_id": "WC",
+        "trips": 98
+      },
+      {
+        "route_id": "WC:J",
+        "agency_id": "WC",
+        "trips": 250
+      },
+      {
+        "route_id": "WC:JPX",
+        "agency_id": "WC",
+        "trips": 98
+      },
+      {
+        "route_id": "WC:JX",
+        "agency_id": "WC",
+        "trips": 50
+      },
+      {
+        "route_id": "WC:Lynx",
+        "agency_id": "WC",
+        "trips": 146
+      },
+      {
+        "route_id": "WH:1",
+        "agency_id": "WH",
+        "trips": 134
+      },
+      {
+        "route_id": "WH:10R",
+        "agency_id": "WH",
+        "trips": 732
+      },
+      {
+        "route_id": "WH:11",
+        "agency_id": "WH",
+        "trips": 35
+      },
+      {
+        "route_id": "WH:14",
+        "agency_id": "WH",
+        "trips": 302
+      },
+      {
+        "route_id": "WH:15",
+        "agency_id": "WH",
+        "trips": 239
+      },
+      {
+        "route_id": "WH:18",
+        "agency_id": "WH",
+        "trips": 51
+      },
+      {
+        "route_id": "WH:2",
+        "agency_id": "WH",
+        "trips": 40
+      },
+      {
+        "route_id": "WH:201",
+        "agency_id": "WH",
+        "trips": 10
+      },
+      {
+        "route_id": "WH:202",
+        "agency_id": "WH",
+        "trips": 15
+      },
+      {
+        "route_id": "WH:20X",
+        "agency_id": "WH",
+        "trips": 20
+      },
+      {
+        "route_id": "WH:3",
+        "agency_id": "WH",
+        "trips": 274
+      },
+      {
+        "route_id": "WH:30R",
+        "agency_id": "WH",
+        "trips": 605
+      },
+      {
+        "route_id": "WH:4",
+        "agency_id": "WH",
+        "trips": 188
+      },
+      {
+        "route_id": "WH:502",
+        "agency_id": "WH",
+        "trips": 10
+      },
+      {
+        "route_id": "WH:503",
+        "agency_id": "WH",
+        "trips": 16
+      },
+      {
+        "route_id": "WH:53",
+        "agency_id": "WH",
+        "trips": 42
+      },
+      {
+        "route_id": "WH:54",
+        "agency_id": "WH",
+        "trips": 30
+      },
+      {
+        "route_id": "WH:580X",
+        "agency_id": "WH",
+        "trips": 50
+      },
+      {
+        "route_id": "WH:601",
+        "agency_id": "WH",
+        "trips": 15
+      },
+      {
+        "route_id": "WH:602",
+        "agency_id": "WH",
+        "trips": 20
+      },
+      {
+        "route_id": "WH:603",
+        "agency_id": "WH",
+        "trips": 25
+      },
+      {
+        "route_id": "WH:604",
+        "agency_id": "WH",
+        "trips": 25
+      },
+      {
+        "route_id": "WH:605",
+        "agency_id": "WH",
+        "trips": 20
+      },
+      {
+        "route_id": "WH:606",
+        "agency_id": "WH",
+        "trips": 10
+      },
+      {
+        "route_id": "WH:607",
+        "agency_id": "WH",
+        "trips": 15
+      },
+      {
+        "route_id": "WH:608",
+        "agency_id": "WH",
+        "trips": 16
+      },
+      {
+        "route_id": "WH:610",
+        "agency_id": "WH",
+        "trips": 25
+      },
+      {
+        "route_id": "WH:611",
+        "agency_id": "WH",
+        "trips": 15
+      },
+      {
+        "route_id": "WH:70X",
+        "agency_id": "WH",
+        "trips": 25
+      },
+      {
+        "route_id": "WH:8",
+        "agency_id": "WH",
+        "trips": 152
+      }
+    ],
+    "route_direction_pairs": 1183,
+    "trips_missing_direction": 0,
+    "stop_records_per_trip": {
+      "groups": 92827,
+      "minimum": 2,
+      "mean": 34.312,
+      "median": 30.0,
+      "p95": 76,
+      "maximum": 119
+    },
+    "distinct_stops_per_trip": {
+      "groups": 92827,
+      "minimum": 2,
+      "mean": 34.265,
+      "median": 30.0,
+      "p95": 76,
+      "maximum": 119
+    },
+    "trip_visit_coverage": {
+      "without_visits": 0,
+      "with_one_visit": 0,
+      "examples": null
+    },
+    "verified_platform_visit_keys": 3185115,
+    "route_stop_pairs": 33985,
+    "agency_stop_pairs": 19904,
+    "stops_per_agency": [
+      {
+        "agency_id": "3D",
+        "records": 408
+      },
+      {
+        "agency_id": "AC",
+        "records": 4692
+      },
+      {
+        "agency_id": "AF",
+        "records": 2
+      },
+      {
+        "agency_id": "AM",
+        "records": 20
+      },
+      {
+        "agency_id": "BA",
+        "records": 107
+      },
+      {
+        "agency_id": "CC",
+        "records": 1214
+      },
+      {
+        "agency_id": "CE",
+        "records": 10
+      },
+      {
+        "agency_id": "CM",
+        "records": 235
+      },
+      {
+        "agency_id": "CT",
+        "records": 60
+      },
+      {
+        "agency_id": "DE",
+        "records": 72
+      },
+      {
+        "agency_id": "EE",
+        "records": 4
+      },
+      {
+        "agency_id": "EM",
+        "records": 41
+      },
+      {
+        "agency_id": "FS",
+        "records": 124
+      },
+      {
+        "agency_id": "GF",
+        "records": 6
+      },
+      {
+        "agency_id": "GG",
+        "records": 246
+      },
+      {
+        "agency_id": "GP",
+        "records": 18
+      },
+      {
+        "agency_id": "MA",
+        "records": 544
+      },
+      {
+        "agency_id": "MB",
+        "records": 19
+      },
+      {
+        "agency_id": "MC",
+        "records": 58
+      },
+      {
+        "agency_id": "MV",
+        "records": 34
+      },
+      {
+        "agency_id": "PE",
+        "records": 152
+      },
+      {
+        "agency_id": "PG",
+        "records": 31
+      },
+      {
+        "agency_id": "RV",
+        "records": 63
+      },
+      {
+        "agency_id": "SA",
+        "records": 28
+      },
+      {
+        "agency_id": "SB",
+        "records": 13
+      },
+      {
+        "agency_id": "SC",
+        "records": 3230
+      },
+      {
+        "agency_id": "SE",
+        "records": 9
+      },
+      {
+        "agency_id": "SF",
+        "records": 3240
+      },
+      {
+        "agency_id": "SI",
+        "records": 28
+      },
+      {
+        "agency_id": "SL",
+        "records": 29
+      },
+      {
+        "agency_id": "SM",
+        "records": 1853
+      },
+      {
+        "agency_id": "SO",
+        "records": 1019
+      },
+      {
+        "agency_id": "SR",
+        "records": 400
+      },
+      {
+        "agency_id": "SS",
+        "records": 70
+      },
+      {
+        "agency_id": "ST",
+        "records": 306
+      },
+      {
+        "agency_id": "TF",
+        "records": 2
+      },
+      {
+        "agency_id": "UC",
+        "records": 167
+      },
+      {
+        "agency_id": "VC",
+        "records": 190
+      },
+      {
+        "agency_id": "VN",
+        "records": 292
+      },
+      {
+        "agency_id": "WC",
+        "records": 219
+      },
+      {
+        "agency_id": "WH",
+        "records": 649
+      }
+    ],
+    "multi_agency_stops": {
+      "count": 189,
+      "examples": [
+        {
+          "stop_id": "341028",
+          "agencies": 2,
+          "agency_ids": [
+            "CM",
+            "SM"
+          ]
+        },
+        {
+          "stop_id": "345025",
+          "agencies": 2,
+          "agency_ids": [
+            "CM",
+            "SM"
+          ]
+        },
+        {
+          "stop_id": "346150",
+          "agencies": 2,
+          "agency_ids": [
+            "CM",
+            "SM"
+          ]
+        },
+        {
+          "stop_id": "346151",
+          "agencies": 2,
+          "agency_ids": [
+            "CM",
+            "SM"
+          ]
+        },
+        {
+          "stop_id": "346610",
+          "agencies": 2,
+          "agency_ids": [
+            "CM",
+            "SM"
+          ]
+        },
+        {
+          "stop_id": "40090",
+          "agencies": 2,
+          "agency_ids": [
+            "GG",
+            "MA"
+          ]
+        },
+        {
+          "stop_id": "40091",
+          "agencies": 2,
+          "agency_ids": [
+            "GG",
+            "MA"
+          ]
+        },
+        {
+          "stop_id": "40092",
+          "agencies": 2,
+          "agency_ids": [
+            "GG",
+            "MA"
+          ]
+        },
+        {
+          "stop_id": "40093",
+          "agencies": 2,
+          "agency_ids": [
+            "GG",
+            "MA"
+          ]
+        },
+        {
+          "stop_id": "40094",
+          "agencies": 2,
+          "agency_ids": [
+            "GG",
+            "MA"
+          ]
+        }
+      ]
+    },
+    "next_stop_pairs": {
+      "occurrences": 3092288,
+      "distinct_directed_pairs": 22705
+    },
+    "points_per_shape": {
+      "groups": 2446,
+      "minimum": 2,
+      "mean": 548.036,
+      "median": 377.0,
+      "p95": 1495,
+      "maximum": 4878
+    },
+    "shape_consistency": {
+      "decreasing_distances": 0,
+      "equal_distances": 21,
+      "out_of_order_rows": 0,
+      "examples": null,
+      "equal_examples": [
+        "PE:22999/363",
+        "SO:29727/186",
+        "SO:29785/375",
+        "SO:30638/555",
+        "SO:31150/1035"
+      ]
+    },
+    "shape_coverage": {
+      "distinct_shapes": 2446,
+      "shapes_used_by_trips": 2434,
+      "shapes_unused_by_trips": 12,
+      "trips_with_shape_id": 91296,
+      "trips_without_shape_id": 1531
+    }
+  },
+  "graph": {
+    "entities": [
+      {
+        "entity": "Agency",
+        "sources": "agency.txt",
+        "identifiers": "agency_id",
+        "estimate": 41,
+        "grounding": "Agency selector scope and schedule time zone.",
+        "cardinality": "one node per identifier in the scoped snapshot",
+        "representation": "direct",
+        "limitations": "Agency IDs are scoped to their feed."
+      },
+      {
+        "entity": "Route",
+        "sources": "routes.txt",
+        "identifiers": "route_id",
+        "estimate": 665,
+        "grounding": "Route, type and agency scope.",
+        "cardinality": "one node per identifier in the scoped snapshot",
+        "representation": "direct",
+        "limitations": "A short name can repeat across agencies and across route variants."
+      },
+      {
+        "entity": "Trip",
+        "sources": "trips.txt",
+        "identifiers": "trip_id",
+        "estimate": 92827,
+        "grounding": "Scheduled trip template for trip descriptors.",
+        "cardinality": "one node per identifier in the scoped snapshot",
+        "representation": "direct",
+        "limitations": "A template can recur on many service dates."
+      },
+      {
+        "entity": "Stop",
+        "sources": "stops.txt",
+        "identifiers": "stop_id",
+        "estimate": 21664,
+        "grounding": "Stop selectors and station hierarchy.",
+        "cardinality": "one node per identifier in the scoped snapshot",
+        "representation": "direct",
+        "limitations": "Shared names and coordinates do not establish identity."
+      },
+      {
+        "entity": "Service",
+        "sources": "calendar.txt and calendar_dates.txt",
+        "identifiers": "service_id",
+        "estimate": 485,
+        "grounding": "Service-day grounding via base and exception schedules.",
+        "cardinality": "one node per identifier in the scoped snapshot",
+        "representation": "combined domain",
+        "limitations": "Inspect IDs with no effective service date."
+      },
+      {
+        "entity": "ServiceException",
+        "sources": "calendar_dates.txt",
+        "identifiers": "service_id + date",
+        "estimate": 5706,
+        "grounding": "Added/removed service per date.",
+        "cardinality": "one node per identifier in the scoped snapshot",
+        "representation": "direct",
+        "limitations": "Raw record count includes any unresolved key conflicts."
+      },
+      {
+        "entity": "Shape",
+        "sources": "shapes.txt",
+        "identifiers": "shape_id",
+        "estimate": 2446,
+        "grounding": "Optional spatial support for route and trip context.",
+        "cardinality": "one node per identifier in the scoped snapshot",
+        "representation": "direct",
+        "limitations": "One shape has many ordered source points."
+      },
+      {
+        "entity": "FeedVersion",
+        "sources": "source manifest and feed_info.txt",
+        "identifiers": "version provenance and source checksum manifest",
+        "estimate": 1,
+        "grounding": "Identity provenance and selection of a valid static snapshot.",
+        "cardinality": "one node per identifier in the scoped snapshot",
+        "representation": "derived provenance",
+        "limitations": "Regional version dates may be missing."
+      }
+    ],
+    "relationships": [
+      {
+        "relationship": "Agency OPERATES Route",
+        "sources": "routes.txt + agency.txt",
+        "join": "routes.agency_id = agency.agency_id",
+        "cardinality": "1:N",
+        "representation": "direct",
+        "estimate": 665,
+        "grounding": "Preserve agency scope for route selectors.",
+        "limitations": "Single-agency omission may require inference."
+      },
+      {
+        "relationship": "Route HAS_TRIP Trip",
+        "sources": "trips.txt + routes.txt",
+        "join": "trips.route_id = routes.route_id",
+        "cardinality": "1:N",
+        "representation": "direct",
+        "estimate": 92827,
+        "grounding": "Route and direction scope.",
+        "limitations": "Inspect orphan routes and trip key conflicts."
+      },
+      {
+        "relationship": "Trip RUNS_ON Service",
+        "sources": "trips.txt + calendar.txt + calendar_dates.txt",
+        "join": "trips.service_id = service domain",
+        "cardinality": "N:1",
+        "representation": "direct",
+        "estimate": 92827,
+        "grounding": "Resolve trip instances on a service date.",
+        "limitations": "Combine weekly dates with exceptions."
+      },
+      {
+        "relationship": "Trip VISITS_STOP Stop",
+        "sources": "stop_times.txt + trips.txt + stops.txt",
+        "join": "trip_id and stop_id, with stop_sequence per visit",
+        "cardinality": "N:M",
+        "representation": "direct",
+        "estimate": 3185115,
+        "grounding": "Scope affected stops to trips and preserve repeated visits.",
+        "limitations": "Check duplicate sequence keys and Flex alternatives. This count is distinct raw visit tuples with joinable conventional stops."
+      },
+      {
+        "relationship": "Route SERVES_STOP Stop",
+        "sources": "routes.txt + trips.txt + stop_times.txt + stops.txt",
+        "join": "route_id → trip_id → stop_id",
+        "cardinality": "N:M",
+        "representation": "derived",
+        "estimate": 33985,
+        "grounding": "Fast route-stop selector intersection.",
+        "limitations": "Keep time validity and original visits as provenance."
+      },
+      {
+        "relationship": "Agency SERVES_STOP Stop",
+        "sources": "agency.txt + routes.txt + trips.txt + stop_times.txt + stops.txt",
+        "join": "agency_id → route_id → trip_id → stop_id",
+        "cardinality": "N:M",
+        "representation": "derived",
+        "estimate": 19904,
+        "grounding": "Agency-scoped stop selectors.",
+        "limitations": "Service association does not express agency ownership."
+      },
+      {
+        "relationship": "Stop PART_OF Stop",
+        "sources": "stops.txt",
+        "join": "stops.parent_station = parent.stop_id",
+        "cardinality": "N:1",
+        "representation": "direct",
+        "estimate": 2222,
+        "grounding": "Station versus platform selector scope.",
+        "limitations": "Membership type matters. Count joins by ID before checking parent type."
+      },
+      {
+        "relationship": "Stop NEXT_STOP Stop",
+        "sources": "stop_times.txt + stops.txt",
+        "join": "next numeric stop_sequence within trip_id",
+        "cardinality": "N:M",
+        "representation": "derived",
+        "estimate": 22705,
+        "grounding": "Direction and segment context.",
+        "limitations": "Preserve route, trip, direction and occurrence context for loops."
+      },
+      {
+        "relationship": "Stop TRANSFERS_TO Stop",
+        "sources": "transfers.txt + stops.txt",
+        "join": "from_stop_id and to_stop_id = stops.stop_id",
+        "cardinality": "N:M",
+        "representation": "direct policy",
+        "estimate": 61,
+        "grounding": "Context for station disruptions.",
+        "limitations": "Raw rule count is an upper bound for stop-to-stop edges. Rules can be forbidden or trip/route-scoped."
+      },
+      {
+        "relationship": "Service HAS_EXCEPTION ServiceException",
+        "sources": "calendar_dates.txt",
+        "join": "service_id with date as exception key",
+        "cardinality": "1:N",
+        "representation": "direct",
+        "estimate": 5706,
+        "grounding": "Account for additions and removed service.",
+        "limitations": "Review duplicate service dates and removal-only IDs."
+      },
+      {
+        "relationship": "Trip FOLLOWS Shape",
+        "sources": "trips.txt + shapes.txt",
+        "join": "trips.shape_id = shapes.shape_id",
+        "cardinality": "N:1",
+        "representation": "direct",
+        "estimate": 91296,
+        "grounding": "Spatial context for disruptions affecting route segments.",
+        "limitations": "Assess shape coverage and sequence/distance consistency."
+      }
+    ],
+    "stop_time_options": [
+      {
+        "option": "Visit nodes",
+        "size": "Up to 3,185,115 visit nodes and 6,370,230 linking edges before validity filtering.",
+        "tradeoff": "Supports visit-level provenance and traversals, with higher graph write, index and working-set costs."
+      },
+      {
+        "option": "Visit relationship properties",
+        "size": "Up to 3,185,115 sequence-aware Trip–Stop visit edges.",
+        "tradeoff": "Direct trip traversal with times on the edge. A multiedge representation must preserve loops and visit order."
+      },
+      {
+        "option": "External DuckDB or Parquet timetable",
+        "size": "3,185,115 timetable rows plus graph connectivity projections.",
+        "tradeoff": "Column pruning and batch filtering support timetable queries with fewer graph objects. Cross-store lookups and provenance alignment add complexity for per-visit queries."
+      }
+    ],
+    "recommendation": "Benchmark an external timetable and graph connectivity as the initial design. Compare bulk load time, storage, p50/p95 selector and timetable latency, and incremental update cost against visit properties and visit nodes using the same records and queries."
+  }
+}

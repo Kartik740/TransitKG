@@ -1,0 +1,1944 @@
+{
+  "passed": true,
+  "schema_checks": [
+    {
+      "table": "agency",
+      "matches": true
+    },
+    {
+      "table": "areas",
+      "matches": true
+    },
+    {
+      "table": "attributions",
+      "matches": true
+    },
+    {
+      "table": "calendar",
+      "matches": true
+    },
+    {
+      "table": "calendar_attributes",
+      "matches": true
+    },
+    {
+      "table": "calendar_dates",
+      "matches": true
+    },
+    {
+      "table": "directions",
+      "matches": true
+    },
+    {
+      "table": "fare_leg_join_rules",
+      "matches": true
+    },
+    {
+      "table": "fare_leg_rules",
+      "matches": true
+    },
+    {
+      "table": "fare_media",
+      "matches": true
+    },
+    {
+      "table": "fare_products",
+      "matches": true
+    },
+    {
+      "table": "fare_transfer_rules",
+      "matches": true
+    },
+    {
+      "table": "feed_info",
+      "matches": true
+    },
+    {
+      "table": "levels",
+      "matches": true
+    },
+    {
+      "table": "mtc_feed_versions",
+      "matches": true
+    },
+    {
+      "table": "pathways",
+      "matches": true
+    },
+    {
+      "table": "rider_categories",
+      "matches": true
+    },
+    {
+      "table": "route_attributes",
+      "matches": true
+    },
+    {
+      "table": "routes",
+      "matches": true
+    },
+    {
+      "table": "shapes",
+      "matches": true
+    },
+    {
+      "table": "stop_areas",
+      "matches": true
+    },
+    {
+      "table": "stop_times",
+      "matches": true
+    },
+    {
+      "table": "stops",
+      "matches": true
+    },
+    {
+      "table": "timeframes",
+      "matches": true
+    },
+    {
+      "table": "transfers",
+      "matches": true
+    },
+    {
+      "table": "trips",
+      "matches": true
+    }
+  ],
+  "keys": [
+    {
+      "table": "agency",
+      "key": [
+        "agency_id"
+      ],
+      "basis": "GTFS Schedule",
+      "duplicate_key_groups": 0,
+      "missing_required_records": 0
+    },
+    {
+      "table": "areas",
+      "key": [
+        "area_id"
+      ],
+      "basis": "GTFS Schedule",
+      "duplicate_key_groups": 0,
+      "missing_required_records": 0
+    },
+    {
+      "table": "attributions",
+      "key": [
+        "attribution_id"
+      ],
+      "basis": "GTFS Schedule",
+      "duplicate_key_groups": 0,
+      "missing_required_records": 0
+    },
+    {
+      "table": "calendar",
+      "key": [
+        "service_id"
+      ],
+      "basis": "GTFS Schedule",
+      "duplicate_key_groups": 0,
+      "missing_required_records": 0
+    },
+    {
+      "table": "calendar_attributes",
+      "key": [
+        "service_id"
+      ],
+      "basis": "provider or Phase 2 candidate",
+      "duplicate_key_groups": 0,
+      "missing_required_records": 0
+    },
+    {
+      "table": "calendar_dates",
+      "key": [
+        "service_id",
+        "date"
+      ],
+      "basis": "GTFS Schedule",
+      "duplicate_key_groups": 0,
+      "missing_required_records": 0
+    },
+    {
+      "table": "directions",
+      "key": [
+        "route_id",
+        "direction_id"
+      ],
+      "basis": "provider or Phase 2 candidate",
+      "duplicate_key_groups": 0,
+      "missing_required_records": 0
+    },
+    {
+      "table": "fare_leg_join_rules",
+      "key": [
+        "from_network_id",
+        "to_network_id",
+        "from_stop_id",
+        "to_stop_id"
+      ],
+      "basis": "GTFS Schedule",
+      "duplicate_key_groups": 0,
+      "missing_required_records": 0
+    },
+    {
+      "table": "fare_leg_rules",
+      "key": [
+        "network_id",
+        "from_area_id",
+        "to_area_id",
+        "from_timeframe_group_id",
+        "to_timeframe_group_id",
+        "fare_product_id"
+      ],
+      "basis": "GTFS Schedule",
+      "duplicate_key_groups": 0,
+      "missing_required_records": 0
+    },
+    {
+      "table": "fare_media",
+      "key": [
+        "fare_media_id"
+      ],
+      "basis": "GTFS Schedule",
+      "duplicate_key_groups": 0,
+      "missing_required_records": 0
+    },
+    {
+      "table": "fare_products",
+      "key": [
+        "fare_product_id",
+        "rider_category_id",
+        "fare_media_id"
+      ],
+      "basis": "GTFS Schedule",
+      "duplicate_key_groups": 0,
+      "missing_required_records": 0
+    },
+    {
+      "table": "fare_transfer_rules",
+      "key": [
+        "from_leg_group_id",
+        "to_leg_group_id",
+        "fare_product_id",
+        "transfer_count",
+        "duration_limit"
+      ],
+      "basis": "GTFS Schedule",
+      "duplicate_key_groups": 0,
+      "missing_required_records": 0
+    },
+    {
+      "table": "feed_info",
+      "key": [
+        "none"
+      ],
+      "basis": "GTFS Schedule",
+      "duplicate_key_groups": 0,
+      "missing_required_records": 0
+    },
+    {
+      "table": "levels",
+      "key": [
+        "level_id"
+      ],
+      "basis": "GTFS Schedule",
+      "duplicate_key_groups": 0,
+      "missing_required_records": 0
+    },
+    {
+      "table": "mtc_feed_versions",
+      "key": [
+        "agency_id"
+      ],
+      "basis": "provider or Phase 2 candidate",
+      "duplicate_key_groups": 0,
+      "missing_required_records": 0
+    },
+    {
+      "table": "pathways",
+      "key": [
+        "pathway_id"
+      ],
+      "basis": "GTFS Schedule",
+      "duplicate_key_groups": 0,
+      "missing_required_records": 0
+    },
+    {
+      "table": "rider_categories",
+      "key": [
+        "rider_category_id"
+      ],
+      "basis": "GTFS Schedule",
+      "duplicate_key_groups": 0,
+      "missing_required_records": 0
+    },
+    {
+      "table": "route_attributes",
+      "key": [
+        "route_id"
+      ],
+      "basis": "provider or Phase 2 candidate",
+      "duplicate_key_groups": 0,
+      "missing_required_records": 0
+    },
+    {
+      "table": "routes",
+      "key": [
+        "route_id"
+      ],
+      "basis": "GTFS Schedule",
+      "duplicate_key_groups": 0,
+      "missing_required_records": 0
+    },
+    {
+      "table": "shapes",
+      "key": [
+        "shape_id",
+        "shape_pt_sequence"
+      ],
+      "basis": "GTFS Schedule",
+      "duplicate_key_groups": 0,
+      "missing_required_records": 0
+    },
+    {
+      "table": "stop_areas",
+      "key": [
+        "area_id",
+        "stop_id"
+      ],
+      "basis": "GTFS Schedule",
+      "duplicate_key_groups": 0,
+      "missing_required_records": 0
+    },
+    {
+      "table": "stop_times",
+      "key": [
+        "trip_id",
+        "stop_sequence"
+      ],
+      "basis": "GTFS Schedule",
+      "duplicate_key_groups": 0,
+      "missing_required_records": 0
+    },
+    {
+      "table": "stops",
+      "key": [
+        "stop_id"
+      ],
+      "basis": "GTFS Schedule",
+      "duplicate_key_groups": 0,
+      "missing_required_records": 0
+    },
+    {
+      "table": "timeframes",
+      "key": [
+        "timeframe_group_id",
+        "start_time",
+        "end_time",
+        "service_id"
+      ],
+      "basis": "GTFS Schedule",
+      "duplicate_key_groups": 0,
+      "missing_required_records": 0
+    },
+    {
+      "table": "transfers",
+      "key": [
+        "from_stop_id",
+        "to_stop_id",
+        "from_trip_id",
+        "to_trip_id",
+        "from_route_id",
+        "to_route_id"
+      ],
+      "basis": "GTFS Schedule",
+      "duplicate_key_groups": 0,
+      "missing_required_records": 0
+    },
+    {
+      "table": "trips",
+      "key": [
+        "trip_id"
+      ],
+      "basis": "GTFS Schedule",
+      "duplicate_key_groups": 0,
+      "missing_required_records": 0
+    }
+  ],
+  "foreign_keys": [
+    {
+      "file": "attributions.txt",
+      "field": "agency_id",
+      "target": [
+        "agency.agency_id"
+      ],
+      "source_records": 1,
+      "populated_references": 0,
+      "valid_references": 0,
+      "invalid_references": 0,
+      "missing_required_references": 0,
+      "blank_optional_references": 1,
+      "source_column_present": true,
+      "applicable_references": 0,
+      "orphan_records": 0,
+      "integrity_percentage": null,
+      "invalid_examples": []
+    },
+    {
+      "file": "attributions.txt",
+      "field": "route_id",
+      "target": [
+        "routes.route_id"
+      ],
+      "source_records": 1,
+      "populated_references": 0,
+      "valid_references": 0,
+      "invalid_references": 0,
+      "missing_required_references": 0,
+      "blank_optional_references": 1,
+      "source_column_present": true,
+      "applicable_references": 0,
+      "orphan_records": 0,
+      "integrity_percentage": null,
+      "invalid_examples": []
+    },
+    {
+      "file": "attributions.txt",
+      "field": "trip_id",
+      "target": [
+        "trips.trip_id"
+      ],
+      "source_records": 1,
+      "populated_references": 0,
+      "valid_references": 0,
+      "invalid_references": 0,
+      "missing_required_references": 0,
+      "blank_optional_references": 1,
+      "source_column_present": true,
+      "applicable_references": 0,
+      "orphan_records": 0,
+      "integrity_percentage": null,
+      "invalid_examples": []
+    },
+    {
+      "file": "calendar_attributes.txt",
+      "field": "service_id",
+      "target": [
+        "calendar.service_id"
+      ],
+      "source_records": 449,
+      "populated_references": 449,
+      "valid_references": 449,
+      "invalid_references": 0,
+      "missing_required_references": 0,
+      "blank_optional_references": 0,
+      "source_column_present": true,
+      "applicable_references": 449,
+      "orphan_records": 0,
+      "integrity_percentage": 100.0,
+      "invalid_examples": []
+    },
+    {
+      "file": "calendar_dates.txt",
+      "field": "service_id",
+      "target": [
+        "service_ids.service_id"
+      ],
+      "source_records": 5706,
+      "populated_references": 5706,
+      "valid_references": 5706,
+      "invalid_references": 0,
+      "missing_required_references": 0,
+      "blank_optional_references": 0,
+      "source_column_present": true,
+      "applicable_references": 5706,
+      "orphan_records": 0,
+      "integrity_percentage": 100.0,
+      "invalid_examples": []
+    },
+    {
+      "file": "directions.txt",
+      "field": "route_id",
+      "target": [
+        "routes.route_id"
+      ],
+      "source_records": 1182,
+      "populated_references": 1182,
+      "valid_references": 1182,
+      "invalid_references": 0,
+      "missing_required_references": 0,
+      "blank_optional_references": 0,
+      "source_column_present": true,
+      "applicable_references": 1182,
+      "orphan_records": 0,
+      "integrity_percentage": 100.0,
+      "invalid_examples": []
+    },
+    {
+      "file": "fare_leg_join_rules.txt",
+      "field": "from_network_id",
+      "target": [
+        "routes.network_id",
+        "networks.network_id"
+      ],
+      "source_records": 5,
+      "populated_references": 5,
+      "valid_references": 5,
+      "invalid_references": 0,
+      "missing_required_references": 0,
+      "blank_optional_references": 0,
+      "source_column_present": true,
+      "applicable_references": 5,
+      "orphan_records": 0,
+      "integrity_percentage": 100.0,
+      "invalid_examples": []
+    },
+    {
+      "file": "fare_leg_join_rules.txt",
+      "field": "to_network_id",
+      "target": [
+        "routes.network_id",
+        "networks.network_id"
+      ],
+      "source_records": 5,
+      "populated_references": 5,
+      "valid_references": 5,
+      "invalid_references": 0,
+      "missing_required_references": 0,
+      "blank_optional_references": 0,
+      "source_column_present": true,
+      "applicable_references": 5,
+      "orphan_records": 0,
+      "integrity_percentage": 100.0,
+      "invalid_examples": []
+    },
+    {
+      "file": "fare_leg_join_rules.txt",
+      "field": "from_stop_id",
+      "target": [
+        "stops.stop_id"
+      ],
+      "source_records": 5,
+      "populated_references": 0,
+      "valid_references": 0,
+      "invalid_references": 0,
+      "missing_required_references": 0,
+      "blank_optional_references": 5,
+      "source_column_present": true,
+      "applicable_references": 0,
+      "orphan_records": 0,
+      "integrity_percentage": null,
+      "invalid_examples": []
+    },
+    {
+      "file": "fare_leg_join_rules.txt",
+      "field": "to_stop_id",
+      "target": [
+        "stops.stop_id"
+      ],
+      "source_records": 5,
+      "populated_references": 0,
+      "valid_references": 0,
+      "invalid_references": 0,
+      "missing_required_references": 0,
+      "blank_optional_references": 5,
+      "source_column_present": true,
+      "applicable_references": 0,
+      "orphan_records": 0,
+      "integrity_percentage": null,
+      "invalid_examples": []
+    },
+    {
+      "file": "fare_leg_rules.txt",
+      "field": "network_id",
+      "target": [
+        "routes.network_id",
+        "networks.network_id"
+      ],
+      "source_records": 3610,
+      "populated_references": 3610,
+      "valid_references": 3610,
+      "invalid_references": 0,
+      "missing_required_references": 0,
+      "blank_optional_references": 0,
+      "source_column_present": true,
+      "applicable_references": 3610,
+      "orphan_records": 0,
+      "integrity_percentage": 100.0,
+      "invalid_examples": []
+    },
+    {
+      "file": "fare_leg_rules.txt",
+      "field": "from_area_id",
+      "target": [
+        "areas.area_id"
+      ],
+      "source_records": 3610,
+      "populated_references": 3610,
+      "valid_references": 3610,
+      "invalid_references": 0,
+      "missing_required_references": 0,
+      "blank_optional_references": 0,
+      "source_column_present": true,
+      "applicable_references": 3610,
+      "orphan_records": 0,
+      "integrity_percentage": 100.0,
+      "invalid_examples": []
+    },
+    {
+      "file": "fare_leg_rules.txt",
+      "field": "to_area_id",
+      "target": [
+        "areas.area_id"
+      ],
+      "source_records": 3610,
+      "populated_references": 3610,
+      "valid_references": 3610,
+      "invalid_references": 0,
+      "missing_required_references": 0,
+      "blank_optional_references": 0,
+      "source_column_present": true,
+      "applicable_references": 3610,
+      "orphan_records": 0,
+      "integrity_percentage": 100.0,
+      "invalid_examples": []
+    },
+    {
+      "file": "fare_leg_rules.txt",
+      "field": "from_timeframe_group_id",
+      "target": [
+        "timeframes.timeframe_group_id"
+      ],
+      "source_records": 3610,
+      "populated_references": 2,
+      "valid_references": 2,
+      "invalid_references": 0,
+      "missing_required_references": 0,
+      "blank_optional_references": 3608,
+      "source_column_present": true,
+      "applicable_references": 2,
+      "orphan_records": 0,
+      "integrity_percentage": 100.0,
+      "invalid_examples": []
+    },
+    {
+      "file": "fare_leg_rules.txt",
+      "field": "to_timeframe_group_id",
+      "target": [
+        "timeframes.timeframe_group_id"
+      ],
+      "source_records": 3610,
+      "populated_references": 0,
+      "valid_references": 0,
+      "invalid_references": 0,
+      "missing_required_references": 0,
+      "blank_optional_references": 3610,
+      "source_column_present": true,
+      "applicable_references": 0,
+      "orphan_records": 0,
+      "integrity_percentage": null,
+      "invalid_examples": []
+    },
+    {
+      "file": "fare_leg_rules.txt",
+      "field": "fare_product_id",
+      "target": [
+        "fare_products.fare_product_id"
+      ],
+      "source_records": 3610,
+      "populated_references": 3610,
+      "valid_references": 3610,
+      "invalid_references": 0,
+      "missing_required_references": 0,
+      "blank_optional_references": 0,
+      "source_column_present": true,
+      "applicable_references": 3610,
+      "orphan_records": 0,
+      "integrity_percentage": 100.0,
+      "invalid_examples": []
+    },
+    {
+      "file": "fare_products.txt",
+      "field": "rider_category_id",
+      "target": [
+        "rider_categories.rider_category_id"
+      ],
+      "source_records": 11545,
+      "populated_references": 11540,
+      "valid_references": 11540,
+      "invalid_references": 0,
+      "missing_required_references": 0,
+      "blank_optional_references": 5,
+      "source_column_present": true,
+      "applicable_references": 11540,
+      "orphan_records": 0,
+      "integrity_percentage": 100.0,
+      "invalid_examples": []
+    },
+    {
+      "file": "fare_products.txt",
+      "field": "fare_media_id",
+      "target": [
+        "fare_media.fare_media_id"
+      ],
+      "source_records": 11545,
+      "populated_references": 11542,
+      "valid_references": 11542,
+      "invalid_references": 0,
+      "missing_required_references": 0,
+      "blank_optional_references": 3,
+      "source_column_present": true,
+      "applicable_references": 11542,
+      "orphan_records": 0,
+      "integrity_percentage": 100.0,
+      "invalid_examples": []
+    },
+    {
+      "file": "fare_transfer_rules.txt",
+      "field": "from_leg_group_id",
+      "target": [
+        "fare_leg_rules.leg_group_id"
+      ],
+      "source_records": 160,
+      "populated_references": 160,
+      "valid_references": 160,
+      "invalid_references": 0,
+      "missing_required_references": 0,
+      "blank_optional_references": 0,
+      "source_column_present": true,
+      "applicable_references": 160,
+      "orphan_records": 0,
+      "integrity_percentage": 100.0,
+      "invalid_examples": []
+    },
+    {
+      "file": "fare_transfer_rules.txt",
+      "field": "to_leg_group_id",
+      "target": [
+        "fare_leg_rules.leg_group_id"
+      ],
+      "source_records": 160,
+      "populated_references": 160,
+      "valid_references": 160,
+      "invalid_references": 0,
+      "missing_required_references": 0,
+      "blank_optional_references": 0,
+      "source_column_present": true,
+      "applicable_references": 160,
+      "orphan_records": 0,
+      "integrity_percentage": 100.0,
+      "invalid_examples": []
+    },
+    {
+      "file": "fare_transfer_rules.txt",
+      "field": "fare_product_id",
+      "target": [
+        "fare_products.fare_product_id"
+      ],
+      "source_records": 160,
+      "populated_references": 160,
+      "valid_references": 160,
+      "invalid_references": 0,
+      "missing_required_references": 0,
+      "blank_optional_references": 0,
+      "source_column_present": true,
+      "applicable_references": 160,
+      "orphan_records": 0,
+      "integrity_percentage": 100.0,
+      "invalid_examples": []
+    },
+    {
+      "file": "mtc_feed_versions.txt",
+      "field": "agency_id",
+      "target": [
+        "agency.agency_id"
+      ],
+      "source_records": 41,
+      "populated_references": 41,
+      "valid_references": 41,
+      "invalid_references": 0,
+      "missing_required_references": 0,
+      "blank_optional_references": 0,
+      "source_column_present": true,
+      "applicable_references": 41,
+      "orphan_records": 0,
+      "integrity_percentage": 100.0,
+      "invalid_examples": []
+    },
+    {
+      "file": "pathways.txt",
+      "field": "from_stop_id",
+      "target": [
+        "stops.stop_id"
+      ],
+      "source_records": 1632,
+      "populated_references": 1632,
+      "valid_references": 1632,
+      "invalid_references": 0,
+      "missing_required_references": 0,
+      "blank_optional_references": 0,
+      "source_column_present": true,
+      "applicable_references": 1632,
+      "orphan_records": 0,
+      "integrity_percentage": 100.0,
+      "invalid_examples": []
+    },
+    {
+      "file": "pathways.txt",
+      "field": "to_stop_id",
+      "target": [
+        "stops.stop_id"
+      ],
+      "source_records": 1632,
+      "populated_references": 1632,
+      "valid_references": 1632,
+      "invalid_references": 0,
+      "missing_required_references": 0,
+      "blank_optional_references": 0,
+      "source_column_present": true,
+      "applicable_references": 1632,
+      "orphan_records": 0,
+      "integrity_percentage": 100.0,
+      "invalid_examples": []
+    },
+    {
+      "file": "route_attributes.txt",
+      "field": "route_id",
+      "target": [
+        "routes.route_id"
+      ],
+      "source_records": 327,
+      "populated_references": 327,
+      "valid_references": 327,
+      "invalid_references": 0,
+      "missing_required_references": 0,
+      "blank_optional_references": 0,
+      "source_column_present": true,
+      "applicable_references": 327,
+      "orphan_records": 0,
+      "integrity_percentage": 100.0,
+      "invalid_examples": []
+    },
+    {
+      "file": "routes.txt",
+      "field": "agency_id",
+      "target": [
+        "agency.agency_id"
+      ],
+      "source_records": 665,
+      "populated_references": 665,
+      "valid_references": 665,
+      "invalid_references": 0,
+      "missing_required_references": 0,
+      "blank_optional_references": 0,
+      "source_column_present": true,
+      "applicable_references": 665,
+      "orphan_records": 0,
+      "integrity_percentage": 100.0,
+      "invalid_examples": []
+    },
+    {
+      "file": "stop_areas.txt",
+      "field": "area_id",
+      "target": [
+        "areas.area_id"
+      ],
+      "source_records": 33164,
+      "populated_references": 33164,
+      "valid_references": 33164,
+      "invalid_references": 0,
+      "missing_required_references": 0,
+      "blank_optional_references": 0,
+      "source_column_present": true,
+      "applicable_references": 33164,
+      "orphan_records": 0,
+      "integrity_percentage": 100.0,
+      "invalid_examples": []
+    },
+    {
+      "file": "stop_areas.txt",
+      "field": "stop_id",
+      "target": [
+        "stops.stop_id"
+      ],
+      "source_records": 33164,
+      "populated_references": 33164,
+      "valid_references": 33164,
+      "invalid_references": 0,
+      "missing_required_references": 0,
+      "blank_optional_references": 0,
+      "source_column_present": true,
+      "applicable_references": 33164,
+      "orphan_records": 0,
+      "integrity_percentage": 100.0,
+      "invalid_examples": []
+    },
+    {
+      "file": "stop_times.txt",
+      "field": "trip_id",
+      "target": [
+        "trips.trip_id"
+      ],
+      "source_records": 3185115,
+      "populated_references": 3185115,
+      "valid_references": 3185115,
+      "invalid_references": 0,
+      "missing_required_references": 0,
+      "blank_optional_references": 0,
+      "source_column_present": true,
+      "applicable_references": 3185115,
+      "orphan_records": 0,
+      "integrity_percentage": 100.0,
+      "invalid_examples": []
+    },
+    {
+      "file": "stop_times.txt",
+      "field": "stop_id",
+      "target": [
+        "stops.stop_id"
+      ],
+      "source_records": 3185115,
+      "populated_references": 3185115,
+      "valid_references": 3185115,
+      "invalid_references": 0,
+      "missing_required_references": 0,
+      "blank_optional_references": 0,
+      "source_column_present": true,
+      "applicable_references": 3185115,
+      "orphan_records": 0,
+      "integrity_percentage": 100.0,
+      "invalid_examples": []
+    },
+    {
+      "file": "stop_times.txt",
+      "field": "location_group_id",
+      "target": [
+        "location_groups.location_group_id"
+      ],
+      "source_records": 3185115,
+      "populated_references": 0,
+      "valid_references": 0,
+      "invalid_references": 0,
+      "missing_required_references": 0,
+      "blank_optional_references": 3185115,
+      "source_column_present": true,
+      "applicable_references": 0,
+      "orphan_records": 0,
+      "integrity_percentage": null,
+      "invalid_examples": []
+    },
+    {
+      "file": "stop_times.txt",
+      "field": "location_id",
+      "target": [
+        "locations.id"
+      ],
+      "source_records": 3185115,
+      "populated_references": 0,
+      "valid_references": 0,
+      "invalid_references": 0,
+      "missing_required_references": 0,
+      "blank_optional_references": 3185115,
+      "source_column_present": true,
+      "applicable_references": 0,
+      "orphan_records": 0,
+      "integrity_percentage": null,
+      "invalid_examples": []
+    },
+    {
+      "file": "stop_times.txt",
+      "field": "pickup_booking_rule_id",
+      "target": [
+        "booking_rules.booking_rule_id"
+      ],
+      "source_records": 3185115,
+      "populated_references": 0,
+      "valid_references": 0,
+      "invalid_references": 0,
+      "missing_required_references": 0,
+      "blank_optional_references": 3185115,
+      "source_column_present": true,
+      "applicable_references": 0,
+      "orphan_records": 0,
+      "integrity_percentage": null,
+      "invalid_examples": []
+    },
+    {
+      "file": "stop_times.txt",
+      "field": "drop_off_booking_rule_id",
+      "target": [
+        "booking_rules.booking_rule_id"
+      ],
+      "source_records": 3185115,
+      "populated_references": 0,
+      "valid_references": 0,
+      "invalid_references": 0,
+      "missing_required_references": 0,
+      "blank_optional_references": 3185115,
+      "source_column_present": true,
+      "applicable_references": 0,
+      "orphan_records": 0,
+      "integrity_percentage": null,
+      "invalid_examples": []
+    },
+    {
+      "file": "stops.txt",
+      "field": "parent_station",
+      "target": [
+        "stops.stop_id"
+      ],
+      "source_records": 21664,
+      "populated_references": 2222,
+      "valid_references": 2222,
+      "invalid_references": 0,
+      "missing_required_references": 0,
+      "blank_optional_references": 19442,
+      "source_column_present": true,
+      "applicable_references": 2222,
+      "orphan_records": 0,
+      "integrity_percentage": 100.0,
+      "invalid_examples": []
+    },
+    {
+      "file": "stops.txt",
+      "field": "level_id",
+      "target": [
+        "levels.level_id"
+      ],
+      "source_records": 21664,
+      "populated_references": 1426,
+      "valid_references": 1426,
+      "invalid_references": 0,
+      "missing_required_references": 0,
+      "blank_optional_references": 20238,
+      "source_column_present": true,
+      "applicable_references": 1426,
+      "orphan_records": 0,
+      "integrity_percentage": 100.0,
+      "invalid_examples": []
+    },
+    {
+      "file": "timeframes.txt",
+      "field": "service_id",
+      "target": [
+        "service_ids.service_id"
+      ],
+      "source_records": 3,
+      "populated_references": 3,
+      "valid_references": 3,
+      "invalid_references": 0,
+      "missing_required_references": 0,
+      "blank_optional_references": 0,
+      "source_column_present": true,
+      "applicable_references": 3,
+      "orphan_records": 0,
+      "integrity_percentage": 100.0,
+      "invalid_examples": []
+    },
+    {
+      "file": "transfers.txt",
+      "field": "from_stop_id",
+      "target": [
+        "stops.stop_id"
+      ],
+      "source_records": 61,
+      "populated_references": 61,
+      "valid_references": 61,
+      "invalid_references": 0,
+      "missing_required_references": 0,
+      "blank_optional_references": 0,
+      "source_column_present": true,
+      "applicable_references": 61,
+      "orphan_records": 0,
+      "integrity_percentage": 100.0,
+      "invalid_examples": []
+    },
+    {
+      "file": "transfers.txt",
+      "field": "to_stop_id",
+      "target": [
+        "stops.stop_id"
+      ],
+      "source_records": 61,
+      "populated_references": 61,
+      "valid_references": 61,
+      "invalid_references": 0,
+      "missing_required_references": 0,
+      "blank_optional_references": 0,
+      "source_column_present": true,
+      "applicable_references": 61,
+      "orphan_records": 0,
+      "integrity_percentage": 100.0,
+      "invalid_examples": []
+    },
+    {
+      "file": "transfers.txt",
+      "field": "from_route_id",
+      "target": [
+        "routes.route_id"
+      ],
+      "source_records": 61,
+      "populated_references": 44,
+      "valid_references": 44,
+      "invalid_references": 0,
+      "missing_required_references": 0,
+      "blank_optional_references": 17,
+      "source_column_present": true,
+      "applicable_references": 44,
+      "orphan_records": 0,
+      "integrity_percentage": 100.0,
+      "invalid_examples": []
+    },
+    {
+      "file": "transfers.txt",
+      "field": "to_route_id",
+      "target": [
+        "routes.route_id"
+      ],
+      "source_records": 61,
+      "populated_references": 44,
+      "valid_references": 44,
+      "invalid_references": 0,
+      "missing_required_references": 0,
+      "blank_optional_references": 17,
+      "source_column_present": true,
+      "applicable_references": 44,
+      "orphan_records": 0,
+      "integrity_percentage": 100.0,
+      "invalid_examples": []
+    },
+    {
+      "file": "transfers.txt",
+      "field": "from_trip_id",
+      "target": [
+        "trips.trip_id"
+      ],
+      "source_records": 61,
+      "populated_references": 0,
+      "valid_references": 0,
+      "invalid_references": 0,
+      "missing_required_references": 0,
+      "blank_optional_references": 61,
+      "source_column_present": true,
+      "applicable_references": 0,
+      "orphan_records": 0,
+      "integrity_percentage": null,
+      "invalid_examples": []
+    },
+    {
+      "file": "transfers.txt",
+      "field": "to_trip_id",
+      "target": [
+        "trips.trip_id"
+      ],
+      "source_records": 61,
+      "populated_references": 0,
+      "valid_references": 0,
+      "invalid_references": 0,
+      "missing_required_references": 0,
+      "blank_optional_references": 61,
+      "source_column_present": true,
+      "applicable_references": 0,
+      "orphan_records": 0,
+      "integrity_percentage": null,
+      "invalid_examples": []
+    },
+    {
+      "file": "trips.txt",
+      "field": "route_id",
+      "target": [
+        "routes.route_id"
+      ],
+      "source_records": 92827,
+      "populated_references": 92827,
+      "valid_references": 92827,
+      "invalid_references": 0,
+      "missing_required_references": 0,
+      "blank_optional_references": 0,
+      "source_column_present": true,
+      "applicable_references": 92827,
+      "orphan_records": 0,
+      "integrity_percentage": 100.0,
+      "invalid_examples": []
+    },
+    {
+      "file": "trips.txt",
+      "field": "service_id",
+      "target": [
+        "service_ids.service_id"
+      ],
+      "source_records": 92827,
+      "populated_references": 92827,
+      "valid_references": 92827,
+      "invalid_references": 0,
+      "missing_required_references": 0,
+      "blank_optional_references": 0,
+      "source_column_present": true,
+      "applicable_references": 92827,
+      "orphan_records": 0,
+      "integrity_percentage": 100.0,
+      "invalid_examples": []
+    },
+    {
+      "file": "trips.txt",
+      "field": "shape_id",
+      "target": [
+        "shapes.shape_id"
+      ],
+      "source_records": 92827,
+      "populated_references": 91296,
+      "valid_references": 91296,
+      "invalid_references": 0,
+      "missing_required_references": 0,
+      "blank_optional_references": 1531,
+      "source_column_present": true,
+      "applicable_references": 91296,
+      "orphan_records": 0,
+      "integrity_percentage": 100.0,
+      "invalid_examples": []
+    }
+  ],
+  "reference_regressions": [],
+  "conditional_checks": [
+    {
+      "file": "agency.txt",
+      "check": "Multi-agency feed requires an agency ID for each agency",
+      "basis": "GTFS Schedule",
+      "affected_records": 0,
+      "severity_if_present": "HIGH",
+      "examples": []
+    },
+    {
+      "file": "routes.txt",
+      "check": "Route requires a short or long name",
+      "basis": "GTFS Schedule",
+      "affected_records": 0,
+      "severity_if_present": "MEDIUM",
+      "examples": []
+    },
+    {
+      "file": "stops.txt",
+      "check": "Stops, stations and entrances require names",
+      "basis": "GTFS Schedule",
+      "affected_records": 0,
+      "severity_if_present": "MEDIUM",
+      "examples": []
+    },
+    {
+      "file": "timeframes.txt",
+      "check": "Timeframe endpoints must be provided together",
+      "basis": "GTFS Schedule",
+      "affected_records": 0,
+      "severity_if_present": "MEDIUM",
+      "examples": []
+    },
+    {
+      "file": "timeframes.txt",
+      "check": "Populated timeframe start must precede its end",
+      "basis": "GTFS Schedule",
+      "affected_records": 0,
+      "severity_if_present": "MEDIUM",
+      "examples": []
+    },
+    {
+      "file": "attributions.txt",
+      "check": "Attribution scope must select at most one of agency, route and trip",
+      "basis": "GTFS Schedule",
+      "affected_records": 0,
+      "severity_if_present": "MEDIUM",
+      "examples": []
+    },
+    {
+      "file": "attributions.txt",
+      "check": "Attribution requires a producer, operator or authority role",
+      "basis": "GTFS Schedule",
+      "affected_records": 0,
+      "severity_if_present": "MEDIUM",
+      "examples": []
+    },
+    {
+      "file": "transfers.txt",
+      "check": "Type 2 transfers require minimum transfer time",
+      "basis": "GTFS Schedule",
+      "affected_records": 0,
+      "severity_if_present": "MEDIUM",
+      "examples": []
+    },
+    {
+      "file": "transfers.txt",
+      "check": "from trip and route must describe the same service",
+      "basis": "GTFS Schedule",
+      "affected_records": 0,
+      "severity_if_present": "HIGH",
+      "examples": []
+    },
+    {
+      "file": "transfers.txt",
+      "check": "to trip and route must describe the same service",
+      "basis": "GTFS Schedule",
+      "affected_records": 0,
+      "severity_if_present": "HIGH",
+      "examples": []
+    },
+    {
+      "file": "fare_transfer_rules.txt",
+      "check": "Mutually specified leg groups constrain transfer_count",
+      "basis": "GTFS Schedule",
+      "affected_records": 0,
+      "severity_if_present": "MEDIUM",
+      "examples": []
+    },
+    {
+      "file": "fare_transfer_rules.txt",
+      "check": "Duration limit and duration type must be provided together",
+      "basis": "GTFS Schedule",
+      "affected_records": 0,
+      "severity_if_present": "MEDIUM",
+      "examples": []
+    },
+    {
+      "file": "directions.txt",
+      "check": "Route and direction pair has no matching scheduled trip",
+      "basis": "511 Data Exchange",
+      "affected_records": 0,
+      "severity_if_present": "MEDIUM",
+      "examples": []
+    }
+  ],
+  "canonical_mappings": {
+    "records": 118128,
+    "collisions": 0,
+    "duplicate_source_keys": 0,
+    "noncanonical_encodings": 0,
+    "roundtrip_failures": 0,
+    "snapshot_mismatches": 0,
+    "missing_source_mappings": 0,
+    "extra_mappings": 0,
+    "coverage": [
+      {
+        "entity_type": "agency",
+        "mappings": 41,
+        "leading_zero_ids": 0,
+        "ids_with_colons": 0
+      },
+      {
+        "entity_type": "route",
+        "mappings": 665,
+        "leading_zero_ids": 0,
+        "ids_with_colons": 665
+      },
+      {
+        "entity_type": "service",
+        "mappings": 485,
+        "leading_zero_ids": 0,
+        "ids_with_colons": 485
+      },
+      {
+        "entity_type": "shape",
+        "mappings": 2446,
+        "leading_zero_ids": 0,
+        "ids_with_colons": 2446
+      },
+      {
+        "entity_type": "stop",
+        "mappings": 21664,
+        "leading_zero_ids": 0,
+        "ids_with_colons": 1915
+      },
+      {
+        "entity_type": "trip",
+        "mappings": 92827,
+        "leading_zero_ids": 0,
+        "ids_with_colons": 92827
+      }
+    ],
+    "stop_suffix_collision_groups_preserved": 364,
+    "derived_reference_errors": {
+      "route_stops": 0,
+      "agency_stops": 0,
+      "trip_selector_context": 0,
+      "stop_alias_candidates": 0
+    }
+  },
+  "associations": {
+    "route_stop_pairs": 33985,
+    "agency_stop_pairs": 19904,
+    "multi_agency_stops": 189,
+    "scheduled_stop_visits": 3185115,
+    "trip_selector_context_rows": 92827,
+    "timetable_stop_visits": 3185115,
+    "duplicate_route_stop_keys": 0,
+    "duplicate_agency_stop_keys": 0,
+    "duplicate_trip_context_keys": 0
+  },
+  "temporal": {
+    "stop_times": {
+      "records": 3185115,
+      "arrivals_above_24h": 100912,
+      "departures_above_24h": 100948,
+      "missing_arrivals": 15109,
+      "missing_departures": 15109,
+      "max_arrival_seconds": 111180,
+      "max_departure_seconds": 111180,
+      "conversion_mismatches": 0
+    },
+    "validation_errors": {
+      "missing_required_arrivals": 0,
+      "missing_required_departures": 0,
+      "time_order_violations": 0,
+      "invalid_location_selectors": 0,
+      "mixed_times_and_windows": 0,
+      "missing_window_endpoints": 0,
+      "time_conversion_mismatches": 0,
+      "reversed_calendar_ranges": 0
+    },
+    "service_ids": 485,
+    "calendar_exception_rows": 5706,
+    "service_date_expansion": false,
+    "agency_timezones": [
+      {
+        "agency_timezone": "America/Los_Angeles",
+        "agencies": 41
+      }
+    ],
+    "calendar": {
+      "earliest_base_start": "2021-06-22",
+      "latest_base_end": "2099-12-31",
+      "rows": 485,
+      "reversed_ranges": 0
+    },
+    "calendar_end_2099": [
+      {
+        "service_id": "PE:72836",
+        "start_date": "2026-08-10",
+        "end_date": "2099-12-31",
+        "trip_templates": 238
+      },
+      {
+        "service_id": "PE:72837",
+        "start_date": "2026-08-10",
+        "end_date": "2099-12-31",
+        "trip_templates": 239
+      },
+      {
+        "service_id": "PE:78571",
+        "start_date": "2026-08-10",
+        "end_date": "2099-12-31",
+        "trip_templates": 241
+      },
+      {
+        "service_id": "PG:80067",
+        "start_date": "2026-06-27",
+        "end_date": "2099-12-31",
+        "trip_templates": 56
+      },
+      {
+        "service_id": "PG:80068",
+        "start_date": "2022-05-30",
+        "end_date": "2099-12-31",
+        "trip_templates": 32
+      }
+    ]
+  },
+  "source_projection_checks": [
+    {
+      "table": "agency",
+      "matches": true,
+      "verified_columns": [
+        "source_record",
+        "agency_id",
+        "agency_name",
+        "agency_url",
+        "agency_timezone",
+        "agency_lang",
+        "agency_phone",
+        "agency_fare_url",
+        "agency_email",
+        "cemv_support",
+        "source_empty_typed_fields"
+      ],
+      "expected_records": 41,
+      "reloaded_records": 41,
+      "source_projection_logical_sha256": "1dddc30a26a49b2223fb599192b2ae2e14594e2d7933be92e6b9be5a986b631c"
+    },
+    {
+      "table": "areas",
+      "matches": true,
+      "verified_columns": [
+        "source_record",
+        "area_id",
+        "area_name",
+        "source_empty_typed_fields"
+      ],
+      "expected_records": 678,
+      "reloaded_records": 678,
+      "source_projection_logical_sha256": "1a6f397e62a2f643066123a4952f0b151625968cc8024b610bbe4a4da616fc14"
+    },
+    {
+      "table": "attributions",
+      "matches": true,
+      "verified_columns": [
+        "source_record",
+        "organization_name",
+        "agency_id",
+        "route_id",
+        "trip_id",
+        "is_producer",
+        "is_operator",
+        "is_authority",
+        "attribution_id",
+        "attribution_url",
+        "attribution_email",
+        "attribution_phone",
+        "source_empty_typed_fields"
+      ],
+      "expected_records": 1,
+      "reloaded_records": 1,
+      "source_projection_logical_sha256": "34447cdea65d691c19f2690a3af3dc5165b380b12d15955f55a35a1b1bd7dc0c"
+    },
+    {
+      "table": "calendar",
+      "matches": true,
+      "verified_columns": [
+        "source_record",
+        "service_id",
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday",
+        "sunday",
+        "start_date",
+        "end_date",
+        "source_empty_typed_fields"
+      ],
+      "expected_records": 485,
+      "reloaded_records": 485,
+      "source_projection_logical_sha256": "d281132800d54042d4e949db9faff189db7ec99c6fe43d6c3641201d3fcefd0f"
+    },
+    {
+      "table": "calendar_attributes",
+      "matches": true,
+      "verified_columns": [
+        "source_record",
+        "service_id",
+        "service_description",
+        "source_empty_typed_fields"
+      ],
+      "expected_records": 449,
+      "reloaded_records": 449,
+      "source_projection_logical_sha256": "f1c7bd360ae15b053a6a77a6beed9809067d63d6d2a07f2330ba6de23e5471c7"
+    },
+    {
+      "table": "calendar_dates",
+      "matches": true,
+      "verified_columns": [
+        "source_record",
+        "service_id",
+        "date",
+        "exception_type",
+        "source_empty_typed_fields"
+      ],
+      "expected_records": 5706,
+      "reloaded_records": 5706,
+      "source_projection_logical_sha256": "b2bc41e7050d42080cda761c67a42c60003b55141ba7b19410b6a6b484cb5cc1"
+    },
+    {
+      "table": "directions",
+      "matches": true,
+      "verified_columns": [
+        "source_record",
+        "route_id",
+        "direction_id",
+        "direction",
+        "source_empty_typed_fields"
+      ],
+      "expected_records": 1182,
+      "reloaded_records": 1182,
+      "source_projection_logical_sha256": "15e709179c591eb1cd81b8dafc036dfa13c4c4c36a77ede642c2ba50ed867936"
+    },
+    {
+      "table": "fare_leg_join_rules",
+      "matches": true,
+      "verified_columns": [
+        "source_record",
+        "from_network_id",
+        "to_network_id",
+        "from_stop_id",
+        "to_stop_id",
+        "source_empty_typed_fields"
+      ],
+      "expected_records": 5,
+      "reloaded_records": 5,
+      "source_projection_logical_sha256": "477fcb76484696a7a2f03be953656cf7f213eefd1ec90b27fb8a32b734aab7da"
+    },
+    {
+      "table": "fare_leg_rules",
+      "matches": true,
+      "verified_columns": [
+        "source_record",
+        "leg_group_id",
+        "from_area_id",
+        "to_area_id",
+        "network_id",
+        "fare_product_id",
+        "from_timeframe_group_id",
+        "to_timeframe_group_id",
+        "rule_priority",
+        "transfer_only",
+        "source_empty_typed_fields"
+      ],
+      "expected_records": 3610,
+      "reloaded_records": 3610,
+      "source_projection_logical_sha256": "fe89624052d05b37a34cc81217e36b2702c1d23209d91b94790daaa83fddb036"
+    },
+    {
+      "table": "fare_media",
+      "matches": true,
+      "verified_columns": [
+        "source_record",
+        "fare_media_id",
+        "fare_media_name",
+        "fare_media_type",
+        "source_empty_typed_fields"
+      ],
+      "expected_records": 7,
+      "reloaded_records": 7,
+      "source_projection_logical_sha256": "45ca386eb2436c00facf98c056a695c21dfebd27c9b5e029163ae138cdf30d6e"
+    },
+    {
+      "table": "fare_products",
+      "matches": true,
+      "verified_columns": [
+        "source_record",
+        "fare_product_id",
+        "fare_product_name",
+        "amount",
+        "currency",
+        "duration_start",
+        "duration_amount",
+        "duration_unit",
+        "duration_type",
+        "rider_category_id",
+        "fare_media_id",
+        "source_empty_typed_fields"
+      ],
+      "expected_records": 11545,
+      "reloaded_records": 11545,
+      "source_projection_logical_sha256": "12b304027dbe0d0c4251fc3962dda83b59ffc7f614bd699639dd280fb3ad45a4"
+    },
+    {
+      "table": "fare_transfer_rules",
+      "matches": true,
+      "verified_columns": [
+        "source_record",
+        "from_leg_group_id",
+        "to_leg_group_id",
+        "transfer_count",
+        "duration_limit",
+        "duration_limit_type",
+        "fare_transfer_type",
+        "fare_product_id",
+        "filter_fare_product_id",
+        "source_empty_typed_fields"
+      ],
+      "expected_records": 160,
+      "reloaded_records": 160,
+      "source_projection_logical_sha256": "248d92784aaf445052010f3792b679a8eead1cc5cb5685703184cfecf18cc06e"
+    },
+    {
+      "table": "feed_info",
+      "matches": true,
+      "verified_columns": [
+        "source_record",
+        "feed_publisher_name",
+        "feed_publisher_url",
+        "feed_lang",
+        "feed_version",
+        "feed_start_date",
+        "feed_end_date",
+        "default_lang",
+        "feed_contact_email",
+        "feed_contact_url",
+        "source_empty_typed_fields"
+      ],
+      "expected_records": 1,
+      "reloaded_records": 1,
+      "source_projection_logical_sha256": "3acee746577a4d7742214e5d8f7febc919317ad951a9f4b9e3b6e9f67c280a09"
+    },
+    {
+      "table": "levels",
+      "matches": true,
+      "verified_columns": [
+        "source_record",
+        "level_id",
+        "level_index",
+        "level_name",
+        "source_empty_typed_fields"
+      ],
+      "expected_records": 92,
+      "reloaded_records": 92,
+      "source_projection_logical_sha256": "80e7fe398e1fb51596eb5c6a68d3b5131c58d24ce3b71fa020e609a0942d88df"
+    },
+    {
+      "table": "mtc_feed_versions",
+      "matches": true,
+      "verified_columns": [
+        "source_record",
+        "agency_id",
+        "feed_version",
+        "sha1",
+        "feed_start_date",
+        "feed_end_date",
+        "source_empty_typed_fields"
+      ],
+      "expected_records": 41,
+      "reloaded_records": 41,
+      "source_projection_logical_sha256": "18781cff65c6a83a818c36ed9a1c7595e5cd109e92b4f081468fb7ed6c6dbe18"
+    },
+    {
+      "table": "pathways",
+      "matches": true,
+      "verified_columns": [
+        "source_record",
+        "pathway_id",
+        "from_stop_id",
+        "to_stop_id",
+        "pathway_mode",
+        "is_bidirectional",
+        "length",
+        "traversal_time",
+        "min_width",
+        "max_slope",
+        "stair_count",
+        "signposted_as",
+        "reversed_signposted_as",
+        "source_empty_typed_fields"
+      ],
+      "expected_records": 1632,
+      "reloaded_records": 1632,
+      "source_projection_logical_sha256": "d744025237ee98358ccf305e0ac486e726d0dc6873eda21160b68f4e86f878bd"
+    },
+    {
+      "table": "rider_categories",
+      "matches": true,
+      "verified_columns": [
+        "source_record",
+        "rider_category_id",
+        "rider_category_name",
+        "min_age",
+        "max_age",
+        "is_default_fare_category",
+        "eligibility_url",
+        "source_empty_typed_fields"
+      ],
+      "expected_records": 11,
+      "reloaded_records": 11,
+      "source_projection_logical_sha256": "725490e59676d13a3d045ccf3047e6e2bb78a7cbec5d7dc01e5f3da9ad6c6fa7"
+    },
+    {
+      "table": "route_attributes",
+      "matches": true,
+      "verified_columns": [
+        "source_record",
+        "route_id",
+        "category",
+        "subcategory",
+        "running_way",
+        "source_empty_typed_fields"
+      ],
+      "expected_records": 327,
+      "reloaded_records": 327,
+      "source_projection_logical_sha256": "31ecb7965e5a0a8728432887c4395a0fc8a0efbf958e063ccc203b2ee8ef359c"
+    },
+    {
+      "table": "routes",
+      "matches": true,
+      "verified_columns": [
+        "source_record",
+        "route_id",
+        "agency_id",
+        "route_short_name",
+        "route_long_name",
+        "route_desc",
+        "route_type",
+        "route_url",
+        "route_color",
+        "route_text_color",
+        "route_sort_order",
+        "continuous_pickup",
+        "continuous_drop_off",
+        "network_id",
+        "cemv_support",
+        "as_route",
+        "source_empty_typed_fields"
+      ],
+      "expected_records": 665,
+      "reloaded_records": 665,
+      "source_projection_logical_sha256": "2d05e4b7ded7e145709a65807a8b2da65afd84e05948747d8381d998f61a9ebf"
+    },
+    {
+      "table": "shapes",
+      "matches": true,
+      "verified_columns": [
+        "source_record",
+        "shape_id",
+        "shape_pt_lat",
+        "shape_pt_lon",
+        "shape_pt_sequence",
+        "shape_dist_traveled",
+        "source_empty_typed_fields"
+      ],
+      "expected_records": 1340496,
+      "reloaded_records": 1340496,
+      "source_projection_logical_sha256": "ae8bff05d51f9932b889e3f33002bfe487c92a610976683f135f57a69aad65b7"
+    },
+    {
+      "table": "stop_areas",
+      "matches": true,
+      "verified_columns": [
+        "source_record",
+        "area_id",
+        "stop_id",
+        "source_empty_typed_fields"
+      ],
+      "expected_records": 33164,
+      "reloaded_records": 33164,
+      "source_projection_logical_sha256": "47033091cdfc50d19f1f84e62830a82a82abd9c9aefa502d95507d89c178d115"
+    },
+    {
+      "table": "stop_times",
+      "matches": true,
+      "verified_columns": [
+        "source_record",
+        "trip_id",
+        "stop_id",
+        "location_group_id",
+        "location_id",
+        "stop_sequence",
+        "stop_headsign",
+        "arrival_time",
+        "arrival_time_seconds",
+        "departure_time",
+        "departure_time_seconds",
+        "pickup_type",
+        "drop_off_type",
+        "continuous_pickup",
+        "continuous_drop_off",
+        "shape_dist_traveled",
+        "timepoint",
+        "start_pickup_drop_off_window",
+        "start_pickup_drop_off_window_seconds",
+        "end_pickup_drop_off_window",
+        "end_pickup_drop_off_window_seconds",
+        "pickup_booking_rule_id",
+        "drop_off_booking_rule_id",
+        "safe_duration_factor",
+        "safe_duration_offset",
+        "mean_duration_factor",
+        "mean_duration_offset",
+        "source_empty_typed_fields"
+      ],
+      "expected_records": 3185115,
+      "reloaded_records": 3185115,
+      "source_projection_logical_sha256": "710d699c98a9b5f466383f793b70f93b908f89204cd58d5b66657f5320864c6f"
+    },
+    {
+      "table": "stops",
+      "matches": true,
+      "verified_columns": [
+        "source_record",
+        "stop_id",
+        "stop_name",
+        "stop_code",
+        "stop_desc",
+        "stop_lat",
+        "stop_lon",
+        "zone_id",
+        "stop_url",
+        "tts_stop_name",
+        "platform_code",
+        "location_type",
+        "parent_station",
+        "stop_timezone",
+        "wheelchair_boarding",
+        "level_id",
+        "stop_access",
+        "source_empty_typed_fields"
+      ],
+      "expected_records": 21664,
+      "reloaded_records": 21664,
+      "source_projection_logical_sha256": "b6b8e8c9a4fde5727b2ccc05738204827a61bee88693a2d99c1f7a9842a29ea4"
+    },
+    {
+      "table": "timeframes",
+      "matches": true,
+      "verified_columns": [
+        "source_record",
+        "timeframe_group_id",
+        "start_time",
+        "start_time_seconds",
+        "end_time",
+        "end_time_seconds",
+        "service_id",
+        "source_empty_typed_fields"
+      ],
+      "expected_records": 3,
+      "reloaded_records": 3,
+      "source_projection_logical_sha256": "6143a7598cbd0a9c25dc466907ffc11b23511e3d98c3d779ce12e819a3e9e420"
+    },
+    {
+      "table": "transfers",
+      "matches": true,
+      "verified_columns": [
+        "source_record",
+        "from_stop_id",
+        "to_stop_id",
+        "from_route_id",
+        "to_route_id",
+        "from_trip_id",
+        "to_trip_id",
+        "transfer_type",
+        "min_transfer_time",
+        "source_empty_typed_fields"
+      ],
+      "expected_records": 61,
+      "reloaded_records": 61,
+      "source_projection_logical_sha256": "7a2043d66338d48cebebe46577bea28df8d32452ea17c791e9b2d744732b6053"
+    },
+    {
+      "table": "trips",
+      "matches": true,
+      "verified_columns": [
+        "source_record",
+        "route_id",
+        "service_id",
+        "trip_id",
+        "trip_headsign",
+        "trip_short_name",
+        "direction_id",
+        "block_id",
+        "shape_id",
+        "wheelchair_accessible",
+        "bikes_allowed",
+        "cars_allowed",
+        "safe_duration_factor",
+        "safe_duration_offset",
+        "source_empty_typed_fields"
+      ],
+      "expected_records": 92827,
+      "reloaded_records": 92827,
+      "source_projection_logical_sha256": "6d066c8f4ac75a71bcc911d00dffcbf82f47958ffd34e919b3943cbf328777f3"
+    }
+  ],
+  "phase2_baseline_mismatches": [],
+  "exception_ledger": {
+    "rows": 133,
+    "errors": 0
+  }
+}

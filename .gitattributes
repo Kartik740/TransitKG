@@ -1,0 +1,2 @@
+GTFSTransitData_RG/stop_times.txt filter=lfs diff=lfs merge=lfs -text
+GTFSTransitData_RG/shapes.txt filter=lfs diff=lfs merge=lfs -text

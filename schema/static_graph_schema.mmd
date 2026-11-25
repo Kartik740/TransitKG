@@ -1,0 +1,14 @@
+flowchart LR
+  Agency["Agency"]
+  Route["Route"]
+  Trip["Trip"]
+  Stop["Stop"]
+  Service["Service"]
+  FeedSnapshot["FeedSnapshot"]
+  Agency -->|OPERATES| Route
+  Route -->|HAS_TRIP| Trip
+  Trip -->|RUNS_ON| Service
+  Route -->|ROUTE_SERVES_STOP| Stop
+  Agency -->|AGENCY_SERVES_STOP| Stop
+  Stop -->|PART_OF| Stop
+  Stop -->|TRANSFER_RULE| Stop

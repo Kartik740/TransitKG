@@ -1,0 +1,519 @@
+{
+  "version": "1.0.0",
+  "cardinality_evidence": "../reports/phase4/architecture_comparison.json",
+  "count_lookup": "nodes[label] and edges[type] in cardinality_evidence for its identified build",
+  "node_uniqueness": "Per label, require the declared identity to be unique and non-null. Across entity nodes, validate the feed-scoped canonical mapping bijection before import.",
+  "validation": "Required means present with the declared type. Null optional values are omitted on graph records. Validate all endpoint domains, relationship identity tuples and declared multiplicities before publication.",
+  "source_lineage": "../reports/phase4/phase5_transformation_contract.md",
+  "canonical_contract_version": "1.0.0",
+  "namespace": "511-sf-bay-regional",
+  "canonical_rule": "Copy the exact Phase 3 canonical_id for (entity_type, source_identifier). Preserve original UTF-8 spelling.",
+  "provenance": "One FeedSnapshot per database; static type and source key resolve through schema to rows of that manifest. Membership is implicit in this single-build projection.",
+  "nodes": [
+    {
+      "label": "Agency",
+      "meaning": "Published transit operator",
+      "source": "agency",
+      "identity": "canonical_id",
+      "entity_type": "agency",
+      "join": "canonical_ids.entity_type = 'agency' AND canonical_ids.source_identifier = agency.agency_id",
+      "properties": {
+        "canonical_id": {
+          "type": "STRING",
+          "source": "canonical_ids.canonical_id",
+          "required": true
+        },
+        "source_id": {
+          "type": "STRING",
+          "source": "canonical_ids.source_identifier",
+          "required": true
+        },
+        "agency_name": {
+          "type": "STRING",
+          "source": "agency.agency_name",
+          "required": true
+        },
+        "agency_timezone": {
+          "type": "STRING",
+          "source": "agency.agency_timezone",
+          "required": true
+        }
+      },
+      "grounding": "AgencyId and service timezone",
+      "storage": "graph",
+      "classification": "static"
+    },
+    {
+      "label": "Route",
+      "meaning": "Published passenger route",
+      "source": "routes",
+      "identity": "canonical_id",
+      "entity_type": "route",
+      "join": "canonical_ids.entity_type = 'route' AND canonical_ids.source_identifier = routes.route_id",
+      "properties": {
+        "canonical_id": {
+          "type": "STRING",
+          "source": "canonical_ids.canonical_id",
+          "required": true
+        },
+        "source_id": {
+          "type": "STRING",
+          "source": "canonical_ids.source_identifier",
+          "required": true
+        },
+        "route_type": {
+          "type": "INTEGER",
+          "source": "routes.route_type",
+          "required": true,
+          "domain": "GTFS Schedule routes.route_type; provider extensions require explicit validation"
+        },
+        "route_short_name": {
+          "type": "STRING",
+          "source": "routes.route_short_name",
+          "required": false
+        },
+        "route_long_name": {
+          "type": "STRING",
+          "source": "routes.route_long_name",
+          "required": false
+        }
+      },
+      "grounding": "RouteId, RouteType and scoped route names",
+      "storage": "graph",
+      "classification": "static"
+    },
+    {
+      "label": "Trip",
+      "meaning": "Scheduled trip definition within a feed",
+      "source": "trips",
+      "identity": "canonical_id",
+      "entity_type": "trip",
+      "join": "canonical_ids.entity_type = 'trip' AND canonical_ids.source_identifier = trips.trip_id",
+      "properties": {
+        "canonical_id": {
+          "type": "STRING",
+          "source": "canonical_ids.canonical_id",
+          "required": true
+        },
+        "source_id": {
+          "type": "STRING",
+          "source": "canonical_ids.source_identifier",
+          "required": true
+        },
+        "direction_id": {
+          "type": "INTEGER",
+          "source": "trips.direction_id",
+          "required": false,
+          "allowed": [
+            0,
+            1
+          ]
+        },
+        "trip_headsign": {
+          "type": "STRING",
+          "source": "trips.trip_headsign",
+          "required": false
+        },
+        "shape_id": {
+          "type": "STRING",
+          "source": "trips.shape_id",
+          "required": false
+        }
+      },
+      "grounding": "Trip descriptors and route-scoped numeric direction",
+      "storage": "graph",
+      "classification": "static"
+    },
+    {
+      "label": "Stop",
+      "meaning": "GTFS stop, station or station-related location",
+      "source": "stops",
+      "identity": "canonical_id",
+      "entity_type": "stop",
+      "join": "canonical_ids.entity_type = 'stop' AND canonical_ids.source_identifier = stops.stop_id",
+      "properties": {
+        "canonical_id": {
+          "type": "STRING",
+          "source": "canonical_ids.canonical_id",
+          "required": true
+        },
+        "source_id": {
+          "type": "STRING",
+          "source": "canonical_ids.source_identifier",
+          "required": true
+        },
+        "stop_name": {
+          "type": "STRING",
+          "source": "stops.stop_name",
+          "required": false
+        },
+        "location_type": {
+          "type": "INTEGER",
+          "source": "stops.location_type",
+          "required": false,
+          "allowed": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "null_semantics": "GTFS default 0"
+        },
+        "stop_code": {
+          "type": "STRING",
+          "source": "stops.stop_code",
+          "required": false
+        },
+        "platform_code": {
+          "type": "STRING",
+          "source": "stops.platform_code",
+          "required": false
+        }
+      },
+      "grounding": "StopId and name-based candidate lookup",
+      "storage": "graph",
+      "classification": "static"
+    },
+    {
+      "label": "Service",
+      "meaning": "Service definition in the Phase 3 service domain",
+      "source": "canonical_ids",
+      "identity": "canonical_id",
+      "entity_type": "service",
+      "join": "entity_type = 'service'",
+      "properties": {
+        "canonical_id": {
+          "type": "STRING",
+          "source": "canonical_ids.canonical_id",
+          "required": true
+        },
+        "source_id": {
+          "type": "STRING",
+          "source": "canonical_ids.source_identifier",
+          "required": true
+        }
+      },
+      "grounding": "Service-day qualification of scheduled trips",
+      "storage": "graph",
+      "classification": "static"
+    },
+    {
+      "label": "FeedSnapshot",
+      "meaning": "Singleton metadata for the one static projection published in this database",
+      "identity": "normalized_build_id",
+      "source": "manifest.json and Phase 5 build manifest",
+      "properties": {
+        "normalized_build_id": {
+          "type": "STRING",
+          "source": "manifest.normalized_build_id",
+          "required": true
+        },
+        "source_snapshot_id": {
+          "type": "STRING",
+          "source": "manifest.source_snapshot_id",
+          "required": true
+        },
+        "schema_version": {
+          "type": "STRING",
+          "source": "schema.version",
+          "required": true
+        },
+        "construction_version": {
+          "type": "STRING",
+          "source": "Phase 5 transformer version",
+          "required": true
+        },
+        "canonical_contract_version": {
+          "type": "STRING",
+          "source": "manifest.canonical_contract_version",
+          "required": true
+        },
+        "static_fingerprint": {
+          "type": "STRING",
+          "source": "validated static content digest",
+          "required": true
+        }
+      },
+      "grounding": "Compatibility gate before graph, external or alert lookups",
+      "classification": "static",
+      "storage": "graph"
+    }
+  ],
+  "relationships": [
+    {
+      "type": "OPERATES",
+      "from": "Agency",
+      "to": "Route",
+      "meaning": "Agency publishes the route",
+      "cardinality": "one agency per route",
+      "source": "routes",
+      "start_column": "agency_id",
+      "end_column": "route_id",
+      "join": "For each accepted row with both endpoints, resolve each source value by exact canonical_ids(entity_type, source_identifier) using its endpoint label in this build.",
+      "identity": [
+        "type",
+        "start.canonical_id",
+        "end.canonical_id"
+      ],
+      "properties": {},
+      "derivation": "direct",
+      "deduplication": "Require one row per identity; reject conflicts and unexpected duplicates.",
+      "classification": "static",
+      "storage": "graph"
+    },
+    {
+      "type": "HAS_TRIP",
+      "from": "Route",
+      "to": "Trip",
+      "meaning": "Scheduled trip belongs to route",
+      "cardinality": "one route per trip",
+      "source": "trips",
+      "start_column": "route_id",
+      "end_column": "trip_id",
+      "join": "For each accepted row with both endpoints, resolve each source value by exact canonical_ids(entity_type, source_identifier) using its endpoint label in this build.",
+      "identity": [
+        "type",
+        "start.canonical_id",
+        "end.canonical_id"
+      ],
+      "properties": {},
+      "derivation": "direct",
+      "deduplication": "Require one row per identity; reject conflicts and unexpected duplicates.",
+      "classification": "static",
+      "storage": "graph"
+    },
+    {
+      "type": "RUNS_ON",
+      "from": "Trip",
+      "to": "Service",
+      "meaning": "Trip uses a service definition",
+      "cardinality": "one service per trip",
+      "source": "trips",
+      "start_column": "trip_id",
+      "end_column": "service_id",
+      "join": "For each accepted row with both endpoints, resolve each source value by exact canonical_ids(entity_type, source_identifier) using its endpoint label in this build.",
+      "identity": [
+        "type",
+        "start.canonical_id",
+        "end.canonical_id"
+      ],
+      "properties": {},
+      "derivation": "direct",
+      "deduplication": "Require one row per identity; reject conflicts and unexpected duplicates.",
+      "classification": "static",
+      "storage": "graph"
+    },
+    {
+      "type": "ROUTE_SERVES_STOP",
+      "from": "Route",
+      "to": "Stop",
+      "meaning": "At least one accepted scheduled visit on this route",
+      "cardinality": "many to many",
+      "source": "route_stops",
+      "start_column": "route_id",
+      "end_column": "stop_id",
+      "join": "For each accepted row with both endpoints, resolve each source value by exact canonical_ids(entity_type, source_identifier) using its endpoint label in this build.",
+      "identity": [
+        "type",
+        "start.canonical_id",
+        "end.canonical_id"
+      ],
+      "properties": {
+        "scheduled_visits": {
+          "type": "INTEGER",
+          "source": "route_stops.scheduled_visits",
+          "required": true
+        },
+        "scheduled_trips": {
+          "type": "INTEGER",
+          "source": "route_stops.scheduled_trips",
+          "required": true
+        }
+      },
+      "derivation": "trips JOIN stop_times USING(trip_id); group by route_id, stop_id; count visits and distinct trips",
+      "deduplication": "Require one row per identity; reject conflicts and unexpected duplicates.",
+      "classification": "static",
+      "storage": "graph"
+    },
+    {
+      "type": "AGENCY_SERVES_STOP",
+      "from": "Agency",
+      "to": "Stop",
+      "meaning": "At least one scheduled visit by this operator",
+      "cardinality": "many to many",
+      "source": "agency_stops",
+      "start_column": "agency_id",
+      "end_column": "stop_id",
+      "join": "For each accepted row with both endpoints, resolve each source value by exact canonical_ids(entity_type, source_identifier) using its endpoint label in this build.",
+      "identity": [
+        "type",
+        "start.canonical_id",
+        "end.canonical_id"
+      ],
+      "properties": {
+        "scheduled_visits": {
+          "type": "INTEGER",
+          "source": "agency_stops.scheduled_visits",
+          "required": true
+        },
+        "serving_routes": {
+          "type": "INTEGER",
+          "source": "agency_stops.serving_routes",
+          "required": true
+        }
+      },
+      "derivation": "routes JOIN trips USING(route_id) JOIN stop_times USING(trip_id); group by agency_id, stop_id; count visits and distinct routes",
+      "deduplication": "Require one row per identity; reject conflicts and unexpected duplicates.",
+      "classification": "static",
+      "storage": "graph"
+    },
+    {
+      "type": "PART_OF",
+      "from": "Stop",
+      "to": "Stop",
+      "meaning": "Published child-to-parent hierarchy",
+      "cardinality": "zero or one parent per child",
+      "source": "stops",
+      "start_column": "stop_id",
+      "end_column": "parent_station",
+      "join": "For each accepted row with both endpoints, resolve each source value by exact canonical_ids(entity_type, source_identifier) using its endpoint label in this build.",
+      "identity": [
+        "type",
+        "start.canonical_id",
+        "end.canonical_id"
+      ],
+      "properties": {},
+      "derivation": "direct",
+      "deduplication": "Require one row per identity; reject conflicts and unexpected duplicates.",
+      "classification": "static",
+      "storage": "graph"
+    },
+    {
+      "type": "TRANSFER_RULE",
+      "from": "Stop",
+      "to": "Stop",
+      "meaning": "Directed transfer rule, including restrictions and prohibitions",
+      "cardinality": "many to many; parallel rules allowed",
+      "source": "transfers",
+      "start_column": "from_stop_id",
+      "end_column": "to_stop_id",
+      "join": "For each accepted row with both endpoints, resolve each source value by exact canonical_ids(entity_type, source_identifier) using its endpoint label in this build.",
+      "identity": [
+        "type",
+        "start.canonical_id",
+        "end.canonical_id",
+        "from_route_id",
+        "to_route_id",
+        "from_trip_id",
+        "to_trip_id"
+      ],
+      "properties": {
+        "from_route_id": {
+          "type": "STRING",
+          "source": "transfers.from_route_id",
+          "required": false
+        },
+        "to_route_id": {
+          "type": "STRING",
+          "source": "transfers.to_route_id",
+          "required": false
+        },
+        "from_trip_id": {
+          "type": "STRING",
+          "source": "transfers.from_trip_id",
+          "required": false
+        },
+        "to_trip_id": {
+          "type": "STRING",
+          "source": "transfers.to_trip_id",
+          "required": false
+        },
+        "transfer_type": {
+          "type": "INTEGER",
+          "source": "transfers.transfer_type",
+          "required": true,
+          "allowed": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        "min_transfer_time": {
+          "type": "INTEGER",
+          "source": "transfers.min_transfer_time",
+          "required": false
+        }
+      },
+      "derivation": "direct",
+      "deduplication": "Require one row per identity; reject conflicts and unexpected duplicates.",
+      "classification": "static",
+      "storage": "graph"
+    }
+  ],
+  "indexes": [
+    [
+      "Agency",
+      "source_id"
+    ],
+    [
+      "Route",
+      "source_id"
+    ],
+    [
+      "Trip",
+      "source_id"
+    ],
+    [
+      "Stop",
+      "source_id"
+    ],
+    [
+      "Service",
+      "source_id"
+    ],
+    [
+      "Stop",
+      "stop_name"
+    ],
+    [
+      "Route",
+      "route_short_name"
+    ]
+  ],
+  "external": {
+    "Shape": "canonical_ids(shape) → shapes(shape_id, shape_pt_sequence)",
+    "Visit": "stop_times(trip_id, stop_sequence)",
+    "ServiceException": "calendar_dates(service_id, date)",
+    "WeeklyService": "calendar(service_id)",
+    "Frequency": "frequencies if present; unavailable in this build",
+    "RoutePattern": "analysis only",
+    "Fare": "accepted fare tables and exception ledger",
+    "ProviderExtensions": "published normalized tables, exact source spellings"
+  },
+  "provisional_dynamic": {
+    "nodes": [
+      "ServiceAlert",
+      "AlertObservation",
+      "AffectedScope",
+      "DisruptionEvent",
+      "TemporalInterval",
+      "Evidence"
+    ],
+    "relationships": [
+      "DESCRIBES",
+      "HAS_SCOPE",
+      "REFERS_TO_AGENCY",
+      "REFERS_TO_ROUTE",
+      "REFERS_TO_STOP",
+      "REFERS_TO_TRIP",
+      "HAS_VALIDITY",
+      "SUPPORTED_BY"
+    ],
+    "storage": "future",
+    "selector_rule": "One scope per informed_entity ordinal per alert observation. All populated predicates must hold on one compatible service path."
+  }
+}

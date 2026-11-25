@@ -1,0 +1,13 @@
+CREATE CONSTRAINT uq_Agency IF NOT EXISTS FOR (n:Agency) REQUIRE n.canonical_id IS UNIQUE;
+CREATE CONSTRAINT uq_Route IF NOT EXISTS FOR (n:Route) REQUIRE n.canonical_id IS UNIQUE;
+CREATE CONSTRAINT uq_Trip IF NOT EXISTS FOR (n:Trip) REQUIRE n.canonical_id IS UNIQUE;
+CREATE CONSTRAINT uq_Stop IF NOT EXISTS FOR (n:Stop) REQUIRE n.canonical_id IS UNIQUE;
+CREATE CONSTRAINT uq_Service IF NOT EXISTS FOR (n:Service) REQUIRE n.canonical_id IS UNIQUE;
+CREATE CONSTRAINT uq_FeedSnapshot IF NOT EXISTS FOR (n:FeedSnapshot) REQUIRE n.normalized_build_id IS UNIQUE;
+CREATE INDEX ix_Agency_source_id IF NOT EXISTS FOR (n:Agency) ON (n.source_id);
+CREATE INDEX ix_Route_source_id IF NOT EXISTS FOR (n:Route) ON (n.source_id);
+CREATE INDEX ix_Trip_source_id IF NOT EXISTS FOR (n:Trip) ON (n.source_id);
+CREATE INDEX ix_Stop_source_id IF NOT EXISTS FOR (n:Stop) ON (n.source_id);
+CREATE INDEX ix_Service_source_id IF NOT EXISTS FOR (n:Service) ON (n.source_id);
+CREATE INDEX ix_Stop_stop_name IF NOT EXISTS FOR (n:Stop) ON (n.stop_name);
+CREATE INDEX ix_Route_route_short_name IF NOT EXISTS FOR (n:Route) ON (n.route_short_name);

@@ -1,0 +1,12 @@
+rider_category_id,rider_category_name,min_age,max_age,is_default_fare_category,eligibility_url
+adult,Adult,,,1,
+youth,Youth (5-18),,,0,
+child,Child (age limit varies by agency),,,0,
+smd,"Seniors, Medicare Cardholders, and Persons with Disabilities",,,0,
+AM:discount,Seniors and Persons with Disabilities,,,0,https://www.capitolcorridor.org/disabled-passenger-discount/
+SR:veteran,Santa Rosa CityBus (U.S. Veteran),,,0,https://srcity.org/1658/Fares
+SA:senior,SMART (Seniors 65+),,,0,https://sonomamarintrain.org/fares
+AF:senior,Seniors (65+),,,0,
+AF:child,Children (6-12),,,0,
+AF:small-child,Small Children (3-5),,,0,
+AF:adult,Adult (13-64),,,0,

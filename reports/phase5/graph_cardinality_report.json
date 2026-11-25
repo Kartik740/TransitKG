@@ -1,0 +1,175 @@
+{
+  "build_id": "graph-ready-sha256-f85cdfafe998da9e7eecb6697443ebd02e45f4d43e41462db7a8a5acb82dadae",
+  "counts": {
+    "nodes": {
+      "Agency": 41,
+      "Route": 665,
+      "Trip": 92827,
+      "Stop": 21664,
+      "Service": 485,
+      "FeedSnapshot": 1
+    },
+    "relationships": {
+      "OPERATES": 665,
+      "HAS_TRIP": 92827,
+      "RUNS_ON": 92827,
+      "ROUTE_SERVES_STOP": 33985,
+      "AGENCY_SERVES_STOP": 19904,
+      "PART_OF": 2222,
+      "TRANSFER_RULE": 61
+    }
+  },
+  "approved_counts": {
+    "nodes": {
+      "Agency": 41,
+      "Route": 665,
+      "Trip": 92827,
+      "Stop": 21664,
+      "Service": 485,
+      "FeedSnapshot": 1
+    },
+    "relationships": {
+      "OPERATES": 665,
+      "HAS_TRIP": 92827,
+      "RUNS_ON": 92827,
+      "ROUTE_SERVES_STOP": 33985,
+      "AGENCY_SERVES_STOP": 19904,
+      "PART_OF": 2222,
+      "TRANSFER_RULE": 61
+    }
+  },
+  "parquet_bytes": 1406381,
+  "manifest_bytes": 16494,
+  "files": {
+    "nodes/Agency.parquet": {
+      "records": 41,
+      "bytes": 1724,
+      "schema": {
+        "canonical_id": "VARCHAR",
+        "source_id": "VARCHAR",
+        "agency_name": "VARCHAR",
+        "agency_timezone": "VARCHAR"
+      }
+    },
+    "nodes/Route.parquet": {
+      "records": 665,
+      "bytes": 15295,
+      "schema": {
+        "canonical_id": "VARCHAR",
+        "source_id": "VARCHAR",
+        "route_type": "BIGINT",
+        "route_short_name": "VARCHAR",
+        "route_long_name": "VARCHAR"
+      }
+    },
+    "nodes/Trip.parquet": {
+      "records": 92827,
+      "bytes": 466260,
+      "schema": {
+        "canonical_id": "VARCHAR",
+        "source_id": "VARCHAR",
+        "direction_id": "BIGINT",
+        "trip_headsign": "VARCHAR",
+        "shape_id": "VARCHAR"
+      }
+    },
+    "nodes/Stop.parquet": {
+      "records": 21664,
+      "bytes": 284305,
+      "schema": {
+        "canonical_id": "VARCHAR",
+        "source_id": "VARCHAR",
+        "stop_name": "VARCHAR",
+        "location_type": "BIGINT",
+        "stop_code": "VARCHAR",
+        "platform_code": "VARCHAR"
+      }
+    },
+    "nodes/Service.parquet": {
+      "records": 485,
+      "bytes": 3271,
+      "schema": {
+        "canonical_id": "VARCHAR",
+        "source_id": "VARCHAR"
+      }
+    },
+    "nodes/FeedSnapshot.parquet": {
+      "records": 1,
+      "bytes": 2006,
+      "schema": {
+        "normalized_build_id": "VARCHAR",
+        "source_snapshot_id": "VARCHAR",
+        "schema_version": "VARCHAR",
+        "construction_version": "VARCHAR",
+        "canonical_contract_version": "VARCHAR",
+        "static_fingerprint": "VARCHAR"
+      }
+    },
+    "relationships/OPERATES.parquet": {
+      "records": 665,
+      "bytes": 3473,
+      "schema": {
+        "start_id": "VARCHAR",
+        "end_id": "VARCHAR"
+      }
+    },
+    "relationships/HAS_TRIP.parquet": {
+      "records": 92827,
+      "bytes": 218452,
+      "schema": {
+        "start_id": "VARCHAR",
+        "end_id": "VARCHAR"
+      }
+    },
+    "relationships/RUNS_ON.parquet": {
+      "records": 92827,
+      "bytes": 203463,
+      "schema": {
+        "start_id": "VARCHAR",
+        "end_id": "VARCHAR"
+      }
+    },
+    "relationships/ROUTE_SERVES_STOP.parquet": {
+      "records": 33985,
+      "bytes": 122468,
+      "schema": {
+        "start_id": "VARCHAR",
+        "end_id": "VARCHAR",
+        "scheduled_visits": "BIGINT",
+        "scheduled_trips": "BIGINT"
+      }
+    },
+    "relationships/AGENCY_SERVES_STOP.parquet": {
+      "records": 19904,
+      "bytes": 68065,
+      "schema": {
+        "start_id": "VARCHAR",
+        "end_id": "VARCHAR",
+        "scheduled_visits": "BIGINT",
+        "serving_routes": "BIGINT"
+      }
+    },
+    "relationships/PART_OF.parquet": {
+      "records": 2222,
+      "bytes": 15198,
+      "schema": {
+        "start_id": "VARCHAR",
+        "end_id": "VARCHAR"
+      }
+    },
+    "relationships/TRANSFER_RULE.parquet": {
+      "records": 61,
+      "bytes": 2401,
+      "schema": {
+        "start_id": "VARCHAR",
+        "end_id": "VARCHAR",
+        "from_route_id": "VARCHAR",
+        "to_route_id": "VARCHAR",
+        "from_trip_id": "VARCHAR",
+        "to_trip_id": "VARCHAR",
+        "transfer_type": "BIGINT",
+        "min_transfer_time": "BIGINT"
+      }
+    }
+  }
+}

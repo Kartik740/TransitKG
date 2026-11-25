@@ -1,0 +1,1 @@
+{"build_id": "graph-ready-sha256-f85cdfafe998da9e7eecb6697443ebd02e45f4d43e41462db7a8a5acb82dadae", "creation_date": "2026-11-24T21:55:04.565Z", "database_id": "FEC14225142CED808735D9B68454D6C9ABE2B5CCBD95B8B5074B0331DA905445", "schema_sha256": "66c3e2d5524fcafb1608c9eb8c99125f55760781c789b2b4e1188d9360cb43db", "target": "transitkg-static", "uri": "neo4j://127.0.0.1:7687"}

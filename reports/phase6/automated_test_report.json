@@ -1,0 +1,64 @@
+{
+  "offline_suites": {
+    "2": {
+      "ran": 7,
+      "passed": 7,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 1.412
+    },
+    "3": {
+      "ran": 10,
+      "passed": 10,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 3.939
+    },
+    "4": {
+      "ran": 13,
+      "passed": 13,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 3.352
+    },
+    "5": {
+      "ran": 8,
+      "passed": 8,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 2.396
+    },
+    "6": {
+      "ran": 12,
+      "passed": 12,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 0.333
+    }
+  },
+  "regional_live": {
+    "status": "verified",
+    "passed": [
+      "authenticated target and schema definitions",
+      "six node and seven relationship datasets",
+      "full readback and per-type digests",
+      "14 competency queries and hybrid AC selector",
+      "completed build replay with zero write batches",
+      "10 bounded Browser queries"
+    ],
+    "failed": [],
+    "skipped": [],
+    "blocked": [
+      {
+        "test": "deliberate live interruption after a committed batch",
+        "reason": "No approval to intentionally pause the regional load or create a separate fixture. Interruption and uncertain commit passed in synthetic tests."
+      }
+    ],
+    "construction_manifest_sha256": "182297fd307ded0d6f92887fb3d7f9ac9e325f77e70d21a343ad64adf22df5cf"
+  }
+}

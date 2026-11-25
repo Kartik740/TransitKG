@@ -1,0 +1,6146 @@
+{
+  "domains": {
+    "agency_id": {
+      "formats": [
+        {
+          "format": "alphabetic",
+          "distinct_ids": 40,
+          "examples": [
+            "AC",
+            "AF",
+            "AM",
+            "BA",
+            "CC"
+          ]
+        },
+        {
+          "format": "alphanumeric",
+          "distinct_ids": 1,
+          "examples": [
+            "3D"
+          ]
+        }
+      ],
+      "prefixes": [],
+      "leading_zero_ids": 0,
+      "suffix_collisions": 0,
+      "suffix_collision_examples": []
+    },
+    "stop_id": {
+      "formats": [
+        {
+          "format": "numeric string",
+          "distinct_ids": 19355,
+          "examples": [
+            "10",
+            "10390",
+            "10913",
+            "117",
+            "11748665"
+          ]
+        },
+        {
+          "format": "colon prefix",
+          "distinct_ids": 1914,
+          "examples": [
+            "1:10",
+            "1:117",
+            "1:120",
+            "1:121",
+            "1:123"
+          ]
+        },
+        {
+          "format": "underscore prefix",
+          "distinct_ids": 244,
+          "examples": [
+            "12TH_1",
+            "12TH_2",
+            "12TH_3",
+            "12TH_4",
+            "12TH_5"
+          ]
+        },
+        {
+          "format": "alphabetic",
+          "distinct_ids": 110,
+          "examples": [
+            "BelLis",
+            "DELN",
+            "MrnSqr",
+            "PinBat",
+            "SFTC"
+          ]
+        },
+        {
+          "format": "alphanumeric",
+          "distinct_ids": 23,
+          "examples": [
+            "4thFol",
+            "76834A",
+            "S1",
+            "S2",
+            "S3"
+          ]
+        },
+        {
+          "format": "other",
+          "distinct_ids": 18,
+          "examples": [
+            "-325",
+            "BAY-01-SB",
+            "BAY-02-NB",
+            "BEL-01-CB",
+            "LG&NA"
+          ]
+        }
+      ],
+      "prefixes": [
+        {
+          "prefix": "mtc",
+          "distinct_ids": 1135,
+          "examples": [
+            "mtc:",
+            "mtc:12th-st-oakland-city-center-bart",
+            "mtc:1586751243014"
+          ]
+        },
+        {
+          "prefix": "1",
+          "distinct_ids": 315,
+          "examples": [
+            "1:10",
+            "1:117",
+            "1:120"
+          ]
+        },
+        {
+          "prefix": "CM",
+          "distinct_ids": 229,
+          "examples": [
+            "CM:3241536",
+            "CM:3241537",
+            "CM:3241538"
+          ]
+        },
+        {
+          "prefix": "SS",
+          "distinct_ids": 77,
+          "examples": [
+            "SS:334027",
+            "SS:334073",
+            "SS:334076"
+          ]
+        },
+        {
+          "prefix": "RV",
+          "distinct_ids": 70,
+          "examples": [
+            "RV:13519",
+            "RV:1526",
+            "RV:1528"
+          ]
+        },
+        {
+          "prefix": "PS",
+          "distinct_ids": 69,
+          "examples": [
+            "PS_ALDR",
+            "PS_ALUM",
+            "PS_ARTC"
+          ]
+        },
+        {
+          "prefix": "SL",
+          "distinct_ids": 23,
+          "examples": [
+            "SL:10",
+            "SL:13",
+            "SL:14"
+          ]
+        },
+        {
+          "prefix": "MB",
+          "distinct_ids": 19,
+          "examples": [
+            "MB:2335510",
+            "MB:2335511",
+            "MB:2335513"
+          ]
+        },
+        {
+          "prefix": "GP",
+          "distinct_ids": 18,
+          "examples": [
+            "GP:7601",
+            "GP:7602",
+            "GP:7603"
+          ]
+        },
+        {
+          "prefix": "EL",
+          "distinct_ids": 14,
+          "examples": [
+            "EL_BHM",
+            "EL_BLH",
+            "EL_CPTL"
+          ]
+        },
+        {
+          "prefix": "ES",
+          "distinct_ids": 11,
+          "examples": [
+            "ES_BHM",
+            "ES_BLH",
+            "ES_CAP_A"
+          ]
+        },
+        {
+          "prefix": "SE",
+          "distinct_ids": 9,
+          "examples": [
+            "SE:829201",
+            "SE:92001",
+            "SE:92002"
+          ]
+        },
+        {
+          "prefix": "12TH",
+          "distinct_ids": 8,
+          "examples": [
+            "12TH_1",
+            "12TH_2",
+            "12TH_3"
+          ]
+        },
+        {
+          "prefix": "POWL",
+          "distinct_ids": 8,
+          "examples": [
+            "POWL_1",
+            "POWL_2",
+            "POWL_3"
+          ]
+        },
+        {
+          "prefix": "VN",
+          "distinct_ids": 8,
+          "examples": [
+            "VN:235",
+            "VN:251",
+            "VN:253"
+          ]
+        },
+        {
+          "prefix": "CIVC",
+          "distinct_ids": 7,
+          "examples": [
+            "CIVC_1",
+            "CIVC_2",
+            "CIVC_3"
+          ]
+        },
+        {
+          "prefix": "MONT",
+          "distinct_ids": 7,
+          "examples": [
+            "MONT_1",
+            "MONT_2",
+            "MONT_3"
+          ]
+        },
+        {
+          "prefix": "19TH",
+          "distinct_ids": 6,
+          "examples": [
+            "19TH_1",
+            "19TH_2",
+            "19TH_3"
+          ]
+        },
+        {
+          "prefix": "BALB",
+          "distinct_ids": 6,
+          "examples": [
+            "BALB_1",
+            "BALB_2",
+            "BALB_3"
+          ]
+        },
+        {
+          "prefix": "COLS",
+          "distinct_ids": 6,
+          "examples": [
+            "COLS_1",
+            "COLS_2",
+            "COLS_3"
+          ]
+        },
+        {
+          "prefix": "EMBR",
+          "distinct_ids": 6,
+          "examples": [
+            "EMBR_1",
+            "EMBR_2",
+            "EMBR_3"
+          ]
+        },
+        {
+          "prefix": "GF",
+          "distinct_ids": 6,
+          "examples": [
+            "GF:43000",
+            "GF:43002",
+            "GF:43003"
+          ]
+        },
+        {
+          "prefix": "DBRK",
+          "distinct_ids": 5,
+          "examples": [
+            "DBRK_1",
+            "DBRK_2",
+            "DBRK_3"
+          ]
+        },
+        {
+          "prefix": "san",
+          "distinct_ids": 5,
+          "examples": [
+            "san_antonio",
+            "san_bruno",
+            "san_carlos"
+          ]
+        },
+        {
+          "prefix": "LAKE",
+          "distinct_ids": 4,
+          "examples": [
+            "LAKE_1",
+            "LAKE_2",
+            "LAKE_3"
+          ]
+        },
+        {
+          "prefix": "16TH",
+          "distinct_ids": 3,
+          "examples": [
+            "16TH_1",
+            "16TH_2",
+            "16TH_3"
+          ]
+        },
+        {
+          "prefix": "24TH",
+          "distinct_ids": 3,
+          "examples": [
+            "24TH_1",
+            "24TH_2",
+            "24TH_3"
+          ]
+        },
+        {
+          "prefix": "ASHB",
+          "distinct_ids": 3,
+          "examples": [
+            "ASHB_1",
+            "ASHB_2",
+            "ASHB_3"
+          ]
+        },
+        {
+          "prefix": "BERY",
+          "distinct_ids": 3,
+          "examples": [
+            "BERY_1",
+            "BERY_2",
+            "BERY_3"
+          ]
+        },
+        {
+          "prefix": "DALY",
+          "distinct_ids": 3,
+          "examples": [
+            "DALY_1",
+            "DALY_2",
+            "DALY_3"
+          ]
+        },
+        {
+          "prefix": "FRMT",
+          "distinct_ids": 3,
+          "examples": [
+            "FRMT_1",
+            "FRMT_2",
+            "FRMT_3"
+          ]
+        },
+        {
+          "prefix": "PLZA",
+          "distinct_ids": 3,
+          "examples": [
+            "PLZA_1",
+            "PLZA_2",
+            "PLZA_3"
+          ]
+        },
+        {
+          "prefix": "ggt",
+          "distinct_ids": 3,
+          "examples": [
+            "ggt_1",
+            "ggt_2",
+            "ggt_3"
+          ]
+        },
+        {
+          "prefix": "AF",
+          "distinct_ids": 2,
+          "examples": [
+            "AF:AIF",
+            "AF:TBF"
+          ]
+        },
+        {
+          "prefix": "BAYF",
+          "distinct_ids": 2,
+          "examples": [
+            "BAYF_1",
+            "BAYF_2"
+          ]
+        },
+        {
+          "prefix": "COLM",
+          "distinct_ids": 2,
+          "examples": [
+            "COLM_1",
+            "COLM_2"
+          ]
+        },
+        {
+          "prefix": "CONC",
+          "distinct_ids": 2,
+          "examples": [
+            "CONC_1",
+            "CONC_2"
+          ]
+        },
+        {
+          "prefix": "DELN",
+          "distinct_ids": 2,
+          "examples": [
+            "DELN_1",
+            "DELN_2"
+          ]
+        },
+        {
+          "prefix": "EE",
+          "distinct_ids": 2,
+          "examples": [
+            "EE:1",
+            "EE:3"
+          ]
+        },
+        {
+          "prefix": "LAFY",
+          "distinct_ids": 2,
+          "examples": [
+            "LAFY_1",
+            "LAFY_2"
+          ]
+        },
+        {
+          "prefix": "MLPT",
+          "distinct_ids": 2,
+          "examples": [
+            "MLPT_1",
+            "MLPT_2"
+          ]
+        },
+        {
+          "prefix": "NBRK",
+          "distinct_ids": 2,
+          "examples": [
+            "NBRK_1",
+            "NBRK_2"
+          ]
+        },
+        {
+          "prefix": "RICH",
+          "distinct_ids": 2,
+          "examples": [
+            "RICH_1",
+            "RICH_2"
+          ]
+        },
+        {
+          "prefix": "ROCK",
+          "distinct_ids": 2,
+          "examples": [
+            "ROCK_1",
+            "ROCK_2"
+          ]
+        },
+        {
+          "prefix": "SANL",
+          "distinct_ids": 2,
+          "examples": [
+            "SANL_1",
+            "SANL_2"
+          ]
+        },
+        {
+          "prefix": "SBRN",
+          "distinct_ids": 2,
+          "examples": [
+            "SBRN_1",
+            "SBRN_2"
+          ]
+        },
+        {
+          "prefix": "SSAN",
+          "distinct_ids": 2,
+          "examples": [
+            "SSAN_1",
+            "SSAN_2"
+          ]
+        },
+        {
+          "prefix": "TF",
+          "distinct_ids": 2,
+          "examples": [
+            "TF:1",
+            "TF:2"
+          ]
+        },
+        {
+          "prefix": "WDUB",
+          "distinct_ids": 2,
+          "examples": [
+            "WDUB_1",
+            "WDUB_2"
+          ]
+        },
+        {
+          "prefix": "WOAK",
+          "distinct_ids": 2,
+          "examples": [
+            "WOAK_1",
+            "WOAK_2"
+          ]
+        },
+        {
+          "prefix": "place",
+          "distinct_ids": 2,
+          "examples": [
+            "place_STOV",
+            "place_UBBA"
+          ]
+        },
+        {
+          "prefix": "22nd",
+          "distinct_ids": 1,
+          "examples": [
+            "22nd_street"
+          ]
+        },
+        {
+          "prefix": "ANTC",
+          "distinct_ids": 1,
+          "examples": [
+            "ANTC_1"
+          ]
+        },
+        {
+          "prefix": "CAST",
+          "distinct_ids": 1,
+          "examples": [
+            "CAST_1"
+          ]
+        },
+        {
+          "prefix": "DUBL",
+          "distinct_ids": 1,
+          "examples": [
+            "DUBL_1"
+          ]
+        },
+        {
+          "prefix": "FTVL",
+          "distinct_ids": 1,
+          "examples": [
+            "FTVL_1"
+          ]
+        },
+        {
+          "prefix": "GLEN",
+          "distinct_ids": 1,
+          "examples": [
+            "GLEN_1"
+          ]
+        },
+        {
+          "prefix": "HAYW",
+          "distinct_ids": 1,
+          "examples": [
+            "HAYW_1"
+          ]
+        },
+        {
+          "prefix": "MCAR",
+          "distinct_ids": 1,
+          "examples": [
+            "MCAR_1"
+          ]
+        },
+        {
+          "prefix": "MLBR",
+          "distinct_ids": 1,
+          "examples": [
+            "MLBR_1"
+          ]
+        },
+        {
+          "prefix": "NCON",
+          "distinct_ids": 1,
+          "examples": [
+            "NCON_1"
+          ]
+        },
+        {
+          "prefix": "OAKL",
+          "distinct_ids": 1,
+          "examples": [
+            "OAKL_1"
+          ]
+        },
+        {
+          "prefix": "ORIN",
+          "distinct_ids": 1,
+          "examples": [
+            "ORIN_1"
+          ]
+        },
+        {
+          "prefix": "PCTR",
+          "distinct_ids": 1,
+          "examples": [
+            "PCTR_1"
+          ]
+        },
+        {
+          "prefix": "PHIL",
+          "distinct_ids": 1,
+          "examples": [
+            "PHIL_1"
+          ]
+        },
+        {
+          "prefix": "PITT",
+          "distinct_ids": 1,
+          "examples": [
+            "PITT_1"
+          ]
+        },
+        {
+          "prefix": "SFIA",
+          "distinct_ids": 1,
+          "examples": [
+            "SFIA_1"
+          ]
+        },
+        {
+          "prefix": "SHAY",
+          "distinct_ids": 1,
+          "examples": [
+            "SHAY_1"
+          ]
+        },
+        {
+          "prefix": "UCTY",
+          "distinct_ids": 1,
+          "examples": [
+            "UCTY_1"
+          ]
+        },
+        {
+          "prefix": "WARM",
+          "distinct_ids": 1,
+          "examples": [
+            "WARM_1"
+          ]
+        },
+        {
+          "prefix": "WCRK",
+          "distinct_ids": 1,
+          "examples": [
+            "WCRK_1"
+          ]
+        },
+        {
+          "prefix": "blossom",
+          "distinct_ids": 1,
+          "examples": [
+            "blossom_hill"
+          ]
+        },
+        {
+          "prefix": "california",
+          "distinct_ids": 1,
+          "examples": [
+            "california_ave"
+          ]
+        },
+        {
+          "prefix": "college",
+          "distinct_ids": 1,
+          "examples": [
+            "college_park"
+          ]
+        },
+        {
+          "prefix": "hayward",
+          "distinct_ids": 1,
+          "examples": [
+            "hayward_park"
+          ]
+        },
+        {
+          "prefix": "menlo",
+          "distinct_ids": 1,
+          "examples": [
+            "menlo_park"
+          ]
+        },
+        {
+          "prefix": "morgan",
+          "distinct_ids": 1,
+          "examples": [
+            "morgan_hill"
+          ]
+        },
+        {
+          "prefix": "redwood",
+          "distinct_ids": 1,
+          "examples": [
+            "redwood_city"
+          ]
+        },
+        {
+          "prefix": "south",
+          "distinct_ids": 1,
+          "examples": [
+            "south_sf"
+          ]
+        }
+      ],
+      "leading_zero_ids": 0,
+      "suffix_collisions": 364,
+      "suffix_collision_examples": [
+        {
+          "suffix": "1",
+          "variants": 53,
+          "examples": [
+            "12TH_1",
+            "16TH_1",
+            "19TH_1",
+            "24TH_1",
+            "ANTC_1"
+          ]
+        },
+        {
+          "suffix": "2",
+          "variants": 34,
+          "examples": [
+            "12TH_2",
+            "16TH_2",
+            "19TH_2",
+            "24TH_2",
+            "ASHB_2"
+          ]
+        },
+        {
+          "suffix": "3",
+          "variants": 20,
+          "examples": [
+            "12TH_3",
+            "16TH_3",
+            "19TH_3",
+            "24TH_3",
+            "ASHB_3"
+          ]
+        },
+        {
+          "suffix": "4",
+          "variants": 10,
+          "examples": [
+            "12TH_4",
+            "19TH_4",
+            "BALB_4",
+            "CIVC_4",
+            "COLS_4"
+          ]
+        },
+        {
+          "suffix": "5",
+          "variants": 10,
+          "examples": [
+            "12TH_5",
+            "19TH_5",
+            "BALB_5",
+            "CIVC_5",
+            "COLS_5"
+          ]
+        }
+      ]
+    },
+    "stop_code": {
+      "formats": [
+        {
+          "format": "numeric string",
+          "distinct_ids": 19768,
+          "examples": [
+            "1",
+            "10",
+            "10390",
+            "10913",
+            "117"
+          ]
+        },
+        {
+          "format": "colon prefix",
+          "distinct_ids": 315,
+          "examples": [
+            "1:10",
+            "1:117",
+            "1:120",
+            "1:121",
+            "1:123"
+          ]
+        },
+        {
+          "format": "underscore prefix",
+          "distinct_ids": 245,
+          "examples": [
+            "12TH_1",
+            "12TH_2",
+            "12TH_3",
+            "12TH_4",
+            "12TH_5"
+          ]
+        },
+        {
+          "format": "alphabetic",
+          "distinct_ids": 113,
+          "examples": [
+            "AIF",
+            "BelLis",
+            "DELN",
+            "MrnSqr",
+            "PinBat"
+          ]
+        },
+        {
+          "format": "alphanumeric",
+          "distinct_ids": 25,
+          "examples": [
+            "4thFol",
+            "76834A",
+            "S1",
+            "S2",
+            "S3"
+          ]
+        },
+        {
+          "format": "other",
+          "distinct_ids": 17,
+          "examples": [
+            "-325",
+            "BAY-01-SB",
+            "BAY-02-NB",
+            "BEL-01-CB",
+            "LG&NA"
+          ]
+        }
+      ],
+      "prefixes": [
+        {
+          "prefix": "1",
+          "distinct_ids": 316,
+          "examples": [
+            "1:10",
+            "1:117",
+            "1:120"
+          ]
+        },
+        {
+          "prefix": "PS",
+          "distinct_ids": 69,
+          "examples": [
+            "PS_ALDR",
+            "PS_ALUM",
+            "PS_ARTC"
+          ]
+        },
+        {
+          "prefix": "EL",
+          "distinct_ids": 14,
+          "examples": [
+            "EL_BHM",
+            "EL_BLH",
+            "EL_CPTL"
+          ]
+        },
+        {
+          "prefix": "ES",
+          "distinct_ids": 11,
+          "examples": [
+            "ES_BHM",
+            "ES_BLH",
+            "ES_CAP_A"
+          ]
+        },
+        {
+          "prefix": "12TH",
+          "distinct_ids": 8,
+          "examples": [
+            "12TH_1",
+            "12TH_2",
+            "12TH_3"
+          ]
+        },
+        {
+          "prefix": "POWL",
+          "distinct_ids": 8,
+          "examples": [
+            "POWL_1",
+            "POWL_2",
+            "POWL_3"
+          ]
+        },
+        {
+          "prefix": "CIVC",
+          "distinct_ids": 7,
+          "examples": [
+            "CIVC_1",
+            "CIVC_2",
+            "CIVC_3"
+          ]
+        },
+        {
+          "prefix": "MONT",
+          "distinct_ids": 7,
+          "examples": [
+            "MONT_1",
+            "MONT_2",
+            "MONT_3"
+          ]
+        },
+        {
+          "prefix": "19TH",
+          "distinct_ids": 6,
+          "examples": [
+            "19TH_1",
+            "19TH_2",
+            "19TH_3"
+          ]
+        },
+        {
+          "prefix": "BALB",
+          "distinct_ids": 6,
+          "examples": [
+            "BALB_1",
+            "BALB_2",
+            "BALB_3"
+          ]
+        },
+        {
+          "prefix": "COLS",
+          "distinct_ids": 6,
+          "examples": [
+            "COLS_1",
+            "COLS_2",
+            "COLS_3"
+          ]
+        },
+        {
+          "prefix": "EMBR",
+          "distinct_ids": 6,
+          "examples": [
+            "EMBR_1",
+            "EMBR_2",
+            "EMBR_3"
+          ]
+        },
+        {
+          "prefix": "DBRK",
+          "distinct_ids": 5,
+          "examples": [
+            "DBRK_1",
+            "DBRK_2",
+            "DBRK_3"
+          ]
+        },
+        {
+          "prefix": "san",
+          "distinct_ids": 5,
+          "examples": [
+            "san_antonio",
+            "san_bruno",
+            "san_carlos"
+          ]
+        },
+        {
+          "prefix": "LAKE",
+          "distinct_ids": 4,
+          "examples": [
+            "LAKE_1",
+            "LAKE_2",
+            "LAKE_3"
+          ]
+        },
+        {
+          "prefix": "16TH",
+          "distinct_ids": 3,
+          "examples": [
+            "16TH_1",
+            "16TH_2",
+            "16TH_3"
+          ]
+        },
+        {
+          "prefix": "24TH",
+          "distinct_ids": 3,
+          "examples": [
+            "24TH_1",
+            "24TH_2",
+            "24TH_3"
+          ]
+        },
+        {
+          "prefix": "ASHB",
+          "distinct_ids": 3,
+          "examples": [
+            "ASHB_1",
+            "ASHB_2",
+            "ASHB_3"
+          ]
+        },
+        {
+          "prefix": "BERY",
+          "distinct_ids": 3,
+          "examples": [
+            "BERY_1",
+            "BERY_2",
+            "BERY_3"
+          ]
+        },
+        {
+          "prefix": "DALY",
+          "distinct_ids": 3,
+          "examples": [
+            "DALY_1",
+            "DALY_2",
+            "DALY_3"
+          ]
+        },
+        {
+          "prefix": "FRMT",
+          "distinct_ids": 3,
+          "examples": [
+            "FRMT_1",
+            "FRMT_2",
+            "FRMT_3"
+          ]
+        },
+        {
+          "prefix": "PLZA",
+          "distinct_ids": 3,
+          "examples": [
+            "PLZA_1",
+            "PLZA_2",
+            "PLZA_3"
+          ]
+        },
+        {
+          "prefix": "ggt",
+          "distinct_ids": 3,
+          "examples": [
+            "ggt_1",
+            "ggt_2",
+            "ggt_3"
+          ]
+        },
+        {
+          "prefix": "BAYF",
+          "distinct_ids": 2,
+          "examples": [
+            "BAYF_1",
+            "BAYF_2"
+          ]
+        },
+        {
+          "prefix": "COLM",
+          "distinct_ids": 2,
+          "examples": [
+            "COLM_1",
+            "COLM_2"
+          ]
+        },
+        {
+          "prefix": "CONC",
+          "distinct_ids": 2,
+          "examples": [
+            "CONC_1",
+            "CONC_2"
+          ]
+        },
+        {
+          "prefix": "DELN",
+          "distinct_ids": 2,
+          "examples": [
+            "DELN_1",
+            "DELN_2"
+          ]
+        },
+        {
+          "prefix": "LAFY",
+          "distinct_ids": 2,
+          "examples": [
+            "LAFY_1",
+            "LAFY_2"
+          ]
+        },
+        {
+          "prefix": "MLPT",
+          "distinct_ids": 2,
+          "examples": [
+            "MLPT_1",
+            "MLPT_2"
+          ]
+        },
+        {
+          "prefix": "NBRK",
+          "distinct_ids": 2,
+          "examples": [
+            "NBRK_1",
+            "NBRK_2"
+          ]
+        },
+        {
+          "prefix": "RICH",
+          "distinct_ids": 2,
+          "examples": [
+            "RICH_1",
+            "RICH_2"
+          ]
+        },
+        {
+          "prefix": "ROCK",
+          "distinct_ids": 2,
+          "examples": [
+            "ROCK_1",
+            "ROCK_2"
+          ]
+        },
+        {
+          "prefix": "SANL",
+          "distinct_ids": 2,
+          "examples": [
+            "SANL_1",
+            "SANL_2"
+          ]
+        },
+        {
+          "prefix": "SBRN",
+          "distinct_ids": 2,
+          "examples": [
+            "SBRN_1",
+            "SBRN_2"
+          ]
+        },
+        {
+          "prefix": "SSAN",
+          "distinct_ids": 2,
+          "examples": [
+            "SSAN_1",
+            "SSAN_2"
+          ]
+        },
+        {
+          "prefix": "WDUB",
+          "distinct_ids": 2,
+          "examples": [
+            "WDUB_1",
+            "WDUB_2"
+          ]
+        },
+        {
+          "prefix": "WOAK",
+          "distinct_ids": 2,
+          "examples": [
+            "WOAK_1",
+            "WOAK_2"
+          ]
+        },
+        {
+          "prefix": "place",
+          "distinct_ids": 2,
+          "examples": [
+            "place_STOV",
+            "place_UBBA"
+          ]
+        },
+        {
+          "prefix": "22nd",
+          "distinct_ids": 1,
+          "examples": [
+            "22nd_street"
+          ]
+        },
+        {
+          "prefix": "ANTC",
+          "distinct_ids": 1,
+          "examples": [
+            "ANTC_1"
+          ]
+        },
+        {
+          "prefix": "CAST",
+          "distinct_ids": 1,
+          "examples": [
+            "CAST_1"
+          ]
+        },
+        {
+          "prefix": "DUBL",
+          "distinct_ids": 1,
+          "examples": [
+            "DUBL_1"
+          ]
+        },
+        {
+          "prefix": "FTVL",
+          "distinct_ids": 1,
+          "examples": [
+            "FTVL_1"
+          ]
+        },
+        {
+          "prefix": "GLEN",
+          "distinct_ids": 1,
+          "examples": [
+            "GLEN_1"
+          ]
+        },
+        {
+          "prefix": "HAYW",
+          "distinct_ids": 1,
+          "examples": [
+            "HAYW_1"
+          ]
+        },
+        {
+          "prefix": "MCAR",
+          "distinct_ids": 1,
+          "examples": [
+            "MCAR_1"
+          ]
+        },
+        {
+          "prefix": "MLBR",
+          "distinct_ids": 1,
+          "examples": [
+            "MLBR_1"
+          ]
+        },
+        {
+          "prefix": "NCON",
+          "distinct_ids": 1,
+          "examples": [
+            "NCON_1"
+          ]
+        },
+        {
+          "prefix": "OAKL",
+          "distinct_ids": 1,
+          "examples": [
+            "OAKL_1"
+          ]
+        },
+        {
+          "prefix": "ORIN",
+          "distinct_ids": 1,
+          "examples": [
+            "ORIN_1"
+          ]
+        },
+        {
+          "prefix": "PCTR",
+          "distinct_ids": 1,
+          "examples": [
+            "PCTR_1"
+          ]
+        },
+        {
+          "prefix": "PHIL",
+          "distinct_ids": 1,
+          "examples": [
+            "PHIL_1"
+          ]
+        },
+        {
+          "prefix": "PITT",
+          "distinct_ids": 1,
+          "examples": [
+            "PITT_1"
+          ]
+        },
+        {
+          "prefix": "SFIA",
+          "distinct_ids": 1,
+          "examples": [
+            "SFIA_1"
+          ]
+        },
+        {
+          "prefix": "SHAY",
+          "distinct_ids": 1,
+          "examples": [
+            "SHAY_1"
+          ]
+        },
+        {
+          "prefix": "UCTY",
+          "distinct_ids": 1,
+          "examples": [
+            "UCTY_1"
+          ]
+        },
+        {
+          "prefix": "WARM",
+          "distinct_ids": 1,
+          "examples": [
+            "WARM_1"
+          ]
+        },
+        {
+          "prefix": "WCRK",
+          "distinct_ids": 1,
+          "examples": [
+            "WCRK_1"
+          ]
+        },
+        {
+          "prefix": "blossom",
+          "distinct_ids": 1,
+          "examples": [
+            "blossom_hill"
+          ]
+        },
+        {
+          "prefix": "california",
+          "distinct_ids": 1,
+          "examples": [
+            "california_ave"
+          ]
+        },
+        {
+          "prefix": "college",
+          "distinct_ids": 1,
+          "examples": [
+            "college_park"
+          ]
+        },
+        {
+          "prefix": "hayward",
+          "distinct_ids": 1,
+          "examples": [
+            "hayward_park"
+          ]
+        },
+        {
+          "prefix": "menlo",
+          "distinct_ids": 1,
+          "examples": [
+            "menlo_park"
+          ]
+        },
+        {
+          "prefix": "morgan",
+          "distinct_ids": 1,
+          "examples": [
+            "morgan_hill"
+          ]
+        },
+        {
+          "prefix": "redwood",
+          "distinct_ids": 1,
+          "examples": [
+            "redwood_city"
+          ]
+        },
+        {
+          "prefix": "south",
+          "distinct_ids": 1,
+          "examples": [
+            "south_sf"
+          ]
+        }
+      ],
+      "leading_zero_ids": 0,
+      "suffix_collisions": 333,
+      "suffix_collision_examples": [
+        {
+          "suffix": "1",
+          "variants": 52,
+          "examples": [
+            "1",
+            "12TH_1",
+            "16TH_1",
+            "19TH_1",
+            "24TH_1"
+          ]
+        },
+        {
+          "suffix": "2",
+          "variants": 33,
+          "examples": [
+            "12TH_2",
+            "16TH_2",
+            "19TH_2",
+            "2",
+            "24TH_2"
+          ]
+        },
+        {
+          "suffix": "3",
+          "variants": 19,
+          "examples": [
+            "12TH_3",
+            "16TH_3",
+            "19TH_3",
+            "24TH_3",
+            "3"
+          ]
+        },
+        {
+          "suffix": "4",
+          "variants": 10,
+          "examples": [
+            "12TH_4",
+            "19TH_4",
+            "BALB_4",
+            "CIVC_4",
+            "COLS_4"
+          ]
+        },
+        {
+          "suffix": "5",
+          "variants": 10,
+          "examples": [
+            "12TH_5",
+            "19TH_5",
+            "5",
+            "BALB_5",
+            "CIVC_5"
+          ]
+        }
+      ]
+    },
+    "route_id": {
+      "formats": [
+        {
+          "format": "colon prefix",
+          "distinct_ids": 665,
+          "examples": [
+            "3D:200X",
+            "3D:201X",
+            "3D:360",
+            "3D:362",
+            "3D:370"
+          ]
+        }
+      ],
+      "prefixes": [
+        {
+          "prefix": "AC",
+          "distinct_ids": 123,
+          "examples": [
+            "AC:12",
+            "AC:14",
+            "AC:18"
+          ]
+        },
+        {
+          "prefix": "SM",
+          "distinct_ids": 75,
+          "examples": [
+            "SM:10",
+            "SM:110",
+            "SM:112"
+          ]
+        },
+        {
+          "prefix": "SC",
+          "distinct_ids": 71,
+          "examples": [
+            "SC:20",
+            "SC:200",
+            "SC:201"
+          ]
+        },
+        {
+          "prefix": "SF",
+          "distinct_ids": 68,
+          "examples": [
+            "SF:1",
+            "SF:12",
+            "SF:14"
+          ]
+        },
+        {
+          "prefix": "CC",
+          "distinct_ids": 51,
+          "examples": [
+            "CC:1",
+            "CC:10",
+            "CC:11"
+          ]
+        },
+        {
+          "prefix": "WH",
+          "distinct_ids": 30,
+          "examples": [
+            "WH:1",
+            "WH:10R",
+            "WH:11"
+          ]
+        },
+        {
+          "prefix": "SO",
+          "distinct_ids": 26,
+          "examples": [
+            "SO:10",
+            "SO:10T",
+            "SO:12"
+          ]
+        },
+        {
+          "prefix": "CM",
+          "distinct_ids": 20,
+          "examples": [
+            "CM:BAY Shuttle",
+            "CM:BCP Shuttle",
+            "CM:BPT Shuttle"
+          ]
+        },
+        {
+          "prefix": "MA",
+          "distinct_ids": 20,
+          "examples": [
+            "MA:17",
+            "MA:219",
+            "MA:22"
+          ]
+        },
+        {
+          "prefix": "SR",
+          "distinct_ids": 15,
+          "examples": [
+            "SR:1",
+            "SR:10",
+            "SR:12"
+          ]
+        },
+        {
+          "prefix": "ST",
+          "distinct_ids": 15,
+          "examples": [
+            "ST:15",
+            "ST:17",
+            "ST:1A"
+          ]
+        },
+        {
+          "prefix": "BA",
+          "distinct_ids": 14,
+          "examples": [
+            "BA:Blue-N",
+            "BA:Blue-S",
+            "BA:BridgeA"
+          ]
+        },
+        {
+          "prefix": "VN",
+          "distinct_ids": 14,
+          "examples": [
+            "VN:10",
+            "VN:11",
+            "VN:11X"
+          ]
+        },
+        {
+          "prefix": "WC",
+          "distinct_ids": 12,
+          "examples": [
+            "WC:10",
+            "WC:11",
+            "WC:12"
+          ]
+        },
+        {
+          "prefix": "3D",
+          "distinct_ids": 11,
+          "examples": [
+            "3D:200X",
+            "3D:201X",
+            "3D:360"
+          ]
+        },
+        {
+          "prefix": "PE",
+          "distinct_ids": 11,
+          "examples": [
+            "PE:10",
+            "PE:11",
+            "PE:2"
+          ]
+        },
+        {
+          "prefix": "GG",
+          "distinct_ids": 10,
+          "examples": [
+            "GG:101",
+            "GG:114",
+            "GG:120"
+          ]
+        },
+        {
+          "prefix": "MV",
+          "distinct_ids": 8,
+          "examples": [
+            "MV:A - AM",
+            "MV:A - PM",
+            "MV:B - AM"
+          ]
+        },
+        {
+          "prefix": "SB",
+          "distinct_ids": 7,
+          "examples": [
+            "SB:HB",
+            "SB:OA",
+            "SB:OAS"
+          ]
+        },
+        {
+          "prefix": "UC",
+          "distinct_ids": 6,
+          "examples": [
+            "UC:1",
+            "UC:2",
+            "UC:3"
+          ]
+        },
+        {
+          "prefix": "CT",
+          "distinct_ids": 5,
+          "examples": [
+            "CT:Express",
+            "CT:Limited",
+            "CT:Local Weekday"
+          ]
+        },
+        {
+          "prefix": "EM",
+          "distinct_ids": 5,
+          "examples": [
+            "EM:Hollis",
+            "EM:Hollis/Holi",
+            "EM:Shell/Pow"
+          ]
+        },
+        {
+          "prefix": "FS",
+          "distinct_ids": 5,
+          "examples": [
+            "FS:1",
+            "FS:3",
+            "FS:6"
+          ]
+        },
+        {
+          "prefix": "GF",
+          "distinct_ids": 5,
+          "examples": [
+            "GF:AISF",
+            "GF:LSSF",
+            "GF:SSSF"
+          ]
+        },
+        {
+          "prefix": "VC",
+          "distinct_ids": 5,
+          "examples": [
+            "VC:2",
+            "VC:3",
+            "VC:4"
+          ]
+        },
+        {
+          "prefix": "MB",
+          "distinct_ids": 4,
+          "examples": [
+            "MB:CCA/Adobe",
+            "MB:East",
+            "MB:TC"
+          ]
+        },
+        {
+          "prefix": "MC",
+          "distinct_ids": 4,
+          "examples": [
+            "MC:GRAY",
+            "MC:GRAY WE",
+            "MC:RED"
+          ]
+        },
+        {
+          "prefix": "SI",
+          "distinct_ids": 4,
+          "examples": [
+            "SI:Blue Line",
+            "SI:Lot D",
+            "SI:Red Line"
+          ]
+        },
+        {
+          "prefix": "AM",
+          "distinct_ids": 3,
+          "examples": [
+            "AM:CC",
+            "AM:SF",
+            "AM:Shuttle"
+          ]
+        },
+        {
+          "prefix": "SS",
+          "distinct_ids": 3,
+          "examples": [
+            "SS:BLUE",
+            "SS:GREEN",
+            "SS:ORANGE"
+          ]
+        },
+        {
+          "prefix": "DE",
+          "distinct_ids": 2,
+          "examples": [
+            "DE:DB",
+            "DE:DB1"
+          ]
+        },
+        {
+          "prefix": "PG",
+          "distinct_ids": 2,
+          "examples": [
+            "PG:Presidio GO Downtown",
+            "PG:Presidio GO South Hills"
+          ]
+        },
+        {
+          "prefix": "SE",
+          "distinct_ids": 2,
+          "examples": [
+            "SE:30D",
+            "SE:30S"
+          ]
+        },
+        {
+          "prefix": "SL",
+          "distinct_ids": 2,
+          "examples": [
+            "SL:North",
+            "SL:South"
+          ]
+        },
+        {
+          "prefix": "AF",
+          "distinct_ids": 1,
+          "examples": [
+            "AF:Tib-AIF"
+          ]
+        },
+        {
+          "prefix": "CE",
+          "distinct_ids": 1,
+          "examples": [
+            "CE:ACE"
+          ]
+        },
+        {
+          "prefix": "EE",
+          "distinct_ids": 1,
+          "examples": [
+            "EE:EmExp"
+          ]
+        },
+        {
+          "prefix": "GP",
+          "distinct_ids": 1,
+          "examples": [
+            "GP:GGPS"
+          ]
+        },
+        {
+          "prefix": "RV",
+          "distinct_ids": 1,
+          "examples": [
+            "RV:50"
+          ]
+        },
+        {
+          "prefix": "SA",
+          "distinct_ids": 1,
+          "examples": [
+            "SA:SMART"
+          ]
+        },
+        {
+          "prefix": "TF",
+          "distinct_ids": 1,
+          "examples": [
+            "TF:TISF"
+          ]
+        }
+      ],
+      "leading_zero_ids": 0,
+      "suffix_collisions": 101,
+      "suffix_collision_examples": [
+        {
+          "suffix": "10",
+          "variants": 7,
+          "examples": [
+            "CC:10",
+            "PE:10",
+            "SM:10",
+            "SO:10",
+            "SR:10"
+          ]
+        },
+        {
+          "suffix": "15",
+          "variants": 7,
+          "examples": [
+            "CC:15",
+            "SF:15",
+            "SM:15",
+            "SR:15",
+            "ST:15"
+          ]
+        },
+        {
+          "suffix": "3",
+          "variants": 7,
+          "examples": [
+            "FS:3",
+            "PE:3",
+            "SR:3",
+            "ST:3",
+            "UC:3"
+          ]
+        },
+        {
+          "suffix": "6",
+          "variants": 7,
+          "examples": [
+            "AC:6",
+            "CC:6",
+            "FS:6",
+            "SF:6",
+            "SR:6"
+          ]
+        },
+        {
+          "suffix": "1",
+          "variants": 6,
+          "examples": [
+            "CC:1",
+            "FS:1",
+            "SF:1",
+            "SR:1",
+            "UC:1"
+          ]
+        }
+      ]
+    },
+    "trip_id": {
+      "formats": [
+        {
+          "format": "colon prefix",
+          "distinct_ids": 92827,
+          "examples": [
+            "3D:1",
+            "3D:10",
+            "3D:100",
+            "3D:101",
+            "3D:102"
+          ]
+        }
+      ],
+      "prefixes": [
+        {
+          "prefix": "SF",
+          "distinct_ids": 34668,
+          "examples": [
+            "SF:12103525",
+            "SF:12103526",
+            "SF:12103527"
+          ]
+        },
+        {
+          "prefix": "AC",
+          "distinct_ids": 13695,
+          "examples": [
+            "AC:10000010",
+            "AC:1000020",
+            "AC:100020"
+          ]
+        },
+        {
+          "prefix": "SC",
+          "distinct_ids": 8620,
+          "examples": [
+            "SC:4020335",
+            "SC:4020336",
+            "SC:4020339"
+          ]
+        },
+        {
+          "prefix": "SM",
+          "distinct_ids": 8449,
+          "examples": [
+            "SM:15247548-155-Blocks-Sunday-62",
+            "SM:15247549-155-Blocks-Sunday-62",
+            "SM:15247550-155-Blocks-Sunday-62"
+          ]
+        },
+        {
+          "prefix": "BA",
+          "distinct_ids": 6377,
+          "examples": [
+            "BA:1965118",
+            "BA:1965119",
+            "BA:1965120"
+          ]
+        },
+        {
+          "prefix": "ST",
+          "distinct_ids": 3430,
+          "examples": [
+            "ST:1",
+            "ST:10",
+            "ST:1058"
+          ]
+        },
+        {
+          "prefix": "WH",
+          "distinct_ids": 3156,
+          "examples": [
+            "WH:1000013",
+            "WH:1000014",
+            "WH:1000015"
+          ]
+        },
+        {
+          "prefix": "MA",
+          "distinct_ids": 1613,
+          "examples": [
+            "MA:17001",
+            "MA:17002",
+            "MA:17003"
+          ]
+        },
+        {
+          "prefix": "CC",
+          "distinct_ids": 1553,
+          "examples": [
+            "CC:608168",
+            "CC:608169",
+            "CC:608170"
+          ]
+        },
+        {
+          "prefix": "SI",
+          "distinct_ids": 1268,
+          "examples": [
+            "SI:T_BLUE_001",
+            "SI:T_BLUE_002",
+            "SI:T_BLUE_003"
+          ]
+        },
+        {
+          "prefix": "GG",
+          "distinct_ids": 1190,
+          "examples": [
+            "GG:9453317",
+            "GG:9453318",
+            "GG:9453319"
+          ]
+        },
+        {
+          "prefix": "WC",
+          "distinct_ids": 967,
+          "examples": [
+            "WC:6094100853950",
+            "WC:6094101853950",
+            "WC:6094102853950"
+          ]
+        },
+        {
+          "prefix": "SR",
+          "distinct_ids": 878,
+          "examples": [
+            "SR:1-104",
+            "SR:1-106",
+            "SR:1-107"
+          ]
+        },
+        {
+          "prefix": "VN",
+          "distinct_ids": 795,
+          "examples": [
+            "VN:R-MoTuThFrR-MTTF-ACTAM-A-LO-0650-169c4a0",
+            "VN:R-MoTuThFrR-MTTF-ACTAM-C-LO-0745-09357d6",
+            "VN:R-MoTuThFrR-MTTF-ACTAM-C-LO-0850-5bdd17a"
+          ]
+        },
+        {
+          "prefix": "PE",
+          "distinct_ids": 718,
+          "examples": [
+            "PE:school_days-Fr-6286-A-IB-0638-0b21290",
+            "PE:school_days-Fr-6286-A-IB-0708-23f13c4",
+            "PE:school_days-Fr-6286-A-IB-0723-c3dcafe"
+          ]
+        },
+        {
+          "prefix": "3D",
+          "distinct_ids": 678,
+          "examples": [
+            "3D:1",
+            "3D:10",
+            "3D:100"
+          ]
+        },
+        {
+          "prefix": "AF",
+          "distinct_ids": 632,
+          "examples": [
+            "AF:08eac359-a8a8-412d-a079-5d8871d8d95e",
+            "AF:1000",
+            "AF:1001"
+          ]
+        },
+        {
+          "prefix": "UC",
+          "distinct_ids": 566,
+          "examples": [
+            "UC:01086498-5ab5-4346-ae78-b45a522eb113",
+            "UC:02a942ae-530f-4439-89bc-da2ea927bdb3",
+            "UC:02ab5d46-8f72-4a3b-a2f2-9c6473d8f9f8"
+          ]
+        },
+        {
+          "prefix": "SO",
+          "distinct_ids": 491,
+          "examples": [
+            "SO:100615-Wkdy-1",
+            "SO:100655-Wkdy-1",
+            "SO:100755-Sat-1"
+          ]
+        },
+        {
+          "prefix": "EM",
+          "distinct_ids": 420,
+          "examples": [
+            "EM:00251361-2c04-4e91-a2be-24726ee10357",
+            "EM:015bbf51-7f49-4bfe-a9e4-b66c812e3fca",
+            "EM:03133662-24b4-4c55-a2ba-dc148617854c"
+          ]
+        },
+        {
+          "prefix": "VC",
+          "distinct_ids": 417,
+          "examples": [
+            "VC:0164ab7c-6f8d-4dc5-9daa-6de9a186d89a",
+            "VC:01f91229-dce9-42f7-ae7b-827b2de460bc",
+            "VC:02adc7ac-427e-4cb2-b9ef-c6a7214f2ddc"
+          ]
+        },
+        {
+          "prefix": "SB",
+          "distinct_ids": 347,
+          "examples": [
+            "SB:20261102_20270228_hb_am1_hb_1",
+            "SB:20261102_20270228_hb_am1_hb_2",
+            "SB:20261102_20270228_hb_am1_hb_3"
+          ]
+        },
+        {
+          "prefix": "CT",
+          "distinct_ids": 257,
+          "examples": [
+            "CT:101",
+            "CT:102",
+            "CT:103"
+          ]
+        },
+        {
+          "prefix": "FS",
+          "distinct_ids": 254,
+          "examples": [
+            "FS:Route1-1_Weekday_in_tn_1",
+            "FS:Route1-1_Weekday_in_tn_10",
+            "FS:Route1-1_Weekday_in_tn_11"
+          ]
+        },
+        {
+          "prefix": "CM",
+          "distinct_ids": 248,
+          "examples": [
+            "CM:2026 Regular Schedule - Current (Weekday)_100",
+            "CM:2026 Regular Schedule - Current (Weekday)_101",
+            "CM:2026 Regular Schedule - Current (Weekday)_102"
+          ]
+        },
+        {
+          "prefix": "GF",
+          "distinct_ids": 178,
+          "examples": [
+            "GF:9456046",
+            "GF:9456047",
+            "GF:9456048"
+          ]
+        },
+        {
+          "prefix": "MB",
+          "distinct_ids": 138,
+          "examples": [
+            "MB:t_5526952_b_none_tn_0",
+            "MB:t_5526953_b_none_tn_0",
+            "MB:t_5526954_b_none_tn_0"
+          ]
+        },
+        {
+          "prefix": "AM",
+          "distinct_ids": 116,
+          "examples": [
+            "AM:520",
+            "AM:521",
+            "AM:521W"
+          ]
+        },
+        {
+          "prefix": "GP",
+          "distinct_ids": 103,
+          "examples": [
+            "GP:Weekday-InboundToStow-000300",
+            "GP:Weekday-InboundToStow-121300",
+            "GP:Weekday-InboundToStow-123300"
+          ]
+        },
+        {
+          "prefix": "PG",
+          "distinct_ids": 88,
+          "examples": [
+            "PG:PD0545",
+            "PG:PD0630",
+            "PG:PD0700"
+          ]
+        },
+        {
+          "prefix": "DE",
+          "distinct_ids": 72,
+          "examples": [
+            "DE:12163596",
+            "DE:12163597",
+            "DE:12163598"
+          ]
+        },
+        {
+          "prefix": "SA",
+          "distinct_ids": 72,
+          "examples": [
+            "SA:t_6153485_b_86615_tn_0",
+            "SA:t_6153486_b_86615_tn_0",
+            "SA:t_6153487_b_86615_tn_0"
+          ]
+        },
+        {
+          "prefix": "MV",
+          "distinct_ids": 70,
+          "examples": [
+            "MV:00047c94-52a4-4c72-b695-1f3376e34b9a",
+            "MV:0b3acb6c-8e03-4673-9e1e-af0bc6d25a45",
+            "MV:0b7a7558-d7a0-4dfe-9a7a-4652e87a67a8"
+          ]
+        },
+        {
+          "prefix": "MC",
+          "distinct_ids": 58,
+          "examples": [
+            "MC:01415890-3acc-4c3e-9748-e2dbb5c488b7",
+            "MC:02c09b2b-5918-459f-9dbe-90043325e01b",
+            "MC:0ab39e63-320d-47e9-a405-a4489193b311"
+          ]
+        },
+        {
+          "prefix": "TF",
+          "distinct_ids": 54,
+          "examples": [
+            "TF:1602",
+            "TF:1603",
+            "TF:1604"
+          ]
+        },
+        {
+          "prefix": "CE",
+          "distinct_ids": 52,
+          "examples": [
+            "CE:ACE01",
+            "CE:ACE01ARIvsSF",
+            "CE:ACE01BrunoMars1"
+          ]
+        },
+        {
+          "prefix": "SS",
+          "distinct_ids": 46,
+          "examples": [
+            "SS:008-SCS-BLUE-1",
+            "SS:008-SCS-BLUE-10",
+            "SS:008-SCS-BLUE-11"
+          ]
+        },
+        {
+          "prefix": "SL",
+          "distinct_ids": 38,
+          "examples": [
+            "SL:North_AM1",
+            "SL:North_AM10",
+            "SL:North_AM2"
+          ]
+        },
+        {
+          "prefix": "SE",
+          "distinct_ids": 31,
+          "examples": [
+            "SE:01777a84-215a-4c84-9b38-bd87bc73ed7c",
+            "SE:0728fe39-aa8a-4eca-b3b7-9060dcb50993",
+            "SE:07b218cf-de38-4bc0-b54c-f44a455d4b76"
+          ]
+        },
+        {
+          "prefix": "EE",
+          "distinct_ids": 16,
+          "examples": [
+            "EE:AM1",
+            "EE:AM2",
+            "EE:AM3"
+          ]
+        },
+        {
+          "prefix": "RV",
+          "distinct_ids": 8,
+          "examples": [
+            "RV:t_1460187_b_30254_tn_0",
+            "RV:t_1460188_b_30254_tn_0",
+            "RV:t_1460190_b_30254_tn_0"
+          ]
+        }
+      ],
+      "leading_zero_ids": 0,
+      "suffix_collisions": 478,
+      "suffix_collision_examples": [
+        {
+          "suffix": "110",
+          "variants": 3,
+          "examples": [
+            "3D:110",
+            "CT:110",
+            "ST:110"
+          ]
+        },
+        {
+          "suffix": "111",
+          "variants": 3,
+          "examples": [
+            "3D:111",
+            "CT:111",
+            "ST:111"
+          ]
+        },
+        {
+          "suffix": "112",
+          "variants": 3,
+          "examples": [
+            "3D:112",
+            "CT:112",
+            "ST:112"
+          ]
+        },
+        {
+          "suffix": "1123",
+          "variants": 3,
+          "examples": [
+            "3D:1123",
+            "AF:1123",
+            "ST:1123"
+          ]
+        },
+        {
+          "suffix": "1124",
+          "variants": 3,
+          "examples": [
+            "3D:1124",
+            "AF:1124",
+            "ST:1124"
+          ]
+        }
+      ]
+    },
+    "service_id": {
+      "formats": [
+        {
+          "format": "colon prefix",
+          "distinct_ids": 485,
+          "examples": [
+            "3D:72969",
+            "3D:72970",
+            "3D:72971",
+            "AC:72905",
+            "AC:72906"
+          ]
+        }
+      ],
+      "prefixes": [
+        {
+          "prefix": "SC",
+          "distinct_ids": 85,
+          "examples": [
+            "SC:72914",
+            "SC:72915",
+            "SC:72916"
+          ]
+        },
+        {
+          "prefix": "AC",
+          "distinct_ids": 68,
+          "examples": [
+            "AC:72905",
+            "AC:72906",
+            "AC:72907"
+          ]
+        },
+        {
+          "prefix": "AF",
+          "distinct_ids": 61,
+          "examples": [
+            "AF:77685",
+            "AF:77686",
+            "AF:77687"
+          ]
+        },
+        {
+          "prefix": "SM",
+          "distinct_ids": 36,
+          "examples": [
+            "SM:73025",
+            "SM:73026",
+            "SM:73027"
+          ]
+        },
+        {
+          "prefix": "UC",
+          "distinct_ids": 36,
+          "examples": [
+            "UC:74964",
+            "UC:74965",
+            "UC:83139"
+          ]
+        },
+        {
+          "prefix": "WC",
+          "distinct_ids": 30,
+          "examples": [
+            "WC:72889",
+            "WC:72890",
+            "WC:72891"
+          ]
+        },
+        {
+          "prefix": "CE",
+          "distinct_ids": 22,
+          "examples": [
+            "CE:79260",
+            "CE:80206",
+            "CE:81834"
+          ]
+        },
+        {
+          "prefix": "ST",
+          "distinct_ids": 15,
+          "examples": [
+            "ST:73006",
+            "ST:73007",
+            "ST:76802"
+          ]
+        },
+        {
+          "prefix": "BA",
+          "distinct_ids": 13,
+          "examples": [
+            "BA:72953",
+            "BA:72954",
+            "BA:72955"
+          ]
+        },
+        {
+          "prefix": "SB",
+          "distinct_ids": 10,
+          "examples": [
+            "SB:72855",
+            "SB:72856",
+            "SB:79543"
+          ]
+        },
+        {
+          "prefix": "WH",
+          "distinct_ids": 9,
+          "examples": [
+            "WH:72989",
+            "WH:72990",
+            "WH:72991"
+          ]
+        },
+        {
+          "prefix": "EM",
+          "distinct_ids": 8,
+          "examples": [
+            "EM:72790",
+            "EM:72791",
+            "EM:72792"
+          ]
+        },
+        {
+          "prefix": "MA",
+          "distinct_ids": 8,
+          "examples": [
+            "MA:72918",
+            "MA:76017",
+            "MA:76018"
+          ]
+        },
+        {
+          "prefix": "MV",
+          "distinct_ids": 8,
+          "examples": [
+            "MV:77564",
+            "MV:78907",
+            "MV:78921"
+          ]
+        },
+        {
+          "prefix": "GG",
+          "distinct_ids": 7,
+          "examples": [
+            "GG:73017",
+            "GG:75117",
+            "GG:75205"
+          ]
+        },
+        {
+          "prefix": "CC",
+          "distinct_ids": 6,
+          "examples": [
+            "CC:79168",
+            "CC:79169",
+            "CC:79170"
+          ]
+        },
+        {
+          "prefix": "FS",
+          "distinct_ids": 5,
+          "examples": [
+            "FS:72801",
+            "FS:75720",
+            "FS:79174"
+          ]
+        },
+        {
+          "prefix": "SF",
+          "distinct_ids": 5,
+          "examples": [
+            "SF:78967",
+            "SF:78968",
+            "SF:79536"
+          ]
+        },
+        {
+          "prefix": "SO",
+          "distinct_ids": 5,
+          "examples": [
+            "SO:73086",
+            "SO:73087",
+            "SO:75492"
+          ]
+        },
+        {
+          "prefix": "GF",
+          "distinct_ids": 4,
+          "examples": [
+            "GF:72813",
+            "GF:76504",
+            "GF:82678"
+          ]
+        },
+        {
+          "prefix": "MC",
+          "distinct_ids": 4,
+          "examples": [
+            "MC:80275",
+            "MC:80276",
+            "MC:80277"
+          ]
+        },
+        {
+          "prefix": "VN",
+          "distinct_ids": 4,
+          "examples": [
+            "VN:73047",
+            "VN:73048",
+            "VN:73049"
+          ]
+        },
+        {
+          "prefix": "3D",
+          "distinct_ids": 3,
+          "examples": [
+            "3D:72969",
+            "3D:72970",
+            "3D:72971"
+          ]
+        },
+        {
+          "prefix": "CT",
+          "distinct_ids": 3,
+          "examples": [
+            "CT:72981",
+            "CT:72982",
+            "CT:81964"
+          ]
+        },
+        {
+          "prefix": "PE",
+          "distinct_ids": 3,
+          "examples": [
+            "PE:72836",
+            "PE:72837",
+            "PE:78571"
+          ]
+        },
+        {
+          "prefix": "SR",
+          "distinct_ids": 3,
+          "examples": [
+            "SR:77589",
+            "SR:79233",
+            "SR:79276"
+          ]
+        },
+        {
+          "prefix": "VC",
+          "distinct_ids": 3,
+          "examples": [
+            "VC:72877",
+            "VC:76144",
+            "VC:82703"
+          ]
+        },
+        {
+          "prefix": "AM",
+          "distinct_ids": 2,
+          "examples": [
+            "AM:72761",
+            "AM:75701"
+          ]
+        },
+        {
+          "prefix": "GP",
+          "distinct_ids": 2,
+          "examples": [
+            "GP:80973",
+            "GP:80974"
+          ]
+        },
+        {
+          "prefix": "MB",
+          "distinct_ids": 2,
+          "examples": [
+            "MB:78395",
+            "MB:81548"
+          ]
+        },
+        {
+          "prefix": "PG",
+          "distinct_ids": 2,
+          "examples": [
+            "PG:80067",
+            "PG:80068"
+          ]
+        },
+        {
+          "prefix": "SA",
+          "distinct_ids": 2,
+          "examples": [
+            "SA:73343",
+            "SA:76456"
+          ]
+        },
+        {
+          "prefix": "TF",
+          "distinct_ids": 2,
+          "examples": [
+            "TF:77566",
+            "TF:77567"
+          ]
+        },
+        {
+          "prefix": "CM",
+          "distinct_ids": 1,
+          "examples": [
+            "CM:73306"
+          ]
+        },
+        {
+          "prefix": "DE",
+          "distinct_ids": 1,
+          "examples": [
+            "DE:72781"
+          ]
+        },
+        {
+          "prefix": "EE",
+          "distinct_ids": 1,
+          "examples": [
+            "EE:80971"
+          ]
+        },
+        {
+          "prefix": "RV",
+          "distinct_ids": 1,
+          "examples": [
+            "RV:72849"
+          ]
+        },
+        {
+          "prefix": "SE",
+          "distinct_ids": 1,
+          "examples": [
+            "SE:83463"
+          ]
+        },
+        {
+          "prefix": "SI",
+          "distinct_ids": 1,
+          "examples": [
+            "SI:74999"
+          ]
+        },
+        {
+          "prefix": "SL",
+          "distinct_ids": 1,
+          "examples": [
+            "SL:82418"
+          ]
+        },
+        {
+          "prefix": "SS",
+          "distinct_ids": 1,
+          "examples": [
+            "SS:75014"
+          ]
+        },
+        {
+          "prefix": "tf",
+          "distinct_ids": 1,
+          "examples": [
+            "tf:20260101-20261231"
+          ]
+        }
+      ],
+      "leading_zero_ids": 0,
+      "suffix_collisions": 0,
+      "suffix_collision_examples": []
+    },
+    "shape_id": {
+      "formats": [
+        {
+          "format": "colon prefix",
+          "distinct_ids": 2446,
+          "examples": [
+            "3D:25",
+            "3D:26",
+            "3D:27",
+            "3D:28",
+            "3D:42"
+          ]
+        }
+      ],
+      "prefixes": [
+        {
+          "prefix": "SM",
+          "distinct_ids": 650,
+          "examples": [
+            "SM:100066",
+            "SM:100067",
+            "SM:100068"
+          ]
+        },
+        {
+          "prefix": "AC",
+          "distinct_ids": 320,
+          "examples": [
+            "AC:shp-12-05",
+            "AC:shp-12-07",
+            "AC:shp-14-13"
+          ]
+        },
+        {
+          "prefix": "SC",
+          "distinct_ids": 296,
+          "examples": [
+            "SC:124422",
+            "SC:124423",
+            "SC:124424"
+          ]
+        },
+        {
+          "prefix": "SF",
+          "distinct_ids": 287,
+          "examples": [
+            "SF:101",
+            "SF:102",
+            "SF:103"
+          ]
+        },
+        {
+          "prefix": "CC",
+          "distinct_ids": 106,
+          "examples": [
+            "CC:49345",
+            "CC:49346",
+            "CC:49347"
+          ]
+        },
+        {
+          "prefix": "WH",
+          "distinct_ids": 78,
+          "examples": [
+            "WH:46951",
+            "WH:46952",
+            "WH:46953"
+          ]
+        },
+        {
+          "prefix": "CM",
+          "distinct_ids": 69,
+          "examples": [
+            "CM:1",
+            "CM:10",
+            "CM:11"
+          ]
+        },
+        {
+          "prefix": "SO",
+          "distinct_ids": 65,
+          "examples": [
+            "SO:29727",
+            "SO:29728",
+            "SO:29732"
+          ]
+        },
+        {
+          "prefix": "MA",
+          "distinct_ids": 61,
+          "examples": [
+            "MA:1",
+            "MA:10",
+            "MA:11"
+          ]
+        },
+        {
+          "prefix": "ST",
+          "distinct_ids": 46,
+          "examples": [
+            "ST:149",
+            "ST:154",
+            "ST:207"
+          ]
+        },
+        {
+          "prefix": "WC",
+          "distinct_ids": 43,
+          "examples": [
+            "WC:p_1440304",
+            "WC:p_1440305",
+            "WC:p_1440306"
+          ]
+        },
+        {
+          "prefix": "GG",
+          "distinct_ids": 42,
+          "examples": [
+            "GG:1010585",
+            "GG:1010586",
+            "GG:1010646"
+          ]
+        },
+        {
+          "prefix": "GF",
+          "distinct_ids": 36,
+          "examples": [
+            "GF:AISF0005",
+            "GF:AISF0006",
+            "GF:Golden_Gate_Ferry220:AISF0005"
+          ]
+        },
+        {
+          "prefix": "UC",
+          "distinct_ids": 36,
+          "examples": [
+            "UC:041d81ad-34d9-48eb-9277-921c76ec645a",
+            "UC:071edf7b-a1ae-4024-9b7c-76f98cbe1873",
+            "UC:0c3f5286-438f-4492-87a3-176c2be1795d"
+          ]
+        },
+        {
+          "prefix": "VN",
+          "distinct_ids": 36,
+          "examples": [
+            "VN:10_2752269_7278073",
+            "VN:10_7278073_7283932",
+            "VN:10_7278073_7283932_1"
+          ]
+        },
+        {
+          "prefix": "SR",
+          "distinct_ids": 35,
+          "examples": [
+            "SR:24703",
+            "SR:26448",
+            "SR:26839"
+          ]
+        },
+        {
+          "prefix": "SB",
+          "distinct_ids": 34,
+          "examples": [
+            "SB:p_1276395",
+            "SB:p_1276399",
+            "SB:p_1303753"
+          ]
+        },
+        {
+          "prefix": "BA",
+          "distinct_ids": 28,
+          "examples": [
+            "BA:001A_shp",
+            "BA:001B_shp",
+            "BA:001C_shp"
+          ]
+        },
+        {
+          "prefix": "3D",
+          "distinct_ids": 22,
+          "examples": [
+            "3D:25",
+            "3D:26",
+            "3D:27"
+          ]
+        },
+        {
+          "prefix": "PE",
+          "distinct_ids": 20,
+          "examples": [
+            "PE:22997",
+            "PE:22998",
+            "PE:22999"
+          ]
+        },
+        {
+          "prefix": "CT",
+          "distinct_ids": 17,
+          "examples": [
+            "CT:p_1438273",
+            "CT:p_1438274",
+            "CT:p_1438275"
+          ]
+        },
+        {
+          "prefix": "AM",
+          "distinct_ids": 16,
+          "examples": [
+            "AM:0501",
+            "AM:3eef",
+            "AM:43867ce6-e1ef-42fb-b35d-77ed636ec5cc"
+          ]
+        },
+        {
+          "prefix": "EM",
+          "distinct_ids": 13,
+          "examples": [
+            "EM:07efc6b4-9c1b-40c7-8a16-9b946306c73b",
+            "EM:1c27b788-41a9-4d1e-82aa-8b7178c41166",
+            "EM:269465ed-39a5-4b6e-8e92-53bed32de8c2"
+          ]
+        },
+        {
+          "prefix": "MV",
+          "distinct_ids": 12,
+          "examples": [
+            "MV:88b116e6-3231-443e-80c1-ec14df17f29b",
+            "MV:9aef843a-b9d1-4dd0-acb7-50d8d9535b3f",
+            "MV:a49ac782-c7d9-4434-a0aa-e4b26f48b648"
+          ]
+        },
+        {
+          "prefix": "VC",
+          "distinct_ids": 12,
+          "examples": [
+            "VC:100ed0a2-faa0-489e-b84d-1ff88b497535",
+            "VC:208d7880-e97b-4a6a-bc47-82153e08624c",
+            "VC:30f5910c-6359-4106-9984-f8f3311b0e72"
+          ]
+        },
+        {
+          "prefix": "FS",
+          "distinct_ids": 11,
+          "examples": [
+            "FS:p_1432448",
+            "FS:p_1432449",
+            "FS:p_1434332"
+          ]
+        },
+        {
+          "prefix": "MB",
+          "distinct_ids": 10,
+          "examples": [
+            "MB:p_1426948",
+            "MB:p_1426949",
+            "MB:p_1432460"
+          ]
+        },
+        {
+          "prefix": "DE",
+          "distinct_ids": 6,
+          "examples": [
+            "DE:DB0095",
+            "DE:DB0098",
+            "DE:DB10065"
+          ]
+        },
+        {
+          "prefix": "RV",
+          "distinct_ids": 6,
+          "examples": [
+            "RV:p_2364",
+            "RV:p_692",
+            "RV:p_693"
+          ]
+        },
+        {
+          "prefix": "SE",
+          "distinct_ids": 5,
+          "examples": [
+            "SE:3y34",
+            "SE:88a0",
+            "SE:8o46"
+          ]
+        },
+        {
+          "prefix": "AF",
+          "distinct_ids": 4,
+          "examples": [
+            "AF:25a12148-687a-4d16-971b-e4cf0c8b1aa3",
+            "AF:50027b94-27e2-40bb-bebf-3d4ac97d3fce",
+            "AF:kmxf"
+          ]
+        },
+        {
+          "prefix": "MC",
+          "distinct_ids": 4,
+          "examples": [
+            "MC:5a872a0b-d5b8-4855-bf32-ae58e24a460a",
+            "MC:5f918cf9-2b9b-4971-9bff-140bf59d0d19",
+            "MC:87a67fc4-ab9c-48fe-932c-63bda4cd0462"
+          ]
+        },
+        {
+          "prefix": "SI",
+          "distinct_ids": 4,
+          "examples": [
+            "SI:BLUE_shape",
+            "SI:BUSLOTD",
+            "SI:BUSWFG"
+          ]
+        },
+        {
+          "prefix": "SS",
+          "distinct_ids": 3,
+          "examples": [
+            "SS:6tck",
+            "SS:abql",
+            "SS:vg9f"
+          ]
+        },
+        {
+          "prefix": "CE",
+          "distinct_ids": 2,
+          "examples": [
+            "CE:ACEEastShape",
+            "CE:ACEWestShape"
+          ]
+        },
+        {
+          "prefix": "GP",
+          "distinct_ids": 2,
+          "examples": [
+            "GP:0juq",
+            "GP:q8e3"
+          ]
+        },
+        {
+          "prefix": "PG",
+          "distinct_ids": 2,
+          "examples": [
+            "PG:22214",
+            "PG:26565"
+          ]
+        },
+        {
+          "prefix": "SA",
+          "distinct_ids": 2,
+          "examples": [
+            "SA:p_1439841",
+            "SA:p_1439842"
+          ]
+        },
+        {
+          "prefix": "SL",
+          "distinct_ids": 2,
+          "examples": [
+            "SL:North_Shp",
+            "SL:South_Shp"
+          ]
+        },
+        {
+          "prefix": "TF",
+          "distinct_ids": 2,
+          "examples": [
+            "TF:101",
+            "TF:102"
+          ]
+        },
+        {
+          "prefix": "EE",
+          "distinct_ids": 1,
+          "examples": [
+            "EE:EmExp1"
+          ]
+        }
+      ],
+      "leading_zero_ids": 0,
+      "suffix_collisions": 72,
+      "suffix_collision_examples": [
+        {
+          "suffix": "23",
+          "variants": 4,
+          "examples": [
+            "CM:23",
+            "MA:23",
+            "SF:23",
+            "ST:23"
+          ]
+        },
+        {
+          "suffix": "26",
+          "variants": 4,
+          "examples": [
+            "3D:26",
+            "CM:26",
+            "MA:26",
+            "ST:26"
+          ]
+        },
+        {
+          "suffix": "51",
+          "variants": 4,
+          "examples": [
+            "3D:51",
+            "CM:51",
+            "MA:51",
+            "ST:51"
+          ]
+        },
+        {
+          "suffix": "25",
+          "variants": 3,
+          "examples": [
+            "3D:25",
+            "CM:25",
+            "MA:25"
+          ]
+        },
+        {
+          "suffix": "27",
+          "variants": 3,
+          "examples": [
+            "3D:27",
+            "CM:27",
+            "MA:27"
+          ]
+        }
+      ]
+    },
+    "fare_id": {
+      "status": "field or table absent"
+    },
+    "fare_product_id": {
+      "formats": [
+        {
+          "format": "colon prefix",
+          "distinct_ids": 2927,
+          "examples": [
+            "3D:local:31-day",
+            "3D:local:day",
+            "3D:local:single",
+            "3D:regional:single",
+            "3D:transfer:ba-local-upgrade"
+          ]
+        },
+        {
+          "format": "other",
+          "distinct_ids": 2,
+          "examples": [
+            "free-child",
+            "free-clipper"
+          ]
+        },
+        {
+          "format": "alphabetic",
+          "distinct_ids": 1,
+          "examples": [
+            "free"
+          ]
+        }
+      ],
+      "prefixes": [
+        {
+          "prefix": "BA",
+          "distinct_ids": 2450,
+          "examples": [
+            "BA:matrix:901109-901509",
+            "BA:matrix:901109-901609",
+            "BA:matrix:901109-901709"
+          ]
+        },
+        {
+          "prefix": "AM",
+          "distinct_ids": 170,
+          "examples": [
+            "AM:matrix:AM:ARN-AM:BRK",
+            "AM:matrix:AM:ARN-AM:DAV",
+            "AM:matrix:AM:ARN-AM:EMY"
+          ]
+        },
+        {
+          "prefix": "CE",
+          "distinct_ids": 45,
+          "examples": [
+            "CE:matrix:CE:fremont-CE:great-america",
+            "CE:matrix:CE:fremont-CE:san-jose",
+            "CE:matrix:CE:fremont-CE:santa-clara"
+          ]
+        },
+        {
+          "prefix": "SO",
+          "distinct_ids": 42,
+          "examples": [
+            "SO:local:1-month",
+            "SO:local:31-day",
+            "SO:matrix:SO:zone:1-SO:zone:1"
+          ]
+        },
+        {
+          "prefix": "GG",
+          "distinct_ids": 37,
+          "examples": [
+            "GG:matrix:GG:CorteMadera-SanRafael-Marinwood-GG:CorteMadera-SanRafael-Marinwood",
+            "GG:matrix:GG:CorteMadera-SanRafael-Marinwood-GG:East Bay",
+            "GG:matrix:GG:CorteMadera-SanRafael-Marinwood-GG:Ignacio-Novato-San Marin"
+          ]
+        },
+        {
+          "prefix": "CT",
+          "distinct_ids": 33,
+          "examples": [
+            "CT:1zone:1-day",
+            "CT:1zone:1-month",
+            "CT:matrix:CT:zone1-CT:zone1"
+          ]
+        },
+        {
+          "prefix": "SA",
+          "distinct_ids": 18,
+          "examples": [
+            "SA:all:1-day",
+            "SA:all:31-day",
+            "SA:matrix:SA:A-SA:A"
+          ]
+        },
+        {
+          "prefix": "SC",
+          "distinct_ids": 14,
+          "examples": [
+            "SC:all:1-day",
+            "SC:all:1-month",
+            "SC:all:1-year"
+          ]
+        },
+        {
+          "prefix": "SF",
+          "distinct_ids": 11,
+          "examples": [
+            "SF:a:1-month",
+            "SF:cablecars:discount",
+            "SF:cablecars:single"
+          ]
+        },
+        {
+          "prefix": "ST",
+          "distinct_ids": 11,
+          "examples": [
+            "ST:express-inside-county:1-day",
+            "ST:express-inside-county:31-day",
+            "ST:express-inside-county:single"
+          ]
+        },
+        {
+          "prefix": "AC",
+          "distinct_ids": 9,
+          "examples": [
+            "AC:local:1-month",
+            "AC:local:31-day",
+            "AC:local:day"
+          ]
+        },
+        {
+          "prefix": "CC",
+          "distinct_ids": 9,
+          "examples": [
+            "CC:all:1-day",
+            "CC:all:31-day",
+            "CC:east-bay-regional-local:1-day"
+          ]
+        },
+        {
+          "prefix": "SB",
+          "distinct_ids": 9,
+          "examples": [
+            "SB:HB:single",
+            "SB:OA:single",
+            "SB:RCH:single"
+          ]
+        },
+        {
+          "prefix": "WC",
+          "distinct_ids": 8,
+          "examples": [
+            "WC:local:1-day",
+            "WC:local:31-day",
+            "WC:local:single"
+          ]
+        },
+        {
+          "prefix": "GF",
+          "distinct_ids": 7,
+          "examples": [
+            "GF:AISF:single",
+            "GF:LSSF:single",
+            "GF:SSSF:single"
+          ]
+        },
+        {
+          "prefix": "3D",
+          "distinct_ids": 6,
+          "examples": [
+            "3D:local:31-day",
+            "3D:local:day",
+            "3D:local:single"
+          ]
+        },
+        {
+          "prefix": "DE",
+          "distinct_ids": 6,
+          "examples": [
+            "DE:local:31-day",
+            "DE:local:single",
+            "DE:transbay:31-day"
+          ]
+        },
+        {
+          "prefix": "VN",
+          "distinct_ids": 6,
+          "examples": [
+            "VN:all:31-day",
+            "VN:bart:single",
+            "VN:express:single"
+          ]
+        },
+        {
+          "prefix": "SM",
+          "distinct_ids": 5,
+          "examples": [
+            "SM:express:1-month",
+            "SM:express:single",
+            "SM:local:1-day"
+          ]
+        },
+        {
+          "prefix": "UC",
+          "distinct_ids": 5,
+          "examples": [
+            "UC:local:31-day",
+            "UC:local:single",
+            "UC:transfer:ac-upgrade"
+          ]
+        },
+        {
+          "prefix": "WH",
+          "distinct_ids": 5,
+          "examples": [
+            "WH:local:1-day",
+            "WH:local:31-day",
+            "WH:local:single"
+          ]
+        },
+        {
+          "prefix": "MA",
+          "distinct_ids": 4,
+          "examples": [
+            "MA:local:1-day",
+            "MA:local:31-day",
+            "MA:local:single"
+          ]
+        },
+        {
+          "prefix": "VC",
+          "distinct_ids": 4,
+          "examples": [
+            "VC:local:1-day",
+            "VC:local:1-month",
+            "VC:local:single"
+          ]
+        },
+        {
+          "prefix": "RV",
+          "distinct_ids": 3,
+          "examples": [
+            "RV:all:1-month",
+            "RV:express:single",
+            "RV:local:single"
+          ]
+        },
+        {
+          "prefix": "SR",
+          "distinct_ids": 3,
+          "examples": [
+            "SR:local:24-hour",
+            "SR:local:31-day",
+            "SR:local:single"
+          ]
+        },
+        {
+          "prefix": "transfer",
+          "distinct_ids": 3,
+          "examples": [
+            "transfer:clipper-interagency",
+            "transfer:free",
+            "transfer:free-clipper"
+          ]
+        },
+        {
+          "prefix": "FS",
+          "distinct_ids": 2,
+          "examples": [
+            "FS:local:31-day",
+            "FS:local:single"
+          ]
+        },
+        {
+          "prefix": "AF",
+          "distinct_ids": 1,
+          "examples": [
+            "AF:local:single"
+          ]
+        },
+        {
+          "prefix": "TF",
+          "distinct_ids": 1,
+          "examples": [
+            "TF:local:single"
+          ]
+        }
+      ],
+      "leading_zero_ids": 0,
+      "suffix_collisions": 24,
+      "suffix_collision_examples": [
+        {
+          "suffix": "local:single",
+          "variants": 19,
+          "examples": [
+            "3D:local:single",
+            "AC:local:single",
+            "AF:local:single",
+            "CC:local:single",
+            "DE:local:single"
+          ]
+        },
+        {
+          "suffix": "local:31-day",
+          "variants": 13,
+          "examples": [
+            "3D:local:31-day",
+            "AC:local:31-day",
+            "CC:local:31-day",
+            "DE:local:31-day",
+            "FS:local:31-day"
+          ]
+        },
+        {
+          "suffix": "local:1-day",
+          "variants": 8,
+          "examples": [
+            "MA:local:1-day",
+            "SC:local:1-day",
+            "SM:local:1-day",
+            "ST:local:1-day",
+            "VC:local:1-day"
+          ]
+        },
+        {
+          "suffix": "express:single",
+          "variants": 5,
+          "examples": [
+            "CC:express:single",
+            "RV:express:single",
+            "SC:express:single",
+            "SM:express:single",
+            "VN:express:single"
+          ]
+        },
+        {
+          "suffix": "local:1-month",
+          "variants": 5,
+          "examples": [
+            "AC:local:1-month",
+            "SC:local:1-month",
+            "SM:local:1-month",
+            "SO:local:1-month",
+            "VC:local:1-month"
+          ]
+        }
+      ]
+    }
+  },
+  "scoped_patterns": {
+    "route_id": [
+      {
+        "agency_id": "3D",
+        "distinct_ids": 11,
+        "agency_colon": 11,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "3D:200X",
+          "3D:201X",
+          "3D:360"
+        ]
+      },
+      {
+        "agency_id": "AC",
+        "distinct_ids": 123,
+        "agency_colon": 123,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "AC:12",
+          "AC:14",
+          "AC:18"
+        ]
+      },
+      {
+        "agency_id": "AF",
+        "distinct_ids": 1,
+        "agency_colon": 1,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "AF:Tib-AIF"
+        ]
+      },
+      {
+        "agency_id": "AM",
+        "distinct_ids": 3,
+        "agency_colon": 3,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "AM:CC",
+          "AM:SF",
+          "AM:Shuttle"
+        ]
+      },
+      {
+        "agency_id": "BA",
+        "distinct_ids": 14,
+        "agency_colon": 14,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "BA:Blue-N",
+          "BA:Blue-S",
+          "BA:BridgeA"
+        ]
+      },
+      {
+        "agency_id": "CC",
+        "distinct_ids": 51,
+        "agency_colon": 51,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "CC:1",
+          "CC:10",
+          "CC:11"
+        ]
+      },
+      {
+        "agency_id": "CE",
+        "distinct_ids": 1,
+        "agency_colon": 1,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "CE:ACE"
+        ]
+      },
+      {
+        "agency_id": "CM",
+        "distinct_ids": 20,
+        "agency_colon": 20,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "CM:BAY Shuttle",
+          "CM:BCP Shuttle",
+          "CM:BPT Shuttle"
+        ]
+      },
+      {
+        "agency_id": "CT",
+        "distinct_ids": 5,
+        "agency_colon": 5,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "CT:Express",
+          "CT:Limited",
+          "CT:Local Weekday"
+        ]
+      },
+      {
+        "agency_id": "DE",
+        "distinct_ids": 2,
+        "agency_colon": 2,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "DE:DB",
+          "DE:DB1"
+        ]
+      },
+      {
+        "agency_id": "EE",
+        "distinct_ids": 1,
+        "agency_colon": 1,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "EE:EmExp"
+        ]
+      },
+      {
+        "agency_id": "EM",
+        "distinct_ids": 5,
+        "agency_colon": 5,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "EM:Hollis",
+          "EM:Hollis/Holi",
+          "EM:Shell/Pow"
+        ]
+      },
+      {
+        "agency_id": "FS",
+        "distinct_ids": 5,
+        "agency_colon": 5,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "FS:1",
+          "FS:3",
+          "FS:6"
+        ]
+      },
+      {
+        "agency_id": "GF",
+        "distinct_ids": 5,
+        "agency_colon": 5,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "GF:AISF",
+          "GF:LSSF",
+          "GF:SSSF"
+        ]
+      },
+      {
+        "agency_id": "GG",
+        "distinct_ids": 10,
+        "agency_colon": 10,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "GG:101",
+          "GG:114",
+          "GG:120"
+        ]
+      },
+      {
+        "agency_id": "GP",
+        "distinct_ids": 1,
+        "agency_colon": 1,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "GP:GGPS"
+        ]
+      },
+      {
+        "agency_id": "MA",
+        "distinct_ids": 20,
+        "agency_colon": 20,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "MA:17",
+          "MA:219",
+          "MA:22"
+        ]
+      },
+      {
+        "agency_id": "MB",
+        "distinct_ids": 4,
+        "agency_colon": 4,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "MB:CCA/Adobe",
+          "MB:East",
+          "MB:TC"
+        ]
+      },
+      {
+        "agency_id": "MC",
+        "distinct_ids": 4,
+        "agency_colon": 4,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "MC:GRAY",
+          "MC:GRAY WE",
+          "MC:RED"
+        ]
+      },
+      {
+        "agency_id": "MV",
+        "distinct_ids": 8,
+        "agency_colon": 8,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "MV:A - AM",
+          "MV:A - PM",
+          "MV:B - AM"
+        ]
+      },
+      {
+        "agency_id": "PE",
+        "distinct_ids": 11,
+        "agency_colon": 11,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "PE:10",
+          "PE:11",
+          "PE:2"
+        ]
+      },
+      {
+        "agency_id": "PG",
+        "distinct_ids": 2,
+        "agency_colon": 2,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "PG:Presidio GO Downtown",
+          "PG:Presidio GO South Hills"
+        ]
+      },
+      {
+        "agency_id": "RV",
+        "distinct_ids": 1,
+        "agency_colon": 1,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "RV:50"
+        ]
+      },
+      {
+        "agency_id": "SA",
+        "distinct_ids": 1,
+        "agency_colon": 1,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "SA:SMART"
+        ]
+      },
+      {
+        "agency_id": "SB",
+        "distinct_ids": 7,
+        "agency_colon": 7,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "SB:HB",
+          "SB:OA",
+          "SB:OAS"
+        ]
+      },
+      {
+        "agency_id": "SC",
+        "distinct_ids": 70,
+        "agency_colon": 70,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "SC:20",
+          "SC:200",
+          "SC:201"
+        ]
+      },
+      {
+        "agency_id": "SE",
+        "distinct_ids": 2,
+        "agency_colon": 2,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "SE:30D",
+          "SE:30S"
+        ]
+      },
+      {
+        "agency_id": "SF",
+        "distinct_ids": 68,
+        "agency_colon": 68,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "SF:1",
+          "SF:12",
+          "SF:14"
+        ]
+      },
+      {
+        "agency_id": "SI",
+        "distinct_ids": 4,
+        "agency_colon": 4,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "SI:Blue Line",
+          "SI:Lot D",
+          "SI:Red Line"
+        ]
+      },
+      {
+        "agency_id": "SL",
+        "distinct_ids": 2,
+        "agency_colon": 2,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "SL:North",
+          "SL:South"
+        ]
+      },
+      {
+        "agency_id": "SM",
+        "distinct_ids": 75,
+        "agency_colon": 75,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "SM:10",
+          "SM:110",
+          "SM:112"
+        ]
+      },
+      {
+        "agency_id": "SO",
+        "distinct_ids": 26,
+        "agency_colon": 26,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "SO:10",
+          "SO:10T",
+          "SO:12"
+        ]
+      },
+      {
+        "agency_id": "SR",
+        "distinct_ids": 15,
+        "agency_colon": 15,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "SR:1",
+          "SR:10",
+          "SR:12"
+        ]
+      },
+      {
+        "agency_id": "SS",
+        "distinct_ids": 3,
+        "agency_colon": 3,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "SS:BLUE",
+          "SS:GREEN",
+          "SS:ORANGE"
+        ]
+      },
+      {
+        "agency_id": "ST",
+        "distinct_ids": 15,
+        "agency_colon": 15,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "ST:15",
+          "ST:17",
+          "ST:1A"
+        ]
+      },
+      {
+        "agency_id": "TF",
+        "distinct_ids": 1,
+        "agency_colon": 1,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "TF:TISF"
+        ]
+      },
+      {
+        "agency_id": "UC",
+        "distinct_ids": 6,
+        "agency_colon": 6,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "UC:1",
+          "UC:2",
+          "UC:3"
+        ]
+      },
+      {
+        "agency_id": "VC",
+        "distinct_ids": 5,
+        "agency_colon": 5,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "VC:2",
+          "VC:3",
+          "VC:4"
+        ]
+      },
+      {
+        "agency_id": "VN",
+        "distinct_ids": 14,
+        "agency_colon": 14,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "VN:10",
+          "VN:11",
+          "VN:11X"
+        ]
+      },
+      {
+        "agency_id": "WC",
+        "distinct_ids": 12,
+        "agency_colon": 12,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "WC:10",
+          "WC:11",
+          "WC:12"
+        ]
+      },
+      {
+        "agency_id": "WH",
+        "distinct_ids": 30,
+        "agency_colon": 30,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "WH:1",
+          "WH:10R",
+          "WH:11"
+        ]
+      }
+    ],
+    "trip_id": [
+      {
+        "agency_id": "3D",
+        "distinct_ids": 678,
+        "agency_colon": 678,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "3D:1",
+          "3D:10",
+          "3D:100"
+        ]
+      },
+      {
+        "agency_id": "AC",
+        "distinct_ids": 13695,
+        "agency_colon": 13695,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "AC:10000010",
+          "AC:1000020",
+          "AC:100020"
+        ]
+      },
+      {
+        "agency_id": "AF",
+        "distinct_ids": 632,
+        "agency_colon": 632,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "AF:08eac359-a8a8-412d-a079-5d8871d8d95e",
+          "AF:1000",
+          "AF:1001"
+        ]
+      },
+      {
+        "agency_id": "AM",
+        "distinct_ids": 116,
+        "agency_colon": 116,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "AM:520",
+          "AM:521",
+          "AM:521W"
+        ]
+      },
+      {
+        "agency_id": "BA",
+        "distinct_ids": 6377,
+        "agency_colon": 6377,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "BA:1965118",
+          "BA:1965119",
+          "BA:1965120"
+        ]
+      },
+      {
+        "agency_id": "CC",
+        "distinct_ids": 1553,
+        "agency_colon": 1553,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "CC:608168",
+          "CC:608169",
+          "CC:608170"
+        ]
+      },
+      {
+        "agency_id": "CE",
+        "distinct_ids": 52,
+        "agency_colon": 52,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "CE:ACE01",
+          "CE:ACE01ARIvsSF",
+          "CE:ACE01BrunoMars1"
+        ]
+      },
+      {
+        "agency_id": "CM",
+        "distinct_ids": 248,
+        "agency_colon": 248,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "CM:2026 Regular Schedule - Current (Weekday)_100",
+          "CM:2026 Regular Schedule - Current (Weekday)_101",
+          "CM:2026 Regular Schedule - Current (Weekday)_102"
+        ]
+      },
+      {
+        "agency_id": "CT",
+        "distinct_ids": 257,
+        "agency_colon": 257,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "CT:101",
+          "CT:102",
+          "CT:103"
+        ]
+      },
+      {
+        "agency_id": "DE",
+        "distinct_ids": 72,
+        "agency_colon": 72,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "DE:12163596",
+          "DE:12163597",
+          "DE:12163598"
+        ]
+      },
+      {
+        "agency_id": "EE",
+        "distinct_ids": 16,
+        "agency_colon": 16,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "EE:AM1",
+          "EE:AM2",
+          "EE:AM3"
+        ]
+      },
+      {
+        "agency_id": "EM",
+        "distinct_ids": 420,
+        "agency_colon": 420,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "EM:00251361-2c04-4e91-a2be-24726ee10357",
+          "EM:015bbf51-7f49-4bfe-a9e4-b66c812e3fca",
+          "EM:03133662-24b4-4c55-a2ba-dc148617854c"
+        ]
+      },
+      {
+        "agency_id": "FS",
+        "distinct_ids": 254,
+        "agency_colon": 254,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "FS:Route1-1_Weekday_in_tn_1",
+          "FS:Route1-1_Weekday_in_tn_10",
+          "FS:Route1-1_Weekday_in_tn_11"
+        ]
+      },
+      {
+        "agency_id": "GF",
+        "distinct_ids": 178,
+        "agency_colon": 178,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "GF:9456046",
+          "GF:9456047",
+          "GF:9456048"
+        ]
+      },
+      {
+        "agency_id": "GG",
+        "distinct_ids": 1190,
+        "agency_colon": 1190,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "GG:9453317",
+          "GG:9453318",
+          "GG:9453319"
+        ]
+      },
+      {
+        "agency_id": "GP",
+        "distinct_ids": 103,
+        "agency_colon": 103,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "GP:Weekday-InboundToStow-000300",
+          "GP:Weekday-InboundToStow-121300",
+          "GP:Weekday-InboundToStow-123300"
+        ]
+      },
+      {
+        "agency_id": "MA",
+        "distinct_ids": 1613,
+        "agency_colon": 1613,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "MA:17001",
+          "MA:17002",
+          "MA:17003"
+        ]
+      },
+      {
+        "agency_id": "MB",
+        "distinct_ids": 138,
+        "agency_colon": 138,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "MB:t_5526952_b_none_tn_0",
+          "MB:t_5526953_b_none_tn_0",
+          "MB:t_5526954_b_none_tn_0"
+        ]
+      },
+      {
+        "agency_id": "MC",
+        "distinct_ids": 58,
+        "agency_colon": 58,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "MC:01415890-3acc-4c3e-9748-e2dbb5c488b7",
+          "MC:02c09b2b-5918-459f-9dbe-90043325e01b",
+          "MC:0ab39e63-320d-47e9-a405-a4489193b311"
+        ]
+      },
+      {
+        "agency_id": "MV",
+        "distinct_ids": 70,
+        "agency_colon": 70,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "MV:00047c94-52a4-4c72-b695-1f3376e34b9a",
+          "MV:0b3acb6c-8e03-4673-9e1e-af0bc6d25a45",
+          "MV:0b7a7558-d7a0-4dfe-9a7a-4652e87a67a8"
+        ]
+      },
+      {
+        "agency_id": "PE",
+        "distinct_ids": 718,
+        "agency_colon": 718,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "PE:school_days-Fr-6286-A-IB-0638-0b21290",
+          "PE:school_days-Fr-6286-A-IB-0708-23f13c4",
+          "PE:school_days-Fr-6286-A-IB-0723-c3dcafe"
+        ]
+      },
+      {
+        "agency_id": "PG",
+        "distinct_ids": 88,
+        "agency_colon": 88,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "PG:PD0545",
+          "PG:PD0630",
+          "PG:PD0700"
+        ]
+      },
+      {
+        "agency_id": "RV",
+        "distinct_ids": 8,
+        "agency_colon": 8,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "RV:t_1460187_b_30254_tn_0",
+          "RV:t_1460188_b_30254_tn_0",
+          "RV:t_1460190_b_30254_tn_0"
+        ]
+      },
+      {
+        "agency_id": "SA",
+        "distinct_ids": 72,
+        "agency_colon": 72,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "SA:t_6153485_b_86615_tn_0",
+          "SA:t_6153486_b_86615_tn_0",
+          "SA:t_6153487_b_86615_tn_0"
+        ]
+      },
+      {
+        "agency_id": "SB",
+        "distinct_ids": 347,
+        "agency_colon": 347,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "SB:20261102_20270228_hb_am1_hb_1",
+          "SB:20261102_20270228_hb_am1_hb_2",
+          "SB:20261102_20270228_hb_am1_hb_3"
+        ]
+      },
+      {
+        "agency_id": "SC",
+        "distinct_ids": 8620,
+        "agency_colon": 8620,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "SC:4020335",
+          "SC:4020336",
+          "SC:4020339"
+        ]
+      },
+      {
+        "agency_id": "SE",
+        "distinct_ids": 31,
+        "agency_colon": 31,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "SE:01777a84-215a-4c84-9b38-bd87bc73ed7c",
+          "SE:0728fe39-aa8a-4eca-b3b7-9060dcb50993",
+          "SE:07b218cf-de38-4bc0-b54c-f44a455d4b76"
+        ]
+      },
+      {
+        "agency_id": "SF",
+        "distinct_ids": 34668,
+        "agency_colon": 34668,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "SF:12103525",
+          "SF:12103526",
+          "SF:12103527"
+        ]
+      },
+      {
+        "agency_id": "SI",
+        "distinct_ids": 1268,
+        "agency_colon": 1268,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "SI:T_BLUE_001",
+          "SI:T_BLUE_002",
+          "SI:T_BLUE_003"
+        ]
+      },
+      {
+        "agency_id": "SL",
+        "distinct_ids": 38,
+        "agency_colon": 38,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "SL:North_AM1",
+          "SL:North_AM10",
+          "SL:North_AM2"
+        ]
+      },
+      {
+        "agency_id": "SM",
+        "distinct_ids": 8449,
+        "agency_colon": 8449,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "SM:15247548-155-Blocks-Sunday-62",
+          "SM:15247549-155-Blocks-Sunday-62",
+          "SM:15247550-155-Blocks-Sunday-62"
+        ]
+      },
+      {
+        "agency_id": "SO",
+        "distinct_ids": 491,
+        "agency_colon": 491,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "SO:100615-Wkdy-1",
+          "SO:100655-Wkdy-1",
+          "SO:100755-Sat-1"
+        ]
+      },
+      {
+        "agency_id": "SR",
+        "distinct_ids": 878,
+        "agency_colon": 878,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "SR:1-104",
+          "SR:1-106",
+          "SR:1-107"
+        ]
+      },
+      {
+        "agency_id": "SS",
+        "distinct_ids": 46,
+        "agency_colon": 46,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "SS:008-SCS-BLUE-1",
+          "SS:008-SCS-BLUE-10",
+          "SS:008-SCS-BLUE-11"
+        ]
+      },
+      {
+        "agency_id": "ST",
+        "distinct_ids": 3430,
+        "agency_colon": 3430,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "ST:1",
+          "ST:10",
+          "ST:1058"
+        ]
+      },
+      {
+        "agency_id": "TF",
+        "distinct_ids": 54,
+        "agency_colon": 54,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "TF:1602",
+          "TF:1603",
+          "TF:1604"
+        ]
+      },
+      {
+        "agency_id": "UC",
+        "distinct_ids": 566,
+        "agency_colon": 566,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "UC:01086498-5ab5-4346-ae78-b45a522eb113",
+          "UC:02a942ae-530f-4439-89bc-da2ea927bdb3",
+          "UC:02ab5d46-8f72-4a3b-a2f2-9c6473d8f9f8"
+        ]
+      },
+      {
+        "agency_id": "VC",
+        "distinct_ids": 417,
+        "agency_colon": 417,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "VC:0164ab7c-6f8d-4dc5-9daa-6de9a186d89a",
+          "VC:01f91229-dce9-42f7-ae7b-827b2de460bc",
+          "VC:02adc7ac-427e-4cb2-b9ef-c6a7214f2ddc"
+        ]
+      },
+      {
+        "agency_id": "VN",
+        "distinct_ids": 795,
+        "agency_colon": 795,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "VN:R-MoTuThFrR-MTTF-ACTAM-A-LO-0650-169c4a0",
+          "VN:R-MoTuThFrR-MTTF-ACTAM-C-LO-0745-09357d6",
+          "VN:R-MoTuThFrR-MTTF-ACTAM-C-LO-0850-5bdd17a"
+        ]
+      },
+      {
+        "agency_id": "WC",
+        "distinct_ids": 967,
+        "agency_colon": 967,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "WC:6094100853950",
+          "WC:6094101853950",
+          "WC:6094102853950"
+        ]
+      },
+      {
+        "agency_id": "WH",
+        "distinct_ids": 3156,
+        "agency_colon": 3156,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "WH:1000013",
+          "WH:1000014",
+          "WH:1000015"
+        ]
+      }
+    ],
+    "service_id": [
+      {
+        "agency_id": "3D",
+        "distinct_ids": 3,
+        "agency_colon": 3,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "3D:72969",
+          "3D:72970",
+          "3D:72971"
+        ]
+      },
+      {
+        "agency_id": "AC",
+        "distinct_ids": 68,
+        "agency_colon": 68,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "AC:72905",
+          "AC:72906",
+          "AC:72907"
+        ]
+      },
+      {
+        "agency_id": "AF",
+        "distinct_ids": 61,
+        "agency_colon": 61,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "AF:77685",
+          "AF:77686",
+          "AF:77687"
+        ]
+      },
+      {
+        "agency_id": "AM",
+        "distinct_ids": 2,
+        "agency_colon": 2,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "AM:72761",
+          "AM:75701"
+        ]
+      },
+      {
+        "agency_id": "BA",
+        "distinct_ids": 13,
+        "agency_colon": 13,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "BA:72953",
+          "BA:72954",
+          "BA:72955"
+        ]
+      },
+      {
+        "agency_id": "CC",
+        "distinct_ids": 6,
+        "agency_colon": 6,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "CC:79168",
+          "CC:79169",
+          "CC:79170"
+        ]
+      },
+      {
+        "agency_id": "CE",
+        "distinct_ids": 22,
+        "agency_colon": 22,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "CE:79260",
+          "CE:80206",
+          "CE:81834"
+        ]
+      },
+      {
+        "agency_id": "CM",
+        "distinct_ids": 1,
+        "agency_colon": 1,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "CM:73306"
+        ]
+      },
+      {
+        "agency_id": "CT",
+        "distinct_ids": 3,
+        "agency_colon": 3,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "CT:72981",
+          "CT:72982",
+          "CT:81964"
+        ]
+      },
+      {
+        "agency_id": "DE",
+        "distinct_ids": 1,
+        "agency_colon": 1,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "DE:72781"
+        ]
+      },
+      {
+        "agency_id": "EE",
+        "distinct_ids": 1,
+        "agency_colon": 1,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "EE:80971"
+        ]
+      },
+      {
+        "agency_id": "EM",
+        "distinct_ids": 8,
+        "agency_colon": 8,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "EM:72790",
+          "EM:72791",
+          "EM:72792"
+        ]
+      },
+      {
+        "agency_id": "FS",
+        "distinct_ids": 5,
+        "agency_colon": 5,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "FS:72801",
+          "FS:75720",
+          "FS:79174"
+        ]
+      },
+      {
+        "agency_id": "GF",
+        "distinct_ids": 4,
+        "agency_colon": 4,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "GF:72813",
+          "GF:76504",
+          "GF:82678"
+        ]
+      },
+      {
+        "agency_id": "GG",
+        "distinct_ids": 7,
+        "agency_colon": 7,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "GG:73017",
+          "GG:75117",
+          "GG:75205"
+        ]
+      },
+      {
+        "agency_id": "GP",
+        "distinct_ids": 2,
+        "agency_colon": 2,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "GP:80973",
+          "GP:80974"
+        ]
+      },
+      {
+        "agency_id": "MA",
+        "distinct_ids": 8,
+        "agency_colon": 8,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "MA:72918",
+          "MA:76017",
+          "MA:76018"
+        ]
+      },
+      {
+        "agency_id": "MB",
+        "distinct_ids": 2,
+        "agency_colon": 2,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "MB:78395",
+          "MB:81548"
+        ]
+      },
+      {
+        "agency_id": "MC",
+        "distinct_ids": 4,
+        "agency_colon": 4,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "MC:80275",
+          "MC:80276",
+          "MC:80277"
+        ]
+      },
+      {
+        "agency_id": "MV",
+        "distinct_ids": 8,
+        "agency_colon": 8,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "MV:77564",
+          "MV:78907",
+          "MV:78921"
+        ]
+      },
+      {
+        "agency_id": "PE",
+        "distinct_ids": 3,
+        "agency_colon": 3,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "PE:72836",
+          "PE:72837",
+          "PE:78571"
+        ]
+      },
+      {
+        "agency_id": "PG",
+        "distinct_ids": 2,
+        "agency_colon": 2,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "PG:80067",
+          "PG:80068"
+        ]
+      },
+      {
+        "agency_id": "RV",
+        "distinct_ids": 1,
+        "agency_colon": 1,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "RV:72849"
+        ]
+      },
+      {
+        "agency_id": "SA",
+        "distinct_ids": 2,
+        "agency_colon": 2,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "SA:73343",
+          "SA:76456"
+        ]
+      },
+      {
+        "agency_id": "SB",
+        "distinct_ids": 10,
+        "agency_colon": 10,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "SB:72855",
+          "SB:72856",
+          "SB:79543"
+        ]
+      },
+      {
+        "agency_id": "SC",
+        "distinct_ids": 85,
+        "agency_colon": 85,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "SC:72914",
+          "SC:72915",
+          "SC:72916"
+        ]
+      },
+      {
+        "agency_id": "SE",
+        "distinct_ids": 1,
+        "agency_colon": 1,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "SE:83463"
+        ]
+      },
+      {
+        "agency_id": "SF",
+        "distinct_ids": 4,
+        "agency_colon": 4,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "SF:78967",
+          "SF:78968",
+          "SF:79536"
+        ]
+      },
+      {
+        "agency_id": "SI",
+        "distinct_ids": 1,
+        "agency_colon": 1,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "SI:74999"
+        ]
+      },
+      {
+        "agency_id": "SL",
+        "distinct_ids": 1,
+        "agency_colon": 1,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "SL:82418"
+        ]
+      },
+      {
+        "agency_id": "SM",
+        "distinct_ids": 36,
+        "agency_colon": 36,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "SM:73025",
+          "SM:73026",
+          "SM:73027"
+        ]
+      },
+      {
+        "agency_id": "SO",
+        "distinct_ids": 5,
+        "agency_colon": 5,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "SO:73086",
+          "SO:73087",
+          "SO:75492"
+        ]
+      },
+      {
+        "agency_id": "SR",
+        "distinct_ids": 3,
+        "agency_colon": 3,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "SR:77589",
+          "SR:79233",
+          "SR:79276"
+        ]
+      },
+      {
+        "agency_id": "SS",
+        "distinct_ids": 1,
+        "agency_colon": 1,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "SS:75014"
+        ]
+      },
+      {
+        "agency_id": "ST",
+        "distinct_ids": 15,
+        "agency_colon": 15,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "ST:73006",
+          "ST:73007",
+          "ST:76802"
+        ]
+      },
+      {
+        "agency_id": "TF",
+        "distinct_ids": 2,
+        "agency_colon": 2,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "TF:77566",
+          "TF:77567"
+        ]
+      },
+      {
+        "agency_id": "UC",
+        "distinct_ids": 36,
+        "agency_colon": 36,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "UC:74964",
+          "UC:74965",
+          "UC:83139"
+        ]
+      },
+      {
+        "agency_id": "VC",
+        "distinct_ids": 3,
+        "agency_colon": 3,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "VC:72877",
+          "VC:76144",
+          "VC:82703"
+        ]
+      },
+      {
+        "agency_id": "VN",
+        "distinct_ids": 4,
+        "agency_colon": 4,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "VN:73047",
+          "VN:73048",
+          "VN:73049"
+        ]
+      },
+      {
+        "agency_id": "WC",
+        "distinct_ids": 30,
+        "agency_colon": 30,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "WC:72889",
+          "WC:72890",
+          "WC:72891"
+        ]
+      },
+      {
+        "agency_id": "WH",
+        "distinct_ids": 9,
+        "agency_colon": 9,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "WH:72989",
+          "WH:72990",
+          "WH:72991"
+        ]
+      }
+    ],
+    "shape_id": [
+      {
+        "agency_id": "3D",
+        "distinct_ids": 22,
+        "agency_colon": 22,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "3D:25",
+          "3D:26",
+          "3D:27"
+        ]
+      },
+      {
+        "agency_id": "AC",
+        "distinct_ids": 320,
+        "agency_colon": 320,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "AC:shp-12-05",
+          "AC:shp-12-07",
+          "AC:shp-14-13"
+        ]
+      },
+      {
+        "agency_id": "AF",
+        "distinct_ids": 4,
+        "agency_colon": 4,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "AF:25a12148-687a-4d16-971b-e4cf0c8b1aa3",
+          "AF:50027b94-27e2-40bb-bebf-3d4ac97d3fce",
+          "AF:kmxf"
+        ]
+      },
+      {
+        "agency_id": "AM",
+        "distinct_ids": 16,
+        "agency_colon": 16,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "AM:0501",
+          "AM:3eef",
+          "AM:43867ce6-e1ef-42fb-b35d-77ed636ec5cc"
+        ]
+      },
+      {
+        "agency_id": "BA",
+        "distinct_ids": 26,
+        "agency_colon": 26,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "BA:001A_shp",
+          "BA:001B_shp",
+          "BA:001C_shp"
+        ]
+      },
+      {
+        "agency_id": "CC",
+        "distinct_ids": 106,
+        "agency_colon": 106,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "CC:49345",
+          "CC:49346",
+          "CC:49347"
+        ]
+      },
+      {
+        "agency_id": "CE",
+        "distinct_ids": 2,
+        "agency_colon": 2,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "CE:ACEEastShape",
+          "CE:ACEWestShape"
+        ]
+      },
+      {
+        "agency_id": "CM",
+        "distinct_ids": 69,
+        "agency_colon": 69,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "CM:1",
+          "CM:10",
+          "CM:11"
+        ]
+      },
+      {
+        "agency_id": "CT",
+        "distinct_ids": 17,
+        "agency_colon": 17,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "CT:p_1438273",
+          "CT:p_1438274",
+          "CT:p_1438275"
+        ]
+      },
+      {
+        "agency_id": "DE",
+        "distinct_ids": 6,
+        "agency_colon": 6,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "DE:DB0095",
+          "DE:DB0098",
+          "DE:DB10065"
+        ]
+      },
+      {
+        "agency_id": "EE",
+        "distinct_ids": 1,
+        "agency_colon": 1,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "EE:EmExp1"
+        ]
+      },
+      {
+        "agency_id": "EM",
+        "distinct_ids": 13,
+        "agency_colon": 13,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "EM:07efc6b4-9c1b-40c7-8a16-9b946306c73b",
+          "EM:1c27b788-41a9-4d1e-82aa-8b7178c41166",
+          "EM:269465ed-39a5-4b6e-8e92-53bed32de8c2"
+        ]
+      },
+      {
+        "agency_id": "FS",
+        "distinct_ids": 11,
+        "agency_colon": 11,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "FS:p_1432448",
+          "FS:p_1432449",
+          "FS:p_1434332"
+        ]
+      },
+      {
+        "agency_id": "GF",
+        "distinct_ids": 36,
+        "agency_colon": 36,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "GF:AISF0005",
+          "GF:AISF0006",
+          "GF:Golden_Gate_Ferry220:AISF0005"
+        ]
+      },
+      {
+        "agency_id": "GG",
+        "distinct_ids": 42,
+        "agency_colon": 42,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "GG:1010585",
+          "GG:1010586",
+          "GG:1010646"
+        ]
+      },
+      {
+        "agency_id": "GP",
+        "distinct_ids": 2,
+        "agency_colon": 2,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "GP:0juq",
+          "GP:q8e3"
+        ]
+      },
+      {
+        "agency_id": "MA",
+        "distinct_ids": 61,
+        "agency_colon": 61,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "MA:1",
+          "MA:10",
+          "MA:11"
+        ]
+      },
+      {
+        "agency_id": "MB",
+        "distinct_ids": 10,
+        "agency_colon": 10,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "MB:p_1426948",
+          "MB:p_1426949",
+          "MB:p_1432460"
+        ]
+      },
+      {
+        "agency_id": "MC",
+        "distinct_ids": 4,
+        "agency_colon": 4,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "MC:5a872a0b-d5b8-4855-bf32-ae58e24a460a",
+          "MC:5f918cf9-2b9b-4971-9bff-140bf59d0d19",
+          "MC:87a67fc4-ab9c-48fe-932c-63bda4cd0462"
+        ]
+      },
+      {
+        "agency_id": "MV",
+        "distinct_ids": 12,
+        "agency_colon": 12,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "MV:88b116e6-3231-443e-80c1-ec14df17f29b",
+          "MV:9aef843a-b9d1-4dd0-acb7-50d8d9535b3f",
+          "MV:a49ac782-c7d9-4434-a0aa-e4b26f48b648"
+        ]
+      },
+      {
+        "agency_id": "PE",
+        "distinct_ids": 20,
+        "agency_colon": 20,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "PE:22997",
+          "PE:22998",
+          "PE:22999"
+        ]
+      },
+      {
+        "agency_id": "PG",
+        "distinct_ids": 2,
+        "agency_colon": 2,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "PG:22214",
+          "PG:26565"
+        ]
+      },
+      {
+        "agency_id": "RV",
+        "distinct_ids": 6,
+        "agency_colon": 6,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "RV:p_2364",
+          "RV:p_692",
+          "RV:p_693"
+        ]
+      },
+      {
+        "agency_id": "SA",
+        "distinct_ids": 2,
+        "agency_colon": 2,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "SA:p_1439841",
+          "SA:p_1439842"
+        ]
+      },
+      {
+        "agency_id": "SB",
+        "distinct_ids": 34,
+        "agency_colon": 34,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "SB:p_1276395",
+          "SB:p_1276399",
+          "SB:p_1303753"
+        ]
+      },
+      {
+        "agency_id": "SC",
+        "distinct_ids": 290,
+        "agency_colon": 290,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "SC:124422",
+          "SC:124423",
+          "SC:124424"
+        ]
+      },
+      {
+        "agency_id": "SE",
+        "distinct_ids": 5,
+        "agency_colon": 5,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "SE:3y34",
+          "SE:88a0",
+          "SE:8o46"
+        ]
+      },
+      {
+        "agency_id": "SF",
+        "distinct_ids": 287,
+        "agency_colon": 287,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "SF:101",
+          "SF:102",
+          "SF:103"
+        ]
+      },
+      {
+        "agency_id": "SI",
+        "distinct_ids": 4,
+        "agency_colon": 4,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "SI:BLUE_shape",
+          "SI:BUSLOTD",
+          "SI:BUSWFG"
+        ]
+      },
+      {
+        "agency_id": "SL",
+        "distinct_ids": 2,
+        "agency_colon": 2,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "SL:North_Shp",
+          "SL:South_Shp"
+        ]
+      },
+      {
+        "agency_id": "SM",
+        "distinct_ids": 650,
+        "agency_colon": 650,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "SM:100066",
+          "SM:100067",
+          "SM:100068"
+        ]
+      },
+      {
+        "agency_id": "SO",
+        "distinct_ids": 65,
+        "agency_colon": 65,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "SO:29727",
+          "SO:29728",
+          "SO:29732"
+        ]
+      },
+      {
+        "agency_id": "SR",
+        "distinct_ids": 35,
+        "agency_colon": 35,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "SR:24703",
+          "SR:26448",
+          "SR:26839"
+        ]
+      },
+      {
+        "agency_id": "SS",
+        "distinct_ids": 3,
+        "agency_colon": 3,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "SS:6tck",
+          "SS:abql",
+          "SS:vg9f"
+        ]
+      },
+      {
+        "agency_id": "ST",
+        "distinct_ids": 46,
+        "agency_colon": 46,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "ST:149",
+          "ST:154",
+          "ST:207"
+        ]
+      },
+      {
+        "agency_id": "TF",
+        "distinct_ids": 2,
+        "agency_colon": 2,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "TF:101",
+          "TF:102"
+        ]
+      },
+      {
+        "agency_id": "UC",
+        "distinct_ids": 36,
+        "agency_colon": 36,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "UC:041d81ad-34d9-48eb-9277-921c76ec645a",
+          "UC:071edf7b-a1ae-4024-9b7c-76f98cbe1873",
+          "UC:0c3f5286-438f-4492-87a3-176c2be1795d"
+        ]
+      },
+      {
+        "agency_id": "VC",
+        "distinct_ids": 12,
+        "agency_colon": 12,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "VC:100ed0a2-faa0-489e-b84d-1ff88b497535",
+          "VC:208d7880-e97b-4a6a-bc47-82153e08624c",
+          "VC:30f5910c-6359-4106-9984-f8f3311b0e72"
+        ]
+      },
+      {
+        "agency_id": "VN",
+        "distinct_ids": 32,
+        "agency_colon": 32,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "VN:10_2752269_7278073",
+          "VN:10_7278073_7283932",
+          "VN:10_7278073_7283932_1"
+        ]
+      },
+      {
+        "agency_id": "WC",
+        "distinct_ids": 43,
+        "agency_colon": 43,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "WC:p_1440304",
+          "WC:p_1440305",
+          "WC:p_1440306"
+        ]
+      },
+      {
+        "agency_id": "WH",
+        "distinct_ids": 78,
+        "agency_colon": 78,
+        "agency_underscore": 0,
+        "numeric": 0,
+        "examples": [
+          "WH:46951",
+          "WH:46952",
+          "WH:46953"
+        ]
+      }
+    ],
+    "stop_id": [
+      {
+        "agency_id": "3D",
+        "distinct_ids": 408,
+        "numeric": 408,
+        "agency_colon": 0,
+        "agency_underscore": 0,
+        "examples": [
+          "810003",
+          "810026",
+          "810035",
+          "810042",
+          "810057"
+        ]
+      },
+      {
+        "agency_id": "AC",
+        "distinct_ids": 4692,
+        "numeric": 4692,
+        "agency_colon": 0,
+        "agency_underscore": 0,
+        "examples": [
+          "50000",
+          "50006",
+          "50010",
+          "50012",
+          "50017"
+        ]
+      },
+      {
+        "agency_id": "AF",
+        "distinct_ids": 2,
+        "numeric": 0,
+        "agency_colon": 2,
+        "agency_underscore": 0,
+        "examples": [
+          "AF:AIF",
+          "AF:TBF"
+        ]
+      },
+      {
+        "agency_id": "AM",
+        "distinct_ids": 20,
+        "numeric": 20,
+        "agency_colon": 0,
+        "agency_underscore": 0,
+        "examples": [
+          "74259",
+          "74269",
+          "74276",
+          "74328",
+          "74338"
+        ]
+      },
+      {
+        "agency_id": "BA",
+        "distinct_ids": 107,
+        "numeric": 107,
+        "agency_colon": 0,
+        "agency_underscore": 0,
+        "examples": [
+          "900101",
+          "900102",
+          "900103",
+          "900201",
+          "900202"
+        ]
+      },
+      {
+        "agency_id": "CC",
+        "distinct_ids": 1214,
+        "numeric": 1214,
+        "agency_colon": 0,
+        "agency_underscore": 0,
+        "examples": [
+          "831000",
+          "831001",
+          "831003",
+          "831004",
+          "831007"
+        ]
+      },
+      {
+        "agency_id": "CE",
+        "distinct_ids": 10,
+        "numeric": 10,
+        "agency_colon": 0,
+        "agency_underscore": 0,
+        "examples": [
+          "73368",
+          "73422",
+          "73548",
+          "73586",
+          "73722"
+        ]
+      },
+      {
+        "agency_id": "CM",
+        "distinct_ids": 235,
+        "numeric": 6,
+        "agency_colon": 229,
+        "agency_underscore": 0,
+        "examples": [
+          "341028",
+          "345025",
+          "346150",
+          "346151",
+          "346610"
+        ]
+      },
+      {
+        "agency_id": "CT",
+        "distinct_ids": 60,
+        "numeric": 60,
+        "agency_colon": 0,
+        "agency_underscore": 0,
+        "examples": [
+          "70011",
+          "70012",
+          "70021",
+          "70022",
+          "70031"
+        ]
+      },
+      {
+        "agency_id": "DE",
+        "distinct_ids": 72,
+        "numeric": 72,
+        "agency_colon": 0,
+        "agency_underscore": 0,
+        "examples": [
+          "50434",
+          "50501",
+          "50771",
+          "50772",
+          "50781"
+        ]
+      },
+      {
+        "agency_id": "EE",
+        "distinct_ids": 4,
+        "numeric": 2,
+        "agency_colon": 2,
+        "agency_underscore": 0,
+        "examples": [
+          "56779",
+          "59559",
+          "EE:1",
+          "EE:3"
+        ]
+      },
+      {
+        "agency_id": "EM",
+        "distinct_ids": 41,
+        "numeric": 41,
+        "agency_colon": 0,
+        "agency_underscore": 0,
+        "examples": [
+          "855300",
+          "855304",
+          "855305",
+          "855306",
+          "855307"
+        ]
+      },
+      {
+        "agency_id": "FS",
+        "distinct_ids": 124,
+        "numeric": 124,
+        "agency_colon": 0,
+        "agency_underscore": 0,
+        "examples": [
+          "75003",
+          "75005",
+          "75007",
+          "75008",
+          "75009"
+        ]
+      },
+      {
+        "agency_id": "GF",
+        "distinct_ids": 6,
+        "numeric": 0,
+        "agency_colon": 6,
+        "agency_underscore": 0,
+        "examples": [
+          "GF:43000",
+          "GF:43002",
+          "GF:43003",
+          "GF:43004",
+          "GF:43007"
+        ]
+      },
+      {
+        "agency_id": "GG",
+        "distinct_ids": 246,
+        "numeric": 246,
+        "agency_colon": 0,
+        "agency_underscore": 0,
+        "examples": [
+          "40003",
+          "40006",
+          "40009",
+          "40012",
+          "40023"
+        ]
+      },
+      {
+        "agency_id": "GP",
+        "distinct_ids": 18,
+        "numeric": 0,
+        "agency_colon": 18,
+        "agency_underscore": 0,
+        "examples": [
+          "GP:7601",
+          "GP:7602",
+          "GP:7603",
+          "GP:7604",
+          "GP:7605"
+        ]
+      },
+      {
+        "agency_id": "MA",
+        "distinct_ids": 544,
+        "numeric": 544,
+        "agency_colon": 0,
+        "agency_underscore": 0,
+        "examples": [
+          "40090",
+          "40091",
+          "40092",
+          "40093",
+          "40094"
+        ]
+      },
+      {
+        "agency_id": "MB",
+        "distinct_ids": 19,
+        "numeric": 0,
+        "agency_colon": 19,
+        "agency_underscore": 0,
+        "examples": [
+          "MB:2335510",
+          "MB:2335511",
+          "MB:2335513",
+          "MB:2335518",
+          "MB:2335520"
+        ]
+      },
+      {
+        "agency_id": "MC",
+        "distinct_ids": 58,
+        "numeric": 58,
+        "agency_colon": 0,
+        "agency_underscore": 0,
+        "examples": [
+          "866011",
+          "9601",
+          "9602",
+          "9603",
+          "9604"
+        ]
+      },
+      {
+        "agency_id": "MV",
+        "distinct_ids": 34,
+        "numeric": 34,
+        "agency_colon": 0,
+        "agency_underscore": 0,
+        "examples": [
+          "61266",
+          "61280",
+          "61281",
+          "62002",
+          "62004"
+        ]
+      },
+      {
+        "agency_id": "PE",
+        "distinct_ids": 152,
+        "numeric": 152,
+        "agency_colon": 0,
+        "agency_underscore": 0,
+        "examples": [
+          "7754670",
+          "87100",
+          "87101",
+          "87102",
+          "87103"
+        ]
+      },
+      {
+        "agency_id": "PG",
+        "distinct_ids": 31,
+        "numeric": 31,
+        "agency_colon": 0,
+        "agency_underscore": 0,
+        "examples": [
+          "7810001",
+          "7817001",
+          "7817002",
+          "7817003",
+          "7817004"
+        ]
+      },
+      {
+        "agency_id": "RV",
+        "distinct_ids": 63,
+        "numeric": 0,
+        "agency_colon": 63,
+        "agency_underscore": 0,
+        "examples": [
+          "RV:1526",
+          "RV:1528",
+          "RV:1533",
+          "RV:1537",
+          "RV:1540"
+        ]
+      },
+      {
+        "agency_id": "SA",
+        "distinct_ids": 28,
+        "numeric": 28,
+        "agency_colon": 0,
+        "agency_underscore": 0,
+        "examples": [
+          "71011",
+          "71012",
+          "71021",
+          "71022",
+          "71031"
+        ]
+      },
+      {
+        "agency_id": "SB",
+        "distinct_ids": 13,
+        "numeric": 13,
+        "agency_colon": 0,
+        "agency_underscore": 0,
+        "examples": [
+          "72011",
+          "72012",
+          "72013",
+          "7205",
+          "7206"
+        ]
+      },
+      {
+        "agency_id": "SC",
+        "distinct_ids": 3230,
+        "numeric": 3230,
+        "agency_colon": 0,
+        "agency_underscore": 0,
+        "examples": [
+          "60001",
+          "60008",
+          "60011",
+          "60014",
+          "60020"
+        ]
+      },
+      {
+        "agency_id": "SE",
+        "distinct_ids": 9,
+        "numeric": 0,
+        "agency_colon": 9,
+        "agency_underscore": 0,
+        "examples": [
+          "SE:829201",
+          "SE:92001",
+          "SE:92002",
+          "SE:92003",
+          "SE:92004"
+        ]
+      },
+      {
+        "agency_id": "SF",
+        "distinct_ids": 3240,
+        "numeric": 3240,
+        "agency_colon": 0,
+        "agency_underscore": 0,
+        "examples": [
+          "10390",
+          "10913",
+          "13016",
+          "13018",
+          "13019"
+        ]
+      },
+      {
+        "agency_id": "SI",
+        "distinct_ids": 28,
+        "numeric": 28,
+        "agency_colon": 0,
+        "agency_underscore": 0,
+        "examples": [
+          "91001",
+          "91002",
+          "91003",
+          "91004",
+          "91005"
+        ]
+      },
+      {
+        "agency_id": "SL",
+        "distinct_ids": 29,
+        "numeric": 6,
+        "agency_colon": 23,
+        "agency_underscore": 0,
+        "examples": [
+          "50673",
+          "50695",
+          "50732",
+          "54678",
+          "56740"
+        ]
+      },
+      {
+        "agency_id": "SM",
+        "distinct_ids": 1853,
+        "numeric": 1853,
+        "agency_colon": 0,
+        "agency_underscore": 0,
+        "examples": [
+          "311010",
+          "311013",
+          "311016",
+          "311018",
+          "311019"
+        ]
+      },
+      {
+        "agency_id": "SO",
+        "distinct_ids": 1019,
+        "numeric": 1019,
+        "agency_colon": 0,
+        "agency_underscore": 0,
+        "examples": [
+          "11748665",
+          "11748667",
+          "11748668",
+          "11748669",
+          "11748672"
+        ]
+      },
+      {
+        "agency_id": "SR",
+        "distinct_ids": 400,
+        "numeric": 400,
+        "agency_colon": 0,
+        "agency_underscore": 0,
+        "examples": [
+          "80100",
+          "80101",
+          "80102",
+          "80103",
+          "80104"
+        ]
+      },
+      {
+        "agency_id": "SS",
+        "distinct_ids": 70,
+        "numeric": 0,
+        "agency_colon": 70,
+        "agency_underscore": 0,
+        "examples": [
+          "SS:334027",
+          "SS:334073",
+          "SS:334076",
+          "SS:334084",
+          "SS:334085"
+        ]
+      },
+      {
+        "agency_id": "ST",
+        "distinct_ids": 306,
+        "numeric": 306,
+        "agency_colon": 0,
+        "agency_underscore": 0,
+        "examples": [
+          "821001",
+          "821002",
+          "821004",
+          "821005",
+          "821006"
+        ]
+      },
+      {
+        "agency_id": "TF",
+        "distinct_ids": 2,
+        "numeric": 0,
+        "agency_colon": 2,
+        "agency_underscore": 0,
+        "examples": [
+          "TF:1",
+          "TF:2"
+        ]
+      },
+      {
+        "agency_id": "UC",
+        "distinct_ids": 167,
+        "numeric": 167,
+        "agency_colon": 0,
+        "agency_underscore": 0,
+        "examples": [
+          "79002",
+          "79003",
+          "79004",
+          "79005",
+          "79006"
+        ]
+      },
+      {
+        "agency_id": "VC",
+        "distinct_ids": 190,
+        "numeric": 189,
+        "agency_colon": 0,
+        "agency_underscore": 0,
+        "examples": [
+          "76001",
+          "76002",
+          "76101",
+          "76102",
+          "76106"
+        ]
+      },
+      {
+        "agency_id": "VN",
+        "distinct_ids": 292,
+        "numeric": 284,
+        "agency_colon": 8,
+        "agency_underscore": 0,
+        "examples": [
+          "10",
+          "117",
+          "120",
+          "121",
+          "123"
+        ]
+      },
+      {
+        "agency_id": "WC",
+        "distinct_ids": 219,
+        "numeric": 219,
+        "agency_colon": 0,
+        "agency_underscore": 0,
+        "examples": [
+          "2100",
+          "2101",
+          "210148",
+          "2103",
+          "2104"
+        ]
+      },
+      {
+        "agency_id": "WH",
+        "distinct_ids": 649,
+        "numeric": 649,
+        "agency_colon": 0,
+        "agency_underscore": 0,
+        "examples": [
+          "880040",
+          "880043",
+          "880059",
+          "880095",
+          "880103"
+        ]
+      }
+    ]
+  },
+  "possible_crosswalk_columns": [
+    "stops.stop_code",
+    "stops.stop_url",
+    "routes.route_short_name",
+    "trips.trip_short_name",
+    "Agency route, trip, and stop-visit joins",
+    "Observed delimited identifier suffixes"
+  ],
+  "interpretation": "Prefixes, suffixes, stop codes and URL paths are evidence to investigate. No agency-source crosswalk or cross-version stability is assumed.",
+  "agency_names": [
+    {
+      "agency_id": "3D",
+      "agency_name": "Tri Delta Transit"
+    },
+    {
+      "agency_id": "AC",
+      "agency_name": "AC TRANSIT"
+    },
+    {
+      "agency_id": "AF",
+      "agency_name": "Angel Island Tiburon Ferry"
+    },
+    {
+      "agency_id": "AM",
+      "agency_name": "Capitol Corridor Joint Powers Authority"
+    },
+    {
+      "agency_id": "BA",
+      "agency_name": "Bay Area Rapid Transit"
+    },
+    {
+      "agency_id": "CC",
+      "agency_name": "County Connection"
+    },
+    {
+      "agency_id": "CE",
+      "agency_name": "Altamont Corridor Express"
+    },
+    {
+      "agency_id": "CM",
+      "agency_name": "Commute.org Shuttles"
+    },
+    {
+      "agency_id": "CT",
+      "agency_name": "Caltrain"
+    },
+    {
+      "agency_id": "DE",
+      "agency_name": "Dumbarton Express Consortium"
+    },
+    {
+      "agency_id": "EE",
+      "agency_name": "Emery Express"
+    },
+    {
+      "agency_id": "EM",
+      "agency_name": "Emery Go-Round"
+    },
+    {
+      "agency_id": "FS",
+      "agency_name": "FAST"
+    },
+    {
+      "agency_id": "GF",
+      "agency_name": "Golden Gate Ferry"
+    },
+    {
+      "agency_id": "GG",
+      "agency_name": "Golden Gate Transit"
+    },
+    {
+      "agency_id": "GP",
+      "agency_name": "San Francisco Recreation and Parks"
+    },
+    {
+      "agency_id": "MA",
+      "agency_name": "Marin Transit"
+    },
+    {
+      "agency_id": "MB",
+      "agency_name": "Mission Bay TMA"
+    },
+    {
+      "agency_id": "MC",
+      "agency_name": "Mountain View Community Shuttle"
+    },
+    {
+      "agency_id": "MV",
+      "agency_name": "MVgo"
+    },
+    {
+      "agency_id": "PE",
+      "agency_name": "Petaluma Transit"
+    },
+    {
+      "agency_id": "PG",
+      "agency_name": "Presidio Go"
+    },
+    {
+      "agency_id": "RV",
+      "agency_name": "Rio Vista Delta Breeze"
+    },
+    {
+      "agency_id": "SA",
+      "agency_name": "Sonoma-Marin Area Rail Transit"
+    },
+    {
+      "agency_id": "SB",
+      "agency_name": "San Francisco Bay Ferry"
+    },
+    {
+      "agency_id": "SC",
+      "agency_name": "VTA"
+    },
+    {
+      "agency_id": "SE",
+      "agency_name": "Solano Transportation Authority"
+    },
+    {
+      "agency_id": "SF",
+      "agency_name": "San Francisco Municipal Transportation Agency"
+    },
+    {
+      "agency_id": "SI",
+      "agency_name": "SFO Airport"
+    },
+    {
+      "agency_id": "SL",
+      "agency_name": "San Leandro LINKS"
+    },
+    {
+      "agency_id": "SM",
+      "agency_name": "SamTrans"
+    },
+    {
+      "agency_id": "SO",
+      "agency_name": "SONOMA"
+    },
+    {
+      "agency_id": "SR",
+      "agency_name": "SANTAROSA"
+    },
+    {
+      "agency_id": "SS",
+      "agency_name": "City of South San Francisco"
+    },
+    {
+      "agency_id": "ST",
+      "agency_name": "SolTrans"
+    },
+    {
+      "agency_id": "TF",
+      "agency_name": "Treasure Island Ferry"
+    },
+    {
+      "agency_id": "UC",
+      "agency_name": "Union City Transit"
+    },
+    {
+      "agency_id": "VC",
+      "agency_name": "Vacaville City Coach"
+    },
+    {
+      "agency_id": "VN",
+      "agency_name": "VINE Transit"
+    },
+    {
+      "agency_id": "WC",
+      "agency_name": "WestCat (Western Contra Costa)"
+    },
+    {
+      "agency_id": "WH",
+      "agency_name": "Livermore Amador Valley Transit Authority"
+    }
+  ],
+  "within_agency_stop_code_collisions": {
+    "groups": 0,
+    "examples": []
+  }
+}

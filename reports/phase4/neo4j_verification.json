@@ -1,0 +1,42 @@
+{
+  "driver": "6.4.1",
+  "existing_database_writes": 0,
+  "status": "connected",
+  "components": [
+    {
+      "name": "Neo4j Kernel",
+      "versions": [
+        "2026.10.2"
+      ],
+      "edition": "enterprise"
+    },
+    {
+      "name": "Cypher",
+      "versions": [
+        "5",
+        "25"
+      ],
+      "edition": ""
+    }
+  ],
+  "database": "neo4j",
+  "read_query": 1,
+  "competency_query_plans": 14,
+  "fixture": {
+    "database": "transitkgfixtureef9fc72519714528b20fdd4c82b266c6",
+    "status": "passed",
+    "removed": true,
+    "constraints": 6,
+    "indexes_online": 15,
+    "answered_queries": 14,
+    "warm_scoped_lookup_ms": [
+      12.864,
+      11.445,
+      14.422,
+      10.289,
+      11.929
+    ],
+    "median_ms": 11.929,
+    "duplicate_rejected": true
+  }
+}

@@ -1,0 +1,6 @@
+from_network_id,to_network_id,from_stop_id,to_stop_id
+AM,AM,,
+BA,BA,,
+CT,CT,,
+GG,GG,,
+SO,SO,,

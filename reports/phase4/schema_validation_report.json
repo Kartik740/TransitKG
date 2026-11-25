@@ -1,0 +1,59 @@
+{
+  "normalized_build_id": "normalized-sha256-5608c0d7d93b9c6200431b5c227da598d52cd0108e9e2f410e5b012b00d28052",
+  "source_snapshot_id": "gtfs-sha256-d6279860e2fe203541a574ee04db5752ecad9e5e1a38b1759cc397b1b596dfa2",
+  "python": "3.14.0",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "suites": {
+    "2": {
+      "total": 7,
+      "passed": 7,
+      "failures": [],
+      "errors": [],
+      "skipped": [],
+      "seconds": 2.002
+    },
+    "3": {
+      "total": 10,
+      "passed": 10,
+      "failures": [],
+      "errors": [],
+      "skipped": [],
+      "seconds": 3.64
+    },
+    "4": {
+      "total": 13,
+      "passed": 13,
+      "failures": [],
+      "errors": [],
+      "skipped": [],
+      "seconds": 3.733
+    }
+  },
+  "verified_schema_files": {
+    "competency.cypher": "d29d90073c740436f79eb5e349fb479ce88a6ef19228fdbf9261164227caafc4",
+    "neo4j_schema.cypher": "51b89fd1c72c6767e09de5173e680fd19b88a7f935c6979d7fad4db91734443e",
+    "static_graph_schema.json": "66c3e2d5524fcafb1608c9eb8c99125f55760781c789b2b4e1188d9360cb43db",
+    "static_graph_schema.mmd": "490667175ff5b74978e663142f05b704e7eb84185bb00e24799f86b67d95594e",
+    "timetable.sql": "26a8eba623220932081582ae0eb6cdfb4f8eb517a196497fcab98b0d6b462dee"
+  },
+  "inspected_evidence_sha256": {
+    "reports/phase2/data_profile.json": "982884b5094c73c27ceab45e08cbcae3552e4b65bf1d0bcc47032ef6429f8149",
+    "reports/phase2/data_quality_report.json": "bfc719c4c6835a963181587a9b5109c4c78d046f8e6b1c7b69a2b6499686bab0",
+    "reports/phase2/dataset_inventory.json": "5d4ef2a43f8be133a3956db810cf53e6f37abe42e9cfe0e2f87ede96b59affd5",
+    "reports/phase2/identifier_analysis.json": "2ebc3df5b402142ed93ce70fd311bfd44b5677f714f47b4101c11d67d58160da",
+    "reports/phase2/phase2_dataset_exploration_report.md": "d82c791791b291d10f189e5710d2c707d2ce22d0f1e6c1b9f36b7c906521f8e6",
+    "reports/phase2/realtime_compatibility_report.json": "f78fdbd99760276290b8db36bb110ba1007cf105ed6fb411b0537b5d6f5325ab",
+    "reports/phase2/referential_integrity_report.json": "d9722d9fdeb88dffb8f67212f7e3cfd3a11ba47585c98f375bed8bb607c8d1f8",
+    "reports/phase2/temporal_network_graph.json": "1331980a937e31b1503663aaa8858bfc285e251aa6a4870c25391611728213aa",
+    "reports/phase3/canonical_identifier_contract.md": "50cdc801edd1d4518a9345f7717ef8cc82e9588778ae2e23210f13be5b97193f",
+    "reports/phase3/cleaning_policy.json": "01daf465dba59b15ea1f5dfdc4947b6a6e80316252c183a8b664b54653f04023",
+    "reports/phase3/data_integrity_report.json": "f03138938a51a5d6aebb3a6594af6e59eac764449be0b7299f4051c4a08ad17c",
+    "reports/phase3/dataset_manifest.json": "11969d832ae858f3e169c528bf3b1d7f3b6c351c5b6bdcf91e4e296b90300922",
+    "reports/phase3/mapping_validation.json": "ad8658d67ac2ab834ebb7f3927af4370a20ddbb5920f7cda2b773b36b6a9a6f2",
+    "reports/phase3/normalization_summary.json": "479afcc54cbe7f52196542c8ce344fb9838d8aadb63c097accf96232920b0e15",
+    "reports/phase3/phase3_data_cleaning_report.md": "80d48d3eaf49f7b254323a8ec5e6fda44a919f486e636b6f744c47641db7c5e7",
+    "reports/phase3/realtime_compatibility_report.json": "1b00a6fb2b5bd8225f98281988b80c7a314ee508c8ab4f5b3c3618bee5b72c2d"
+  },
+  "server_verification": "neo4j_verification.json",
+  "production_graph": "deferred to Phase 6; no production import, timing, store size or fingerprint"
+}

@@ -1,0 +1,337 @@
+{
+  "status": "preflight-passed",
+  "started_utc": "2026-11-24T21:55:17.540011+00:00",
+  "phase": "Neo4j target and import",
+  "driver": "6.4.1",
+  "duckdb": "1.5.0",
+  "implementation": {
+    "version": "1.0.0",
+    "files": {
+      "import_static_graph.py": "cc33da5bbfd623f6f5cc32accd3eae5a6ed30128e1b4ccf5d66c2e1cbbb8db9b",
+      "verify_imported_graph.py": "22d5f4c76e8027cbbdfdbb1efaecc98b3898304a3f8760f55e1608a06621d03b"
+    }
+  },
+  "configuration": {
+    "database": "transitkg-static",
+    "node_batch_size": 2000,
+    "relationship_batch_size": 2000,
+    "max_retries": 2,
+    "transaction_timeout_seconds": 180,
+    "uri": "neo4j://127.0.0.1:7687"
+  },
+  "transactions": {
+    "attempts": 0,
+    "committed": 0,
+    "retries": 0,
+    "failures": []
+  },
+  "partitions": {},
+  "test_evidence": "automated_test_report.json",
+  "inputs": {
+    "source_snapshot_id": "gtfs-sha256-d6279860e2fe203541a574ee04db5752ecad9e5e1a38b1759cc397b1b596dfa2",
+    "normalized_build_id": "normalized-sha256-5608c0d7d93b9c6200431b5c227da598d52cd0108e9e2f410e5b012b00d28052",
+    "normalized_manifest_sha256": "11969d832ae858f3e169c528bf3b1d7f3b6c351c5b6bdcf91e4e296b90300922",
+    "schema_version": "1.0.0",
+    "schema_sha256": "66c3e2d5524fcafb1608c9eb8c99125f55760781c789b2b4e1188d9360cb43db",
+    "canonical_contract_version": "1.0.0",
+    "canonical_contract_sha256": "50cdc801edd1d4518a9345f7717ef8cc82e9588778ae2e23210f13be5b97193f",
+    "transformation_contract_version": "1.0.0",
+    "transformation_contract_sha256": "93e9b37c5c73931b48cfec23a7be2f15260309f1ab9598263e51eaf452eb354a",
+    "reference_sha256": "9c1d9c7d9f703a8b51e02959baa325cac8f3a8549a06b5d8d079a1dc258cbd7b",
+    "timetable_sql_sha256": "26a8eba623220932081582ae0eb6cdfb4f8eb517a196497fcab98b0d6b462dee",
+    "graph_ready_build_id": "graph-ready-sha256-f85cdfafe998da9e7eecb6697443ebd02e45f4d43e41462db7a8a5acb82dadae",
+    "graph_ready_manifest_sha256": "8e7d1ad525abe21ab2ceff93061013f704835a23988cf02615efaa4def85d7df",
+    "import_contract_sha256": "6a7aadc9d83f92f3fe66fb09857484d7283757f88555f69e248694a7a88692fe"
+  },
+  "input_counts": {
+    "nodes": {
+      "Agency": 41,
+      "Route": 665,
+      "Trip": 92827,
+      "Stop": 21664,
+      "Service": 485,
+      "FeedSnapshot": 1
+    },
+    "relationships": {
+      "OPERATES": 665,
+      "HAS_TRIP": 92827,
+      "RUNS_ON": 92827,
+      "ROUTE_SERVES_STOP": 33985,
+      "AGENCY_SERVES_STOP": 19904,
+      "PART_OF": 2222,
+      "TRANSFER_RULE": 61
+    }
+  },
+  "expected_static_graph_fingerprint": "675d71bd4e8bd82ffc1ec0d8951ca527928ca4376c681e40193d14f451892e66",
+  "offline_validation": {
+    "raw_files_verified": 27,
+    "normalized_files_verified": 32,
+    "duplicate_identities": 0,
+    "dangling_endpoints": 0,
+    "shared_stops": 189,
+    "transfers": [
+      {
+        "transfer_type": 0,
+        "n": 3,
+        "from_route": 0,
+        "to_route": 0,
+        "from_trip": 0,
+        "to_trip": 0
+      },
+      {
+        "transfer_type": 1,
+        "n": 10,
+        "from_route": 0,
+        "to_route": 0,
+        "from_trip": 0,
+        "to_trip": 0
+      },
+      {
+        "transfer_type": 2,
+        "n": 48,
+        "from_route": 44,
+        "to_route": 44,
+        "from_trip": 0,
+        "to_trip": 0
+      }
+    ],
+    "ac_selector": {
+      "status": "EXACT_MATCH",
+      "55660": [
+        {
+          "stop_id": "55660",
+          "canonical_id": "511-sf-bay-regional:stop:55660",
+          "stop_name": "San Pablo Av & W Grand Av",
+          "route_id": "AC:72",
+          "trips": 126
+        },
+        {
+          "stop_id": "55660",
+          "canonical_id": "511-sf-bay-regional:stop:55660",
+          "stop_name": "San Pablo Av & W Grand Av",
+          "route_id": "AC:72L",
+          "trips": 81
+        },
+        {
+          "stop_id": "55660",
+          "canonical_id": "511-sf-bay-regional:stop:55660",
+          "stop_name": "San Pablo Av & W Grand Av",
+          "route_id": "AC:72M",
+          "trips": 123
+        },
+        {
+          "stop_id": "55660",
+          "canonical_id": "511-sf-bay-regional:stop:55660",
+          "stop_name": "San Pablo Av & W Grand Av",
+          "route_id": "AC:802",
+          "trips": 15
+        }
+      ],
+      "52227": [
+        {
+          "stop_id": "52227",
+          "canonical_id": "511-sf-bay-regional:stop:52227",
+          "stop_name": "San Pablo Av & W Grand Av",
+          "route_id": "AC:72",
+          "trips": 121
+        },
+        {
+          "stop_id": "52227",
+          "canonical_id": "511-sf-bay-regional:stop:52227",
+          "stop_name": "San Pablo Av & W Grand Av",
+          "route_id": "AC:72L",
+          "trips": 80
+        },
+        {
+          "stop_id": "52227",
+          "canonical_id": "511-sf-bay-regional:stop:52227",
+          "stop_name": "San Pablo Av & W Grand Av",
+          "route_id": "AC:72M",
+          "trips": 123
+        },
+        {
+          "stop_id": "52227",
+          "canonical_id": "511-sf-bay-regional:stop:52227",
+          "stop_name": "San Pablo Av & W Grand Av",
+          "route_id": "AC:802",
+          "trips": 15
+        }
+      ],
+      "dated_service_day": "2026-11-25",
+      "dated_trips": 112,
+      "name_only": "AMBIGUOUS",
+      "wrong_agency": 0,
+      "wrong_direction": 0
+    },
+    "graph_ready_files_verified": 13,
+    "parquet_fingerprint": "675d71bd4e8bd82ffc1ec0d8951ca527928ca4376c681e40193d14f451892e66"
+  },
+  "external": {
+    "normalized_path": "data/normalized/build-5608c0d7d93b9c6200431b5c",
+    "join": "Typed canonical_ids mapping between canonical_id and exact source_identifier",
+    "artifacts": [
+      "agency",
+      "agency_stops",
+      "areas",
+      "attributions",
+      "calendar",
+      "calendar_attributes",
+      "calendar_dates",
+      "canonical_ids",
+      "directions",
+      "fare_leg_join_rules",
+      "fare_leg_rules",
+      "fare_media",
+      "fare_products",
+      "fare_transfer_rules",
+      "feed_info",
+      "levels",
+      "mtc_feed_versions",
+      "pathways",
+      "rider_categories",
+      "route_attributes",
+      "route_stops",
+      "routes",
+      "row_exception_ledger",
+      "shapes",
+      "stop_alias_candidates",
+      "stop_areas",
+      "stop_times",
+      "stops",
+      "timeframes",
+      "transfers",
+      "trip_selector_context",
+      "trips"
+    ],
+    "verification": {
+      "timetable": {
+        "visits": 3185115,
+        "arrivals": 100912,
+        "departures": 100948,
+        "flex": 0
+      },
+      "external_temporal_and_shapes": {
+        "calendar_end_2099": 5,
+        "exceptions": 5706,
+        "shape_points": 1340496
+      },
+      "canonical_mappings": {
+        "route": 665,
+        "trip": 92827,
+        "shape": 2446,
+        "agency": 41,
+        "stop": 21664,
+        "service": 485
+      },
+      "suffix_collision_groups": 364,
+      "exception_ledger": [
+        {
+          "source_file": "attributions.txt",
+          "disposition": "DEDUPLICATED",
+          "records": 40
+        },
+        {
+          "source_file": "directions.txt",
+          "disposition": "QUARANTINED",
+          "records": 2
+        },
+        {
+          "source_file": "fare_transfer_rules.txt",
+          "disposition": "QUARANTINED",
+          "records": 68
+        },
+        {
+          "source_file": "route_attributes.txt",
+          "disposition": "DEDUPLICATED",
+          "records": 2
+        },
+        {
+          "source_file": "shapes.txt",
+          "disposition": "FLAGGED",
+          "records": 21
+        }
+      ]
+    }
+  },
+  "input_seconds": 5.584,
+  "reader_isolation": "Dedicated database and unpublished manifest until passing. Reader access is operationally withheld; server permissions are unchanged.",
+  "neo4j": {
+    "components": [
+      {
+        "name": "Neo4j Kernel",
+        "versions": [
+          "2026.10.2"
+        ],
+        "edition": "enterprise"
+      },
+      {
+        "name": "Cypher",
+        "versions": [
+          "5",
+          "25"
+        ],
+        "edition": ""
+      }
+    ],
+    "account": {
+      "roles": [
+        "admin",
+        "PUBLIC"
+      ],
+      "password_change_required": false
+    },
+    "database": {
+      "name": "transitkg-static",
+      "type": "standard",
+      "currentStatus": "online",
+      "databaseID": "FEC14225142CED808735D9B68454D6C9ABE2B5CCBD95B8B5074B0331DA905445",
+      "access": "read-write",
+      "default": false
+    }
+  },
+  "target_contents": {
+    "nodes": 0,
+    "relationships": 0,
+    "snapshots": []
+  },
+  "schema_preflight": {
+    "constraints": [],
+    "indexes": [
+      {
+        "id": 1,
+        "name": "index_1b9dcc97",
+        "state": "ONLINE",
+        "populationPercent": 100.0,
+        "type": "LOOKUP",
+        "entityType": "RELATIONSHIP",
+        "labelsOrTypes": null,
+        "properties": null,
+        "indexProvider": "token-lookup-1.0",
+        "owningConstraint": null,
+        "lastRead": null,
+        "readCount": 0
+      },
+      {
+        "id": 0,
+        "name": "index_460996c0",
+        "state": "ONLINE",
+        "populationPercent": 100.0,
+        "type": "LOOKUP",
+        "entityType": "NODE",
+        "labelsOrTypes": null,
+        "properties": null,
+        "indexProvider": "token-lookup-1.0",
+        "owningConstraint": null,
+        "lastRead": null,
+        "readCount": 0
+      }
+    ]
+  },
+  "input_immutability_rechecked": true,
+  "ended_utc": "2026-11-24T21:55:23.866096+00:00",
+  "performance": {
+    "wall_seconds": 6.326,
+    "client_cpu_seconds": 8.953,
+    "client_peak_rss_mib": 474.93
+  }
+}

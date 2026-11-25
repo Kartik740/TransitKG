@@ -1,0 +1,1566 @@
+[
+  {
+    "query": "canonical_stop",
+    "purpose": "Exact canonical stop lookup including absent ID",
+    "case": 0,
+    "params": {
+      "id": "511-sf-bay-regional:stop:10913"
+    },
+    "expected_rows": 1,
+    "expected_sha256": "cc8ff26282955c6115247f10cae9b208070cc9161a7b2e6bcad975069336b61e",
+    "expected_sample": [
+      [
+        "10913"
+      ]
+    ],
+    "reference": "normalized DuckDB SQL",
+    "observed": {
+      "neo4j": {
+        "success": 18,
+        "failure": 0,
+        "rows": 1,
+        "matches_reference": true
+      },
+      "duckdb": {
+        "success": 18,
+        "failure": 0,
+        "rows": 1,
+        "matches_reference": true
+      }
+    }
+  },
+  {
+    "query": "canonical_stop",
+    "purpose": "Exact canonical stop lookup including absent ID",
+    "case": 1,
+    "params": {
+      "id": "511-sf-bay-regional:stop:83883"
+    },
+    "expected_rows": 1,
+    "expected_sha256": "0e7697008349bf6997c22e9265d59d99716ca5d5fa0a6f97ad1815c938472c7c",
+    "expected_sample": [
+      [
+        "83883"
+      ]
+    ],
+    "reference": "normalized DuckDB SQL",
+    "observed": {
+      "duckdb": {
+        "success": 7,
+        "failure": 0,
+        "rows": 1,
+        "matches_reference": true
+      },
+      "neo4j": {
+        "success": 7,
+        "failure": 0,
+        "rows": 1,
+        "matches_reference": true
+      }
+    }
+  },
+  {
+    "query": "canonical_stop",
+    "purpose": "Exact canonical stop lookup including absent ID",
+    "case": 2,
+    "params": {
+      "id": "511-sf-bay-regional:stop:341028"
+    },
+    "expected_rows": 1,
+    "expected_sha256": "8adcca58943efa77502326301e64703da3a82a392b7e47ce4492166b49af1b40",
+    "expected_sample": [
+      [
+        "341028"
+      ]
+    ],
+    "reference": "normalized DuckDB SQL",
+    "observed": {
+      "duckdb": {
+        "success": 7,
+        "failure": 0,
+        "rows": 1,
+        "matches_reference": true
+      },
+      "neo4j": {
+        "success": 7,
+        "failure": 0,
+        "rows": 1,
+        "matches_reference": true
+      }
+    }
+  },
+  {
+    "query": "canonical_stop",
+    "purpose": "Exact canonical stop lookup including absent ID",
+    "case": 3,
+    "params": {
+      "id": "511-sf-bay-regional:stop:55660"
+    },
+    "expected_rows": 1,
+    "expected_sha256": "17b397860b5cd54d07db3b3984e4cb32e4eecef476e4d0ef914bf1655bf4f07f",
+    "expected_sample": [
+      [
+        "55660"
+      ]
+    ],
+    "reference": "normalized DuckDB SQL",
+    "observed": {
+      "neo4j": {
+        "success": 7,
+        "failure": 0,
+        "rows": 1,
+        "matches_reference": true
+      },
+      "duckdb": {
+        "success": 7,
+        "failure": 0,
+        "rows": 1,
+        "matches_reference": true
+      }
+    }
+  },
+  {
+    "query": "canonical_stop",
+    "purpose": "Exact canonical stop lookup including absent ID",
+    "case": 4,
+    "params": {
+      "id": "511-sf-bay-regional:stop:PHASE7-ABSENT"
+    },
+    "expected_rows": 0,
+    "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "expected_sample": [],
+    "reference": "normalized DuckDB SQL",
+    "observed": {
+      "neo4j": {
+        "success": 7,
+        "failure": 0,
+        "rows": 0,
+        "matches_reference": true
+      },
+      "duckdb": {
+        "success": 7,
+        "failure": 0,
+        "rows": 0,
+        "matches_reference": true
+      }
+    }
+  },
+  {
+    "query": "agency_routes",
+    "purpose": "Routes operated by smaller and larger agencies",
+    "case": 0,
+    "params": {
+      "agency": "AF"
+    },
+    "expected_rows": 1,
+    "expected_sha256": "38adb292e0e9fc3bf4acdabe005468f2b99a3452a446ca1c63f06010265681e2",
+    "expected_sample": [
+      [
+        "AF:Tib-AIF"
+      ]
+    ],
+    "reference": "normalized DuckDB SQL",
+    "observed": {
+      "duckdb": {
+        "success": 11,
+        "failure": 0,
+        "rows": 1,
+        "matches_reference": true
+      },
+      "neo4j": {
+        "success": 11,
+        "failure": 0,
+        "rows": 1,
+        "matches_reference": true
+      }
+    }
+  },
+  {
+    "query": "agency_routes",
+    "purpose": "Routes operated by smaller and larger agencies",
+    "case": 1,
+    "params": {
+      "agency": "AC"
+    },
+    "expected_rows": 123,
+    "expected_sha256": "532740c080ee77563f7b508e909190ede7c1218bf0125eb952f15125dbe399c8",
+    "expected_sample": [
+      [
+        "AC:12"
+      ],
+      [
+        "AC:14"
+      ],
+      [
+        "AC:18"
+      ],
+      [
+        "AC:19"
+      ],
+      [
+        "AC:1T"
+      ]
+    ],
+    "reference": "normalized DuckDB SQL",
+    "observed": {
+      "neo4j": {
+        "success": 9,
+        "failure": 0,
+        "rows": 123,
+        "matches_reference": true
+      },
+      "duckdb": {
+        "success": 9,
+        "failure": 0,
+        "rows": 123,
+        "matches_reference": true
+      }
+    }
+  },
+  {
+    "query": "agency_routes",
+    "purpose": "Routes operated by smaller and larger agencies",
+    "case": 2,
+    "params": {
+      "agency": "BA"
+    },
+    "expected_rows": 14,
+    "expected_sha256": "3ad127d58f5b3d284711dc6fd8859cf67787fc8b64904b3e011a7c6962fb1ade",
+    "expected_sample": [
+      [
+        "BA:Blue-N"
+      ],
+      [
+        "BA:Blue-S"
+      ],
+      [
+        "BA:BridgeA"
+      ],
+      [
+        "BA:BridgeB"
+      ],
+      [
+        "BA:Green-N"
+      ]
+    ],
+    "reference": "normalized DuckDB SQL",
+    "observed": {
+      "duckdb": {
+        "success": 8,
+        "failure": 0,
+        "rows": 14,
+        "matches_reference": true
+      },
+      "neo4j": {
+        "success": 8,
+        "failure": 0,
+        "rows": 14,
+        "matches_reference": true
+      }
+    }
+  },
+  {
+    "query": "agency_routes",
+    "purpose": "Routes operated by smaller and larger agencies",
+    "case": 3,
+    "params": {
+      "agency": "CM"
+    },
+    "expected_rows": 20,
+    "expected_sha256": "0d47ce73a1788f1e5b0dd2d207e7eafc900bc4360d7ca47e8b809ad81589dea6",
+    "expected_sample": [
+      [
+        "CM:BAY Shuttle"
+      ],
+      [
+        "CM:BCP Shuttle"
+      ],
+      [
+        "CM:BPT Shuttle"
+      ],
+      [
+        "CM:DCB Shuttle"
+      ],
+      [
+        "CM:FCC Shuttle"
+      ]
+    ],
+    "reference": "normalized DuckDB SQL",
+    "observed": {
+      "duckdb": {
+        "success": 8,
+        "failure": 0,
+        "rows": 20,
+        "matches_reference": true
+      },
+      "neo4j": {
+        "success": 8,
+        "failure": 0,
+        "rows": 20,
+        "matches_reference": true
+      }
+    }
+  },
+  {
+    "query": "route_stops",
+    "purpose": "Served stops on small and large routes",
+    "case": 0,
+    "params": {
+      "route": "AC:701"
+    },
+    "expected_rows": 2,
+    "expected_sha256": "11e318edb58079700a14a4bde7aec70f1e51af138f11ff8f08d7b4d7fae5bb50",
+    "expected_sample": [
+      [
+        "50019"
+      ],
+      [
+        "52186"
+      ]
+    ],
+    "reference": "normalized DuckDB SQL",
+    "observed": {
+      "neo4j": {
+        "success": 13,
+        "failure": 0,
+        "rows": 2,
+        "matches_reference": true
+      },
+      "duckdb": {
+        "success": 13,
+        "failure": 0,
+        "rows": 2,
+        "matches_reference": true
+      }
+    }
+  },
+  {
+    "query": "route_stops",
+    "purpose": "Served stops on small and large routes",
+    "case": 1,
+    "params": {
+      "route": "SM:397"
+    },
+    "expected_rows": 228,
+    "expected_sha256": "d0f110b00e725b241319b5d1d028f386e1f534ec0e77b1ceac5f6d844e5a65c3",
+    "expected_sample": [
+      [
+        "331003"
+      ],
+      [
+        "331015"
+      ],
+      [
+        "331059"
+      ],
+      [
+        "331070"
+      ],
+      [
+        "331071"
+      ]
+    ],
+    "reference": "normalized DuckDB SQL",
+    "observed": {
+      "neo4j": {
+        "success": 12,
+        "failure": 0,
+        "rows": 228,
+        "matches_reference": true
+      },
+      "duckdb": {
+        "success": 12,
+        "failure": 0,
+        "rows": 228,
+        "matches_reference": true
+      }
+    }
+  },
+  {
+    "query": "route_stops",
+    "purpose": "Served stops on small and large routes",
+    "case": 2,
+    "params": {
+      "route": "AC:72"
+    },
+    "expected_rows": 152,
+    "expected_sha256": "df5b43eb28042f47179eed4c49e10ba9dc83d20dfd155da86195aca4e63f8c43",
+    "expected_sample": [
+      [
+        "50344"
+      ],
+      [
+        "50355"
+      ],
+      [
+        "50500"
+      ],
+      [
+        "50616"
+      ],
+      [
+        "50632"
+      ]
+    ],
+    "reference": "normalized DuckDB SQL",
+    "observed": {
+      "neo4j": {
+        "success": 11,
+        "failure": 0,
+        "rows": 152,
+        "matches_reference": true
+      },
+      "duckdb": {
+        "success": 11,
+        "failure": 0,
+        "rows": 152,
+        "matches_reference": true
+      }
+    }
+  },
+  {
+    "query": "stop_routes",
+    "purpose": "Routes at low-degree, high-degree and shared stops",
+    "case": 0,
+    "params": {
+      "stop": "10913"
+    },
+    "expected_rows": 1,
+    "expected_sha256": "7c16cc9bb32426fe332608d878b201750a63431b91683a77b74d5a4009c45e25",
+    "expected_sample": [
+      [
+        "SF:52"
+      ]
+    ],
+    "reference": "normalized DuckDB SQL",
+    "observed": {
+      "duckdb": {
+        "success": 11,
+        "failure": 0,
+        "rows": 1,
+        "matches_reference": true
+      },
+      "neo4j": {
+        "success": 11,
+        "failure": 0,
+        "rows": 1,
+        "matches_reference": true
+      }
+    }
+  },
+  {
+    "query": "stop_routes",
+    "purpose": "Routes at low-degree, high-degree and shared stops",
+    "case": 1,
+    "params": {
+      "stop": "83883"
+    },
+    "expected_rows": 18,
+    "expected_sha256": "de790e8ac3d8de8b83e1ac501d1220ff1cc84b74af9101c128c44966dca52548",
+    "expected_sample": [
+      [
+        "CC:10"
+      ],
+      [
+        "CC:11"
+      ],
+      [
+        "CC:14"
+      ],
+      [
+        "CC:15"
+      ],
+      [
+        "CC:16"
+      ]
+    ],
+    "reference": "normalized DuckDB SQL",
+    "observed": {
+      "duckdb": {
+        "success": 9,
+        "failure": 0,
+        "rows": 18,
+        "matches_reference": true
+      },
+      "neo4j": {
+        "success": 9,
+        "failure": 0,
+        "rows": 18,
+        "matches_reference": true
+      }
+    }
+  },
+  {
+    "query": "stop_routes",
+    "purpose": "Routes at low-degree, high-degree and shared stops",
+    "case": 2,
+    "params": {
+      "stop": "341028"
+    },
+    "expected_rows": 2,
+    "expected_sha256": "4f385784c77825271d368e25aab6c8781e8917460e42206e2ea7d0e2d41233f9",
+    "expected_sample": [
+      [
+        "CM:NFC Shuttle"
+      ],
+      [
+        "SM:FCX"
+      ]
+    ],
+    "reference": "normalized DuckDB SQL",
+    "observed": {
+      "duckdb": {
+        "success": 8,
+        "failure": 0,
+        "rows": 2,
+        "matches_reference": true
+      },
+      "neo4j": {
+        "success": 8,
+        "failure": 0,
+        "rows": 2,
+        "matches_reference": true
+      }
+    }
+  },
+  {
+    "query": "stop_routes",
+    "purpose": "Routes at low-degree, high-degree and shared stops",
+    "case": 3,
+    "params": {
+      "stop": "55660"
+    },
+    "expected_rows": 4,
+    "expected_sha256": "f46293bfb8a5638075ff9b1634eec623a8d7fa8f16b32c00fc09abbebd78e13d",
+    "expected_sample": [
+      [
+        "AC:72"
+      ],
+      [
+        "AC:72L"
+      ],
+      [
+        "AC:72M"
+      ],
+      [
+        "AC:802"
+      ]
+    ],
+    "reference": "normalized DuckDB SQL",
+    "observed": {
+      "duckdb": {
+        "success": 8,
+        "failure": 0,
+        "rows": 4,
+        "matches_reference": true
+      },
+      "neo4j": {
+        "success": 8,
+        "failure": 0,
+        "rows": 4,
+        "matches_reference": true
+      }
+    }
+  },
+  {
+    "query": "agency_stop",
+    "purpose": "Agency-scoped stop identity including contradictory agency",
+    "case": 0,
+    "params": {
+      "agency": "AC",
+      "stop": "55660"
+    },
+    "expected_rows": 1,
+    "expected_sha256": "41febc5caedfceccdc736d3bc739d98932830d4e0880c794ea4ca873608dd6ab",
+    "expected_sample": [
+      [
+        "511-sf-bay-regional:stop:55660"
+      ]
+    ],
+    "reference": "normalized DuckDB SQL",
+    "observed": {
+      "duckdb": {
+        "success": 7,
+        "failure": 0,
+        "rows": 1,
+        "matches_reference": true
+      },
+      "neo4j": {
+        "success": 7,
+        "failure": 0,
+        "rows": 1,
+        "matches_reference": true
+      }
+    }
+  },
+  {
+    "query": "agency_stop",
+    "purpose": "Agency-scoped stop identity including contradictory agency",
+    "case": 1,
+    "params": {
+      "agency": "BA",
+      "stop": "55660"
+    },
+    "expected_rows": 0,
+    "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "expected_sample": [],
+    "reference": "normalized DuckDB SQL",
+    "observed": {
+      "neo4j": {
+        "success": 6,
+        "failure": 0,
+        "rows": 0,
+        "matches_reference": true
+      },
+      "duckdb": {
+        "success": 6,
+        "failure": 0,
+        "rows": 0,
+        "matches_reference": true
+      }
+    }
+  },
+  {
+    "query": "agency_stop",
+    "purpose": "Agency-scoped stop identity including contradictory agency",
+    "case": 2,
+    "params": {
+      "agency": "CM",
+      "stop": "341028"
+    },
+    "expected_rows": 1,
+    "expected_sha256": "0c97736ef9d102b13a5e27a025282033636921ddcf4dd1cc54094507189af9e2",
+    "expected_sample": [
+      [
+        "511-sf-bay-regional:stop:341028"
+      ]
+    ],
+    "reference": "normalized DuckDB SQL",
+    "observed": {
+      "duckdb": {
+        "success": 6,
+        "failure": 0,
+        "rows": 1,
+        "matches_reference": true
+      },
+      "neo4j": {
+        "success": 6,
+        "failure": 0,
+        "rows": 1,
+        "matches_reference": true
+      }
+    }
+  },
+  {
+    "query": "agency_stop",
+    "purpose": "Agency-scoped stop identity including contradictory agency",
+    "case": 3,
+    "params": {
+      "agency": "SM",
+      "stop": "341028"
+    },
+    "expected_rows": 1,
+    "expected_sha256": "0c97736ef9d102b13a5e27a025282033636921ddcf4dd1cc54094507189af9e2",
+    "expected_sample": [
+      [
+        "511-sf-bay-regional:stop:341028"
+      ]
+    ],
+    "reference": "normalized DuckDB SQL",
+    "observed": {
+      "duckdb": {
+        "success": 6,
+        "failure": 0,
+        "rows": 1,
+        "matches_reference": true
+      },
+      "neo4j": {
+        "success": 6,
+        "failure": 0,
+        "rows": 1,
+        "matches_reference": true
+      }
+    }
+  },
+  {
+    "query": "agency_stop",
+    "purpose": "Agency-scoped stop identity including contradictory agency",
+    "case": 4,
+    "params": {
+      "agency": "CC",
+      "stop": "83883"
+    },
+    "expected_rows": 1,
+    "expected_sha256": "38778480fbd8157b352a791a5f83b5d700afb19739f0a036d8d1b97dbb409e5d",
+    "expected_sample": [
+      [
+        "511-sf-bay-regional:stop:83883"
+      ]
+    ],
+    "reference": "normalized DuckDB SQL",
+    "observed": {
+      "neo4j": {
+        "success": 6,
+        "failure": 0,
+        "rows": 1,
+        "matches_reference": true
+      },
+      "duckdb": {
+        "success": 6,
+        "failure": 0,
+        "rows": 1,
+        "matches_reference": true
+      }
+    }
+  },
+  {
+    "query": "agency_stop",
+    "purpose": "Agency-scoped stop identity including contradictory agency",
+    "case": 5,
+    "params": {
+      "agency": "SF",
+      "stop": "10913"
+    },
+    "expected_rows": 1,
+    "expected_sha256": "ee89d4789adaf118b778e0491ec0767cd7a4daf610318a50cc89c5b11dddb4e6",
+    "expected_sample": [
+      [
+        "511-sf-bay-regional:stop:10913"
+      ]
+    ],
+    "reference": "normalized DuckDB SQL",
+    "observed": {
+      "neo4j": {
+        "success": 5,
+        "failure": 0,
+        "rows": 1,
+        "matches_reference": true
+      },
+      "duckdb": {
+        "success": 5,
+        "failure": 0,
+        "rows": 1,
+        "matches_reference": true
+      }
+    }
+  },
+  {
+    "query": "stop_name",
+    "purpose": "Ambiguous stop names and nonexistent name",
+    "case": 0,
+    "params": {
+      "name": "San Pablo Av & W Grand Av"
+    },
+    "expected_rows": 2,
+    "expected_sha256": "091223e71f39122a3321f30435ac2f20511bb9c0ad5cf813e5bbdbf62e5157c1",
+    "expected_sample": [
+      [
+        "52227"
+      ],
+      [
+        "55660"
+      ]
+    ],
+    "reference": "normalized DuckDB SQL",
+    "observed": {
+      "duckdb": {
+        "success": 13,
+        "failure": 0,
+        "rows": 2,
+        "matches_reference": true
+      },
+      "neo4j": {
+        "success": 13,
+        "failure": 0,
+        "rows": 2,
+        "matches_reference": true
+      }
+    }
+  },
+  {
+    "query": "stop_name",
+    "purpose": "Ambiguous stop names and nonexistent name",
+    "case": 1,
+    "params": {
+      "name": "Main Entrance / Exit"
+    },
+    "expected_rows": 18,
+    "expected_sha256": "24ea17430ab6e28d0945a054cc18b4bc0f63e1fc3a2f5586ccdc3d1cfb0d4f96",
+    "expected_sample": [
+      [
+        "ANTC_1"
+      ],
+      [
+        "BERY_1"
+      ],
+      [
+        "CAST_1"
+      ],
+      [
+        "DUBL_1"
+      ],
+      [
+        "FTVL_1"
+      ]
+    ],
+    "reference": "normalized DuckDB SQL",
+    "observed": {
+      "duckdb": {
+        "success": 12,
+        "failure": 0,
+        "rows": 18,
+        "matches_reference": true
+      },
+      "neo4j": {
+        "success": 12,
+        "failure": 0,
+        "rows": 18,
+        "matches_reference": true
+      }
+    }
+  },
+  {
+    "query": "stop_name",
+    "purpose": "Ambiguous stop names and nonexistent name",
+    "case": 2,
+    "params": {
+      "name": "PHASE7 UNKNOWN STOP"
+    },
+    "expected_rows": 0,
+    "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "expected_sample": [],
+    "reference": "normalized DuckDB SQL",
+    "observed": {
+      "neo4j": {
+        "success": 11,
+        "failure": 0,
+        "rows": 0,
+        "matches_reference": true
+      },
+      "duckdb": {
+        "success": 11,
+        "failure": 0,
+        "rows": 0,
+        "matches_reference": true
+      }
+    }
+  },
+  {
+    "query": "transfer_rules",
+    "purpose": "Transfer identities and restriction payload",
+    "case": 0,
+    "params": {
+      "src": "900101",
+      "dst": "900102"
+    },
+    "expected_rows": 1,
+    "expected_sha256": "ecf9f26ba4ba80aceb6d74573f8e6d7bcbbabc0199d75ca29a49a59b7deea5fc",
+    "expected_sample": [
+      [
+        "BA:Orange-N",
+        "BA:Red-S",
+        null,
+        null,
+        2,
+        0
+      ]
+    ],
+    "reference": "normalized DuckDB SQL",
+    "observed": {
+      "neo4j": {
+        "success": 11,
+        "failure": 0,
+        "rows": 1,
+        "matches_reference": true
+      },
+      "duckdb": {
+        "success": 11,
+        "failure": 0,
+        "rows": 1,
+        "matches_reference": true
+      }
+    }
+  },
+  {
+    "query": "transfer_rules",
+    "purpose": "Transfer identities and restriction payload",
+    "case": 1,
+    "params": {
+      "src": "900102",
+      "dst": "900101"
+    },
+    "expected_rows": 2,
+    "expected_sha256": "bd671d69e7e12f1e349bd249b2105039fe2e7de26f0fd76ac5ec2bbb0ab3c0d2",
+    "expected_sample": [
+      [
+        "BA:Yellow-S",
+        "BA:Orange-N",
+        null,
+        null,
+        2,
+        0
+      ],
+      [
+        "BA:Yellow-S",
+        "BA:Red-N",
+        null,
+        null,
+        2,
+        0
+      ]
+    ],
+    "reference": "normalized DuckDB SQL",
+    "observed": {
+      "neo4j": {
+        "success": 9,
+        "failure": 0,
+        "rows": 2,
+        "matches_reference": true
+      },
+      "duckdb": {
+        "success": 9,
+        "failure": 0,
+        "rows": 2,
+        "matches_reference": true
+      }
+    }
+  },
+  {
+    "query": "transfer_rules",
+    "purpose": "Transfer identities and restriction payload",
+    "case": 2,
+    "params": {
+      "src": "900102",
+      "dst": "900103"
+    },
+    "expected_rows": 1,
+    "expected_sha256": "2bba76a7115ab3fb90d3e1bbe0d5acc98c1968d176f754902466dfcf14a36073",
+    "expected_sample": [
+      [
+        "BA:Orange-S",
+        "BA:Yellow-N",
+        null,
+        null,
+        2,
+        0
+      ]
+    ],
+    "reference": "normalized DuckDB SQL",
+    "observed": {
+      "duckdb": {
+        "success": 8,
+        "failure": 0,
+        "rows": 1,
+        "matches_reference": true
+      },
+      "neo4j": {
+        "success": 8,
+        "failure": 0,
+        "rows": 1,
+        "matches_reference": true
+      }
+    }
+  },
+  {
+    "query": "transfer_rules",
+    "purpose": "Transfer identities and restriction payload",
+    "case": 3,
+    "params": {
+      "src": "241",
+      "dst": "241"
+    },
+    "expected_rows": 1,
+    "expected_sha256": "c524dff95144aacbad96353bc99a8203cbaa4153faeee64395d5cb0dc0789682",
+    "expected_sample": [
+      [
+        null,
+        null,
+        null,
+        null,
+        1,
+        null
+      ]
+    ],
+    "reference": "normalized DuckDB SQL",
+    "observed": {
+      "duckdb": {
+        "success": 8,
+        "failure": 0,
+        "rows": 1,
+        "matches_reference": true
+      },
+      "neo4j": {
+        "success": 8,
+        "failure": 0,
+        "rows": 1,
+        "matches_reference": true
+      }
+    }
+  },
+  {
+    "query": "scoped_service_day",
+    "purpose": "Agency/stop/date, route/direction and shared-stop scope",
+    "case": 0,
+    "params": {
+      "agency": "AC",
+      "stop": "55660",
+      "day": "2026-11-25",
+      "route": null,
+      "direction": null
+    },
+    "expected_rows": 112,
+    "expected_sha256": "9a7a6f2a38299532eefac20e52a3ecd4890d4a9f90677b20c31afbfe0ea83126",
+    "expected_sample": [
+      [
+        "511-sf-bay-regional:trip:AC%3A10155020",
+        "AC:72L"
+      ],
+      [
+        "511-sf-bay-regional:trip:AC%3A10294020",
+        "AC:72M"
+      ],
+      [
+        "511-sf-bay-regional:trip:AC%3A10353020",
+        "AC:72M"
+      ],
+      [
+        "511-sf-bay-regional:trip:AC%3A10562080",
+        "AC:72"
+      ],
+      [
+        "511-sf-bay-regional:trip:AC%3A10607020",
+        "AC:72"
+      ]
+    ],
+    "reference": "normalized DuckDB SQL",
+    "observed": {
+      "hybrid": {
+        "success": 17,
+        "failure": 0,
+        "rows": 112,
+        "matches_reference": true
+      },
+      "duckdb": {
+        "success": 17,
+        "failure": 0,
+        "rows": 112,
+        "matches_reference": true
+      }
+    }
+  },
+  {
+    "query": "scoped_service_day",
+    "purpose": "Agency/stop/date, route/direction and shared-stop scope",
+    "case": 1,
+    "params": {
+      "agency": "AC",
+      "stop": "55660",
+      "day": "2026-11-25",
+      "route": "AC:72",
+      "direction": 0
+    },
+    "expected_rows": 39,
+    "expected_sha256": "6cdb14965a6efea84397b1b7a7e659de3713e13be286fb7b369560fa95a2121e",
+    "expected_sample": [
+      [
+        "511-sf-bay-regional:trip:AC%3A10562080",
+        "AC:72"
+      ],
+      [
+        "511-sf-bay-regional:trip:AC%3A10607020",
+        "AC:72"
+      ],
+      [
+        "511-sf-bay-regional:trip:AC%3A10902020",
+        "AC:72"
+      ],
+      [
+        "511-sf-bay-regional:trip:AC%3A1100020",
+        "AC:72"
+      ],
+      [
+        "511-sf-bay-regional:trip:AC%3A11474080",
+        "AC:72"
+      ]
+    ],
+    "reference": "normalized DuckDB SQL",
+    "observed": {
+      "hybrid": {
+        "success": 6,
+        "failure": 0,
+        "rows": 39,
+        "matches_reference": true
+      },
+      "duckdb": {
+        "success": 6,
+        "failure": 0,
+        "rows": 39,
+        "matches_reference": true
+      }
+    }
+  },
+  {
+    "query": "scoped_service_day",
+    "purpose": "Agency/stop/date, route/direction and shared-stop scope",
+    "case": 2,
+    "params": {
+      "agency": "AC",
+      "stop": "55660",
+      "day": "2026-11-25",
+      "route": "AC:72",
+      "direction": 1
+    },
+    "expected_rows": 0,
+    "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "expected_sample": [],
+    "reference": "normalized DuckDB SQL",
+    "observed": {
+      "hybrid": {
+        "success": 6,
+        "failure": 0,
+        "rows": 0,
+        "matches_reference": true
+      },
+      "duckdb": {
+        "success": 6,
+        "failure": 0,
+        "rows": 0,
+        "matches_reference": true
+      }
+    }
+  },
+  {
+    "query": "scoped_service_day",
+    "purpose": "Agency/stop/date, route/direction and shared-stop scope",
+    "case": 3,
+    "params": {
+      "agency": "BA",
+      "stop": "55660",
+      "day": "2026-11-25",
+      "route": null,
+      "direction": null
+    },
+    "expected_rows": 0,
+    "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "expected_sample": [],
+    "reference": "normalized DuckDB SQL",
+    "observed": {
+      "hybrid": {
+        "success": 6,
+        "failure": 0,
+        "rows": 0,
+        "matches_reference": true
+      },
+      "duckdb": {
+        "success": 6,
+        "failure": 0,
+        "rows": 0,
+        "matches_reference": true
+      }
+    }
+  },
+  {
+    "query": "scoped_service_day",
+    "purpose": "Agency/stop/date, route/direction and shared-stop scope",
+    "case": 4,
+    "params": {
+      "agency": "CM",
+      "stop": "341028",
+      "day": "2026-11-24",
+      "route": null,
+      "direction": null
+    },
+    "expected_rows": 4,
+    "expected_sha256": "a684435361bd6180b3a42e8e9db28eb3485c13bb2233fe9a7965d83ac7c548d1",
+    "expected_sample": [
+      [
+        "511-sf-bay-regional:trip:CM%3A2026%20Regular%20Schedule%20-%20Current%20%28Weekday%29_217",
+        "CM:NFC Shuttle"
+      ],
+      [
+        "511-sf-bay-regional:trip:CM%3A2026%20Regular%20Schedule%20-%20Current%20%28Weekday%29_218",
+        "CM:NFC Shuttle"
+      ],
+      [
+        "511-sf-bay-regional:trip:CM%3A2026%20Regular%20Schedule%20-%20Current%20%28Weekday%29_219",
+        "CM:NFC Shuttle"
+      ],
+      [
+        "511-sf-bay-regional:trip:CM%3A2026%20Regular%20Schedule%20-%20Current%20%28Weekday%29_220",
+        "CM:NFC Shuttle"
+      ]
+    ],
+    "reference": "normalized DuckDB SQL",
+    "observed": {
+      "duckdb": {
+        "success": 6,
+        "failure": 0,
+        "rows": 4,
+        "matches_reference": true
+      },
+      "hybrid": {
+        "success": 6,
+        "failure": 0,
+        "rows": 4,
+        "matches_reference": true
+      }
+    }
+  },
+  {
+    "query": "scoped_service_day",
+    "purpose": "Agency/stop/date, route/direction and shared-stop scope",
+    "case": 5,
+    "params": {
+      "agency": "SM",
+      "stop": "341028",
+      "day": "2026-11-29",
+      "route": null,
+      "direction": null
+    },
+    "expected_rows": 0,
+    "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "expected_sample": [],
+    "reference": "normalized DuckDB SQL",
+    "observed": {
+      "duckdb": {
+        "success": 5,
+        "failure": 0,
+        "rows": 0,
+        "matches_reference": true
+      },
+      "hybrid": {
+        "success": 5,
+        "failure": 0,
+        "rows": 0,
+        "matches_reference": true
+      }
+    }
+  },
+  {
+    "query": "trip_service_visits",
+    "purpose": "Ordered visits and service-day predicate including extended hours",
+    "case": 0,
+    "params": {
+      "id": "511-sf-bay-regional:trip:AC%3A10056070",
+      "day": "2026-11-25"
+    },
+    "expected_rows": 77,
+    "expected_sha256": "1de928ae098841e3942af7f2cf64946ccca5f659aad09fa7a273fd3997d37d5e",
+    "expected_sample": [
+      [
+        1,
+        "55888",
+        24000,
+        24000,
+        false
+      ],
+      [
+        2,
+        "56899",
+        24064,
+        24064,
+        false
+      ],
+      [
+        3,
+        "55802",
+        24101,
+        24101,
+        false
+      ],
+      [
+        4,
+        "56111",
+        24145,
+        24145,
+        false
+      ],
+      [
+        5,
+        "52251",
+        24229,
+        24229,
+        false
+      ]
+    ],
+    "reference": "normalized DuckDB SQL",
+    "observed": {
+      "duckdb": {
+        "success": 11,
+        "failure": 0,
+        "rows": 77,
+        "matches_reference": true
+      },
+      "hybrid": {
+        "success": 11,
+        "failure": 0,
+        "rows": 77,
+        "matches_reference": true
+      }
+    }
+  },
+  {
+    "query": "trip_service_visits",
+    "purpose": "Ordered visits and service-day predicate including extended hours",
+    "case": 1,
+    "params": {
+      "id": "511-sf-bay-regional:trip:AC%3A10056070",
+      "day": "2026-11-29"
+    },
+    "expected_rows": 77,
+    "expected_sha256": "1de928ae098841e3942af7f2cf64946ccca5f659aad09fa7a273fd3997d37d5e",
+    "expected_sample": [
+      [
+        1,
+        "55888",
+        24000,
+        24000,
+        false
+      ],
+      [
+        2,
+        "56899",
+        24064,
+        24064,
+        false
+      ],
+      [
+        3,
+        "55802",
+        24101,
+        24101,
+        false
+      ],
+      [
+        4,
+        "56111",
+        24145,
+        24145,
+        false
+      ],
+      [
+        5,
+        "52251",
+        24229,
+        24229,
+        false
+      ]
+    ],
+    "reference": "normalized DuckDB SQL",
+    "observed": {
+      "hybrid": {
+        "success": 9,
+        "failure": 0,
+        "rows": 77,
+        "matches_reference": true
+      },
+      "duckdb": {
+        "success": 9,
+        "failure": 0,
+        "rows": 77,
+        "matches_reference": true
+      }
+    }
+  },
+  {
+    "query": "trip_service_visits",
+    "purpose": "Ordered visits and service-day predicate including extended hours",
+    "case": 2,
+    "params": {
+      "id": "511-sf-bay-regional:trip:3D%3A1175",
+      "day": "2026-11-25"
+    },
+    "expected_rows": 37,
+    "expected_sha256": "40c7b6bc77b8bd53df71df87af694609f79fa2609be1a2fa0d7b1b78c0811cd7",
+    "expected_sample": [
+      [
+        1,
+        "818889",
+        86400,
+        86400,
+        true
+      ],
+      [
+        2,
+        "814736",
+        86568,
+        86568,
+        true
+      ],
+      [
+        3,
+        "814743",
+        86615,
+        86615,
+        true
+      ],
+      [
+        4,
+        "814758",
+        86667,
+        86667,
+        true
+      ],
+      [
+        5,
+        "814762",
+        86725,
+        86725,
+        true
+      ]
+    ],
+    "reference": "normalized DuckDB SQL",
+    "observed": {
+      "hybrid": {
+        "success": 8,
+        "failure": 0,
+        "rows": 37,
+        "matches_reference": true
+      },
+      "duckdb": {
+        "success": 8,
+        "failure": 0,
+        "rows": 37,
+        "matches_reference": true
+      }
+    }
+  },
+  {
+    "query": "trip_service_visits",
+    "purpose": "Ordered visits and service-day predicate including extended hours",
+    "case": 3,
+    "params": {
+      "id": "511-sf-bay-regional:trip:3D%3A1175",
+      "day": "2026-11-29"
+    },
+    "expected_rows": 37,
+    "expected_sha256": "76de4f2a1b4dbfe3243bbef5dad168e44b712a4850d4c7ae2bf63a68ecd470c5",
+    "expected_sample": [
+      [
+        1,
+        "818889",
+        86400,
+        86400,
+        false
+      ],
+      [
+        2,
+        "814736",
+        86568,
+        86568,
+        false
+      ],
+      [
+        3,
+        "814743",
+        86615,
+        86615,
+        false
+      ],
+      [
+        4,
+        "814758",
+        86667,
+        86667,
+        false
+      ],
+      [
+        5,
+        "814762",
+        86725,
+        86725,
+        false
+      ]
+    ],
+    "reference": "normalized DuckDB SQL",
+    "observed": {
+      "duckdb": {
+        "success": 8,
+        "failure": 0,
+        "rows": 37,
+        "matches_reference": true
+      },
+      "hybrid": {
+        "success": 8,
+        "failure": 0,
+        "rows": 37,
+        "matches_reference": true
+      }
+    }
+  },
+  {
+    "query": "calendar_exceptions",
+    "purpose": "Calendar service on dates with additions and removals",
+    "case": 0,
+    "params": {
+      "service": "VN:73049",
+      "day": "2026-11-01"
+    },
+    "expected_rows": 1,
+    "expected_sha256": "1c28f2eb0958c3d15db1f0f0e7f2b8998ca2b8f67ab426a1fbb3d561fe76fad9",
+    "expected_sample": [
+      [
+        true
+      ]
+    ],
+    "reference": "normalized DuckDB SQL",
+    "observed": {
+      "duckdb": {
+        "success": 13,
+        "failure": 0,
+        "rows": 1,
+        "matches_reference": true
+      }
+    }
+  },
+  {
+    "query": "calendar_exceptions",
+    "purpose": "Calendar service on dates with additions and removals",
+    "case": 1,
+    "params": {
+      "service": "AC:79044",
+      "day": "2026-11-02"
+    },
+    "expected_rows": 1,
+    "expected_sha256": "456e2e3fa05ee1e2f4e529558008ce162bbd388a9dd4a923c79543a4a1dba618",
+    "expected_sample": [
+      [
+        false
+      ]
+    ],
+    "reference": "normalized DuckDB SQL",
+    "observed": {
+      "duckdb": {
+        "success": 12,
+        "failure": 0,
+        "rows": 1,
+        "matches_reference": true
+      }
+    }
+  },
+  {
+    "query": "calendar_exceptions",
+    "purpose": "Calendar service on dates with additions and removals",
+    "case": 2,
+    "params": {
+      "service": "AC:83048",
+      "day": "2026-11-25"
+    },
+    "expected_rows": 1,
+    "expected_sha256": "456e2e3fa05ee1e2f4e529558008ce162bbd388a9dd4a923c79543a4a1dba618",
+    "expected_sample": [
+      [
+        false
+      ]
+    ],
+    "reference": "normalized DuckDB SQL",
+    "observed": {
+      "duckdb": {
+        "success": 11,
+        "failure": 0,
+        "rows": 1,
+        "matches_reference": true
+      }
+    }
+  }
+]

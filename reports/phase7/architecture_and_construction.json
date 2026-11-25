@@ -1,0 +1,75 @@
+{
+  "architecture": {
+    "B_compact": {
+      "nodes": 115683,
+      "relationships": 242491,
+      "compact_node_reduction_pct": 0.0,
+      "compact_edge_reduction_pct": 0.0,
+      "performance_measured_in_phase7": true
+    },
+    "A_visit_edges": {
+      "nodes": 115683,
+      "relationships": 3427606,
+      "compact_node_reduction_pct": 0.0,
+      "compact_edge_reduction_pct": 92.92535373085471,
+      "performance_measured_in_phase7": false
+    },
+    "A_visit_nodes": {
+      "nodes": 3300798,
+      "relationships": 6612721,
+      "compact_node_reduction_pct": 96.49530204514181,
+      "compact_edge_reduction_pct": 96.332961877569,
+      "performance_measured_in_phase7": false
+    },
+    "C_patterns": {
+      "nodes": 117608,
+      "relationships": 388486,
+      "compact_node_reduction_pct": 1.6367934154139174,
+      "compact_edge_reduction_pct": 37.580504831576945,
+      "performance_measured_in_phase7": false
+    }
+  },
+  "phase6_construction": {
+    "run_count": 1,
+    "end_to_end": {
+      "wall_seconds": 240.146,
+      "client_cpu_seconds": 150.516,
+      "client_peak_rss_mib": 470.8,
+      "nodes": {
+        "created": 115683,
+        "matched": 0,
+        "seconds": 43.597,
+        "created_per_second": 2653.46
+      },
+      "relationships": {
+        "created": 242491,
+        "matched": 0,
+        "seconds": 73.25800000000001,
+        "created_per_second": 3310.1
+      }
+    },
+    "stages": {
+      "schema_apply_seconds": 0.816,
+      "schema_index_wait_verify_seconds": 0.127,
+      "data_load_seconds": 117.499
+    },
+    "readback_seconds": 57.083,
+    "pre_snapshot_readback_seconds": 53.659,
+    "transactions": {
+      "attempts": 187,
+      "committed": 187,
+      "retries": 0,
+      "failures": []
+    },
+    "batch_latency_ms": {
+      "n": 187,
+      "min": 226.74,
+      "max": 3681.2200000000003,
+      "mean": 618.4841711229947,
+      "p50": 547.9300000000001,
+      "p95": 998.9689999999993,
+      "sample_sd": 356.9387774869887,
+      "iqr": 240.32499999999993
+    }
+  }
+}

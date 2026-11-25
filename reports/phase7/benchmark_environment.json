@@ -1,0 +1,117 @@
+{
+  "run_started_utc": "2026-11-25T05:48:01.242025+00:00",
+  "finished_utc": "2026-11-25T05:49:24.833622+00:00",
+  "status": "validated",
+  "host": {
+    "os": "Windows-11-10.0.26300-SP0",
+    "python": "3.14.0",
+    "cpu": "13th Gen Intel(R) Core(TM) i5-13450HX",
+    "logical_cpus": 16,
+    "cpu_available_to_process": 16,
+    "total_ram_bytes": 16873545728,
+    "available_ram_bytes": 1579638784
+  },
+  "server": {
+    "components": [
+      {
+        "name": "Neo4j Kernel",
+        "versions": [
+          "2026.10.2"
+        ],
+        "edition": "enterprise"
+      },
+      {
+        "name": "Cypher",
+        "versions": [
+          "5",
+          "25"
+        ],
+        "edition": ""
+      }
+    ],
+    "account": {
+      "roles": [
+        "admin",
+        "PUBLIC"
+      ],
+      "password_change_required": false
+    },
+    "database": {
+      "name": "transitkg-static",
+      "type": "standard",
+      "currentStatus": "online",
+      "databaseID": "FEC14225142CED808735D9B68454D6C9ABE2B5CCBD95B8B5074B0331DA905445",
+      "access": "read-write",
+      "default": false
+    }
+  },
+  "listed_account_grants": [
+    {
+      "access": "GRANTED",
+      "action": "access",
+      "graph": "*"
+    },
+    {
+      "access": "GRANTED",
+      "action": "match",
+      "graph": "*"
+    },
+    {
+      "access": "GRANTED",
+      "action": "write",
+      "graph": "*"
+    },
+    {
+      "access": "GRANTED",
+      "action": "access",
+      "graph": "HOME"
+    }
+  ],
+  "server_settings": [
+    {
+      "name": "server.memory.heap.initial_size",
+      "value": "512.00MiB"
+    },
+    {
+      "name": "server.memory.heap.max_size",
+      "value": "1.00GiB"
+    },
+    {
+      "name": "server.memory.pagecache.size",
+      "value": "512.00MiB"
+    }
+  ],
+  "driver_version": "6.4.1",
+  "duckdb_version": "1.5.0",
+  "duckdb_threads": 2,
+  "duckdb_memory_limit": "768MB",
+  "connection_verification_seconds": 0.02108019997831434,
+  "benchmark_wall_seconds": 10.42750839999644,
+  "benchmark_client_cpu_seconds": 8.96875,
+  "audit_and_benchmark_wall_seconds": 83.842160900007,
+  "client_cpu_seconds": 73.171875,
+  "client_peak_rss_mib": 814.18,
+  "duckdb_spill_bytes_at_end_of_audit": 0,
+  "server_process_at_benchmark_start": {
+    "status": "unavailable",
+    "reason": "Unable to observe the verified Neo4j server process"
+  },
+  "server_process_at_benchmark_end": {
+    "status": "measured",
+    "pid": 36528,
+    "process_name": "java",
+    "cpu_seconds": 244.359375,
+    "working_set_bytes": 900468736,
+    "peak_working_set_bytes": 1098616832
+  },
+  "implementation_sha256": {
+    "benchmark_static_graph.py": "d11493785581e51996bf48db0313fb66de078061b725773d12fb75f8d627a4b5",
+    "static_graph_workloads.py": "0ceaae28b6e73260656199fb02a704e1a28488e1ad0a9c73ecb3b75ca7bb2416",
+    "audit_static_graph.py": "2da22cef4a0df8b44d5cc07492d8a661d2742ac22b4559403d245ad14a59db9c"
+  },
+  "storage_hardware": {
+    "project_volume": "NVMe",
+    "model": "SKHynix_HFS512GEJ4X112N",
+    "source": "Windows Get-Partition -DriveLetter D | Get-Disk; separate acquisition after timed execution"
+  }
+}

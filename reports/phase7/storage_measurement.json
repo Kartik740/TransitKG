@@ -1,0 +1,365 @@
+{
+  "measured_utc": "2026-11-25T05:49:09.377764+00:00",
+  "target": "transitkg-static",
+  "server_online": true,
+  "raw_bytes": 296177172,
+  "normalized_parquet_bytes": 61576978,
+  "graph_ready_parquet_bytes": 1406381,
+  "phase6_immediate_store_bytes": 1443407,
+  "status": "measured",
+  "method": "logical file lengths, no forced checkpoint or shutdown",
+  "scheduled_checkpoint_seen_utc": "2026-11-24 22:10:06.963+0000",
+  "store_including_indexes_bytes": 56059745,
+  "index_bytes": 21282816,
+  "transaction_and_checkpoint_log_bytes": 26307682,
+  "dedicated_database_bytes": 82367427,
+  "hybrid_store_and_normalized_bytes": 117636723,
+  "hybrid_including_transaction_logs_bytes": 143944405,
+  "block_store_note": "Shared block files mix record categories. File inventory gives exact sizes without attributing them to pure node/edge/property storage.",
+  "files": {
+    "databases": [
+      {
+        "file": "block.big_values.db",
+        "logical_bytes": 8437760
+      },
+      {
+        "file": "block.big_values.db.id",
+        "logical_bytes": 49152
+      },
+      {
+        "file": "block.counts.db",
+        "logical_bytes": 49152
+      },
+      {
+        "file": "block.huge.db",
+        "logical_bytes": 40960
+      },
+      {
+        "file": "block.indexstats.db",
+        "logical_bytes": 65536
+      },
+      {
+        "file": "block.metadata.db",
+        "logical_bytes": 40960
+      },
+      {
+        "file": "block.node.xd.db",
+        "logical_bytes": 5341184
+      },
+      {
+        "file": "block.node.xd.db.id",
+        "logical_bytes": 40960
+      },
+      {
+        "file": "block.relationship.degrees.db",
+        "logical_bytes": 49152
+      },
+      {
+        "file": "block.relationship.dense.db",
+        "logical_bytes": 4177920
+      },
+      {
+        "file": "block.relationship.map.db",
+        "logical_bytes": 0
+      },
+      {
+        "file": "block.relationship.map.db.id",
+        "logical_bytes": 40960
+      },
+      {
+        "file": "block.relationship.xd.db",
+        "logical_bytes": 1105920
+      },
+      {
+        "file": "block.relationship.xd.db.id",
+        "logical_bytes": 49152
+      },
+      {
+        "file": "block.schema.db",
+        "logical_bytes": 73728
+      },
+      {
+        "file": "block.schema.db.id",
+        "logical_bytes": 40960
+      },
+      {
+        "file": "block.token.label.db",
+        "logical_bytes": 49152
+      },
+      {
+        "file": "block.token.label.db.id",
+        "logical_bytes": 40960
+      },
+      {
+        "file": "block.token.property_key.db",
+        "logical_bytes": 49152
+      },
+      {
+        "file": "block.token.property_key.db.id",
+        "logical_bytes": 40960
+      },
+      {
+        "file": "block.token.relationship_type.db",
+        "logical_bytes": 49152
+      },
+      {
+        "file": "block.token.relationship_type.db.id",
+        "logical_bytes": 40960
+      },
+      {
+        "file": "block.vectors.db",
+        "logical_bytes": 40960
+      },
+      {
+        "file": "block.x1.db",
+        "logical_bytes": 14811136
+      },
+      {
+        "file": "block.x1.db.id",
+        "logical_bytes": 49152
+      },
+      {
+        "file": "database_lock",
+        "logical_bytes": 0
+      },
+      {
+        "file": "id-buffer.tmp.0",
+        "logical_bytes": 0
+      },
+      {
+        "file": "profiles/block.big_values.db.460.cacheprof",
+        "logical_bytes": 25
+      },
+      {
+        "file": "profiles/block.big_values.db.id.460.cacheprof",
+        "logical_bytes": 21
+      },
+      {
+        "file": "profiles/block.counts.db.460.cacheprof",
+        "logical_bytes": 21
+      },
+      {
+        "file": "profiles/block.huge.db.460.cacheprof",
+        "logical_bytes": 21
+      },
+      {
+        "file": "profiles/block.indexstats.db.460.cacheprof",
+        "logical_bytes": 22
+      },
+      {
+        "file": "profiles/block.metadata.db.460.cacheprof",
+        "logical_bytes": 21
+      },
+      {
+        "file": "profiles/block.node.xd.db.460.cacheprof",
+        "logical_bytes": 25
+      },
+      {
+        "file": "profiles/block.node.xd.db.id.460.cacheprof",
+        "logical_bytes": 21
+      },
+      {
+        "file": "profiles/block.relationship.degrees.db.460.cacheprof",
+        "logical_bytes": 21
+      },
+      {
+        "file": "profiles/block.relationship.dense.db.460.cacheprof",
+        "logical_bytes": 25
+      },
+      {
+        "file": "profiles/block.relationship.map.db.460.cacheprof",
+        "logical_bytes": 21
+      },
+      {
+        "file": "profiles/block.relationship.map.db.id.460.cacheprof",
+        "logical_bytes": 21
+      },
+      {
+        "file": "profiles/block.relationship.xd.db.460.cacheprof",
+        "logical_bytes": 25
+      },
+      {
+        "file": "profiles/block.relationship.xd.db.id.460.cacheprof",
+        "logical_bytes": 21
+      },
+      {
+        "file": "profiles/block.schema.db.460.cacheprof",
+        "logical_bytes": 22
+      },
+      {
+        "file": "profiles/block.schema.db.id.460.cacheprof",
+        "logical_bytes": 21
+      },
+      {
+        "file": "profiles/block.token.label.db.460.cacheprof",
+        "logical_bytes": 21
+      },
+      {
+        "file": "profiles/block.token.label.db.id.460.cacheprof",
+        "logical_bytes": 21
+      },
+      {
+        "file": "profiles/block.token.property_key.db.460.cacheprof",
+        "logical_bytes": 21
+      },
+      {
+        "file": "profiles/block.token.property_key.db.id.460.cacheprof",
+        "logical_bytes": 21
+      },
+      {
+        "file": "profiles/block.token.relationship_type.db.460.cacheprof",
+        "logical_bytes": 21
+      },
+      {
+        "file": "profiles/block.token.relationship_type.db.id.460.cacheprof",
+        "logical_bytes": 21
+      },
+      {
+        "file": "profiles/block.vectors.db.460.cacheprof",
+        "logical_bytes": 21
+      },
+      {
+        "file": "profiles/block.x1.db.460.cacheprof",
+        "logical_bytes": 25
+      },
+      {
+        "file": "profiles/block.x1.db.id.460.cacheprof",
+        "logical_bytes": 21
+      },
+      {
+        "file": "profiles/schema/index/range-1.0/10/index-10.459.cacheprof",
+        "logical_bytes": 22
+      },
+      {
+        "file": "profiles/schema/index/range-1.0/12/index-12.459.cacheprof",
+        "logical_bytes": 21
+      },
+      {
+        "file": "profiles/schema/index/range-1.0/14/index-14.459.cacheprof",
+        "logical_bytes": 21
+      },
+      {
+        "file": "profiles/schema/index/range-1.0/15/index-15.459.cacheprof",
+        "logical_bytes": 22
+      },
+      {
+        "file": "profiles/schema/index/range-1.0/16/index-16.459.cacheprof",
+        "logical_bytes": 25
+      },
+      {
+        "file": "profiles/schema/index/range-1.0/17/index-17.459.cacheprof",
+        "logical_bytes": 25
+      },
+      {
+        "file": "profiles/schema/index/range-1.0/18/index-18.459.cacheprof",
+        "logical_bytes": 22
+      },
+      {
+        "file": "profiles/schema/index/range-1.0/19/index-19.459.cacheprof",
+        "logical_bytes": 25
+      },
+      {
+        "file": "profiles/schema/index/range-1.0/2/index-2.459.cacheprof",
+        "logical_bytes": 21
+      },
+      {
+        "file": "profiles/schema/index/range-1.0/20/index-20.459.cacheprof",
+        "logical_bytes": 22
+      },
+      {
+        "file": "profiles/schema/index/range-1.0/4/index-4.459.cacheprof",
+        "logical_bytes": 22
+      },
+      {
+        "file": "profiles/schema/index/range-1.0/6/index-6.459.cacheprof",
+        "logical_bytes": 25
+      },
+      {
+        "file": "profiles/schema/index/range-1.0/8/index-8.459.cacheprof",
+        "logical_bytes": 25
+      },
+      {
+        "file": "profiles/schema/index/token-lookup-1.0/0/index-0.459.cacheprof",
+        "logical_bytes": 22
+      },
+      {
+        "file": "profiles/schema/index/token-lookup-1.0/1/index-1.459.cacheprof",
+        "logical_bytes": 22
+      },
+      {
+        "file": "quarantine_marker",
+        "logical_bytes": 1000
+      },
+      {
+        "file": "schema/index/range-1.0/10/index-10",
+        "logical_bytes": 98304
+      },
+      {
+        "file": "schema/index/range-1.0/12/index-12",
+        "logical_bytes": 49152
+      },
+      {
+        "file": "schema/index/range-1.0/14/index-14",
+        "logical_bytes": 49152
+      },
+      {
+        "file": "schema/index/range-1.0/15/index-15",
+        "logical_bytes": 73728
+      },
+      {
+        "file": "schema/index/range-1.0/16/index-16",
+        "logical_bytes": 5390336
+      },
+      {
+        "file": "schema/index/range-1.0/17/index-17",
+        "logical_bytes": 901120
+      },
+      {
+        "file": "schema/index/range-1.0/18/index-18",
+        "logical_bytes": 65536
+      },
+      {
+        "file": "schema/index/range-1.0/19/index-19",
+        "logical_bytes": 1359872
+      },
+      {
+        "file": "schema/index/range-1.0/2/index-2",
+        "logical_bytes": 49152
+      },
+      {
+        "file": "schema/index/range-1.0/20/index-20",
+        "logical_bytes": 65536
+      },
+      {
+        "file": "schema/index/range-1.0/4/index-4",
+        "logical_bytes": 114688
+      },
+      {
+        "file": "schema/index/range-1.0/6/index-6",
+        "logical_bytes": 10772480
+      },
+      {
+        "file": "schema/index/range-1.0/8/index-8",
+        "logical_bytes": 2072576
+      },
+      {
+        "file": "schema/index/token-lookup-1.0/0/index-0",
+        "logical_bytes": 114688
+      },
+      {
+        "file": "schema/index/token-lookup-1.0/1/index-1",
+        "logical_bytes": 106496
+      }
+    ],
+    "transactions": [
+      {
+        "file": "checkpoint.0",
+        "logical_bytes": 1100
+      },
+      {
+        "file": "neostore.transaction.db.0",
+        "logical_bytes": 26306582
+      }
+    ]
+  }
+}

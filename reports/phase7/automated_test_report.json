@@ -1,0 +1,69 @@
+{
+  "offline_suites": {
+    "2": {
+      "ran": 7,
+      "passed": 7,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 0.737
+    },
+    "3": {
+      "ran": 10,
+      "passed": 10,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 3.604
+    },
+    "4": {
+      "ran": 13,
+      "passed": 13,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 3.429
+    },
+    "5": {
+      "ran": 8,
+      "passed": 8,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 2.41
+    },
+    "6": {
+      "ran": 12,
+      "passed": 12,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 0.079
+    },
+    "7": {
+      "ran": 6,
+      "passed": 6,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 0.138
+    }
+  },
+  "regional_live": {
+    "passed": [
+      "full typed pre and post audit, graph and input invariance",
+      "14 approved regional Cypher contracts",
+      "additional canonical, dated trip and route-name cases",
+      "mandatory AC path and hybrid regression",
+      "all paired benchmark case outputs and selected plans"
+    ],
+    "failed": [],
+    "skipped": [
+      "controlled cold-cache restart",
+      "optional concurrency",
+      "optional alternative architecture writes",
+      "optional live interruption recovery"
+    ],
+    "blocked": []
+  }
+}

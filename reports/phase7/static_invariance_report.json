@@ -1,0 +1,51 @@
+{
+  "status": "verified",
+  "fingerprints": {
+    "phase5_expected": "675d71bd4e8bd82ffc1ec0d8951ca527928ca4376c681e40193d14f451892e66",
+    "phase6_imported": "675d71bd4e8bd82ffc1ec0d8951ca527928ca4376c681e40193d14f451892e66",
+    "phase7_before": "675d71bd4e8bd82ffc1ec0d8951ca527928ca4376c681e40193d14f451892e66",
+    "phase7_after": "675d71bd4e8bd82ffc1ec0d8951ca527928ca4376c681e40193d14f451892e66"
+  },
+  "immutable_source_files": {
+    "raw": 27,
+    "normalized": 32,
+    "graph_ready": 13
+  },
+  "constituent_digests": {
+    "Agency": "31c717d3f58a4b6f735bc078385197aca3232a85c9de7da4d027556f843da28d",
+    "FeedSnapshot": "74f6357fd1ab355a47cc1c843fdc174cd2fab062f3692d9b9780ed516f3ad517",
+    "Route": "b2876cd64dc940bd4ca1d4d993c76193b1e74744dc1f3d1112d2faa84ca2dd9b",
+    "Service": "c076c8801db60f47c2a20fd846450d411f47b4488ca34855fb218526fa985bb5",
+    "Stop": "69542d9d68f052a86d00054cfe148fa86c775222b386b9d4e748262d4da3ff73",
+    "Trip": "5d59dadc1d1494cb1773fd8856ce710cae68ede741783be4a79ab122f9c3de8c",
+    "AGENCY_SERVES_STOP": "59ad9e384d9246fa8175da2cf8973bc1a2a25bde9956fe0dac033ab848374177",
+    "HAS_TRIP": "c559ba93a5b717cc78a44741e1ff270ef0ba4e0223b8d3d4b24bb0c8cb25ea33",
+    "OPERATES": "a38f323470af36ac7c855a5eee5473e3c439b539728b46779d5c0cc12c0e2bd8",
+    "PART_OF": "00fecec464884ed029b708009695db224d4bb160a2c8aed5aaf9829fbfd89b68",
+    "ROUTE_SERVES_STOP": "88c6e325b228244c64a47853c22aa634360496eabbfae56911a28db15b8dd72d",
+    "RUNS_ON": "41e6cbb0e262377d443cf0fac349775155468a3d72a64f0696d7ee61353f203c",
+    "TRANSFER_RULE": "750b6fd75ae04c795f86d9746cdc41aad72eba1715a517b3b09f0cac0e0c418f"
+  },
+  "counts": {
+    "nodes": {
+      "Agency": 41,
+      "FeedSnapshot": 1,
+      "Route": 665,
+      "Service": 485,
+      "Stop": 21664,
+      "Trip": 92827
+    },
+    "relationships": {
+      "AGENCY_SERVES_STOP": 19904,
+      "HAS_TRIP": 92827,
+      "OPERATES": 665,
+      "PART_OF": 2222,
+      "ROUTE_SERVES_STOP": 33985,
+      "RUNS_ON": 92827,
+      "TRANSFER_RULE": 61
+    }
+  },
+  "schema_unchanged": true,
+  "phase6_manifest_sha256": "182297fd307ded0d6f92887fb3d7f9ac9e325f77e70d21a343ad64adf22df5cf",
+  "verified_graph_database_id": "FEC14225142CED808735D9B68454D6C9ABE2B5CCBD95B8B5074B0331DA905445"
+}

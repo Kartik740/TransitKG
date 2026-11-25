@@ -1,0 +1,279 @@
+{
+  "seed": 731511,
+  "warmups_per_variant": 5,
+  "measured_varying_per_variant": 30,
+  "initial_per_variant": 1,
+  "same_parameter_per_selected_variant": 10,
+  "worker_count": 1,
+  "timeout_seconds_per_engine": 15,
+  "query_retries": 0,
+  "duckdb_threads": 2,
+  "duckdb_memory_limit": "768MB",
+  "sampling": "Deterministic observed extrema and fixed regression/negative cases. Round-robin cases; seeded variant order by round.",
+  "routing": "Dedicated target, READ_ACCESS, one reused driver/session, one in-memory DuckDB view connection.",
+  "cache": "Initial observed after integrity audit and case selection on a running server. Warm varying and warm same-case measured separately.",
+  "timing": "perf_counter_ns. Fully materialized rows. Neo4j includes transport and decoding. DuckDB executes and fetches locally. Hybrid total includes both and conversion. Separate Bolt summary timings are retained.",
+  "validation": "Complete sorted JSON row multisets compared outside timed regions against normalized Parquet SQL.",
+  "statistics": "Linear interpolation over sorted rank (n-1)*p; sample standard deviation. No p99 at this sample size.",
+  "errors": "Sanitized error type and code retained, no automatic retries. Incorrect or unsuccessful timed queries fail acceptance.",
+  "plans": "EXPLAIN and PROFILE/EXPLAIN ANALYZE run after timings and stored separately.",
+  "workloads": [
+    {
+      "name": "canonical_stop",
+      "purpose": "Exact canonical stop lookup including absent ID",
+      "cases": [
+        {
+          "id": "511-sf-bay-regional:stop:10913"
+        },
+        {
+          "id": "511-sf-bay-regional:stop:83883"
+        },
+        {
+          "id": "511-sf-bay-regional:stop:341028"
+        },
+        {
+          "id": "511-sf-bay-regional:stop:55660"
+        },
+        {
+          "id": "511-sf-bay-regional:stop:PHASE7-ABSENT"
+        }
+      ],
+      "sql": "SELECT source_identifier AS id FROM canonical_ids WHERE entity_type='stop' AND canonical_id=$id",
+      "cypher": "MATCH (s:Stop {canonical_id:$id}) RETURN s.source_id AS id",
+      "hybrid_sql": null
+    },
+    {
+      "name": "agency_routes",
+      "purpose": "Routes operated by smaller and larger agencies",
+      "cases": [
+        {
+          "agency": "AF"
+        },
+        {
+          "agency": "AC"
+        },
+        {
+          "agency": "BA"
+        },
+        {
+          "agency": "CM"
+        }
+      ],
+      "sql": "SELECT route_id FROM routes WHERE agency_id=$agency ORDER BY 1",
+      "cypher": "MATCH (:Agency {source_id:$agency})-[:OPERATES]->(r:Route) RETURN r.source_id ORDER BY 1",
+      "hybrid_sql": null
+    },
+    {
+      "name": "route_stops",
+      "purpose": "Served stops on small and large routes",
+      "cases": [
+        {
+          "route": "AC:701"
+        },
+        {
+          "route": "SM:397"
+        },
+        {
+          "route": "AC:72"
+        }
+      ],
+      "sql": "SELECT stop_id FROM route_stops WHERE route_id=$route ORDER BY 1",
+      "cypher": "MATCH (:Route {source_id:$route})-[:ROUTE_SERVES_STOP]->(s:Stop) RETURN s.source_id ORDER BY 1",
+      "hybrid_sql": null
+    },
+    {
+      "name": "stop_routes",
+      "purpose": "Routes at low-degree, high-degree and shared stops",
+      "cases": [
+        {
+          "stop": "10913"
+        },
+        {
+          "stop": "83883"
+        },
+        {
+          "stop": "341028"
+        },
+        {
+          "stop": "55660"
+        }
+      ],
+      "sql": "SELECT route_id FROM route_stops WHERE stop_id=$stop ORDER BY 1",
+      "cypher": "MATCH (r:Route)-[:ROUTE_SERVES_STOP]->(:Stop {source_id:$stop}) RETURN r.source_id ORDER BY 1",
+      "hybrid_sql": null
+    },
+    {
+      "name": "agency_stop",
+      "purpose": "Agency-scoped stop identity including contradictory agency",
+      "cases": [
+        {
+          "agency": "AC",
+          "stop": "55660"
+        },
+        {
+          "agency": "BA",
+          "stop": "55660"
+        },
+        {
+          "agency": "CM",
+          "stop": "341028"
+        },
+        {
+          "agency": "SM",
+          "stop": "341028"
+        },
+        {
+          "agency": "CC",
+          "stop": "83883"
+        },
+        {
+          "agency": "SF",
+          "stop": "10913"
+        }
+      ],
+      "sql": "SELECT canonical_stop_id FROM agency_stops WHERE agency_id=$agency AND stop_id=$stop",
+      "cypher": "MATCH (:Agency {source_id:$agency})-[:AGENCY_SERVES_STOP]->(s:Stop {source_id:$stop})\n             RETURN s.canonical_id",
+      "hybrid_sql": null
+    },
+    {
+      "name": "stop_name",
+      "purpose": "Ambiguous stop names and nonexistent name",
+      "cases": [
+        {
+          "name": "San Pablo Av & W Grand Av"
+        },
+        {
+          "name": "Main Entrance / Exit"
+        },
+        {
+          "name": "PHASE7 UNKNOWN STOP"
+        }
+      ],
+      "sql": "SELECT stop_id FROM stops WHERE stop_name=$name ORDER BY 1",
+      "cypher": "MATCH (s:Stop {stop_name:$name}) RETURN s.source_id ORDER BY 1",
+      "hybrid_sql": null
+    },
+    {
+      "name": "transfer_rules",
+      "purpose": "Transfer identities and restriction payload",
+      "cases": [
+        {
+          "src": "900101",
+          "dst": "900102"
+        },
+        {
+          "src": "900102",
+          "dst": "900101"
+        },
+        {
+          "src": "900102",
+          "dst": "900103"
+        },
+        {
+          "src": "241",
+          "dst": "241"
+        }
+      ],
+      "sql": "SELECT from_route_id,to_route_id,from_trip_id,to_trip_id,transfer_type,min_transfer_time\n             FROM transfers WHERE from_stop_id=$src AND to_stop_id=$dst",
+      "cypher": "MATCH (:Stop {source_id:$src})-[r:TRANSFER_RULE]->(:Stop {source_id:$dst})\n             RETURN r.from_route_id,r.to_route_id,r.from_trip_id,r.to_trip_id,r.transfer_type,r.min_transfer_time",
+      "hybrid_sql": null
+    },
+    {
+      "name": "scoped_service_day",
+      "purpose": "Agency/stop/date, route/direction and shared-stop scope",
+      "cases": [
+        {
+          "agency": "AC",
+          "stop": "55660",
+          "day": "2026-11-25",
+          "route": null,
+          "direction": null
+        },
+        {
+          "agency": "AC",
+          "stop": "55660",
+          "day": "2026-11-25",
+          "route": "AC:72",
+          "direction": 0
+        },
+        {
+          "agency": "AC",
+          "stop": "55660",
+          "day": "2026-11-25",
+          "route": "AC:72",
+          "direction": 1
+        },
+        {
+          "agency": "BA",
+          "stop": "55660",
+          "day": "2026-11-25",
+          "route": null,
+          "direction": null
+        },
+        {
+          "agency": "CM",
+          "stop": "341028",
+          "day": "2026-11-24",
+          "route": null,
+          "direction": null
+        },
+        {
+          "agency": "SM",
+          "stop": "341028",
+          "day": "2026-11-29",
+          "route": null,
+          "direction": null
+        }
+      ],
+      "sql": "\nSELECT DISTINCT x.canonical_trip_id, x.route_id\nFROM trip_selector_context x JOIN stop_times v ON v.trip_id=x.trip_id\nJOIN active_services($day) active ON active.service_id=x.service_id\nWHERE x.agency_id=$agency AND v.stop_id=$stop\nAND ($route IS NULL OR x.route_id=$route)\nAND ($direction IS NULL OR x.direction_id=$direction)\nORDER BY 1,2\n",
+      "cypher": "\nMATCH (a:Agency {source_id:$agency})-[:OPERATES]->(r:Route)\n      -[:ROUTE_SERVES_STOP]->(s:Stop {source_id:$stop})\nMATCH (a)-[:AGENCY_SERVES_STOP]->(s)\nWHERE $route IS NULL OR r.source_id=$route\nRETURN r.canonical_id,s.canonical_id ORDER BY 1\n",
+      "hybrid_sql": "\nSELECT DISTINCT x.canonical_trip_id,x.route_id\nFROM canonical_ids r JOIN trip_selector_context x ON x.route_id=r.source_identifier\nJOIN stop_times v ON v.trip_id=x.trip_id\nJOIN canonical_ids s ON s.source_identifier=v.stop_id\nJOIN active_services($day) active ON active.service_id=x.service_id\nWHERE r.entity_type='route' AND r.canonical_id IN (SELECT unnest($route_ids::VARCHAR[]))\nAND s.entity_type='stop' AND s.canonical_id=$canonical_stop\nAND ($direction IS NULL OR x.direction_id=$direction)\nORDER BY 1,2\n"
+    },
+    {
+      "name": "trip_service_visits",
+      "purpose": "Ordered visits and service-day predicate including extended hours",
+      "cases": [
+        {
+          "id": "511-sf-bay-regional:trip:AC%3A10056070",
+          "day": "2026-11-25"
+        },
+        {
+          "id": "511-sf-bay-regional:trip:AC%3A10056070",
+          "day": "2026-11-29"
+        },
+        {
+          "id": "511-sf-bay-regional:trip:3D%3A1175",
+          "day": "2026-11-25"
+        },
+        {
+          "id": "511-sf-bay-regional:trip:3D%3A1175",
+          "day": "2026-11-29"
+        }
+      ],
+      "sql": "\nSELECT v.stop_sequence,v.stop_id,v.arrival_time_seconds,v.departure_time_seconds,\n       active.service_id IS NOT NULL AS runs_on_date\nFROM trip_selector_context x JOIN stop_times v ON v.trip_id=x.trip_id\nLEFT JOIN active_services($day) active ON active.service_id=x.service_id\nWHERE x.canonical_trip_id=$id ORDER BY 1\n",
+      "cypher": "\nMATCH (t:Trip {canonical_id:$id})-[:RUNS_ON]->(s:Service)\nRETURN t.canonical_id,s.source_id\n",
+      "hybrid_sql": "\nSELECT v.stop_sequence,v.stop_id,v.arrival_time_seconds,v.departure_time_seconds,\n       active.service_id IS NOT NULL AS runs_on_date\nFROM canonical_ids t JOIN stop_times v ON v.trip_id=t.source_identifier\nLEFT JOIN active_services($day) active ON active.service_id=$service\nWHERE t.entity_type='trip' AND t.canonical_id=$trip ORDER BY 1\n"
+    },
+    {
+      "name": "calendar_exceptions",
+      "purpose": "Calendar service on dates with additions and removals",
+      "cases": [
+        {
+          "service": "VN:73049",
+          "day": "2026-11-01"
+        },
+        {
+          "service": "AC:79044",
+          "day": "2026-11-02"
+        },
+        {
+          "service": "AC:83048",
+          "day": "2026-11-25"
+        }
+      ],
+      "sql": "SELECT EXISTS(SELECT 1 FROM active_services($day) WHERE service_id=$service)",
+      "cypher": null,
+      "hybrid_sql": null
+    }
+  ]
+}

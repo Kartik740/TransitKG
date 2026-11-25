@@ -1,0 +1,428 @@
+{
+  "target": {
+    "components": [
+      {
+        "name": "Neo4j Kernel",
+        "versions": [
+          "2026.10.2"
+        ],
+        "edition": "enterprise"
+      },
+      {
+        "name": "Cypher",
+        "versions": [
+          "5",
+          "25"
+        ],
+        "edition": ""
+      }
+    ],
+    "account": {
+      "roles": [
+        "admin",
+        "PUBLIC"
+      ],
+      "password_change_required": false
+    },
+    "database": {
+      "name": "transitkg-static",
+      "type": "standard",
+      "currentStatus": "online",
+      "databaseID": "FEC14225142CED808735D9B68454D6C9ABE2B5CCBD95B8B5074B0331DA905445",
+      "access": "read-write",
+      "default": false
+    }
+  },
+  "schema": {
+    "constraints": [
+      {
+        "id": 3,
+        "name": "uq_Agency",
+        "type": "UNIQUENESS",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Agency"
+        ],
+        "properties": [
+          "canonical_id"
+        ],
+        "ownedIndex": "uq_Agency",
+        "propertyType": null
+      },
+      {
+        "id": 13,
+        "name": "uq_FeedSnapshot",
+        "type": "UNIQUENESS",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "FeedSnapshot"
+        ],
+        "properties": [
+          "normalized_build_id"
+        ],
+        "ownedIndex": "uq_FeedSnapshot",
+        "propertyType": null
+      },
+      {
+        "id": 5,
+        "name": "uq_Route",
+        "type": "UNIQUENESS",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Route"
+        ],
+        "properties": [
+          "canonical_id"
+        ],
+        "ownedIndex": "uq_Route",
+        "propertyType": null
+      },
+      {
+        "id": 11,
+        "name": "uq_Service",
+        "type": "UNIQUENESS",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Service"
+        ],
+        "properties": [
+          "canonical_id"
+        ],
+        "ownedIndex": "uq_Service",
+        "propertyType": null
+      },
+      {
+        "id": 9,
+        "name": "uq_Stop",
+        "type": "UNIQUENESS",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Stop"
+        ],
+        "properties": [
+          "canonical_id"
+        ],
+        "ownedIndex": "uq_Stop",
+        "propertyType": null
+      },
+      {
+        "id": 7,
+        "name": "uq_Trip",
+        "type": "UNIQUENESS",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Trip"
+        ],
+        "properties": [
+          "canonical_id"
+        ],
+        "ownedIndex": "uq_Trip",
+        "propertyType": null
+      }
+    ],
+    "indexes": [
+      {
+        "id": 1,
+        "name": "index_1b9dcc97",
+        "state": "ONLINE",
+        "populationPercent": 100.0,
+        "type": "LOOKUP",
+        "entityType": "RELATIONSHIP",
+        "labelsOrTypes": null,
+        "properties": null,
+        "indexProvider": "token-lookup-1.0",
+        "owningConstraint": null,
+        "lastRead": "2026-11-25T05:48:51.624000000+00:00",
+        "readCount": 37
+      },
+      {
+        "id": 0,
+        "name": "index_460996c0",
+        "state": "ONLINE",
+        "populationPercent": 100.0,
+        "type": "LOOKUP",
+        "entityType": "NODE",
+        "labelsOrTypes": null,
+        "properties": null,
+        "indexProvider": "token-lookup-1.0",
+        "owningConstraint": null,
+        "lastRead": "2026-11-25T05:48:40.488000000+00:00",
+        "readCount": 42
+      },
+      {
+        "id": 14,
+        "name": "ix_Agency_source_id",
+        "state": "ONLINE",
+        "populationPercent": 100.0,
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Agency"
+        ],
+        "properties": [
+          "source_id"
+        ],
+        "indexProvider": "range-1.0",
+        "owningConstraint": null,
+        "lastRead": "2026-11-25T05:49:06.007000000+00:00",
+        "readCount": 35
+      },
+      {
+        "id": 20,
+        "name": "ix_Route_route_short_name",
+        "state": "ONLINE",
+        "populationPercent": 100.0,
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Route"
+        ],
+        "properties": [
+          "route_short_name"
+        ],
+        "indexProvider": "range-1.0",
+        "owningConstraint": null,
+        "lastRead": "2026-11-25T05:48:42.853000000+00:00",
+        "readCount": 1
+      },
+      {
+        "id": 15,
+        "name": "ix_Route_source_id",
+        "state": "ONLINE",
+        "populationPercent": 100.0,
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Route"
+        ],
+        "properties": [
+          "source_id"
+        ],
+        "indexProvider": "range-1.0",
+        "owningConstraint": null,
+        "lastRead": "2026-11-25T05:49:05.809000000+00:00",
+        "readCount": 49
+      },
+      {
+        "id": 18,
+        "name": "ix_Service_source_id",
+        "state": "ONLINE",
+        "populationPercent": 100.0,
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Service"
+        ],
+        "properties": [
+          "source_id"
+        ],
+        "indexProvider": "range-1.0",
+        "owningConstraint": null,
+        "lastRead": null,
+        "readCount": 0
+      },
+      {
+        "id": 17,
+        "name": "ix_Stop_source_id",
+        "state": "ONLINE",
+        "populationPercent": 100.0,
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Stop"
+        ],
+        "properties": [
+          "source_id"
+        ],
+        "indexProvider": "range-1.0",
+        "owningConstraint": null,
+        "lastRead": "2026-11-25T05:49:05.989000000+00:00",
+        "readCount": 176
+      },
+      {
+        "id": 19,
+        "name": "ix_Stop_stop_name",
+        "state": "ONLINE",
+        "populationPercent": 100.0,
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Stop"
+        ],
+        "properties": [
+          "stop_name"
+        ],
+        "indexProvider": "range-1.0",
+        "owningConstraint": null,
+        "lastRead": "2026-11-25T05:49:05.898000000+00:00",
+        "readCount": 39
+      },
+      {
+        "id": 16,
+        "name": "ix_Trip_source_id",
+        "state": "ONLINE",
+        "populationPercent": 100.0,
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Trip"
+        ],
+        "properties": [
+          "source_id"
+        ],
+        "indexProvider": "range-1.0",
+        "owningConstraint": null,
+        "lastRead": "2026-11-25T05:48:39.278000000+00:00",
+        "readCount": 6
+      },
+      {
+        "id": 2,
+        "name": "uq_Agency",
+        "state": "ONLINE",
+        "populationPercent": 100.0,
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Agency"
+        ],
+        "properties": [
+          "canonical_id"
+        ],
+        "indexProvider": "range-1.0",
+        "owningConstraint": "uq_Agency",
+        "lastRead": "2026-11-25T05:48:42.477000000+00:00",
+        "readCount": 41221
+      },
+      {
+        "id": 12,
+        "name": "uq_FeedSnapshot",
+        "state": "ONLINE",
+        "populationPercent": 100.0,
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "FeedSnapshot"
+        ],
+        "properties": [
+          "normalized_build_id"
+        ],
+        "indexProvider": "range-1.0",
+        "owningConstraint": "uq_FeedSnapshot",
+        "lastRead": "2026-11-24T22:00:40.673000000+00:00",
+        "readCount": 3
+      },
+      {
+        "id": 4,
+        "name": "uq_Route",
+        "state": "ONLINE",
+        "populationPercent": 100.0,
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Route"
+        ],
+        "properties": [
+          "canonical_id"
+        ],
+        "indexProvider": "range-1.0",
+        "owningConstraint": "uq_Route",
+        "lastRead": "2026-11-25T05:48:42.559000000+00:00",
+        "readCount": 256285
+      },
+      {
+        "id": 10,
+        "name": "uq_Service",
+        "state": "ONLINE",
+        "populationPercent": 100.0,
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Service"
+        ],
+        "properties": [
+          "canonical_id"
+        ],
+        "indexProvider": "range-1.0",
+        "owningConstraint": "uq_Service",
+        "lastRead": "2026-11-24T21:57:33.195000000+00:00",
+        "readCount": 186624
+      },
+      {
+        "id": 8,
+        "name": "uq_Stop",
+        "state": "ONLINE",
+        "populationPercent": 100.0,
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Stop"
+        ],
+        "properties": [
+          "canonical_id"
+        ],
+        "indexProvider": "range-1.0",
+        "owningConstraint": "uq_Stop",
+        "lastRead": "2026-11-25T05:49:06.017000000+00:00",
+        "readCount": 160281
+      },
+      {
+        "id": 6,
+        "name": "uq_Trip",
+        "state": "ONLINE",
+        "populationPercent": 100.0,
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Trip"
+        ],
+        "properties": [
+          "canonical_id"
+        ],
+        "indexProvider": "range-1.0",
+        "owningConstraint": "uq_Trip",
+        "lastRead": "2026-11-25T05:49:05.792000000+00:00",
+        "readCount": 556997
+      }
+    ]
+  },
+  "content": {
+    "counts": {
+      "nodes": {
+        "Agency": 41,
+        "FeedSnapshot": 1,
+        "Route": 665,
+        "Service": 485,
+        "Stop": 21664,
+        "Trip": 92827
+      },
+      "relationships": {
+        "AGENCY_SERVES_STOP": 19904,
+        "HAS_TRIP": 92827,
+        "OPERATES": 665,
+        "PART_OF": 2222,
+        "ROUTE_SERVES_STOP": 33985,
+        "RUNS_ON": 92827,
+        "TRANSFER_RULE": 61
+      }
+    },
+    "imported_fingerprint": "675d71bd4e8bd82ffc1ec0d8951ca527928ca4376c681e40193d14f451892e66",
+    "partition_digests": {
+      "Agency": "31c717d3f58a4b6f735bc078385197aca3232a85c9de7da4d027556f843da28d",
+      "FeedSnapshot": "74f6357fd1ab355a47cc1c843fdc174cd2fab062f3692d9b9780ed516f3ad517",
+      "Route": "b2876cd64dc940bd4ca1d4d993c76193b1e74744dc1f3d1112d2faa84ca2dd9b",
+      "Service": "c076c8801db60f47c2a20fd846450d411f47b4488ca34855fb218526fa985bb5",
+      "Stop": "69542d9d68f052a86d00054cfe148fa86c775222b386b9d4e748262d4da3ff73",
+      "Trip": "5d59dadc1d1494cb1773fd8856ce710cae68ede741783be4a79ab122f9c3de8c",
+      "AGENCY_SERVES_STOP": "59ad9e384d9246fa8175da2cf8973bc1a2a25bde9956fe0dac033ab848374177",
+      "HAS_TRIP": "c559ba93a5b717cc78a44741e1ff270ef0ba4e0223b8d3d4b24bb0c8cb25ea33",
+      "OPERATES": "a38f323470af36ac7c855a5eee5473e3c439b539728b46779d5c0cc12c0e2bd8",
+      "PART_OF": "00fecec464884ed029b708009695db224d4bb160a2c8aed5aaf9829fbfd89b68",
+      "ROUTE_SERVES_STOP": "88c6e325b228244c64a47853c22aa634360496eabbfae56911a28db15b8dd72d",
+      "RUNS_ON": "41e6cbb0e262377d443cf0fac349775155468a3d72a64f0696d7ee61353f203c",
+      "TRANSFER_RULE": "750b6fd75ae04c795f86d9746cdc41aad72eba1715a517b3b09f0cac0e0c418f"
+    },
+    "duplicate_identities": 0,
+    "incorrect_endpoints": 0,
+    "seconds": 15.101
+  }
+}

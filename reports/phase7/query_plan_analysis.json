@@ -1,0 +1,1823 @@
+[
+  {
+    "workload": "canonical_stop",
+    "parameters": {
+      "id": "511-sf-bay-regional:stop:10913"
+    },
+    "neo4j_explain": {
+      "args": {
+        "planner-impl": "IDP",
+        "string-representation": "Cypher 25\r\n\r\nPlanner COST\r\n\r\nRuntime PIPELINED\r\n\r\nRuntime version 2026.10.2\r\n\r\nBatch size 128\r\n\r\n+----------------------+----+------------------------------------------------------+----------------+---------------------+\r\n| Operator             | Id | Details                                              | Estimated Rows | Pipeline            |\r\n+----------------------+----+------------------------------------------------------+----------------+---------------------+\r\n| +ProduceResults      |  0 | id                                                   |              1 |                     |\r\n| |                    +----+------------------------------------------------------+----------------+                     |\r\n| +Projection          |  1 | s.source_id AS id                                    |              1 |                     |\r\n| |                    +----+------------------------------------------------------+----------------+                     |\r\n| +NodeUniqueIndexSeek |  2 | UNIQUE s:Stop(canonical_id) WHERE canonical_id = $id |              1 | Fused in Pipeline 0 |\r\n+----------------------+----+------------------------------------------------------+----------------+---------------------+\r\n\r\nTotal database accesses: ?\r\n",
+        "runtime": "PIPELINED",
+        "runtime-impl": "PIPELINED",
+        "version": "25",
+        "batch-size": 128,
+        "Details": "id",
+        "planner-version": "2026.10.2",
+        "PipelineInfo": "Fused in Pipeline 0",
+        "runtime-version": "2026.10.2",
+        "Id": 0,
+        "EstimatedRows": 1.0,
+        "planner": "COST"
+      },
+      "children": [
+        {
+          "args": {
+            "Details": "s.source_id AS id",
+            "Id": 1,
+            "EstimatedRows": 1.0,
+            "PipelineInfo": "Fused in Pipeline 0"
+          },
+          "children": [
+            {
+              "args": {
+                "Details": "UNIQUE s:Stop(canonical_id) WHERE canonical_id = $id",
+                "Id": 2,
+                "EstimatedRows": 1.0,
+                "PipelineInfo": "Fused in Pipeline 0"
+              },
+              "identifiers": [
+                "s"
+              ],
+              "operatorType": "NodeUniqueIndexSeek@transitkg-static"
+            }
+          ],
+          "identifiers": [
+            "s",
+            "id"
+          ],
+          "operatorType": "Projection@transitkg-static"
+        }
+      ],
+      "identifiers": [
+        "s",
+        "id"
+      ],
+      "operatorType": "ProduceResults@transitkg-static"
+    },
+    "neo4j_profile": {
+      "args": {
+        "GlobalMemory": 312,
+        "planner-impl": "IDP",
+        "Memory": 0,
+        "string-representation": "Cypher 25\r\n\r\nPlanner COST\r\n\r\nRuntime PIPELINED\r\n\r\nRuntime version 2026.10.2\r\n\r\nBatch size 128\r\n\r\n+----------------------+----+------------------------------------------------------+----------------+------+---------+----------------+------------------------+-----------+---------------------+--------------+\r\n| Operator             | Id | Details                                              | Estimated Rows | Rows | DB Hits | Memory (Bytes) | Page Cache Hits/Misses | Time (ms) | Pipeline            | Indexes Used |\r\n+----------------------+----+------------------------------------------------------+----------------+------+---------+----------------+------------------------+-----------+---------------------+--------------+\r\n| +ProduceResults      |  0 | id                                                   |              1 |    1 |       0 |              0 |                        |           |                     |              |\r\n| |                    +----+------------------------------------------------------+----------------+------+---------+----------------+                        |           |                     +--------------+\r\n| +Projection          |  1 | s.source_id AS id                                    |              1 |    1 |       1 |                |                        |           |                     |              |\r\n| |                    +----+------------------------------------------------------+----------------+------+---------+----------------+                        |           |                     +--------------+\r\n| +NodeUniqueIndexSeek |  2 | UNIQUE s:Stop(canonical_id) WHERE canonical_id = $id |              1 |    1 |       2 |            248 |                    5/0 |     0.585 | Fused in Pipeline 0 | uq_Stop: 1   |\r\n+----------------------+----+------------------------------------------------------+----------------+------+---------+----------------+------------------------+-----------+---------------------+--------------+\r\n\r\nTotal database accesses: 3, total allocated memory: 312\r\n",
+        "runtime": "PIPELINED",
+        "runtime-impl": "PIPELINED",
+        "version": "25",
+        "DbHits": 0,
+        "batch-size": 128,
+        "Details": "id",
+        "planner-version": "2026.10.2",
+        "PipelineInfo": "Fused in Pipeline 0",
+        "runtime-version": "2026.10.2",
+        "Id": 0,
+        "EstimatedRows": 1.0,
+        "planner": "COST",
+        "Rows": 1
+      },
+      "children": [
+        {
+          "args": {
+            "Id": 1,
+            "Details": "s.source_id AS id",
+            "EstimatedRows": 1.0,
+            "PipelineInfo": "Fused in Pipeline 0",
+            "DbHits": 1,
+            "Rows": 1
+          },
+          "children": [
+            {
+              "args": {
+                "Details": "UNIQUE s:Stop(canonical_id) WHERE canonical_id = $id",
+                "PipelineInfo": "Fused in Pipeline 0",
+                "Memory": 248,
+                "Time": 584900,
+                "Id": 2,
+                "UsedIndexes": "uq_Stop: 1",
+                "EstimatedRows": 1.0,
+                "PageCacheMisses": 0,
+                "DbHits": 2,
+                "Rows": 1,
+                "PageCacheHits": 5
+              },
+              "pageCacheMisses": 0,
+              "dbHits": 2,
+              "identifiers": [
+                "s"
+              ],
+              "operatorType": "NodeUniqueIndexSeek@transitkg-static",
+              "time": 584900,
+              "rows": 1,
+              "pageCacheHitRatio": 1.0,
+              "pageCacheHits": 5
+            }
+          ],
+          "dbHits": 1,
+          "identifiers": [
+            "s",
+            "id"
+          ],
+          "operatorType": "Projection@transitkg-static",
+          "rows": 1
+        }
+      ],
+      "dbHits": 0,
+      "identifiers": [
+        "s",
+        "id"
+      ],
+      "operatorType": "ProduceResults@transitkg-static",
+      "rows": 1
+    },
+    "duckdb_explain_analyze": [
+      [
+        "analyzed_plan",
+        "┌─────────────────────────────────────┐\n│┌───────────────────────────────────┐│\n││    Query Profiling Information    ││\n│└───────────────────────────────────┘│\n└─────────────────────────────────────┘\nEXPLAIN ANALYZE SELECT source_identifier AS id FROM canonical_ids WHERE entity_type='stop' AND canonical_id=$id\n┌────────────────────────────────────────────────┐\n│┌──────────────────────────────────────────────┐│\n││              Total Time: 0.0071s             ││\n│└──────────────────────────────────────────────┘│\n└────────────────────────────────────────────────┘\n┌───────────────────────────┐\n│           QUERY           │\n└─────────────┬─────────────┘\n┌─────────────┴─────────────┐\n│      EXPLAIN_ANALYZE      │\n│    ────────────────────   │\n│                           │\n│           0 rows          │\n│           0.00s           │\n└─────────────┬─────────────┘\n┌─────────────┴─────────────┐\n│         TABLE_SCAN        │\n│    ────────────────────   │\n│         Function:         │\n│        PARQUET_SCAN       │\n│                           │\n│        Projections:       │\n│     source_identifier     │\n│                           │\n│          Filters:         │\n│     entity_type='stop'    │\n│  canonical_id='511-sf-bay │\n│   -regional:stop:10913'   │\n│                           │\n│    Total Files Read: 1    │\n│                           │\n│        Filename(s):       │\n│  D:\\Projects\\TransitKG\\KG │\n│   VS code\\data\\normalized │\n│\\build-5608c0d7d93b9c620043│\n│ 1b5c\\canonical_ids.parquet│\n│                           │\n│                           │\n│                           │\n│           1 row           │\n│           0.00s           │\n└───────────────────────────┘\n"
+      ]
+    ]
+  },
+  {
+    "workload": "route_stops",
+    "parameters": {
+      "route": "SM:397"
+    },
+    "neo4j_explain": {
+      "args": {
+        "Order": "$autoint_0 ASC",
+        "planner-impl": "IDP",
+        "string-representation": "Cypher 25\r\n\r\nPlanner COST\r\n\r\nRuntime PIPELINED\r\n\r\nRuntime version 2026.10.2\r\n\r\nBatch size 128\r\n\r\n+-----------------+----+--------------------------------------------------------------+----------------+----------------+---------------------+\r\n| Operator        | Id | Details                                                      | Estimated Rows | Ordered by     | Pipeline            |\r\n+-----------------+----+--------------------------------------------------------------+----------------+----------------+---------------------+\r\n| +ProduceResults |  0 | `s.source_id`                                                |             51 |                |                     |\r\n| |               +----+--------------------------------------------------------------+----------------+                |                     |\r\n| +Projection     |  1 | s.source_id AS `s.source_id`                                 |             51 |                |                     |\r\n| |               +----+--------------------------------------------------------------+----------------+                |                     |\r\n| +Filter         |  2 | s:Stop                                                       |             51 |                |                     |\r\n| |               +----+--------------------------------------------------------------+----------------+                |                     |\r\n| +Expand(All)    |  3 | (anon_0)-[:ROUTE_SERVES_STOP]->(s)                           |             51 |                | Fused in Pipeline 2 |\r\n| |               +----+--------------------------------------------------------------+----------------+                +---------------------+\r\n| +Sort           |  4 | `$autoint_0` ASC                                             |              1 | $autoint_0 ASC | In Pipeline 1       |\r\n| |               +----+--------------------------------------------------------------+----------------+----------------+---------------------+\r\n| +Projection     |  5 | $autoint_0 AS `$autoint_0`                                   |              1 |                |                     |\r\n| |               +----+--------------------------------------------------------------+----------------+----------------+                     |\r\n| +NodeIndexSeek  |  6 | RANGE INDEX anon_0:Route(source_id) WHERE source_id = $route |              1 |                | Fused in Pipeline 0 |\r\n+-----------------+----+--------------------------------------------------------------+----------------+----------------+---------------------+\r\n\r\nTotal database accesses: ?\r\n",
+        "runtime": "PIPELINED",
+        "runtime-impl": "PIPELINED",
+        "version": "25",
+        "batch-size": 128,
+        "Details": "`s.source_id`",
+        "planner-version": "2026.10.2",
+        "PipelineInfo": "Fused in Pipeline 2",
+        "runtime-version": "2026.10.2",
+        "Id": 0,
+        "EstimatedRows": 51.10526315789474,
+        "planner": "COST"
+      },
+      "children": [
+        {
+          "args": {
+            "Order": "$autoint_0 ASC",
+            "Id": 1,
+            "Details": "s.source_id AS `s.source_id`",
+            "EstimatedRows": 51.10526315789474,
+            "PipelineInfo": "Fused in Pipeline 2"
+          },
+          "children": [
+            {
+              "args": {
+                "Order": "$autoint_0 ASC",
+                "Id": 2,
+                "Details": "s:Stop",
+                "EstimatedRows": 51.10526315789474,
+                "PipelineInfo": "Fused in Pipeline 2"
+              },
+              "children": [
+                {
+                  "args": {
+                    "Order": "$autoint_0 ASC",
+                    "Id": 3,
+                    "Details": "(anon_0)-[:ROUTE_SERVES_STOP]->(s)",
+                    "EstimatedRows": 51.10526315789474,
+                    "PipelineInfo": "Fused in Pipeline 2"
+                  },
+                  "children": [
+                    {
+                      "args": {
+                        "Order": "$autoint_0 ASC",
+                        "Id": 4,
+                        "Details": "`$autoint_0` ASC",
+                        "EstimatedRows": 1.0,
+                        "PipelineInfo": "In Pipeline 1"
+                      },
+                      "children": [
+                        {
+                          "args": {
+                            "Details": "$autoint_0 AS `$autoint_0`",
+                            "Id": 5,
+                            "EstimatedRows": 1.0,
+                            "PipelineInfo": "Fused in Pipeline 0"
+                          },
+                          "children": [
+                            {
+                              "args": {
+                                "Details": "RANGE INDEX anon_0:Route(source_id) WHERE source_id = $route",
+                                "Id": 6,
+                                "EstimatedRows": 1.0,
+                                "PipelineInfo": "Fused in Pipeline 0"
+                              },
+                              "identifiers": [
+                                "anon_0"
+                              ],
+                              "operatorType": "NodeIndexSeek@transitkg-static"
+                            }
+                          ],
+                          "identifiers": [
+                            "anon_0",
+                            "`$autoint_0`"
+                          ],
+                          "operatorType": "Projection@transitkg-static"
+                        }
+                      ],
+                      "identifiers": [
+                        "anon_0",
+                        "`$autoint_0`"
+                      ],
+                      "operatorType": "Sort@transitkg-static"
+                    }
+                  ],
+                  "identifiers": [
+                    "anon_0",
+                    "`$autoint_0`",
+                    "s"
+                  ],
+                  "operatorType": "Expand(All)@transitkg-static"
+                }
+              ],
+              "identifiers": [
+                "anon_0",
+                "`$autoint_0`",
+                "s"
+              ],
+              "operatorType": "Filter@transitkg-static"
+            }
+          ],
+          "identifiers": [
+            "anon_0",
+            "`$autoint_0`",
+            "s",
+            "`s.source_id`"
+          ],
+          "operatorType": "Projection@transitkg-static"
+        }
+      ],
+      "identifiers": [
+        "anon_0",
+        "`$autoint_0`",
+        "s",
+        "`s.source_id`"
+      ],
+      "operatorType": "ProduceResults@transitkg-static"
+    },
+    "neo4j_profile": {
+      "args": {
+        "Order": "$autoint_0 ASC",
+        "GlobalMemory": 1080,
+        "planner-impl": "IDP",
+        "Memory": 0,
+        "string-representation": "Cypher 25\r\n\r\nPlanner COST\r\n\r\nRuntime PIPELINED\r\n\r\nRuntime version 2026.10.2\r\n\r\nBatch size 128\r\n\r\n+-----------------+----+--------------------------------------------------------------+----------------+------+---------+----------------+------------------------+-----------+----------------+---------------------+-----------------------+\r\n| Operator        | Id | Details                                                      | Estimated Rows | Rows | DB Hits | Memory (Bytes) | Page Cache Hits/Misses | Time (ms) | Ordered by     | Pipeline            | Indexes Used          |\r\n+-----------------+----+--------------------------------------------------------------+----------------+------+---------+----------------+------------------------+-----------+----------------+---------------------+-----------------------+\r\n| +ProduceResults |  0 | `s.source_id`                                                |             51 |  228 |       0 |              0 |                        |           |                |                     |                       |\r\n| |               +----+--------------------------------------------------------------+----------------+------+---------+----------------+                        |           |                |                     +-----------------------+\r\n| +Projection     |  1 | s.source_id AS `s.source_id`                                 |             51 |  228 |     456 |                |                        |           |                |                     |                       |\r\n| |               +----+--------------------------------------------------------------+----------------+------+---------+----------------+                        |           |                |                     +-----------------------+\r\n| +Filter         |  2 | s:Stop                                                       |             51 |  228 |     456 |                |                        |           |                |                     |                       |\r\n| |               +----+--------------------------------------------------------------+----------------+------+---------+----------------+                        |           |                |                     +-----------------------+\r\n| +Expand(All)    |  3 | (anon_0)-[:ROUTE_SERVES_STOP]->(s)                           |             51 |  228 |     229 |            244 |                   39/0 |     0.880 |                | Fused in Pipeline 2 |                       |\r\n| |               +----+--------------------------------------------------------------+----------------+------+---------+----------------+------------------------+-----------+                +---------------------+-----------------------+\r\n| +Sort           |  4 | `$autoint_0` ASC                                             |              1 |    1 |       0 |            500 |                    0/0 |     3.377 | $autoint_0 ASC | In Pipeline 1       |                       |\r\n| |               +----+--------------------------------------------------------------+----------------+------+---------+----------------+------------------------+-----------+----------------+---------------------+-----------------------+\r\n| +Projection     |  5 | $autoint_0 AS `$autoint_0`                                   |              1 |    1 |       0 |                |                        |           |                |                     |                       |\r\n| |               +----+--------------------------------------------------------------+----------------+------+---------+----------------+                        |           +----------------+                     +-----------------------+\r\n| +NodeIndexSeek  |  6 | RANGE INDEX anon_0:Route(source_id) WHERE source_id = $route |              1 |    1 |       2 |            376 |                    2/0 |     0.293 |                | Fused in Pipeline 0 | ix_Route_source_id: 1 |\r\n+-----------------+----+--------------------------------------------------------------+----------------+------+---------+----------------+------------------------+-----------+----------------+---------------------+-----------------------+\r\n\r\nTotal database accesses: 1143, total allocated memory: 1080\r\n",
+        "runtime": "PIPELINED",
+        "runtime-impl": "PIPELINED",
+        "version": "25",
+        "DbHits": 0,
+        "batch-size": 128,
+        "Details": "`s.source_id`",
+        "planner-version": "2026.10.2",
+        "PipelineInfo": "Fused in Pipeline 2",
+        "runtime-version": "2026.10.2",
+        "Id": 0,
+        "EstimatedRows": 51.10526315789474,
+        "planner": "COST",
+        "Rows": 228
+      },
+      "children": [
+        {
+          "args": {
+            "Order": "$autoint_0 ASC",
+            "Details": "s.source_id AS `s.source_id`",
+            "PipelineInfo": "Fused in Pipeline 2",
+            "Id": 1,
+            "EstimatedRows": 51.10526315789474,
+            "DbHits": 456,
+            "Rows": 228
+          },
+          "children": [
+            {
+              "args": {
+                "Order": "$autoint_0 ASC",
+                "Details": "s:Stop",
+                "PipelineInfo": "Fused in Pipeline 2",
+                "Id": 2,
+                "EstimatedRows": 51.10526315789474,
+                "DbHits": 456,
+                "Rows": 228
+              },
+              "children": [
+                {
+                  "args": {
+                    "Order": "$autoint_0 ASC",
+                    "Details": "(anon_0)-[:ROUTE_SERVES_STOP]->(s)",
+                    "PipelineInfo": "Fused in Pipeline 2",
+                    "Memory": 244,
+                    "Time": 880299,
+                    "Id": 3,
+                    "EstimatedRows": 51.10526315789474,
+                    "PageCacheMisses": 0,
+                    "DbHits": 229,
+                    "Rows": 228,
+                    "PageCacheHits": 39
+                  },
+                  "pageCacheMisses": 0,
+                  "children": [
+                    {
+                      "args": {
+                        "Order": "$autoint_0 ASC",
+                        "Details": "`$autoint_0` ASC",
+                        "PipelineInfo": "In Pipeline 1",
+                        "Memory": 500,
+                        "Time": 3377200,
+                        "Id": 4,
+                        "EstimatedRows": 1.0,
+                        "PageCacheMisses": 0,
+                        "DbHits": 0,
+                        "Rows": 1,
+                        "PageCacheHits": 0
+                      },
+                      "pageCacheMisses": 0,
+                      "children": [
+                        {
+                          "args": {
+                            "Id": 5,
+                            "Details": "$autoint_0 AS `$autoint_0`",
+                            "EstimatedRows": 1.0,
+                            "PipelineInfo": "Fused in Pipeline 0",
+                            "DbHits": 0,
+                            "Rows": 1
+                          },
+                          "children": [
+                            {
+                              "args": {
+                                "Details": "RANGE INDEX anon_0:Route(source_id) WHERE source_id = $route",
+                                "PipelineInfo": "Fused in Pipeline 0",
+                                "Memory": 376,
+                                "Time": 293100,
+                                "Id": 6,
+                                "UsedIndexes": "ix_Route_source_id: 1",
+                                "EstimatedRows": 1.0,
+                                "PageCacheMisses": 0,
+                                "DbHits": 2,
+                                "Rows": 1,
+                                "PageCacheHits": 2
+                              },
+                              "pageCacheMisses": 0,
+                              "dbHits": 2,
+                              "identifiers": [
+                                "anon_0"
+                              ],
+                              "operatorType": "NodeIndexSeek@transitkg-static",
+                              "time": 293100,
+                              "rows": 1,
+                              "pageCacheHitRatio": 1.0,
+                              "pageCacheHits": 2
+                            }
+                          ],
+                          "dbHits": 0,
+                          "identifiers": [
+                            "anon_0",
+                            "`$autoint_0`"
+                          ],
+                          "operatorType": "Projection@transitkg-static",
+                          "rows": 1
+                        }
+                      ],
+                      "dbHits": 0,
+                      "identifiers": [
+                        "anon_0",
+                        "`$autoint_0`"
+                      ],
+                      "operatorType": "Sort@transitkg-static",
+                      "time": 3377200,
+                      "rows": 1,
+                      "pageCacheHitRatio": 0.0,
+                      "pageCacheHits": 0
+                    }
+                  ],
+                  "dbHits": 229,
+                  "identifiers": [
+                    "anon_0",
+                    "`$autoint_0`",
+                    "s"
+                  ],
+                  "operatorType": "Expand(All)@transitkg-static",
+                  "time": 880299,
+                  "rows": 228,
+                  "pageCacheHitRatio": 1.0,
+                  "pageCacheHits": 39
+                }
+              ],
+              "dbHits": 456,
+              "identifiers": [
+                "anon_0",
+                "`$autoint_0`",
+                "s"
+              ],
+              "operatorType": "Filter@transitkg-static",
+              "rows": 228
+            }
+          ],
+          "dbHits": 456,
+          "identifiers": [
+            "anon_0",
+            "`$autoint_0`",
+            "s",
+            "`s.source_id`"
+          ],
+          "operatorType": "Projection@transitkg-static",
+          "rows": 228
+        }
+      ],
+      "dbHits": 0,
+      "identifiers": [
+        "anon_0",
+        "`$autoint_0`",
+        "s",
+        "`s.source_id`"
+      ],
+      "operatorType": "ProduceResults@transitkg-static",
+      "rows": 228
+    },
+    "duckdb_explain_analyze": [
+      [
+        "analyzed_plan",
+        "┌─────────────────────────────────────┐\n│┌───────────────────────────────────┐│\n││    Query Profiling Information    ││\n│└───────────────────────────────────┘│\n└─────────────────────────────────────┘\nEXPLAIN ANALYZE SELECT stop_id FROM route_stops WHERE route_id=$route ORDER BY 1\n┌────────────────────────────────────────────────┐\n│┌──────────────────────────────────────────────┐│\n││              Total Time: 0.0019s             ││\n│└──────────────────────────────────────────────┘│\n└────────────────────────────────────────────────┘\n┌───────────────────────────┐\n│           QUERY           │\n└─────────────┬─────────────┘\n┌─────────────┴─────────────┐\n│      EXPLAIN_ANALYZE      │\n│    ────────────────────   │\n│                           │\n│           0 rows          │\n│           0.00s           │\n└─────────────┬─────────────┘\n┌─────────────┴─────────────┐\n│          ORDER_BY         │\n│    ────────────────────   │\n│        stop_id ASC        │\n│                           │\n│                           │\n│                           │\n│          228 rows         │\n│           0.00s           │\n└─────────────┬─────────────┘\n┌─────────────┴─────────────┐\n│         TABLE_SCAN        │\n│    ────────────────────   │\n│         Function:         │\n│        PARQUET_SCAN       │\n│                           │\n│    Projections: stop_id   │\n│                           │\n│          Filters:         │\n│     route_id='SM:397'     │\n│                           │\n│    Total Files Read: 1    │\n│                           │\n│        Filename(s):       │\n│  D:\\Projects\\TransitKG\\KG │\n│   VS code\\data\\normalized │\n│\\build-5608c0d7d93b9c620043│\n│  1b5c\\route_stops.parquet │\n│                           │\n│                           │\n│                           │\n│          228 rows         │\n│           0.00s           │\n└───────────────────────────┘\n"
+      ]
+    ]
+  },
+  {
+    "workload": "agency_stop",
+    "parameters": {
+      "agency": "AC",
+      "stop": "55660"
+    },
+    "neo4j_explain": {
+      "args": {
+        "planner-impl": "IDP",
+        "string-representation": "Cypher 25\r\n\r\nPlanner COST\r\n\r\nRuntime PIPELINED\r\n\r\nRuntime version 2026.10.2\r\n\r\nBatch size 128\r\n\r\n+-----------------+----+-------------------------------------------------------+----------------+---------------------+\r\n| Operator        | Id | Details                                               | Estimated Rows | Pipeline            |\r\n+-----------------+----+-------------------------------------------------------+----------------+---------------------+\r\n| +ProduceResults |  0 | `s.canonical_id`                                      |              0 |                     |\r\n| |               +----+-------------------------------------------------------+----------------+                     |\r\n| +Projection     |  1 | s.canonical_id AS `s.canonical_id`                    |              0 |                     |\r\n| |               +----+-------------------------------------------------------+----------------+                     |\r\n| +Filter         |  2 | anon_0.source_id = $agency AND anon_0:Agency          |              0 |                     |\r\n| |               +----+-------------------------------------------------------+----------------+                     |\r\n| +Expand(All)    |  3 | (s)<-[:AGENCY_SERVES_STOP]-(anon_0)                   |              1 |                     |\r\n| |               +----+-------------------------------------------------------+----------------+                     |\r\n| +NodeIndexSeek  |  4 | RANGE INDEX s:Stop(source_id) WHERE source_id = $stop |              1 | Fused in Pipeline 0 |\r\n+-----------------+----+-------------------------------------------------------+----------------+---------------------+\r\n\r\nTotal database accesses: ?\r\n",
+        "runtime": "PIPELINED",
+        "runtime-impl": "PIPELINED",
+        "version": "25",
+        "batch-size": 128,
+        "Details": "`s.canonical_id`",
+        "planner-version": "2026.10.2",
+        "PipelineInfo": "Fused in Pipeline 0",
+        "runtime-version": "2026.10.2",
+        "Id": 0,
+        "EstimatedRows": 0.022408761753791837,
+        "planner": "COST"
+      },
+      "children": [
+        {
+          "args": {
+            "Details": "s.canonical_id AS `s.canonical_id`",
+            "Id": 1,
+            "EstimatedRows": 0.022408761753791837,
+            "PipelineInfo": "Fused in Pipeline 0"
+          },
+          "children": [
+            {
+              "args": {
+                "Details": "anon_0.source_id = $agency AND anon_0:Agency",
+                "Id": 2,
+                "EstimatedRows": 0.022408761753791837,
+                "PipelineInfo": "Fused in Pipeline 0"
+              },
+              "children": [
+                {
+                  "args": {
+                    "Details": "(s)<-[:AGENCY_SERVES_STOP]-(anon_0)",
+                    "Id": 3,
+                    "EstimatedRows": 0.9187592319054654,
+                    "PipelineInfo": "Fused in Pipeline 0"
+                  },
+                  "children": [
+                    {
+                      "args": {
+                        "Details": "RANGE INDEX s:Stop(source_id) WHERE source_id = $stop",
+                        "Id": 4,
+                        "EstimatedRows": 1.0,
+                        "PipelineInfo": "Fused in Pipeline 0"
+                      },
+                      "identifiers": [
+                        "s"
+                      ],
+                      "operatorType": "NodeIndexSeek@transitkg-static"
+                    }
+                  ],
+                  "identifiers": [
+                    "s",
+                    "anon_0"
+                  ],
+                  "operatorType": "Expand(All)@transitkg-static"
+                }
+              ],
+              "identifiers": [
+                "s",
+                "anon_0"
+              ],
+              "operatorType": "Filter@transitkg-static"
+            }
+          ],
+          "identifiers": [
+            "s",
+            "anon_0",
+            "`s.canonical_id`"
+          ],
+          "operatorType": "Projection@transitkg-static"
+        }
+      ],
+      "identifiers": [
+        "s",
+        "anon_0",
+        "`s.canonical_id`"
+      ],
+      "operatorType": "ProduceResults@transitkg-static"
+    },
+    "neo4j_profile": {
+      "args": {
+        "GlobalMemory": 328,
+        "planner-impl": "IDP",
+        "Memory": 0,
+        "string-representation": "Cypher 25\r\n\r\nPlanner COST\r\n\r\nRuntime PIPELINED\r\n\r\nRuntime version 2026.10.2\r\n\r\nBatch size 128\r\n\r\n+-----------------+----+-------------------------------------------------------+----------------+------+---------+----------------+------------------------+-----------+---------------------+----------------------+\r\n| Operator        | Id | Details                                               | Estimated Rows | Rows | DB Hits | Memory (Bytes) | Page Cache Hits/Misses | Time (ms) | Pipeline            | Indexes Used         |\r\n+-----------------+----+-------------------------------------------------------+----------------+------+---------+----------------+------------------------+-----------+---------------------+----------------------+\r\n| +ProduceResults |  0 | `s.canonical_id`                                      |              0 |    1 |       0 |              0 |                        |           |                     |                      |\r\n| |               +----+-------------------------------------------------------+----------------+------+---------+----------------+                        |           |                     +----------------------+\r\n| +Projection     |  1 | s.canonical_id AS `s.canonical_id`                    |              0 |    1 |       1 |                |                        |           |                     |                      |\r\n| |               +----+-------------------------------------------------------+----------------+------+---------+----------------+                        |           |                     +----------------------+\r\n| +Filter         |  2 | anon_0.source_id = $agency AND anon_0:Agency          |              0 |    1 |       4 |                |                        |           |                     |                      |\r\n| |               +----+-------------------------------------------------------+----------------+------+---------+----------------+                        |           |                     +----------------------+\r\n| +Expand(All)    |  3 | (s)<-[:AGENCY_SERVES_STOP]-(anon_0)                   |              1 |    1 |       1 |                |                        |           |                     |                      |\r\n| |               +----+-------------------------------------------------------+----------------+------+---------+----------------+                        |           |                     +----------------------+\r\n| +NodeIndexSeek  |  4 | RANGE INDEX s:Stop(source_id) WHERE source_id = $stop |              1 |    1 |       2 |            248 |                    8/0 |     0.601 | Fused in Pipeline 0 | ix_Stop_source_id: 1 |\r\n+-----------------+----+-------------------------------------------------------+----------------+------+---------+----------------+------------------------+-----------+---------------------+----------------------+\r\n\r\nTotal database accesses: 8, total allocated memory: 328\r\n",
+        "runtime": "PIPELINED",
+        "runtime-impl": "PIPELINED",
+        "version": "25",
+        "DbHits": 0,
+        "batch-size": 128,
+        "Details": "`s.canonical_id`",
+        "planner-version": "2026.10.2",
+        "PipelineInfo": "Fused in Pipeline 0",
+        "runtime-version": "2026.10.2",
+        "Id": 0,
+        "EstimatedRows": 0.022408761753791837,
+        "planner": "COST",
+        "Rows": 1
+      },
+      "children": [
+        {
+          "args": {
+            "Id": 1,
+            "Details": "s.canonical_id AS `s.canonical_id`",
+            "EstimatedRows": 0.022408761753791837,
+            "PipelineInfo": "Fused in Pipeline 0",
+            "DbHits": 1,
+            "Rows": 1
+          },
+          "children": [
+            {
+              "args": {
+                "Id": 2,
+                "Details": "anon_0.source_id = $agency AND anon_0:Agency",
+                "EstimatedRows": 0.022408761753791837,
+                "PipelineInfo": "Fused in Pipeline 0",
+                "DbHits": 4,
+                "Rows": 1
+              },
+              "children": [
+                {
+                  "args": {
+                    "Id": 3,
+                    "Details": "(s)<-[:AGENCY_SERVES_STOP]-(anon_0)",
+                    "EstimatedRows": 0.9187592319054654,
+                    "PipelineInfo": "Fused in Pipeline 0",
+                    "DbHits": 1,
+                    "Rows": 1
+                  },
+                  "children": [
+                    {
+                      "args": {
+                        "Details": "RANGE INDEX s:Stop(source_id) WHERE source_id = $stop",
+                        "PipelineInfo": "Fused in Pipeline 0",
+                        "Memory": 248,
+                        "Time": 601400,
+                        "Id": 4,
+                        "UsedIndexes": "ix_Stop_source_id: 1",
+                        "EstimatedRows": 1.0,
+                        "PageCacheMisses": 0,
+                        "DbHits": 2,
+                        "Rows": 1,
+                        "PageCacheHits": 8
+                      },
+                      "pageCacheMisses": 0,
+                      "dbHits": 2,
+                      "identifiers": [
+                        "s"
+                      ],
+                      "operatorType": "NodeIndexSeek@transitkg-static",
+                      "time": 601400,
+                      "rows": 1,
+                      "pageCacheHitRatio": 1.0,
+                      "pageCacheHits": 8
+                    }
+                  ],
+                  "dbHits": 1,
+                  "identifiers": [
+                    "s",
+                    "anon_0"
+                  ],
+                  "operatorType": "Expand(All)@transitkg-static",
+                  "rows": 1
+                }
+              ],
+              "dbHits": 4,
+              "identifiers": [
+                "s",
+                "anon_0"
+              ],
+              "operatorType": "Filter@transitkg-static",
+              "rows": 1
+            }
+          ],
+          "dbHits": 1,
+          "identifiers": [
+            "s",
+            "anon_0",
+            "`s.canonical_id`"
+          ],
+          "operatorType": "Projection@transitkg-static",
+          "rows": 1
+        }
+      ],
+      "dbHits": 0,
+      "identifiers": [
+        "s",
+        "anon_0",
+        "`s.canonical_id`"
+      ],
+      "operatorType": "ProduceResults@transitkg-static",
+      "rows": 1
+    },
+    "duckdb_explain_analyze": [
+      [
+        "analyzed_plan",
+        "┌─────────────────────────────────────┐\n│┌───────────────────────────────────┐│\n││    Query Profiling Information    ││\n│└───────────────────────────────────┘│\n└─────────────────────────────────────┘\nEXPLAIN ANALYZE SELECT canonical_stop_id FROM agency_stops WHERE agency_id=$agency AND stop_id=$stop\n┌────────────────────────────────────────────────┐\n│┌──────────────────────────────────────────────┐│\n││              Total Time: 0.0021s             ││\n│└──────────────────────────────────────────────┘│\n└────────────────────────────────────────────────┘\n┌───────────────────────────┐\n│           QUERY           │\n└─────────────┬─────────────┘\n┌─────────────┴─────────────┐\n│      EXPLAIN_ANALYZE      │\n│    ────────────────────   │\n│                           │\n│           0 rows          │\n│           0.00s           │\n└─────────────┬─────────────┘\n┌─────────────┴─────────────┐\n│         TABLE_SCAN        │\n│    ────────────────────   │\n│         Function:         │\n│        PARQUET_SCAN       │\n│                           │\n│        Projections:       │\n│     canonical_stop_id     │\n│                           │\n│          Filters:         │\n│       agency_id='AC'      │\n│      stop_id='55660'      │\n│                           │\n│    Total Files Read: 1    │\n│                           │\n│        Filename(s):       │\n│  D:\\Projects\\TransitKG\\KG │\n│   VS code\\data\\normalized │\n│\\build-5608c0d7d93b9c620043│\n│ 1b5c\\agency_stops.parquet │\n│                           │\n│                           │\n│                           │\n│           1 row           │\n│           0.00s           │\n└───────────────────────────┘\n"
+      ]
+    ]
+  },
+  {
+    "workload": "stop_name",
+    "parameters": {
+      "name": "Main Entrance / Exit"
+    },
+    "neo4j_explain": {
+      "args": {
+        "Order": "$autoint_0 ASC",
+        "planner-impl": "IDP",
+        "string-representation": "Cypher 25\r\n\r\nPlanner COST\r\n\r\nRuntime PIPELINED\r\n\r\nRuntime version 2026.10.2\r\n\r\nBatch size 128\r\n\r\n+-----------------+----+-------------------------------------------------------+----------------+----------------+---------------------+\r\n| Operator        | Id | Details                                               | Estimated Rows | Ordered by     | Pipeline            |\r\n+-----------------+----+-------------------------------------------------------+----------------+----------------+---------------------+\r\n| +ProduceResults |  0 | `s.source_id`                                         |              1 |                |                     |\r\n| |               +----+-------------------------------------------------------+----------------+                |                     |\r\n| +Projection     |  1 | s.source_id AS `s.source_id`                          |              1 |                |                     |\r\n| |               +----+-------------------------------------------------------+----------------+                |                     |\r\n| +Sort           |  2 | `$autoint_0` ASC                                      |              1 | $autoint_0 ASC | In Pipeline 1       |\r\n| |               +----+-------------------------------------------------------+----------------+----------------+---------------------+\r\n| +Projection     |  3 | $autoint_0 AS `$autoint_0`                            |              1 |                |                     |\r\n| |               +----+-------------------------------------------------------+----------------+----------------+                     |\r\n| +NodeIndexSeek  |  4 | RANGE INDEX s:Stop(stop_name) WHERE stop_name = $name |              1 |                | Fused in Pipeline 0 |\r\n+-----------------+----+-------------------------------------------------------+----------------+----------------+---------------------+\r\n\r\nTotal database accesses: ?\r\n",
+        "runtime": "PIPELINED",
+        "runtime-impl": "PIPELINED",
+        "version": "25",
+        "batch-size": 128,
+        "Details": "`s.source_id`",
+        "planner-version": "2026.10.2",
+        "PipelineInfo": "In Pipeline 1",
+        "runtime-version": "2026.10.2",
+        "Id": 0,
+        "EstimatedRows": 1.39322628876032,
+        "planner": "COST"
+      },
+      "children": [
+        {
+          "args": {
+            "Order": "$autoint_0 ASC",
+            "Id": 1,
+            "Details": "s.source_id AS `s.source_id`",
+            "EstimatedRows": 1.39322628876032,
+            "PipelineInfo": "In Pipeline 1"
+          },
+          "children": [
+            {
+              "args": {
+                "Order": "$autoint_0 ASC",
+                "Id": 2,
+                "Details": "`$autoint_0` ASC",
+                "EstimatedRows": 1.39322628876032,
+                "PipelineInfo": "In Pipeline 1"
+              },
+              "children": [
+                {
+                  "args": {
+                    "Details": "$autoint_0 AS `$autoint_0`",
+                    "Id": 3,
+                    "EstimatedRows": 1.39322628876032,
+                    "PipelineInfo": "Fused in Pipeline 0"
+                  },
+                  "children": [
+                    {
+                      "args": {
+                        "Details": "RANGE INDEX s:Stop(stop_name) WHERE stop_name = $name",
+                        "Id": 4,
+                        "EstimatedRows": 1.39322628876032,
+                        "PipelineInfo": "Fused in Pipeline 0"
+                      },
+                      "identifiers": [
+                        "s"
+                      ],
+                      "operatorType": "NodeIndexSeek@transitkg-static"
+                    }
+                  ],
+                  "identifiers": [
+                    "s",
+                    "`$autoint_0`"
+                  ],
+                  "operatorType": "Projection@transitkg-static"
+                }
+              ],
+              "identifiers": [
+                "s",
+                "`$autoint_0`"
+              ],
+              "operatorType": "Sort@transitkg-static"
+            }
+          ],
+          "identifiers": [
+            "s",
+            "`$autoint_0`",
+            "`s.source_id`"
+          ],
+          "operatorType": "Projection@transitkg-static"
+        }
+      ],
+      "identifiers": [
+        "s",
+        "`$autoint_0`",
+        "`s.source_id`"
+      ],
+      "operatorType": "ProduceResults@transitkg-static"
+    },
+    "neo4j_profile": {
+      "args": {
+        "Order": "$autoint_0 ASC",
+        "GlobalMemory": 912,
+        "planner-impl": "IDP",
+        "Memory": 0,
+        "string-representation": "Cypher 25\r\n\r\nPlanner COST\r\n\r\nRuntime PIPELINED\r\n\r\nRuntime version 2026.10.2\r\n\r\nBatch size 128\r\n\r\n+-----------------+----+-------------------------------------------------------+----------------+------+---------+----------------+------------------------+-----------+----------------+---------------------+----------------------+\r\n| Operator        | Id | Details                                               | Estimated Rows | Rows | DB Hits | Memory (Bytes) | Page Cache Hits/Misses | Time (ms) | Ordered by     | Pipeline            | Indexes Used         |\r\n+-----------------+----+-------------------------------------------------------+----------------+------+---------+----------------+------------------------+-----------+----------------+---------------------+----------------------+\r\n| +ProduceResults |  0 | `s.source_id`                                         |              1 |   18 |       0 |              0 |                    0/0 |     0.049 |                |                     |                      |\r\n| |               +----+-------------------------------------------------------+----------------+------+---------+----------------+------------------------+-----------+                |                     +----------------------+\r\n| +Projection     |  1 | s.source_id AS `s.source_id`                          |              1 |   18 |      36 |                |                    7/0 |     0.080 |                |                     |                      |\r\n| |               +----+-------------------------------------------------------+----------------+------+---------+----------------+------------------------+-----------+                |                     +----------------------+\r\n| +Sort           |  2 | `$autoint_0` ASC                                      |              1 |   18 |       0 |            576 |                    0/0 |     0.937 | $autoint_0 ASC | In Pipeline 1       |                      |\r\n| |               +----+-------------------------------------------------------+----------------+------+---------+----------------+------------------------+-----------+----------------+---------------------+----------------------+\r\n| +Projection     |  3 | $autoint_0 AS `$autoint_0`                            |              1 |   18 |       0 |                |                        |           |                |                     |                      |\r\n| |               +----+-------------------------------------------------------+----------------+------+---------+----------------+                        |           +----------------+                     +----------------------+\r\n| +NodeIndexSeek  |  4 | RANGE INDEX s:Stop(stop_name) WHERE stop_name = $name |              1 |   18 |      19 |            376 |                    3/0 |     0.442 |                | Fused in Pipeline 0 | ix_Stop_stop_name: 1 |\r\n+-----------------+----+-------------------------------------------------------+----------------+------+---------+----------------+------------------------+-----------+----------------+---------------------+----------------------+\r\n\r\nTotal database accesses: 55, total allocated memory: 912\r\n",
+        "runtime": "PIPELINED",
+        "Time": 48700,
+        "runtime-impl": "PIPELINED",
+        "version": "25",
+        "DbHits": 0,
+        "batch-size": 128,
+        "Details": "`s.source_id`",
+        "planner-version": "2026.10.2",
+        "PipelineInfo": "In Pipeline 1",
+        "runtime-version": "2026.10.2",
+        "Id": 0,
+        "EstimatedRows": 1.39322628876032,
+        "planner": "COST",
+        "PageCacheMisses": 0,
+        "Rows": 18,
+        "PageCacheHits": 0
+      },
+      "pageCacheMisses": 0,
+      "children": [
+        {
+          "args": {
+            "Order": "$autoint_0 ASC",
+            "Details": "s.source_id AS `s.source_id`",
+            "PipelineInfo": "In Pipeline 1",
+            "Time": 79700,
+            "Id": 1,
+            "PageCacheMisses": 0,
+            "EstimatedRows": 1.39322628876032,
+            "DbHits": 36,
+            "Rows": 18,
+            "PageCacheHits": 7
+          },
+          "pageCacheMisses": 0,
+          "children": [
+            {
+              "args": {
+                "Order": "$autoint_0 ASC",
+                "Details": "`$autoint_0` ASC",
+                "PipelineInfo": "In Pipeline 1",
+                "Memory": 576,
+                "Time": 937400,
+                "Id": 2,
+                "EstimatedRows": 1.39322628876032,
+                "PageCacheMisses": 0,
+                "DbHits": 0,
+                "Rows": 18,
+                "PageCacheHits": 0
+              },
+              "pageCacheMisses": 0,
+              "children": [
+                {
+                  "args": {
+                    "Id": 3,
+                    "Details": "$autoint_0 AS `$autoint_0`",
+                    "EstimatedRows": 1.39322628876032,
+                    "PipelineInfo": "Fused in Pipeline 0",
+                    "DbHits": 0,
+                    "Rows": 18
+                  },
+                  "children": [
+                    {
+                      "args": {
+                        "Details": "RANGE INDEX s:Stop(stop_name) WHERE stop_name = $name",
+                        "PipelineInfo": "Fused in Pipeline 0",
+                        "Memory": 376,
+                        "Time": 441700,
+                        "Id": 4,
+                        "UsedIndexes": "ix_Stop_stop_name: 1",
+                        "EstimatedRows": 1.39322628876032,
+                        "PageCacheMisses": 0,
+                        "DbHits": 19,
+                        "Rows": 18,
+                        "PageCacheHits": 3
+                      },
+                      "pageCacheMisses": 0,
+                      "dbHits": 19,
+                      "identifiers": [
+                        "s"
+                      ],
+                      "operatorType": "NodeIndexSeek@transitkg-static",
+                      "time": 441700,
+                      "rows": 18,
+                      "pageCacheHitRatio": 1.0,
+                      "pageCacheHits": 3
+                    }
+                  ],
+                  "dbHits": 0,
+                  "identifiers": [
+                    "s",
+                    "`$autoint_0`"
+                  ],
+                  "operatorType": "Projection@transitkg-static",
+                  "rows": 18
+                }
+              ],
+              "dbHits": 0,
+              "identifiers": [
+                "s",
+                "`$autoint_0`"
+              ],
+              "operatorType": "Sort@transitkg-static",
+              "time": 937400,
+              "rows": 18,
+              "pageCacheHitRatio": 0.0,
+              "pageCacheHits": 0
+            }
+          ],
+          "dbHits": 36,
+          "identifiers": [
+            "s",
+            "`$autoint_0`",
+            "`s.source_id`"
+          ],
+          "operatorType": "Projection@transitkg-static",
+          "time": 79700,
+          "rows": 18,
+          "pageCacheHitRatio": 1.0,
+          "pageCacheHits": 7
+        }
+      ],
+      "dbHits": 0,
+      "identifiers": [
+        "s",
+        "`$autoint_0`",
+        "`s.source_id`"
+      ],
+      "operatorType": "ProduceResults@transitkg-static",
+      "time": 48700,
+      "rows": 18,
+      "pageCacheHitRatio": 0.0,
+      "pageCacheHits": 0
+    },
+    "duckdb_explain_analyze": [
+      [
+        "analyzed_plan",
+        "┌─────────────────────────────────────┐\n│┌───────────────────────────────────┐│\n││    Query Profiling Information    ││\n│└───────────────────────────────────┘│\n└─────────────────────────────────────┘\nEXPLAIN ANALYZE SELECT stop_id FROM stops WHERE stop_name=$name ORDER BY 1\n┌────────────────────────────────────────────────┐\n│┌──────────────────────────────────────────────┐│\n││              Total Time: 0.0027s             ││\n│└──────────────────────────────────────────────┘│\n└────────────────────────────────────────────────┘\n┌───────────────────────────┐\n│           QUERY           │\n└─────────────┬─────────────┘\n┌─────────────┴─────────────┐\n│      EXPLAIN_ANALYZE      │\n│    ────────────────────   │\n│                           │\n│           0 rows          │\n│           0.00s           │\n└─────────────┬─────────────┘\n┌─────────────┴─────────────┐\n│          ORDER_BY         │\n│    ────────────────────   │\n│        stop_id ASC        │\n│                           │\n│                           │\n│                           │\n│          18 rows          │\n│           0.00s           │\n└─────────────┬─────────────┘\n┌─────────────┴─────────────┐\n│         TABLE_SCAN        │\n│    ────────────────────   │\n│         Function:         │\n│        PARQUET_SCAN       │\n│                           │\n│    Projections: stop_id   │\n│                           │\n│          Filters:         │\n│ stop_name='Main Entrance /│\n│            Exit'          │\n│                           │\n│    Total Files Read: 1    │\n│                           │\n│        Filename(s):       │\n│  D:\\Projects\\TransitKG\\KG │\n│   VS code\\data\\normalized │\n│\\build-5608c0d7d93b9c620043│\n│     1b5c\\stops.parquet    │\n│                           │\n│                           │\n│                           │\n│          18 rows          │\n│           0.00s           │\n└───────────────────────────┘\n"
+      ]
+    ]
+  },
+  {
+    "workload": "transfer_rules",
+    "parameters": {
+      "src": "900101",
+      "dst": "900102"
+    },
+    "neo4j_explain": {
+      "args": {
+        "planner-impl": "IDP",
+        "string-representation": "Cypher 25\r\n\r\nPlanner COST\r\n\r\nRuntime PIPELINED\r\n\r\nRuntime version 2026.10.2\r\n\r\nBatch size 128\r\n\r\n+------------------+----+---------------------------------------------------------------------------------------------------+----------------+---------------------+\r\n| Operator         | Id | Details                                                                                           | Estimated Rows | Pipeline            |\r\n+------------------+----+---------------------------------------------------------------------------------------------------+----------------+---------------------+\r\n| +ProduceResults  |  0 | `r.from_route_id`, `r.to_route_id`, `r.from_trip_id`, `r.to_trip_id`, `r.transfer_type`,          |              0 |                     |\r\n| |                |    | `r.min_transfer_time`                                                                             |                |                     |\r\n| |                +----+---------------------------------------------------------------------------------------------------+----------------+                     |\r\n| +Projection      |  1 | cache[r.min_transfer_time] AS `r.min_transfer_time`, cache[r.transfer_type] AS `r.transfer_type`, |              0 |                     |\r\n| |                |    | cache[r.to_trip_id] AS `r.to_trip_id`, cache[r.to_route_id] AS `r.to_route_id`,                   |                |                     |\r\n| |                |    | cache[r.from_route_id] AS `r.from_route_id`, cache[r.from_trip_id] AS `r.from_trip_id`            |                |                     |\r\n| |                +----+---------------------------------------------------------------------------------------------------+----------------+                     |\r\n| +CacheProperties |  2 | cache[r.min_transfer_time], cache[r.transfer_type], cache[r.to_trip_id], cache[r.from_route_id],  |              0 |                     |\r\n| |                |    | cache[r.to_route_id], cache[r.from_trip_id]                                                       |                |                     |\r\n| |                +----+---------------------------------------------------------------------------------------------------+----------------+                     |\r\n| +Filter          |  3 | anon_0.source_id = $src AND anon_0:Stop                                                           |              0 |                     |\r\n| |                +----+---------------------------------------------------------------------------------------------------+----------------+                     |\r\n| +Expand(All)     |  4 | (anon_1)<-[r:TRANSFER_RULE]-(anon_0)                                                              |              0 |                     |\r\n| |                +----+---------------------------------------------------------------------------------------------------+----------------+                     |\r\n| +NodeIndexSeek   |  5 | RANGE INDEX anon_1:Stop(source_id) WHERE source_id = $dst                                         |              1 | Fused in Pipeline 0 |\r\n+------------------+----+---------------------------------------------------------------------------------------------------+----------------+---------------------+\r\n\r\nTotal database accesses: ?\r\n",
+        "runtime": "PIPELINED",
+        "runtime-impl": "PIPELINED",
+        "version": "25",
+        "batch-size": 128,
+        "Details": "`r.from_route_id`, `r.to_route_id`, `r.from_trip_id`, `r.to_trip_id`, `r.transfer_type`, `r.min_transfer_time`",
+        "planner-version": "2026.10.2",
+        "PipelineInfo": "Fused in Pipeline 0",
+        "runtime-version": "2026.10.2",
+        "Id": 0,
+        "EstimatedRows": 1.2997281974302305e-07,
+        "planner": "COST"
+      },
+      "children": [
+        {
+          "args": {
+            "Details": "cache[r.min_transfer_time] AS `r.min_transfer_time`, cache[r.transfer_type] AS `r.transfer_type`, cache[r.to_trip_id] AS `r.to_trip_id`, cache[r.to_route_id] AS `r.to_route_id`, cache[r.from_route_id] AS `r.from_route_id`, cache[r.from_trip_id] AS `r.from_trip_id`",
+            "Id": 1,
+            "EstimatedRows": 1.2997281974302305e-07,
+            "PipelineInfo": "Fused in Pipeline 0"
+          },
+          "children": [
+            {
+              "args": {
+                "Details": "cache[r.min_transfer_time], cache[r.transfer_type], cache[r.to_trip_id], cache[r.from_route_id], cache[r.to_route_id], cache[r.from_trip_id]",
+                "Id": 2,
+                "EstimatedRows": 1.2997281974302305e-07,
+                "PipelineInfo": "Fused in Pipeline 0"
+              },
+              "children": [
+                {
+                  "args": {
+                    "Details": "anon_0.source_id = $src AND anon_0:Stop",
+                    "Id": 3,
+                    "EstimatedRows": 1.2997281974302305e-07,
+                    "PipelineInfo": "Fused in Pipeline 0"
+                  },
+                  "children": [
+                    {
+                      "args": {
+                        "Details": "(anon_1)<-[r:TRANSFER_RULE]-(anon_0)",
+                        "Id": 4,
+                        "EstimatedRows": 0.002815731166912851,
+                        "PipelineInfo": "Fused in Pipeline 0"
+                      },
+                      "children": [
+                        {
+                          "args": {
+                            "Details": "RANGE INDEX anon_1:Stop(source_id) WHERE source_id = $dst",
+                            "Id": 5,
+                            "EstimatedRows": 1.0,
+                            "PipelineInfo": "Fused in Pipeline 0"
+                          },
+                          "identifiers": [
+                            "anon_1"
+                          ],
+                          "operatorType": "NodeIndexSeek@transitkg-static"
+                        }
+                      ],
+                      "identifiers": [
+                        "anon_1",
+                        "r",
+                        "anon_0"
+                      ],
+                      "operatorType": "Expand(All)@transitkg-static"
+                    }
+                  ],
+                  "identifiers": [
+                    "anon_1",
+                    "r",
+                    "anon_0"
+                  ],
+                  "operatorType": "Filter@transitkg-static"
+                }
+              ],
+              "identifiers": [
+                "anon_1",
+                "r",
+                "anon_0"
+              ],
+              "operatorType": "CacheProperties@transitkg-static"
+            }
+          ],
+          "identifiers": [
+            "`r.from_route_id`",
+            "`r.to_route_id`",
+            "`r.transfer_type`",
+            "`r.to_trip_id`",
+            "r",
+            "`r.from_trip_id`",
+            "`r.min_transfer_time`",
+            "anon_0",
+            "anon_1"
+          ],
+          "operatorType": "Projection@transitkg-static"
+        }
+      ],
+      "identifiers": [
+        "`r.from_route_id`",
+        "`r.to_route_id`",
+        "`r.transfer_type`",
+        "`r.to_trip_id`",
+        "r",
+        "`r.from_trip_id`",
+        "`r.min_transfer_time`",
+        "anon_0",
+        "anon_1"
+      ],
+      "operatorType": "ProduceResults@transitkg-static"
+    },
+    "neo4j_profile": {
+      "args": {
+        "GlobalMemory": 328,
+        "planner-impl": "IDP",
+        "Memory": 0,
+        "string-representation": "Cypher 25\r\n\r\nPlanner COST\r\n\r\nRuntime PIPELINED\r\n\r\nRuntime version 2026.10.2\r\n\r\nBatch size 128\r\n\r\n+------------------+----+---------------------------------------------------------------------------------------------------+----------------+------+---------+----------------+------------------------+-----------+---------------------+----------------------+\r\n| Operator         | Id | Details                                                                                           | Estimated Rows | Rows | DB Hits | Memory (Bytes) | Page Cache Hits/Misses | Time (ms) | Pipeline            | Indexes Used         |\r\n+------------------+----+---------------------------------------------------------------------------------------------------+----------------+------+---------+----------------+------------------------+-----------+---------------------+----------------------+\r\n| +ProduceResults  |  0 | `r.from_route_id`, `r.to_route_id`, `r.from_trip_id`, `r.to_trip_id`, `r.transfer_type`,          |              0 |    1 |       0 |              0 |                        |           |                     |                      |\r\n| |                |    | `r.min_transfer_time`                                                                             |                |      |         |                |                        |           |                     |                      |\r\n| |                +----+---------------------------------------------------------------------------------------------------+----------------+------+---------+----------------+                        |           |                     +----------------------+\r\n| +Projection      |  1 | cache[r.min_transfer_time] AS `r.min_transfer_time`, cache[r.transfer_type] AS `r.transfer_type`, |              0 |    1 |       0 |                |                        |           |                     |                      |\r\n| |                |    | cache[r.to_trip_id] AS `r.to_trip_id`, cache[r.to_route_id] AS `r.to_route_id`,                   |                |      |         |                |                        |           |                     |                      |\r\n| |                |    | cache[r.from_route_id] AS `r.from_route_id`, cache[r.from_trip_id] AS `r.from_trip_id`            |                |      |         |                |                        |           |                     |                      |\r\n| |                +----+---------------------------------------------------------------------------------------------------+----------------+------+---------+----------------+                        |           |                     +----------------------+\r\n| +CacheProperties |  2 | cache[r.min_transfer_time], cache[r.transfer_type], cache[r.to_trip_id], cache[r.from_route_id],  |              0 |    1 |       4 |                |                        |           |                     |                      |\r\n| |                |    | cache[r.to_route_id], cache[r.from_trip_id]                                                       |                |      |         |                |                        |           |                     |                      |\r\n| |                +----+---------------------------------------------------------------------------------------------------+----------------+------+---------+----------------+                        |           |                     +----------------------+\r\n| +Filter          |  3 | anon_0.source_id = $src AND anon_0:Stop                                                           |              0 |    1 |       6 |                |                        |           |                     |                      |\r\n| |                +----+---------------------------------------------------------------------------------------------------+----------------+------+---------+----------------+                        |           |                     +----------------------+\r\n| +Expand(All)     |  4 | (anon_1)<-[r:TRANSFER_RULE]-(anon_0)                                                              |              0 |    2 |       2 |                |                        |           |                     |                      |\r\n| |                +----+---------------------------------------------------------------------------------------------------+----------------+------+---------+----------------+                        |           |                     +----------------------+\r\n| +NodeIndexSeek   |  5 | RANGE INDEX anon_1:Stop(source_id) WHERE source_id = $dst                                         |              1 |    1 |       2 |            248 |                    4/0 |     0.652 | Fused in Pipeline 0 | ix_Stop_source_id: 1 |\r\n+------------------+----+---------------------------------------------------------------------------------------------------+----------------+------+---------+----------------+------------------------+-----------+---------------------+----------------------+\r\n\r\nTotal database accesses: 14, total allocated memory: 328\r\n",
+        "runtime": "PIPELINED",
+        "runtime-impl": "PIPELINED",
+        "version": "25",
+        "DbHits": 0,
+        "batch-size": 128,
+        "Details": "`r.from_route_id`, `r.to_route_id`, `r.from_trip_id`, `r.to_trip_id`, `r.transfer_type`, `r.min_transfer_time`",
+        "planner-version": "2026.10.2",
+        "PipelineInfo": "Fused in Pipeline 0",
+        "runtime-version": "2026.10.2",
+        "Id": 0,
+        "EstimatedRows": 1.2997281974302305e-07,
+        "planner": "COST",
+        "Rows": 1
+      },
+      "children": [
+        {
+          "args": {
+            "Id": 1,
+            "Details": "cache[r.min_transfer_time] AS `r.min_transfer_time`, cache[r.transfer_type] AS `r.transfer_type`, cache[r.to_trip_id] AS `r.to_trip_id`, cache[r.to_route_id] AS `r.to_route_id`, cache[r.from_route_id] AS `r.from_route_id`, cache[r.from_trip_id] AS `r.from_trip_id`",
+            "EstimatedRows": 1.2997281974302305e-07,
+            "PipelineInfo": "Fused in Pipeline 0",
+            "DbHits": 0,
+            "Rows": 1
+          },
+          "children": [
+            {
+              "args": {
+                "Id": 2,
+                "Details": "cache[r.min_transfer_time], cache[r.transfer_type], cache[r.to_trip_id], cache[r.from_route_id], cache[r.to_route_id], cache[r.from_trip_id]",
+                "EstimatedRows": 1.2997281974302305e-07,
+                "PipelineInfo": "Fused in Pipeline 0",
+                "DbHits": 4,
+                "Rows": 1
+              },
+              "children": [
+                {
+                  "args": {
+                    "Id": 3,
+                    "Details": "anon_0.source_id = $src AND anon_0:Stop",
+                    "EstimatedRows": 1.2997281974302305e-07,
+                    "PipelineInfo": "Fused in Pipeline 0",
+                    "DbHits": 6,
+                    "Rows": 1
+                  },
+                  "children": [
+                    {
+                      "args": {
+                        "Id": 4,
+                        "Details": "(anon_1)<-[r:TRANSFER_RULE]-(anon_0)",
+                        "EstimatedRows": 0.002815731166912851,
+                        "PipelineInfo": "Fused in Pipeline 0",
+                        "DbHits": 2,
+                        "Rows": 2
+                      },
+                      "children": [
+                        {
+                          "args": {
+                            "Details": "RANGE INDEX anon_1:Stop(source_id) WHERE source_id = $dst",
+                            "PipelineInfo": "Fused in Pipeline 0",
+                            "Memory": 248,
+                            "Time": 652300,
+                            "Id": 5,
+                            "UsedIndexes": "ix_Stop_source_id: 1",
+                            "EstimatedRows": 1.0,
+                            "PageCacheMisses": 0,
+                            "DbHits": 2,
+                            "Rows": 1,
+                            "PageCacheHits": 4
+                          },
+                          "pageCacheMisses": 0,
+                          "dbHits": 2,
+                          "identifiers": [
+                            "anon_1"
+                          ],
+                          "operatorType": "NodeIndexSeek@transitkg-static",
+                          "time": 652300,
+                          "rows": 1,
+                          "pageCacheHitRatio": 1.0,
+                          "pageCacheHits": 4
+                        }
+                      ],
+                      "dbHits": 2,
+                      "identifiers": [
+                        "anon_1",
+                        "r",
+                        "anon_0"
+                      ],
+                      "operatorType": "Expand(All)@transitkg-static",
+                      "rows": 2
+                    }
+                  ],
+                  "dbHits": 6,
+                  "identifiers": [
+                    "anon_1",
+                    "r",
+                    "anon_0"
+                  ],
+                  "operatorType": "Filter@transitkg-static",
+                  "rows": 1
+                }
+              ],
+              "dbHits": 4,
+              "identifiers": [
+                "anon_1",
+                "r",
+                "anon_0"
+              ],
+              "operatorType": "CacheProperties@transitkg-static",
+              "rows": 1
+            }
+          ],
+          "dbHits": 0,
+          "identifiers": [
+            "`r.from_route_id`",
+            "`r.to_route_id`",
+            "`r.transfer_type`",
+            "`r.to_trip_id`",
+            "r",
+            "`r.from_trip_id`",
+            "`r.min_transfer_time`",
+            "anon_0",
+            "anon_1"
+          ],
+          "operatorType": "Projection@transitkg-static",
+          "rows": 1
+        }
+      ],
+      "dbHits": 0,
+      "identifiers": [
+        "`r.from_route_id`",
+        "`r.to_route_id`",
+        "`r.transfer_type`",
+        "`r.to_trip_id`",
+        "r",
+        "`r.from_trip_id`",
+        "`r.min_transfer_time`",
+        "anon_0",
+        "anon_1"
+      ],
+      "operatorType": "ProduceResults@transitkg-static",
+      "rows": 1
+    },
+    "duckdb_explain_analyze": [
+      [
+        "analyzed_plan",
+        "┌─────────────────────────────────────┐\n│┌───────────────────────────────────┐│\n││    Query Profiling Information    ││\n│└───────────────────────────────────┘│\n└─────────────────────────────────────┘\nEXPLAIN ANALYZE SELECT from_route_id,to_route_id,from_trip_id,to_trip_id,transfer_type,min_transfer_time              FROM transfers WHERE from_stop_id=$src AND to_stop_id=$dst\n┌────────────────────────────────────────────────┐\n│┌──────────────────────────────────────────────┐│\n││              Total Time: 0.0015s             ││\n│└──────────────────────────────────────────────┘│\n└────────────────────────────────────────────────┘\n┌───────────────────────────┐\n│           QUERY           │\n└─────────────┬─────────────┘\n┌─────────────┴─────────────┐\n│      EXPLAIN_ANALYZE      │\n│    ────────────────────   │\n│                           │\n│           0 rows          │\n│           0.00s           │\n└─────────────┬─────────────┘\n┌─────────────┴─────────────┐\n│         TABLE_SCAN        │\n│    ────────────────────   │\n│         Function:         │\n│        PARQUET_SCAN       │\n│                           │\n│        Projections:       │\n│       from_route_id       │\n│        to_route_id        │\n│        from_trip_id       │\n│         to_trip_id        │\n│       transfer_type       │\n│     min_transfer_time     │\n│                           │\n│          Filters:         │\n│   from_stop_id='900101'   │\n│    to_stop_id='900102'    │\n│                           │\n│    Total Files Read: 1    │\n│                           │\n│        Filename(s):       │\n│  D:\\Projects\\TransitKG\\KG │\n│   VS code\\data\\normalized │\n│\\build-5608c0d7d93b9c620043│\n│   1b5c\\transfers.parquet  │\n│                           │\n│                           │\n│                           │\n│           1 row           │\n│           0.00s           │\n└───────────────────────────┘\n"
+      ]
+    ]
+  },
+  {
+    "workload": "scoped_service_day",
+    "parameters": {
+      "agency": "AC",
+      "stop": "55660",
+      "day": "2026-11-25",
+      "route": null,
+      "direction": null
+    },
+    "neo4j_explain": {
+      "args": {
+        "Order": "$autoint_0 ASC",
+        "planner-impl": "IDP",
+        "string-representation": "Cypher 25\r\n\r\nPlanner COST\r\n\r\nRuntime PIPELINED\r\n\r\nRuntime version 2026.10.2\r\n\r\nBatch size 128\r\n\r\n+-----------------+----+------------------------------------------------------------------------+----------------+----------------+---------------------+\r\n| Operator        | Id | Details                                                                | Estimated Rows | Ordered by     | Pipeline            |\r\n+-----------------+----+------------------------------------------------------------------------+----------------+----------------+---------------------+\r\n| +ProduceResults |  0 | `r.canonical_id`, `s.canonical_id`                                     |              0 |                |                     |\r\n| |               +----+------------------------------------------------------------------------+----------------+                |                     |\r\n| +Projection     |  1 | r.canonical_id AS `r.canonical_id`, s.canonical_id AS `s.canonical_id` |              0 |                |                     |\r\n| |               +----+------------------------------------------------------------------------+----------------+                |                     |\r\n| +Sort           |  2 | `$autoint_0` ASC                                                       |              0 | $autoint_0 ASC | In Pipeline 1       |\r\n| |               +----+------------------------------------------------------------------------+----------------+----------------+---------------------+\r\n| +Projection     |  3 | $autoint_0 AS `$autoint_0`                                             |              0 |                |                     |\r\n| |               +----+------------------------------------------------------------------------+----------------+----------------+                     |\r\n| +Expand(Into)   |  4 | (a)-[:OPERATES]->(r)                                                   |              0 |                |                     |\r\n| |               +----+------------------------------------------------------------------------+----------------+----------------+                     |\r\n| +Filter         |  5 | ($route IS NULL OR r.source_id = $route) AND r:Route                   |              0 |                |                     |\r\n| |               +----+------------------------------------------------------------------------+----------------+----------------+                     |\r\n| +Expand(All)    |  6 | (s)<-[:ROUTE_SERVES_STOP]-(r)                                          |              0 |                |                     |\r\n| |               +----+------------------------------------------------------------------------+----------------+----------------+                     |\r\n| +Filter         |  7 | a.source_id = $agency AND a:Agency                                     |              0 |                |                     |\r\n| |               +----+------------------------------------------------------------------------+----------------+----------------+                     |\r\n| +Expand(All)    |  8 | (s)<-[:AGENCY_SERVES_STOP]-(a)                                         |              1 |                |                     |\r\n| |               +----+------------------------------------------------------------------------+----------------+----------------+                     |\r\n| +NodeIndexSeek  |  9 | RANGE INDEX s:Stop(source_id) WHERE source_id = $stop                  |              1 |                | Fused in Pipeline 0 |\r\n+-----------------+----+------------------------------------------------------------------------+----------------+----------------+---------------------+\r\n\r\nTotal database accesses: ?\r\n",
+        "runtime": "PIPELINED",
+        "runtime-impl": "PIPELINED",
+        "version": "25",
+        "batch-size": 128,
+        "Details": "`r.canonical_id`, `s.canonical_id`",
+        "planner-version": "2026.10.2",
+        "PipelineInfo": "In Pipeline 1",
+        "runtime-version": "2026.10.2",
+        "Id": 0,
+        "EstimatedRows": 0.0006433710725769393,
+        "planner": "COST"
+      },
+      "children": [
+        {
+          "args": {
+            "Order": "$autoint_0 ASC",
+            "Id": 1,
+            "Details": "r.canonical_id AS `r.canonical_id`, s.canonical_id AS `s.canonical_id`",
+            "EstimatedRows": 0.0006433710725769393,
+            "PipelineInfo": "In Pipeline 1"
+          },
+          "children": [
+            {
+              "args": {
+                "Order": "$autoint_0 ASC",
+                "Id": 2,
+                "Details": "`$autoint_0` ASC",
+                "EstimatedRows": 0.0006433710725769393,
+                "PipelineInfo": "In Pipeline 1"
+              },
+              "children": [
+                {
+                  "args": {
+                    "Details": "$autoint_0 AS `$autoint_0`",
+                    "Id": 3,
+                    "EstimatedRows": 0.0006433710725769393,
+                    "PipelineInfo": "Fused in Pipeline 0"
+                  },
+                  "children": [
+                    {
+                      "args": {
+                        "Details": "(a)-[:OPERATES]->(r)",
+                        "Id": 4,
+                        "EstimatedRows": 0.0006433710725769393,
+                        "PipelineInfo": "Fused in Pipeline 0"
+                      },
+                      "children": [
+                        {
+                          "args": {
+                            "Details": "($route IS NULL OR r.source_id = $route) AND r:Route",
+                            "Id": 5,
+                            "EstimatedRows": 0.02637821397565451,
+                            "PipelineInfo": "Fused in Pipeline 0"
+                          },
+                          "children": [
+                            {
+                              "args": {
+                                "Details": "(s)<-[:ROUTE_SERVES_STOP]-(r)",
+                                "Id": 6,
+                                "EstimatedRows": 0.03515333125012073,
+                                "PipelineInfo": "Fused in Pipeline 0"
+                              },
+                              "children": [
+                                {
+                                  "args": {
+                                    "Details": "a.source_id = $agency AND a:Agency",
+                                    "Id": 7,
+                                    "EstimatedRows": 0.022408761753791837,
+                                    "PipelineInfo": "Fused in Pipeline 0"
+                                  },
+                                  "children": [
+                                    {
+                                      "args": {
+                                        "Details": "(s)<-[:AGENCY_SERVES_STOP]-(a)",
+                                        "Id": 8,
+                                        "EstimatedRows": 0.9187592319054654,
+                                        "PipelineInfo": "Fused in Pipeline 0"
+                                      },
+                                      "children": [
+                                        {
+                                          "args": {
+                                            "Details": "RANGE INDEX s:Stop(source_id) WHERE source_id = $stop",
+                                            "Id": 9,
+                                            "EstimatedRows": 1.0,
+                                            "PipelineInfo": "Fused in Pipeline 0"
+                                          },
+                                          "identifiers": [
+                                            "s"
+                                          ],
+                                          "operatorType": "NodeIndexSeek@transitkg-static"
+                                        }
+                                      ],
+                                      "identifiers": [
+                                        "s",
+                                        "a"
+                                      ],
+                                      "operatorType": "Expand(All)@transitkg-static"
+                                    }
+                                  ],
+                                  "identifiers": [
+                                    "s",
+                                    "a"
+                                  ],
+                                  "operatorType": "Filter@transitkg-static"
+                                }
+                              ],
+                              "identifiers": [
+                                "s",
+                                "a",
+                                "r"
+                              ],
+                              "operatorType": "Expand(All)@transitkg-static"
+                            }
+                          ],
+                          "identifiers": [
+                            "s",
+                            "a",
+                            "r"
+                          ],
+                          "operatorType": "Filter@transitkg-static"
+                        }
+                      ],
+                      "identifiers": [
+                        "s",
+                        "a",
+                        "r"
+                      ],
+                      "operatorType": "Expand(Into)@transitkg-static"
+                    }
+                  ],
+                  "identifiers": [
+                    "s",
+                    "a",
+                    "r",
+                    "`$autoint_0`"
+                  ],
+                  "operatorType": "Projection@transitkg-static"
+                }
+              ],
+              "identifiers": [
+                "s",
+                "a",
+                "r",
+                "`$autoint_0`"
+              ],
+              "operatorType": "Sort@transitkg-static"
+            }
+          ],
+          "identifiers": [
+            "s",
+            "`s.canonical_id`",
+            "`$autoint_0`",
+            "a",
+            "`r.canonical_id`",
+            "r"
+          ],
+          "operatorType": "Projection@transitkg-static"
+        }
+      ],
+      "identifiers": [
+        "s",
+        "`s.canonical_id`",
+        "`$autoint_0`",
+        "a",
+        "`r.canonical_id`",
+        "r"
+      ],
+      "operatorType": "ProduceResults@transitkg-static"
+    },
+    "neo4j_profile": {
+      "args": {
+        "Order": "$autoint_0 ASC",
+        "GlobalMemory": 1360,
+        "planner-impl": "IDP",
+        "Memory": 0,
+        "string-representation": "Cypher 25\r\n\r\nPlanner COST\r\n\r\nRuntime PIPELINED\r\n\r\nRuntime version 2026.10.2\r\n\r\nBatch size 128\r\n\r\n+-----------------+----+------------------------------------------------------------------------+----------------+------+---------+----------------+------------------------+-----------+----------------+---------------------+----------------------+\r\n| Operator        | Id | Details                                                                | Estimated Rows | Rows | DB Hits | Memory (Bytes) | Page Cache Hits/Misses | Time (ms) | Ordered by     | Pipeline            | Indexes Used         |\r\n+-----------------+----+------------------------------------------------------------------------+----------------+------+---------+----------------+------------------------+-----------+----------------+---------------------+----------------------+\r\n| +ProduceResults |  0 | `r.canonical_id`, `s.canonical_id`                                     |              0 |    4 |       0 |              0 |                    0/0 |     0.037 |                |                     |                      |\r\n| |               +----+------------------------------------------------------------------------+----------------+------+---------+----------------+------------------------+-----------+                |                     +----------------------+\r\n| +Projection     |  1 | r.canonical_id AS `r.canonical_id`, s.canonical_id AS `s.canonical_id` |              0 |    4 |      16 |                |                   10/0 |     0.187 |                |                     |                      |\r\n| |               +----+------------------------------------------------------------------------+----------------+------+---------+----------------+------------------------+-----------+                |                     +----------------------+\r\n| +Sort           |  2 | `$autoint_0` ASC                                                       |              0 |    4 |       0 |            472 |                    0/0 |     0.131 | $autoint_0 ASC | In Pipeline 1       |                      |\r\n| |               +----+------------------------------------------------------------------------+----------------+------+---------+----------------+------------------------+-----------+----------------+---------------------+----------------------+\r\n| +Projection     |  3 | $autoint_0 AS `$autoint_0`                                             |              0 |    4 |       0 |                |                        |           |                |                     |                      |\r\n| |               +----+------------------------------------------------------------------------+----------------+------+---------+----------------+                        |           +----------------+                     +----------------------+\r\n| +Expand(Into)   |  4 | (a)-[:OPERATES]->(r)                                                   |              0 |    4 |       8 |            632 |                        |           |                |                     |                      |\r\n| |               +----+------------------------------------------------------------------------+----------------+------+---------+----------------+                        |           +----------------+                     +----------------------+\r\n| +Filter         |  5 | ($route IS NULL OR r.source_id = $route) AND r:Route                   |              0 |    4 |       8 |                |                        |           |                |                     |                      |\r\n| |               +----+------------------------------------------------------------------------+----------------+------+---------+----------------+                        |           +----------------+                     +----------------------+\r\n| +Expand(All)    |  6 | (s)<-[:ROUTE_SERVES_STOP]-(r)                                          |              0 |    4 |       4 |                |                        |           |                |                     |                      |\r\n| |               +----+------------------------------------------------------------------------+----------------+------+---------+----------------+                        |           +----------------+                     +----------------------+\r\n| +Filter         |  7 | a.source_id = $agency AND a:Agency                                     |              0 |    1 |       4 |                |                        |           |                |                     |                      |\r\n| |               +----+------------------------------------------------------------------------+----------------+------+---------+----------------+                        |           +----------------+                     +----------------------+\r\n| +Expand(All)    |  8 | (s)<-[:AGENCY_SERVES_STOP]-(a)                                         |              1 |    1 |       1 |                |                        |           |                |                     |                      |\r\n| |               +----+------------------------------------------------------------------------+----------------+------+---------+----------------+                        |           +----------------+                     +----------------------+\r\n| +NodeIndexSeek  |  9 | RANGE INDEX s:Stop(source_id) WHERE source_id = $stop                  |              1 |    1 |       2 |            376 |                   16/0 |     0.844 |                | Fused in Pipeline 0 | ix_Stop_source_id: 1 |\r\n+-----------------+----+------------------------------------------------------------------------+----------------+------+---------+----------------+------------------------+-----------+----------------+---------------------+----------------------+\r\n\r\nTotal database accesses: 43, total allocated memory: 1360\r\n",
+        "runtime": "PIPELINED",
+        "Time": 37300,
+        "runtime-impl": "PIPELINED",
+        "version": "25",
+        "DbHits": 0,
+        "batch-size": 128,
+        "Details": "`r.canonical_id`, `s.canonical_id`",
+        "planner-version": "2026.10.2",
+        "PipelineInfo": "In Pipeline 1",
+        "runtime-version": "2026.10.2",
+        "Id": 0,
+        "EstimatedRows": 0.0006433710725769393,
+        "planner": "COST",
+        "PageCacheMisses": 0,
+        "Rows": 4,
+        "PageCacheHits": 0
+      },
+      "pageCacheMisses": 0,
+      "children": [
+        {
+          "args": {
+            "Order": "$autoint_0 ASC",
+            "Details": "r.canonical_id AS `r.canonical_id`, s.canonical_id AS `s.canonical_id`",
+            "PipelineInfo": "In Pipeline 1",
+            "Time": 186900,
+            "Id": 1,
+            "PageCacheMisses": 0,
+            "EstimatedRows": 0.0006433710725769393,
+            "DbHits": 16,
+            "Rows": 4,
+            "PageCacheHits": 10
+          },
+          "pageCacheMisses": 0,
+          "children": [
+            {
+              "args": {
+                "Order": "$autoint_0 ASC",
+                "Details": "`$autoint_0` ASC",
+                "PipelineInfo": "In Pipeline 1",
+                "Memory": 472,
+                "Time": 130800,
+                "Id": 2,
+                "EstimatedRows": 0.0006433710725769393,
+                "PageCacheMisses": 0,
+                "DbHits": 0,
+                "Rows": 4,
+                "PageCacheHits": 0
+              },
+              "pageCacheMisses": 0,
+              "children": [
+                {
+                  "args": {
+                    "Id": 3,
+                    "Details": "$autoint_0 AS `$autoint_0`",
+                    "EstimatedRows": 0.0006433710725769393,
+                    "PipelineInfo": "Fused in Pipeline 0",
+                    "DbHits": 0,
+                    "Rows": 4
+                  },
+                  "children": [
+                    {
+                      "args": {
+                        "Details": "(a)-[:OPERATES]->(r)",
+                        "Memory": 632,
+                        "PipelineInfo": "Fused in Pipeline 0",
+                        "Id": 4,
+                        "EstimatedRows": 0.0006433710725769393,
+                        "DbHits": 8,
+                        "Rows": 4
+                      },
+                      "children": [
+                        {
+                          "args": {
+                            "Id": 5,
+                            "Details": "($route IS NULL OR r.source_id = $route) AND r:Route",
+                            "EstimatedRows": 0.02637821397565451,
+                            "PipelineInfo": "Fused in Pipeline 0",
+                            "DbHits": 8,
+                            "Rows": 4
+                          },
+                          "children": [
+                            {
+                              "args": {
+                                "Id": 6,
+                                "Details": "(s)<-[:ROUTE_SERVES_STOP]-(r)",
+                                "EstimatedRows": 0.03515333125012073,
+                                "PipelineInfo": "Fused in Pipeline 0",
+                                "DbHits": 4,
+                                "Rows": 4
+                              },
+                              "children": [
+                                {
+                                  "args": {
+                                    "Id": 7,
+                                    "Details": "a.source_id = $agency AND a:Agency",
+                                    "EstimatedRows": 0.022408761753791837,
+                                    "PipelineInfo": "Fused in Pipeline 0",
+                                    "DbHits": 4,
+                                    "Rows": 1
+                                  },
+                                  "children": [
+                                    {
+                                      "args": {
+                                        "Id": 8,
+                                        "Details": "(s)<-[:AGENCY_SERVES_STOP]-(a)",
+                                        "EstimatedRows": 0.9187592319054654,
+                                        "PipelineInfo": "Fused in Pipeline 0",
+                                        "DbHits": 1,
+                                        "Rows": 1
+                                      },
+                                      "children": [
+                                        {
+                                          "args": {
+                                            "Details": "RANGE INDEX s:Stop(source_id) WHERE source_id = $stop",
+                                            "PipelineInfo": "Fused in Pipeline 0",
+                                            "Memory": 376,
+                                            "Time": 844100,
+                                            "Id": 9,
+                                            "UsedIndexes": "ix_Stop_source_id: 1",
+                                            "EstimatedRows": 1.0,
+                                            "PageCacheMisses": 0,
+                                            "DbHits": 2,
+                                            "Rows": 1,
+                                            "PageCacheHits": 16
+                                          },
+                                          "pageCacheMisses": 0,
+                                          "dbHits": 2,
+                                          "identifiers": [
+                                            "s"
+                                          ],
+                                          "operatorType": "NodeIndexSeek@transitkg-static",
+                                          "time": 844100,
+                                          "rows": 1,
+                                          "pageCacheHitRatio": 1.0,
+                                          "pageCacheHits": 16
+                                        }
+                                      ],
+                                      "dbHits": 1,
+                                      "identifiers": [
+                                        "s",
+                                        "a"
+                                      ],
+                                      "operatorType": "Expand(All)@transitkg-static",
+                                      "rows": 1
+                                    }
+                                  ],
+                                  "dbHits": 4,
+                                  "identifiers": [
+                                    "s",
+                                    "a"
+                                  ],
+                                  "operatorType": "Filter@transitkg-static",
+                                  "rows": 1
+                                }
+                              ],
+                              "dbHits": 4,
+                              "identifiers": [
+                                "s",
+                                "a",
+                                "r"
+                              ],
+                              "operatorType": "Expand(All)@transitkg-static",
+                              "rows": 4
+                            }
+                          ],
+                          "dbHits": 8,
+                          "identifiers": [
+                            "s",
+                            "a",
+                            "r"
+                          ],
+                          "operatorType": "Filter@transitkg-static",
+                          "rows": 4
+                        }
+                      ],
+                      "dbHits": 8,
+                      "identifiers": [
+                        "s",
+                        "a",
+                        "r"
+                      ],
+                      "operatorType": "Expand(Into)@transitkg-static",
+                      "rows": 4
+                    }
+                  ],
+                  "dbHits": 0,
+                  "identifiers": [
+                    "s",
+                    "a",
+                    "r",
+                    "`$autoint_0`"
+                  ],
+                  "operatorType": "Projection@transitkg-static",
+                  "rows": 4
+                }
+              ],
+              "dbHits": 0,
+              "identifiers": [
+                "s",
+                "a",
+                "r",
+                "`$autoint_0`"
+              ],
+              "operatorType": "Sort@transitkg-static",
+              "time": 130800,
+              "rows": 4,
+              "pageCacheHitRatio": 0.0,
+              "pageCacheHits": 0
+            }
+          ],
+          "dbHits": 16,
+          "identifiers": [
+            "s",
+            "`s.canonical_id`",
+            "`$autoint_0`",
+            "a",
+            "`r.canonical_id`",
+            "r"
+          ],
+          "operatorType": "Projection@transitkg-static",
+          "time": 186900,
+          "rows": 4,
+          "pageCacheHitRatio": 1.0,
+          "pageCacheHits": 10
+        }
+      ],
+      "dbHits": 0,
+      "identifiers": [
+        "s",
+        "`s.canonical_id`",
+        "`$autoint_0`",
+        "a",
+        "`r.canonical_id`",
+        "r"
+      ],
+      "operatorType": "ProduceResults@transitkg-static",
+      "time": 37300,
+      "rows": 4,
+      "pageCacheHitRatio": 0.0,
+      "pageCacheHits": 0
+    },
+    "duckdb_explain_analyze": [
+      [
+        "analyzed_plan",
+        "┌─────────────────────────────────────┐\n│┌───────────────────────────────────┐│\n││    Query Profiling Information    ││\n│└───────────────────────────────────┘│\n└─────────────────────────────────────┘\nEXPLAIN ANALYZE  SELECT DISTINCT x.canonical_trip_id, x.route_id FROM trip_selector_context x JOIN stop_times v ON v.trip_id=x.trip_id JOIN active_services($day) active ON active.service_id=x.service_id WHERE x.agency_id=$agency AND v.stop_id=$stop AND ($route IS NULL OR x.route_id=$route) AND ($direction IS NULL OR x.direction_id=$direction) ORDER BY 1,2 \n┌────────────────────────────────────────────────┐\n│┌──────────────────────────────────────────────┐│\n││              Total Time: 0.0358s             ││\n│└──────────────────────────────────────────────┘│\n└────────────────────────────────────────────────┘\n┌───────────────────────────┐\n│           QUERY           │\n└─────────────┬─────────────┘\n┌─────────────┴─────────────┐\n│      EXPLAIN_ANALYZE      │\n│    ────────────────────   │\n│                           │\n│           0 rows          │\n│           0.00s           │\n└─────────────┬─────────────┘\n┌─────────────┴─────────────┐\n│          ORDER_BY         │\n│    ────────────────────   │\n│   canonical_trip_id ASC   │\n│        route_id ASC       │\n│                           │\n│                           │\n│                           │\n│          112 rows         │\n│           0.00s           │\n└─────────────┬─────────────┘\n┌─────────────┴─────────────┐\n│       HASH_GROUP_BY       │\n│    ────────────────────   │\n│          Groups:          │\n│             #0            │\n│             #1            │\n│                           │\n│                           │\n│                           │\n│          112 rows         │\n│           0.00s           │\n└─────────────┬─────────────┘\n┌─────────────┴─────────────┐\n│         PROJECTION        │\n│    ────────────────────   │\n│     canonical_trip_id     │\n│          route_id         │\n│                           │\n│                           │\n│                           │\n│          112 rows         │\n│           0.00s           │\n└─────────────┬─────────────┘\n┌─────────────┴─────────────┐\n│         PROJECTION        │\n│    ────────────────────   │\n│     canonical_trip_id     │\n│          route_id         │\n│                           │\n│                           │\n│                           │\n│          112 rows         │\n│           0.00s           │\n└─────────────┬─────────────┘\n┌─────────────┴─────────────┐\n│         HASH_JOIN         │\n│    ────────────────────   │\n│      Join Type: INNER     │\n│                           │\n│        Conditions:        │\n│     trip_id = trip_id     ├──────────────┐\n│                           │              │\n│                           │              │\n│                           │              │\n│          112 rows         │              │\n│           0.00s           │              │\n└─────────────┬─────────────┘              │\n┌─────────────┴─────────────┐┌─────────────┴─────────────┐\n│         TABLE_SCAN        ││         HASH_JOIN         │\n│    ────────────────────   ││    ────────────────────   │\n│         Function:         ││      Join Type: INNER     │\n│        PARQUET_SCAN       ││                           │\n│                           ││        Conditions:        │\n│    Projections: trip_id   ││  service_id = service_id  │\n│                           ││                           │\n│          Filters:         ││                           │\n│      stop_id='55660'      ││                           │\n│                           ││                           │\n│      Dynamic Filters:     ││           0.00s           │\n│   optional: trip_id>='AC  ││                           │\n│  :1000020' AND optional:  ││                           │\n│  trip_id<='AC:9998020' AND││                           │\n│   optional: trip_id IN BF ││                           ├──────────────┐\n│         (trip_id)         ││                           │              │\n│                           ││                           │              │\n│    Total Files Read: 1    ││                           │              │\n│                           ││                           │              │\n│        Filename(s):       ││                           │              │\n│  D:\\Projects\\TransitKG\\KG ││                           │              │\n│   VS code\\data\\normalized ││                           │              │\n│\\build-5608c0d7d93b9c620043││                           │              │\n│  1b5c\\stop_times.parquet  ││                           │              │\n│                           ││                           │              │\n│                           ││                           │              │\n│                           ││                           │              │\n│          115 rows         ││         4,985 rows        │              │\n│           0.03s           ││          (0.00s)          │              │\n└───────────────────────────┘└─────────────┬─────────────┘              │\n                             ┌─────────────┴─────────────┐┌─────────────┴─────────────┐\n                             │         TABLE_SCAN        ││         PROJECTION        │\n                             │    ────────────────────   ││    ────────────────────   │\n                             │         Function:         ││             #0            │\n                             │        PARQUET_SCAN       ││                           │\n                             │                           ││                           │\n                             │        Projections:       ││                           │\n                             │          trip_id          ││                           │\n                             │          route_id         ││           0.00s           │\n                             │         service_id        ││                           │\n                             │     canonical_trip_id     ││                           │\n                             │                           ││                           │\n                             │          Filters:         ││                           │\n                             │       agency_id='AC'      ││                           │\n                             │                           ││                           │\n                             │      Dynamic Filters:     ││                           │\n                             │ optional: service_id>='3D ││                           │\n                             │   :72969' AND optional:   ││                           │\n                             │  service_id<='tf:20260101 ││                           │\n                             │  -20261231' AND optional: ││                           │\n                             │      service_id IN BF     ││                           │\n                             │        (service_id)       ││                           │\n                             │                           ││                           │\n                             │    Total Files Read: 1    ││                           │\n                             │                           ││                           │\n                             │        Filename(s):       ││                           │\n                             │  D:\\Projects\\TransitKG\\KG ││                           │\n                             │   VS code\\data\\normalized ││                           │\n                             │\\build-5608c0d7d93b9c620043││                           │\n                             │ 1b5c\\trip_selector_context││                           │\n                             │          .parquet         ││                           │\n                             │                           ││                           │\n                             │                           ││                           │\n                             │                           ││                           │\n                             │         5,024 rows        ││          125 rows         │\n                             │           0.01s           ││          (0.00s)          │\n                             └───────────────────────────┘└─────────────┬─────────────┘\n                                                          ┌─────────────┴─────────────┐\n                                                          │           FILTER          │\n                                                          │    ────────────────────   │\n                                                          │        CASE  WHEN (       │\n                                                          │   (exception_type IS NOT  │\n                                                          │        NULL)) THEN (      │\n                                                          │ (exception_type = 1)) ELSE│\n                                                          │  ((('2026-11-25'::DATE >= │\n                                                          │  start_date) AND ('2026-11│\n                                                          │  -25'::DATE <= end_date)) │\n                                                          │      AND (list_extract    │\n                                                          │    (list_value(monday,    │\n                                                          │     tuesday, wednesday,   │\n                                                          │      thursday, friday,    │\n                                                          │  saturday, sunday), 3) = 1│\n                                                          │           )) END          │\n                                                          │                           │\n                                                          │                           │\n                                                          │                           │\n                                                          │          125 rows         │\n                                                          │           0.00s           │\n                                                          └─────────────┬─────────────┘\n                                                          ┌─────────────┴─────────────┐\n                                                          │         HASH_JOIN         │\n                                                          │    ────────────────────   │\n                                                          │      Join Type: LEFT      │\n                                                          │                           │\n                                                          │        Conditions:        │\n                                                          │    source_identifier =    │\n                                                          │         service_id        ├───────────────────────────────────────────┐\n                                                          │                           │                                           │\n                                                          │                           │                                           │\n                                                          │                           │                                           │\n                                                          │          485 rows         │                                           │\n                                                          │           0.00s           │                                           │\n                                                          └─────────────┬─────────────┘                                           │\n                                                          ┌─────────────┴─────────────┐                             ┌─────────────┴─────────────┐\n                                                          │         HASH_JOIN         │                             │         TABLE_SCAN        │\n                                                          │    ────────────────────   │                             │    ────────────────────   │\n                                                          │      Join Type: LEFT      │                             │         Function:         │\n                                                          │                           │                             │        PARQUET_SCAN       │\n                                                          │        Conditions:        │                             │                           │\n                                                          │    source_identifier =    │                             │        Projections:       │\n                                                          │         service_id        │                             │         service_id        │\n                                                          │                           │                             │       exception_type      │\n                                                          │                           │                             │                           │\n                                                          │                           │                             │          Filters:         │\n                                                          │                           │                             │  date='2026-11-25'::DATE  │\n                                                          │           0.00s           │                             │                           │\n                                                          │                           ├──────────────┐              │    Total Files Read: 1    │\n                                                          │                           │              │              │                           │\n                                                          │                           │              │              │        Filename(s):       │\n                                                          │                           │              │              │  D:\\Projects\\TransitKG\\KG │\n                                                          │                           │              │              │   VS code\\data\\normalized │\n                                                          │                           │              │              │\\build-5608c0d7d93b9c620043│\n                                                          │                           │              │              │1b5c\\calendar_dates.parquet│\n                                                          │                           │              │              │                           │\n                                                          │                           │              │              │                           │\n                                                          │                           │              │              │                           │\n                                                          │          485 rows         │              │              │          77 rows          │\n                                                          │          (0.00s)          │              │              │           0.00s           │\n                                                          └─────────────┬─────────────┘              │              └───────────────────────────┘\n                                                          ┌─────────────┴─────────────┐┌─────────────┴─────────────┐\n                                                          │         TABLE_SCAN        ││         TABLE_SCAN        │\n                                                          │    ────────────────────   ││    ────────────────────   │\n                                                          │         Function:         ││         Function:         │\n                                                          │        PARQUET_SCAN       ││        PARQUET_SCAN       │\n                                                          │                           ││                           │\n                                                          │        Projections:       ││        Projections:       │\n                                                          │     source_identifier     ││         service_id        │\n                                                          │                           ││           monday          │\n                                                          │          Filters:         ││          tuesday          │\n                                                          │   entity_type='service'   ││         wednesday         │\n                                                          │                           ││          thursday         │\n                                                          │    Total Files Read: 1    ││           friday          │\n                                                          │                           ││          saturday         │\n                                                          │        Filename(s):       ││           sunday          │\n                                                          │  D:\\Projects\\TransitKG\\KG ││         start_date        │\n                                                          │   VS code\\data\\normalized ││          end_date         │\n                                                          │\\build-5608c0d7d93b9c620043││                           │\n                                                          │ 1b5c\\canonical_ids.parquet││    Total Files Read: 1    │\n                                                          │                           ││                           │\n                                                          │                           ││        Filename(s):       │\n                                                          │                           ││  D:\\Projects\\TransitKG\\KG │\n                                                          │                           ││   VS code\\data\\normalized │\n                                                          │           0.00s           ││\\build-5608c0d7d93b9c620043│\n                                                          │                           ││   1b5c\\calendar.parquet   │\n                                                          │                           ││                           │\n                                                          │                           ││                           │\n                                                          │                           ││                           │\n                                                          │          485 rows         ││          485 rows         │\n                                                          │          (0.00s)          ││           0.00s           │\n                                                          └───────────────────────────┘└───────────────────────────┘\n"
+      ]
+    ]
+  },
+  {
+    "workload": "trip_service_visits",
+    "parameters": {
+      "id": "511-sf-bay-regional:trip:AC%3A10056070",
+      "day": "2026-11-25"
+    },
+    "neo4j_explain": {
+      "args": {
+        "planner-impl": "IDP",
+        "string-representation": "Cypher 25\r\n\r\nPlanner COST\r\n\r\nRuntime PIPELINED\r\n\r\nRuntime version 2026.10.2\r\n\r\nBatch size 128\r\n\r\n+----------------------+----+-----------------------------------------------------------------------------+----------------+---------------------+\r\n| Operator             | Id | Details                                                                     | Estimated Rows | Pipeline            |\r\n+----------------------+----+-----------------------------------------------------------------------------+----------------+---------------------+\r\n| +ProduceResults      |  0 | `t.canonical_id`, `s.source_id`                                             |              1 |                     |\r\n| |                    +----+-----------------------------------------------------------------------------+----------------+                     |\r\n| +Projection          |  1 | cache[t.canonical_id] AS `t.canonical_id`, s.source_id AS `s.source_id`     |              1 |                     |\r\n| |                    +----+-----------------------------------------------------------------------------+----------------+                     |\r\n| +Filter              |  2 | s:Service                                                                   |              1 |                     |\r\n| |                    +----+-----------------------------------------------------------------------------+----------------+                     |\r\n| +Expand(All)         |  3 | (t)-[:RUNS_ON]->(s)                                                         |              1 |                     |\r\n| |                    +----+-----------------------------------------------------------------------------+----------------+                     |\r\n| +NodeUniqueIndexSeek |  4 | UNIQUE t:Trip(canonical_id) WHERE canonical_id = $id, cache[t.canonical_id] |              1 | Fused in Pipeline 0 |\r\n+----------------------+----+-----------------------------------------------------------------------------+----------------+---------------------+\r\n\r\nTotal database accesses: ?\r\n",
+        "runtime": "PIPELINED",
+        "runtime-impl": "PIPELINED",
+        "version": "25",
+        "batch-size": 128,
+        "Details": "`t.canonical_id`, `s.source_id`",
+        "planner-version": "2026.10.2",
+        "PipelineInfo": "Fused in Pipeline 0",
+        "runtime-version": "2026.10.2",
+        "Id": 0,
+        "EstimatedRows": 1.0,
+        "planner": "COST"
+      },
+      "children": [
+        {
+          "args": {
+            "Details": "cache[t.canonical_id] AS `t.canonical_id`, s.source_id AS `s.source_id`",
+            "Id": 1,
+            "EstimatedRows": 1.0,
+            "PipelineInfo": "Fused in Pipeline 0"
+          },
+          "children": [
+            {
+              "args": {
+                "Details": "s:Service",
+                "Id": 2,
+                "EstimatedRows": 1.0,
+                "PipelineInfo": "Fused in Pipeline 0"
+              },
+              "children": [
+                {
+                  "args": {
+                    "Details": "(t)-[:RUNS_ON]->(s)",
+                    "Id": 3,
+                    "EstimatedRows": 1.0,
+                    "PipelineInfo": "Fused in Pipeline 0"
+                  },
+                  "children": [
+                    {
+                      "args": {
+                        "Details": "UNIQUE t:Trip(canonical_id) WHERE canonical_id = $id, cache[t.canonical_id]",
+                        "Id": 4,
+                        "EstimatedRows": 1.0,
+                        "PipelineInfo": "Fused in Pipeline 0"
+                      },
+                      "identifiers": [
+                        "t"
+                      ],
+                      "operatorType": "NodeUniqueIndexSeek@transitkg-static"
+                    }
+                  ],
+                  "identifiers": [
+                    "t",
+                    "s"
+                  ],
+                  "operatorType": "Expand(All)@transitkg-static"
+                }
+              ],
+              "identifiers": [
+                "t",
+                "s"
+              ],
+              "operatorType": "Filter@transitkg-static"
+            }
+          ],
+          "identifiers": [
+            "t",
+            "s",
+            "`t.canonical_id`",
+            "`s.source_id`"
+          ],
+          "operatorType": "Projection@transitkg-static"
+        }
+      ],
+      "identifiers": [
+        "t",
+        "s",
+        "`t.canonical_id`",
+        "`s.source_id`"
+      ],
+      "operatorType": "ProduceResults@transitkg-static"
+    },
+    "neo4j_profile": {
+      "args": {
+        "GlobalMemory": 328,
+        "planner-impl": "IDP",
+        "Memory": 0,
+        "string-representation": "Cypher 25\r\n\r\nPlanner COST\r\n\r\nRuntime PIPELINED\r\n\r\nRuntime version 2026.10.2\r\n\r\nBatch size 128\r\n\r\n+----------------------+----+-----------------------------------------------------------------------------+----------------+------+---------+----------------+------------------------+-----------+---------------------+--------------+\r\n| Operator             | Id | Details                                                                     | Estimated Rows | Rows | DB Hits | Memory (Bytes) | Page Cache Hits/Misses | Time (ms) | Pipeline            | Indexes Used |\r\n+----------------------+----+-----------------------------------------------------------------------------+----------------+------+---------+----------------+------------------------+-----------+---------------------+--------------+\r\n| +ProduceResults      |  0 | `t.canonical_id`, `s.source_id`                                             |              1 |    1 |       0 |              0 |                        |           |                     |              |\r\n| |                    +----+-----------------------------------------------------------------------------+----------------+------+---------+----------------+                        |           |                     +--------------+\r\n| +Projection          |  1 | cache[t.canonical_id] AS `t.canonical_id`, s.source_id AS `s.source_id`     |              1 |    1 |       2 |                |                        |           |                     |              |\r\n| |                    +----+-----------------------------------------------------------------------------+----------------+------+---------+----------------+                        |           |                     +--------------+\r\n| +Filter              |  2 | s:Service                                                                   |              1 |    1 |       2 |                |                        |           |                     |              |\r\n| |                    +----+-----------------------------------------------------------------------------+----------------+------+---------+----------------+                        |           |                     +--------------+\r\n| +Expand(All)         |  3 | (t)-[:RUNS_ON]->(s)                                                         |              1 |    1 |       1 |                |                        |           |                     |              |\r\n| |                    +----+-----------------------------------------------------------------------------+----------------+------+---------+----------------+                        |           |                     +--------------+\r\n| +NodeUniqueIndexSeek |  4 | UNIQUE t:Trip(canonical_id) WHERE canonical_id = $id, cache[t.canonical_id] |              1 |    1 |       2 |            248 |                    5/0 |     0.286 | Fused in Pipeline 0 | uq_Trip: 1   |\r\n+----------------------+----+-----------------------------------------------------------------------------+----------------+------+---------+----------------+------------------------+-----------+---------------------+--------------+\r\n\r\nTotal database accesses: 7, total allocated memory: 328\r\n",
+        "runtime": "PIPELINED",
+        "runtime-impl": "PIPELINED",
+        "version": "25",
+        "DbHits": 0,
+        "batch-size": 128,
+        "Details": "`t.canonical_id`, `s.source_id`",
+        "planner-version": "2026.10.2",
+        "PipelineInfo": "Fused in Pipeline 0",
+        "runtime-version": "2026.10.2",
+        "Id": 0,
+        "EstimatedRows": 1.0,
+        "planner": "COST",
+        "Rows": 1
+      },
+      "children": [
+        {
+          "args": {
+            "Id": 1,
+            "Details": "cache[t.canonical_id] AS `t.canonical_id`, s.source_id AS `s.source_id`",
+            "EstimatedRows": 1.0,
+            "PipelineInfo": "Fused in Pipeline 0",
+            "DbHits": 2,
+            "Rows": 1
+          },
+          "children": [
+            {
+              "args": {
+                "Id": 2,
+                "Details": "s:Service",
+                "EstimatedRows": 1.0,
+                "PipelineInfo": "Fused in Pipeline 0",
+                "DbHits": 2,
+                "Rows": 1
+              },
+              "children": [
+                {
+                  "args": {
+                    "Id": 3,
+                    "Details": "(t)-[:RUNS_ON]->(s)",
+                    "EstimatedRows": 1.0,
+                    "PipelineInfo": "Fused in Pipeline 0",
+                    "DbHits": 1,
+                    "Rows": 1
+                  },
+                  "children": [
+                    {
+                      "args": {
+                        "Details": "UNIQUE t:Trip(canonical_id) WHERE canonical_id = $id, cache[t.canonical_id]",
+                        "PipelineInfo": "Fused in Pipeline 0",
+                        "Memory": 248,
+                        "Time": 285700,
+                        "Id": 4,
+                        "UsedIndexes": "uq_Trip: 1",
+                        "EstimatedRows": 1.0,
+                        "PageCacheMisses": 0,
+                        "DbHits": 2,
+                        "Rows": 1,
+                        "PageCacheHits": 5
+                      },
+                      "pageCacheMisses": 0,
+                      "dbHits": 2,
+                      "identifiers": [
+                        "t"
+                      ],
+                      "operatorType": "NodeUniqueIndexSeek@transitkg-static",
+                      "time": 285700,
+                      "rows": 1,
+                      "pageCacheHitRatio": 1.0,
+                      "pageCacheHits": 5
+                    }
+                  ],
+                  "dbHits": 1,
+                  "identifiers": [
+                    "t",
+                    "s"
+                  ],
+                  "operatorType": "Expand(All)@transitkg-static",
+                  "rows": 1
+                }
+              ],
+              "dbHits": 2,
+              "identifiers": [
+                "t",
+                "s"
+              ],
+              "operatorType": "Filter@transitkg-static",
+              "rows": 1
+            }
+          ],
+          "dbHits": 2,
+          "identifiers": [
+            "t",
+            "s",
+            "`t.canonical_id`",
+            "`s.source_id`"
+          ],
+          "operatorType": "Projection@transitkg-static",
+          "rows": 1
+        }
+      ],
+      "dbHits": 0,
+      "identifiers": [
+        "t",
+        "s",
+        "`t.canonical_id`",
+        "`s.source_id`"
+      ],
+      "operatorType": "ProduceResults@transitkg-static",
+      "rows": 1
+    },
+    "duckdb_explain_analyze": [
+      [
+        "analyzed_plan",
+        "┌─────────────────────────────────────┐\n│┌───────────────────────────────────┐│\n││    Query Profiling Information    ││\n│└───────────────────────────────────┘│\n└─────────────────────────────────────┘\nEXPLAIN ANALYZE  SELECT v.stop_sequence,v.stop_id,v.arrival_time_seconds,v.departure_time_seconds,        active.service_id IS NOT NULL AS runs_on_date FROM trip_selector_context x JOIN stop_times v ON v.trip_id=x.trip_id LEFT JOIN active_services($day) active ON active.service_id=x.service_id WHERE x.canonical_trip_id=$id ORDER BY 1 \n┌────────────────────────────────────────────────┐\n│┌──────────────────────────────────────────────┐│\n││              Total Time: 0.0173s             ││\n│└──────────────────────────────────────────────┘│\n└────────────────────────────────────────────────┘\n┌───────────────────────────┐\n│           QUERY           │\n└─────────────┬─────────────┘\n┌─────────────┴─────────────┐\n│      EXPLAIN_ANALYZE      │\n│    ────────────────────   │\n│                           │\n│           0 rows          │\n│           0.00s           │\n└─────────────┬─────────────┘\n┌─────────────┴─────────────┐\n│         PROJECTION        │\n│    ────────────────────   │\n│__internal_decompress_integ│\n│     ral_bigint(#0, 0)     │\n│             #1            │\n│__internal_decompress_integ│\n│     ral_bigint(#2, 0)     │\n│__internal_decompress_integ│\n│     ral_bigint(#3, 0)     │\n│             #4            │\n│                           │\n│                           │\n│                           │\n│          77 rows          │\n│           0.00s           │\n└─────────────┬─────────────┘\n┌─────────────┴─────────────┐\n│          ORDER_BY         │\n│    ────────────────────   │\n│     stop_sequence ASC     │\n│                           │\n│                           │\n│                           │\n│          77 rows          │\n│           0.00s           │\n└─────────────┬─────────────┘\n┌─────────────┴─────────────┐\n│         PROJECTION        │\n│    ────────────────────   │\n│__internal_compress_integra│\n│     l_utinyint(#0, 0)     │\n│             #1            │\n│__internal_compress_integra│\n│     l_uinteger(#2, 0)     │\n│__internal_compress_integra│\n│     l_uinteger(#3, 0)     │\n│             #4            │\n│                           │\n│                           │\n│                           │\n│          77 rows          │\n│           0.00s           │\n└─────────────┬─────────────┘\n┌─────────────┴─────────────┐\n│         PROJECTION        │\n│    ────────────────────   │\n│       stop_sequence       │\n│          stop_id          │\n│    arrival_time_seconds   │\n│   departure_time_seconds  │\n│        runs_on_date       │\n│                           │\n│                           │\n│                           │\n│          77 rows          │\n│           0.00s           │\n└─────────────┬─────────────┘\n┌─────────────┴─────────────┐\n│         HASH_JOIN         │\n│    ────────────────────   │\n│      Join Type: LEFT      │\n│                           │\n│        Conditions:        │\n│  service_id = service_id  ├───────────────────────────────────────────┐\n│                           │                                           │\n│                           │                                           │\n│                           │                                           │\n│          77 rows          │                                           │\n│           0.00s           │                                           │\n└─────────────┬─────────────┘                                           │\n┌─────────────┴─────────────┐                             ┌─────────────┴─────────────┐\n│         HASH_JOIN         │                             │         PROJECTION        │\n│    ────────────────────   │                             │    ────────────────────   │\n│      Join Type: INNER     │                             │             #0            │\n│                           │                             │                           │\n│        Conditions:        │                             │                           │\n│     trip_id = trip_id     ├──────────────┐              │                           │\n│                           │              │              │                           │\n│                           │              │              │           0.00s           │\n│                           │              │              │                           │\n│          77 rows          │              │              │          125 rows         │\n│           0.00s           │              │              │          (0.00s)          │\n└─────────────┬─────────────┘              │              └─────────────┬─────────────┘\n┌─────────────┴─────────────┐┌─────────────┴─────────────┐┌─────────────┴─────────────┐\n│         TABLE_SCAN        ││         TABLE_SCAN        ││           FILTER          │\n│    ────────────────────   ││    ────────────────────   ││    ────────────────────   │\n│         Function:         ││         Function:         ││        CASE  WHEN (       │\n│        PARQUET_SCAN       ││        PARQUET_SCAN       ││   (exception_type IS NOT  │\n│                           ││                           ││        NULL)) THEN (      │\n│        Projections:       ││        Projections:       ││ (exception_type = 1)) ELSE│\n│          trip_id          ││          trip_id          ││  ((('2026-11-25'::DATE >= │\n│          stop_id          ││         service_id        ││  start_date) AND ('2026-11│\n│       stop_sequence       ││                           ││  -25'::DATE <= end_date)) │\n│    arrival_time_seconds   ││          Filters:         ││      AND (list_extract    │\n│   departure_time_seconds  ││ canonical_trip_id='511-sf ││    (list_value(monday,    │\n│                           ││   -bay-regional:trip:AC   ││     tuesday, wednesday,   │\n│      Dynamic Filters:     ││        %3A10056070'       ││      thursday, friday,    │\n│   trip_id='AC:10056070'   ││                           ││  saturday, sunday), 3) = 1│\n│                           ││    Total Files Read: 1    ││           )) END          │\n│    Total Files Read: 1    ││                           ││                           │\n│                           ││        Filename(s):       ││                           │\n│        Filename(s):       ││  D:\\Projects\\TransitKG\\KG ││                           │\n│  D:\\Projects\\TransitKG\\KG ││   VS code\\data\\normalized ││                           │\n│   VS code\\data\\normalized ││\\build-5608c0d7d93b9c620043││           0.00s           │\n│\\build-5608c0d7d93b9c620043││ 1b5c\\trip_selector_context││                           │\n│  1b5c\\stop_times.parquet  ││          .parquet         ││                           │\n│                           ││                           ││                           │\n│                           ││                           ││                           │\n│                           ││                           ││                           │\n│          77 rows          ││           1 row           ││          125 rows         │\n│           0.00s           ││           0.01s           ││          (0.00s)          │\n└───────────────────────────┘└───────────────────────────┘└─────────────┬─────────────┘\n                                                          ┌─────────────┴─────────────┐\n                                                          │         HASH_JOIN         │\n                                                          │    ────────────────────   │\n                                                          │      Join Type: LEFT      │\n                                                          │                           │\n                                                          │        Conditions:        │\n                                                          │    source_identifier =    │\n                                                          │         service_id        ├───────────────────────────────────────────┐\n                                                          │                           │                                           │\n                                                          │                           │                                           │\n                                                          │                           │                                           │\n                                                          │          485 rows         │                                           │\n                                                          │           0.00s           │                                           │\n                                                          └─────────────┬─────────────┘                                           │\n                                                          ┌─────────────┴─────────────┐                             ┌─────────────┴─────────────┐\n                                                          │         HASH_JOIN         │                             │         TABLE_SCAN        │\n                                                          │    ────────────────────   │                             │    ────────────────────   │\n                                                          │      Join Type: LEFT      │                             │         Function:         │\n                                                          │                           │                             │        PARQUET_SCAN       │\n                                                          │        Conditions:        │                             │                           │\n                                                          │    source_identifier =    │                             │        Projections:       │\n                                                          │         service_id        │                             │         service_id        │\n                                                          │                           │                             │       exception_type      │\n                                                          │                           │                             │                           │\n                                                          │                           │                             │          Filters:         │\n                                                          │                           │                             │  date='2026-11-25'::DATE  │\n                                                          │           0.00s           │                             │                           │\n                                                          │                           ├──────────────┐              │    Total Files Read: 1    │\n                                                          │                           │              │              │                           │\n                                                          │                           │              │              │        Filename(s):       │\n                                                          │                           │              │              │  D:\\Projects\\TransitKG\\KG │\n                                                          │                           │              │              │   VS code\\data\\normalized │\n                                                          │                           │              │              │\\build-5608c0d7d93b9c620043│\n                                                          │                           │              │              │1b5c\\calendar_dates.parquet│\n                                                          │                           │              │              │                           │\n                                                          │                           │              │              │                           │\n                                                          │                           │              │              │                           │\n                                                          │          485 rows         │              │              │          77 rows          │\n                                                          │          (0.00s)          │              │              │           0.00s           │\n                                                          └─────────────┬─────────────┘              │              └───────────────────────────┘\n                                                          ┌─────────────┴─────────────┐┌─────────────┴─────────────┐\n                                                          │         TABLE_SCAN        ││         TABLE_SCAN        │\n                                                          │    ────────────────────   ││    ────────────────────   │\n                                                          │         Function:         ││         Function:         │\n                                                          │        PARQUET_SCAN       ││        PARQUET_SCAN       │\n                                                          │                           ││                           │\n                                                          │        Projections:       ││        Projections:       │\n                                                          │     source_identifier     ││         service_id        │\n                                                          │                           ││           monday          │\n                                                          │          Filters:         ││          tuesday          │\n                                                          │   entity_type='service'   ││         wednesday         │\n                                                          │                           ││          thursday         │\n                                                          │    Total Files Read: 1    ││           friday          │\n                                                          │                           ││          saturday         │\n                                                          │        Filename(s):       ││           sunday          │\n                                                          │  D:\\Projects\\TransitKG\\KG ││         start_date        │\n                                                          │   VS code\\data\\normalized ││          end_date         │\n                                                          │\\build-5608c0d7d93b9c620043││                           │\n                                                          │ 1b5c\\canonical_ids.parquet││    Total Files Read: 1    │\n                                                          │                           ││                           │\n                                                          │                           ││        Filename(s):       │\n                                                          │                           ││  D:\\Projects\\TransitKG\\KG │\n                                                          │                           ││   VS code\\data\\normalized │\n                                                          │           0.00s           ││\\build-5608c0d7d93b9c620043│\n                                                          │                           ││   1b5c\\calendar.parquet   │\n                                                          │                           ││                           │\n                                                          │                           ││                           │\n                                                          │                           ││                           │\n                                                          │          485 rows         ││          485 rows         │\n                                                          │          (0.00s)          ││           0.00s           │\n                                                          └───────────────────────────┘└───────────────────────────┘\n"
+      ]
+    ]
+  }
+]

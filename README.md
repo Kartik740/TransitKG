@@ -25,6 +25,8 @@ The canonical identity contract preserves exact GTFS identifiers, including agen
 | `reports/` | Research reports and evidence from Phases 2 through 7. |
 | `docs/` | Repository migration, exact path mapping and rollback instructions. |
 
+Regional GTFS data provided by [511.org](https://511.org/).
+
 Selected pinned entry points remain under `scripts/` because the builds and reports attest to their exact source bytes. Use package-level exports for these modules, for example `from transitkg.graph import transform_static_graph` and `from transitkg.validation import audit_static_graph`. The reporting modules are ordinary package submodules, for example `from transitkg.benchmarking.report_static_graph_benchmark import render`. [Repository migration](docs/repository_restructuring.md)
 
 ## Environment

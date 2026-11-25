@@ -1,2 +1,30 @@
+# Preserve the validated byte representation when Git checks out research evidence.
+/.gitignore text eol=lf
+*.parquet -text
+*.png -text
+/GTFSTransitData_RG/** text eol=lf
+/data/normalized/build-5608c0d7d93b9c6200431b5c/manifest.json text eol=crlf
+/data/graph_ready/build-f85cdfafe998da9e7eecb669/manifest.json text eol=crlf
+
+/scripts/*.py text eol=lf
+/scripts/requirements-*.txt text eol=lf
+/scripts/gtfs_schedule_fields.json text eol=crlf
+/schema/* text eol=lf
+/schema/neo4j_schema.cypher text eol=crlf
+/schema/static_graph_schema.mmd text eol=crlf
+/reports/phase2/* text eol=crlf
+/reports/phase3/*.json text eol=crlf
+/reports/phase3/*.md text eol=crlf
+/reports/phase3/cleaning_policy.json text eol=lf
+/reports/phase4/*.json text eol=crlf
+/reports/phase4/*.md text eol=lf
+/reports/phase5/*.json text eol=crlf
+/reports/phase5/*.md text eol=lf
+/reports/phase6/*.json text eol=crlf
+/reports/phase6/*.md text eol=lf
+/reports/phase6/*.cypher text eol=lf
+/reports/phase6/state/*.json text eol=crlf
+/reports/phase7/*.json text eol=crlf
+/reports/phase7/*.md text eol=crlf
 GTFSTransitData_RG/stop_times.txt filter=lfs diff=lfs merge=lfs -text
 GTFSTransitData_RG/shapes.txt filter=lfs diff=lfs merge=lfs -text
